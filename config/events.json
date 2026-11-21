@@ -34,6 +34,39 @@
       "urls": [
         "https://allevents.in/austin/art"
       ]
+    },
+    {
+      "id": "allevents-dallas",
+      "name": "AllEvents",
+      "region": "dallas",
+      "urls": [
+        "https://allevents.in/dallas/markets",
+        "https://allevents.in/dallas/craft-fairs",
+        "https://allevents.in/dallas/festivals",
+        "https://allevents.in/dallas/food-drinks",
+        "https://allevents.in/dallas/pop-up",
+        "https://allevents.in/dallas/christmas",
+        "https://allevents.in/dallas/shopping",
+        "https://allevents.in/dallas/exhibitions",
+        "https://allevents.in/dallas/night-market",
+        "https://allevents.in/dallas/art"
+      ]
+    },
+    {
+      "id": "allevents-houston",
+      "name": "AllEvents",
+      "region": "houston",
+      "urls": [
+        "https://allevents.in/houston/markets",
+        "https://allevents.in/houston/festivals",
+        "https://allevents.in/houston/food-drinks",
+        "https://allevents.in/houston/pop-up",
+        "https://allevents.in/houston/christmas",
+        "https://allevents.in/houston/shopping",
+        "https://allevents.in/houston/exhibitions",
+        "https://allevents.in/houston/night-market",
+        "https://allevents.in/houston/art"
+      ]
     }
   ]
 }
