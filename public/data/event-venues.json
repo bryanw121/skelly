@@ -2786,5 +2786,219 @@
     "lng": -95.35831,
     "located": "source",
     "matched": null
+  },
+  "studio nochi, 1499 regal row #209": {
+    "lat": 32.83535,
+    "lng": -96.87672,
+    "located": "address",
+    "matched": "1499 REGAL ROW, DALLAS, TX, 75247"
+  },
+  "picadera & trinity cider, 2721 main st": {
+    "lat": 32.78392,
+    "lng": -96.78399,
+    "located": "address",
+    "matched": "2721 MAIN ST, DALLAS, TX, 75226"
+  },
+  "sundance square": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:13.693Z"
+  },
+  "discovery green": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:14.795Z"
+  },
+  "vieti coffee, 10051 marsh ln ste 410": {
+    "lat": 32.88204,
+    "lng": -96.85632,
+    "located": "address",
+    "matched": "10051 MARSH LN, DALLAS, TX, 75229"
+  },
+  "7521 mesa verde trl": {
+    "lat": 32.87657,
+    "lng": -97.26617,
+    "located": "address",
+    "matched": "7521 MESA VERDE TRL, FORT WORTH, TX, 76137"
+  },
+  "mcfly's pub": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:18.805Z"
+  },
+  "gerry's grill, 6833 w sam houston pkwy s #109": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:20.250Z"
+  },
+  "market square park, 301 milam st": {
+    "lat": 29.76322,
+    "lng": -95.36246,
+    "located": "address",
+    "matched": "301 MILAM ST, HOUSTON, TX, 77002"
+  },
+  "sundance square, 4th st between main and houston st": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:22.862Z"
+  },
+  "plano farmers market": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:23.963Z"
+  },
+  "kensington crossing, 14651 philippine st": {
+    "lat": 29.88672,
+    "lng": -95.54753,
+    "located": "address",
+    "matched": "14651 PHILIPPINE ST, HOUSTON, TX, 77040"
+  },
+  "the pretty pace club": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:26.657Z"
+  },
+  "the sound, 3111 olympus blvd": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:28.115Z"
+  },
+  "the finn houston, 712 main st": {
+    "lat": 29.7591,
+    "lng": -95.3633,
+    "located": "address",
+    "matched": "712 MAIN ST, HOUSTON, TX, 77002"
+  },
+  "south main micro park, 105 s main st": {
+    "lat": 32.74351,
+    "lng": -97.32581,
+    "located": "address",
+    "matched": "105 S MAIN ST, FORT WORTH, TX, 76104"
+  },
+  "smitttox brewing, 903 e clarendon dr": {
+    "lat": 32.74412,
+    "lng": -96.80987,
+    "located": "address",
+    "matched": "903 E CLARENDON DR, DALLAS, TX, 75203"
+  },
+  "aviva wholesale, 10355 harwin dr": {
+    "lat": 29.71648,
+    "lng": -95.54994,
+    "located": "address",
+    "matched": "10355 HARWIN DR, HOUSTON, TX, 77036"
+  },
+  "4200 south fwy": {
+    "lat": 32.68637,
+    "lng": -97.32102,
+    "located": "address",
+    "matched": "4200 SOUTH FWY, FORT WORTH, TX, 76115"
+  },
+  "john paul ii christmas bazaar, 900 coit rd": {
+    "lat": 33.01023,
+    "lng": -96.7666,
+    "located": "address",
+    "matched": "900 COIT RD, PLANO, TX, 75075"
+  },
+  "seremoni, 1145 providence st": {
+    "lat": 29.76875,
+    "lng": -95.35559,
+    "located": "address",
+    "matched": "1145 PROVIDENCE ST, HOUSTON, TX, 77002"
+  },
+  "3451 altamesa blvd": {
+    "lat": 32.64947,
+    "lng": -97.36665,
+    "located": "address",
+    "matched": "3451 ALTAMESA BLVD, FORT WORTH, TX, 76133"
+  },
+  "kohiko coffee house, 4617 austin pkwy": {
+    "lat": 29.57833,
+    "lng": -95.5846,
+    "located": "address",
+    "matched": "4617 AUSTIN PKWY, SUGAR LAND, TX, 77479"
+  },
+  "2800 navigation": {
+    "lat": 29.75682,
+    "lng": -95.3419,
+    "located": "address",
+    "matched": "2800 NAVIGATION BLVD, HOUSTON, TX, 77003"
+  },
+  "angie's pizza, 1002 w 11th st ste a": {
+    "lat": 29.7905,
+    "lng": -95.40709,
+    "located": "address",
+    "matched": "1002 W 11TH ST, HOUSTON, TX, 77008"
+  },
+  "2906 rock island rd": {
+    "lat": 32.81547,
+    "lng": -96.98691,
+    "located": "address",
+    "matched": "2906 ROCK ISLAND RD, IRVING, TX, 75060"
+  },
+  "7350 n beach st": {
+    "lat": 32.87106,
+    "lng": -97.29077,
+    "located": "address",
+    "matched": "7350 N BEACH ST, FORT WORTH, TX, 76137"
+  },
+  "common good, 1619 n hall st": {
+    "lat": 32.79465,
+    "lng": -96.7883,
+    "located": "address",
+    "matched": "1619 HALL ST, DALLAS, TX, 75204"
+  },
+  "pottery barn": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:55.081Z"
+  },
+  "olmo market": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:56.183Z"
+  },
+  "un caffè, 3217 milam st": {
+    "lat": 29.7425,
+    "lng": -95.37885,
+    "located": "address",
+    "matched": "3217 MILAM ST, HOUSTON, TX, 77006"
+  },
+  "atlantis coffee & bar": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:58.824Z"
+  },
+  "nori nori": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:10:59.926Z"
+  },
+  "the blind goat, 8145 long point rd": {
+    "lat": 29.80289,
+    "lng": -95.49173,
+    "located": "address",
+    "matched": "8145 LONG POINT RD, HOUSTON, TX, 77055"
+  },
+  "drewery place apartments, 2850 fanin st": {
+    "lat": 29.74331,
+    "lng": -95.37451,
+    "located": "address",
+    "matched": "2850 FANNIN ST, HOUSTON, TX, 77002"
+  },
+  "handies douzo – heights, 3510 white oak dr": {
+    "lat": 29.78155,
+    "lng": -95.39529,
+    "located": "address",
+    "matched": "3510 WHITE OAK DR, HOUSTON, TX, 77007"
+  },
+  "saint valentine": {
+    "unresolved": true,
+    "lastTried": "2026-11-21T23:11:05.461Z"
+  },
+  "12345 inwood rd": {
+    "lat": 32.91728,
+    "lng": -96.81855,
+    "located": "address",
+    "matched": "12345 INWOOD RD, DALLAS, TX, 75244"
+  },
+  "2301 parakeet ln": {
+    "lat": 32.64835,
+    "lng": -96.8553,
+    "located": "address",
+    "matched": "2301 PARAKEET LN, DALLAS, TX, 75232"
+  },
+  "fat straw boba, 1251 w campbell rd": {
+    "lat": 32.97808,
+    "lng": -96.7626,
+    "located": "address",
+    "matched": "1251 W CAMPBELL RD, RICHARDSON, TX, 75080"
   }
 }
