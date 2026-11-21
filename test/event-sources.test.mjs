@@ -134,3 +134,42 @@ test('pageHours / fillHours: a listing event with no hours gets them from its ow
   assert.equal(again[0].startTime, '11:00', 'from the cache');
   assert.equal(await fillHours(again, cache, { get, allowed, now: now + 4 * 864e5 }), 1);
 });
+
+// One Instagram post can announce several dates or places (a pop-up's whole
+// schedule in one flyer). The equal-URL shortcut in sameEvent used to run before
+// the date and distance guards, so mergeEvents collapsed those rows into one —
+// 16 DFW events were lost that way overnight on Nov 20→21, 2026.
+test('sameEvent: one post announcing several dates is several events', () => {
+  const url = 'https://www.instagram.com/p/Df4ys-Sgi2q/';
+  const sat = { title: 'Mo Matcha pop-up', startDate: '2026-11-21', venue: 'Cedar Studio Tour, Dallas', source: 'Instagram @momatcha.dtx', sourceUrl: url };
+  const sun = { title: 'Mo Matcha pop-up', startDate: '2026-11-22', venue: 'Concord Church, Dallas', source: 'Instagram @momatcha.dtx', sourceUrl: url };
+  assert.ok(!sameEvent(sat, sun), 'same post, different dates');
+  const both = mergeEvents({ events: [sun] }, [{ id: 's', ok: true, events: [sat] }], '2026-11-21', ['Other']);
+  assert.equal(both.length, 2, 'both dates survive the merge');
+});
+
+test('sameEvent: one post, one date, two places with pins >1km apart is two events', () => {
+  const url = 'https://www.instagram.com/p/Df4ys-Sgi2q/';
+  const irving = { title: 'Mo Matcha pop-up', startDate: '2026-11-21', venue: '3601 Regent Blvd, Irving', lat: 32.88, lng: -96.95, source: 'Instagram @momatcha.dtx', sourceUrl: url };
+  const dallas = { title: 'Mo Matcha pop-up', startDate: '2026-11-21', venue: 'Cedar Studio Tour, Dallas', lat: 32.78, lng: -96.8, source: 'Instagram @momatcha.dtx', sourceUrl: url };
+  assert.ok(!sameEvent(irving, dallas), 'same post and date, two places');
+  const both = mergeEvents({ events: [dallas] }, [{ id: 's', ok: true, events: [irving] }], '2026-11-21', ['Other']);
+  assert.equal(both.length, 2, 'both places survive the merge');
+});
+
+test('sameEvent: the same post re-read for the same date and place still merges', () => {
+  const url = 'https://www.instagram.com/p/Df4ys-Sgi2q/';
+  const sat = { title: 'Mo Matcha pop-up', startDate: '2026-11-21', venue: 'Cedar Studio Tour, Dallas', source: 'Instagram @momatcha.dtx', sourceUrl: url };
+  const again = { ...sat, title: 'Mo Matcha Pop-Up!' };
+  assert.ok(sameEvent(sat, again), 'true duplicate re-scrape, title tweak and all');
+  const one = mergeEvents({ events: [again] }, [{ id: 's', ok: true, events: [sat] }], '2026-11-21', ['Other']);
+  assert.equal(one.length, 1);
+});
+
+test('sameEvent: similar titles on one date at different venues stay two events', () => {
+  // List-only rows from different posts: title overlap (2 of 4 words) is under
+  // the same-date threshold, so the title path keeps them apart.
+  const cedar = { title: 'Mo Matcha at Cedar Studio Tour', startDate: '2026-11-22', source: 'Instagram @momatcha.dtx', sourceUrl: 'https://www.instagram.com/p/a/' };
+  const concord = { title: 'Mo Matcha at Concord Church', startDate: '2026-11-22', source: 'Instagram @momatcha.dtx', sourceUrl: 'https://www.instagram.com/p/b/' };
+  assert.ok(!sameEvent(cedar, concord), 'similar titles, different venues');
+});
