@@ -1460,5 +1460,1331 @@
     "lng": -97.70932,
     "located": "source",
     "matched": null
+  },
+  "alley theatre, 615 texas ave": {
+    "lat": 29.76206,
+    "lng": -95.36533,
+    "located": "source",
+    "matched": null
+  },
+  "texas live!, 1650 e randol mill rd": {
+    "lat": 32.736,
+    "lng": -97.108,
+    "located": "source",
+    "matched": null
+  },
+  "houston zoo, 6200 hermann park drive,houston, texas": {
+    "lat": 29.71466,
+    "lng": -95.38947,
+    "located": "source",
+    "matched": null
+  },
+  "1650 e randol mill rd": {
+    "lat": 32.74939,
+    "lng": -97.08499,
+    "located": "source",
+    "matched": null
+  },
+  "market square park, 301 milam street": {
+    "lat": 29.76265,
+    "lng": -95.36236,
+    "located": "source",
+    "matched": null
+  },
+  "historic market square houston, 301 milam st,houston, texas": {
+    "lat": 29.76264,
+    "lng": -95.3621,
+    "located": "source",
+    "matched": null
+  },
+  "heritage farmstead museum, 1900 w 15th st": {
+    "lat": 33.01877,
+    "lng": -96.73168,
+    "located": "source",
+    "matched": null
+  },
+  "the ismaili center, 2323 allen pkwy": {
+    "lat": 29.75904,
+    "lng": -95.39185,
+    "located": "source",
+    "matched": null
+  },
+  "guadalupe plaza park, 2311 runnels street": {
+    "lat": 29.75997,
+    "lng": -95.3457,
+    "located": "source",
+    "matched": null
+  },
+  "watters creek, 970 garden park dr,allen,tx": {
+    "lat": 33.08879,
+    "lng": -96.68384,
+    "located": "source",
+    "matched": null
+  },
+  "post houston, 401 franklin street": {
+    "lat": 29.76607,
+    "lng": -95.36459,
+    "located": "source",
+    "matched": null
+  },
+  "craft beer market dallas preston center, 5974 west northwest highway": {
+    "lat": 32.86521,
+    "lng": -96.80554,
+    "located": "source",
+    "matched": null
+  },
+  "embarcadero building, 1229 admiral nimitz drive": {
+    "lat": 32.78131,
+    "lng": -96.76032,
+    "located": "source",
+    "matched": null
+  },
+  "the esplanade at navigation, 2500-2800 navigation boulevard": {
+    "lat": 29.7582,
+    "lng": -95.34431,
+    "located": "source",
+    "matched": null
+  },
+  "1520 eldridge parkway": {
+    "lat": 29.75746,
+    "lng": -95.62748,
+    "located": "source",
+    "matched": null
+  },
+  "2919 canton street": {
+    "lat": 32.78297,
+    "lng": -96.78083,
+    "located": "source",
+    "matched": null
+  },
+  "1807 gould st": {
+    "lat": 32.768,
+    "lng": -96.78956,
+    "located": "source",
+    "matched": null
+  },
+  "8500 teel pkwy": {
+    "lat": 33.14916,
+    "lng": -96.86298,
+    "located": "source",
+    "matched": null
+  },
+  "downtown fort worth": {
+    "lat": 32.7502,
+    "lng": -97.3359,
+    "located": "source",
+    "matched": null
+  },
+  "energy corridor, 1520 eldridge pkwy": {
+    "lat": 29.77951,
+    "lng": -95.62894,
+    "located": "source",
+    "matched": null
+  },
+  "408 s harwood st dallas tx, harwood @ wood - n - ns, 2000 wood st, dallas, tx": {
+    "lat": 32.77961,
+    "lng": -96.79313,
+    "located": "source",
+    "matched": null
+  },
+  "the shops at redbird, 3662 west camp wisdom road": {
+    "lat": 32.66029,
+    "lng": -96.87676,
+    "located": "source",
+    "matched": null
+  },
+  "marriott marquis houston, walker street, houston, tx, usa, 1777 walker street": {
+    "lat": 29.75445,
+    "lng": -95.35812,
+    "located": "source",
+    "matched": null
+  },
+  "2520 airline dr": {
+    "lat": 29.81002,
+    "lng": -95.38148,
+    "located": "source",
+    "matched": null
+  },
+  "970 garden park dr": {
+    "lat": 33.0893,
+    "lng": -96.68509,
+    "located": "source",
+    "matched": null
+  },
+  "rich’s, 2401 san jacinto st": {
+    "lat": 29.74499,
+    "lng": -95.37152,
+    "located": "source",
+    "matched": null
+  },
+  "north haven gardens, 7700 northaven road": {
+    "lat": 32.90043,
+    "lng": -96.77531,
+    "located": "source",
+    "matched": null
+  },
+  "2201 s interstate 35 e": {
+    "lat": 33.19014,
+    "lng": -97.10762,
+    "located": "source",
+    "matched": null
+  },
+  "green light social dallas, 2625 floyd st": {
+    "lat": 32.78646,
+    "lng": -96.78755,
+    "located": "source",
+    "matched": null
+  },
+  "conservatory dining hall, bar & lounge, 5353 west alabama street": {
+    "lat": 29.73756,
+    "lng": -95.46892,
+    "located": "source",
+    "matched": null
+  },
+  "truck yard dallas, 5624 sears st.": {
+    "lat": 32.81432,
+    "lng": -96.77119,
+    "located": "source",
+    "matched": null
+  },
+  "truck yard houston, 2118 lamar st.": {
+    "lat": 29.7496,
+    "lng": -95.35613,
+    "located": "source",
+    "matched": null
+  },
+  "rustin park, 1349 main st,southlake, texas": {
+    "lat": 32.94243,
+    "lng": -97.13123,
+    "located": "source",
+    "matched": null
+  },
+  "540 cypress station drive": {
+    "lat": 30.03248,
+    "lng": -95.43587,
+    "located": "source",
+    "matched": null
+  },
+  "fair park, 3809 grand avenue": {
+    "lat": 32.77822,
+    "lng": -96.75927,
+    "located": "source",
+    "matched": null
+  },
+  "reverchon park, 3505 maple ave": {
+    "lat": 32.80042,
+    "lng": -96.81263,
+    "located": "source",
+    "matched": null
+  },
+  "popfancy dessert bar, 9393 bellaire boulevard": {
+    "lat": 29.70452,
+    "lng": -95.54898,
+    "located": "source",
+    "matched": null
+  },
+  "2700 skillman st": {
+    "lat": 32.82281,
+    "lng": -96.7608,
+    "located": "source",
+    "matched": null
+  },
+  "city center fort worth, 201 main street": {
+    "lat": 32.75629,
+    "lng": -97.33186,
+    "located": "source",
+    "matched": null
+  },
+  "moon tower inn, 3004 canal st": {
+    "lat": 29.75437,
+    "lng": -95.34113,
+    "located": "source",
+    "matched": null
+  },
+  "2919 canton st": {
+    "lat": 32.78297,
+    "lng": -96.78083,
+    "located": "source",
+    "matched": null
+  },
+  "3923 cedar springs rd, dallas, tx, 3038 throckmorton st": {
+    "lat": 32.81047,
+    "lng": -96.8116,
+    "located": "source",
+    "matched": null
+  },
+  "klyde warren park, 2012 woodall rodgers freeway": {
+    "lat": 32.78936,
+    "lng": -96.80162,
+    "located": "source",
+    "matched": null
+  },
+  "deep ellum, dallas, tx, usa, 2647 main st": {
+    "lat": 32.77667,
+    "lng": -96.79699,
+    "located": "source",
+    "matched": null
+  },
+  "bayou city community market, hillcroft street, houston, tx, usa, 10425 hillcroft street": {
+    "lat": 29.66757,
+    "lng": -95.49146,
+    "located": "source",
+    "matched": null
+  },
+  "1 fellowship dr": {
+    "lat": 30.20627,
+    "lng": -95.47537,
+    "located": "source",
+    "matched": null
+  },
+  "704 s walton walker blvd": {
+    "lat": 32.73836,
+    "lng": -96.91747,
+    "located": "source",
+    "matched": null
+  },
+  "2352 south dairy ashford road": {
+    "lat": 29.73958,
+    "lng": -95.60633,
+    "located": "source",
+    "matched": null
+  },
+  "806 east nasa parkway, houston, tx, united states, texas 77058, 18027 kings row blvd": {
+    "lat": 29.54454,
+    "lng": -95.10766,
+    "located": "source",
+    "matched": null
+  },
+  "3545 lone star cir": {
+    "lat": 33.03257,
+    "lng": -97.28401,
+    "located": "source",
+    "matched": null
+  },
+  "2201 north stemmons freeway": {
+    "lat": 32.80022,
+    "lng": -96.82804,
+    "located": "source",
+    "matched": null
+  },
+  "190 e stacy rd": {
+    "lat": 33.12734,
+    "lng": -96.65836,
+    "located": "source",
+    "matched": null
+  },
+  "reliant stadium, 1 nrg parkway": {
+    "lat": 29.68472,
+    "lng": -95.41071,
+    "located": "source",
+    "matched": null
+  },
+  "lyric market, 411 smith street": {
+    "lat": 29.7631,
+    "lng": -95.3646,
+    "located": "source",
+    "matched": null
+  },
+  "1100 henderson st": {
+    "lat": 32.74728,
+    "lng": -97.33835,
+    "located": "source",
+    "matched": null
+  },
+  "bad astronaut brewing, 1519 fulton st": {
+    "lat": 29.77442,
+    "lng": -95.3569,
+    "located": "source",
+    "matched": null
+  },
+  "the george theater, 5420 westheimer road": {
+    "lat": 29.76043,
+    "lng": -95.3698,
+    "located": "source",
+    "matched": null
+  },
+  "the list naughty & nice holiday pop-up, 5670 village glen drive": {
+    "lat": 32.85945,
+    "lng": -96.76237,
+    "located": "source",
+    "matched": null
+  },
+  "pegasus plaza at downtown dallas, 1521 main st": {
+    "lat": 32.78101,
+    "lng": -96.7987,
+    "located": "source",
+    "matched": null
+  },
+  "howell family farms, 4016 w division st,arlington,tx": {
+    "lat": 32.73056,
+    "lng": -97.17343,
+    "located": "source",
+    "matched": null
+  },
+  "hilton anatole, 2201 north stemmons freeway": {
+    "lat": 32.79984,
+    "lng": -96.82915,
+    "located": "source",
+    "matched": null
+  },
+  "omni dallas hotel, 555 s lamar,dallas,tx": {
+    "lat": 32.77526,
+    "lng": -96.80436,
+    "located": "source",
+    "matched": null
+  },
+  "omni dallas hotel, 555 s lamar st": {
+    "lat": 32.77512,
+    "lng": -96.80429,
+    "located": "source",
+    "matched": null
+  },
+  "kemah boardwalk, 215 kipp avenue": {
+    "lat": 29.54732,
+    "lng": -95.0202,
+    "located": "source",
+    "matched": null
+  },
+  "arlington music hall, 224 n center st": {
+    "lat": 32.73861,
+    "lng": -97.10742,
+    "located": "source",
+    "matched": null
+  },
+  "ikea grand prairie, 1000 ikea wy": {
+    "lat": 32.69056,
+    "lng": -97.02215,
+    "located": "source",
+    "matched": null
+  },
+  "omni houston hotel, 4 riverway drive": {
+    "lat": 29.7613,
+    "lng": -95.45937,
+    "located": "source",
+    "matched": null
+  },
+  "16165 city walk": {
+    "lat": 29.59529,
+    "lng": -95.62238,
+    "located": "source",
+    "matched": null
+  },
+  "5741 legacy dr": {
+    "lat": 33.07845,
+    "lng": -96.82116,
+    "located": "source",
+    "matched": null
+  },
+  "1903 rock island st": {
+    "lat": 32.75925,
+    "lng": -96.79684,
+    "located": "source",
+    "matched": null
+  },
+  "pearland town center, atm": {
+    "lat": 29.55237,
+    "lng": -95.39404,
+    "located": "source",
+    "matched": null
+  },
+  "autry park, 3711 autry park drive": {
+    "lat": 29.75948,
+    "lng": -95.40742,
+    "located": "source",
+    "matched": null
+  },
+  "1250 lake plaza dr": {
+    "lat": 30.09859,
+    "lng": -95.44147,
+    "located": "source",
+    "matched": null
+  },
+  "8687 north central expressway": {
+    "lat": 32.86874,
+    "lng": -96.77186,
+    "located": "source",
+    "matched": null
+  },
+  "the lumen room (dallas), 4301 bryan st": {
+    "lat": 32.79927,
+    "lng": -96.77951,
+    "located": "source",
+    "matched": null
+  },
+  "white rock alehouse & brewery, 7331 gaston avenue": {
+    "lat": 32.81363,
+    "lng": -96.73015,
+    "located": "source",
+    "matched": null
+  },
+  "the village country club, 5670 village glen drive": {
+    "lat": 32.85941,
+    "lng": -96.76253,
+    "located": "source",
+    "matched": null
+  },
+  "2647 main st": {
+    "lat": 32.78387,
+    "lng": -96.78507,
+    "located": "source",
+    "matched": null
+  },
+  "1500 commons cir": {
+    "lat": 33.10161,
+    "lng": -97.23312,
+    "located": "source",
+    "matched": null
+  },
+  "3225 university blvd": {
+    "lat": 32.84526,
+    "lng": -96.7849,
+    "located": "source",
+    "matched": null
+  },
+  "main st, humble, tx, united states, texas 77338, 77 w main st": {
+    "lat": 29.99902,
+    "lng": -95.2678,
+    "located": "source",
+    "matched": null
+  },
+  "111 broad st": {
+    "lat": 32.76655,
+    "lng": -96.60148,
+    "located": "source",
+    "matched": null
+  },
+  "independence park": {
+    "lat": 29.54487,
+    "lng": -95.26248,
+    "located": "source",
+    "matched": null
+  },
+  "hurst conference center, 1601 campus drive": {
+    "lat": 32.84121,
+    "lng": -97.19184,
+    "located": "source",
+    "matched": null
+  },
+  "downtown waxahachie, 209 w jefferson st": {
+    "lat": 32.38465,
+    "lng": -96.84937,
+    "located": "source",
+    "matched": null
+  },
+  "5339 3rd st": {
+    "lat": 29.78817,
+    "lng": -95.81524,
+    "located": "source",
+    "matched": null
+  },
+  "reliant center, 8600 kirby drive (gate 10 entrance)": {
+    "lat": 29.6809,
+    "lng": -95.4128,
+    "located": "source",
+    "matched": null
+  },
+  "constellation field, 1 stadium drive": {
+    "lat": 29.62248,
+    "lng": -95.64688,
+    "located": "source",
+    "matched": null
+  },
+  "virgin hotels dallas, 1445 turtle creek boulevard": {
+    "lat": 32.79697,
+    "lng": -96.82189,
+    "located": "source",
+    "matched": null
+  },
+  "5321 e mockingbird ln": {
+    "lat": 32.83817,
+    "lng": -96.77545,
+    "located": "source",
+    "matched": null
+  },
+  "landmark community center, 100 louisiana street": {
+    "lat": 29.61726,
+    "lng": -95.53983,
+    "located": "source",
+    "matched": null
+  },
+  "class act theater, 25275 budde road": {
+    "lat": 30.12935,
+    "lng": -95.45105,
+    "located": "source",
+    "matched": null
+  },
+  "levitt pavilion, 100 west abram street": {
+    "lat": 32.73516,
+    "lng": -97.10756,
+    "located": "source",
+    "matched": null
+  },
+  "213 west texas avenue": {
+    "lat": 29.73264,
+    "lng": -94.97028,
+    "located": "source",
+    "matched": null
+  },
+  "1245 s main st": {
+    "lat": 32.92702,
+    "lng": -97.0778,
+    "located": "source",
+    "matched": null
+  },
+  "9010 grand ave, north richland hills, tx 76180, united states, stormy plaza, 9010 grand ave": {
+    "lat": 32.85439,
+    "lng": -97.19261,
+    "located": "source",
+    "matched": null
+  },
+  "625 w main st": {
+    "lat": 32.52568,
+    "lng": -96.8868,
+    "located": "source",
+    "matched": null
+  },
+  "the blind finch, 5210 farm to market 2920": {
+    "lat": 30.07457,
+    "lng": -95.49906,
+    "located": "source",
+    "matched": null
+  },
+  "morton st, richmond, tx 77469, united states, 201 s 7th st": {
+    "lat": 29.58197,
+    "lng": -95.76406,
+    "located": "source",
+    "matched": null
+  },
+  "520 w state st": {
+    "lat": 32.91292,
+    "lng": -96.63699,
+    "located": "source",
+    "matched": null
+  },
+  "mockingbird station® shopping center, 5307 east mockingbird lane": {
+    "lat": 32.83778,
+    "lng": -96.77612,
+    "located": "source",
+    "matched": null
+  },
+  "the glen lawn, 5630 village glen drive": {
+    "lat": 32.85952,
+    "lng": -96.7635,
+    "located": "source",
+    "matched": null
+  },
+  "bedford boys ranch lake, 2801 forest ridge dr,bedford, texas": {
+    "lat": 32.84807,
+    "lng": -97.14882,
+    "located": "source",
+    "matched": null
+  },
+  "generations park at boys ranch, 2809 r d hurt pkwy": {
+    "lat": 32.84949,
+    "lng": -97.14547,
+    "located": "source",
+    "matched": null
+  },
+  "mark mcgrath municipal park trail, 12001 brighton ln, meadows place, tx 77477-16nd": {
+    "lat": 29.64994,
+    "lng": -95.59056,
+    "located": "source",
+    "matched": null
+  },
+  "402 morton st": {
+    "lat": 29.5829,
+    "lng": -95.76217,
+    "located": "source",
+    "matched": null
+  },
+  "houston": {
+    "lat": 29.76,
+    "lng": -95.37,
+    "located": "source",
+    "matched": null
+  },
+  "armstrong park, duncanville, texas": {
+    "lat": 32.64714,
+    "lng": -96.90439,
+    "located": "source",
+    "matched": null
+  },
+  "shop heights 19th street, 313 w 19th st": {
+    "lat": 29.80294,
+    "lng": -95.40184,
+    "located": "source",
+    "matched": null
+  },
+  "keller town hall": {
+    "lat": 32.93044,
+    "lng": -97.22687,
+    "located": "source",
+    "matched": null
+  },
+  "7400 windrose avenue": {
+    "lat": 33.07969,
+    "lng": -96.82589,
+    "located": "source",
+    "matched": null
+  },
+  "31 waterway square pl": {
+    "lat": 30.16057,
+    "lng": -95.45762,
+    "located": "source",
+    "matched": null
+  },
+  "ft. bend county fairgrounds, rosenberg, texas": {
+    "lat": 29.52043,
+    "lng": -95.81159,
+    "located": "source",
+    "matched": null
+  },
+  "1321 commerce st": {
+    "lat": 32.77976,
+    "lng": -96.80053,
+    "located": "source",
+    "matched": null
+  },
+  "pasadena public library, tx, 1201 jeff ginn memorial dr,pasadena,tx": {
+    "lat": 29.69275,
+    "lng": -95.19712,
+    "located": "source",
+    "matched": null
+  },
+  "2059 summer lee drive": {
+    "lat": 32.88877,
+    "lng": -96.47985,
+    "located": "source",
+    "matched": null
+  },
+  "2401 college ave": {
+    "lat": 32.71621,
+    "lng": -97.33464,
+    "located": "source",
+    "matched": null
+  },
+  "summerfield at tate farms, 12992 s fm 548,mclendon-chisholm, texas": {
+    "lat": 32.83824,
+    "lng": -96.33398,
+    "located": "source",
+    "matched": null
+  },
+  "300 s main st": {
+    "lat": 32.93886,
+    "lng": -97.07869,
+    "located": "source",
+    "matched": null
+  },
+  "15600 addison rd. , addison, tx, united states, texas 75001, 4801 addison circle dr": {
+    "lat": 32.9616,
+    "lng": -96.82969,
+    "located": "source",
+    "matched": null
+  },
+  "addison circle park, 4970 addison circle": {
+    "lat": 32.96129,
+    "lng": -96.8267,
+    "located": "source",
+    "matched": null
+  },
+  "the peddler's pack book co., 408 w main st": {
+    "lat": 30.09678,
+    "lng": -95.61745,
+    "located": "source",
+    "matched": null
+  },
+  "epic waters indoor waterpark, 2970 epic place": {
+    "lat": 32.70209,
+    "lng": -97.03157,
+    "located": "source",
+    "matched": null
+  },
+  "1201 e louisiana st": {
+    "lat": 33.19725,
+    "lng": -96.60314,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's sugar land, 19892 southwest fwy, sugar land, 77479, houston, us": {
+    "lat": 29.56314,
+    "lng": -95.68488,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's friendswood, 704 baybrook mall, friendswood// 77546": {
+    "lat": 29.53773,
+    "lng": -95.11826,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's sugar land, 19892 southwest fwy, sugar land// 77479": {
+    "lat": 29.52996,
+    "lng": -95.64995,
+    "located": "source",
+    "matched": null
+  },
+  "2400 w loop fwy s": {
+    "lat": 29.74228,
+    "lng": -95.45899,
+    "located": "source",
+    "matched": null
+  },
+  "mayor vera calvin plaza - old town, burleson, 141 w renfro st,burleson,tx": {
+    "lat": 32.54221,
+    "lng": -97.323,
+    "located": "source",
+    "matched": null
+  },
+  "23501 cinco ranch blvd": {
+    "lat": 29.74335,
+    "lng": -95.77578,
+    "located": "source",
+    "matched": null
+  },
+  "farmers branch city hall, 13000 william dodson pkwy,farmers branch, texas": {
+    "lat": 32.92201,
+    "lng": -96.89256,
+    "located": "source",
+    "matched": null
+  },
+  "206 n murphy rd": {
+    "lat": 33.01826,
+    "lng": -96.61209,
+    "located": "source",
+    "matched": null
+  },
+  "7700 cypresswood dr": {
+    "lat": 30.00786,
+    "lng": -95.52125,
+    "located": "source",
+    "matched": null
+  },
+  "downtown forney, 116 e main st": {
+    "lat": 32.74748,
+    "lng": -96.47164,
+    "located": "source",
+    "matched": null
+  },
+  "6611 w cross creek bend ln": {
+    "lat": 29.69494,
+    "lng": -95.872,
+    "located": "source",
+    "matched": null
+  },
+  "jacinto city, texas, 10333 market st": {
+    "lat": 29.76752,
+    "lng": -95.24593,
+    "located": "source",
+    "matched": null
+  },
+  "the rustic, 3656 howell street": {
+    "lat": 32.8049,
+    "lng": -96.79423,
+    "located": "source",
+    "matched": null
+  },
+  "downtown tomball": {
+    "lat": 30.09716,
+    "lng": -95.61574,
+    "located": "source",
+    "matched": null
+  },
+  "540 w 19th st": {
+    "lat": 29.80254,
+    "lng": -95.40747,
+    "located": "source",
+    "matched": null
+  },
+  "lakeshore learning store, 14060 dallas parkway": {
+    "lat": 32.93892,
+    "lng": -96.82088,
+    "located": "source",
+    "matched": null
+  },
+  "lakeshore learning, 19032 gulf fwy.": {
+    "lat": 29.54455,
+    "lng": -95.14628,
+    "located": "source",
+    "matched": null
+  },
+  "lakeshore learning, 2405 post oak blvd.": {
+    "lat": 29.74303,
+    "lng": -95.46001,
+    "located": "source",
+    "matched": null
+  },
+  "downtown dallas": {
+    "lat": 32.78633,
+    "lng": -96.79625,
+    "located": "source",
+    "matched": null
+  },
+  "haslet community park": {
+    "lat": 32.97428,
+    "lng": -97.35151,
+    "located": "source",
+    "matched": null
+  },
+  "goldmark cultural center, 13999 goldmark dr": {
+    "lat": 32.93864,
+    "lng": -96.75252,
+    "located": "source",
+    "matched": null
+  },
+  "the post oak hotel at uptown houston, 1600 west loop south": {
+    "lat": 29.75223,
+    "lng": -95.45651,
+    "located": "source",
+    "matched": null
+  },
+  "dallas farmers market, 920 south harwood street": {
+    "lat": 32.7775,
+    "lng": -96.78926,
+    "located": "source",
+    "matched": null
+  },
+  "4435 old spanish trl": {
+    "lat": 29.70594,
+    "lng": -95.34549,
+    "located": "source",
+    "matched": null
+  },
+  "irving heritage park, 209 s main st": {
+    "lat": 32.81239,
+    "lng": -96.94643,
+    "located": "source",
+    "matched": null
+  },
+  "southlake town square, 285 grand avenue": {
+    "lat": 32.94386,
+    "lng": -97.13014,
+    "located": "source",
+    "matched": null
+  },
+  "the ballpark at league city, 1150 ballpark way,league city, texas": {
+    "lat": 29.47374,
+    "lng": -95.10213,
+    "located": "source",
+    "matched": null
+  },
+  "capp smith park, 5708 robin dr": {
+    "lat": 32.87585,
+    "lng": -97.25701,
+    "located": "source",
+    "matched": null
+  },
+  "the grove at valley ranch town center, 21572 market place dr.": {
+    "lat": 30.15502,
+    "lng": -95.21552,
+    "located": "source",
+    "matched": null
+  },
+  "levy park houston, 3801 eastside,houston,tx": {
+    "lat": 29.7325,
+    "lng": -95.42326,
+    "located": "source",
+    "matched": null
+  },
+  "simpson plaza, 6101 frisco square blvd, frisco, tx 75034": {
+    "lat": 33.15004,
+    "lng": -96.83454,
+    "located": "source",
+    "matched": null
+  },
+  "215 n 8th st": {
+    "lat": 32.48408,
+    "lng": -96.9948,
+    "located": "source",
+    "matched": null
+  },
+  "1035 11th st": {
+    "lat": 29.79113,
+    "lng": -95.38562,
+    "located": "source",
+    "matched": null
+  },
+  "403 main st, spring, tx 77373, united states, spring historical museum, 403 main st": {
+    "lat": 30.07893,
+    "lng": -95.42113,
+    "located": "source",
+    "matched": null
+  },
+  "500 w 13th st": {
+    "lat": 29.69888,
+    "lng": -95.12789,
+    "located": "source",
+    "matched": null
+  },
+  "2403 flora st": {
+    "lat": 32.79082,
+    "lng": -96.79803,
+    "located": "source",
+    "matched": null
+  },
+  "historic downtown carrollton, 1100 s elm st,carrollton, texas": {
+    "lat": 32.95199,
+    "lng": -96.90855,
+    "located": "source",
+    "matched": null
+  },
+  "hurst recreation center, 700 mary drive": {
+    "lat": 32.82181,
+    "lng": -97.17589,
+    "located": "source",
+    "matched": null
+  },
+  "dallas holiday parade, 1321 commerce street,dallas, texas": {
+    "lat": 32.77958,
+    "lng": -96.80099,
+    "located": "source",
+    "matched": null
+  },
+  "princeton, texas, 708 n 2nd st": {
+    "lat": 33.1812,
+    "lng": -96.5001,
+    "located": "source",
+    "matched": null
+  },
+  "richmond, texas": {
+    "lat": 29.5809,
+    "lng": -95.763,
+    "located": "source",
+    "matched": null
+  },
+  "sugar land town square, texas street": {
+    "lat": 29.59603,
+    "lng": -95.62174,
+    "located": "source",
+    "matched": null
+  },
+  "dallas, tx": {
+    "lat": 32.78042,
+    "lng": -96.79607,
+    "located": "source",
+    "matched": null
+  },
+  "houston texans ymca, 5202 griggs road": {
+    "lat": 29.6974,
+    "lng": -95.33629,
+    "located": "source",
+    "matched": null
+  },
+  "23101 state highway 242": {
+    "lat": 30.19301,
+    "lng": -95.19939,
+    "located": "source",
+    "matched": null
+  },
+  "arlington improv": {
+    "lat": 32.68074,
+    "lng": -97.10735,
+    "located": "source",
+    "matched": null
+  },
+  "albi wellness & longevity, 2202 west alabama street": {
+    "lat": 29.73902,
+    "lng": -95.41346,
+    "located": "source",
+    "matched": null
+  },
+  "american graffiti, 1308 w 20th st": {
+    "lat": 29.80379,
+    "lng": -95.42292,
+    "located": "source",
+    "matched": null
+  },
+  "turquoise acres ranch, cody's tree service, 3550 schlipf rd": {
+    "lat": 29.82503,
+    "lng": -95.87168,
+    "located": "source",
+    "matched": null
+  },
+  "1400 plaza place": {
+    "lat": 32.94587,
+    "lng": -97.13059,
+    "located": "source",
+    "matched": null
+  },
+  "friends park, 3771 rice blvd": {
+    "lat": 29.71664,
+    "lng": -95.43722,
+    "located": "source",
+    "matched": null
+  },
+  "houston zoo, 6200 hermann park drive": {
+    "lat": 29.71578,
+    "lng": -95.39032,
+    "located": "source",
+    "matched": null
+  },
+  "the star in frisco, 1 cowboys way": {
+    "lat": 33.10981,
+    "lng": -96.82999,
+    "located": "source",
+    "matched": null
+  },
+  "gallery defi, 2200 evanston avenue": {
+    "lat": 32.77237,
+    "lng": -96.83536,
+    "located": "source",
+    "matched": null
+  },
+  "the cipher lounge, 101 south chestnut street": {
+    "lat": 33.19712,
+    "lng": -96.61323,
+    "located": "source",
+    "matched": null
+  },
+  "central market dallas lovers lane, 5750 east lovers lane": {
+    "lat": 32.84978,
+    "lng": -96.76868,
+    "located": "source",
+    "matched": null
+  },
+  "central market dallas midway, 4349 west northwest highway": {
+    "lat": 32.86544,
+    "lng": -96.83648,
+    "located": "source",
+    "matched": null
+  },
+  "central market dallas preston royal, 10720 preston rd": {
+    "lat": 32.89381,
+    "lng": -96.80219,
+    "located": "source",
+    "matched": null
+  },
+  "central market houston, 3815 westheimer road": {
+    "lat": 29.74101,
+    "lng": -95.44379,
+    "located": "source",
+    "matched": null
+  },
+  "m-k-t, 600 north shepherd drive": {
+    "lat": 29.78217,
+    "lng": -95.40839,
+    "located": "source",
+    "matched": null
+  },
+  "tomball": {
+    "lat": 30.097,
+    "lng": -95.616,
+    "located": "source",
+    "matched": null
+  },
+  "the laura hotel, houston downtown, autograph collection, 1070 dallas street": {
+    "lat": 29.75497,
+    "lng": -95.36567,
+    "located": "source",
+    "matched": null
+  },
+  "2012 woodall rodgers freeway": {
+    "lat": 32.78942,
+    "lng": -96.80154,
+    "located": "source",
+    "matched": null
+  },
+  "stemmons freeway": {
+    "lat": 32.79028,
+    "lng": -96.81359,
+    "located": "source",
+    "matched": null
+  },
+  "emancipation park, 3018 emancipation avenue": {
+    "lat": 29.73524,
+    "lng": -95.36563,
+    "located": "source",
+    "matched": null
+  },
+  "henley park at grange, 401 prairie heights drive": {
+    "lat": 29.80364,
+    "lng": -95.85972,
+    "located": "source",
+    "matched": null
+  },
+  "reliant center, nrg park, 1 fannin st": {
+    "lat": 29.68776,
+    "lng": -95.40607,
+    "located": "source",
+    "matched": null
+  },
+  "lacenterra at cinco ranch, 23501 cinco ranch boulevard": {
+    "lat": 29.743,
+    "lng": -95.77506,
+    "located": "source",
+    "matched": null
+  },
+  "sawmill lake club & fitness center, 10323 mount logan": {
+    "lat": 29.47848,
+    "lng": -95.51372,
+    "located": "source",
+    "matched": null
+  },
+  "rose room, 3911 cedar springs road": {
+    "lat": 32.81054,
+    "lng": -96.81107,
+    "located": "source",
+    "matched": null
+  },
+  "7710 lyons ave, houston, tx, las cuatro monarcas, 7710 lyons ave": {
+    "lat": 29.77662,
+    "lng": -95.28955,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's houston - katy fwy, 7620 katy fwy ste 100, houston// 77024": {
+    "lat": 29.76558,
+    "lng": -95.50117,
+    "located": "source",
+    "matched": null
+  },
+  "doubletree ranch park": {
+    "lat": 33.08847,
+    "lng": -97.03479,
+    "located": "source",
+    "matched": null
+  },
+  "marilyn edgar park, 26531 s hillside dr": {
+    "lat": 30.14888,
+    "lng": -95.44513,
+    "located": "source",
+    "matched": null
+  },
+  "5725 highway 90": {
+    "lat": 29.92995,
+    "lng": -95.03843,
+    "located": "source",
+    "matched": null
+  },
+  "downtown aquarium, 410 bagby street": {
+    "lat": 29.76427,
+    "lng": -95.36738,
+    "located": "source",
+    "matched": null
+  },
+  "latino cultural center, 2600 live oak st.": {
+    "lat": 32.78764,
+    "lng": -96.78998,
+    "located": "source",
+    "matched": null
+  },
+  "alliance française de houston": {
+    "lat": 29.74306,
+    "lng": -95.38702,
+    "located": "source",
+    "matched": null
+  },
+  "1100 bagby st": {
+    "lat": 29.75924,
+    "lng": -95.37103,
+    "located": "source",
+    "matched": null
+  },
+  "halperin park, 626 s. r.l. thornton fwy (i-35e)": {
+    "lat": 32.7452,
+    "lng": -96.81364,
+    "located": "source",
+    "matched": null
+  },
+  "a golden tree banquet, 9151 south texas 6": {
+    "lat": 29.68019,
+    "lng": -95.64131,
+    "located": "source",
+    "matched": null
+  },
+  "city orchard, 1201 oliver street": {
+    "lat": 29.77083,
+    "lng": -95.38689,
+    "located": "source",
+    "matched": null
+  },
+  "kemah boardwalk, 405 2nd st": {
+    "lat": 29.54714,
+    "lng": -95.02016,
+    "located": "source",
+    "matched": null
+  },
+  "lancaster heritage park, 250 n. dallas ave.": {
+    "lat": 32.59324,
+    "lng": -96.75629,
+    "located": "source",
+    "matched": null
+  },
+  "sugar land baptist church, 16755 southwest freeway": {
+    "lat": 29.58583,
+    "lng": -95.63778,
+    "located": "source",
+    "matched": null
+  },
+  "231 w jefferson blvd": {
+    "lat": 32.74352,
+    "lng": -96.82586,
+    "located": "source",
+    "matched": null
+  },
+  "birdies icehouse, 65 hirsch road": {
+    "lat": 29.76175,
+    "lng": -95.33179,
+    "located": "source",
+    "matched": null
+  },
+  "the revel, 9305 preston road": {
+    "lat": 33.15521,
+    "lng": -96.80441,
+    "located": "source",
+    "matched": null
+  },
+  "houston improv": {
+    "lat": 29.78545,
+    "lng": -95.46396,
+    "located": "source",
+    "matched": null
+  },
+  "winspear opera house, 2403 flora st,dallas, texas": {
+    "lat": 32.79082,
+    "lng": -96.79803,
+    "located": "source",
+    "matched": null
+  },
+  "discovery green, 1500 mckinney street": {
+    "lat": 29.75307,
+    "lng": -95.35961,
+    "located": "source",
+    "matched": null
+  },
+  "main street crossing, 111 w main st": {
+    "lat": 30.09716,
+    "lng": -95.61606,
+    "located": "source",
+    "matched": null
+  },
+  "the community of faith, 1024 pinemont dr,houston,tx": {
+    "lat": 29.84283,
+    "lng": -95.42018,
+    "located": "source",
+    "matched": null
+  },
+  "3700 main st": {
+    "lat": 29.73847,
+    "lng": -95.37974,
+    "located": "source",
+    "matched": null
+  },
+  "club vivo, 1930 pacific avenue": {
+    "lat": 32.78284,
+    "lng": -96.79469,
+    "located": "source",
+    "matched": null
+  },
+  "fair park - dallas, 3809 grand avenue": {
+    "lat": 32.77949,
+    "lng": -96.75954,
+    "located": "source",
+    "matched": null
+  },
+  "george r. brown convention center, 1001 avenida de las americas": {
+    "lat": 29.75184,
+    "lng": -95.35831,
+    "located": "source",
+    "matched": null
   }
 }
