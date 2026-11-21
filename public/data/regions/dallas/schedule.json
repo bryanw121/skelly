@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-21T20:33:20.101Z",
+  "generatedAt": "2026-11-21T22:16:25.288Z",
   "region": {
     "id": "dallas",
     "name": "Dallas–Fort Worth, TX",
@@ -27,7 +27,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-21T20:30:04.841Z",
+      "checkedAt": "2026-11-21T22:13:44.952Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"
@@ -112,11 +112,8 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-21T14:42:56.104Z",
-      "count": 13,
-      "warnings": [
-        "venue \"Intentional Sports\" isn't in its region's venues.json"
-      ]
+      "checkedAt": "2026-11-21T22:13:47.684Z",
+      "count": 12
     }
   ],
   "sessions": [
@@ -928,31 +925,6 @@
       "verifiedAt": "2026-11-21",
       "venueId": "src-usspt",
       "status": "scheduled"
-    },
-    {
-      "id": "meetup-program-event_317459335-2026-11-21",
-      "date": "2026-11-21",
-      "start": "14:00",
-      "end": "16:00",
-      "title": "Saturday - $10 Open Gym Volleyball - Intentional Sports",
-      "venue": "Intentional Sports",
-      "city": "Dallas",
-      "surface": "indoor",
-      "type": "Open play",
-      "level": "All levels",
-      "price": null,
-      "note": "Hosted by The Program.",
-      "signup": {
-        "url": "https://www.meetup.com/the-program-adult-volleyball-training/events/317459335/",
-        "label": "Details and RSVP"
-      },
-      "source": "https://www.meetup.com/the-program-adult-volleyball-training/events/317459335/",
-      "sourceId": "dallas-meetup",
-      "sport": "volleyball",
-      "region": "dallas",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
-      "status": "scheduled"
     }
   ],
   "publicCourts": {
@@ -1020,6 +992,15 @@
       "region": "dallas"
     },
     {
+      "id": "src-usspt",
+      "name": "USSPT",
+      "city": "Lewisville",
+      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
+      "lat": 33.06454,
+      "lng": -97.005745,
+      "region": "dallas"
+    },
+    {
       "id": "src-greenbriar-community-center",
       "name": "Greenbriar Community Center",
       "city": "Fort Worth",
@@ -1080,15 +1061,6 @@
       "address": "6201 Beaty Street, Fort Worth, TX, 76112",
       "lat": 32.73961,
       "lng": -97.22325,
-      "region": "dallas"
-    },
-    {
-      "id": "src-usspt",
-      "name": "USSPT",
-      "city": "Lewisville",
-      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
-      "lat": 33.06454,
-      "lng": -97.005745,
       "region": "dallas"
     }
   ]

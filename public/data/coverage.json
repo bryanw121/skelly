@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T20:33:54.581Z",
+ "generatedAt": "2026-11-21T22:16:43.108Z",
  "regions": [
   {
    "id": "austin",
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 152,
+     "sessions": 151,
      "pinned": true,
      "booking": true,
      "via": [
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 95,
+     "sessions": 94,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 83,
+     "sessions": 81,
      "pinned": true,
      "booking": true,
      "via": [
@@ -310,18 +310,6 @@
      "sport": "volleyball",
      "sessions": 2,
      "pinned": true,
-     "booking": false,
-     "via": [
-      "dallas-meetup"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Intentional Sports",
-     "city": "Dallas",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": false,
      "booking": false,
      "via": [
       "dallas-meetup"

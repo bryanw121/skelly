@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-21T20:33:20.101Z",
+  "generatedAt": "2026-11-21T22:16:25.288Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -54,33 +54,6 @@
         "type": "Open play"
       },
       "venue_id": "src-r-d-evans-community-center",
-      "status": "scheduled",
-      "previous_starts_at": null
-    },
-    {
-      "id": "meetup-program-event_317459335-2026-11-21",
-      "session_id": "meetup-program-event_317459335-2026-11-21",
-      "source_id": "dallas-meetup",
-      "sport": "volleyball",
-      "region": "dallas",
-      "timezone": "America/Chicago",
-      "title": "Saturday - $10 Open Gym Volleyball - Intentional Sports",
-      "venue": "Intentional Sports",
-      "city": "Dallas",
-      "level": "All levels",
-      "price": null,
-      "starts_at": "2026-11-21T20:00:00.000Z",
-      "ends_at": "2026-11-21T22:00:00.000Z",
-      "signup_url": "https://www.meetup.com/the-program-adult-volleyball-training/events/317459335/",
-      "signup_label": "Details and RSVP",
-      "note": "Hosted by The Program.",
-      "canceled": false,
-      "verified_at": "2026-11-21",
-      "attributes": {
-        "surface": "indoor",
-        "type": "Open play"
-      },
-      "venue_id": null,
       "status": "scheduled",
       "previous_starts_at": null
     },
