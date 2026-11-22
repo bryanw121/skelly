@@ -2824,8 +2824,10 @@
     "lastTried": "2026-11-21T23:10:18.805Z"
   },
   "gerry's grill, 6833 w sam houston pkwy s #109": {
-    "unresolved": true,
-    "lastTried": "2026-11-21T23:10:20.250Z"
+    "lat": 33.07783,
+    "lng": -96.82148,
+    "located": "address",
+    "matched": null
   },
   "market square park, 301 milam st": {
     "lat": 29.76322,
@@ -3000,5 +3002,365 @@
     "lng": -96.7626,
     "located": "address",
     "matched": "1251 W CAMPBELL RD, RICHARDSON, TX, 75080"
+  },
+  "the woodlands waterway marriott hotel & convention center, 1601 lake robbins drive,the woodlands, texas": {
+    "lat": 30.16127,
+    "lng": -95.45886,
+    "located": "source",
+    "matched": null
+  },
+  "leonard e. merrell center, 6301 s stadium ln": {
+    "lat": 29.77985,
+    "lng": -95.83265,
+    "located": "source",
+    "matched": null
+  },
+  "tommie m allen recreation center, 7071 bonnie view rd,dallas, texas": {
+    "lat": 32.65933,
+    "lng": -96.75317,
+    "located": "source",
+    "matched": null
+  },
+  "re:hab bar on the bayou, 1658 enid st.,houston,tx": {
+    "lat": 29.80762,
+    "lng": -95.3753,
+    "located": "source",
+    "matched": null
+  },
+  "reverchon park": {
+    "lat": 32.80047,
+    "lng": -96.81215,
+    "located": "source",
+    "matched": null
+  },
+  "636 s main st": {
+    "lat": 32.93464,
+    "lng": -97.07872,
+    "located": "source",
+    "matched": null
+  },
+  "music hall at fair park, 909 first ave.": {
+    "lat": 32.78037,
+    "lng": -96.76592,
+    "located": "source",
+    "matched": null
+  },
+  "casa manana, 3101 w lancaster ave, fort worth, tx 76107, us": {
+    "lat": 32.7555,
+    "lng": -97.3308,
+    "located": "source",
+    "matched": null
+  },
+  "dee and charles wyly theatre, 2400 flora st": {
+    "lat": 32.78991,
+    "lng": -96.79631,
+    "located": "source",
+    "matched": null
+  },
+  "pasadena convention center, 4334 fairmont pkwy,pasadena,tx": {
+    "lat": 29.64924,
+    "lng": -95.17708,
+    "located": "source",
+    "matched": null
+  },
+  "music hall at fair park, 909 1st ave": {
+    "lat": 32.77666,
+    "lng": -96.79699,
+    "located": "source",
+    "matched": null
+  },
+  "3011 gulden lane": {
+    "lat": 32.77965,
+    "lng": -96.82852,
+    "located": "source",
+    "matched": null
+  },
+  "music hall at fair park": {
+    "lat": 32.78037,
+    "lng": -96.7659,
+    "located": "source",
+    "matched": null
+  },
+  "stockyards ft worth, dallas, texas": {
+    "lat": 32.78394,
+    "lng": -96.79514,
+    "located": "source",
+    "matched": null
+  },
+  "grapevine historic main street district, 401 n main st": {
+    "lat": 32.94404,
+    "lng": -97.07752,
+    "located": "source",
+    "matched": null
+  },
+  "dallas market hall, 2200 n stemmons fwy": {
+    "lat": 32.777,
+    "lng": -96.797,
+    "located": "source",
+    "matched": null
+  },
+  "1707 south ervay street": {
+    "lat": 32.77031,
+    "lng": -96.78823,
+    "located": "source",
+    "matched": null
+  },
+  "1200 e broad st": {
+    "lat": 32.56503,
+    "lng": -97.12537,
+    "located": "source",
+    "matched": null
+  },
+  "humble civic center, 8233 will clayton pkwy": {
+    "lat": 29.98016,
+    "lng": -95.25884,
+    "located": "source",
+    "matched": null
+  },
+  "waxahachie civic center, 2000 civic center ln": {
+    "lat": 32.42322,
+    "lng": -96.86272,
+    "located": "source",
+    "matched": null
+  },
+  "2407 market st., baytown, tx, united states, texas 77520": {
+    "lat": 29.72793,
+    "lng": -94.99757,
+    "located": "source",
+    "matched": null
+  },
+  "neiman marcus willow bend mariposa, 2201 dallas parkway": {
+    "lat": 33.03036,
+    "lng": -96.83158,
+    "located": "source",
+    "matched": null
+  },
+  "9700 bissonnet street": {
+    "lat": 29.6775,
+    "lng": -95.54723,
+    "located": "source",
+    "matched": null
+  },
+  "26090 fm-2090": {
+    "lat": 30.23244,
+    "lng": -95.16027,
+    "located": "source",
+    "matched": null
+  },
+  "3723 fm-646": {
+    "lat": 29.38839,
+    "lng": -95.0906,
+    "located": "source",
+    "matched": null
+  },
+  "13334 wallisville rd": {
+    "lat": 29.80526,
+    "lng": -95.20788,
+    "located": "source",
+    "matched": null
+  },
+  "4930 s colony blvd, the colony, tx 75056-22nd": {
+    "lat": 33.08052,
+    "lng": -96.88704,
+    "located": "source",
+    "matched": null
+  },
+  "3908 main st": {
+    "lat": 32.90128,
+    "lng": -96.56442,
+    "located": "source",
+    "matched": null
+  },
+  "21675 mccleskey rd": {
+    "lat": 30.14345,
+    "lng": -95.24027,
+    "located": "source",
+    "matched": null
+  },
+  "town center park - kingwood, 8 n main st,houston, texas": {
+    "lat": 30.04805,
+    "lng": -95.18504,
+    "located": "source",
+    "matched": null
+  },
+  "512 w main st, league city, tx 77573-37nd, united states, 410 w main st": {
+    "lat": 29.50686,
+    "lng": -95.09905,
+    "located": "source",
+    "matched": null
+  },
+  "310 morton st": {
+    "lat": 29.58306,
+    "lng": -95.76154,
+    "located": "source",
+    "matched": null
+  },
+  "1755 main street (fm 2931), providence village, tx, united states, texas 76227, usps collection box - blue box, 1755 fm 2931": {
+    "lat": 33.23567,
+    "lng": -96.96472,
+    "located": "source",
+    "matched": null
+  },
+  "constellation field": {
+    "lat": 29.62362,
+    "lng": -95.64704,
+    "located": "source",
+    "matched": null
+  },
+  "houston, texas": {
+    "lat": 29.7602,
+    "lng": -95.3694,
+    "located": "source",
+    "matched": null
+  },
+  "bhakti urban farm, 5415 wheatley street": {
+    "lat": 29.8451,
+    "lng": -95.43098,
+    "located": "source",
+    "matched": null
+  },
+  "uta - texas hall, 701 s nedderman dr": {
+    "lat": 32.72966,
+    "lng": -97.11531,
+    "located": "source",
+    "matched": null
+  },
+  "the human potential center, 2007 bert avenue": {
+    "lat": 30.23313,
+    "lng": -97.78735,
+    "located": "source",
+    "matched": null
+  },
+  "kemah board walk, 2551 quenby st": {
+    "lat": 29.72137,
+    "lng": -95.41768,
+    "located": "source",
+    "matched": null
+  },
+  "uptown pup, 2905 thomas avenue": {
+    "lat": 32.79697,
+    "lng": -96.79713,
+    "located": "source",
+    "matched": null
+  },
+  "meyerson symphony center, 2301 flora st. ste. 100": {
+    "lat": 32.77666,
+    "lng": -96.79699,
+    "located": "source",
+    "matched": null
+  },
+  "south picnic lane": {
+    "lat": 29.76219,
+    "lng": -95.43461,
+    "located": "source",
+    "matched": null
+  },
+  "cypress creek christian community center, 6823 cypresswood dr,spring,tx": {
+    "lat": 30.01209,
+    "lng": -95.51047,
+    "located": "source",
+    "matched": null
+  },
+  "longhorn gardens, 2800 s lamar blvd": {
+    "lat": 30.2445,
+    "lng": -97.78187,
+    "located": "source",
+    "matched": null
+  },
+  "historic downtown mckinney, 111 north tennessee street": {
+    "lat": 33.19764,
+    "lng": -96.61547,
+    "located": "source",
+    "matched": null
+  },
+  "downtown arlington, 500 east front street": {
+    "lat": 32.73736,
+    "lng": -97.10234,
+    "located": "source",
+    "matched": null
+  },
+  "finch park, west standifer street,mckinney, texas": {
+    "lat": 33.19104,
+    "lng": -96.62001,
+    "located": "source",
+    "matched": null
+  },
+  "main street garden, 1902 main st,dallas, texas": {
+    "lat": 32.78128,
+    "lng": -96.79549,
+    "located": "source",
+    "matched": null
+  },
+  "city cathedral church - woodlands, 27131 hanna road": {
+    "lat": 30.15954,
+    "lng": -95.43749,
+    "located": "source",
+    "matched": null
+  },
+  "venture x dallas - braniff centre, 7701 lemmon avenue": {
+    "lat": 32.84871,
+    "lng": -96.84086,
+    "located": "source",
+    "matched": null
+  },
+  "eureka heights brew co, 941 west 18th street": {
+    "lat": 29.80195,
+    "lng": -95.41644,
+    "located": "source",
+    "matched": null
+  },
+  "lower greenville, 2101 greenville ave": {
+    "lat": 32.81565,
+    "lng": -96.77041,
+    "located": "source",
+    "matched": null
+  },
+  "ani's day & night, 7107 east riverside drive": {
+    "lat": 30.22099,
+    "lng": -97.69562,
+    "located": "source",
+    "matched": null
+  },
+  "dallas farmers market, 920 s harwood st,dallas, texas": {
+    "lat": 32.7775,
+    "lng": -96.79002,
+    "located": "source",
+    "matched": null
+  },
+  "houston railhouse, 5601 navigation boulevard": {
+    "lat": 29.74825,
+    "lng": -95.31695,
+    "located": "source",
+    "matched": null
+  },
+  "shops at redbird, 3662 w camp wisdom rd": {
+    "lat": 32.66029,
+    "lng": -96.87676,
+    "located": "source",
+    "matched": null
+  },
+  "jones hall at wortham center, 615 louisiana st.": {
+    "lat": 29.76087,
+    "lng": -95.36502,
+    "located": "source",
+    "matched": null
+  },
+  "fair park - dallas, 3550 grand avenue, dallas, tx 75210, us": {
+    "lat": 32.7767,
+    "lng": -96.797,
+    "located": "source",
+    "matched": null
+  },
+  "fair market, 1100 east 5th street": {
+    "lat": 30.26389,
+    "lng": -97.73167,
+    "located": "source",
+    "matched": null
+  },
+  "springhill suites by marriott houston downtown/convention center, 914 dallas street": {
+    "lat": 29.75538,
+    "lng": -95.36691,
+    "located": "source",
+    "matched": null
   }
 }

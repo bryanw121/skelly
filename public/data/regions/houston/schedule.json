@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T02:16:33.018Z",
+  "generatedAt": "2026-11-22T07:09:42.365Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,10 +67,9 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T02:13:20.647Z",
-      "count": 24,
+      "checkedAt": "2026-11-22T07:06:35.493Z",
+      "count": 20,
       "warnings": [
-        "reclub-3YV72K: no surface",
         "reclub-NJKPQA: no surface",
         "reclub-OKAE7P: no surface",
         "reclub-J533LP: no surface",
@@ -87,9 +86,6 @@
         "reclub-Y1ZF0D: no surface",
         "reclub-JK2478: no surface",
         "reclub-T02HQF: no surface",
-        "reclub-PY6UV1: no surface",
-        "reclub-6TSHGM: no surface",
-        "reclub-5E0DAN: no surface",
         "reclub-230JCQ: no surface",
         "reclub-2BBFXM: no surface",
         "reclub-9P8J21: no surface",
@@ -106,7 +102,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/houston-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-21T23:01:30.781Z",
+      "checkedAt": "2026-11-22T07:06:37.869Z",
       "count": 0
     },
     {
@@ -119,7 +115,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-22T02:13:27.639Z",
+      "checkedAt": "2026-11-22T07:06:41.002Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -127,31 +123,6 @@
     }
   ],
   "sessions": [
-    {
-      "id": "reclub-3YV72K",
-      "date": "2026-11-21",
-      "start": "20:00",
-      "end": "23:00",
-      "title": "AVA Open Gym - 8 courts",
-      "venue": "Absolute Volleyball Academy and Absolute Beach",
-      "type": "Open play",
-      "level": "All levels",
-      "price": "$10",
-      "note": "Hosted by Houston Vball, every Saturday.",
-      "capacity": 145,
-      "signup": {
-        "url": "https://reclub.co/m/3YV72K",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/3YV72K",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
-      "venueId": "src-absolute-volleyball-academy-and-absolute-beach",
-      "status": "scheduled"
-    },
     {
       "id": "reclub-NJKPQA",
       "date": "2026-11-22",
@@ -173,7 +144,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-absolute-volleyball-academy-and-absolute-beach",
       "status": "scheduled"
     },
@@ -198,7 +169,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-skyline-volleyball-academy",
       "status": "scheduled"
     },
@@ -223,7 +194,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-tellepsen-family-downtown-ymca",
       "status": "scheduled"
     },
@@ -248,7 +219,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-tellepsen-family-downtown-ymca",
       "status": "scheduled"
     },
@@ -273,7 +244,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-katy-sports-center",
       "status": "scheduled"
     },
@@ -298,7 +269,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-katy-sports-center",
       "status": "scheduled"
     },
@@ -323,7 +294,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-wakefield-crowbar",
       "status": "scheduled"
     },
@@ -348,7 +319,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-the-zone",
       "status": "scheduled"
     },
@@ -373,7 +344,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-katy-sports-center",
       "status": "scheduled"
     },
@@ -399,7 +370,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-emancipation-park",
       "status": "cancelled"
     },
@@ -424,7 +395,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-champion-forest-baptist-church-champions-campus",
       "status": "scheduled"
     },
@@ -449,7 +420,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-champion-forest-baptist-church-champions-campus",
       "status": "scheduled"
     },
@@ -474,7 +445,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-champion-forest-baptist-church-champions-campus",
       "status": "scheduled"
     },
@@ -499,7 +470,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-blastros",
       "status": "scheduled"
     },
@@ -508,7 +479,7 @@
       "date": "2026-11-27",
       "start": "21:00",
       "end": "24:00",
-      "title": "Friday Night Volleyball",
+      "title": "King of the Court (prepay to play)",
       "venue": "T4 Court Rentals",
       "type": "Open play",
       "level": "All levels",
@@ -524,84 +495,8 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-t4-court-rentals",
-      "status": "scheduled"
-    },
-    {
-      "id": "reclub-PY6UV1",
-      "date": "2026-11-21",
-      "start": "14:30",
-      "end": "22:30",
-      "title": "Saturday Open Play 4x4",
-      "venue": "Houston Stars",
-      "type": "Open play",
-      "level": "All levels",
-      "price": "$12",
-      "note": "Hosted by Blastros Sand Volleyball, every Saturday.",
-      "capacity": 100,
-      "signup": {
-        "url": "https://reclub.co/m/PY6UV1",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/PY6UV1",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
-      "venueId": "src-houston-stars",
-      "status": "rescheduled",
-      "previousStart": "2026-11-21 16:00"
-    },
-    {
-      "id": "reclub-6TSHGM",
-      "date": "2026-11-21",
-      "start": "17:00",
-      "end": "21:00",
-      "title": "The Volleyball Hangout",
-      "venue": "Collins Park",
-      "type": "Open play",
-      "level": "All levels",
-      "price": null,
-      "note": "Hosted by The Volleyball Hangout, every Saturday.",
-      "capacity": 30,
-      "signup": {
-        "url": "https://reclub.co/m/6TSHGM",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/6TSHGM",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
-      "venueId": "src-collins-park",
-      "status": "scheduled"
-    },
-    {
-      "id": "reclub-5E0DAN",
-      "date": "2026-11-21",
-      "start": "17:00",
-      "end": "21:00",
-      "title": "The Volleyball Hangout",
-      "venue": "Collins Park",
-      "type": "Open play",
-      "level": "All levels",
-      "price": null,
-      "note": "Hosted by The Volleyball Hangout, every Saturday.",
-      "capacity": 30,
-      "signup": {
-        "url": "https://reclub.co/m/5E0DAN",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/5E0DAN",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
-      "venueId": "src-collins-park",
       "status": "scheduled"
     },
     {
@@ -625,7 +520,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-collins-park",
       "status": "scheduled"
     },
@@ -650,7 +545,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-collins-park",
       "status": "scheduled"
     },
@@ -675,7 +570,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-collins-park",
       "status": "scheduled"
     },
@@ -700,7 +595,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "venueId": "src-collins-park",
       "status": "scheduled"
     }
@@ -795,15 +690,6 @@
       "address": "1419 Vander Wilt Lane, Katy, Tx",
       "lat": 29.7893,
       "lng": -95.7427,
-      "region": "houston"
-    },
-    {
-      "id": "src-houston-stars",
-      "name": "Houston Stars",
-      "city": null,
-      "address": "6942 Cotton Drive, Houston, Tx",
-      "lat": 29.836397,
-      "lng": -95.49456,
       "region": "houston"
     },
     {

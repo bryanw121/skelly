@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T02:17:00.230Z",
+ "generatedAt": "2026-11-22T07:14:29.438Z",
  "regions": [
   {
    "id": "austin",
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 151,
+     "sessions": 155,
      "pinned": true,
      "booking": true,
      "via": [
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 92,
+     "sessions": 93,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 84,
+     "sessions": 86,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 78,
+     "sessions": 76,
      "pinned": true,
      "booking": true,
      "via": [
@@ -102,20 +102,6 @@
      "lead": false
     },
     {
-     "venue": "Volleyworld (Pflugerville)",
-     "city": "Pflugerville",
-     "sport": "volleyball",
-     "sessions": 12,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "manual",
-      "reclub",
-      "volleyworld"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Pickleland",
      "city": "Austin",
      "sport": "pickleball",
@@ -124,6 +110,20 @@
      "booking": true,
      "via": [
       "austin-pickleball-meetup"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Volleyworld (Pflugerville)",
+     "city": "Pflugerville",
+     "sport": "volleyball",
+     "sessions": 9,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "manual",
+      "reclub",
+      "volleyworld"
      ],
      "lead": false
     },
@@ -142,6 +142,18 @@
      "lead": false
     },
     {
+     "venue": "Volleyworld (Georgetown)",
+     "city": "Georgetown",
+     "sport": "volleyball",
+     "sessions": 6,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "volleyworld"
+     ],
+     "lead": false
+    },
+    {
      "venue": "Bee Cave on Ice",
      "city": "Bee Cave",
      "sport": "ice_skating",
@@ -154,14 +166,14 @@
      "lead": false
     },
     {
-     "venue": "Volleyworld (Georgetown)",
-     "city": "Georgetown",
+     "venue": "Austin Sports Center - Central",
+     "city": "Austin",
      "sport": "volleyball",
-     "sessions": 5,
+     "sessions": 3,
      "pinned": true,
      "booking": false,
      "via": [
-      "volleyworld"
+      "volleyball-austin"
      ],
      "lead": false
     },
@@ -178,14 +190,15 @@
      "lead": false
     },
     {
-     "venue": "Austin Sports Center - Central",
-     "city": "Austin",
+     "venue": "The Crossover",
+     "city": "Cedar Park",
      "sport": "volleyball",
-     "sessions": 2,
+     "sessions": 3,
      "pinned": true,
      "booking": false,
      "via": [
-      "volleyball-austin"
+      "manual",
+      "velocity"
      ],
      "lead": false
     },
@@ -234,19 +247,6 @@
      "booking": false,
      "via": [
       "austin-city-pickleball"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "The Crossover",
-     "city": "Cedar Park",
-     "sport": "volleyball",
-     "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "manual",
-      "velocity"
      ],
      "lead": false
     },
@@ -470,7 +470,7 @@
      "venue": "Collins Park",
      "city": "",
      "sport": "volleyball",
-     "sessions": 6,
+     "sessions": 4,
      "pinned": true,
      "booking": false,
      "via": [
@@ -503,7 +503,7 @@
      "lead": true
     },
     {
-     "venue": "Absolute Volleyball Academy and Absolute Beach",
+     "venue": "Tellepsen Family Downtown YMCA",
      "city": "",
      "sport": "volleyball",
      "sessions": 2,
@@ -515,10 +515,10 @@
      "lead": true
     },
     {
-     "venue": "Tellepsen Family Downtown YMCA",
+     "venue": "Absolute Volleyball Academy and Absolute Beach",
      "city": "",
      "sport": "volleyball",
-     "sessions": 2,
+     "sessions": 1,
      "pinned": true,
      "booking": false,
      "via": [
@@ -540,18 +540,6 @@
     },
     {
      "venue": "Emancipation Park",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Houston Stars",
      "city": "",
      "sport": "volleyball",
      "sessions": 1,

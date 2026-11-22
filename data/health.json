@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        250,
         246,
         262,
         264,
@@ -11,13 +10,14 @@
         252,
         249,
         243,
-        254
+        254,
+        255
       ],
-      "sessions": 254,
+      "sessions": 255,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.69,
+        "level": 0.71,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -30,7 +30,6 @@
     "austin-picklehaus": {
       "counts": [
         161,
-        161,
         153,
         153,
         153,
@@ -38,13 +37,14 @@
         152,
         151,
         151,
-        151
+        151,
+        155
       ],
-      "sessions": 151,
+      "sessions": 155,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.87,
+        "level": 0.88,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -76,7 +76,7 @@
         11,
         11,
         11,
-        11,
+        10,
         10,
         10,
         10,
@@ -193,9 +193,9 @@
         1,
         1,
         1,
-        1
+        2
       ],
-      "sessions": 1,
+      "sessions": 2,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -213,7 +213,6 @@
     "reclub": {
       "counts": [
         6,
-        6,
         5,
         5,
         5,
@@ -221,9 +220,10 @@
         5,
         5,
         5,
-        5
+        5,
+        3
       ],
-      "sessions": 5,
+      "sessions": 3,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -681,9 +681,9 @@
         2,
         2,
         2,
-        2
+        3
       ],
-      "sessions": 2,
+      "sessions": 3,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -754,7 +754,7 @@
     "chaparral-ice": {
       "counts": [
         37,
-        37,
+        35,
         35,
         35,
         35,
@@ -773,7 +773,7 @@
         "city": 1,
         "surface": 1,
         "type": 1,
-        "capacity": 0.31,
+        "capacity": 0.34,
         "spotsLeft": 0,
         "signup": 1
       },
@@ -900,13 +900,13 @@
     "austin-city-pickleball": {
       "counts": [
         13,
-        13,
         10,
         10,
         10,
         10,
         10,
         10,
+        9,
         9,
         9
       ],
@@ -926,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 597
+      "failStreak": 598
     },
     "dallas-reclub": {
       "counts": [
@@ -976,7 +976,7 @@
     "foro": {
       "counts": [
         2,
-        2,
+        0,
         0,
         0,
         0,
@@ -1049,11 +1049,11 @@
         14,
         14,
         14,
-        14,
         13,
         13,
         13,
         13,
+        12,
         12,
         12
       ],
@@ -1074,7 +1074,6 @@
     "houston-reclub": {
       "counts": [
         23,
-        23,
         22,
         22,
         22,
@@ -1082,12 +1081,13 @@
         23,
         23,
         23,
-        24
+        24,
+        20
       ],
-      "sessions": 24,
+      "sessions": 20,
       "coverage": {
         "end": 1,
-        "price": 0.54,
+        "price": 0.55,
         "level": 1,
         "venue": 1,
         "city": 0,
@@ -1274,9 +1274,6 @@
     "houston-reclub:warning:reclub-1GOBAB: no surface",
     "houston-reclub:warning:reclub-230JCQ: no surface",
     "houston-reclub:warning:reclub-2BBFXM: no surface",
-    "houston-reclub:warning:reclub-3YV72K: no surface",
-    "houston-reclub:warning:reclub-5E0DAN: no surface",
-    "houston-reclub:warning:reclub-6TSHGM: no surface",
     "houston-reclub:warning:reclub-8SFAT2: no surface",
     "houston-reclub:warning:reclub-9P8J21: no surface",
     "houston-reclub:warning:reclub-HC3B4O: no surface",
@@ -1288,7 +1285,6 @@
     "houston-reclub:warning:reclub-MCRPQ4: no surface",
     "houston-reclub:warning:reclub-NJKPQA: no surface",
     "houston-reclub:warning:reclub-OKAE7P: no surface",
-    "houston-reclub:warning:reclub-PY6UV1: no surface",
     "houston-reclub:warning:reclub-T02HQF: no surface",
     "houston-reclub:warning:reclub-TCHJ1D: no surface",
     "houston-reclub:warning:reclub-VGIK6U: no surface",
@@ -1309,8 +1305,7 @@
     "manual:four-seasons-ice-rodeo:changed:2026-11-21",
     "manual:hanovers-open:changed:2026-11-18",
     "manual:hanovers-open:unverified",
-    "manual:ssc-crossover-mon-sand:changed:2026-11-21",
-    "manual:ssc-crossover-mon-sand:unverified",
-    "reclub:warning:https://reclub.co/m/V4DO6Q: HTTP 403"
+    "manual:ssc-crossover-mon-sand:changed:2026-11-22",
+    "manual:ssc-crossover-mon-sand:unverified"
   ]
 }
