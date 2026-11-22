@@ -9,6 +9,7 @@
 // A visitor loads one region. Times are shown in the region's own time zone, wherever the viewer is.
 
 // The Events view's pure helpers (pagination, date ranges, map places, the dropdown's state).
+import { startPings, track } from './usage.js';
 import { TIME_PRESETS, inWindow, parseWindow, presetOf, toHHMM, windowLabel, windowNote } from './when.js';
 import { googleCalendarUrl, icsFile, icsName, visitItem } from './calendar.js';
 import { EVENT_ICONS, eventIcon, eventTopics, SEARCH_TAGS, highlightParts, matchesText, searchTagLabel, searchTags, sessionText, tagCounts } from './search.js';
@@ -560,6 +561,10 @@ document.addEventListener('toggle', (e) => {
   if (e.target.matches?.('details.earlier')) earlierOpen = e.target.open;
   // Opening an event's details puts it in the address, so the link shared from there opens on it.
   const card = e.target.matches?.('.ev-row details.more') ? e.target.closest('.ev-row') : null;
+  if (e.target.open && e.target.matches?.('details.more')) {
+    const row = e.target.closest('.row');
+    track('detail', { tab: state.section, sport: state.section === 'sports' ? state.sport : undefined, kind: row?.classList.contains('ev-row') ? 'event' : 'session', source: row?.querySelector('.via')?.textContent?.replace(/^Found via /, '').slice(0, 40), region: usageRegion() });
+  }
   if (card?.dataset.ev) {
     if (e.target.open) evLink = card.dataset.ev; else if (evLink === card.dataset.ev) evLink = null;
     for (const r of document.querySelectorAll('.ev-row.linked')) if (r !== card || !e.target.open) r.classList.remove('linked');
@@ -982,8 +987,33 @@ function list(items) { return items.length <= 1 ? items.join('') : `${items.slic
 const liveCourts = () => SPORTS[state.sport].courts || regionCourts().length > 0;
 const regionCourts = () => (courts?.venues || []).filter((v) => (v.sport || 'volleyball') === state.sport && (!region || !v.region || v.region === region.id));
 
+/** The city the page is showing, as the Events list decides it. */
+const usageRegion = () => region?.id ?? state.region ?? 'austin';
+/** Usage: the page opening, then each change of tab, sport, view, city or list/map (one event per change). */
+let usageKey = null;
+const usageWhere = () => ({ tab: state.section, sport: state.section === 'sports' ? state.sport : undefined, region: usageRegion(), layout: state.layout });
+function trackView() {
+  // Wait (up to 3 s) for the city, so the first event says where; then record it either way.
+  if (!index && performance.now() < 3000) { setTimeout(trackView, 300); return; }
+  const w = { ...usageWhere(), how: state.section === 'sports' ? state.view : state.evKind };
+  const key = JSON.stringify(w);
+  if (key === usageKey) return;
+  if (usageKey === null) {
+    let ref; try { ref = document.referrer && new URL(document.referrer).host !== location.host ? new URL(document.referrer).host : undefined; } catch {}
+    track('open', { ...w, ref }); startPings(() => ({ tab: state.section, region: usageRegion() }));
+  } else track('view', w);
+  usageKey = key;
+}
+/** Usage: a search once typing pauses (1.5 s), with how many results it found. */
+let searchTimer = null;
+function trackSearch(q) {
+  clearTimeout(searchTimer);
+  if (!q || q.trim().length < 2) return;
+  searchTimer = setTimeout(() => track('search', { q, tab: state.section, sport: state.section === 'sports' ? state.sport : undefined, region: usageRegion(), results: document.querySelectorAll(state.section === 'events' ? '#events .ev-row' : '#list .row').length }), 1500);
+}
 function render() {
   syncUrl(); renderRegion(); renderTopTabs(); renderSports();
+  queueMicrotask(trackView);
   // Events: the feed is the source of truth, so the view works without the day's schedule.
   renderFiltersSummary();
   if (state.section === 'events') { $('timeBtn').hidden = true; $('searchWrap').hidden = true; renderEvents(); renderMap(); fitHeader(); return; }
@@ -1163,6 +1193,7 @@ function setQuery(q, { fill = false, topic = null } = {}) {
   if (state.section === 'events') { state.evQ = q; state.evTopic = topic; } else state.spQ = q; // typing is a word search; a tag is exactly its events
   if (fill) $('search').value = q;
   mapPick = null; render();
+  if (topic) track('filter', { tab: state.section, what: 'topic', value: topic, region: usageRegion() }); else trackSearch(q);
 }
 /** Sports: the time pill beside the level filter (open play only). */
 function renderTimeBtn() {
@@ -2015,6 +2046,22 @@ for (const d of sheets()) {
     if (e.clientY < r.top || e.clientY > r.bottom || e.clientX < r.left || e.clientX > r.right) d.close();
   });
 }
+// Usage: filters picked and taps out to a source (book, event page, Instagram, map, calendar).
+document.addEventListener('click', (e) => {
+  const reg = usageRegion();
+  const f = e.target.closest('[data-evkind],[data-evsort],[data-evlike],[data-evtag],[data-day]');
+  if (f) {
+    const [what, value] = Object.entries(f.dataset).find(([k]) => ['evkind', 'evsort', 'evlike', 'evtag', 'day'].includes(k)) ?? [];
+    if (what) track('filter', { tab: state.section, what: what.replace(/^ev/, ''), value: String(value).slice(0, 40), region: reg });
+  }
+  if (e.target.closest('#calGoogle, [data-ics]')) { track('out', { tab: state.section, link: 'calendar', region: reg }); return; }
+  const a = e.target.closest('a[href^="http"]');
+  if (a && !a.href.startsWith(location.origin)) {
+    let host = ''; try { host = new URL(a.href).hostname.replace(/^www\./, ''); } catch {}
+    const link = /instagram\.com$/.test(host) ? 'instagram' : /google\.[a-z.]+$|maps\.apple\.com$|openstreetmap\.org$/.test(host) && /map|dir/i.test(a.href) ? 'map' : a.matches('.signup, .book, .go-btn') ? 'book' : 'page';
+    track('out', { tab: state.section, link, source: host.slice(0, 60), region: reg });
+  }
+}, true);
 document.addEventListener('click', async (e) => {
   const cal = e.target.closest('[data-cal]');
   if (cal) { openCalSheet(cal.dataset.cal, cal); return; }

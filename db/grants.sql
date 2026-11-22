@@ -13,6 +13,11 @@ begin
     grant select on sources, sessions, occurrences, session_changes, scrape_runs to schelagg_reader;
     -- Tables a later migration adds are readable too (when created by this same owner).
     alter default privileges in schema public grant select on tables to schelagg_reader;
+    -- The site's /api/hit records usage with this same login: insert only, into one table.
+    if exists (select 1 from information_schema.tables where table_schema = 'public' and table_name = 'usage_events') then
+      grant insert on usage_events to schelagg_reader;
+      grant usage on sequence usage_events_id_seq to schelagg_reader;
+    end if;
   end if;
 end
 $$;
