@@ -1033,6 +1033,7 @@ function eventKicker(ev, { plain = false } = {}) {
   const topics = eventTopics(ev).slice(0, 2);
   const btn = (t, i) => (plain ? `<span class="kick${i ? ' more' : ''}">${esc(searchTagLabel(t))}</span>` : `<button type="button" class="kick${i ? ' more' : ''}" data-topic="${esc(t)}" aria-label="Show events tagged ${esc(searchTagLabel(t))}">${esc(searchTagLabel(t))}</button>`);
   const parts = topics.length ? topics.map(btn) : eventKind(ev) ? [`<span class="kick">${esc(kindLabel(eventKind(ev)))}</span>`] : [];
+  if (topics.length && eventKind(ev) === 'weekly') parts.push('<span class="kick more">Every week</span>');
   for (const g of eventTags(ev)) parts.push(`<span class="kick more">${esc(tagLabel(g))}</span>`);
   return parts.length ? `<div class="ev-kick ic-${eventIcon(ev, eventKind(ev))}">${parts.join('<span class="kick-dot" aria-hidden="true">·</span>')}</div>` : '';
 }
@@ -1172,7 +1173,7 @@ function renderEventsSheet(list) {
   const counts = countEvents(list);
   const opt = (attr, id, label, hint, n, on) => `<button type="button" class="tab opt" ${attr}="${id}" aria-pressed="${on}"><span class="lbl">${esc(label)}${hint ? `<small>${esc(hint)}</small>` : ''}</span><span class="n">${n}</span></button>`;
   const shown = filterEvents(list, evFilters(), NOW.iso).length;
-  $('eventsOpts').innerHTML = `<h3 class="opt-h">Kind</h3>${opt('data-evkind', 'all', 'All events', '', counts.all, state.evKind === 'all')}${EVENT_KINDS.map((k) => opt('data-evkind', k.id, k.label, k.hint, counts[k.id], state.evKind === k.id)).join('')}
+  $('eventsOpts').innerHTML = `<h3 class="opt-h">Kind</h3>${opt('data-evkind', 'all', 'All events', '', counts.all, state.evKind === 'all')}${EVENT_KINDS.filter((k) => counts[k.id] || state.evKind === k.id).map((k) => opt('data-evkind', k.id, k.label, k.hint, counts[k.id], state.evKind === k.id)).join('')}
     <h3 class="opt-h">Tags</h3>${EVENT_TAGS.map((g) => opt('data-evtag', g.id, g.label, '', counts[g.id], state.evTags.includes(g.id))).join('')}${tagCounts(list).map((t) => opt('data-evtopic', t.id, t.label, '', t.n, state.evTopic === t.id)).join('')}
     <button type="button" class="go-btn" data-close>Show ${shown} event${shown === 1 ? '' : 's'}</button>`;
 }

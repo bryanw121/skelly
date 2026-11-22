@@ -47,7 +47,7 @@ const regions = loadRegions().map((r) => r.info);
 const today = todayIn(new Date(now));
 const results = await readEventSources(config, { get, today, regions });
 // Weekly markets (farmers, makers, flea) from OpenStreetMap: each one's next market day (lib/markets.js).
-results.push(await readMarkets(regions, { get, today }));
+results.push(await readMarkets(regions, { today }));
 // Listing pages give a date and no hours: each event's own page has them. Read once, remembered.
 const HOURS = repoPath('public/data/event-hours.json');
 const hours = existsSync(HOURS) ? JSON.parse(readFileSync(HOURS, 'utf8')) : {};
