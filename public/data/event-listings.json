@@ -1,5 +1,5 @@
 {
- "listingsAt": "2026-11-22T07:11:44.224Z",
+ "listingsAt": "2026-11-22T07:28:19.154Z",
  "events": [
   {
    "id": "evt-b08715cc63748015",
@@ -457,6 +457,8 @@
    "lat": 29.75437,
    "lng": -95.34113,
    "located": "source",
+   "startTime": "12:00",
+   "endTime": "18:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -477,6 +479,28 @@
    "located": "source",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
+  },
+  {
+   "id": "mkt-73edc8bdca31f0dd",
+   "category": "popup",
+   "kind": "weekly",
+   "tags": [],
+   "title": "International Market Place",
+   "venue": "International Market Place, 239 Greens Road",
+   "city": "Houston",
+   "startDate": "2026-11-22",
+   "startTime": "10:00",
+   "endTime": "19:00",
+   "sourceUrl": "https://www.openstreetmap.org/way/845876391",
+   "source": "Weekly markets",
+   "description": "Every Friday, Saturday and Sunday, 10am–7pm.",
+   "weekly": true,
+   "region": "houston",
+   "lat": 29.95067,
+   "lng": -95.41411,
+   "located": "source",
+   "sourceId": "weekly-markets",
+   "firstSeen": "2026-11-22"
   },
   {
    "id": "evt-a1223733e13595b3",
@@ -568,7 +592,6 @@
    "startTime": "02:00",
    "endTime": "05:00",
    "sourceId": "allevents-dallas",
-   "description": "Handcrafted toffee sampling and sales at Pottery Barn — Sun Nov 22 and Sun Dec 20, 12–6pm.",
    "firstSeen": "2026-11-21"
   },
   {
@@ -588,6 +611,28 @@
    "located": "source",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
+  },
+  {
+   "id": "mkt-e6f84f90bc9107d0",
+   "category": "popup",
+   "kind": "weekly",
+   "tags": [],
+   "title": "Texas Farmers' Market at Mueller",
+   "venue": "Texas Farmers' Market at Mueller",
+   "city": "Austin",
+   "startDate": "2026-11-22",
+   "startTime": "10:00",
+   "endTime": "14:00",
+   "sourceUrl": "https://www.openstreetmap.org/node/8843074543",
+   "source": "Weekly markets",
+   "description": "Every Sunday, 10am–2pm.",
+   "weekly": true,
+   "region": "austin",
+   "lat": 30.30035,
+   "lng": -97.7034,
+   "located": "source",
+   "sourceId": "weekly-markets",
+   "firstSeen": "2026-11-22"
   },
   {
    "id": "evt-688a6281f9c2e616",
@@ -624,6 +669,28 @@
    "located": "source",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
+  },
+  {
+   "id": "mkt-b996e133d93d7034",
+   "category": "popup",
+   "kind": "weekly",
+   "tags": [],
+   "title": "Urban Harvest Farmers Market",
+   "venue": "Urban Harvest Farmers Market",
+   "city": "Houston",
+   "startDate": "2026-11-22",
+   "startTime": "11:00",
+   "endTime": "14:00",
+   "sourceUrl": "https://www.openstreetmap.org/node/2331836292",
+   "source": "Weekly markets",
+   "description": "Every Saturday and Sunday.",
+   "weekly": true,
+   "region": "houston",
+   "lat": 29.73532,
+   "lng": -95.42432,
+   "located": "source",
+   "sourceId": "weekly-markets",
+   "firstSeen": "2026-11-22"
   },
   {
    "id": "evt-d0e793565dcbbc48",
@@ -720,6 +787,8 @@
    "lat": 29.66757,
    "lng": -95.49146,
    "located": "source",
+   "startTime": "14:00",
+   "endTime": "18:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -782,6 +851,28 @@
    "lng": -96.76592,
    "located": "source",
    "sourceId": "allevents-dallas",
+   "firstSeen": "2026-11-22"
+  },
+  {
+   "id": "mkt-13e68600cc47a0a4",
+   "category": "popup",
+   "kind": "weekly",
+   "tags": [],
+   "title": "Hutto Farmer's Market",
+   "venue": "Hutto Farmer's Market, 350 Ed Schmidt Boulevard",
+   "city": "Hutto",
+   "startDate": "2026-11-25",
+   "startTime": "15:00",
+   "endTime": "19:00",
+   "sourceUrl": "https://huttofarmersmarket.org/",
+   "source": "Weekly markets",
+   "description": "Every Wednesday, 3pm–7pm.",
+   "weekly": true,
+   "region": "austin",
+   "lat": 30.54621,
+   "lng": -97.55989,
+   "located": "source",
+   "sourceId": "weekly-markets",
    "firstSeen": "2026-11-22"
   },
   {
@@ -1229,6 +1320,28 @@
    "sourceId": "allevents-austin"
   },
   {
+   "id": "mkt-9b7fffdfe0f83fe2",
+   "category": "popup",
+   "kind": "weekly",
+   "tags": [],
+   "title": "Bastrop 1832 Farmer's Market",
+   "venue": "Bastrop 1832 Farmer's Market, 1302 Chestnut Street",
+   "city": "Bastrop",
+   "startDate": "2026-11-28",
+   "startTime": "10:00",
+   "endTime": "14:00",
+   "sourceUrl": "https://www.bastrop1832farmersmarket.org/",
+   "source": "Weekly markets",
+   "description": "Every Saturday, 10am–2pm.",
+   "weekly": true,
+   "region": "austin",
+   "lat": 30.11118,
+   "lng": -97.31224,
+   "located": "source",
+   "sourceId": "weekly-markets",
+   "firstSeen": "2026-11-22"
+  },
+  {
    "id": "evt-6e506689dc359324",
    "category": "seasonal",
    "kind": "seasonal",
@@ -1352,6 +1465,28 @@
    "located": "source",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
+  },
+  {
+   "id": "mkt-19164d6cf63bb024",
+   "category": "popup",
+   "kind": "weekly",
+   "tags": [],
+   "title": "Fulshear Farmers Market",
+   "venue": "Fulshear Farmers Market, 9035 Bois D'Arc Lane",
+   "city": "Fulshear",
+   "startDate": "2026-11-28",
+   "startTime": "09:00",
+   "endTime": "13:00",
+   "sourceUrl": "https://www.openstreetmap.org/way/562246380",
+   "source": "Weekly markets",
+   "description": "Every Saturday, 9am–1pm.",
+   "weekly": true,
+   "region": "houston",
+   "lat": 29.69009,
+   "lng": -95.88929,
+   "located": "source",
+   "sourceId": "weekly-markets",
+   "firstSeen": "2026-11-22"
   },
   {
    "id": "evt-63f66b79afb05768",
@@ -1581,6 +1716,8 @@
    "lat": 32.75925,
    "lng": -96.79684,
    "located": "source",
+   "startTime": "11:00",
+   "endTime": "16:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
   },
@@ -1603,6 +1740,28 @@
    "lng": -97.77969,
    "located": "source",
    "sourceId": "allevents-austin"
+  },
+  {
+   "id": "mkt-e046712700e94d6b",
+   "category": "popup",
+   "kind": "weekly",
+   "tags": [],
+   "title": "Sustainable Food Center Farmers' Market",
+   "venue": "Sustainable Food Center Farmers' Market, 422 Guadalupe Street",
+   "city": "Austin",
+   "startDate": "2026-11-28",
+   "startTime": "09:00",
+   "endTime": "13:00",
+   "sourceUrl": "https://sustainablefoodcenter.org/farmers-market/downtown",
+   "source": "Weekly markets",
+   "description": "Every Saturday, 9am–1pm.",
+   "weekly": true,
+   "region": "austin",
+   "lat": 30.26725,
+   "lng": -97.74711,
+   "located": "source",
+   "sourceId": "weekly-markets",
+   "firstSeen": "2026-11-22"
   },
   {
    "id": "evt-1a9932fd2978c011",
@@ -1785,6 +1944,8 @@
    "lat": 32.81363,
    "lng": -96.73015,
    "located": "source",
+   "startTime": "12:00",
+   "endTime": "17:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
   },
@@ -1866,6 +2027,8 @@
    "lat": 32.78394,
    "lng": -96.79514,
    "located": "source",
+   "startTime": "11:00",
+   "endTime": "17:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-22"
   },
@@ -3931,6 +4094,7 @@
    "lat": 32.93864,
    "lng": -96.75252,
    "located": "source",
+   "startTime": "12:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
   },
@@ -4053,6 +4217,7 @@
    "lat": 29.70594,
    "lng": -95.34549,
    "located": "source",
+   "startTime": "09:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -4177,6 +4342,8 @@
    "lat": 29.7325,
    "lng": -95.42326,
    "located": "source",
+   "startTime": "11:00",
+   "endTime": "13:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -5047,6 +5214,8 @@
    "lat": 32.79697,
    "lng": -96.79713,
    "located": "source",
+   "startTime": "10:00",
+   "endTime": "12:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-22"
   },
@@ -5254,6 +5423,8 @@
    "lat": 32.77237,
    "lng": -96.83536,
    "located": "source",
+   "startTime": "18:00",
+   "endTime": "21:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
   },
@@ -5374,6 +5545,8 @@
    "lat": 32.86544,
    "lng": -96.83648,
    "located": "source",
+   "startTime": "16:00",
+   "endTime": "19:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
   },
@@ -5392,6 +5565,8 @@
    "lat": 32.89381,
    "lng": -96.80219,
    "located": "source",
+   "startTime": "16:00",
+   "endTime": "19:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
   },
@@ -5596,6 +5771,7 @@
    "lat": 32.79028,
    "lng": -96.81359,
    "located": "source",
+   "startTime": "10:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
   },
@@ -5653,6 +5829,7 @@
    "lat": 29.76219,
    "lng": -95.43461,
    "located": "source",
+   "startTime": "10:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-22"
   },
@@ -6283,6 +6460,8 @@
    "lat": 29.74306,
    "lng": -95.38702,
    "located": "source",
+   "startTime": "09:30",
+   "endTime": "14:30",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -6362,6 +6541,8 @@
    "lat": 32.7452,
    "lng": -96.81364,
    "located": "source",
+   "startTime": "12:00",
+   "endTime": "18:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
   },
@@ -6685,6 +6866,8 @@
    "lat": 29.76175,
    "lng": -95.33179,
    "located": "source",
+   "startTime": "10:00",
+   "endTime": "15:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -6750,8 +6933,7 @@
    "located": "source",
    "startTime": "10:00",
    "endTime": "15:00",
-   "sourceId": "allevents-austin",
-   "description": "Family-friendly Latin holiday market: vendors, food and music."
+   "sourceId": "allevents-austin"
   },
   {
    "id": "evt-b4458b5da185b02d",
@@ -6844,6 +7026,7 @@
    "lat": 32.79082,
    "lng": -96.79803,
    "located": "source",
+   "startTime": "19:30",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
   },
@@ -7089,6 +7272,8 @@
    "lat": 32.66029,
    "lng": -96.87676,
    "located": "source",
+   "startTime": "14:00",
+   "endTime": "17:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-22"
   },
@@ -7252,6 +7437,7 @@
    "lat": 29.75307,
    "lng": -95.35961,
    "located": "source",
+   "startTime": "10:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -7271,6 +7457,7 @@
    "lat": 29.75184,
    "lng": -95.35831,
    "located": "source",
+   "startTime": "10:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -7309,6 +7496,8 @@
    "lat": 29.75538,
    "lng": -95.36691,
    "located": "source",
+   "startTime": "10:00",
+   "endTime": "23:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-22"
   }

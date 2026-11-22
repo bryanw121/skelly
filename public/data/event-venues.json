@@ -3362,5 +3362,47 @@
     "lng": -95.36691,
     "located": "source",
     "matched": null
+  },
+  "international market place, 239 greens road": {
+    "lat": 29.95067,
+    "lng": -95.41411,
+    "located": "source",
+    "matched": null
+  },
+  "texas farmers' market at mueller": {
+    "lat": 30.30035,
+    "lng": -97.7034,
+    "located": "source",
+    "matched": null
+  },
+  "urban harvest farmers market": {
+    "lat": 29.73532,
+    "lng": -95.42432,
+    "located": "source",
+    "matched": null
+  },
+  "hutto farmer's market, 350 ed schmidt boulevard": {
+    "lat": 30.54621,
+    "lng": -97.55989,
+    "located": "source",
+    "matched": null
+  },
+  "bastrop 1832 farmer's market, 1302 chestnut street": {
+    "lat": 30.11118,
+    "lng": -97.31224,
+    "located": "source",
+    "matched": null
+  },
+  "fulshear farmers market, 9035 bois d'arc lane": {
+    "lat": 29.69009,
+    "lng": -95.88929,
+    "located": "source",
+    "matched": null
+  },
+  "sustainable food center farmers' market, 422 guadalupe street": {
+    "lat": 30.26725,
+    "lng": -97.74711,
+    "located": "source",
+    "matched": null
   }
 }
