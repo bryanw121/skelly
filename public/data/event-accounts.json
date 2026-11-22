@@ -205,10 +205,11 @@
  },
  "pthaiatx": {
   "events": [
-   "evt-949660dd88dfdcb5"
+   "evt-949660dd88dfdcb5",
+   "evt-97d434d9de706e33"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-22"
  },
  "theanicakesco": {
   "events": [
@@ -852,5 +853,40 @@
   ],
   "first": "2026-11-21",
   "last": "2026-11-21"
+ },
+ "joycraftedtx": {
+  "events": [
+   "evt-e6029ff44d957a47"
+  ],
+  "first": "2026-11-22",
+  "last": "2026-11-22"
+ },
+ "tinyloafatx": {
+  "events": [
+   "evt-41404e6e22cdf487"
+  ],
+  "first": "2026-11-22",
+  "last": "2026-11-22"
+ },
+ "joesburgerstx": {
+  "events": [
+   "evt-9f46371975637195"
+  ],
+  "first": "2026-11-22",
+  "last": "2026-11-22"
+ },
+ "omotenashi_atx": {
+  "events": [
+   "evt-db6bcafac1f8fb16"
+  ],
+  "first": "2026-11-22",
+  "last": "2026-11-22"
+ },
+ "kyotokoffie": {
+  "events": [
+   "evt-e13d8252c8de92d6"
+  ],
+  "first": "2026-11-22",
+  "last": "2026-11-22"
  }
 }

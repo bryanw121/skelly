@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T07:58:07.092Z",
+  "generatedAt": "2026-11-22T09:44:23.150Z",
   "region": {
     "id": "austin",
     "name": "Austin, TX",
@@ -17,7 +17,7 @@
       "kind": "OpenPlay club directory",
       "site": "https://openplaymap.com/open-play/austin",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:38.866Z",
+      "checkedAt": "2026-11-22T09:41:32.689Z",
       "count": 255
     },
     {
@@ -30,7 +30,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/austinpicklehaus",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:38.867Z",
+      "checkedAt": "2026-11-22T09:41:32.689Z",
       "count": 155
     },
     {
@@ -43,7 +43,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/holy-pickle",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:38.868Z",
+      "checkedAt": "2026-11-22T09:41:32.689Z",
       "count": 0
     },
     {
@@ -56,7 +56,7 @@
       "kind": "Venue's schedule page",
       "site": "https://app.arketa.co/iframe/volleyworld/schedule",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:38.868Z",
+      "checkedAt": "2026-11-22T09:41:32.689Z",
       "count": 10
     },
     {
@@ -109,7 +109,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:39.212Z",
+      "checkedAt": "2026-11-22T09:41:32.690Z",
       "count": 3
     },
     {
@@ -136,7 +136,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:40.395Z",
+      "checkedAt": "2026-11-22T09:41:32.691Z",
       "count": 3
     },
     {
@@ -206,7 +206,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://apps.daysmartrecreation.com/dash/x/chaparralice/calendar?location=1&start={date}&end={date}&event_type={eventType}",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:41.907Z",
+      "checkedAt": "2026-11-22T09:41:33.110Z",
       "count": 35
     },
     {
@@ -219,7 +219,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://iceandfield.com/public-skating/",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:43.039Z",
+      "checkedAt": "2026-11-22T09:41:34.697Z",
       "count": 24
     },
     {
@@ -245,7 +245,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-22T07:54:44.938Z",
+      "checkedAt": "2026-11-22T09:41:35.723Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
@@ -14333,7 +14333,6 @@
       "sourceId": "manual",
       "region": "austin",
       "timezone": "America/Chicago",
-      "watchError": "fetch failed",
       "venueId": "dripping-springs-ranch-park",
       "status": "scheduled"
     }

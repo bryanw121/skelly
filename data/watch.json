@@ -27,25 +27,25 @@
   "https://acesintexas.com/thursday-6s-sand-volleyball-league-atx-beach/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:57:52.349Z",
+    "checkedAt": "2026-11-22T09:44:22.278Z",
     "error": "HTTP 403"
   },
   "https://acesintexas.com/aces-pflugerville-monday-co-ed-indoor-6s-volleyball-league/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:57:52.668Z",
+    "checkedAt": "2026-11-22T09:44:22.600Z",
     "error": "HTTP 403"
   },
   "https://acesintexas.com/ptx-monday-indoor-open-plays-volleyworld-pflugerville/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:57:51.711Z",
+    "checkedAt": "2026-11-22T09:44:21.646Z",
     "error": "HTTP 403"
   },
   "https://acesintexas.com/wednesday-indoor-open-plays-volleyworld-pflugerville/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:57:52.029Z",
+    "checkedAt": "2026-11-22T09:44:21.963Z",
     "error": "HTTP 403"
   },
   "https://thelongcenter.org/icerink/": {
@@ -56,7 +56,6 @@
   "https://www.drippingspringsranchpark.com/510/Ice-Skating": {
     "hash": "61d0ff4b504bcfe4",
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:58:07.071Z",
-    "error": "fetch failed"
+    "checkedAt": "2026-11-22T09:44:23.130Z"
   }
 }
