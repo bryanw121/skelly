@@ -1068,6 +1068,10 @@ function eventCard(ev) {
 }
 /** The events this region has, or null when it has no feed yet. */
 const regionEvents = () => (events ? eventsForRegion(events, region?.id ?? 'austin') : null);
+/** This city's weekly markets whose hours aren't listed (events.json `markets`): shown under Every week. */
+const regionMarkets = () => (events?.markets ?? []).filter((m) => m.region === (region?.id ?? 'austin'));
+/** Where to find a market's hours: its own site, else a Google Maps search for it. */
+const marketLink = (m) => m.url ?? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([m.name, m.city].filter(Boolean).join(', '))}`;
 /** The filters' label on the pill that opens the sheet. */
 const filterLabel = () => [state.evKind === 'all' ? 'All events' : EVENT_KINDS.find((k) => k.id === state.evKind)?.label, ...state.evTags.map(tagLabel)].join(' · ');
 const evFilters = () => ({ kind: state.evKind, tags: state.evTags, weekend: state.evWeekend, day: state.evDay, window: state.win, q: state.evTopic ? '' : state.evQ.trim(), topic: state.evTopic });
@@ -1171,6 +1175,7 @@ function renderTimeBtn() {
 }
 function renderEventsSheet(list) {
   const counts = countEvents(list);
+  counts.weekly = (counts.weekly ?? 0) + regionMarkets().length; // markets without hours count as Every week too
   const opt = (attr, id, label, hint, n, on) => `<button type="button" class="tab opt" ${attr}="${id}" aria-pressed="${on}"><span class="lbl">${esc(label)}${hint ? `<small>${esc(hint)}</small>` : ''}</span><span class="n">${n}</span></button>`;
   const shown = filterEvents(list, evFilters(), NOW.iso).length;
   $('eventsOpts').innerHTML = `<h3 class="opt-h">Kind</h3>${opt('data-evkind', 'all', 'All events', '', counts.all, state.evKind === 'all')}${EVENT_KINDS.filter((k) => counts[k.id] || state.evKind === k.id).map((k) => opt('data-evkind', k.id, k.label, k.hint, counts[k.id], state.evKind === k.id)).join('')}
@@ -1195,6 +1200,14 @@ function renderSortSheet(list) {
     <button type="button" class="go-btn" data-close>Show ${shown} event${shown === 1 ? '' : 's'}</button>`;
 }
 document.addEventListener('toggle', (e) => { if (e.target.id === 'sortAdv') sortAdvOpen = e.target.open; }, true);
+/** The "Hours not listed" list under Every week: name, city (and distance with Near me), and a link to the hours. */
+function marketsUnlisted() {
+  const miles = (m) => (here ? milesToCoords(m.lat, m.lng) : null);
+  const ms = regionMarkets().slice().sort((a, b) => (here ? miles(a) - miles(b) : 0) || a.name.localeCompare(b.name));
+  if (!ms.length) return '';
+  return `<section class="ev-group mk-unlisted" data-group="unlisted"><h2 class="ev-day">Hours not listed<small>${ms.length} more weekly market${ms.length === 1 ? '' : 's'} · check the day before you go</small></h2>
+    <ul class="mk-list">${ms.map((m) => `<li class="mk-row">${eventVisual({ title: m.name }, 40)}<span class="mk-name">${esc(m.name)}<small>${esc([m.city, Number.isFinite(miles(m)) ? `${miles(m).toFixed(1)} mi` : ''].filter(Boolean).join(' · '))}</small></span><a class="mk-go" href="${esc(marketLink(m))}" target="_blank" rel="noopener">${m.url ? 'Hours on their site' : 'Hours on Google Maps'} ↗</a></li>`).join('')}</ul></section>`;
+}
 function renderEvents() {
   // Events aren't about a day or a sport: the day strip, the level filter, the charts and the
   // sports lists step aside (the map, when open, is handled by renderMap).
@@ -1248,12 +1261,14 @@ function renderEvents() {
   // A search that the day or time hides matches for says so, and offers them in one tap.
   const anyDay = (q || topic) && whenLabel() ? filterEvents(upcoming, { ...evFilters(), weekend: false, day: null, window: null }, NOW.iso).length - shown.length : 0;
   $('eventsCount').innerHTML = filtering || whenLabel() || q || topic ? `${shown.length} of ${upcoming.length} events${q ? ` for “${esc(q)}”` : topic ? ` tagged ${esc(topic)}` : ''}${whenLabel() ? ` · ${esc(whenLabel())}` : ''}${anyDay > 0 ? ` · <button type="button" class="linkish" data-evanyday>${anyDay} more on other days</button>` : ''} · <button type="button" class="linkish" data-evclear>Clear filters</button>` : '';
-  $('events').innerHTML = groups.length
+  // Every week ends with the markets whose hours aren't listed, each linked to where its hours are.
+  const unlisted = state.evKind === 'weekly' && !q && !topic && !whenLabel() ? marketsUnlisted() : '';
+  $('events').innerHTML = (groups.length
     ? groups.map((g) => {
       const open = evOpen.has(g.key), rest = g.events.length - EVENTS_SHOWN;
       return `<section class="ev-group" data-group="${esc(g.key)}"><h2 class="ev-day">${esc(g.label)}<small>${esc(g.sub)}</small></h2>${(open ? g.events : g.events.slice(0, EVENTS_SHOWN)).map(eventCard).join('')}${rest > 0 && !open ? `<button type="button" class="show-more" data-evmore="${esc(g.key)}">Show ${rest} more</button>` : ''}</section>`;
     }).join('')
-    : `<div class="empty"><b>Nothing matches.</b> <button type="button" class="linkish" data-evclear>Clear filters</button></div>`;
+    : unlisted ? '' : `<div class="empty"><b>Nothing matches.</b> <button type="button" class="linkish" data-evclear>Clear filters</button></div>`) + unlisted;
   $('eventsNote').textContent = '';
   if (linked) { syncUrl(); requestAnimationFrame(() => document.querySelector(`.ev-row[data-ev="${CSS.escape(linked)}"]`)?.scrollIntoView({ block: 'center' })); }
 }

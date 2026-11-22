@@ -64,3 +64,19 @@ test('readMarkets: one query per region; the next mirror when one fails; a failu
   const down = await readMarkets([AUSTIN], { fetch: async () => ({ ok: false, status: 429 }), today: '2026-11-22', endpoints: ['https://a/api'] });
   assert.deepEqual([down.ok, down.events.length], [false, 0]);
 });
+
+test('unlistedMarkets: weekly-sounding markets without hours, for the "Hours not listed" list', async () => {
+  const { unlistedMarkets } = await import('../lib/markets.js');
+  const out = unlistedMarkets([
+    el(10, { name: 'Sunset Valley Farmers Market', website: 'https://sunsetvalleyfarmersmarket.org/' }),
+    el(11, { name: 'Lakeline Farmers Market' }),
+    el(12, { name: 'Lakeline Farmers Market' }), // the same market twice in OSM: once
+    el(13, { name: 'Texas Farmers Market at Mueller', opening_hours: 'Su 10:00-14:00' }), // has hours: a dated event instead
+    el(14, { name: 'Asia Market' }), // a store-like name, not a market day
+    el(15, { name: 'Sprouts Farmers Market' }),
+    el(16, { name: 'Big Flea Market', opening_hours: 'Mo-Su 09:00-18:00' }), // open daily
+    el(17, { name: 'Far Farmers Market' }, 32.78, -96.8),
+  ], { region: AUSTIN });
+  assert.deepEqual(out.map((m) => [m.name, m.url ?? null, m.city]), [['Lakeline Farmers Market', null, 'Austin'], ['Sunset Valley Farmers Market', 'https://sunsetvalleyfarmersmarket.org/', 'Austin']]);
+  assert.deepEqual(Object.keys(out[0]).sort(), ['city', 'id', 'lat', 'lng', 'name', 'region']);
+});

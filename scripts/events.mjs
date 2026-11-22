@@ -47,7 +47,8 @@ const regions = loadRegions().map((r) => r.info);
 const today = todayIn(new Date(now));
 const results = await readEventSources(config, { get, today, regions });
 // Weekly markets (farmers, makers, flea) from OpenStreetMap: each one's next market day (lib/markets.js).
-results.push(await readMarkets(regions, { today }));
+const marketsRead = await readMarkets(regions, { today });
+results.push(marketsRead);
 // Listing pages give a date and no hours: each event's own page has them. Read once, remembered.
 const HOURS = repoPath('public/data/event-hours.json');
 const hours = existsSync(HOURS) ? JSON.parse(readFileSync(HOURS, 'utf8')) : {};
@@ -88,7 +89,9 @@ if (args.has('--dry')) {
 }
 if (Object.keys(profiles).length) console.log(`Saved ${await saveAvatars(profiles, AVATARS, { now })} profile picture(s).`);
 stampAvatars(events, AVATARS);
-const feed = { ...(previous ?? {}), feedVersion: 1, generatedAt: new Date(now).toISOString(), listingsAt: new Date(now).toISOString(), sources: results.map((r) => ({ id: r.id, ok: r.ok, count: r.events.length, ...(r.error ? { error: r.error } : {}) })), events };
+const feed = { ...(previous ?? {}), feedVersion: 1, generatedAt: new Date(now).toISOString(), listingsAt: new Date(now).toISOString(), sources: results.map((r) => ({ id: r.id, ok: r.ok, count: r.events.length, ...(r.error ? { error: r.error } : {}) })), events,
+  // Weekly markets without listed hours (lib/markets.js); a failed read keeps the last list.
+  markets: marketsRead.markets ?? previous?.markets ?? [] };
 saveLedger(creditAccounts(ledgerNow(), events, today, handleOf));
 // The listing readers' own events as merged into the feed (with their pins), for missingListings above.
 const listingIds = new Set([...config.sources.map((x) => x.id), 'weekly-markets']);

@@ -593,6 +593,15 @@ button.chip-q{background:none;cursor:pointer;font:600 11px var(--mono);touch-act
 .fact{font:600 11.5px var(--body);border-radius:6px;padding:1px 7px;background:color-mix(in srgb,var(--muted) 12%,var(--panel));color:var(--ink)}
 .fact.last{background:color-mix(in srgb,var(--bad) 13%,var(--panel));color:var(--bad)}
 .fact.free{background:color-mix(in srgb,var(--ok) 14%,var(--panel));color:var(--ok)}
+/* Every week: markets whose hours aren't listed, each linked to where the hours are. */
+.mk-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.mk-row{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.mk-row .ev-ic{width:40px;height:40px}
+.mk-name{font-weight:600;min-width:0}
+.mk-name small{display:block;font-weight:500;color:var(--muted);font-size:12.5px}
+.mk-go{font:600 13px var(--body);color:var(--accent);text-decoration:none;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center}
+.mk-go:hover{text-decoration:underline}
+@media (max-width:440px){.mk-row{grid-template-columns:auto 1fr}.mk-go{grid-column:2;min-height:32px}}
 /* Sort sheet: Advanced holds the topics For you leans on. */
 .adv{border-top:1px solid var(--line);padding-top:8px;margin-top:4px}
 .adv summary{cursor:pointer;font:600 14px var(--body);min-height:40px;display:flex;align-items:center}
