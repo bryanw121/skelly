@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T18:16:22.883Z",
+  "generatedAt": "2026-11-22T20:45:23.075Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,7 +67,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T18:13:28.488Z",
+      "checkedAt": "2026-11-22T20:42:36.711Z",
       "count": 20,
       "warnings": [
         "reclub-NJKPQA: no surface",
@@ -115,7 +115,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-22T18:13:32.989Z",
+      "checkedAt": "2026-11-22T20:42:36.793Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -502,13 +502,13 @@
     {
       "id": "reclub-230JCQ",
       "date": "2026-11-23",
-      "start": "19:30",
+      "start": "20:00",
       "end": "22:00",
       "title": "Volleyball Pickup with Kimberly",
-      "venue": "Collins Park",
+      "venue": "Harvest Time Church",
       "type": "Open play",
       "level": "All levels",
-      "price": null,
+      "price": "$8",
       "note": "Hosted by The Volleyball Hangout, every Monday.",
       "capacity": 30,
       "signup": {
@@ -521,8 +521,9 @@
       "region": "houston",
       "timezone": "America/Chicago",
       "verifiedAt": "2026-11-22",
-      "venueId": "src-collins-park",
-      "status": "scheduled"
+      "venueId": "src-harvest-time-church",
+      "status": "rescheduled",
+      "previousStart": "2026-11-23 19:30"
     },
     {
       "id": "reclub-2BBFXM",
@@ -690,6 +691,15 @@
       "address": "1419 Vander Wilt Lane, Katy, Tx",
       "lat": 29.7893,
       "lng": -95.7427,
+      "region": "houston"
+    },
+    {
+      "id": "src-harvest-time-church",
+      "name": "Harvest Time Church",
+      "city": null,
+      "address": "Imperial Valley Drive, Houston, TX",
+      "lat": 29.955013,
+      "lng": -95.39814,
       "region": "houston"
     },
     {

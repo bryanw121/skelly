@@ -3496,5 +3496,65 @@
   "tillery street plant co.": {
     "unresolved": true,
     "lastTried": "2026-11-22T00:00:00.000Z"
+  },
+  "katy freeway/tollway, houston, texas": {
+    "lat": 29.78463,
+    "lng": -95.63042,
+    "located": "source",
+    "matched": null
+  },
+  "8843 coleman blvd": {
+    "lat": 33.15179,
+    "lng": -96.83511,
+    "located": "source",
+    "matched": null
+  },
+  "grand prairie events & convention center (epiccentral) grand prairie, tx 75052": {
+    "lat": 32.74596,
+    "lng": -96.99779,
+    "located": "source",
+    "matched": null
+  },
+  "gallery defi, 2200 evanston ave": {
+    "lat": 32.77242,
+    "lng": -96.83503,
+    "located": "source",
+    "matched": null
+  },
+  "prestonwood baptist church, 6801 w park blvd,plano, texas": {
+    "lat": 33.02861,
+    "lng": -96.84698,
+    "located": "source",
+    "matched": null
+  },
+  "the raven room, 523 thompson ln": {
+    "lat": 30.23694,
+    "lng": -97.68532,
+    "located": "source",
+    "matched": null
+  },
+  "austin high school": {
+    "lat": 30.27356,
+    "lng": -97.76673,
+    "located": "source",
+    "matched": null
+  },
+  "705 s main st": {
+    "lat": 32.93381,
+    "lng": -97.07782,
+    "located": "source",
+    "matched": null
+  },
+  "cityline plaza, 1150 state street": {
+    "lat": 33.00093,
+    "lng": -96.70241,
+    "located": "source",
+    "matched": null
+  },
+  "508 park ave": {
+    "lat": 32.77814,
+    "lng": -96.79322,
+    "located": "source",
+    "matched": null
   }
 }

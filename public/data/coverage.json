@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T18:21:39.060Z",
+ "generatedAt": "2026-11-22T20:47:37.409Z",
  "regions": [
   {
    "id": "austin",
@@ -9,7 +9,7 @@
      "venue": "Montopolis Recreation and Community Center",
      "city": "Austin",
      "sport": "volleyball",
-     "sessions": 2,
+     "sessions": 1,
      "pinned": true,
      "booking": false,
      "via": [
@@ -21,7 +21,7 @@
      "venue": "Mueller Lake Park",
      "city": "Austin",
      "sport": "volleyball",
-     "sessions": 2,
+     "sessions": 1,
      "pinned": true,
      "booking": false,
      "via": [
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 153,
+     "sessions": 152,
      "pinned": true,
      "booking": true,
      "via": [
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 92,
+     "sessions": 90,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 85,
+     "sessions": 84,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 73,
+     "sessions": 76,
      "pinned": true,
      "booking": true,
      "via": [
@@ -467,10 +467,10 @@
    "name": "Houston, TX",
    "rows": [
     {
-     "venue": "Collins Park",
+     "venue": "Champion Forest Baptist Church - Champions Campus",
      "city": "",
      "sport": "volleyball",
-     "sessions": 4,
+     "sessions": 3,
      "pinned": true,
      "booking": false,
      "via": [
@@ -479,7 +479,7 @@
      "lead": true
     },
     {
-     "venue": "Champion Forest Baptist Church - Champions Campus",
+     "venue": "Collins Park",
      "city": "",
      "sport": "volleyball",
      "sessions": 3,
@@ -540,6 +540,18 @@
     },
     {
      "venue": "Emancipation Park",
+     "city": "",
+     "sport": "volleyball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Harvest Time Church",
      "city": "",
      "sport": "volleyball",
      "sessions": 1,

@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        249,
         243,
         254,
         255,
@@ -11,13 +10,14 @@
         255,
         255,
         257,
+        250,
         250
       ],
       "sessions": 250,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.71,
+        "level": 0.7,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -31,16 +31,16 @@
       "counts": [
         151,
         151,
-        151,
         155,
         155,
         155,
         155,
         155,
         155,
-        153
+        153,
+        152
       ],
-      "sessions": 153,
+      "sessions": 152,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -214,16 +214,16 @@
       "counts": [
         5,
         5,
-        5,
         3,
         3,
         3,
         3,
         3,
         3,
-        4
+        4,
+        3
       ],
-      "sessions": 4,
+      "sessions": 3,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -676,7 +676,7 @@
         2,
         2,
         2,
-        2,
+        3,
         3,
         3,
         3,
@@ -708,9 +708,9 @@
         2,
         2,
         2,
-        2
+        1
       ],
-      "sessions": 2,
+      "sessions": 1,
       "coverage": {
         "end": 1,
         "price": 0,
@@ -926,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 604
+      "failStreak": 605
     },
     "dallas-reclub": {
       "counts": [
@@ -1048,7 +1048,7 @@
       "counts": [
         13,
         13,
-        13,
+        12,
         12,
         12,
         12,
@@ -1074,8 +1074,8 @@
     "houston-reclub": {
       "counts": [
         23,
-        23,
         24,
+        20,
         20,
         20,
         20,
@@ -1087,7 +1087,7 @@
       "sessions": 20,
       "coverage": {
         "end": 1,
-        "price": 0.55,
+        "price": 0.6,
         "level": 1,
         "venue": 1,
         "city": 0,
