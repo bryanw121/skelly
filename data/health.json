@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        265,
         250,
         246,
         262,
@@ -11,13 +10,14 @@
         256,
         252,
         249,
-        243
+        243,
+        254
       ],
-      "sessions": 243,
+      "sessions": 254,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.7,
+        "level": 0.69,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -31,12 +31,12 @@
       "counts": [
         161,
         161,
-        161,
         153,
         153,
         153,
         153,
         152,
+        151,
         151,
         151
       ],
@@ -77,7 +77,7 @@
         11,
         11,
         11,
-        11,
+        10,
         10,
         10,
         10,
@@ -214,7 +214,7 @@
       "counts": [
         6,
         6,
-        6,
+        5,
         5,
         5,
         5,
@@ -755,7 +755,7 @@
       "counts": [
         37,
         37,
-        37,
+        35,
         35,
         35,
         35,
@@ -926,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 596
+      "failStreak": 597
     },
     "dallas-reclub": {
       "counts": [
@@ -1073,7 +1073,6 @@
     },
     "houston-reclub": {
       "counts": [
-        25,
         23,
         23,
         22,
@@ -1082,12 +1081,13 @@
         22,
         23,
         23,
-        23
+        23,
+        24
       ],
-      "sessions": 23,
+      "sessions": 24,
       "coverage": {
         "end": 1,
-        "price": 0.61,
+        "price": 0.54,
         "level": 1,
         "venue": 1,
         "city": 0,
@@ -1115,8 +1115,6 @@
         "feeCurrency",
         "feeType",
         "flags",
-        "flags.GROUP_PROMOTED",
-        "flags.PROXIMITY_PROMOTED",
         "gender",
         "groupReference",
         "groups[]",
@@ -1280,7 +1278,8 @@
     "houston-reclub:warning:reclub-5E0DAN: no surface",
     "houston-reclub:warning:reclub-6TSHGM: no surface",
     "houston-reclub:warning:reclub-8SFAT2: no surface",
-    "houston-reclub:warning:reclub-EEUP4M: no surface",
+    "houston-reclub:warning:reclub-9P8J21: no surface",
+    "houston-reclub:warning:reclub-HC3B4O: no surface",
     "houston-reclub:warning:reclub-J533LP: no surface",
     "houston-reclub:warning:reclub-JK2478: no surface",
     "houston-reclub:warning:reclub-JMV5QT: no surface",

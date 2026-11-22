@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T23:07:36.718Z",
+ "generatedAt": "2026-11-22T02:17:00.230Z",
  "regions": [
   {
    "id": "austin",
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 93,
+     "sessions": 92,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 80,
+     "sessions": 84,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 70,
+     "sessions": 78,
      "pinned": true,
      "booking": true,
      "via": [
@@ -470,7 +470,7 @@
      "venue": "Collins Park",
      "city": "",
      "sport": "volleyball",
-     "sessions": 4,
+     "sessions": 6,
      "pinned": true,
      "booking": false,
      "via": [
@@ -516,18 +516,6 @@
     },
     {
      "venue": "Tellepsen Family Downtown YMCA",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "The Zone",
      "city": "",
      "sport": "volleyball",
      "sessions": 2,
@@ -588,6 +576,18 @@
     },
     {
      "venue": "T4 Court Rentals",
+     "city": "",
+     "sport": "volleyball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "The Zone",
      "city": "",
      "sport": "volleyball",
      "sessions": 1,

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-21T23:04:06.539Z",
+  "generatedAt": "2026-11-22T02:16:33.018Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,15 +67,14 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-21T23:01:30.578Z",
-      "count": 23,
+      "checkedAt": "2026-11-22T02:13:20.647Z",
+      "count": 24,
       "warnings": [
         "reclub-3YV72K: no surface",
         "reclub-NJKPQA: no surface",
         "reclub-OKAE7P: no surface",
         "reclub-J533LP: no surface",
         "reclub-TCHJ1D: no surface",
-        "reclub-EEUP4M: no surface",
         "reclub-K9D10X: no surface",
         "reclub-1GOBAB: no surface",
         "reclub-MCRPQ4: no surface",
@@ -92,7 +91,9 @@
         "reclub-6TSHGM: no surface",
         "reclub-5E0DAN: no surface",
         "reclub-230JCQ: no surface",
-        "reclub-2BBFXM: no surface"
+        "reclub-2BBFXM: no surface",
+        "reclub-9P8J21: no surface",
+        "reclub-HC3B4O: no surface"
       ]
     },
     {
@@ -118,7 +119,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-21T23:01:34.063Z",
+      "checkedAt": "2026-11-22T02:13:27.639Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -249,31 +250,6 @@
       "timezone": "America/Chicago",
       "verifiedAt": "2026-11-21",
       "venueId": "src-tellepsen-family-downtown-ymca",
-      "status": "scheduled"
-    },
-    {
-      "id": "reclub-EEUP4M",
-      "date": "2026-11-21",
-      "start": "18:00",
-      "end": "20:00",
-      "title": "45 pm)",
-      "venue": "The Zone",
-      "type": "Open play",
-      "level": "All levels",
-      "price": "$10",
-      "note": "Hosted by Cultural Diversity Volleyball Social.",
-      "capacity": 34,
-      "signup": {
-        "url": "https://reclub.co/m/EEUP4M",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/EEUP4M",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-21",
-      "venueId": "src-the-zone",
       "status": "scheduled"
     },
     {
@@ -677,6 +653,56 @@
       "verifiedAt": "2026-11-21",
       "venueId": "src-collins-park",
       "status": "scheduled"
+    },
+    {
+      "id": "reclub-9P8J21",
+      "date": "2026-11-28",
+      "start": "17:00",
+      "end": "21:00",
+      "title": "The Volleyball Hangout",
+      "venue": "Collins Park",
+      "type": "Open play",
+      "level": "All levels",
+      "price": null,
+      "note": "Hosted by The Volleyball Hangout, every Saturday.",
+      "capacity": 30,
+      "signup": {
+        "url": "https://reclub.co/m/9P8J21",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/9P8J21",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-21",
+      "venueId": "src-collins-park",
+      "status": "scheduled"
+    },
+    {
+      "id": "reclub-HC3B4O",
+      "date": "2026-11-28",
+      "start": "17:00",
+      "end": "21:00",
+      "title": "The Volleyball Hangout",
+      "venue": "Collins Park",
+      "type": "Open play",
+      "level": "All levels",
+      "price": null,
+      "note": "Hosted by The Volleyball Hangout, every Saturday.",
+      "capacity": 30,
+      "signup": {
+        "url": "https://reclub.co/m/HC3B4O",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/HC3B4O",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-21",
+      "venueId": "src-collins-park",
+      "status": "scheduled"
     }
   ],
   "publicCourts": null,
@@ -709,15 +735,6 @@
       "region": "houston"
     },
     {
-      "id": "src-the-zone",
-      "name": "The Zone",
-      "city": null,
-      "address": "10371 Stella Link Road 2nd Floor, Houston, TX 77025",
-      "lat": 29.66943,
-      "lng": -95.43757,
-      "region": "houston"
-    },
-    {
       "id": "src-katy-sports-center",
       "name": "Katy Sports Center",
       "city": null,
@@ -733,6 +750,15 @@
       "address": "954 Wakefield Drive, Houston, TX 77018, USA",
       "lat": 29.821991,
       "lng": -95.42305,
+      "region": "houston"
+    },
+    {
+      "id": "src-the-zone",
+      "name": "The Zone",
+      "city": null,
+      "address": "10371 Stella Link Road 2nd Floor, Houston, TX 77025",
+      "lat": 29.66943,
+      "lng": -95.43757,
       "region": "houston"
     },
     {
