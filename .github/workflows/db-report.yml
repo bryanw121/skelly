@@ -1,0 +1,25 @@
+name: Database report
+
+# Manual: a read-only look at the database (scripts/db-report.mjs): tables, row counts, columns
+# that could hold pictures, and which keys events carry. Writes nothing; the report is in the run summary.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --omit=dev
+      - name: Report
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: node scripts/db-report.mjs
