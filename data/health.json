@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        252,
         249,
         243,
         254,
@@ -11,13 +10,14 @@
         255,
         255,
         255,
-        257
+        257,
+        250
       ],
-      "sessions": 257,
+      "sessions": 250,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.7,
+        "level": 0.71,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -29,7 +29,6 @@
     },
     "austin-picklehaus": {
       "counts": [
-        152,
         151,
         151,
         151,
@@ -38,13 +37,14 @@
         155,
         155,
         155,
-        155
+        155,
+        153
       ],
-      "sessions": 155,
+      "sessions": 153,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.88,
+        "level": 0.87,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -215,15 +215,15 @@
         5,
         5,
         5,
-        5,
         3,
         3,
         3,
         3,
         3,
-        3
+        3,
+        4
       ],
-      "sessions": 3,
+      "sessions": 4,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -926,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 603
+      "failStreak": 604
     },
     "dallas-reclub": {
       "counts": [
@@ -1075,8 +1075,8 @@
       "counts": [
         23,
         23,
-        23,
         24,
+        20,
         20,
         20,
         20,
@@ -1115,6 +1115,7 @@
         "feeCurrency",
         "feeType",
         "flags",
+        "flags.GROUP_PROMOTED",
         "gender",
         "groupReference",
         "groups[]",

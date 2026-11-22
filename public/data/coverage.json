@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T14:22:05.731Z",
+ "generatedAt": "2026-11-22T18:21:39.060Z",
  "regions": [
   {
    "id": "austin",
@@ -21,7 +21,7 @@
      "venue": "Mueller Lake Park",
      "city": "Austin",
      "sport": "volleyball",
-     "sessions": 1,
+     "sessions": 2,
      "pinned": true,
      "booking": false,
      "via": [
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 155,
+     "sessions": 153,
      "pinned": true,
      "booking": true,
      "via": [
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 93,
+     "sessions": 92,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 86,
+     "sessions": 85,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 78,
+     "sessions": 73,
      "pinned": true,
      "booking": true,
      "via": [

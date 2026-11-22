@@ -9,7 +9,7 @@ Venues the schedule sees only through groups that host there (Reclub, Sweatpals,
 | Venue | City | Sport | Sessions | Seen via | Pin |
 |---|---|---|---|---|---|
 | Montopolis Recreation and Community Center | Austin | volleyball | 2 | austin-meetup | yes |
-| Mueller Lake Park | Austin | volleyball | 1 | reclub | yes |
+| Mueller Lake Park | Austin | volleyball | 2 | reclub | yes |
 
 ## Dallas–Fort Worth, TX
 

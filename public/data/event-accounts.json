@@ -36,10 +36,11 @@
  },
  "vistabrewing": {
   "events": [
-   "evt-9ace9bd7bac37a5a"
+   "evt-9ace9bd7bac37a5a",
+   "evt-91823626a4cc1b37"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-19"
+  "last": "2026-11-22"
  },
  "goldenmeanaustin": {
   "events": [
@@ -290,10 +291,11 @@
   "events": [
    "evt-62cb43379b389b0c",
    "evt-5e6b8603bea6beff",
-   "evt-f1d8ec360841de75"
+   "evt-f1d8ec360841de75",
+   "evt-97447881c307cc5a"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-22"
  },
  "naturespress_": {
   "events": [
@@ -525,10 +527,11 @@
  },
  "purefizz.co": {
   "events": [
-   "evt-39635310cdcf0716"
+   "evt-39635310cdcf0716",
+   "evt-70988ce9246e8285"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-22"
  },
  "stir.coffeematchabar": {
   "events": [
@@ -638,10 +641,11 @@
  },
  "houstonforthegirls": {
   "events": [
-   "evt-e0df4f6bf60aee6c"
+   "evt-e0df4f6bf60aee6c",
+   "evt-df9ddcc767bdd217"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-22"
  },
  "jazzystacos": {
   "events": [
@@ -736,10 +740,11 @@
  },
  "creamedtx": {
   "events": [
-   "evt-1083a811fa2fab55"
+   "evt-1083a811fa2fab55",
+   "evt-05860447cc215f08"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-22"
  },
  "summer_sweets25": {
   "events": [
@@ -800,10 +805,11 @@
  },
  "snackbarhtx": {
   "events": [
-   "evt-c8c5da930db5a5d9"
+   "evt-c8c5da930db5a5d9",
+   "evt-4abd4cb1847e38fc"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-22"
  },
  "theresa.macatelier": {
   "events": [
@@ -885,6 +891,27 @@
  "kyotokoffie": {
   "events": [
    "evt-e13d8252c8de92d6"
+  ],
+  "first": "2026-11-22",
+  "last": "2026-11-22"
+ },
+ "bluehousesweetsatx": {
+  "events": [
+   "evt-b8bb75d8debf83c0"
+  ],
+  "first": "2026-11-22",
+  "last": "2026-11-22"
+ },
+ "fatchip_crumbs": {
+  "events": [
+   "evt-4fb5f11d62e1edf6"
+  ],
+  "first": "2026-11-22",
+  "last": "2026-11-22"
+ },
+ "lattestcoffee": {
+  "events": [
+   "evt-382919f41bb8bae8"
   ],
   "first": "2026-11-22",
   "last": "2026-11-22"
