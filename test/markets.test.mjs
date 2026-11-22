@@ -30,6 +30,7 @@ test('marketEvents: the next market day within a week, with times, pin and the m
   assert.equal(mueller.sourceUrl, 'https://texasfarmersmarket.org/mueller');
   assert.equal(mueller.description, 'Every Sunday, 10am–2pm.');
   assert.equal(mueller.source, 'Weekly markets');
+  assert.equal(mueller.kind, 'weekly', 'its own kind: Every week');
   const [sfc] = marketEvents([el(2, { name: 'Sustainable Food Center Farmers\' Market', opening_hours: 'Sa 09:00-13:00' })], { region: AUSTIN, today: '2026-11-22' });
   assert.equal(sfc.startDate, '2026-11-28', 'next Saturday');
   assert.equal(sfc.sourceUrl, 'https://www.openstreetmap.org/node/2', 'no website: the map entry');
@@ -55,11 +56,11 @@ test('marketEvents: skips stores, unnamed places, daily markets and anything out
 test('readMarkets: one query per region; the next mirror when one fails; a failure keeps the last events', async () => {
   const calls = [];
   const body = JSON.stringify({ elements: [el(1, { name: 'Mueller Farmers Market', opening_hours: 'Su 10:00-14:00' })] });
-  const get = async (url) => { calls.push(url.split('?')[0]); return calls.length === 1 ? { ok: false, status: 504 } : { ok: true, text: body }; };
-  const r = await readMarkets([AUSTIN], { get, today: '2026-11-22', endpoints: ['https://a/api', 'https://b/api'] });
+  const fetch = async (url, init) => { calls.push([url, init.method, init.headers['user-agent'].startsWith('Skelly/')]); return calls.length === 1 ? { ok: false, status: 504 } : { ok: true, text: async () => body }; };
+  const r = await readMarkets([AUSTIN], { fetch, today: '2026-11-22', endpoints: ['https://a/api', 'https://b/api'] });
   assert.equal(r.ok, true);
-  assert.deepEqual(calls, ['https://a/api', 'https://b/api']);
+  assert.deepEqual(calls, [['https://a/api', 'POST', true], ['https://b/api', 'POST', true]]);
   assert.equal(r.events.length, 1);
-  const down = await readMarkets([AUSTIN], { get: async () => ({ ok: false, status: 429 }), today: '2026-11-22', endpoints: ['https://a/api'] });
+  const down = await readMarkets([AUSTIN], { fetch: async () => ({ ok: false, status: 429 }), today: '2026-11-22', endpoints: ['https://a/api'] });
   assert.deepEqual([down.ok, down.events.length], [false, 0]);
 });
