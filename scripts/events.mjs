@@ -15,6 +15,7 @@ import { loadRegions } from '../lib/regions.js';
 import { today as todayIn } from '../lib/time.js';
 import { creditAccounts, fillHours, mergeEvents, missingListings, promotedAccounts, readEventSources } from '../lib/event-sources.js';
 import { robotsAllows } from '../lib/robots.js';
+import { readMarkets } from '../lib/markets.js';
 import { handleOf, readInstagram } from '../lib/instagram.js';
 import { saveAvatars, stampAvatars } from '../lib/avatars.js';
 
@@ -45,6 +46,8 @@ const config = JSON.parse(readFileSync(repoPath('config/events.json'), 'utf8'));
 const regions = loadRegions().map((r) => r.info);
 const today = todayIn(new Date(now));
 const results = await readEventSources(config, { get, today, regions });
+// Weekly markets (farmers, makers, flea) from OpenStreetMap: each one's next market day (lib/markets.js).
+results.push(await readMarkets(regions, { get, today }));
 // Listing pages give a date and no hours: each event's own page has them. Read once, remembered.
 const HOURS = repoPath('public/data/event-hours.json');
 const hours = existsSync(HOURS) ? JSON.parse(readFileSync(HOURS, 'utf8')) : {};
@@ -76,7 +79,7 @@ if (IG_USER_ID && IG_ACCESS_TOKEN) {
   if (r.skipped.length) console.log(`Instagram: couldn't read ${r.skipped.map((h) => `@${h}`).join(', ')} (personal, private or renamed accounts).`);
 } else console.log('Instagram: IG_USER_ID / IG_ACCESS_TOKEN not set; skipped.');
 for (const r of results) for (const e of r.events) e.sourceId = r.id;
-const events = mergeEvents(previous, results, today, config.sources.map((s) => s.name));
+const events = mergeEvents(previous, results, today, [...config.sources.map((s) => s.name), 'Weekly markets']);
 for (const r of results) console.log(`${r.ok ? 'ok  ' : 'FAIL'} ${r.id}: ${r.events.length} events${r.error ? ` (${r.error})` : ''}`);
 console.log(`${events.length} events in the feed.`);
 if (args.has('--dry')) {
@@ -88,7 +91,7 @@ stampAvatars(events, AVATARS);
 const feed = { ...(previous ?? {}), feedVersion: 1, generatedAt: new Date(now).toISOString(), listingsAt: new Date(now).toISOString(), sources: results.map((r) => ({ id: r.id, ok: r.ok, count: r.events.length, ...(r.error ? { error: r.error } : {}) })), events };
 saveLedger(creditAccounts(ledgerNow(), events, today, handleOf));
 // The listing readers' own events as merged into the feed (with their pins), for missingListings above.
-const listingIds = new Set(config.sources.map((x) => x.id));
+const listingIds = new Set([...config.sources.map((x) => x.id), 'weekly-markets']);
 writeFileSync(CACHE, `${JSON.stringify({ listingsAt: new Date(now).toISOString(), events: events.filter((e) => listingIds.has(e.sourceId)) }, null, 1)}\n`);
 writeFileSync(HOURS, `${JSON.stringify(hours, null, 1)}\n`);
 writeFileSync(OUT, `${JSON.stringify(feed, null, 1)}\n`);
