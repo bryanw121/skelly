@@ -89,20 +89,23 @@ after(async () => {
 const titlesWithVenue = () => page.locator('#list .row .venue b').allTextContents();
 
 let pageErrors = [];
+let hits = []; // /api/hit batches the page sent (usage metrics)
 // The app defaults to Events; the sports tests open an explicit sports view (/?view=openplay
 // or a sport/region link, which the app also reads as sports). `waitFor` is what the page
 // shows when its data arrives (the events list in the Events view, the session list in Sports).
-async function open({ where = null, programs = null, schedule = SCHEDULE, courts = COURTS, events = null, apiCourts = { status: 500, body: '{"error":"down"}' }, index = null, regions = {}, occurrences = {}, maps = null, url = '/?view=openplay', timezoneId = 'America/Los_Angeles', clock = CLOCK, geolocation = null, touch = false, waitFor = '#list .row, #list .error, #list .empty' } = {}) {
+async function open({ where = null, programs = null, schedule = SCHEDULE, courts = COURTS, events = null, apiCourts = { status: 500, body: '{"error":"down"}' }, index = null, regions = {}, occurrences = {}, maps = null, url = '/?view=openplay', timezoneId = 'America/Los_Angeles', clock = CLOCK, geolocation = null, touch = false, usage = false, waitFor = '#list .row, #list .error, #list .empty' } = {}) {
   context = await browser.newContext({ timezoneId, locale: 'en-US', ...(geolocation ? { geolocation, permissions: ['geolocation'] } : {}), ...(touch ? { hasTouch: true } : {}) }); // viewer elsewhere: the page still shows Austin time
   page = await context.newPage();
   pageErrors = [];
   page.on('pageerror', (e) => pageErrors.push(e.message));
   await page.clock.setFixedTime(clock);
-  apiCalls = [];
+  apiCalls = []; hits = [];
+  if (usage) await page.addInitScript(() => localStorage.setItem('skelly.usage', 'on'));
   await page.route('**/*', (route) => {
     const u = new URL(route.request().url());
     if (u.origin !== origin) return route.abort(); // fonts, venues: never leave the machine
     const json = (v, status = 200) => route.fulfill({ status, contentType: 'application/json', body: typeof v === 'string' ? v : JSON.stringify(v) });
+    if (u.pathname === '/api/hit') { hits.push(JSON.parse(route.request().postData() || '{}')); return route.fulfill({ status: 204 }); }
     if (u.pathname.startsWith('/api/')) {
       apiCalls.push(u.pathname + u.search);
       if (u.pathname === '/api/courts') return json(apiCourts.body, apiCourts.status);
@@ -1271,6 +1274,35 @@ const AUSTIN_ONLY = { generatedAt: SCHEDULE.generatedAt, regions: [{ id: 'austin
 const MAPS_AUSTIN = { source: '20261107.pmtiles', maps: [{ region: 'austin', bbox: [-98.05, 30.1, -97.47, 30.78], maxzoom: 14 }] };
 const austinSched = () => { const s = structuredClone(SCHEDULE); s.region = { id: 'austin', name: 'Austin, TX', timezone: 'America/Chicago' }; return s; };
 const headings = () => page.locator('#events .ev-day').evaluateAll((els) => els.map((e) => [e.firstChild.textContent, e.querySelector('small').textContent]));
+
+test('site: usage: the page sends anonymous events (open, view, search, filter, detail, out), and none in a test browser by default', async () => {
+  await open({ events: EVENTS, url: '/', waitFor: '#events .row', usage: true });
+  await page.waitForTimeout(3300); // no city list in this fixture: the first event waits up to 3 s for it
+  await page.locator('#eventCats [data-sheet="sortSheet"]').click();
+  await page.locator('#sortOpts [data-evsort="ending"]').click();
+  await page.locator('#sortSheet [data-close]').first().click();
+  await page.locator('#events .row', { hasText: 'Matcha Cart' }).locator('details.more summary').click();
+  await page.waitForTimeout(100); // the toggle event comes a moment after the click
+  await page.evaluate(() => window.__skellyFlush());
+  await page.waitForTimeout(200);
+  const evs = hits.flatMap((h) => h.e);
+  assert.ok(hits.length >= 1 && /^[a-z0-9]{24}$/.test(hits[0].d) && /^[a-z0-9]{24}$/.test(hits[0].s), 'random device and session ids');
+  assert.deepEqual(evs.map((e) => e.n), ['open', 'filter', 'detail']);
+  assert.deepEqual(evs[0].p, { tab: 'events', region: 'austin', layout: 'list', how: 'all' });
+  assert.deepEqual(evs[1].p, { tab: 'events', what: 'sort', value: 'ending', region: 'austin' });
+  assert.equal(evs[2].p.kind, 'event');
+  // A search is sent once typing pauses, with its result count.
+  await page.locator('#q, #evQ, input[type="search"]').first().fill('matcha');
+  await page.waitForTimeout(1700);
+  await page.evaluate(() => window.__skellyFlush());
+  await page.waitForTimeout(200);
+  const search = hits.flatMap((h) => h.e).find((e) => e.n === 'search');
+  assert.deepEqual([search.p.q, search.p.results], ['matcha', 1]);
+  // Without the test switch an automated browser sends nothing.
+  await open({ events: EVENTS, url: '/', waitFor: '#events .row' });
+  assert.equal(await page.evaluate(() => typeof window.__skellyFlush), 'undefined');
+  assert.deepEqual(pageErrors, []);
+});
 
 test('site: Every week: weekly markets on their next day, then the ones without hours linked to where the hours are', async () => {
   const feed = { ...EVENTS, events: [...EVENTS.events, { id: 'mkt-mueller', category: 'popup', kind: 'weekly', tags: [], title: "Texas Farmers' Market at Mueller", venue: "Texas Farmers' Market at Mueller", city: 'Austin', startDate: '2026-10-25', startTime: '10:00', endTime: '14:00', sourceUrl: 'https://www.openstreetmap.org/node/1', source: 'Weekly markets', description: 'Every Sunday, 10am–2pm.', region: 'austin', lat: 30.3, lng: -97.71, located: 'source' }],
