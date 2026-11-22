@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T07:46:09.767Z",
+  "generatedAt": "2026-11-22T07:58:07.092Z",
   "region": {
     "id": "austin",
     "name": "Austin, TX",
@@ -17,7 +17,7 @@
       "kind": "OpenPlay club directory",
       "site": "https://openplaymap.com/open-play/austin",
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:15.572Z",
+      "checkedAt": "2026-11-22T07:54:38.866Z",
       "count": 255
     },
     {
@@ -30,7 +30,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/austinpicklehaus",
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:15.573Z",
+      "checkedAt": "2026-11-22T07:54:38.867Z",
       "count": 155
     },
     {
@@ -43,7 +43,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/holy-pickle",
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:15.573Z",
+      "checkedAt": "2026-11-22T07:54:38.868Z",
       "count": 0
     },
     {
@@ -56,7 +56,7 @@
       "kind": "Venue's schedule page",
       "site": "https://app.arketa.co/iframe/volleyworld/schedule",
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:15.573Z",
+      "checkedAt": "2026-11-22T07:54:38.868Z",
       "count": 10
     },
     {
@@ -69,7 +69,7 @@
       "kind": "Venue's schedule page",
       "site": "https://goteamup.com/w9142954/p/9142954-atx-beach/memberships/223927/",
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:15.574Z",
+      "checkedAt": "2026-11-22T07:54:38.869Z",
       "count": 2
     },
     {
@@ -82,7 +82,7 @@
       "kind": "Venue's schedule page",
       "site": "https://www.austinvelocity.com",
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:15.575Z",
+      "checkedAt": "2026-11-22T07:54:38.870Z",
       "count": 2
     },
     {
@@ -109,7 +109,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:16.606Z",
+      "checkedAt": "2026-11-22T07:54:39.212Z",
       "count": 3
     },
     {
@@ -136,7 +136,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:17.775Z",
+      "checkedAt": "2026-11-22T07:54:40.395Z",
       "count": 3
     },
     {
@@ -155,7 +155,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:18.326Z",
+      "checkedAt": "2026-11-22T07:54:40.531Z",
       "count": 3
     },
     {
@@ -174,7 +174,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:18.699Z",
+      "checkedAt": "2026-11-22T07:54:40.872Z",
       "count": 2
     },
     {
@@ -193,7 +193,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:19.236Z",
+      "checkedAt": "2026-11-22T07:54:41.205Z",
       "count": 10
     },
     {
@@ -206,7 +206,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://apps.daysmartrecreation.com/dash/x/chaparralice/calendar?location=1&start={date}&end={date}&event_type={eventType}",
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:19.929Z",
+      "checkedAt": "2026-11-22T07:54:41.907Z",
       "count": 35
     },
     {
@@ -219,7 +219,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://iceandfield.com/public-skating/",
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:20.621Z",
+      "checkedAt": "2026-11-22T07:54:43.039Z",
       "count": 24
     },
     {
@@ -232,7 +232,7 @@
       "kind": "City parks schedule",
       "site": "https://www.austintexas.gov/parks/alamo-recreation-center",
       "ok": true,
-      "checkedAt": "2026-11-22T07:43:22.290Z",
+      "checkedAt": "2026-11-22T07:54:44.404Z",
       "count": 9
     },
     {
@@ -245,7 +245,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-22T07:43:22.503Z",
+      "checkedAt": "2026-11-22T07:54:44.938Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
@@ -14333,6 +14333,7 @@
       "sourceId": "manual",
       "region": "austin",
       "timezone": "America/Chicago",
+      "watchError": "fetch failed",
       "venueId": "dripping-springs-ranch-park",
       "status": "scheduled"
     }

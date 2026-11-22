@@ -1,5 +1,5 @@
 {
- "listingsAt": "2026-11-22T07:28:19.154Z",
+ "listingsAt": "2026-11-22T08:00:06.138Z",
  "events": [
   {
    "id": "evt-b08715cc63748015",
@@ -891,6 +891,8 @@
    "lat": 29.73958,
    "lng": -95.60633,
    "located": "source",
+   "startTime": "20:00",
+   "endTime": "23:30",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -1155,6 +1157,7 @@
    "lat": 29.7631,
    "lng": -95.3646,
    "located": "source",
+   "startTime": "11:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -1275,6 +1278,7 @@
    "lat": 29.73958,
    "lng": -95.60633,
    "located": "source",
+   "startTime": "19:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-22"
   },
@@ -1656,6 +1660,8 @@
    "lat": 29.7613,
    "lng": -95.45937,
    "located": "source",
+   "startTime": "18:00",
+   "endTime": "19:30",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -2053,20 +2059,20 @@
    "sourceId": "allevents-austin"
   },
   {
-   "id": "evt-81f0d3cf5debc43b",
+   "id": "evt-0070a12e2470d3b1",
    "category": "seasonal",
    "kind": "seasonal",
    "tags": [],
-   "title": "The List Naughty & Nice Holiday Pop Up Holiday Movie Night",
-   "venue": "The Village Country Club, 5670 Village Glen Drive",
+   "title": "The List Holiday Pop Up Movie Night",
+   "venue": "The List Naughty & Nice Holiday Pop-Up, 5670 Village Glen Drive",
    "city": "Dallas",
    "startDate": "2026-11-29",
    "endDate": "2026-12-20",
-   "sourceUrl": "https://allevents.in/dallas/the-list-naughty-and-nice-holiday-pop-up-holiday-movie-night/100002004386472897",
+   "sourceUrl": "https://allevents.in/dallas/the-list-holiday-pop-up-movie-night/100002004386472897",
    "source": "AllEvents",
    "region": "dallas",
-   "lat": 32.85941,
-   "lng": -96.76253,
+   "lat": 32.85945,
+   "lng": -96.76237,
    "located": "source",
    "startTime": "17:00",
    "sourceId": "allevents-dallas",
@@ -4135,6 +4141,7 @@
    "lat": 29.75223,
    "lng": -95.45651,
    "located": "source",
+   "startTime": "11:30",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -4854,6 +4861,8 @@
    "lat": 29.6974,
    "lng": -95.33629,
    "located": "source",
+   "startTime": "11:00",
+   "endTime": "14:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -4894,6 +4903,8 @@
    "lat": 29.7602,
    "lng": -95.3694,
    "located": "source",
+   "startTime": "11:00",
+   "endTime": "15:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-22"
   },
@@ -4931,6 +4942,8 @@
    "lat": 29.8451,
    "lng": -95.43098,
    "located": "source",
+   "startTime": "10:00",
+   "endTime": "14:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-22"
   },
@@ -5093,6 +5106,8 @@
    "lat": 29.73902,
    "lng": -95.41346,
    "located": "source",
+   "startTime": "14:00",
+   "endTime": "18:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -5111,6 +5126,8 @@
    "lat": 29.72137,
    "lng": -95.41768,
    "located": "source",
+   "startTime": "09:00",
+   "endTime": "12:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-22"
   },
@@ -5791,6 +5808,7 @@
    "lat": 29.73524,
    "lng": -95.36563,
    "located": "source",
+   "startTime": "09:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -6523,6 +6541,8 @@
    "lat": 29.80195,
    "lng": -95.41644,
    "located": "source",
+   "startTime": "12:00",
+   "endTime": "19:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-22"
   },
@@ -6561,6 +6581,8 @@
    "lat": 29.68019,
    "lng": -95.64131,
    "located": "source",
+   "startTime": "12:00",
+   "endTime": "22:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -6660,6 +6682,8 @@
    "lat": 29.77083,
    "lng": -95.38689,
    "located": "source",
+   "startTime": "14:00",
+   "endTime": "19:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -6975,6 +6999,28 @@
    "sourceId": "allevents-austin"
   },
   {
+   "id": "evt-e64af04c1ca78710",
+   "category": "seasonal",
+   "kind": "seasonal",
+   "tags": [],
+   "title": "Pancakes at the North Pole",
+   "venue": "Main Event Webster, 1125 Magnolia Ave, Webster// 77598",
+   "city": "Webster",
+   "startDate": "2026-12-13",
+   "startTime": "11:00",
+   "endTime": "13:00",
+   "price": "$27.24–$35.96",
+   "sourceUrl": "https://allevents.in/webster/pancakes-at-the-north-pole-webster/2700031045875147",
+   "source": "AllEvents",
+   "description": "⭐ Arrive at Main Event and step into a merry morning built around family-friendly holiday fun.",
+   "region": "houston",
+   "lat": 29.53773,
+   "lng": -95.11826,
+   "located": "source",
+   "sourceId": "allevents-houston",
+   "firstSeen": "2026-11-22"
+  },
+  {
    "id": "evt-09511bc5bb482942",
    "category": "popup",
    "kind": "popup",
@@ -6989,6 +7035,8 @@
    "lat": 29.76607,
    "lng": -95.36459,
    "located": "source",
+   "startTime": "10:30",
+   "endTime": "17:30",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -7110,6 +7158,7 @@
    "lat": 29.75307,
    "lng": -95.35961,
    "located": "source",
+   "startTime": "09:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
@@ -7218,6 +7267,28 @@
    "firstSeen": "2026-11-22"
   },
   {
+   "id": "evt-e1e8778f8859efcf",
+   "category": "seasonal",
+   "kind": "seasonal",
+   "tags": [],
+   "title": "Houston SantaCon Bar Crawl 2026",
+   "venue": "Cedar Creek, 1034 West 20th Street",
+   "city": "Houston",
+   "startDate": "2026-12-19",
+   "startTime": "13:00",
+   "endTime": "20:00",
+   "price": "$0–$30.65",
+   "sourceUrl": "https://allevents.in/houston/houston-santacon-bar-crawl-2026/100001988204022753",
+   "source": "AllEvents",
+   "description": "Houston SantaCon Bar Crawl 2026The Houston SantaCon Bar Crawl 2026 is the biggest holiday bar crawl in Houston.",
+   "region": "houston",
+   "lat": 29.80354,
+   "lng": -95.41765,
+   "located": "source",
+   "sourceId": "allevents-houston",
+   "firstSeen": "2026-11-22"
+  },
+  {
    "id": "evt-a0371bdfcddf9016",
    "category": "popup",
    "kind": "popup",
@@ -7233,6 +7304,8 @@
    "lat": 29.74825,
    "lng": -95.31695,
    "located": "source",
+   "startTime": "12:00",
+   "endTime": "22:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-22"
   },
@@ -7419,26 +7492,6 @@
    "located": "source",
    "startTime": "21:00",
    "sourceId": "allevents-dallas",
-   "firstSeen": "2026-11-21"
-  },
-  {
-   "id": "evt-8606cfe8072ad280",
-   "category": "popup",
-   "kind": "popup",
-   "tags": [],
-   "title": "Houston Independent Makers Expo",
-   "venue": "Discovery Green, 1500 McKinney Street",
-   "city": "Houston",
-   "startDate": "2027-01-08",
-   "endDate": "2027-01-10",
-   "sourceUrl": "https://allevents.in/houston/houston-independent-makers-expo/100002004472087974",
-   "source": "AllEvents",
-   "region": "houston",
-   "lat": 29.75307,
-   "lng": -95.35961,
-   "located": "source",
-   "startTime": "10:00",
-   "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
   },
   {

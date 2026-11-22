@@ -7,55 +7,56 @@
   "https://www.planomato.com/en/austin/p/open-play-volleyball-austin": {
     "hash": "09c3a259d6699ab6",
     "changedOn": "2026-11-18",
-    "checkedAt": "2026-11-22T07:46:06.579Z"
+    "checkedAt": "2026-11-22T07:57:53.357Z"
   },
   "https://austinssc.leaguelab.com/leagues?sport=Sand+Volleyball": {
     "hash": "4ab7a438ef5f2893",
     "changedOn": "2026-11-22",
-    "checkedAt": "2026-11-22T07:46:06.998Z"
+    "checkedAt": "2026-11-22T07:57:53.817Z"
   },
   "https://www.beecavetexas.gov/residents/events/bee_cave_on_ice/index.php": {
     "hash": "b2787028c4edd239",
     "changedOn": "2026-11-20",
-    "checkedAt": "2026-11-22T07:46:08.462Z"
+    "checkedAt": "2026-11-22T07:57:55.663Z"
   },
   "https://www.fourseasons.com/austin/seasonal/winter/": {
     "hash": "f9723ddf4ed66b6e",
     "changedOn": "2026-11-21",
-    "checkedAt": "2026-11-22T07:46:08.577Z"
+    "checkedAt": "2026-11-22T07:57:55.877Z"
   },
   "https://acesintexas.com/thursday-6s-sand-volleyball-league-atx-beach/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:46:05.505Z",
+    "checkedAt": "2026-11-22T07:57:52.349Z",
     "error": "HTTP 403"
   },
   "https://acesintexas.com/aces-pflugerville-monday-co-ed-indoor-6s-volleyball-league/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:46:05.827Z",
+    "checkedAt": "2026-11-22T07:57:52.668Z",
     "error": "HTTP 403"
   },
   "https://acesintexas.com/ptx-monday-indoor-open-plays-volleyworld-pflugerville/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:46:04.835Z",
+    "checkedAt": "2026-11-22T07:57:51.711Z",
     "error": "HTTP 403"
   },
   "https://acesintexas.com/wednesday-indoor-open-plays-volleyworld-pflugerville/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:46:05.176Z",
+    "checkedAt": "2026-11-22T07:57:52.029Z",
     "error": "HTTP 403"
   },
   "https://thelongcenter.org/icerink/": {
     "hash": "aad501d7abf89f9d",
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:46:09.225Z"
+    "checkedAt": "2026-11-22T07:57:56.578Z"
   },
   "https://www.drippingspringsranchpark.com/510/Ice-Skating": {
     "hash": "61d0ff4b504bcfe4",
     "changedOn": null,
-    "checkedAt": "2026-11-22T07:46:09.749Z"
+    "checkedAt": "2026-11-22T07:58:07.071Z",
+    "error": "fetch failed"
   }
 }
