@@ -186,10 +186,8 @@
     "matched": "2005 WHELESS LN, AUSTIN, TX, 78723"
   },
   "golden mean, 2210 s 1st st": {
-    "lat": 30.24433,
-    "lng": -97.75784,
-    "located": "address",
-    "matched": "2210 S 1ST ST, AUSTIN, TX, 78704"
+    "unresolved": true,
+    "lastTried": "2026-11-22T00:00:00.000Z"
   },
   "jester king brewery, 13187 fitzhugh rd": {
     "lat": 30.2442,
@@ -2824,10 +2822,8 @@
     "lastTried": "2026-11-21T23:10:18.805Z"
   },
   "gerry's grill, 6833 w sam houston pkwy s #109": {
-    "lat": 33.07783,
-    "lng": -96.82148,
-    "located": "address",
-    "matched": null
+    "unresolved": true,
+    "lastTried": "2026-11-22T00:00:00.000Z"
   },
   "market square park, 301 milam st": {
     "lat": 29.76322,
@@ -3416,5 +3412,89 @@
     "lng": -95.41765,
     "located": "source",
     "matched": null
+  },
+  "uroko, 1023 springdale rd bldg 1 ste c": {
+    "lat": 30.26872,
+    "lng": -97.69346,
+    "located": "address",
+    "matched": "1023 SPRINGDALE RD, AUSTIN, TX, 78721"
+  },
+  "seremoni": {
+    "unresolved": true,
+    "lastTried": "2026-11-22T00:00:00.000Z"
+  },
+  "market on the strip, 3924 cedar springs rd": {
+    "lat": 32.81053,
+    "lng": -96.81051,
+    "located": "address",
+    "matched": "3924 CEDAR SPRINGS RD, DALLAS, TX, 75219"
+  },
+  "autry park, 3711 autry park dr": {
+    "unresolved": true,
+    "lastTried": "2026-11-22T00:00:00.000Z"
+  },
+  "kitsu nori, 2310 s lamar blvd #102": {
+    "lat": 30.24737,
+    "lng": -97.77518,
+    "located": "address",
+    "matched": "2310 S LAMAR BLVD, AUSTIN, TX, 78704"
+  },
+  "punch bowl social, 11310 domain dr": {
+    "lat": 30.39835,
+    "lng": -97.72585,
+    "located": "address",
+    "matched": "11310 DOMAIN DR, AUSTIN, TX, 78758"
+  },
+  "triangle farmers market, 4660 triangle ave": {
+    "lat": 30.31481,
+    "lng": -97.73374,
+    "located": "address",
+    "matched": "4660 TRIANGLE AVE, AUSTIN, TX, 78751"
+  },
+  "sprinkle valley at austin beerworks": {
+    "unresolved": true,
+    "lastTried": "2026-11-22T00:00:00.000Z"
+  },
+  "gerry's grill, 6833 w sam houston pkwy s ste 109": {
+    "unresolved": true,
+    "lastTried": "2026-11-22T00:00:00.000Z"
+  },
+  "wingman kitchens, 1023 springdale rd": {
+    "lat": 30.26872,
+    "lng": -97.69346,
+    "located": "address",
+    "matched": "1023 SPRINGDALE RD, AUSTIN, TX, 78721"
+  },
+  "open house austin, 1204 salina st": {
+    "lat": 30.27374,
+    "lng": -97.72097,
+    "located": "address",
+    "matched": "1204 SALINA ST, AUSTIN, TX, 78702"
+  },
+  "the blind goat day market (nov 28) and onli (nov 29)": {
+    "unresolved": true,
+    "lastTried": "2026-11-22T00:00:00.000Z"
+  },
+  "sundance thrift, 521 bryan st": {
+    "lat": 33.21892,
+    "lng": -97.14764,
+    "located": "address",
+    "matched": "521 BRYAN ST, DENTON, TX, 76201"
+  },
+  "atlantis coffee & bar, 1101 holman st": {
+    "lat": 29.73926,
+    "lng": -95.37756,
+    "located": "address",
+    "matched": "1101 HOLMAN ST, HOUSTON, TX, 77004"
+  },
+  "jesuit dallas, 12345 inwood rd": {
+    "lat": 32.91728,
+    "lng": -96.81855,
+    "located": "address",
+    "matched": "12345 INWOOD RD, DALLAS, TX, 75244"
+  },
+  "tillery street plant co.": {
+    "unresolved": true,
+    "lastTried": "2026-11-22T00:00:00.000Z"
   }
 }
