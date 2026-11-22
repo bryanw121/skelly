@@ -1272,6 +1272,29 @@ const MAPS_AUSTIN = { source: '20261107.pmtiles', maps: [{ region: 'austin', bbo
 const austinSched = () => { const s = structuredClone(SCHEDULE); s.region = { id: 'austin', name: 'Austin, TX', timezone: 'America/Chicago' }; return s; };
 const headings = () => page.locator('#events .ev-day').evaluateAll((els) => els.map((e) => [e.firstChild.textContent, e.querySelector('small').textContent]));
 
+test('site: Every week: weekly markets on their next day, then the ones without hours linked to where the hours are', async () => {
+  const feed = { ...EVENTS, events: [...EVENTS.events, { id: 'mkt-mueller', category: 'popup', kind: 'weekly', tags: [], title: "Texas Farmers' Market at Mueller", venue: "Texas Farmers' Market at Mueller", city: 'Austin', startDate: '2026-10-25', startTime: '10:00', endTime: '14:00', sourceUrl: 'https://www.openstreetmap.org/node/1', source: 'Weekly markets', description: 'Every Sunday, 10am–2pm.', region: 'austin', lat: 30.3, lng: -97.71, located: 'source' }],
+    markets: [{ id: 'node/2', name: 'Sunset Valley Farmers Market', city: 'Austin', region: 'austin', lat: 30.23, lng: -97.81, url: 'https://sunsetvalleyfarmersmarket.org/' }, { id: 'node/3', name: 'Lakeline Farmers Market', city: 'Cedar Park', region: 'austin', lat: 30.48, lng: -97.79 }, { id: 'node/4', name: 'Dallas Farmers Market', city: 'Dallas', region: 'dallas', lat: 32.77, lng: -96.79 }] };
+  await open({ events: feed, url: '/?type=weekly', waitFor: '#events .row' });
+  assert.deepEqual(await page.locator('#events .ev-row .title').allTextContents(), ["Texas Farmers' Market at Mueller"], 'only weekly markets');
+  assert.equal(await page.locator('#events .ev-row .ev-kick').textContent(), 'Farmers market·Every week');
+  const un = page.locator('#events .mk-unlisted');
+  assert.equal(await un.locator('h2').textContent(), 'Hours not listed2 more weekly markets · check the day before you go');
+  assert.deepEqual(await un.locator('.mk-name').evaluateAll((els) => els.map((e) => e.firstChild.textContent)), ['Lakeline Farmers Market', 'Sunset Valley Farmers Market'], 'this city only, by name');
+  const [lake, sunset] = await un.locator('.mk-go').all();
+  assert.equal(await sunset.textContent(), 'Hours on their site ↗');
+  assert.equal(await sunset.getAttribute('href'), 'https://sunsetvalleyfarmersmarket.org/');
+  assert.equal(await lake.textContent(), 'Hours on Google Maps ↗');
+  assert.equal(await lake.getAttribute('href'), 'https://www.google.com/maps/search/?api=1&query=Lakeline%20Farmers%20Market%2C%20Cedar%20Park');
+  assert.equal(await lake.getAttribute('target'), '_blank');
+  // The filter sheet counts them under Every week; All events doesn't list them.
+  await page.locator('#eventCats [data-sheet="eventsSheet"]').click();
+  assert.equal(await page.locator('#eventsOpts [data-evkind="weekly"] .n').textContent(), '3');
+  await page.locator('#eventsOpts [data-evkind="all"]').click();
+  assert.equal(await page.locator('#events .mk-unlisted').count(), 0);
+  assert.deepEqual(pageErrors, []);
+});
+
 test('site: Events cards lead with their topic; Sort orders the list, For you puts picked topics first', async () => {
   // Sun Oct 25 again. On now: Sunday Pop-up, Autumn Market, Matcha Cart (ending soonest first).
   await open({ events: EVENTS, url: '/', waitFor: '#events .row' });
