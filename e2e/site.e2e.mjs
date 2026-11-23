@@ -2187,3 +2187,16 @@ test('site: usage page: locked until the owner key, then the totals; the Usage t
   await page.locator('#lock').waitFor();
   assert.deepEqual(pageErrors, []);
 });
+
+test('site: Events list (Preact): an open Details stays open when the list redraws (a new sort)', async () => {
+  await open({ events: EVENTS, url: '/', waitFor: '#events .row' });
+  const card = page.locator('#events .ev-row', { hasText: 'Matcha Cart' });
+  await card.locator('details.more summary').click();
+  assert.equal(await card.locator('details.more').getAttribute('open'), '');
+  await page.locator('#eventCats [data-sheet="sortSheet"]').click();
+  await page.locator('#sortOpts [data-evsort="ending"]').click();
+  await page.locator('#sortSheet [data-close]').first().click();
+  assert.equal(await page.locator('#eventCats [data-sheet="sortSheet"]').textContent().then((t) => t.includes('Ending soon')), true, 'the list was redrawn with the new sort');
+  assert.equal(await card.locator('details.more').getAttribute('open'), '', 'still open');
+  assert.deepEqual(pageErrors, []);
+});
