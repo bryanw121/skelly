@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        257,
         250,
         250,
         250,
@@ -10,6 +9,7 @@
         259,
         255,
         257,
+        264,
         264,
         264
       ],
@@ -29,13 +29,13 @@
     },
     "austin-picklehaus": {
       "counts": [
-        155,
         153,
         152,
         152,
         152,
         150,
         150,
+        159,
         159,
         159,
         159
@@ -212,8 +212,8 @@
     },
     "reclub": {
       "counts": [
-        3,
         4,
+        3,
         3,
         3,
         3,
@@ -276,6 +276,9 @@
         "participants[]",
         "participants[].createdAt",
         "participants[].externalReference",
+        "participants[].externalReference.gender",
+        "participants[].externalReference.level",
+        "participants[].externalReference.name",
         "participants[].id",
         "participants[].isCoach",
         "participants[].isHost",
@@ -351,7 +354,7 @@
         3,
         3,
         3,
-        3,
+        2,
         2,
         2,
         2
@@ -759,7 +762,7 @@
         35,
         35,
         35,
-        35,
+        37,
         37,
         37,
         37
@@ -926,7 +929,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 612
+      "failStreak": 613
     },
     "dallas-reclub": {
       "counts": [
@@ -1076,10 +1079,10 @@
         20,
         20,
         20,
-        20,
         19,
         20,
         21,
+        19,
         19,
         19,
         19
@@ -1115,6 +1118,8 @@
         "feeCurrency",
         "feeType",
         "flags",
+        "flags.GROUP_PROMOTED",
+        "flags.PROXIMITY_PROMOTED",
         "gender",
         "groupReference",
         "groups[]",
@@ -1137,6 +1142,7 @@
         "participants[]",
         "participants[].createdAt",
         "participants[].externalReference",
+        "participants[].externalReference.age",
         "participants[].externalReference.level",
         "participants[].externalReference.name",
         "participants[].id",

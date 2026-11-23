@@ -37,10 +37,11 @@
  "vistabrewing": {
   "events": [
    "evt-9ace9bd7bac37a5a",
-   "evt-91823626a4cc1b37"
+   "evt-91823626a4cc1b37",
+   "evt-d8b84530e4ea3a61"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-22"
+  "last": "2026-11-23"
  },
  "goldenmeanaustin": {
   "events": [
@@ -58,10 +59,11 @@
  },
  "righteousretro": {
   "events": [
-   "evt-34b4a737299ee012"
+   "evt-34b4a737299ee012",
+   "evt-deaf572d23716f0c"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-19"
+  "last": "2026-11-23"
  },
  "downtownaustin": {
   "events": [
@@ -292,10 +294,11 @@
    "evt-62cb43379b389b0c",
    "evt-5e6b8603bea6beff",
    "evt-f1d8ec360841de75",
-   "evt-97447881c307cc5a"
+   "evt-97447881c307cc5a",
+   "evt-243b1985cfb53b4e"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-22"
+  "last": "2026-11-23"
  },
  "naturespress_": {
   "events": [
@@ -915,5 +918,96 @@
   ],
   "first": "2026-11-22",
   "last": "2026-11-22"
+ },
+ "crybabymatchaclub": {
+  "events": [
+   "evt-024b14ec72e8d74d"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "cocotreatsbakery": {
+  "events": [
+   "evt-95bd2d329304f50f"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "thevintagepops": {
+  "events": [
+   "evt-79bbc57b007fa57b"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "briansbitchinbakeryofficial": {
+  "events": [
+   "evt-febe5cb74584fdc8"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "maicha.cafe": {
+  "events": [
+   "evt-5e19b20d58d2bd65"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "thecustardbox": {
+  "events": [
+   "evt-fc0eace0461d09fe"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "kohikocoffeehouse": {
+  "events": [
+   "evt-046fb7c59a38c119"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "her_market_htx": {
+  "events": [
+   "evt-2172dfd1d6dcd3c5"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "matchachachatx": {
+  "events": [
+   "evt-bf9f2bfd2f405cdc"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "classycravingco": {
+  "events": [
+   "evt-c5718f724df9cd78"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "mgsmarkets": {
+  "events": [
+   "evt-4738430a91fff842"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "ahoustonmarket": {
+  "events": [
+   "evt-90ccbc00e745c638"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
+ },
+ "juju.sauces": {
+  "events": [
+   "evt-afcde2c956d95984"
+  ],
+  "first": "2026-11-23",
+  "last": "2026-11-23"
  }
 }

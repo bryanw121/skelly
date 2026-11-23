@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T14:17:05.394Z",
+  "generatedAt": "2026-11-23T18:16:16.433Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,7 +67,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T14:13:54.382Z",
+      "checkedAt": "2026-11-23T18:13:24.366Z",
       "count": 19,
       "warnings": [
         "reclub-MLI8J8: no surface",
@@ -114,7 +114,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-23T14:13:55.636Z",
+      "checkedAt": "2026-11-23T18:13:30.714Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -133,7 +133,7 @@
       "level": "All levels",
       "price": "$10",
       "note": "Hosted by Houston Stars (Adults), every Monday.",
-      "capacity": 120,
+      "capacity": 33,
       "signup": {
         "url": "https://reclub.co/m/MLI8J8",
         "label": "Sign up on Reclub"

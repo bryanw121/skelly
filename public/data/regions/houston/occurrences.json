@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-23T14:17:05.394Z",
+  "generatedAt": "2026-11-23T18:16:16.433Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -105,7 +105,7 @@
       "verified_at": "2026-11-23",
       "attributes": {
         "type": "Open play",
-        "capacity": 120
+        "capacity": 33
       },
       "venue_id": "src-houston-stars",
       "status": "scheduled",
