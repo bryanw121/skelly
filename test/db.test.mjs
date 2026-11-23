@@ -74,7 +74,7 @@ test('migrations: apply cleanly, and a second run applies nothing', async () => 
     assert.deepEqual(await migrate(db, { log: (l) => logs.push(l) }), { applied: ['0001_init', '0002_events', '0003_usage', '0004_usage_props_objects'] });
     assert.deepEqual(logs, ['applied 0001_init.sql', 'applied 0002_events.sql', 'applied 0003_usage.sql', 'applied 0004_usage_props_objects.sql']);
     assert.deepEqual(await migrate(db, { log: (l) => logs.push(l) }), { applied: [] });
-    assert.equal(logs.length, 3);
+    assert.equal(logs.length, 4);
     const versions = await db.query('select version, checksum from schema_migrations');
     assert.deepEqual(versions.map((r) => r.version), ['0001_init', '0002_events', '0003_usage', '0004_usage_props_objects']);
     assert.match(versions[0].checksum, /^[0-9a-f]{64}$/);
