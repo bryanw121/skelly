@@ -16,6 +16,7 @@ import { EVENT_ICONS, eventIcon, eventTopics, SEARCH_TAGS, highlightParts, match
 import { placeGroups } from './events-ui.js';
 import { EVENT_KINDS, EVENT_SORTS, EVENT_TAGS, countEvents, eventSummary, isEventSort, lastChance, sortGroup, eventCta, eventDateRange, eventGroups, eventKind, eventPlaceParts, eventPlaces, eventTags, avatarPath, eventWhen, eventsForRegion, filterEvents, isEventKind, isEventTag, isOn, kindLabel, sortEvents, tagLabel } from './events-ui.js';
 import { pagesBase } from './pages.js';
+import { drawEventsList } from './components/EventsList.tsx';
 import { directionsHtml, eventCardHtml, eventFactsHtml, eventHours as hoursOf, eventKickerHtml, eventVisualHtml, noHours } from './components/EventCard.tsx';
 const PAGES = await pagesBase(); // '' next to the page, or the GitHub Pages address that answers (public/pages.js)
 
@@ -1202,14 +1203,6 @@ function renderSortSheet(list) {
     <button type="button" class="go-btn" data-close>Show ${shown} event${shown === 1 ? '' : 's'}</button>`;
 }
 document.addEventListener('toggle', (e) => { if (e.target.id === 'sortAdv') sortAdvOpen = e.target.open; }, true);
-/** The "Hours not listed" list under Every week: name, city (and distance with Near me), and a link to the hours. */
-function marketsUnlisted() {
-  const miles = (m) => (here ? milesToCoords(m.lat, m.lng) : null);
-  const ms = regionMarkets().slice().sort((a, b) => (here ? miles(a) - miles(b) : 0) || a.name.localeCompare(b.name));
-  if (!ms.length) return '';
-  return `<section class="ev-group mk-unlisted" data-group="unlisted"><h2 class="ev-day">Hours not listed<small>${ms.length} more weekly market${ms.length === 1 ? '' : 's'} · check the day before you go</small></h2>
-    <ul class="mk-list">${ms.map((m) => `<li class="mk-row">${eventVisual({ title: m.name }, 40)}<span class="mk-name">${esc(m.name)}<small>${esc([m.city, Number.isFinite(miles(m)) ? `${miles(m).toFixed(1)} mi` : ''].filter(Boolean).join(' · '))}</small></span><a class="mk-go" href="${esc(marketLink(m))}" target="_blank" rel="noopener">${m.url ? 'Hours on their site' : 'Hours on Google Maps'} ↗</a></li>`).join('')}</ul></section>`;
-}
 function renderEvents() {
   // Events aren't about a day or a sport: the day strip, the level filter, the charts and the
   // sports lists step aside (the map, when open, is handled by renderMap).
@@ -1222,7 +1215,7 @@ function renderEvents() {
     $('asof').textContent = eventsError ? '' : 'Loading…';
     $('eventCats').innerHTML = '';
     $('eventsCount').textContent = '';
-    $('events').innerHTML = eventsError ? `<div class="error">Couldn't load events: ${esc(eventsError)}</div>` : '<p class="loading">Loading events…</p>';
+    drawEventsList($('events'), eventsError ? { status: 'error', message: eventsError } : { status: 'loading' });
     $('eventsNote').textContent = '';
     return;
   }
@@ -1232,7 +1225,7 @@ function renderEvents() {
     $('asof').textContent = '';
     $('eventCats').innerHTML = '';
     $('eventsCount').textContent = '';
-    $('events').innerHTML = `<div class="ev-away"><h2>Events are Austin-only for now</h2><p>Pop-ups and seasonal events come to ${esc(region?.name ?? 'this city')} next. Open play, leagues and tournaments are already here.</p><button type="button" class="signup" data-go-sports>See open play here →</button></div>`;
+    drawEventsList($('events'), { status: 'away', regionName: region?.name ?? 'this city' });
     $('eventsNote').textContent = '';
     return;
   }
@@ -1264,13 +1257,10 @@ function renderEvents() {
   const anyDay = (q || topic) && whenLabel() ? filterEvents(upcoming, { ...evFilters(), weekend: false, day: null, window: null }, NOW.iso).length - shown.length : 0;
   $('eventsCount').innerHTML = filtering || whenLabel() || q || topic ? `${shown.length} of ${upcoming.length} events${q ? ` for “${esc(q)}”` : topic ? ` tagged ${esc(topic)}` : ''}${whenLabel() ? ` · ${esc(whenLabel())}` : ''}${anyDay > 0 ? ` · <button type="button" class="linkish" data-evanyday>${anyDay} more on other days</button>` : ''} · <button type="button" class="linkish" data-evclear>Clear filters</button>` : '';
   // Every week ends with the markets whose hours aren't listed, each linked to where its hours are.
-  const unlisted = state.evKind === 'weekly' && !q && !topic && !whenLabel() ? marketsUnlisted() : '';
-  $('events').innerHTML = (groups.length
-    ? groups.map((g) => {
-      const open = evOpen.has(g.key), rest = g.events.length - EVENTS_SHOWN;
-      return `<section class="ev-group" data-group="${esc(g.key)}"><h2 class="ev-day">${esc(g.label)}<small>${esc(g.sub)}</small></h2>${(open ? g.events : g.events.slice(0, EVENTS_SHOWN)).map(eventCard).join('')}${rest > 0 && !open ? `<button type="button" class="show-more" data-evmore="${esc(g.key)}">Show ${rest} more</button>` : ''}</section>`;
-    }).join('')
-    : unlisted ? '' : `<div class="empty"><b>Nothing matches.</b> <button type="button" class="linkish" data-evclear>Clear filters</button></div>`) + unlisted;
+  const unlisted = state.evKind === 'weekly' && !q && !topic && !whenLabel();
+  const marketMiles = (m) => (here ? milesToCoords(m.lat, m.lng) : null);
+  const markets = unlisted ? regionMarkets().slice().sort((a, b) => (here ? marketMiles(a) - marketMiles(b) : 0) || a.name.localeCompare(b.name)) : null;
+  drawEventsList($('events'), { status: 'list', groups, open: evOpen, shown: EVENTS_SHOWN, markets, marketMiles, marketLink, ctx: cardContext() });
   $('eventsNote').textContent = '';
   if (linked) { syncUrl(); requestAnimationFrame(() => document.querySelector(`.ev-row[data-ev="${CSS.escape(linked)}"]`)?.scrollIntoView({ block: 'center' })); }
 }
