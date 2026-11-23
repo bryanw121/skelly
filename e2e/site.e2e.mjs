@@ -61,6 +61,18 @@ const COURTS = {
   }],
 };
 
+const OWNER_KEY = 'good-owner-key-1';
+const USAGE_STATS = {
+  days: 7,
+  summary: { online_now: 3, visitors: 41, visits: 77, returning_pct: 29, busiest_minute: 5, busiest_at: 'Sat 11/21 11:02 am', searches: 12 },
+  daily: Array.from({ length: 7 }, (_, i) => ({ day: `2026-11-${String(16 + i).padStart(2, '0')}`, visitors: i + 2, visits: i + 4 })),
+  uses: [{ what: 'Events', visitors: 30 }, { what: 'Volleyball', visitors: 12 }],
+  cities: [{ place: 'Austin, TX', visitors: 33 }, { place: 'Houston, TX', visitors: 8 }],
+  searches: [{ q: 'roller skating', searches: 4, results: 0 }, { q: 'matcha', searches: 3, results: 5 }],
+  outs: [{ link: 'Instagram', taps: 9 }],
+  devices: [{ device_type: 'Phone', visitors: 35 }, { device_type: 'Computer', visitors: 6 }],
+};
+
 // --- server, browser, per-test page -------------------------------------------------------
 
 let server, origin, browser, context, page, apiCalls;
@@ -105,6 +117,11 @@ async function open({ where = null, programs = null, schedule = SCHEDULE, courts
     const u = new URL(route.request().url());
     if (u.origin !== origin) return route.abort(); // fonts, venues: never leave the machine
     const json = (v, status = 200) => route.fulfill({ status, contentType: 'application/json', body: typeof v === 'string' ? v : JSON.stringify(v) });
+    if (u.pathname === '/api/usage') { // the owner's Usage page: one good key
+      const key = JSON.parse(route.request().postData() || '{}').key;
+      if (key !== OWNER_KEY) return json({ error: 'wrong-key' }, 401);
+      return json(USAGE_STATS);
+    }
     if (u.pathname === '/api/hit') { hits.push(JSON.parse(route.request().postData() || '{}')); return route.fulfill({ status: 204 }); }
     if (u.pathname.startsWith('/api/')) {
       apiCalls.push(u.pathname + u.search);
@@ -2141,5 +2158,31 @@ test('site: a first visit opens on the city nearest the visitor (asked of the si
   await open({ index: two, regions, events: EVENTS, url: '/', waitFor: '#regionPick option[value="dallas"]', where: null });
   await page.waitForTimeout(400);
   assert.equal(await page.locator('#regionPick').inputValue(), 'austin');
+  assert.deepEqual(pageErrors, []);
+});
+
+test('site: usage page: locked until the owner key, then the totals; the Usage tab shows on that device only', async () => {
+  await open({ url: '/', events: EVENTS, waitFor: '#events .row' });
+  assert.equal(await page.locator('#usageTab').isVisible(), false, 'no Usage tab for visitors');
+  await page.goto(`${origin}/usage.html`);
+  await page.locator('#lock').waitFor();
+  await page.fill('#key', 'not-the-key-123');
+  await page.click('#lock button[type=submit]');
+  await page.locator('#lockMsg', { hasText: "didn't work" }).waitFor();
+  assert.equal(await page.locator('#stats').isVisible(), false);
+  await page.fill('#key', OWNER_KEY);
+  await page.click('#lock button[type=submit]');
+  await page.locator('#stats').waitFor();
+  assert.equal(await page.locator('#k-visitors').textContent(), '41');
+  assert.equal(await page.locator('#k-returning').textContent(), '29%');
+  assert.equal(await page.locator('#daily .us-col').count(), 7);
+  assert.equal(await page.locator('#searches tr.us-zero').count(), 1, 'a search that found nothing is highlighted');
+  assert.equal(await page.locator('#cities .us-bar').count(), 2);
+  await page.goto(`${origin}/`);
+  await page.locator('#usageTab').waitFor({ state: 'visible' });
+  await page.goto(`${origin}/usage.html`);
+  await page.locator('#stats').waitFor();
+  await page.click('#forget');
+  await page.locator('#lock').waitFor();
   assert.deepEqual(pageErrors, []);
 });
