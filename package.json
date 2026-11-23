@@ -21,7 +21,8 @@
   },
   "dependencies": {
     "postgres": "3.4.9",
-    "preact": "10.29.8"
+    "preact": "10.29.8",
+    "preact-render-to-string": "6.8.2"
   },
   "devDependencies": {
     "@babel/core": "7.29.13",

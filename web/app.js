@@ -16,6 +16,7 @@ import { EVENT_ICONS, eventIcon, eventTopics, SEARCH_TAGS, highlightParts, match
 import { placeGroups } from './events-ui.js';
 import { EVENT_KINDS, EVENT_SORTS, EVENT_TAGS, countEvents, eventSummary, isEventSort, lastChance, sortGroup, eventCta, eventDateRange, eventGroups, eventKind, eventPlaceParts, eventPlaces, eventTags, avatarPath, eventWhen, eventsForRegion, filterEvents, isEventKind, isEventTag, isOn, kindLabel, sortEvents, tagLabel } from './events-ui.js';
 import { pagesBase } from './pages.js';
+import { directionsHtml, eventCardHtml, eventFactsHtml, eventHours as hoursOf, eventKickerHtml, eventVisualHtml, noHours } from './components/EventCard.tsx';
 const PAGES = await pagesBase(); // '' next to the page, or the GitHub Pages address that answers (public/pages.js)
 
 // Each sport's filter tabs (`by`: the session field they filter on, `tabs`: its values, labels and
@@ -1036,10 +1037,7 @@ function render() {
 const EVENTS_SHOWN = 4; // cards under a heading before "Show N more"
 const evOpen = new Set(); // headings opened with Show more (not remembered)
 /** Directions to an event's venue, as a free-text destination (the venue string carries it). */
-const eventDirections = (ev) => {
-  const dest = encodeURIComponent(`${ev.venue}${ev.city && !String(ev.venue).toLowerCase().includes(String(ev.city).toLowerCase()) ? `, ${ev.city}` : ''}, TX`);
-  return `<a class="src" href="https://www.google.com/maps/dir/?api=1&amp;destination=${dest}" target="_blank" rel="noopener">Google Maps ↗</a><a class="src" href="https://maps.apple.com/directions?destination=${dest}&amp;mode=driving" target="_blank" rel="noopener">Apple Maps ↗</a>`;
-};
+const eventDirections = (ev) => directionsHtml(ev);
 const safeUrl = (u) => /^https:\/\//i.test(u || '');
 /** The crediting account's picture (a saved copy of its Instagram profile picture), when the event has one.
  *  Cards say "by @x" for an organizer's own post (read through the API) and "via @x" for a credited repost. */
@@ -1049,55 +1047,26 @@ const iconSvg = (id) => `<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"
  * The picture an event (or a map place, through its lead event) leads with: the organizer's own
  * photo when we have it, otherwise the icon of its most specific tag or of its kind.
  */
-const eventVisual = (ev, size, holder = ev) => avatarImg(holder, size) || (ev ? `<span class="ev-ic ic-${eventIcon(ev, eventKind(ev))}" style="--s:${size}px">${iconSvg(eventIcon(ev, eventKind(ev)))}</span>` : '');
-const avatarImg = (x, size) => (avatarPath(x) ? `<img class="av" src="${DATA}${esc(avatarPath(x))}" alt="" width="${size}" height="${size}" loading="lazy" decoding="async">` : '');
+const eventVisual = (ev, size, holder = ev) => eventVisualHtml(ev, size, holder, DATA);
 /**
  * The line above an event's title: what kind of thing it is, in its topic's colour. The main topic
  * leads, one more may follow, each one tap from showing only that topic; an event with no topic
  * says its kind (Pop-up, Seasonal). Theme tags (Asian-inspired) close the line.
  */
 /** An event's fact pills: a last chance ("Ends tomorrow"), Free, and its price (`price: false` leaves the price out). */
-function eventFacts(ev, { price = true } = {}) {
-  const last = lastChance(ev, NOW.iso), free = searchTags(ev).includes('free');
-  return [last ? `<span class="fact last">${esc(last)}</span>` : '', free ? '<span class="fact free">Free</span>' : '', price && ev.price && !(free && /^\s*free\s*$/i.test(ev.price)) ? `<span class="fact">${esc(ev.price)}</span>` : ''].join('');
-}
-function eventKicker(ev, { plain = false } = {}) {
-  const topics = eventTopics(ev).slice(0, 2);
-  const btn = (t, i) => (plain ? `<span class="kick${i ? ' more' : ''}">${esc(searchTagLabel(t))}</span>` : `<button type="button" class="kick${i ? ' more' : ''}" data-topic="${esc(t)}" aria-label="Show events tagged ${esc(searchTagLabel(t))}">${esc(searchTagLabel(t))}</button>`);
-  const parts = topics.length ? topics.map(btn) : eventKind(ev) ? [`<span class="kick">${esc(kindLabel(eventKind(ev)))}</span>`] : [];
-  if (topics.length && eventKind(ev) === 'weekly') parts.push('<span class="kick more">Every week</span>');
-  for (const g of eventTags(ev)) parts.push(`<span class="kick more">${esc(tagLabel(g))}</span>`);
-  return parts.length ? `<div class="ev-kick ic-${eventIcon(ev, eventKind(ev))}">${parts.join('<span class="kick-dot" aria-hidden="true">·</span>')}</div>` : '';
-}
+const eventFacts = (ev, { price = true } = {}) => eventFactsHtml(ev, NOW.iso, price);
+const eventKicker = (ev, { plain = false } = {}) => eventKickerHtml(ev, plain);
 /** An event's hours ("11am", "5pm–10pm"), or '' when its source gave none. */
-const eventHours = (ev) => (ev.startTime ? `${fmtT(ev.startTime)}${ev.endTime ? `–${fmtT(ev.endTime)}` : ''}` : '');
-/** What to say in their place: where the hours are. */
-const noHours = (ev) => (safeUrl(ev.sourceUrl) ? `Hours on the ${eventCta(ev) === 'See the post' ? 'post' : 'event page'}` : 'Hours not listed');
-function eventCard(ev) {
-  const parts = eventPlaceParts(ev);
-  const on = isOn(ev, NOW.iso);
-  const mi = here && Number.isFinite(ev.lat) && Number.isFinite(ev.lng) ? milesToCoords(ev.lat, ev.lng) : null;
-  const w = eventWhen(ev, NOW.iso);
-  const times = eventHours(ev);
-  const via = ev.source ? `<span class="via">Found via ${esc(ev.source)}</span>` : '';
-  const summary = eventSummary(ev);
-  const facts = eventFacts(ev);
-  return `<article class="row ev-row${evLink === ev.id ? ' linked' : ''}" data-ev="${esc(ev.id ?? '')}">
-    ${eventVisual(ev, 56)}
-    <div class="time">${w.range ? `<small class="ev-top">${esc(w.dow)}</small>${esc(w.top)}<small>${esc(w.main)}</small>` : `<small class="ev-top">${esc(w.top)}</small>${esc(w.main)}`}${times ? `<small>${esc(times)}</small>` : `<small class="no-hrs">${esc(noHours(ev))}</small>`}</div>
-    <div class="body">
-      ${eventKicker(ev)}
-      <div class="t1"><span class="title">${hl(ev.title)}</span>${on ? '<span class="pill fresh">Happening now</span>' : ''}</div>
-      ${avatarPath(ev) && ev.account ? `<div class="ev-by"><span>${ev.sourceId === 'instagram' ? 'by' : 'via'} <b>@${esc(ev.account)}</b></span></div>` : ''}
-      ${summary ? `<div class="ev-what">${hl(summary)}</div>` : ''}
-      <div class="venue"><b>${esc(parts[0] ?? ev.venue)}</b>${parts.slice(1).map((p) => ` · ${esc(p)}`).join('')}${mi != null ? ` · ${fmtMiles(mi)}` : ''}</div>
-      ${facts ? `<div class="meta ev-facts">${facts}</div>` : ''}${fitHtml(ev.startTime, ev.endTime)}
-    </div>
-    <div class="ev-foot">
-      <div class="actions">${safeUrl(ev.sourceUrl) ? `<a class="signup ev-go" href="${esc(ev.sourceUrl)}" target="_blank" rel="noopener">${eventCta(ev)} ↗</a>` : ''}${calButton(`ev:${ev.id}`, eventCalItem(ev))}</div>
-      <details class="more"${evLink === ev.id ? ' open' : ''}><summary>Details</summary>${ev.description ? `<div class="note">${esc(ev.description)}</div>` : ''}<div class="location">${esc(parts.join(', '))}</div><div class="actions">${eventDirections(ev)}</div>${via}</details>
-    </div></article>`;
-}
+const eventHours = (ev) => hoursOf(ev, fmtT);
+/** The context an event card needs from the page (components/EventCard.tsx). */
+const cardContext = () => ({
+  today: NOW.iso, query: activeQuery() || '', dataBase: DATA, linkedId: evLink,
+  milesTo: (ev) => (here && Number.isFinite(ev.lat) && Number.isFinite(ev.lng) ? milesToCoords(ev.lat, ev.lng) : null),
+  fmtMiles, fmtTime: fmtT, fitNote: (start, end) => windowNote(start, end, activeWindow()) || '',
+  calKey: (ev) => { const key = `ev:${ev.id}`; calItems.set(key, eventCalItem(ev)); return key; },
+});
+/** One event's card: the same in the Events list and in a place's sheet on the map. */
+const eventCard = (ev) => eventCardHtml(ev, cardContext());
 /** The events this region has, or null when it has no feed yet. */
 const regionEvents = () => (events ? eventsForRegion(events, region?.id ?? 'austin') : null);
 /** This city's weekly markets whose hours aren't listed (events.json `markets`): shown under Every week. */
@@ -1656,12 +1625,9 @@ function eventsPanelHtml(places, pickId) {
   // Under the name: the rest of the venue string (its address) and the area, without repeating the name.
   const rest = p.short && p.name.startsWith(p.short) ? p.name.slice(p.short.length).replace(/^[,\s]+/, '') : '';
   const addr = [rest, ...eventPlaceParts(p.events[0]).slice(1)].filter(Boolean);
-  const rows = p.events.map((ev) => {
-    const w = eventWhen(ev, NOW.iso);
-    return `<div class="pop-item"><span class="pop-t">${w.range ? `${esc(w.dow)} ${esc(w.top)}<small>${esc(w.main)}</small>` : `${esc(w.top)} ${esc(w.main)}`}${eventHours(ev) ? `<small class="pop-hrs">${esc(eventHours(ev))}</small>` : ''}</span><span class="pop-w">${eventKicker(ev)}<b>${esc(ev.title)}</b>${isOn(ev, NOW.iso) ? ' <span class="pill fresh">Happening now</span>' : ''}${eventSummary(ev) ? `<span class="ev-what">${esc(eventSummary(ev))}</span>` : ''}${eventHours(ev) ? '' : `<small>${esc(noHours(ev))}</small>`}${eventFacts(ev) ? `<span class="meta ev-facts">${eventFacts(ev)}</span>` : ''}</span><span class="pop-a">${safeUrl(ev.sourceUrl) ? `<a class="src" href="${esc(ev.sourceUrl)}" target="_blank" rel="noopener">${eventCta(ev)} ↗</a>` : ''}${calButton(`ev:${ev.id}`, eventCalItem(ev))}</span></div>`;
-  }).join('');
+  const rows = p.events.map(eventCard).join('');
   return `<div class="map-place"><div class="g-venue"><span class="v-name">${esc(p.short || p.name)}<small>${esc([...addr, `${n} event${n === 1 ? '' : 's'}`, mi != null ? fmtMiles(mi) : ''].filter(Boolean).join(' · '))}</small></span></div>
-    <div class="g-pop map-sessions">${rows}</div>
+    <div class="ev-group map-cards">${rows}</div>
     <div class="location"><div class="actions">${eventDirections(p.events[0])}</div></div></div>`;
 }
 
