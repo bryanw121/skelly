@@ -67,3 +67,11 @@ test('api/hit: 204 always; stores a good batch, ignores a bot and a GET', async 
   assert.equal(Number((await db.query('select count(*) as n from usage_events'))[0].n), 1);
   assert.equal(await createHandler({ db: null })({ method: 'POST', headers: HEAD, body: body([{ n: 'open' }]) }, { setHeader() {}, end() {} }), undefined, 'no database: a quiet 204');
 });
+
+test('insertUsage sends props as text cast to jsonb, so the postgres driver stores an object, not a string', async () => {
+  const seen = [];
+  await insertUsage({ query: async (text, params) => { seen.push({ text, params }); return []; } }, usageRows(body([{ n: 'open', p: { tab: 'events' } }]), HEAD));
+  assert.match(seen[0].text, /\$8::text::jsonb/);
+  assert.equal(typeof seen[0].params[7], 'string');
+  assert.deepEqual(JSON.parse(seen[0].params[7]), { tab: 'events' });
+});
