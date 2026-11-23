@@ -491,6 +491,8 @@ function renderRegion() {
 /** The header's Events | Sports switch. Sports opens the sport sheet (the sport picker). */
 function renderTopTabs() {
   const tabs = $('topTabs');
+  // Usage: only where the owner unlocked usage.html on this device (the key is checked by the server there).
+  try { $('usageTab').hidden = !localStorage.getItem('skelly.owner'); } catch {}
   tabs.querySelector('[data-section="events"]').setAttribute('aria-pressed', String(state.section === 'events'));
   tabs.querySelector('[data-section="sports"]').setAttribute('aria-pressed', String(state.section === 'sports'));
 }

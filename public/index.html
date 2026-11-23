@@ -12,10 +12,10 @@
 <body>
 <header>
   <div class="wrap">
-    <!-- Brand row: Events or Sports (Sports opens the sport sheet) and 📍; under it the city and how fresh the data is. -->
+    <!-- Brand row: Events or Sports (Sports opens the sport sheet), Usage on the owner's unlocked devices only, and 📍; under it the city and how fresh the data is. -->
     <div class="brand">
       <h1>Skel<span>ly</span></h1>
-      <div class="seg" role="group" aria-label="Events or sports" id="topTabs"><button class="seg-btn" type="button" data-section="events" aria-pressed="true">Events</button><button class="seg-btn" type="button" data-section="sports" aria-pressed="false" aria-haspopup="dialog">Sports</button></div>
+      <div class="seg" role="group" aria-label="Events or sports" id="topTabs"><button class="seg-btn" type="button" data-section="events" aria-pressed="true">Events</button><button class="seg-btn" type="button" data-section="sports" aria-pressed="false" aria-haspopup="dialog">Sports</button><a class="seg-btn top-usage" id="usageTab" href="usage.html" hidden>Usage</a></div>
       <button type="button" id="nearest" class="nearest" title="Nearest city to me" aria-label="Nearest city to me" hidden><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></button>
     </div>
     <div class="sub"><span class="region"><span id="regionName"></span><select id="regionPick" aria-label="City" hidden></select></span><span class="asof" id="asof">Loading…</span><a class="sources-link" id="sourcesLink" href="sources.html" hidden></a></div>

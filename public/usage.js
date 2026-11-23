@@ -2,14 +2,15 @@
 // a random id in this browser's storage counts a person once, and a session id changes after 30
 // minutes away. Events are queued and sent about every 20 seconds, and when the page is hidden.
 // Off where /api/hit doesn't exist (GitHub Pages, local files) and in automated browsers (tests)
-// unless localStorage 'skelly.usage' is 'on'.
+// unless localStorage 'skelly.usage' is 'on'. The owner's own devices (skelly.owner set by the
+// Usage page) aren't counted.
 const HOSTS = /(^|\.)skellyevents\.com$|^schelagg\.vercel\.app$/;
 const store = (() => { try { return window.localStorage; } catch { return null; } })();
 const get = (k) => { try { return store?.getItem(k); } catch { return null; } };
 const set = (k, v) => { try { store?.setItem(k, v); } catch {} };
 const rid = () => (crypto.randomUUID?.() ?? `${Date.now().toString(36)}${Math.random().toString(36).slice(2)}`).replace(/-/g, '').slice(0, 24);
 
-const on = get('skelly.usage') === 'on' || (HOSTS.test(location.hostname) && !navigator.webdriver && get('skelly.usage') !== 'off');
+const on = get('skelly.usage') === 'on' || (HOSTS.test(location.hostname) && !navigator.webdriver && get('skelly.usage') !== 'off' && !get('skelly.owner'));
 let device = get('skelly.device');
 if (on && !device) { device = rid(); set('skelly.device', device); }
 let session = null;
