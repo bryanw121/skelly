@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T00:02:45.927Z",
+ "generatedAt": "2026-11-23T02:16:49.098Z",
  "regions": [
   {
    "id": "austin",
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 152,
+     "sessions": 150,
      "pinned": true,
      "booking": true,
      "via": [
@@ -54,10 +54,10 @@
      "lead": false
     },
     {
-     "venue": "Eastside Paddle Club",
+     "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 83,
+     "sessions": 85,
      "pinned": true,
      "booking": true,
      "via": [
@@ -66,10 +66,10 @@
      "lead": false
     },
     {
-     "venue": "Austin Pickle Ranch",
+     "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 71,
+     "sessions": 85,
      "pinned": true,
      "booking": true,
      "via": [
@@ -491,6 +491,18 @@
      "lead": true
     },
     {
+     "venue": "Absolute Volleyball Academy and Absolute Beach",
+     "city": "",
+     "sport": "volleyball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
      "venue": "Katy Sports Center",
      "city": "",
      "sport": "volleyball",
@@ -507,18 +519,6 @@
      "city": "",
      "sport": "volleyball",
      "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Absolute Volleyball Academy and Absolute Beach",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 1,
      "pinned": true,
      "booking": false,
      "via": [

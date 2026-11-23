@@ -6,18 +6,18 @@
         255,
         255,
         255,
-        255,
         257,
         250,
         250,
         250,
-        243
+        243,
+        259
       ],
-      "sessions": 243,
+      "sessions": 259,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.72,
+        "level": 0.7,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -34,13 +34,13 @@
         155,
         155,
         155,
-        155,
         153,
         152,
         152,
-        152
+        152,
+        150
       ],
-      "sessions": 152,
+      "sessions": 150,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -217,8 +217,8 @@
         3,
         3,
         3,
-        3,
         4,
+        3,
         3,
         3,
         3
@@ -926,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 607
+      "failStreak": 608
     },
     "dallas-reclub": {
       "counts": [
@@ -1081,13 +1081,13 @@
         20,
         20,
         20,
-        20,
-        19
+        19,
+        20
       ],
-      "sessions": 19,
+      "sessions": 20,
       "coverage": {
         "end": 1,
-        "price": 0.58,
+        "price": 0.6,
         "level": 1,
         "venue": 1,
         "city": 0,
@@ -1276,6 +1276,7 @@
     "houston-reclub:warning:reclub-2BBFXM: no surface",
     "houston-reclub:warning:reclub-8SFAT2: no surface",
     "houston-reclub:warning:reclub-9P8J21: no surface",
+    "houston-reclub:warning:reclub-CWAGWL: no surface",
     "houston-reclub:warning:reclub-HC3B4O: no surface",
     "houston-reclub:warning:reclub-J533LP: no surface",
     "houston-reclub:warning:reclub-JK2478: no surface",
