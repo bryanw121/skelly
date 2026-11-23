@@ -1,4 +1,5 @@
-// Local dev server: serves public/ and mounts the same API handlers Vercel uses.
+// Serves the built site (dist/, from `npm run build`) and mounts the same API handlers Vercel uses.
+// The e2e tests run against it; for editing, `npm run dev` (Vite) reloads as you save.
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { join, extname, dirname, normalize, relative, isAbsolute } from 'node:path';
@@ -9,14 +10,16 @@ import sessions from './api/sessions.js';
 import feedback from './api/feedback.js';
 import addSource from './api/add-source.js';
 import where from './api/where.js';
+import hit from './api/hit.js';
+import usage from './api/usage.js';
 import { loadEnv } from './lib/paths.js';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
-const PUBLIC = join(ROOT, 'public');
+const PUBLIC = join(ROOT, 'dist');
 const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.pbf': 'application/x-protobuf' };
 // Handlers read DATABASE_URL_READONLY on first request, so a .env set here still applies.
 loadEnv();
-const API = { '/api/courts': courts, '/api/check': check, '/api/sessions': sessions, '/api/feedback': feedback, '/api/add-source': addSource, '/api/where': where };
+const API = { '/api/courts': courts, '/api/check': check, '/api/sessions': sessions, '/api/feedback': feedback, '/api/add-source': addSource, '/api/where': where, '/api/hit': hit, '/api/usage': usage };
 const PORT = process.env.PORT || 5173;
 
 createServer(async (req, res) => {
@@ -25,7 +28,7 @@ createServer(async (req, res) => {
     if (API[path]) return await API[path](req, res);
     const file = normalize(join(PUBLIC, path === '/' ? 'index.html' : path));
     const rel = relative(PUBLIC, file);
-    if (rel.startsWith('..') || isAbsolute(rel)) throw new Error('outside public');
+    if (rel.startsWith('..') || isAbsolute(rel)) throw new Error('outside dist');
     const body = await readFile(file);
     const type = TYPES[extname(file)] || 'application/octet-stream';
     // The map file (public/maps/*.pmtiles) is read in pieces with Range requests, as on Pages.

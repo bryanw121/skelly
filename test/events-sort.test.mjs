@@ -1,7 +1,7 @@
 // Sorting the Events list (the Sort pill) and the card's summary line. Pure helpers in public/events-ui.js.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { eventSummary, forYouScore, isEventSort, isNewFind, lastChance, sortGroup } from '../public/events-ui.js';
+import { eventSummary, forYouScore, isEventSort, isNewFind, lastChance, sortGroup } from '../web/events-ui.js';
 import { mergeEvents } from '../lib/event-sources.js';
 
 const TODAY = '2026-11-21'; // a Saturday

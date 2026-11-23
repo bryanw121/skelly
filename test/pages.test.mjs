@@ -1,7 +1,7 @@
 // Where the data is published: the first GitHub Pages address that answers.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { firstUp } from '../public/pages.js';
+import { firstUp } from '../web/pages.js';
 
 test('firstUp: the first base whose index answers; a renamed repository falls through to the other name', async () => {
   const asked = [];

@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { clubName, sourceInfo, sourceLinks, sourceSite, KINDS } from '../lib/sources.js';
 import { loadSources } from '../lib/registry.js';
 import { readFileSync } from 'node:fs';
-import { gives, offers, render } from '../public/sources.js';
+import { gives, offers, render } from '../web/sources.js';
 
 test('every configured source has a link (or its groups) and a kind', () => {
   for (const s of loadSources().sources) {

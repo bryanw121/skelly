@@ -8,7 +8,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { captionDates, captionTimes, captionVenue, discoveryUrl, handleOf, postToEvent, readInstagram } from '../lib/instagram.js';
 import { saveAvatars, stampAvatars } from '../lib/avatars.js';
-import { avatarPath } from '../public/events-ui.js';
+import { avatarPath } from '../web/events-ui.js';
 
 const TODAY = '2026-11-18';
 const CAPTION = 'Holiday Night Market is back! ✨\nJoin us Sat, Dec 5 from 5-9pm for 40+ local makers and live music.\n📍 Example Hall, 100 Main St\n#austin #market';
