@@ -17,6 +17,7 @@ import { placeGroups } from './events-ui.js';
 import { EVENT_KINDS, EVENT_SORTS, EVENT_TAGS, countEvents, eventSummary, isEventSort, lastChance, sortGroup, eventCta, eventDateRange, eventGroups, eventKind, eventPlaceParts, eventPlaces, eventTags, avatarPath, eventWhen, eventsForRegion, filterEvents, isEventKind, isEventTag, isOn, kindLabel, sortEvents, tagLabel } from './events-ui.js';
 import { pagesBase } from './pages.js';
 import { drawEventsList } from './components/EventsList.tsx';
+import { drawEventPills, drawKindSheet, drawSortSheet } from './components/EventsControls.tsx';
 import { directionsHtml, eventCardHtml, eventFactsHtml, eventHours as hoursOf, eventKickerHtml, eventVisualHtml, noHours } from './components/EventCard.tsx';
 const PAGES = await pagesBase(); // '' next to the page, or the GitHub Pages address that answers (public/pages.js)
 
@@ -1021,7 +1022,7 @@ function render() {
   // Events: the feed is the source of truth, so the view works without the day's schedule.
   renderFiltersSummary();
   if (state.section === 'events') { $('timeBtn').hidden = true; $('searchWrap').hidden = true; renderEvents(); renderMap(); fitHeader(); return; }
-  $('eventsPanel').hidden = true; $('eventCats').innerHTML = ''; $('eventsCount').textContent = '';
+  $('eventsPanel').hidden = true; drawEventPills($('eventCats'), null); $('eventsCount').textContent = '';
   $('filters').hidden = false; // Events hides the day strip and the Open play / Courts switch; Sports brings them back
   $('searchWrap').hidden = true; // shown again by renderSearch on open play
   // Without the day's schedule, Leagues and Tournaments (their own file) still work.
@@ -1179,11 +1180,13 @@ function renderTimeBtn() {
 function renderEventsSheet(list) {
   const counts = countEvents(list);
   counts.weekly = (counts.weekly ?? 0) + regionMarkets().length; // markets without hours count as Every week too
-  const opt = (attr, id, label, hint, n, on) => `<button type="button" class="tab opt" ${attr}="${id}" aria-pressed="${on}"><span class="lbl">${esc(label)}${hint ? `<small>${esc(hint)}</small>` : ''}</span><span class="n">${n}</span></button>`;
   const shown = filterEvents(list, evFilters(), NOW.iso).length;
-  $('eventsOpts').innerHTML = `<h3 class="opt-h">Kind</h3>${opt('data-evkind', 'all', 'All events', '', counts.all, state.evKind === 'all')}${EVENT_KINDS.filter((k) => counts[k.id] || state.evKind === k.id).map((k) => opt('data-evkind', k.id, k.label, k.hint, counts[k.id], state.evKind === k.id)).join('')}
-    <h3 class="opt-h">Tags</h3>${EVENT_TAGS.map((g) => opt('data-evtag', g.id, g.label, '', counts[g.id], state.evTags.includes(g.id))).join('')}${tagCounts(list).map((t) => opt('data-evtopic', t.id, t.label, '', t.n, state.evTopic === t.id)).join('')}
-    <button type="button" class="go-btn" data-close>Show ${shown} event${shown === 1 ? '' : 's'}</button>`;
+  drawKindSheet($('eventsOpts'), {
+    kinds: [{ id: 'all', label: 'All events', n: counts.all, on: state.evKind === 'all' }, ...EVENT_KINDS.filter((k) => counts[k.id] || state.evKind === k.id).map((k) => ({ id: k.id, label: k.label, hint: k.hint, n: counts[k.id], on: state.evKind === k.id }))],
+    tags: EVENT_TAGS.map((g) => ({ id: g.id, label: g.label, n: counts[g.id], on: state.evTags.includes(g.id) })),
+    topics: tagCounts(list).map((t) => ({ id: t.id, label: t.label, n: t.n, on: state.evTopic === t.id })),
+    shown,
+  });
 }
 /**
  * The Sort sheet: the orders, then (under Advanced) the topics someone is into, which For you puts
@@ -1194,13 +1197,12 @@ function renderSortSheet(list) {
   const shown = filterEvents(list, evFilters(), NOW.iso).length;
   const topics = tagCounts(list).filter((t) => t.id !== 'free');
   const likes = [...topics, ...SEARCH_TAGS.filter((t) => t.id === 'free')];
-  $('sortOpts').innerHTML = EVENT_SORTS.map((x) => `<button type="button" class="tab opt" data-evsort="${x.id}" aria-pressed="${state.evSort === x.id}"><span class="lbl">${esc(x.label)}<small>${esc(x.hint)}</small></span></button>`).join('')
-    + `<details class="adv" id="sortAdv"${sortAdvOpen || state.evLikes.length ? ' open' : ''}><summary>Advanced</summary>
-      <h3 class="opt-h" id="likesH">What you’re into</h3>
-      <div class="likes" role="group" aria-labelledby="likesH">${likes.map((t) => `<button type="button" class="like ic-${EVENT_ICONS[t.id] ? t.id : 'popup'}" data-evlike="${esc(t.id)}" aria-pressed="${state.evLikes.includes(t.id)}">${esc(t.label)}</button>`).join('')}</div>
-      <p class="note">For you puts these first. They stay on this device.</p>
-    </details>
-    <button type="button" class="go-btn" data-close>Show ${shown} event${shown === 1 ? '' : 's'}</button>`;
+  drawSortSheet($('sortOpts'), {
+    sorts: EVENT_SORTS.map((x) => ({ id: x.id, label: x.label, hint: x.hint, on: state.evSort === x.id })),
+    likes: likes.map((t) => ({ id: t.id, label: t.label, icon: EVENT_ICONS[t.id] ? t.id : 'popup', on: state.evLikes.includes(t.id) })),
+    advOpen: sortAdvOpen || state.evLikes.length > 0,
+    shown,
+  });
 }
 document.addEventListener('toggle', (e) => { if (e.target.id === 'sortAdv') sortAdvOpen = e.target.open; }, true);
 function renderEvents() {
@@ -1213,7 +1215,7 @@ function renderEvents() {
   const list = regionEvents();
   if (!events) {
     $('asof').textContent = eventsError ? '' : 'Loading…';
-    $('eventCats').innerHTML = '';
+    drawEventPills($('eventCats'), null);
     $('eventsCount').textContent = '';
     drawEventsList($('events'), eventsError ? { status: 'error', message: eventsError } : { status: 'loading' });
     $('eventsNote').textContent = '';
@@ -1223,7 +1225,7 @@ function renderEvents() {
   if (!list.length) {
     // A region without an events feed yet: say so, and point to what it does have.
     $('asof').textContent = '';
-    $('eventCats').innerHTML = '';
+    drawEventPills($('eventCats'), null);
     $('eventsCount').textContent = '';
     drawEventsList($('events'), { status: 'away', regionName: region?.name ?? 'this city' });
     $('eventsNote').textContent = '';
@@ -1235,10 +1237,7 @@ function renderEvents() {
   $('footer').innerHTML = 'Each event links to its own page or post. Dates and prices change, so check it before you go.';
   const filtering = state.evKind !== 'all' || state.evTags.length > 0;
   const sortLabel = EVENT_SORTS.find((x) => x.id === state.evSort)?.label ?? 'Soonest';
-  $('eventCats').innerHTML = (`<button type="button" class="pill-btn chip-btn${state.evSort !== 'soonest' ? ' on' : ''}" data-sheet="sortSheet" aria-haspopup="dialog" aria-label="Sort: ${esc(sortLabel)}. Change">Sort: ${esc(sortLabel)} <span class="caret" aria-hidden="true">▾</span></button>`)
-    + `<button type="button" class="pill-btn chip-btn${filtering ? ' on' : ''}" data-sheet="eventsSheet" aria-haspopup="dialog">${esc(filterLabel())} <span class="caret" aria-hidden="true">▾</span></button>`
-    + `<button type="button" class="pill-btn chip-btn${whenLabel() ? ' on' : ''}" data-sheet="whenSheet" aria-haspopup="dialog" id="whenBtn">${esc(whenLabel() || 'When')} <span class="caret" aria-hidden="true">▾</span></button>`
-    + (navigator.geolocation ? `<button type="button" class="pill-btn chip-btn${here ? ' on' : ''}" data-evnear aria-pressed="${!!here}">Near me</button>` : '');
+  drawEventPills($('eventCats'), { sortLabel, sorted: state.evSort !== 'soonest', filterLabel: filterLabel(), filtering, whenLabel: whenLabel(), near: navigator.geolocation ? !!here : null });
   renderEventsSheet(upcoming); renderSortSheet(upcoming); renderWhenSheet(); renderSearch(upcoming);
   const shown = filterEvents(upcoming, evFilters(), NOW.iso);
   const groups = eventGroups(shown, NOW.iso);
