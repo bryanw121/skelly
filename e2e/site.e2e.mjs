@@ -1550,11 +1550,12 @@ test('site: Events map: one pin per venue; a pin opens the place sheet (readable
   await sheet.waitFor();
   assert.equal(await sheet.locator('.v-name').evaluate((e) => e.firstChild.textContent), 'Zilker Park');
   assert.equal(await sheet.locator('.v-name small').textContent(), 'Austin · 2 events', 'no repeat of the name ("Zilker" is in it)');
-  assert.deepEqual(await sheet.locator('.pop-item .pop-w b').allTextContents(), ['Autumn Market', 'Dia de los Muertos']);
-  assert.deepEqual(await sheet.locator('.pop-item .ev-kick').allTextContents(), ['Seasonal', 'Culture'], 'each event leads with its topic');
-  assert.equal(await sheet.locator('.pop-item .ev-what').first().textContent(), 'Local makers and food trucks under the oaks.');
-  assert.deepEqual(await sheet.locator('.pop-item .pop-t').allTextContents(), ['Thru Fri Oct 3010am–6pm', 'Sun Nov 1']);
-  assert.equal(await sheet.locator('.pop-item a.src').first().getAttribute('href'), 'https://example.test/autumn');
+  // Each event is the same card as in the list (components/EventCard.tsx).
+  assert.deepEqual(await sheet.locator('.ev-row .title').allTextContents(), ['Autumn Market', 'Dia de los Muertos']);
+  assert.deepEqual(await sheet.locator('.ev-row .ev-kick').allTextContents(), ['Seasonal', 'Culture'], 'each event leads with its topic');
+  assert.equal(await sheet.locator('.ev-row .ev-what').first().textContent(), 'Local makers and food trucks under the oaks.');
+  assert.deepEqual(await sheet.locator('.ev-row .time').allTextContents(), ['Thru FriOct 3010am–6pm', 'SunNov 1Hours on the event page']);
+  assert.equal(await sheet.locator('.ev-row a.ev-go').first().getAttribute('href'), 'https://example.test/autumn');
   assert.match(await sheet.locator('.location .actions').textContent(), /Google Maps/);
   assert.equal(await page.locator('.maplibregl-popup').count(), 0, 'no MapLibre popup any more');
   // Theme colours: the sheet's text and background come from the page's own tokens.
@@ -1970,8 +1971,8 @@ test('site: Add to calendar on an event and on a session: Google Calendar filled
   await open({ index: AUSTIN_ONLY, regions: { austin: austinSched() }, maps: MAPS_AUSTIN, events: EVENTS_MAP, url: '/?view=events&layout=map', waitFor: '#map .pin' });
   await page.locator('#map .pin[data-pin="event:30.26720,-97.77290"]').click();
   await page.locator('#placeSheet').waitFor();
-  assert.equal(await page.locator('#placeSheet .pop-item .cal-add').count(), await page.locator('#placeSheet .pop-item').count(), 'one per event in the sheet');
-  await page.locator('#placeSheet .pop-item .cal-add').first().click();
+  assert.equal(await page.locator('#placeSheet .ev-row .cal-add').count(), await page.locator('#placeSheet .ev-row').count(), 'one per event in the sheet');
+  await page.locator('#placeSheet .ev-row .cal-add').first().click();
   assert.equal(new URL(await page.locator('#calOpts a').first().getAttribute('href')).hostname, 'calendar.google.com');
   assert.deepEqual(pageErrors, []);
 });
@@ -2021,8 +2022,8 @@ test('site: the map\'s place sheet and rows show an event\'s hours, or say where
   await page.locator('#mapPanel .place-row').first().waitFor();
   for (const row of await page.locator('#mapPanel .place-row').all()) {
     await row.click();
-    await page.locator('#placeSheet .pop-item').first().waitFor();
-    for (const item of await page.locator('#placeSheet .pop-item').all()) {
+    await page.locator('#placeSheet .ev-row').first().waitFor();
+    for (const item of await page.locator('#placeSheet .ev-row').all()) {
       const text = await item.textContent();
       assert.match(text, /\d(:\d\d)?\s?(am|pm)|Hours on the (post|event page)|Hours not listed/i, `every event says when or where to find out: ${text}`);
     }
