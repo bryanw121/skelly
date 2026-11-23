@@ -1,7 +1,6 @@
-// One event, the same everywhere it shows: the Events list and the Map's place sheet. Until those
-// screens are Preact themselves, app.js renders this to HTML (eventCardHtml) and keeps handling
-// taps through the data-* attributes, as before. The pieces (visual, kicker, facts, when) are
-// exported for the map's place rows.
+// One event, the same everywhere it shows: the Events list and the Map's place sheet (both Preact).
+// Taps are handled by app.js through the data-* attributes. The pieces (visual, kicker, facts) are
+// exported for the map's place rows; eventVisualHtml is for the map pins, which MapLibre draws.
 import type { ComponentChildren } from 'preact';
 import { renderToString } from 'preact-render-to-string';
 import type { SkellyEvent } from '../types';
@@ -128,9 +127,5 @@ export function EventCard({ ev, ctx }: { ev: Ev; ctx: CardContext }) {
   );
 }
 
-/** The card as HTML, for the parts of the page app.js still draws as text. */
-export const eventCardHtml = (ev: Ev, ctx: CardContext) => renderToString(<EventCard ev={ev} ctx={ctx} />);
-/** The kicker, facts and picture as HTML, for the map's place rows. */
-export const eventKickerHtml = (ev: Ev, plain = false) => renderToString(<EventKicker ev={ev} plain={plain} />);
-export const eventFactsHtml = (ev: Ev, today: string, price = true) => renderToString(<EventFacts ev={ev} today={today} price={price} />);
+/** The picture as HTML, for the map pins. */
 export const eventVisualHtml = (ev: Ev | null, size: number, holder: { avatar?: string } | null, dataBase: string) => renderToString(<EventVisual ev={ev} size={size} holder={holder ?? ev} dataBase={dataBase} />);
