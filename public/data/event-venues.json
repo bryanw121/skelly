@@ -3744,5 +3744,53 @@
     "lng": -97.7407,
     "located": "address",
     "matched": "200 E 8TH ST, AUSTIN, TX, 78701"
+  },
+  "the fox trap restaurant & lounge, 11470 westheimer road": {
+    "lat": 29.73715,
+    "lng": -95.57915,
+    "located": "source",
+    "matched": null
+  },
+  "grooves of houston, 2300 pierce street": {
+    "lat": 29.7423,
+    "lng": -95.35957,
+    "located": "source",
+    "matched": null
+  },
+  "6101 airport blvd , austin, tx, united states, texas 78752, 6401 airport blvd": {
+    "lat": 30.32764,
+    "lng": -97.71399,
+    "located": "source",
+    "matched": null
+  },
+  "the depot...tomball texas!, 201 s elm,tomball, tx": {
+    "lat": 30.09725,
+    "lng": -95.61418,
+    "located": "source",
+    "matched": null
+  },
+  "20155 cypresswood drive": {
+    "lat": 29.98848,
+    "lng": -95.73492,
+    "located": "source",
+    "matched": null
+  },
+  "factory on 5th, 3409 east 5th street": {
+    "lat": 30.25426,
+    "lng": -97.70486,
+    "located": "source",
+    "matched": null
+  },
+  "7515 bellfort avenue": {
+    "lat": 29.67344,
+    "lng": -95.28877,
+    "located": "source",
+    "matched": null
+  },
+  "st davids episcopal church, 8th street,austin, texas": {
+    "lat": 30.31133,
+    "lng": -97.70731,
+    "located": "source",
+    "matched": null
   }
 }

@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-23T18:16:16.433Z",
+  "generatedAt": "2026-11-23T22:17:27.462Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -43,7 +43,7 @@
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-11-24T01:00:00.000Z",
-      "ends_at": "2026-11-24T04:00:00.000Z",
+      "ends_at": "2026-11-24T05:00:00.000Z",
       "signup_url": "https://reclub.co/m/K9D10X",
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Cultural Diversity Volleyball Social.",

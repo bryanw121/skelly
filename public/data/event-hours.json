@@ -185,13 +185,13 @@
   "startTime": "14:00"
  },
  "https://allevents.in/austin/holiday-art-festival/100002003616620247": {
-  "checkedAt": "2026-11-20T16:25:37.892Z"
+  "checkedAt": "2026-11-23T22:17:28.925Z"
  },
  "https://allevents.in/austin/day-of-the-dead-artisan-mercado-workshops-tickets/80002283396568": {
-  "checkedAt": "2026-11-20T16:25:37.892Z"
+  "checkedAt": "2026-11-23T22:17:28.925Z"
  },
  "https://allevents.in/leander/5th-annual-holidays-with-the-horses-tickets/80002773211001": {
-  "checkedAt": "2026-11-20T16:25:37.892Z"
+  "checkedAt": "2026-11-23T22:17:28.925Z"
  },
  "https://allevents.in/austin/2026-austin-summer-pop-up-vendors-market/100002005151204229": {
   "checkedAt": "2026-11-21T14:16:17.493Z",
@@ -803,5 +803,28 @@
  },
  "https://allevents.in/houston/cy-fair-ffa-country-christmas-craft-show/3700030972891738": {
   "checkedAt": "2026-11-23T14:17:07.078Z"
+ },
+ "https://allevents.in/austin/hella-artsy-pop-up-shop-holiday-edition/100002003793344835": {
+  "checkedAt": "2026-11-23T22:17:28.925Z",
+  "startTime": "13:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/austin/winter-makers-market/200031070029821": {
+  "checkedAt": "2026-11-23T22:17:28.925Z",
+  "startTime": "11:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/dallas/the-bald-and-the-beautiful-at-music-hall-at-fair-park/2400029858493831": {
+  "checkedAt": "2026-11-23T22:17:28.925Z"
+ },
+ "https://allevents.in/houston/thanksgiving-eve-wing-wednesday-packers-vs-rams-watch-party/100002005299882931": {
+  "checkedAt": "2026-11-23T22:17:28.925Z",
+  "startTime": "19:00",
+  "endTime": "23:00"
+ },
+ "https://allevents.in/houston/small-business-saturday-brunch-holiday-vendor-pop-up/100002005096696194": {
+  "checkedAt": "2026-11-23T22:17:28.925Z",
+  "startTime": "11:00",
+  "endTime": "15:00"
  }
 }

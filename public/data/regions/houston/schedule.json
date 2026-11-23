@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T18:16:16.433Z",
+  "generatedAt": "2026-11-23T22:17:27.462Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,7 +67,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T18:13:24.366Z",
+      "checkedAt": "2026-11-23T22:14:15.743Z",
       "count": 19,
       "warnings": [
         "reclub-MLI8J8: no surface",
@@ -114,7 +114,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-23T18:13:30.714Z",
+      "checkedAt": "2026-11-23T22:14:16.340Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -251,7 +251,7 @@
       "id": "reclub-K9D10X",
       "date": "2026-11-23",
       "start": "19:00",
-      "end": "22:00",
+      "end": "23:00",
       "title": "50 pm)",
       "venue": "Katy Sports Center",
       "type": "Open play",
