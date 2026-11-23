@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T22:16:22.068Z",
+  "generatedAt": "2026-11-22T23:56:16.742Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,15 +67,14 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:24.725Z",
-      "count": 20,
+      "checkedAt": "2026-11-22T23:53:06.387Z",
+      "count": 19,
       "warnings": [
         "reclub-NJKPQA: no surface",
         "reclub-OKAE7P: no surface",
         "reclub-J533LP: no surface",
         "reclub-TCHJ1D: no surface",
         "reclub-K9D10X: no surface",
-        "reclub-1GOBAB: no surface",
         "reclub-MCRPQ4: no surface",
         "reclub-K9XO8G: no surface",
         "reclub-WQR08J: no surface",
@@ -102,7 +101,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/houston-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:53.630Z",
+      "checkedAt": "2026-11-22T23:53:09.149Z",
       "count": 0
     },
     {
@@ -115,7 +114,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:27.807Z",
+      "checkedAt": "2026-11-22T23:53:11.957Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -240,31 +239,6 @@
         "label": "Sign up on Reclub"
       },
       "source": "https://reclub.co/m/K9D10X",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "src-katy-sports-center",
-      "status": "scheduled"
-    },
-    {
-      "id": "reclub-1GOBAB",
-      "date": "2026-11-25",
-      "start": "14:00",
-      "end": "17:00",
-      "title": "Wednesday, Teens INDOOR Volleyball ($10) @ Katy Sports (2 pm - 5 pm)",
-      "venue": "Katy Sports Center",
-      "type": "Open play",
-      "level": "All levels",
-      "price": "$10",
-      "note": "Hosted by Cultural Diversity Volleyball Social.",
-      "capacity": 30,
-      "signup": {
-        "url": "https://reclub.co/m/1GOBAB",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/1GOBAB",
       "sourceId": "houston-reclub",
       "sport": "volleyball",
       "region": "houston",

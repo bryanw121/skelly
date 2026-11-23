@@ -3556,5 +3556,17 @@
     "lng": -96.79322,
     "located": "source",
     "matched": null
+  },
+  "310 east 3rd street": {
+    "lat": 30.26457,
+    "lng": -97.7405,
+    "located": "source",
+    "matched": null
+  },
+  "2811 washington ave": {
+    "lat": 29.76846,
+    "lng": -95.38794,
+    "located": "source",
+    "matched": null
   }
 }

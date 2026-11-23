@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        254,
         255,
         255,
         255,
@@ -11,13 +10,14 @@
         257,
         250,
         250,
-        250
+        250,
+        243
       ],
-      "sessions": 250,
+      "sessions": 243,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.7,
+        "level": 0.72,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -29,7 +29,6 @@
     },
     "austin-picklehaus": {
       "counts": [
-        151,
         155,
         155,
         155,
@@ -37,6 +36,7 @@
         155,
         155,
         153,
+        152,
         152,
         152
       ],
@@ -189,7 +189,7 @@
         1,
         1,
         1,
-        1,
+        2,
         2,
         2,
         2,
@@ -212,7 +212,6 @@
     },
     "reclub": {
       "counts": [
-        5,
         3,
         3,
         3,
@@ -220,6 +219,7 @@
         3,
         3,
         4,
+        3,
         3,
         3
       ],
@@ -675,7 +675,7 @@
         2,
         2,
         2,
-        2,
+        3,
         3,
         3,
         3,
@@ -707,7 +707,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1
       ],
       "sessions": 1,
@@ -902,7 +902,7 @@
         10,
         10,
         10,
-        10,
+        9,
         9,
         9,
         9,
@@ -926,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 606
+      "failStreak": 607
     },
     "dallas-reclub": {
       "counts": [
@@ -1047,7 +1047,7 @@
     "dallas-meetup": {
       "counts": [
         13,
-        13,
+        12,
         12,
         12,
         12,
@@ -1073,7 +1073,6 @@
     },
     "houston-reclub": {
       "counts": [
-        24,
         20,
         20,
         20,
@@ -1082,12 +1081,13 @@
         20,
         20,
         20,
-        20
+        20,
+        19
       ],
-      "sessions": 20,
+      "sessions": 19,
       "coverage": {
         "end": 1,
-        "price": 0.6,
+        "price": 0.58,
         "level": 1,
         "venue": 1,
         "city": 0,
@@ -1272,7 +1272,6 @@
     "dallas-reclub:warning:No upcoming Reclub meets on any club page",
     "foro:warning:FORO lists open play as \"coming soon\": no volleyball open play to show until it returns.",
     "georgetown-pickleball:failing",
-    "houston-reclub:warning:reclub-1GOBAB: no surface",
     "houston-reclub:warning:reclub-230JCQ: no surface",
     "houston-reclub:warning:reclub-2BBFXM: no surface",
     "houston-reclub:warning:reclub-8SFAT2: no surface",

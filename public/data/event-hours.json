@@ -40,7 +40,7 @@
   "endTime": "15:30"
  },
  "https://allevents.in/austin/resound-illfest-pooneh-and-kutx-present-holiday-hootenanny-at-radio-east-on-12-11-and-12-12/200031080104835": {
-  "checkedAt": "2026-11-19T20:08:03.460Z"
+  "checkedAt": "2026-11-22T23:58:17.732Z"
  },
  "https://allevents.in/austin/bts-12th-annual-gumbo-cookoff/200031015597111": {
   "checkedAt": "2026-11-19T20:08:03.460Z",
@@ -152,13 +152,13 @@
   "endTime": "19:00"
  },
  "https://www.austintexas.org/event/a-christmas-affair/387371/": {
-  "checkedAt": "2026-11-19T20:15:46.541Z"
+  "checkedAt": "2026-11-22T23:58:17.732Z"
  },
  "https://www.austintexas.org/event/miracle-on-5th-street-christmas-pop-up-bar/380007/": {
-  "checkedAt": "2026-11-19T20:15:46.541Z"
+  "checkedAt": "2026-11-22T23:58:17.732Z"
  },
  "https://www.austintexas.org/event/peppermint-in-the-park/384191/": {
-  "checkedAt": "2026-11-19T20:15:46.541Z"
+  "checkedAt": "2026-11-22T23:58:17.732Z"
  },
  "https://allevents.in/austin/vegan-holiday-market/100002004963288167": {
   "checkedAt": "2026-11-19T23:37:08.099Z",
@@ -689,5 +689,23 @@
  },
  "https://allevents.in/houston/punk-rock-garage-sale-black-friday-night-market/200031016871608": {
   "checkedAt": "2026-11-22T18:16:26.533Z"
+ },
+ "https://allevents.in/austin/the-austin-stone-christmas-fest/4700031097414044": {
+  "checkedAt": "2026-11-22T23:58:17.732Z"
+ },
+ "https://allevents.in/austin/caribbean-food-festival-atx/100002003647798502": {
+  "checkedAt": "2026-11-22T23:58:17.732Z",
+  "startTime": "14:00",
+  "endTime": "18:00"
+ },
+ "https://allevents.in/dallas/bts-holiday-market-tickets/200030692433021": {
+  "checkedAt": "2026-11-22T23:58:17.732Z",
+  "startTime": "17:00",
+  "endTime": "22:00"
+ },
+ "https://allevents.in/houston/jingle-and-mingle-houston-heights-holiday-market-tickets/80002256754181": {
+  "checkedAt": "2026-11-22T23:58:17.732Z",
+  "startTime": "15:00",
+  "endTime": "19:00"
  }
 }

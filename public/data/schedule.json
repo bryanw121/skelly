@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T22:16:22.068Z",
+  "generatedAt": "2026-11-22T23:56:16.742Z",
   "sources": [
     {
       "id": "austin-club-openplay",
@@ -12,8 +12,8 @@
       "kind": "OpenPlay club directory",
       "site": "https://openplaymap.com/open-play/austin",
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:19.170Z",
-      "count": 250
+      "checkedAt": "2026-11-22T23:52:52.459Z",
+      "count": 243
     },
     {
       "id": "austin-picklehaus",
@@ -25,7 +25,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/austinpicklehaus",
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:19.171Z",
+      "checkedAt": "2026-11-22T23:52:52.460Z",
       "count": 152
     },
     {
@@ -38,7 +38,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/holy-pickle",
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:19.171Z",
+      "checkedAt": "2026-11-22T23:52:52.460Z",
       "count": 0
     },
     {
@@ -51,7 +51,7 @@
       "kind": "Venue's schedule page",
       "site": "https://app.arketa.co/iframe/volleyworld/schedule",
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:19.171Z",
+      "checkedAt": "2026-11-22T23:52:52.460Z",
       "count": 10
     },
     {
@@ -64,7 +64,7 @@
       "kind": "Venue's schedule page",
       "site": "https://goteamup.com/w9142954/p/9142954-atx-beach/memberships/223927/",
       "ok": true,
-      "checkedAt": "2026-11-22T20:42:25.388Z",
+      "checkedAt": "2026-11-22T23:52:52.461Z",
       "count": 2
     },
     {
@@ -77,7 +77,7 @@
       "kind": "Venue's schedule page",
       "site": "https://www.austinvelocity.com",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:38.870Z",
+      "checkedAt": "2026-11-22T23:52:52.462Z",
       "count": 2
     },
     {
@@ -104,7 +104,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:19.172Z",
+      "checkedAt": "2026-11-22T23:52:52.790Z",
       "count": 3
     },
     {
@@ -131,7 +131,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:19.172Z",
+      "checkedAt": "2026-11-22T23:52:54.089Z",
       "count": 3
     },
     {
@@ -150,7 +150,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T20:42:26.963Z",
+      "checkedAt": "2026-11-22T23:52:54.337Z",
       "count": 3
     },
     {
@@ -169,7 +169,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T20:42:27.213Z",
+      "checkedAt": "2026-11-22T23:52:54.640Z",
       "count": 1
     },
     {
@@ -188,7 +188,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T20:42:27.552Z",
+      "checkedAt": "2026-11-22T23:52:54.996Z",
       "count": 10
     },
     {
@@ -201,7 +201,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://apps.daysmartrecreation.com/dash/x/chaparralice/calendar?location=1&start={date}&end={date}&event_type={eventType}",
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:20.265Z",
+      "checkedAt": "2026-11-22T23:52:55.706Z",
       "count": 35
     },
     {
@@ -214,7 +214,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://iceandfield.com/public-skating/",
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:20.876Z",
+      "checkedAt": "2026-11-22T23:52:55.953Z",
       "count": 24
     },
     {
@@ -227,7 +227,7 @@
       "kind": "City parks schedule",
       "site": "https://www.austintexas.gov/parks/alamo-recreation-center",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:44.404Z",
+      "checkedAt": "2026-11-22T23:52:58.244Z",
       "count": 9
     },
     {
@@ -240,7 +240,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-22T22:13:21.300Z",
+      "checkedAt": "2026-11-22T23:52:58.769Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
@@ -265,7 +265,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:21.325Z",
+      "checkedAt": "2026-11-22T23:52:58.814Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"
@@ -281,7 +281,7 @@
       "kind": "Venue's open-play hours page",
       "site": "https://sportsgardendfw.com/open-play/",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:46.667Z",
+      "checkedAt": "2026-11-22T23:53:00.556Z",
       "count": 4
     },
     {
@@ -294,7 +294,7 @@
       "kind": "Venue's open-play hours page",
       "site": "https://www.forosportsclub.com/fridayopenplay",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:47.005Z",
+      "checkedAt": "2026-11-22T23:53:00.844Z",
       "count": 0,
       "warnings": [
         "FORO lists open play as \"coming soon\": no volleyball open play to show until it returns."
@@ -310,7 +310,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/fort-worth-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:47.814Z",
+      "checkedAt": "2026-11-22T23:53:01.595Z",
       "count": 5
     },
     {
@@ -323,7 +323,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/fort-worth-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:50.992Z",
+      "checkedAt": "2026-11-22T23:53:04.646Z",
       "count": 7
     },
     {
@@ -350,7 +350,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T20:42:32.186Z",
+      "checkedAt": "2026-11-22T23:53:06.280Z",
       "count": 12
     },
     {
@@ -413,15 +413,14 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:24.725Z",
-      "count": 20,
+      "checkedAt": "2026-11-22T23:53:06.387Z",
+      "count": 19,
       "warnings": [
         "reclub-NJKPQA: no surface",
         "reclub-OKAE7P: no surface",
         "reclub-J533LP: no surface",
         "reclub-TCHJ1D: no surface",
         "reclub-K9D10X: no surface",
-        "reclub-1GOBAB: no surface",
         "reclub-MCRPQ4: no surface",
         "reclub-K9XO8G: no surface",
         "reclub-WQR08J: no surface",
@@ -448,7 +447,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/houston-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-22T07:54:53.630Z",
+      "checkedAt": "2026-11-22T23:53:09.149Z",
       "count": 0
     },
     {
@@ -461,7 +460,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-22T22:13:27.807Z",
+      "checkedAt": "2026-11-22T23:53:11.957Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -469,190 +468,6 @@
     }
   ],
   "sessions": [
-    {
-      "id": "openplay-austin-pickle-ranch-01a1751b-c77b-7bbd-9d9e-26c2f6ce5f49",
-      "date": "2026-11-22",
-      "start": "13:00",
-      "end": "15:00",
-      "sport": "pickleball",
-      "title": "Open Play: Level 3",
-      "venue": "Austin Pickle Ranch",
-      "city": "Austin",
-      "surface": "unspecified",
-      "type": "Open play",
-      "price": "$18 / person (listed)",
-      "scheduleBasis": "directory_listing",
-      "note": "Listed by OpenPlay, an independent directory, updated Nov 22, 12:00 PM Austin time. Confirm time, skill requirements, final price and availability with the venue. Membership discounts may apply.",
-      "source": "https://openplaymap.com/open-play/austin",
-      "signup": {
-        "url": "https://austinpickleranch.podplay.app/community/events/01a1751b-c77b-7bbd-9d9e-26c2f6ce5f49",
-        "label": "Book with venue"
-      },
-      "sourceId": "austin-club-openplay",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "austin-pickle-ranch",
-      "status": "scheduled"
-    },
-    {
-      "id": "openplay-austin-pickle-ranch-01a17518-1b78-7bbd-9d83-fa862b900c29",
-      "date": "2026-11-22",
-      "start": "13:00",
-      "end": "15:00",
-      "sport": "pickleball",
-      "title": "Open Play: Level 2",
-      "venue": "Austin Pickle Ranch",
-      "city": "Austin",
-      "surface": "unspecified",
-      "type": "Open play",
-      "price": "$18 / person (listed)",
-      "scheduleBasis": "directory_listing",
-      "note": "Listed by OpenPlay, an independent directory, updated Nov 22, 12:00 PM Austin time. Confirm time, skill requirements, final price and availability with the venue. Membership discounts may apply.",
-      "source": "https://openplaymap.com/open-play/austin",
-      "signup": {
-        "url": "https://austinpickleranch.podplay.app/community/events/01a17518-1b78-7bbd-9d83-fa862b900c29",
-        "label": "Book with venue"
-      },
-      "sourceId": "austin-club-openplay",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "austin-pickle-ranch",
-      "status": "scheduled"
-    },
-    {
-      "id": "openplay-austin-pickle-ranch-01a17530-0f6f-7bbd-9e18-d5e67c7761bf",
-      "date": "2026-11-22",
-      "start": "13:00",
-      "end": "15:00",
-      "sport": "pickleball",
-      "title": "Open Play: 3.25+ DUPR",
-      "venue": "Austin Pickle Ranch",
-      "city": "Austin",
-      "surface": "unspecified",
-      "type": "Open play",
-      "level": "3.25+",
-      "price": "$18 / person (listed)",
-      "scheduleBasis": "directory_listing",
-      "note": "Listed by OpenPlay, an independent directory, updated Nov 22, 12:00 PM Austin time. Confirm time, skill requirements, final price and availability with the venue. Membership discounts may apply.",
-      "source": "https://openplaymap.com/open-play/austin",
-      "signup": {
-        "url": "https://austinpickleranch.podplay.app/community/events/01a17530-0f6f-7bbd-9e18-d5e67c7761bf",
-        "label": "Book with venue"
-      },
-      "sourceId": "austin-club-openplay",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "austin-pickle-ranch",
-      "status": "scheduled"
-    },
-    {
-      "id": "openplay-pickle-pit-stop-1a9e90e3ad2c3fd2",
-      "date": "2026-11-22",
-      "start": "14:00",
-      "end": "17:00",
-      "sport": "pickleball",
-      "title": "Open Play- All Levels",
-      "venue": "Pickle Pit Stop",
-      "city": "Austin",
-      "surface": "indoor",
-      "type": "Open play",
-      "price": "Price not listed",
-      "scheduleBasis": "directory_listing",
-      "note": "Listed by OpenPlay, an independent directory, updated Nov 22, 12:00 PM Austin time. Confirm time, skill requirements, final price and availability with the venue. Membership discounts may apply.",
-      "source": "https://openplaymap.com/open-play/austin",
-      "signup": {
-        "url": "https://app.courtreserve.com/Online/Events/Details/15273/VNZN9MC15273531?resId=63836860",
-        "label": "Book with venue"
-      },
-      "sourceId": "austin-club-openplay",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "austin-pickle-pit-stop",
-      "status": "scheduled"
-    },
-    {
-      "id": "openplay-eastside-paddle-club-01a1e7fb-a438-7220-aa35-156e77767be9",
-      "date": "2026-11-22",
-      "start": "14:00",
-      "end": "16:00",
-      "sport": "pickleball",
-      "title": "4.0+ DUPR Session (Advanced Open Play)",
-      "venue": "Eastside Paddle Club",
-      "city": "Austin",
-      "surface": "unspecified",
-      "type": "Open play",
-      "level": "4.0+",
-      "price": "$18 / person (listed)",
-      "scheduleBasis": "directory_listing",
-      "note": "Listed by OpenPlay, an independent directory, updated Nov 22, 12:00 PM Austin time. Confirm time, skill requirements, final price and availability with the venue. Membership discounts may apply.",
-      "source": "https://openplaymap.com/open-play/austin",
-      "signup": {
-        "url": "https://espc.podplay.app/community/events/01a1e7fb-a438-7220-aa35-156e77767be9",
-        "label": "Book with venue"
-      },
-      "sourceId": "austin-club-openplay",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "austin-eastside-paddle",
-      "status": "scheduled"
-    },
-    {
-      "id": "openplay-austin-pickle-ranch-01a1751c-38ce-7aad-a29a-570024dc42b7",
-      "date": "2026-11-22",
-      "start": "15:00",
-      "end": "17:00",
-      "sport": "pickleball",
-      "title": "Open Play: Level 3",
-      "venue": "Austin Pickle Ranch",
-      "city": "Austin",
-      "surface": "unspecified",
-      "type": "Open play",
-      "price": "$18 / person (listed)",
-      "scheduleBasis": "directory_listing",
-      "note": "Listed by OpenPlay, an independent directory, updated Nov 22, 12:00 PM Austin time. Confirm time, skill requirements, final price and availability with the venue. Membership discounts may apply.",
-      "source": "https://openplaymap.com/open-play/austin",
-      "signup": {
-        "url": "https://austinpickleranch.podplay.app/community/events/01a1751c-38ce-7aad-a29a-570024dc42b7",
-        "label": "Book with venue"
-      },
-      "sourceId": "austin-club-openplay",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "austin-pickle-ranch",
-      "status": "scheduled"
-    },
-    {
-      "id": "openplay-austin-pickle-ranch-01a19e9b-985a-7995-a96f-25f9cc941e9a",
-      "date": "2026-11-22",
-      "start": "15:00",
-      "end": "17:00",
-      "sport": "pickleball",
-      "title": "Open Play: Level 1 / Level 2",
-      "venue": "Austin Pickle Ranch",
-      "city": "Austin",
-      "surface": "unspecified",
-      "type": "Open play",
-      "price": "$18 / person (listed)",
-      "scheduleBasis": "directory_listing",
-      "note": "Listed by OpenPlay, an independent directory, updated Nov 22, 12:00 PM Austin time. Confirm time, skill requirements, final price and availability with the venue. Membership discounts may apply.",
-      "source": "https://openplaymap.com/open-play/austin",
-      "signup": {
-        "url": "https://austinpickleranch.podplay.app/community/events/01a19e9b-985a-7995-a96f-25f9cc941e9a",
-        "label": "Book with venue"
-      },
-      "sourceId": "austin-club-openplay",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "austin-pickle-ranch",
-      "status": "scheduled"
-    },
     {
       "id": "openplay-eastside-paddle-club-01a19dd6-d0b3-766c-864d-932ae7d40c64",
       "date": "2026-11-22",
@@ -7195,31 +7010,6 @@
       "status": "scheduled"
     },
     {
-      "id": "opencourt-dd1cd05f-5bf2-4854-8946-4bf91f9b914f",
-      "date": "2026-11-22",
-      "start": "14:00",
-      "end": "17:00",
-      "sport": "pickleball",
-      "title": "Austin PickleHaus · Weekend Unrestricted Open Play",
-      "venue": "Austin PickleHaus",
-      "city": "Pflugerville",
-      "surface": "indoor",
-      "type": "Open play",
-      "price": "$8 / person (nonmember)",
-      "note": "Venue-published event. Reserve with the venue; confirm final charges and available spots before going.",
-      "source": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/dd1cd05f-5bf2-4854-8946-4bf91f9b914f",
-      "signup": {
-        "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/dd1cd05f-5bf2-4854-8946-4bf91f9b914f",
-        "label": "View event & book"
-      },
-      "sourceId": "austin-picklehaus",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "austin-picklehaus",
-      "status": "scheduled"
-    },
-    {
       "id": "opencourt-0390932b-628a-4117-ab9d-67e92e7b1398",
       "date": "2026-11-22",
       "start": "17:00",
@@ -7452,6 +7242,32 @@
       "status": "scheduled"
     },
     {
+      "id": "opencourt-0d7f6535-fff8-406b-8b40-feee251cb040",
+      "date": "2026-11-23",
+      "start": "09:00",
+      "end": "12:00",
+      "sport": "pickleball",
+      "title": "Austin PickleHaus · Level 1 Neuling Play",
+      "venue": "Austin PickleHaus",
+      "city": "Pflugerville",
+      "surface": "indoor",
+      "type": "Open play",
+      "price": "$8 / person (nonmember)",
+      "level": "0–2.49 recommended",
+      "note": "Venue-published event. Reserve with the venue; confirm final charges and available spots before going.",
+      "source": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/0d7f6535-fff8-406b-8b40-feee251cb040",
+      "signup": {
+        "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/0d7f6535-fff8-406b-8b40-feee251cb040",
+        "label": "View event & book"
+      },
+      "sourceId": "austin-picklehaus",
+      "region": "austin",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-22",
+      "venueId": "austin-picklehaus",
+      "status": "scheduled"
+    },
+    {
       "id": "opencourt-7843aecb-86bb-472f-8db2-f06893324b9a",
       "date": "2026-11-22",
       "start": "07:00",
@@ -7546,6 +7362,31 @@
       "source": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/7ba24536-9d07-4d0c-82ef-5d51232a666e",
       "signup": {
         "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/7ba24536-9d07-4d0c-82ef-5d51232a666e",
+        "label": "View event & book"
+      },
+      "sourceId": "austin-picklehaus",
+      "region": "austin",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-22",
+      "venueId": "austin-picklehaus",
+      "status": "scheduled"
+    },
+    {
+      "id": "opencourt-dd1cd05f-5bf2-4854-8946-4bf91f9b914f",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "end": "17:00",
+      "sport": "pickleball",
+      "title": "Austin PickleHaus · Weekend Unrestricted Open Play",
+      "venue": "Austin PickleHaus",
+      "city": "Pflugerville",
+      "surface": "indoor",
+      "type": "Open play",
+      "price": "$8 / person (nonmember)",
+      "note": "Venue-published event. Reserve with the venue; confirm final charges and available spots before going.",
+      "source": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/dd1cd05f-5bf2-4854-8946-4bf91f9b914f",
+      "signup": {
+        "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/dd1cd05f-5bf2-4854-8946-4bf91f9b914f",
         "label": "View event & book"
       },
       "sourceId": "austin-picklehaus",
@@ -7984,32 +7825,6 @@
       "source": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/b8cad84d-0b2a-4cce-afce-223203f37b5c",
       "signup": {
         "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/b8cad84d-0b2a-4cce-afce-223203f37b5c",
-        "label": "View event & book"
-      },
-      "sourceId": "austin-picklehaus",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "austin-picklehaus",
-      "status": "scheduled"
-    },
-    {
-      "id": "opencourt-0d7f6535-fff8-406b-8b40-feee251cb040",
-      "date": "2026-11-23",
-      "start": "09:00",
-      "end": "12:00",
-      "sport": "pickleball",
-      "title": "Austin PickleHaus · Level 1 Neuling Play",
-      "venue": "Austin PickleHaus",
-      "city": "Pflugerville",
-      "surface": "indoor",
-      "type": "Open play",
-      "price": "$8 / person (nonmember)",
-      "level": "0–2.49 recommended",
-      "note": "Venue-published event. Reserve with the venue; confirm final charges and available spots before going.",
-      "source": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/0d7f6535-fff8-406b-8b40-feee251cb040",
-      "signup": {
-        "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/0d7f6535-fff8-406b-8b40-feee251cb040",
         "label": "View event & book"
       },
       "sourceId": "austin-picklehaus",
@@ -14784,31 +14599,6 @@
       "status": "scheduled"
     },
     {
-      "id": "reclub-1GOBAB",
-      "date": "2026-11-25",
-      "start": "14:00",
-      "end": "17:00",
-      "title": "Wednesday, Teens INDOOR Volleyball ($10) @ Katy Sports (2 pm - 5 pm)",
-      "venue": "Katy Sports Center",
-      "type": "Open play",
-      "level": "All levels",
-      "price": "$10",
-      "note": "Hosted by Cultural Diversity Volleyball Social.",
-      "capacity": 30,
-      "signup": {
-        "url": "https://reclub.co/m/1GOBAB",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/1GOBAB",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-22",
-      "venueId": "src-katy-sports-center",
-      "status": "scheduled"
-    },
-    {
       "id": "reclub-MCRPQ4",
       "date": "2026-11-27",
       "start": "19:30",
@@ -16479,6 +16269,78 @@
       "region": "dallas"
     },
     {
+      "id": "src-greenbriar-community-center",
+      "name": "Greenbriar Community Center",
+      "city": "Fort Worth",
+      "address": "5200 Hemphill Street, Fort Worth, TX, 76115",
+      "lat": 32.66901,
+      "lng": -97.33189,
+      "region": "dallas"
+    },
+    {
+      "id": "src-r-d-evans-community-center",
+      "name": "R.D. Evans Community Center",
+      "city": "Fort Worth",
+      "address": "3242 Lackland Road, Fort Worth, TX, 76116",
+      "lat": 32.72584,
+      "lng": -97.43475,
+      "region": "dallas"
+    },
+    {
+      "id": "src-southwest-community-center",
+      "name": "Southwest Community Center",
+      "city": "Fort Worth",
+      "address": "6300 Welch Avenue, Fort Worth, TX, 76133",
+      "lat": 32.6548,
+      "lng": -97.38199,
+      "region": "dallas"
+    },
+    {
+      "id": "src-northside-community-center",
+      "name": "Northside Community Center",
+      "city": "Fort Worth",
+      "address": "1100 NW 18th Street, Fort Worth, TX, 76164",
+      "lat": 32.77874,
+      "lng": -97.36285,
+      "region": "dallas"
+    },
+    {
+      "id": "src-victory-forest-community-center",
+      "name": "Victory Forest Community Center",
+      "city": "Fort Worth",
+      "address": "3427 Hemphill Street, Fort Worth, TX, 76110",
+      "lat": 32.70016,
+      "lng": -97.33161,
+      "region": "dallas"
+    },
+    {
+      "id": "src-martin-luther-king-community-center",
+      "name": "Martin Luther King Community Center",
+      "city": "Fort Worth",
+      "address": "5565 Truman Drive, Fort Worth, TX, 76112",
+      "lat": 32.72472,
+      "lng": -97.23534,
+      "region": "dallas"
+    },
+    {
+      "id": "src-handley-meadowbrook-community-center",
+      "name": "Handley Meadowbrook Community Center",
+      "city": "Fort Worth",
+      "address": "6201 Beaty Street, Fort Worth, TX, 76112",
+      "lat": 32.73961,
+      "lng": -97.22325,
+      "region": "dallas"
+    },
+    {
+      "id": "src-usspt",
+      "name": "USSPT",
+      "city": "Lewisville",
+      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
+      "lat": 33.06454,
+      "lng": -97.005745,
+      "region": "dallas"
+    },
+    {
       "id": "src-absolute-volleyball-academy-and-absolute-beach",
       "name": "Absolute Volleyball Academy and Absolute Beach",
       "city": null,
@@ -16585,78 +16447,6 @@
       "lat": 30.011,
       "lng": -95.5077,
       "region": "houston"
-    },
-    {
-      "id": "src-usspt",
-      "name": "USSPT",
-      "city": "Lewisville",
-      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
-      "lat": 33.06454,
-      "lng": -97.005745,
-      "region": "dallas"
-    },
-    {
-      "id": "src-greenbriar-community-center",
-      "name": "Greenbriar Community Center",
-      "city": "Fort Worth",
-      "address": "5200 Hemphill Street, Fort Worth, TX, 76115",
-      "lat": 32.66901,
-      "lng": -97.33189,
-      "region": "dallas"
-    },
-    {
-      "id": "src-r-d-evans-community-center",
-      "name": "R.D. Evans Community Center",
-      "city": "Fort Worth",
-      "address": "3242 Lackland Road, Fort Worth, TX, 76116",
-      "lat": 32.72584,
-      "lng": -97.43475,
-      "region": "dallas"
-    },
-    {
-      "id": "src-southwest-community-center",
-      "name": "Southwest Community Center",
-      "city": "Fort Worth",
-      "address": "6300 Welch Avenue, Fort Worth, TX, 76133",
-      "lat": 32.6548,
-      "lng": -97.38199,
-      "region": "dallas"
-    },
-    {
-      "id": "src-northside-community-center",
-      "name": "Northside Community Center",
-      "city": "Fort Worth",
-      "address": "1100 NW 18th Street, Fort Worth, TX, 76164",
-      "lat": 32.77874,
-      "lng": -97.36285,
-      "region": "dallas"
-    },
-    {
-      "id": "src-victory-forest-community-center",
-      "name": "Victory Forest Community Center",
-      "city": "Fort Worth",
-      "address": "3427 Hemphill Street, Fort Worth, TX, 76110",
-      "lat": 32.70016,
-      "lng": -97.33161,
-      "region": "dallas"
-    },
-    {
-      "id": "src-martin-luther-king-community-center",
-      "name": "Martin Luther King Community Center",
-      "city": "Fort Worth",
-      "address": "5565 Truman Drive, Fort Worth, TX, 76112",
-      "lat": 32.72472,
-      "lng": -97.23534,
-      "region": "dallas"
-    },
-    {
-      "id": "src-handley-meadowbrook-community-center",
-      "name": "Handley Meadowbrook Community Center",
-      "city": "Fort Worth",
-      "address": "6201 Beaty Street, Fort Worth, TX, 76112",
-      "lat": 32.73961,
-      "lng": -97.22325,
-      "region": "dallas"
     }
   ]
 }
