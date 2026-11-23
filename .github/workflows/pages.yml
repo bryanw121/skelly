@@ -4,7 +4,8 @@ name: Deploy site
 # after each schedule refresh, which starts this with workflow_dispatch (scrape.yml, "Deploy the
 # site"). Not workflow_run: GitHub doesn't fire it for refreshes the scrape clock started with the
 # workflow token, which is most of them. The safety cron covers a refresh whose dispatch failed.
-# The site is main's code with the latest scrape output from the data branch laid over it.
+# The site is main's code, built with Vite (web/ → dist/), with the latest scrape output from the
+# data branch in public/data copied in as it is.
 on:
   push:
     branches: [main]
@@ -39,6 +40,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
       - id: pages
         uses: actions/configure-pages@v5
       - name: Fetch live court calendars
@@ -64,9 +66,12 @@ jobs:
           node scripts/build-maps.mjs --pmtiles "$RUNNER_TEMP/pmtiles" --maxzoom 14
         env:
           GH_TOKEN: ${{ github.token }}
+      # The page (web/) built into dist/, with public/ (data, maps, vendor) copied in as it is.
+      - run: npm ci
+      - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
 

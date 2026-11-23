@@ -338,8 +338,9 @@ body.layout-map .map .maplibregl-ctrl-bottom-right,body.layout-map .map .maplibr
 /* Events (renderEvents in app.js): headings like the Sports days, a few cards each, Show more. */
 #eventsPanel{display:grid;gap:12px}
 #eventsPanel[hidden]{display:none}
-   wider on a 320px phone. */
-.kinds{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}
+/* (Off: this rule followed a comment that had lost its opening, so browsers never applied it;
+   kept off so rows of chips still wrap. #eventCats scrolls sideways on phones by its own rule.)
+.kinds{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px} */
 .kinds::-webkit-scrollbar{display:none}
 .kinds .pill-btn{flex:0 0 auto}
 @media (pointer:coarse){.kinds .pill-btn{height:44px}}

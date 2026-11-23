@@ -6,7 +6,7 @@ import {
   EVENT_KINDS, EVENT_TAGS, countEvents, eventCta, eventDateRange, eventGroups, eventKind, eventPinName,
   eventPlaceParts, eventPlaces, eventTags, eventWhen, eventsForRegion, filterEvents, groupByMonth,
   isEventKind, isEventTag, isOn, kindLabel, sortEvents, weekendRange,
-} from '../public/events-ui.js';
+} from '../web/events-ui.js';
 
 const ev = (over = {}) => ({ id: 'evt-x', category: 'seasonal', title: 'T', venue: 'V', city: 'Austin', startDate: '2026-12-05', ...over });
 
@@ -146,7 +146,7 @@ test('eventWhen and isOn: the card\'s date column; eventCta: what the button say
 });
 
 test('placeGroups: the map\'s places sit under the list\'s headings, by the event each is named for', async () => {
-  const { eventPlaces, placeGroups } = await import('../public/events-ui.js');
+  const { eventPlaces, placeGroups } = await import('../web/events-ui.js');
   const today = '2026-11-18'; // a Wednesday
   const feed = [
     { id: 'a', title: 'On now fair', venue: 'A Hall', startDate: '2026-11-10', endDate: '2026-11-22', lat: 30.1, lng: -97.1 },
@@ -161,7 +161,7 @@ test('placeGroups: the map\'s places sit under the list\'s headings, by the even
 });
 
 test('eventPlaces: listings of one street address pinned a few steps apart share a place; the same number elsewhere does not', async () => {
-  const { eventPlaces } = await import('../public/events-ui.js');
+  const { eventPlaces } = await import('../web/events-ui.js');
   const ev = (title, venue, lat, lng) => ({ id: title, title, venue, city: 'Austin', startDate: '2026-12-11', lat, lng });
   const places = eventPlaces([
     ev('Bazaar', 'Blue Genie Art Bazaar, 6100 Airport Boulevard', 30.32634, -97.71684),

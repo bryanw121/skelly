@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { TIME_PRESETS, clockLabel, inWindow, parseWindow, presetOf, toHHMM, toMin, windowLabel, windowNote } from '../public/when.js';
-import { filterEvents } from '../public/events-ui.js';
+import { TIME_PRESETS, clockLabel, inWindow, parseWindow, presetOf, toHHMM, toMin, windowLabel, windowNote } from '../web/when.js';
+import { filterEvents } from '../web/events-ui.js';
 
 test('when: windows parse from link values, and nonsense is no window', () => {
   assert.deepEqual(parseWindow('14:00', '18:00'), { from: 840, to: 1080 });

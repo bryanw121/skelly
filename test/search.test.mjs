@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { SEARCH_TAGS, eventText, highlightParts, matchesText, searchTags, searchWords, sessionText, tagCounts } from '../public/search.js';
-import { filterEvents } from '../public/events-ui.js';
+import { SEARCH_TAGS, eventText, highlightParts, matchesText, searchTags, searchWords, sessionText, tagCounts } from '../web/search.js';
+import { filterEvents } from '../web/events-ui.js';
 
 test('search: every word must start a word in the text', () => {
   assert.deepEqual(searchWords('  Night-Market! '), ['night', 'market']);
@@ -48,7 +48,7 @@ test('search: a tag filter is exactly the tagged events; typing its name is a wi
 });
 
 test('eventIcon: the most specific tag decides the picture; no tag falls back to the kind', async () => {
-  const { eventIcon, EVENT_ICONS, SEARCH_TAGS } = await import('../public/search.js');
+  const { eventIcon, EVENT_ICONS, SEARCH_TAGS } = await import('../web/search.js');
   assert.equal(eventIcon({ title: 'Asian Night Market', description: 'Food trucks and vintage racks.' }), 'night-market');
   assert.equal(eventIcon({ title: 'Matcha & Makers Market' }), 'matcha');
   assert.equal(eventIcon({ title: 'Holiday Food Truck Rally' }), 'food');
@@ -72,7 +72,7 @@ test('search tags: Food and Music are incidental at a market; they need the titl
 });
 
 test('topics: the six newer topics, and the main topic is the most specific one (Holiday last)', async () => {
-  const { eventTopics } = await import('../public/search.js');
+  const { eventTopics } = await import('../web/search.js');
   assert.deepEqual(eventTopics({ title: 'Creek Show', description: 'Light installations along Waller Creek, nightly.' }), ['art-lights']);
   assert.deepEqual(eventTopics({ title: 'Clearfork Farmers Market', description: 'Farms, bakeries, tea vendors.' }), ['farmers-market']);
   assert.deepEqual(eventTopics({ title: 'Tihar Cocktail Festival' }), ['culture', 'drinks']);

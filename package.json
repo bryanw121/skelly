@@ -5,7 +5,10 @@
   "type": "module",
   "description": "Austin volleyball schedules (indoor, sand, grass) with live court bookings and sign-up links.",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc -p tsconfig.json",
+    "serve": "node server.js",
     "test": "node --test",
     "test:e2e": "node --test e2e/site.e2e.mjs",
     "test:live-map": "node --test e2e/live-map.e2e.mjs",
@@ -13,14 +16,20 @@
     "courts": "node scripts/build-courts.mjs",
     "check:skedda": "node scripts/check-skedda.mjs",
     "db:migrate": "node scripts/db-migrate.mjs",
-    "load:events": "node scripts/load-events.mjs"
+    "load:events": "node scripts/load-events.mjs",
+    "pretest:e2e": "vite build"
   },
   "dependencies": {
-    "postgres": "3.4.9"
+    "postgres": "3.4.9",
+    "preact": "10.29.8"
   },
   "devDependencies": {
+    "@babel/core": "7.29.13",
     "@electric-sql/pglite": "0.5.9",
-    "playwright": "1.48.2"
+    "@preact/preset-vite": "2.10.6",
+    "playwright": "1.48.2",
+    "typescript": "5.9.3",
+    "vite": "6.4.6"
   },
   "engines": {
     "node": ">=20.12"
