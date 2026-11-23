@@ -4,20 +4,20 @@
       "counts": [
         255,
         255,
-        255,
         257,
         250,
         250,
         250,
         243,
         259,
-        255
+        255,
+        257
       ],
-      "sessions": 255,
+      "sessions": 257,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.7,
+        "level": 0.71,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -32,19 +32,19 @@
         155,
         155,
         155,
-        155,
         153,
         152,
         152,
         152,
         150,
-        150
+        150,
+        159
       ],
-      "sessions": 150,
+      "sessions": 159,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.87,
+        "level": 0.86,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -187,15 +187,15 @@
         1,
         1,
         1,
-        1,
         2,
         2,
         2,
         2,
         2,
-        2
+        2,
+        1
       ],
-      "sessions": 2,
+      "sessions": 1,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -215,8 +215,8 @@
         3,
         3,
         3,
-        3,
         4,
+        3,
         3,
         3,
         3,
@@ -354,9 +354,9 @@
         3,
         3,
         3,
-        3
+        2
       ],
-      "sessions": 3,
+      "sessions": 2,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -673,7 +673,6 @@
     "volleyball-austin": {
       "counts": [
         2,
-        2,
         3,
         3,
         3,
@@ -681,9 +680,10 @@
         3,
         3,
         3,
-        3
+        3,
+        2
       ],
-      "sessions": 3,
+      "sessions": 2,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -705,7 +705,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1,
         1,
         1
@@ -762,9 +762,9 @@
         35,
         35,
         35,
-        35
+        37
       ],
-      "sessions": 35,
+      "sessions": 37,
       "coverage": {
         "end": 1,
         "price": 0,
@@ -773,7 +773,7 @@
         "city": 1,
         "surface": 1,
         "type": 1,
-        "capacity": 0.34,
+        "capacity": 0.41,
         "spotsLeft": 0,
         "signup": 1
       },
@@ -900,7 +900,7 @@
     "austin-city-pickleball": {
       "counts": [
         10,
-        10,
+        9,
         9,
         9,
         9,
@@ -926,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 609
+      "failStreak": 610
     },
     "dallas-reclub": {
       "counts": [
@@ -1079,15 +1079,15 @@
         20,
         20,
         20,
-        20,
         19,
         20,
-        21
+        21,
+        19
       ],
-      "sessions": 21,
+      "sessions": 19,
       "coverage": {
         "end": 1,
-        "price": 0.62,
+        "price": 0.58,
         "level": 1,
         "venue": 1,
         "city": 0,
@@ -1115,7 +1115,6 @@
         "feeCurrency",
         "feeType",
         "flags",
-        "flags.GROUP_PROMOTED",
         "gender",
         "groupReference",
         "groups[]",
@@ -1269,6 +1268,7 @@
   },
   "manual": {},
   "reported": [
+    "austin-city-pickleball:warning:City pickleball review due by 2026-11-30; check venue schedules and holiday holds before extending.",
     "dallas-reclub:warning:No upcoming Reclub meets on any club page",
     "foro:warning:FORO lists open play as \"coming soon\": no volleyball open play to show until it returns.",
     "georgetown-pickleball:failing",
@@ -1279,13 +1279,11 @@
     "houston-reclub:warning:reclub-CWAGWL: no surface",
     "houston-reclub:warning:reclub-HC3B4O: no surface",
     "houston-reclub:warning:reclub-J533LP: no surface",
-    "houston-reclub:warning:reclub-JK2478: no surface",
     "houston-reclub:warning:reclub-JMV5QT: no surface",
     "houston-reclub:warning:reclub-K9D10X: no surface",
     "houston-reclub:warning:reclub-K9XO8G: no surface",
     "houston-reclub:warning:reclub-MCRPQ4: no surface",
     "houston-reclub:warning:reclub-MLI8J8: no surface",
-    "houston-reclub:warning:reclub-NJKPQA: no surface",
     "houston-reclub:warning:reclub-OKAE7P: no surface",
     "houston-reclub:warning:reclub-T02HQF: no surface",
     "houston-reclub:warning:reclub-TCHJ1D: no surface",
@@ -1304,10 +1302,10 @@
     "manual:beecave-on-ice-sat:changed:2026-11-20",
     "manual:beecave-on-ice-sun:changed:2026-11-20",
     "manual:beecave-on-ice-tue:changed:2026-11-20",
-    "manual:four-seasons-ice-rodeo:changed:2026-11-21",
+    "manual:four-seasons-ice-rodeo:changed:2026-11-23",
     "manual:hanovers-open:changed:2026-11-18",
     "manual:hanovers-open:unverified",
-    "manual:ssc-crossover-mon-sand:changed:2026-11-22",
+    "manual:ssc-crossover-mon-sand:changed:2026-11-23",
     "manual:ssc-crossover-mon-sand:unverified"
   ]
 }

@@ -707,5 +707,36 @@
   "checkedAt": "2026-11-22T23:58:17.732Z",
   "startTime": "15:00",
   "endTime": "19:00"
+ },
+ "https://allevents.in/austin/can-i-go-fest/4600031045913752": {
+  "checkedAt": "2026-11-23T06:12:55.874Z"
+ },
+ "https://allevents.in/austin/austin-makers-market/200031070029928": {
+  "checkedAt": "2026-11-23T06:12:55.874Z",
+  "startTime": "10:00",
+  "endTime": "15:00"
+ },
+ "https://allevents.in/dallas/9th-annual-festival-of-lights/100002005037077874": {
+  "checkedAt": "2026-11-23T06:12:55.874Z",
+  "startTime": "16:30",
+  "endTime": "19:00"
+ },
+ "https://allevents.in/dallas/holiday-market-at-the-omni-dallas-tickets/80003002459723": {
+  "checkedAt": "2026-11-23T06:12:55.874Z",
+  "startTime": "17:00",
+  "endTime": "19:00"
+ },
+ "https://allevents.in/dallas/the-list-holiday-pop-up-jingle-and-mingle-singles-night/100002004738831812": {
+  "checkedAt": "2026-11-23T06:12:55.874Z",
+  "startTime": "18:00",
+  "endTime": "21:00"
+ },
+ "https://allevents.in/houston/chatgbt-presents-mwf-midweek-freak-the-night-before-thanksgiving/100002005218113356": {
+  "checkedAt": "2026-11-23T06:12:55.874Z",
+  "startTime": "21:00"
+ },
+ "https://allevents.in/houston/ccs-holiday-horror-con/100002003839155857": {
+  "checkedAt": "2026-11-23T06:12:55.874Z",
+  "startTime": "10:00"
  }
 }

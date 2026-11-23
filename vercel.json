@@ -29,6 +29,9 @@
       "maxDuration": 30,
       "includeFiles": "config/**"
     },
+    "api/usage.js": {
+      "maxDuration": 10
+    },
     "api/where.js": {
       "maxDuration": 5,
       "includeFiles": "config/regions/**"

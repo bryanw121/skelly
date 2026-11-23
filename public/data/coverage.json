@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T03:53:20.412Z",
+ "generatedAt": "2026-11-23T06:18:08.397Z",
  "regions": [
   {
    "id": "austin",
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 150,
+     "sessions": 159,
      "pinned": true,
      "booking": true,
      "via": [
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 88,
+     "sessions": 93,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 83,
+     "sessions": 80,
      "pinned": true,
      "booking": true,
      "via": [
@@ -81,7 +81,7 @@
      "venue": "Chaparral Ice",
      "city": "N. Austin (Northcross)",
      "sport": "ice_skating",
-     "sessions": 35,
+     "sessions": 37,
      "pinned": true,
      "booking": false,
      "via": [
@@ -128,20 +128,6 @@
      "lead": false
     },
     {
-     "venue": "ATX Beach",
-     "city": "North Austin",
-     "sport": "volleyball",
-     "sessions": 6,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "atxbeach",
-      "manual",
-      "sweatpals"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Volleyworld (Georgetown)",
      "city": "Georgetown",
      "sport": "volleyball",
@@ -150,6 +136,20 @@
      "booking": false,
      "via": [
       "volleyworld"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "ATX Beach",
+     "city": "North Austin",
+     "sport": "volleyball",
+     "sessions": 5,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "atxbeach",
+      "manual",
+      "sweatpals"
      ],
      "lead": false
     },
@@ -166,18 +166,6 @@
      "lead": false
     },
     {
-     "venue": "Austin Sports Center - Central",
-     "city": "Austin",
-     "sport": "volleyball",
-     "sessions": 3,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "volleyball-austin"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Gus Garcia Recreation Center",
      "city": "Austin",
      "sport": "pickleball",
@@ -190,15 +178,14 @@
      "lead": false
     },
     {
-     "venue": "The Crossover",
-     "city": "Cedar Park",
+     "venue": "Austin Sports Center - Central",
+     "city": "Austin",
      "sport": "volleyball",
-     "sessions": 3,
+     "sessions": 2,
      "pinned": true,
      "booking": false,
      "via": [
-      "manual",
-      "velocity"
+      "volleyball-austin"
      ],
      "lead": false
     },
@@ -247,6 +234,19 @@
      "booking": false,
      "via": [
       "austin-city-pickleball"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "The Crossover",
+     "city": "Cedar Park",
+     "sport": "volleyball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "manual",
+      "velocity"
      ],
      "lead": false
     },
@@ -491,22 +491,10 @@
      "lead": true
     },
     {
-     "venue": "Absolute Volleyball Academy and Absolute Beach",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
      "venue": "Katy Sports Center",
      "city": "",
      "sport": "volleyball",
-     "sessions": 2,
+     "sessions": 3,
      "pinned": true,
      "booking": false,
      "via": [
@@ -527,7 +515,7 @@
      "lead": true
     },
     {
-     "venue": "Blastros",
+     "venue": "Absolute Volleyball Academy and Absolute Beach",
      "city": "",
      "sport": "volleyball",
      "sessions": 1,
