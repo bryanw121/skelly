@@ -18,6 +18,7 @@ import { EVENT_KINDS, EVENT_SORTS, EVENT_TAGS, countEvents, eventSummary, isEven
 import { pagesBase } from './pages.js';
 import { drawEventsList } from './components/EventsList.tsx';
 import { drawSessionsList } from './components/SessionsList.tsx';
+import { drawDays, drawEventsCount, drawHosts, drawLayoutButton, drawLevelOptions, drawModes, drawPillLabel, drawSportOptions, drawTopicChips } from './components/Controls.tsx';
 import { drawEventPills, drawKindSheet, drawSortSheet } from './components/EventsControls.tsx';
 import { directionsHtml, eventCardHtml, eventFactsHtml, eventHours as hoursOf, eventKickerHtml, eventVisualHtml, noHours } from './components/EventCard.tsx';
 const PAGES = await pagesBase(); // '' next to the page, or the GitHub Pages address that answers (public/pages.js)
@@ -483,7 +484,7 @@ function renderSports() {
   const list = Object.entries(SPORTS).filter(([k]) => k === state.sport || offered.has(k) || today.some((x) => sportOf(x) === k));
   // The sport sheet lists the sports; a redraw while it's open keeps focus on the option that had it.
   const focused = $('sportSheet').open && document.activeElement?.dataset.sport;
-  $('sportsOpts').innerHTML = list.map(([k, sp]) => `<button type="button" class="tab opt sport" aria-pressed="${state.section === 'sports' && state.sport === k}" data-sport="${k}"><span class="lbl">${esc(sp.label)}<small>${esc(sp.menu)}</small></span></button>`).join('');
+  drawSportOptions($('sportsOpts'), list.map(([k, sp]) => ({ id: k, label: sp.label, menu: sp.menu, on: state.section === 'sports' && state.sport === k })));
   if (focused) $('sportsOpts').querySelector(`[data-sport="${CSS.escape(focused)}"]`)?.focus();
 }
 
@@ -493,7 +494,7 @@ function renderTabs() {
   const off = !sp.by || (sp.filter && state.view === 'booking');
   $('tabs').hidden = off;
   $('levelBtn').hidden = off;
-  if (!sp.by) { $('tabs').innerHTML = ''; return; }
+  if (!sp.by) { drawLevelOptions($('tabs'), []); return; }
   const opts = [['all', sp.filter ? 'All levels' : 'All', null, sp.filter ? 'Everything on the day' : 'Every court type'], ...Object.entries(tabsOf(state.sport)).map(([k, v]) => [k, v.label, v.c, v.desc])];
   const isIn = (x, k) => k === 'all' || (sp.filter ? sp.filter.match(x, k) : x[sp.by] === k);
   // Counts are for the day being viewed, so they match the list the option leads to.
@@ -501,17 +502,14 @@ function renderTabs() {
   const focused = $('levelSheet').open && document.activeElement?.dataset.tab;
   // Booking counts no sessions, so it shows (and announces) no count.
   const counting = state.view !== 'booking';
-  $('tabs').innerHTML = opts.map(([k, l, c, d]) => {
-    const n = counting ? day.filter((x) => isIn(x, k)).length : 0;
-    return `<button type="button" class="tab opt" aria-pressed="${state.tab === k}" data-tab="${esc(k)}" ${c ? `style="--c:${c}"` : ''}>${c ? '<span class="dot"></span>' : ''}<span class="lbl">${l}${d ? `<small>${esc(d)}</small>` : ''}</span><span class="n" aria-hidden="true">${n || ''}</span>${counting ? `<span class="vh">, ${n} session${n === 1 ? '' : 's'}</span>` : ''}</button>`;
-  }).join('');
+  drawLevelOptions($('tabs'), opts.map(([k, l, c, d]) => ({ id: k, label: l, color: c, desc: d, n: counting ? day.filter((x) => isIn(x, k)).length : 0, counting, on: state.tab === k })));
   if (focused) $('tabs').querySelector(`[data-tab="${CSS.escape(focused)}"]`)?.focus();
   const what = sp.filter ? 'Level' : 'Court type';
   $('levelSheetTitle').textContent = what;
   $('levelNote').textContent = sp.filter ? 'Read from each listing\'s words: Beginner / Intermediate / Advanced, a DUPR range or "Level N". Sessions that don\'t say show under every level.' : '';
   $('levelNote').hidden = !sp.filter;
   const cur = state.tab !== 'all' && tabsOf(state.sport)[state.tab];
-  $('levelBtn').innerHTML = `${cur ? esc(cur.label) : sp.filter ? 'Any level' : 'All courts'} <span class="caret" aria-hidden="true">▾</span>`;
+  drawPillLabel($('levelBtn'), cur ? cur.label : sp.filter ? 'Any level' : 'All courts');
   $('levelBtn').classList.toggle('on', !!cur);
   $('levelBtn').setAttribute('aria-label', `${what}: ${cur ? cur.label : 'any'}. Change ${what.toLowerCase()}`);
 }
@@ -519,14 +517,12 @@ function renderTabs() {
 function renderDays() {
   // Always shown: booking and sign-up links open on the chosen day where the venue's site allows it.
   $('days').hidden = false;
-  $('days').innerHTML = WEEK.map((iso, i) => {
+  drawDays($('days'), WEEK.map((iso, i) => {
     const list = state.view === 'booking' ? [] : sessionsOn(iso).filter((x) => !hidden(x.f));
-    const kinds = [...new Map(list.map((x) => [tabOf(x).c, tabOf(x)])).values()];
+    const pips = [...new Set(list.map((x) => tabOf(x).c))];
     const d = dowOf(iso);
-    return `<button class="day" aria-pressed="${state.di === i}" data-di="${i}" data-iso="${iso}" aria-label="${DAY_LONG[d]} ${+iso.slice(8)}${state.view === 'booking' ? ', court bookings' : `, ${list.length} sessions`}">
-      <span class="dn">${i === 0 ? 'Today' : DAYS[d]}</span><span class="dd">${+iso.slice(8)}</span>
-      <span class="pips">${kinds.map((k) => `<span class="pip" style="background:${k.c}"></span>`).join('')}</span></button>`;
-  }).join('');
+    return { i, iso, name: i === 0 ? 'Today' : DAYS[d], date: +iso.slice(8), label: `${DAY_LONG[d]} ${+iso.slice(8)}${state.view === 'booking' ? ', court bookings' : `, ${list.length} sessions`}`, on: state.di === i, pips };
+  }));
 }
 
 // The fine print, folded away: address and directions, the source's note, and where the listing
@@ -640,8 +636,7 @@ function renderVenueCalendars() {
 function renderCalendarModes() {
   const supportsBooking = ['volleyball', 'pickleball'].includes(state.sport);
   $('calendarModes').hidden = !supportsBooking;
-  $('calendarModes').innerHTML = supportsBooking ? [['openplay', 'Open play'], ['booking', 'Court bookings'], ['leagues', 'Leagues'], ['tournaments', 'Tournaments']]
-    .map(([value, label]) => `<button class="seg-btn" type="button" data-view="${value}" aria-pressed="${state.view === value}">${label}</button>`).join('') : '';
+  drawModes($('calendarModes'), supportsBooking ? [['openplay', 'Open play'], ['booking', 'Court bookings'], ['leagues', 'Leagues'], ['tournaments', 'Tournaments']].map(([id, label]) => ({ id, label, on: state.view === id })) : []);
   // Booking puts the live court chart first; open play puts the list first (styles.css orders them).
   document.body.classList.toggle('view-booking', state.view === 'booking');
   $('sessionsPanel').hidden = state.view === 'booking';
@@ -1029,7 +1024,7 @@ function render() {
   // Events: the feed is the source of truth, so the view works without the day's schedule.
   renderFiltersSummary();
   if (state.section === 'events') { $('timeBtn').hidden = true; $('searchWrap').hidden = true; renderEvents(); renderMap(); fitHeader(); return; }
-  $('eventsPanel').hidden = true; drawEventPills($('eventCats'), null); $('eventsCount').textContent = '';
+  $('eventsPanel').hidden = true; drawEventPills($('eventCats'), null); drawEventsCount($('eventsCount'), null);
   $('filters').hidden = false; // Events hides the day strip and the Open play / Courts switch; Sports brings them back
   $('searchWrap').hidden = true; // shown again by renderSearch on open play
   // Without the day's schedule, Leagues and Tournaments (their own file) still work.
@@ -1166,7 +1161,7 @@ function renderSearch(upcoming = null) {
   $('searchClear').hidden = !q;
   const tags = ev && searchOpen ? tagCounts(upcoming) : [];
   $('searchTags').hidden = !tags.length;
-  $('searchTags').innerHTML = tags.map((t) => `<button type="button" class="pill-btn chip-btn${state.evTopic === t.id ? ' on' : ''}" data-topic="${esc(t.id)}" aria-pressed="${state.evTopic === t.id}">${EVENT_ICONS[t.id] ? `<span class="ev-ic ic-${t.id} chip-ic" style="--s:22px">${iconSvg(t.id)}</span>` : ''}${esc(t.label)} <span class="n">${t.n}</span></button>`).join('');
+  drawTopicChips($('searchTags'), tags.map((t) => ({ id: t.id, label: t.label, n: t.n, on: state.evTopic === t.id })));
 }
 /** Set the active section's search and redraw (the box itself is left alone while it has focus). */
 function setQuery(q, { fill = false, topic = null } = {}) {
@@ -1180,7 +1175,7 @@ function renderTimeBtn() {
   const off = state.section === 'events' || state.view !== 'openplay';
   $('timeBtn').hidden = off;
   if (off) return;
-  $('timeBtn').innerHTML = `${esc(windowLabel(state.win))} <span class="caret" aria-hidden="true">▾</span>`;
+  drawPillLabel($('timeBtn'), windowLabel(state.win));
   $('timeBtn').classList.toggle('on', !!state.win);
   $('timeBtn').setAttribute('aria-label', `Time: ${windowLabel(state.win)}. Change time`);
 }
@@ -1223,7 +1218,7 @@ function renderEvents() {
   if (!events) {
     $('asof').textContent = eventsError ? '' : 'Loading…';
     drawEventPills($('eventCats'), null);
-    $('eventsCount').textContent = '';
+    drawEventsCount($('eventsCount'), null);
     drawEventsList($('events'), eventsError ? { status: 'error', message: eventsError } : { status: 'loading' });
     $('eventsNote').textContent = '';
     return;
@@ -1233,7 +1228,7 @@ function renderEvents() {
     // A region without an events feed yet: say so, and point to what it does have.
     $('asof').textContent = '';
     drawEventPills($('eventCats'), null);
-    $('eventsCount').textContent = '';
+    drawEventsCount($('eventsCount'), null);
     drawEventsList($('events'), { status: 'away', regionName: region?.name ?? 'this city' });
     $('eventsNote').textContent = '';
     return;
@@ -1261,7 +1256,7 @@ function renderEvents() {
   const q = state.evTopic ? '' : state.evQ.trim(), topic = state.evTopic ? searchTagLabel(state.evTopic) : '';
   // A search that the day or time hides matches for says so, and offers them in one tap.
   const anyDay = (q || topic) && whenLabel() ? filterEvents(upcoming, { ...evFilters(), weekend: false, day: null, window: null }, NOW.iso).length - shown.length : 0;
-  $('eventsCount').innerHTML = filtering || whenLabel() || q || topic ? `${shown.length} of ${upcoming.length} events${q ? ` for “${esc(q)}”` : topic ? ` tagged ${esc(topic)}` : ''}${whenLabel() ? ` · ${esc(whenLabel())}` : ''}${anyDay > 0 ? ` · <button type="button" class="linkish" data-evanyday>${anyDay} more on other days</button>` : ''} · <button type="button" class="linkish" data-evclear>Clear filters</button>` : '';
+  drawEventsCount($('eventsCount'), filtering || whenLabel() || q || topic ? { shown: shown.length, total: upcoming.length, q, topic, when: whenLabel(), otherDays: anyDay } : null);
   // Every week ends with the markets whose hours aren't listed, each linked to where its hours are.
   const unlisted = state.evKind === 'weekly' && !q && !topic && !whenLabel();
   const marketMiles = (m) => (here ? milesToCoords(m.lat, m.lng) : null);
@@ -1355,7 +1350,7 @@ function renderSignups() {
   document.body.classList.remove('layout-map', 'view-booking');
   const noun = kind === 'league' ? 'leagues' : 'tournaments';
   if (!programs) {
-    $('hosts').innerHTML = '';
+    drawHosts($('hosts'), [], noun);
     $('programs').innerHTML = programsError ? `<div class="error">Couldn't load ${noun}: ${esc(programsError)}</div>` : `<p class="loading">Loading ${noun}…</p>`;
     $('programsNote').textContent = '';
     return;
@@ -1367,8 +1362,7 @@ function renderSignups() {
   for (const p of all) counts.set(p.org, (counts.get(p.org) ?? 0) + 1);
   const hosts = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   if (state.host !== 'all' && !counts.has(state.host)) { state.host = 'all'; syncUrl(); save(); }
-  const chip = (value, label, n) => `<button type="button" class="pill-btn chip-btn${state.host === value ? ' on' : ''}" data-host="${esc(value)}" aria-pressed="${state.host === value}">${esc(label)} <span class="n" aria-hidden="true">${n}</span><span class="vh">, ${n} ${noun}</span></button>`;
-  $('hosts').innerHTML = hosts.length > 1 ? chip('all', 'All hosts', all.length) + hosts.map(([org, n]) => chip(org, org, n)).join('') : '';
+  drawHosts($('hosts'), hosts.length > 1 ? [{ id: 'all', label: 'All hosts', n: all.length, on: state.host === 'all' }, ...hosts.map(([org, n]) => ({ id: org, label: org, n, on: state.host === org }))] : [], noun);
   const shown = state.host === 'all' ? all : all.filter((p) => p.org === state.host);
   const section = (title, rows, cls = '') => (rows.length ? `<h2 class="p-group ${cls}">${esc(title)}<span class="n">${rows.length}</span></h2>${rows.map(programCard).join('')}` : '');
   const near = shown.filter((p) => !region || p.region === region.id);
@@ -1781,7 +1775,7 @@ async function renderMap() {
   // One floating button for the other view: "Map" on the list, "List" on the map.
   const LIST_ICON = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>';
   const MAP_ICON = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>';
-  $('layout').innerHTML = mapReady() ? (on ? `<button class="fab" type="button" data-layout="list">${LIST_ICON}List</button>` : `<button class="fab" type="button" data-layout="map">${MAP_ICON}Map</button>`) : '';
+  drawLayoutButton($('layout'), mapReady() ? (on ? { to: 'list', icon: LIST_ICON } : { to: 'map', icon: MAP_ICON }) : null);
   $('mapCard').hidden = !on;
   document.body.classList.toggle('layout-map', on);
   document.body.classList.toggle('map-big', on && mapBig);
