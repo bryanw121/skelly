@@ -3604,5 +3604,77 @@
     "lng": -96.79699,
     "located": "source",
     "matched": null
+  },
+  "one cowboys way, frisco, tx, united states, texas 75034, 1 cowboys way": {
+    "lat": 33.10982,
+    "lng": -96.83007,
+    "located": "source",
+    "matched": null
+  },
+  "705 cavalcade st": {
+    "lat": 29.80375,
+    "lng": -95.36257,
+    "located": "source",
+    "matched": null
+  },
+  "trinity cider, 2721 main st": {
+    "lat": 32.7841,
+    "lng": -96.78356,
+    "located": "source",
+    "matched": null
+  },
+  "1001 washington street": {
+    "lat": 32.78207,
+    "lng": -96.76303,
+    "located": "source",
+    "matched": null
+  },
+  "218 joyce st": {
+    "lat": 29.80609,
+    "lng": -95.36801,
+    "located": "source",
+    "matched": null
+  },
+  "vive church houston, 5203 fulton st": {
+    "lat": 29.80778,
+    "lng": -95.36969,
+    "located": "source",
+    "matched": null
+  },
+  "zilker park, 2100 barton springs rd,austin, texas": {
+    "lat": 30.26361,
+    "lng": -97.77666,
+    "located": "source",
+    "matched": null
+  },
+  "main street district, 1900main street,dallas, texas": {
+    "lat": 32.781,
+    "lng": -96.797,
+    "located": "source",
+    "matched": null
+  },
+  "701 e 53rd st": {
+    "lat": 30.31539,
+    "lng": -97.71658,
+    "located": "source",
+    "matched": null
+  },
+  "lindsey leigh jewelry, 800 taft street": {
+    "lat": 29.75885,
+    "lng": -95.38599,
+    "located": "source",
+    "matched": null
+  },
+  "cosmic saltillo, 1301 e 5th st": {
+    "lat": 30.26264,
+    "lng": -97.72963,
+    "located": "source",
+    "matched": null
+  },
+  "1201 w slaughter ln": {
+    "lat": 30.17355,
+    "lng": -97.8129,
+    "located": "source",
+    "matched": null
   }
 }

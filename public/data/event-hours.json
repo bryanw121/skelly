@@ -738,5 +738,70 @@
  "https://allevents.in/houston/ccs-holiday-horror-con/100002003839155857": {
   "checkedAt": "2026-11-23T06:12:55.874Z",
   "startTime": "10:00"
+ },
+ "https://allevents.in/austin/austin-witches-market-cosmic-saltillo-dec-12/200031106143256": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "18:00",
+  "endTime": "22:00"
+ },
+ "https://allevents.in/austin/new-moon-austin-witches-market-north-loop-yarrow-and-sage-dec-5/200031104502309": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "12:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/austin/holiday-witch-swap-and-yule-market-south-yarrow-and-sage-dec-12/200031104501708": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "12:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/austin/2026-austin-trail-of-lights-fun-run/200031103988441": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "18:00",
+  "endTime": "22:00"
+ },
+ "https://allevents.in/dallas/dallas-christmas-artisan-market-and-holiday-gift-fair-and-food-festival/100002003112074136": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "10:00"
+ },
+ "https://allevents.in/dallas/christmas-market/200031064609950": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "09:00"
+ },
+ "https://allevents.in/dallas/farm-fresh-christmas-paint-and-sip-in-dallas-classpop/100002000508859852": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "11:00",
+  "endTime": "13:00"
+ },
+ "https://allevents.in/houston/holiday-trio-performance-at-lindale-park/200031104446106": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "18:00",
+  "endTime": "19:00"
+ },
+ "https://allevents.in/houston/vive-christmas-festival/200031106125337": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "18:00",
+  "endTime": "21:00"
+ },
+ "https://allevents.in/houston/free-pop-up-grocery-store/200031106125437": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "12:30",
+  "endTime": "14:00"
+ },
+ "https://allevents.in/houston/join-us-for-the-chamber-holiday-celebration/200030988768135": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "05:30",
+  "endTime": "08:00"
+ },
+ "https://allevents.in/houston/sparkle-market-vip-night/100002004494078749": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "16:00",
+  "endTime": "20:00"
+ },
+ "https://allevents.in/houston/anime-market-houston-iv/100002003788855407": {
+  "checkedAt": "2026-11-23T14:17:07.078Z",
+  "startTime": "10:00"
+ },
+ "https://allevents.in/houston/cy-fair-ffa-country-christmas-craft-show/3700030972891738": {
+  "checkedAt": "2026-11-23T14:17:07.078Z"
  }
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T10:43:49.831Z",
+  "generatedAt": "2026-11-23T14:17:05.394Z",
   "region": {
     "id": "dallas",
     "name": "Dallas–Fort Worth, TX",
@@ -27,7 +27,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T10:40:55.073Z",
+      "checkedAt": "2026-11-23T14:13:48.755Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"
@@ -112,7 +112,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T06:08:07.216Z",
+      "checkedAt": "2026-11-23T14:13:49.855Z",
       "count": 12
     }
   ],
@@ -992,6 +992,15 @@
       "region": "dallas"
     },
     {
+      "id": "src-usspt",
+      "name": "USSPT",
+      "city": "Lewisville",
+      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
+      "lat": 33.06454,
+      "lng": -97.005745,
+      "region": "dallas"
+    },
+    {
       "id": "src-greenbriar-community-center",
       "name": "Greenbriar Community Center",
       "city": "Fort Worth",
@@ -1052,15 +1061,6 @@
       "address": "6201 Beaty Street, Fort Worth, TX, 76112",
       "lat": 32.73961,
       "lng": -97.22325,
-      "region": "dallas"
-    },
-    {
-      "id": "src-usspt",
-      "name": "USSPT",
-      "city": "Lewisville",
-      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
-      "lat": 33.06454,
-      "lng": -97.005745,
       "region": "dallas"
     }
   ]

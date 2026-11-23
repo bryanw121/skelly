@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T10:43:49.831Z",
+  "generatedAt": "2026-11-23T14:17:05.394Z",
   "region": {
     "id": "austin",
     "name": "Austin, TX",
@@ -17,7 +17,7 @@
       "kind": "OpenPlay club directory",
       "site": "https://openplaymap.com/open-play/austin",
       "ok": true,
-      "checkedAt": "2026-11-23T10:40:52.419Z",
+      "checkedAt": "2026-11-23T14:13:43.120Z",
       "count": 264
     },
     {
@@ -30,7 +30,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/austinpicklehaus",
       "ok": true,
-      "checkedAt": "2026-11-23T10:40:52.420Z",
+      "checkedAt": "2026-11-23T14:13:43.120Z",
       "count": 159
     },
     {
@@ -43,7 +43,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/holy-pickle",
       "ok": true,
-      "checkedAt": "2026-11-23T10:40:52.420Z",
+      "checkedAt": "2026-11-23T14:13:43.121Z",
       "count": 0
     },
     {
@@ -56,7 +56,7 @@
       "kind": "Venue's schedule page",
       "site": "https://app.arketa.co/iframe/volleyworld/schedule",
       "ok": true,
-      "checkedAt": "2026-11-23T10:40:52.420Z",
+      "checkedAt": "2026-11-23T14:13:43.121Z",
       "count": 10
     },
     {
@@ -69,7 +69,7 @@
       "kind": "Venue's schedule page",
       "site": "https://goteamup.com/w9142954/p/9142954-atx-beach/memberships/223927/",
       "ok": true,
-      "checkedAt": "2026-11-23T06:07:54.335Z",
+      "checkedAt": "2026-11-23T14:13:43.124Z",
       "count": 2
     },
     {
@@ -109,7 +109,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T10:40:52.421Z",
+      "checkedAt": "2026-11-23T14:13:43.125Z",
       "count": 3
     },
     {
@@ -136,7 +136,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T10:40:52.421Z",
+      "checkedAt": "2026-11-23T14:13:43.518Z",
       "count": 2
     },
     {
@@ -155,7 +155,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T06:07:56.257Z",
+      "checkedAt": "2026-11-23T14:13:44.664Z",
       "count": 2
     },
     {
@@ -174,7 +174,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T06:07:57.298Z",
+      "checkedAt": "2026-11-23T14:13:45.004Z",
       "count": 1
     },
     {
@@ -193,7 +193,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T06:07:57.539Z",
+      "checkedAt": "2026-11-23T14:13:45.047Z",
       "count": 10
     },
     {
@@ -206,7 +206,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://apps.daysmartrecreation.com/dash/x/chaparralice/calendar?location=1&start={date}&end={date}&event_type={eventType}",
       "ok": true,
-      "checkedAt": "2026-11-23T10:40:53.534Z",
+      "checkedAt": "2026-11-23T14:13:45.243Z",
       "count": 37
     },
     {
@@ -219,7 +219,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://iceandfield.com/public-skating/",
       "ok": true,
-      "checkedAt": "2026-11-23T10:40:54.659Z",
+      "checkedAt": "2026-11-23T14:13:45.942Z",
       "count": 24
     },
     {
@@ -248,7 +248,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-23T10:40:54.886Z",
+      "checkedAt": "2026-11-23T14:13:48.549Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
