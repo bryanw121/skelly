@@ -1,0 +1,7 @@
+{
+  "_note": "web/app.js is being moved into Preact components a piece at a time (issue #191). test/app-js-budget.test.mjs fails if app.js grows past these numbers. When a change shrinks it, lower them here in the same PR; never raise them.",
+  "lines": 2243,
+  "innerHTML": 6,
+  "addEventListener": 31,
+  "functions": 86
+}
