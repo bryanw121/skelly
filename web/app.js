@@ -20,6 +20,7 @@ import { drawEventsList } from './components/EventsList.tsx';
 import { drawSessionsList } from './components/SessionsList.tsx';
 import { drawPrograms } from './components/ProgramsList.tsx';
 import { drawMapPanel, drawPlaceSheet } from './components/MapPanel.tsx';
+import { drawActs, drawAddFor, drawAddResult, drawCalErrors, drawCalOpts, drawCalPick, drawCityOptions, drawFooter } from './components/Sheets.tsx';
 import { drawBookingRows, drawCourts, drawSourceList, drawSubscribe, drawVenueCalendars } from './components/SportsPanels.tsx';
 import { drawDays, drawEventsCount, drawHosts, drawLayoutButton, drawLevelOptions, drawModes, drawPillLabel, drawSportOptions, drawTopicChips } from './components/Controls.tsx';
 import { drawEventPills, drawKindSheet, drawSortSheet } from './components/EventsControls.tsx';
@@ -398,9 +399,8 @@ function openCalSheet(key, opener) {
     calPick = { key, date, time: item.start ?? '', min: first, max: item.endDate };
   }
   $('calPick').hidden = !run;
-  $('calPick').innerHTML = run ? `<h3 class="opt-h">When are you going?</h3><div class="when-range on"><label class="when-field"><span>Day</span><input type="date" id="calDay" min="${calPick.min}" max="${calPick.max}" value="${calPick.date}"></label><label class="when-field"><span>Time</span><input type="time" id="calTime" step="900" value="${esc(calPick.time)}"></label></div><p class="note" id="calPickNote" style="margin:0"></p>` : '';
-  $('calOpts').innerHTML = `<a class="tab opt" id="calGoogle" href="${esc(googleCalendarUrl(item))}" target="_blank" rel="noopener" data-close><span class="lbl">Google Calendar<small>Opens with everything filled in</small></span><span aria-hidden="true">↗</span></a>
-    <a class="tab opt" id="calApple" href="${esc(file)}"${IOS ? '' : ` download="${esc(icsName(item.title))}"`} data-close data-ics><span class="lbl">Apple Calendar<small>Also Outlook and others (a calendar file)</small></span><span aria-hidden="true">↓</span></a>`;
+  drawCalPick($('calPick'), run ? { min: calPick.min, max: calPick.max, date: calPick.date, time: calPick.time, note: '' } : null);
+  drawCalOpts($('calOpts'), { google: googleCalendarUrl(item), file, download: IOS ? null : icsName(item.title) });
   if (run) calLinks();
   openSheet('calSheet', opener);
 }
@@ -409,9 +409,10 @@ function calLinks() {
   const item = calItems.get(calPick?.key);
   if (!item) return;
   const it = visitItem(item, calPick.date, calPick.time);
-  $('calGoogle').href = googleCalendarUrl(it);
-  $('calApple').href = `data:text/calendar;charset=utf-8,${encodeURIComponent(icsFile(it, { uid: `${calPick.key}:${calPick.date}` }))}`;
-  $('calPickNote').textContent = `Adds ${fmtDate(calPick.date)}${it.start ? `, ${fmtT(it.start)}–${fmtT(it.end)}` : ', all day'}. It runs ${fmtDate(item.date)} to ${fmtDate(item.endDate)}.`;
+  const file = `data:text/calendar;charset=utf-8,${encodeURIComponent(icsFile(it, { uid: `${calPick.key}:${calPick.date}` }))}`;
+  drawCalOpts($('calOpts'), { google: googleCalendarUrl(it), file, download: IOS ? null : icsName(item.title) });
+  drawCalPick($('calPick'), { min: calPick.min, max: calPick.max, date: calPick.date, time: calPick.time,
+    note: `Adds ${fmtDate(calPick.date)}${it.start ? `, ${fmtT(it.start)}–${fmtT(it.end)}` : ', all day'}. It runs ${fmtDate(item.date)} to ${fmtDate(item.endDate)}.` });
 }
 $('calPick').addEventListener('input', (e) => {
   if (!calPick) return;
@@ -470,7 +471,7 @@ function renderRegion() {
   $('nearest').title = label;
   $('nearest').setAttribute('aria-pressed', String(!!here));
   if (many) {
-    $('regionPick').innerHTML = list.map((r) => `<option value="${esc(r.id)}" ${r.id === region?.id ? 'selected' : ''}>${esc(r.name)}</option>`).join('');
+    drawCityOptions($('regionPick'), list.map((r) => ({ id: r.id, name: r.name })), region?.id ?? null);
   }
 }
 
@@ -940,7 +941,7 @@ function renderGlance() {
   document.querySelector('#glance .key').hidden = !volleyball;
   $('calNote').hidden = !volleyball;
   const errs = !volleyball ? [] : [...(courts?.errors || []).filter((e) => (e.sport || 'volleyball') === state.sport), ...(courtsError ? [{ message: courtsError }] : [])];
-  $('calErrors').innerHTML = errs.length ? `<div class="error">Couldn't load some court calendars right now${errs.map((e) => e.calendar ? ` · <a href="${esc(e.calendar)}" target="_blank" rel="noopener">open ${esc(e.venue)} calendar ↗</a>` : '').join('')}</div>` : '';
+  drawCalErrors($('calErrors'), errs.length ? errs.map((e) => ({ venue: e.venue, calendar: e.calendar || null })) : null);
 }
 
 /** "6 sources" next to the city: opens the sources page for this city and sport. */
@@ -978,7 +979,7 @@ function renderMeta() {
     : 'Schedules are hand-checked against published pages; live availability is not tracked.';
   const names = mine.map((s) => s.name || s.id);
   const handChecked = (schedule.sessions || []).some((x) => x.sourceId === 'manual' && sportOf(x) === state.sport);
-  $('footer').innerHTML = `${names.length || handChecked ? `Sources: ${esc(list([...names, ...(handChecked ? ['hand-checked pages'] : [])]))}. ` : ''}${SPORTS[state.sport].footer}`;
+  drawFooter($('footer'), `${names.length || handChecked ? `Sources: ${list([...names, ...(handChecked ? ['hand-checked pages'] : [])])}. ` : ''}${SPORTS[state.sport].footer}`);
   renderSourceList();
   if (PROGRAM_VIEWS[state.view]) signupsMeta();
 }
@@ -1227,7 +1228,7 @@ function renderEvents() {
   const upcoming = list.filter((e) => (e.endDate ?? e.startDate) >= NOW.iso);
   $('asof').textContent = `${upcoming.length} events · checked ${fmtDate(events.generatedAt.slice(0, 10))}`;
   $('asof').title = `Events checked ${clock(events.generatedAt)}`;
-  $('footer').innerHTML = 'Each event links to its own page or post. Dates and prices change, so check it before you go.';
+  drawFooter($('footer'), 'Each event links to its own page or post. Dates and prices change, so check it before you go.');
   const filtering = state.evKind !== 'all' || state.evTags.length > 0;
   const sortLabel = EVENT_SORTS.find((x) => x.id === state.evSort)?.label ?? 'Soonest';
   drawEventPills($('eventCats'), { sortLabel, sorted: state.evSort !== 'soonest', filterLabel: filterLabel(), filtering, whenLabel: whenLabel(), near: navigator.geolocation ? !!here : null });
@@ -1392,7 +1393,7 @@ function signupsMeta() {
   renderSourcesLink();
   $('asof').title = `Leagues and tournaments checked ${clock(programs.generatedAt)}`;
   const orgs = [...new Set([...programsFor('league'), ...programsFor('tournament')].map((p) => p.org))];
-  $('footer').innerHTML = orgs.length ? `Sources: ${esc(list(orgs))}. Sign up on the organizer's site; Skelly only links to it.` : '';
+  drawFooter($('footer'), orgs.length ? `Sources: ${list(orgs)}. Sign up on the organizer's site; Skelly only links to it.` : '');
 }
 /** Today, in open play: a league or tournament whose sign-up (or early-bird price) ends today. */
 function headsUp() {
@@ -1892,7 +1893,7 @@ function locating(on) {
 // a new issue on GitHub instead, and the sheet says that route is public and needs an account.
 const FEEDBACK_ISSUES = 'https://github.com/bryanw121/skelly/issues/new';
 $('feedbackBtn').addEventListener('click', (e) => {
-  $('feedbackNote').textContent = ''; $('feedbackActs').innerHTML = '<button type="submit" class="go-btn" id="feedbackSend">Send</button>';
+  $('feedbackNote').textContent = ''; drawActs($('feedbackActs'), [{ kind: 'submit', id: 'feedbackSend', label: 'Send', main: true }]);
   $('feedbackText').disabled = false;
   openSheet('feedbackSheet', e.currentTarget);
   $('feedbackText').focus();
@@ -1901,22 +1902,21 @@ $('feedbackForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const message = $('feedbackText').value.trim();
   if (!message) { $('feedbackNote').textContent = 'Write something first.'; $('feedbackText').focus(); return; }
-  const btn = $('feedbackSend');
-  btn.disabled = true; btn.innerHTML = '<span class="spin" aria-hidden="true"></span> Sending…';
+  drawActs($('feedbackActs'), [{ kind: 'submit', id: 'feedbackSend', label: 'Sending…', busy: true, main: true }]);
   let r = null, out = null;
   try { r = await fetch('api/feedback', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ message, page: location.href, website: $('feedbackWebsite').value }) }); out = await r.json(); } catch { /* no API here */ }
   if (r?.ok && out?.ok) {
     $('feedbackText').value = ''; $('feedbackText').disabled = true;
     $('feedbackNote').textContent = 'Sent. Thank you!';
-    $('feedbackActs').innerHTML = '<button type="button" class="go-btn" data-close>Done</button>';
+    drawActs($('feedbackActs'), [{ kind: 'button', label: 'Done', close: true, main: true }]);
     $('feedbackActs').querySelector('button').focus();
     return;
   }
   if (r && r.status !== 501 && r.status !== 404 && out?.error) { // it answered, and said why not (too long, too many at once)
-    $('feedbackNote').textContent = out.error; btn.disabled = false; btn.textContent = 'Send'; return;
+    $('feedbackNote').textContent = out.error; drawActs($('feedbackActs'), [{ kind: 'submit', id: 'feedbackSend', label: 'Send', main: true }]); return;
   }
   $('feedbackNote').textContent = "Couldn't send it from here. You can post it on GitHub instead: that needs a GitHub account, and what you write is public.";
-  $('feedbackActs').innerHTML = `<a class="go-btn" href="${esc(`${FEEDBACK_ISSUES}?${new URLSearchParams({ title: 'Feedback', body: message, labels: 'feedback' })}`)}" target="_blank" rel="noopener">Post on GitHub ↗</a><button type="submit" class="tab opt" id="feedbackSend">Try again</button>`;
+  drawActs($('feedbackActs'), [{ kind: 'link', label: 'Post on GitHub ↗', href: `${FEEDBACK_ISSUES}?${new URLSearchParams({ title: 'Feedback', body: message, labels: 'feedback' })}`, main: true }, { kind: 'submit', id: 'feedbackSend', label: 'Try again', main: false }]);
 });
 
 // ---------- add a source ----------
@@ -1924,19 +1924,19 @@ $('feedbackForm').addEventListener('submit', async (e) => {
 // the page). /api/add-source checks it while the person waits and answers one of three ways:
 // added (with how much it found), already there, or why not. See lib/add-source.js.
 let addFor = null; // 'events' or a sport id
-const addResult = (kind, title, detail) => { const el = $('addRes'); el.hidden = false; el.className = `add-res ${kind}`; el.innerHTML = `<b>${kind === 'busy' ? '<span class="spin" aria-hidden="true"></span> ' : ''}${esc(title)}</b>${detail ? `<span>${esc(detail)}</span>` : ''}`; };
+const addResult = (kind, title, detail) => { const el = $('addRes'); el.hidden = false; el.className = `add-res ${kind}`; drawAddResult(el, { busy: kind === 'busy', title, detail: detail || '' }); };
 function renderAddFor() {
   const sport = SPORTS[state.sport] ? state.sport : 'volleyball';
   const opts = [['events', 'Events'], [sport, `Sports · ${SPORTS[sport].label}`]];
-  $('addFor').innerHTML = opts.map(([id, label]) => `<button type="button" class="tab opt" data-addfor="${esc(id)}" aria-pressed="${addFor === id}">${label}</button>`).join('');
+  drawAddFor($('addFor'), opts.map(([id, label]) => ({ id, label })), addFor);
 }
 $('addSourceBtn').addEventListener('click', (e) => {
   addFor = state.section === 'events' ? 'events' : (SPORTS[state.sport] ? state.sport : 'volleyball');
   renderAddFor();
   const cities = index?.regions?.length ? index.regions : region?.id ? [region] : [{ id: 'austin', name: 'Austin, TX' }];
-  $('addRegion').innerHTML = cities.map((r) => `<option value="${esc(r.id)}" ${r.id === region?.id ? 'selected' : ''}>${esc(r.name)}</option>`).join('');
+  drawCityOptions($('addRegion'), cities.map((r) => ({ id: r.id, name: r.name })), region?.id ?? null);
   $('addRes').hidden = true; $('addInput').value = '';
-  $('addActs').innerHTML = '<button type="submit" class="go-btn" id="addSend">Check and add</button>';
+  drawActs($('addActs'), [{ kind: 'submit', id: 'addSend', label: 'Check and add', main: true }]);
   openSheet('addSheet', e.currentTarget);
   $('addInput').focus();
 });
@@ -1951,12 +1951,12 @@ $('addForm').addEventListener('submit', async (e) => {
   let r = null, out = null;
   try { r = await fetch('api/add-source', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ input, target: addFor, region: $('addRegion').value, website: $('addWebsite').value }) }); out = await r.json(); } catch { /* no API here */ }
   btn.disabled = false;
-  const viaFeedback = () => { $('addActs').innerHTML = '<button type="button" class="go-btn" id="addToFeedback">Send it as feedback</button><button type="submit" class="tab opt" id="addSend">Check again</button>'; };
+  const viaFeedback = () => { drawActs($('addActs'), [{ kind: 'button', id: 'addToFeedback', label: 'Send it as feedback', main: true }, { kind: 'submit', id: 'addSend', label: 'Check again', main: false }]); };
   if (!r || !out || (!out.status && !out.error)) { addResult('no', "Couldn't check it from here.", 'Send it as feedback instead and it will be looked at.'); viaFeedback(); return; }
   if (out.error) { addResult('no', "Couldn't check it.", out.error); return; }
   if (out.status === 'ok' && out.saved) {
     addResult('ok', out.title, out.detail);
-    $('addActs').innerHTML = '<button type="button" class="go-btn" data-close>Done</button><button type="button" class="tab opt" id="addAnother">Add another</button>';
+    drawActs($('addActs'), [{ kind: 'button', label: 'Done', close: true, main: true }, { kind: 'button', id: 'addAnother', label: 'Add another', main: false }]);
     $('addActs').querySelector('button').focus();
     return;
   }
@@ -1965,7 +1965,7 @@ $('addForm').addEventListener('submit', async (e) => {
   if (out.needsLink) { $('addInput').focus(); $('addInput').select(); }
 });
 $('addActs').addEventListener('click', (e) => {
-  if (e.target.closest('#addAnother')) { $('addInput').value = ''; $('addRes').hidden = true; $('addActs').innerHTML = '<button type="submit" class="go-btn" id="addSend">Check and add</button>'; $('addInput').focus(); return; }
+  if (e.target.closest('#addAnother')) { $('addInput').value = ''; $('addRes').hidden = true; drawActs($('addActs'), [{ kind: 'submit', id: 'addSend', label: 'Check and add', main: true }]); $('addInput').focus(); return; }
   if (e.target.closest('#addToFeedback')) {
     const text = `Please add this source: ${$('addInput').value.trim()} (for ${addFor === 'events' ? 'Events' : SPORTS[addFor]?.label ?? addFor}, ${$('addRegion').selectedOptions[0]?.textContent ?? ''})`;
     $('addSheet').close();
