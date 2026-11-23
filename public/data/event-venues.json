@@ -3568,5 +3568,41 @@
     "lng": -95.38794,
     "located": "source",
     "matched": null
+  },
+  "playtime's over lounge, 2910 antoine dr": {
+    "lat": 29.81431,
+    "lng": -95.47316,
+    "located": "source",
+    "matched": null
+  },
+  "fort worth botanic garden, 3220 botanic garden boulevard, fort worth// 76107": {
+    "lat": 32.75549,
+    "lng": -97.33076,
+    "located": "source",
+    "matched": null
+  },
+  "atx tunnels, 1601 stephen f austin dr": {
+    "lat": 30.27133,
+    "lng": -97.76485,
+    "located": "source",
+    "matched": null
+  },
+  "austin, texas": {
+    "lat": 30.20588,
+    "lng": -97.8078,
+    "located": "source",
+    "matched": null
+  },
+  "8333 park lane": {
+    "lat": 32.87186,
+    "lng": -96.76152,
+    "located": "source",
+    "matched": null
+  },
+  "the hall of state, 3939 grand ave, dallas// 75210": {
+    "lat": 32.77666,
+    "lng": -96.79699,
+    "located": "source",
+    "matched": null
   }
 }
