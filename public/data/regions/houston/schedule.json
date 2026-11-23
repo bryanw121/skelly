@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T02:16:27.364Z",
+  "generatedAt": "2026-11-23T03:46:12.472Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,9 +67,10 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T02:13:27.060Z",
-      "count": 20,
+      "checkedAt": "2026-11-23T03:42:46.590Z",
+      "count": 21,
       "warnings": [
+        "reclub-MLI8J8: no surface",
         "reclub-NJKPQA: no surface",
         "reclub-OKAE7P: no surface",
         "reclub-J533LP: no surface",
@@ -102,7 +103,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/houston-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-22T23:53:09.149Z",
+      "checkedAt": "2026-11-23T03:42:48.460Z",
       "count": 0
     },
     {
@@ -115,7 +116,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-23T02:13:31.317Z",
+      "checkedAt": "2026-11-23T03:42:51.517Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -123,6 +124,31 @@
     }
   ],
   "sessions": [
+    {
+      "id": "reclub-MLI8J8",
+      "date": "2026-11-23",
+      "start": "21:00",
+      "end": "24:00",
+      "title": "Men’s/Coed Open Gym 9PM (prepay to play)",
+      "venue": "Houston Stars",
+      "type": "Open play",
+      "level": "All levels",
+      "price": "$10",
+      "note": "Hosted by Houston Stars (Adults), every Monday.",
+      "capacity": 120,
+      "signup": {
+        "url": "https://reclub.co/m/MLI8J8",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/MLI8J8",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-22",
+      "venueId": "src-houston-stars",
+      "status": "scheduled"
+    },
     {
       "id": "reclub-NJKPQA",
       "date": "2026-11-22",
@@ -603,6 +629,15 @@
   ],
   "publicCourts": null,
   "venues": [
+    {
+      "id": "src-houston-stars",
+      "name": "Houston Stars",
+      "city": null,
+      "address": "6942 Cotton Drive, Houston, Tx",
+      "lat": 29.836397,
+      "lng": -95.49456,
+      "region": "houston"
+    },
     {
       "id": "src-absolute-volleyball-academy-and-absolute-beach",
       "name": "Absolute Volleyball Academy and Absolute Beach",

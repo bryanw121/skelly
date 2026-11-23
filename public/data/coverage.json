@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T02:16:49.098Z",
+ "generatedAt": "2026-11-23T03:53:20.412Z",
  "regions": [
   {
    "id": "austin",
@@ -45,19 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 89,
-     "pinned": true,
-     "booking": true,
-     "via": [
-      "austin-club-openplay"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Austin Pickle Ranch",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 85,
+     "sessions": 88,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +57,19 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 85,
+     "sessions": 84,
+     "pinned": true,
+     "booking": true,
+     "via": [
+      "austin-club-openplay"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Austin Pickle Ranch",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 83,
      "pinned": true,
      "booking": true,
      "via": [
@@ -552,6 +552,18 @@
     },
     {
      "venue": "Harvest Time Church",
+     "city": "",
+     "sport": "volleyball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Houston Stars",
      "city": "",
      "sport": "volleyball",
      "sessions": 1,
