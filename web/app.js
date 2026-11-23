@@ -18,6 +18,8 @@ import { EVENT_KINDS, EVENT_SORTS, EVENT_TAGS, countEvents, eventSummary, isEven
 import { pagesBase } from './pages.js';
 import { drawEventsList } from './components/EventsList.tsx';
 import { drawSessionsList } from './components/SessionsList.tsx';
+import { drawPrograms } from './components/ProgramsList.tsx';
+import { drawBookingRows, drawCourts, drawSourceList, drawSubscribe, drawVenueCalendars } from './components/SportsPanels.tsx';
 import { drawDays, drawEventsCount, drawHosts, drawLayoutButton, drawLevelOptions, drawModes, drawPillLabel, drawSportOptions, drawTopicChips } from './components/Controls.tsx';
 import { drawEventPills, drawKindSheet, drawSortSheet } from './components/EventsControls.tsx';
 import { directionsHtml, eventCardHtml, eventFactsHtml, eventHours as hoursOf, eventKickerHtml, eventVisualHtml, noHours } from './components/EventCard.tsx';
@@ -434,6 +436,8 @@ function locationHtml(x) {
     <button class="src copy-address" type="button" data-address="${esc(venue.address)}">Copy address</button>
     <span class="copy-status" role="status"></span></div></div>`;
 }
+/** A venue's name and address for the Location block, or null without an address. */
+const placeOf = (venueId) => { const v = schedule?.venues?.find((x) => x.id === venueId); return v?.address ? { name: v.name, address: v.address } : null; };
 
 const sourceName = (id) => schedule?.sources?.find((s) => s.id === id)?.name ?? (id === 'manual' ? 'hand-checked' : id);
 // The same session listed by other sources (merged into this card): a link to each.
@@ -442,12 +446,12 @@ const alsoOnHtml = (x) => (x.alsoOn || []).map((a) => `<a class="src also" href=
 /** Each source for this sport: name, ok or not, how long ago it was checked, sessions found. */
 function renderSourceList() {
   const list = (schedule?.sources || []).filter((s) => (s.sport || 'volleyball') === state.sport);
-  $('sourceList').innerHTML = list.map((s) => `<li class="${s.ok ? 'ok' : 'bad'}"><b>${esc(s.name || s.id)}</b>
-    <span>${s.ok ? '✓' : '⚠'} ${s.checkedAt ? `checked ${ago(s.checkedAt)}` : ''}${s.ok ? ` · ${s.count} session${s.count === 1 ? '' : 's'}` : ` · couldn't read, showing last good copy`}</span>
-    ${(s.warnings || []).map((w) => `<div class="note">${esc(w)}</div>`).join('')}</li>`).join('');
+  drawSourceList($('sourceList'), list.map((s) => ({ key: s.id, ok: !!s.ok, name: s.name || s.id,
+    line: `${s.ok ? '✓' : '⚠'} ${s.checkedAt ? `checked ${ago(s.checkedAt)}` : ''}${s.ok ? ` · ${s.count} session${s.count === 1 ? '' : 's'}` : ` · couldn't read, showing last good copy`}`,
+    warnings: s.warnings || [] })));
   // Calendar subscription for this sport (public/data/<sport>.ics, rebuilt every scrape).
   const ics = new URL(`${regionData()}${state.sport}.ics`, location.href);
-  $('subscribe').innerHTML = `📅 <a href="${esc(ics.href.replace(/^https?:/, 'webcal:'))}">Subscribe in your calendar</a> to see ${esc(SPORTS[state.sport].label.toLowerCase())} here, updated hourly · <button type="button" class="copy-cal" data-copy="${esc(ics.href)}" title="For calendars that add a subscription from a link, such as Google Calendar's 'From URL'">Copy calendar link</button>`;
+  drawSubscribe($('subscribe'), { webcal: ics.href.replace(/^https?:/, 'webcal:'), https: ics.href, sport: SPORTS[state.sport].label.toLowerCase() });
 }
 
 // ---------- render ----------
@@ -622,15 +626,12 @@ function renderList() {
 function renderVenueCalendars() {
   const venues = (schedule?.venues || []).filter((v) => v.calendarLink?.sport === state.sport && /^https?:\/\//.test(v.calendarLink.url));
   $('venueCalendarsCard').hidden = state.view === 'booking' || !venues.length;
-  $('venueCalendars').innerHTML = venues.map((v) => `<div class="venue-calendar">
-    <b>${esc(v.name)}</b> · ${esc(v.city)}${locationHtml({ venueId: v.id })}
-    <p class="note">${esc(v.calendarLink.note)}</p>
-    ${v.calendarLink.details?.length ? (v.calendarLink.reviewBy && NOW.iso > v.calendarLink.reviewBy
-      ? '<p class="note">Hours and general prices need rechecking. See the venue website for current details.</p>'
-      : `${v.calendarLink.details.map((d) => `<p class="note"><b>${esc(d.label)}:</b> ${esc(d.text)} ${/^https?:\/\//.test(d.url) ? `<a class="src" href="${esc(d.url)}" target="_blank" rel="noopener">Source ↗</a>` : ''}</p>`).join('')}<p class="note">Details checked ${esc(v.calendarLink.reviewedOn)} · Austin local time</p>`)
-      : ''}
-    <a class="src" href="${esc(onDay(v.calendarLink.url, WEEK[state.di]))}" target="_blank" rel="noopener">View venue calendar ↗</a>
-  </div>`).join('');
+  drawVenueCalendars($('venueCalendars'), venues.map((v) => ({
+    key: v.id, name: v.name, city: v.city, place: placeOf(v.id), note: v.calendarLink.note,
+    stale: !!(v.calendarLink.reviewBy && NOW.iso > v.calendarLink.reviewBy),
+    details: (v.calendarLink.details ?? []).map((d) => ({ label: d.label, text: d.text, url: /^https?:\/\//.test(d.url) ? d.url : null })),
+    reviewedOn: v.calendarLink.reviewedOn, url: onDay(v.calendarLink.url, WEEK[state.di]),
+  })));
 }
 
 function renderCalendarModes() {
@@ -654,17 +655,12 @@ function renderCalendarModes() {
   $('bookingIntro').textContent = common || "Reserve a court for your own group on the venue's site, where you'll see open times and prices.";
   const rows = venues.map((v) => ({ v, mi: milesTo(v.id) }));
   if (here) rows.sort((a, b) => (a.mi == null) - (b.mi == null) || (a.mi != null && a.mi - b.mi));
-  $('bookingCalendars').innerHTML = rows.map(({ v, mi }) => {
+  drawBookingRows($('bookingCalendars'), rows.map(({ v, mi }) => {
     const stale = v.bookingLink.reviewBy && NOW.iso > v.bookingLink.reviewBy;
     const own = stale ? 'Published rates need rechecking; consult the venue for current prices.' : v.bookingLink.note !== common ? v.bookingLink.note : '';
-    const price = /^https:\/\//.test(v.bookingLink.source || '') ? `<a class="src" href="${esc(v.bookingLink.source)}" target="_blank" rel="noopener">Price source ↗</a>` : '';
-    const more = locationHtml({ venueId: v.id }) + (own ? `<p class="note">${esc(own)}</p>` : '') + (price ? `<div class="actions">${price}</div>` : '');
-    const cost = courtPrice(v.bookingLink);
-    return `<div class="book-row"><div class="book-name"><b>${esc(v.name)}</b><span>${esc(v.city)}${mi != null ? ` · ${fmtMiles(mi)}` : ''} · ${priceHtml(cost)}</span></div>
-      <a class="signup" href="${esc(onDay(v.bookingLink.url, WEEK[state.di]))}" target="_blank" rel="noopener" aria-label="Book a court at ${esc(v.name)}">Book ↗</a>
-      ${more ? `<details class="more"><summary>Details</summary>${more}</details>` : ''}</div>`;
-  }).join('')
-    || '<p class="note">No venue booking links for this selection.</p>';
+    return { key: v.id, name: v.name, city: v.city, miles: mi != null ? ` · ${fmtMiles(mi)}` : '', price: courtPrice(v.bookingLink) || null, noPrice: NO_PRICE,
+      url: onDay(v.bookingLink.url, WEEK[state.di]), place: placeOf(v.id), note: own || '', priceSource: /^https:\/\//.test(v.bookingLink.source || '') ? v.bookingLink.source : null };
+  }));
 }
 
 /** Free public courts for this sport and court type (Court booking lists them; the map pins those with coordinates). */
@@ -679,10 +675,9 @@ function renderPublicCourts() {
   $('courtsCard').hidden = state.view !== 'booking' || !SPORTS[state.sport].courts || state.tab === 'indoor' || !list.length;
   $('courtsTitle').textContent = `Free public courts · ${list.length}`;
   $('courtsNote').textContent = `${pc?.note || ''} 💡 = lit.`;
-  $('courts').innerHTML = list.map((c) => {
-    const closed = c.closedUntil && NOW.iso < c.closedUntil;
-    return `<div class="court ${closed ? 'closed' : ''}"><span>${esc(c.park)}</span><span>${closed ? `closed to ${fmtDate(c.closedUntil, { month: 'short', year: 'numeric' })}` : `${c.courts} ${c.surface}${c.lights ? ' · 💡' : ''}`}</span></div>`;
-  }).join('');
+  drawCourts($('courts'), list.map((c, i) => ({ key: `${c.park}|${i}`, park: c.park,
+    closed: c.closedUntil && NOW.iso < c.closedUntil ? `closed to ${fmtDate(c.closedUntil, { month: 'short', year: 'numeric' })}` : null,
+    what: `${c.courts} ${c.surface}${c.lights ? ' · 💡' : ''}` })));
 }
 
 function freeWindows(blocks, open, close) {
@@ -1320,7 +1315,7 @@ function deadlineLine(p) {
   if (p.status === 'waitlist') return 'Waitlist';
   return p.registration_deadline ? `Sign up by ${fmtDate(p.registration_deadline, { weekday: 'short', month: 'short', day: 'numeric' })}` : '';
 }
-function programCard(p) {
+function programView(p) {
   const kind = [p.kind === 'league' ? 'League' : 'Tournament', p.surface && cap(p.surface), p.series === 'nagva' && 'NAGVA'].filter(Boolean).join(' · ');
   const u = urgency(p);
   const dim = p.status === 'closed' || p.status === 'full';
@@ -1331,15 +1326,16 @@ function programCard(p) {
     p.waitlist_on && p.waitlist_on >= NOW.iso ? `New teams go on a waitlist from ${fmtDate(p.waitlist_on)}.` : ''].filter(Boolean);
   const checked = p.checked_at ? `Checked ${ago(p.checked_at)}` : '';
   const safe = (url) => (/^https:\/\//.test(url || '') ? url : '');
-  return `<article class="prog${dim ? ' dim' : ''}">
-    <div class="p-top"><span class="p-kind">${esc(kind)}</span>${u ? `<span class="p-badge">${esc(u)}</span>` : ''}</div>
-    <h3 class="p-title">${esc(p.title)}</h3>
-    <p class="p-org">${esc([p.org, p.venue, p.city && p.region !== region?.id ? p.city : ''].filter(Boolean).join(' · '))}</p>
-    ${p.starts_on ? `<p class="p-when">${whenHtml(p)}</p>` : ''}
-    <div class="p-foot"><span class="p-price">${priceLine(p)}</span><span class="p-dl${u ? ' hot' : ''}">${esc(deadlineLine(p))}</span></div>
-    ${safe(p.signup_url) ? `<div class="actions"><a class="signup" href="${esc(p.signup_url)}" target="_blank" rel="noopener" aria-label="${dim ? 'See' : 'Sign up for'} ${esc(p.title)} on ${esc(p.org)}'s site">${dim ? 'See details' : 'Sign up'} ↗</a></div>` : ''}
-    <details class="more"><summary>Details</summary>${divs}${notes.map((n) => `<p class="note">${esc(n)}</p>`).join('')}${where}<div class="actions">${safe(p.source_url) ? `<a class="src" href="${esc(p.source_url)}" target="_blank" rel="noopener">Source ↗</a>` : ''}<span class="note">${esc(checked)}</span></div></details>
-  </article>`;
+  return {
+    key: p.id ?? `${p.org}|${p.title}|${p.starts_on ?? ''}`,
+    dim, kind, badge: u || '', title: p.title,
+    org: [p.org, p.venue, p.city && p.region !== region?.id ? p.city : ''].filter(Boolean).join(' · '),
+    whenHtml: p.starts_on ? whenHtml(p) : '',
+    priceHtml: priceLine(p),
+    deadline: deadlineLine(p), hot: !!u,
+    signup: safe(p.signup_url) ? { url: p.signup_url, label: dim ? 'See details' : 'Sign up', aria: `${dim ? 'See' : 'Sign up for'} ${p.title} on ${p.org}'s site` } : null,
+    detailsHtml: `${divs}${notes.map((n) => `<p class="note">${esc(n)}</p>`).join('')}${where}<div class="actions">${safe(p.source_url) ? `<a class="src" href="${esc(p.source_url)}" target="_blank" rel="noopener">Source ↗</a>` : ''}<span class="note">${esc(checked)}</span></div>`,
+  };
 }
 function renderSignups() {
   const kind = PROGRAM_VIEWS[state.view];
@@ -1351,7 +1347,7 @@ function renderSignups() {
   const noun = kind === 'league' ? 'leagues' : 'tournaments';
   if (!programs) {
     drawHosts($('hosts'), [], noun);
-    $('programs').innerHTML = programsError ? `<div class="error">Couldn't load ${noun}: ${esc(programsError)}</div>` : `<p class="loading">Loading ${noun}…</p>`;
+    drawPrograms($('programs'), programsError ? { status: 'error', noun, message: programsError } : { status: 'loading', noun });
     $('programsNote').textContent = '';
     return;
   }
@@ -1364,11 +1360,11 @@ function renderSignups() {
   if (state.host !== 'all' && !counts.has(state.host)) { state.host = 'all'; syncUrl(); save(); }
   drawHosts($('hosts'), hosts.length > 1 ? [{ id: 'all', label: 'All hosts', n: all.length, on: state.host === 'all' }, ...hosts.map(([org, n]) => ({ id: org, label: org, n, on: state.host === org }))] : [], noun);
   const shown = state.host === 'all' ? all : all.filter((p) => p.org === state.host);
-  const section = (title, rows, cls = '') => (rows.length ? `<h2 class="p-group ${cls}">${esc(title)}<span class="n">${rows.length}</span></h2>${rows.map(programCard).join('')}` : '');
+  const section = (title, rows, cls = '') => ({ title, cls, cards: rows.map(programView) });
   const near = shown.filter((p) => !region || p.region === region.id);
   const away = shown.filter((p) => !near.includes(p)).sort((a, b) => (a.starts_on || '').localeCompare(b.starts_on || ''));
   const elsewhere = `Elsewhere in ${regionState() === 'TX' ? 'Texas' : 'the state'}`;
-  let html;
+  let sections;
   if (kind === 'tournament') {
     // Tournaments by the month they happen, soonest first: you plan around the date. Each card
     // shows its days and how long sign-up stays open.
@@ -1379,18 +1375,15 @@ function renderSignups() {
       if (!months.has(key)) months.set(key, []);
       months.get(key).push(p);
     }
-    html = [...months].map(([key, rows]) => section(key ? fmtDate(`${key}-01`, { month: 'long', year: 'numeric' }) : 'Date to be announced', rows)).join('')
-      + section(elsewhere, away, 'quiet');
+    sections = [...[...months].map(([key, rows]) => section(key ? fmtDate(`${key}-01`, { month: 'long', year: 'numeric' }) : 'Date to be announced', rows)), section(elsewhere, away, 'quiet')];
   } else {
     // Leagues by deadline: when to sign up is what decides them.
     const open = near.filter((p) => p.status === 'open' || p.status === 'waitlist' || p.status == null);
     const soon = open.filter((p) => urgency(p));
-    html = section('Closing this week', soon, 'hot') + section('Open', open.filter((p) => !soon.includes(p)))
-      + section('Not open yet, full or closed', near.filter((p) => !open.includes(p)), 'quiet');
+    sections = [section('Closing this week', soon, 'hot'), section('Open', open.filter((p) => !soon.includes(p))), section('Not open yet, full or closed', near.filter((p) => !open.includes(p)), 'quiet')];
   }
-  const where = region ? ` in ${esc(region.name.split(',')[0])}` : '';
-  if (!shown.length) html = `<div class="empty"><b>No ${noun} open for sign-up${where} right now.</b> Organizers post new ${kind === 'league' ? 'seasons' : 'dates'} every month or two; this checks twice a day.</div>`;
-  $('programs').innerHTML = html;
+  const where = region ? ` in ${region.name.split(',')[0]}` : '';
+  drawPrograms($('programs'), { status: 'list', sections, empty: shown.length ? null : { lead: `No ${noun} open for sign-up${where} right now.`, text: `Organizers post new ${kind === 'league' ? 'seasons' : 'dates'} every month or two; this checks twice a day.` } });
   $('programsCount').textContent = `${shown.length} ${noun}${state.host === 'all' ? '' : ` from ${state.host}`} listed`;
   signupsMeta();
 }
