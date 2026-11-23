@@ -19,10 +19,11 @@ import { pagesBase } from './pages.js';
 import { drawEventsList } from './components/EventsList.tsx';
 import { drawSessionsList } from './components/SessionsList.tsx';
 import { drawPrograms } from './components/ProgramsList.tsx';
+import { drawMapPanel, drawPlaceSheet } from './components/MapPanel.tsx';
 import { drawBookingRows, drawCourts, drawSourceList, drawSubscribe, drawVenueCalendars } from './components/SportsPanels.tsx';
 import { drawDays, drawEventsCount, drawHosts, drawLayoutButton, drawLevelOptions, drawModes, drawPillLabel, drawSportOptions, drawTopicChips } from './components/Controls.tsx';
 import { drawEventPills, drawKindSheet, drawSortSheet } from './components/EventsControls.tsx';
-import { directionsHtml, eventCardHtml, eventFactsHtml, eventHours as hoursOf, eventKickerHtml, eventVisualHtml, noHours } from './components/EventCard.tsx';
+import { eventHours as hoursOf, eventVisualHtml } from './components/EventCard.tsx';
 const PAGES = await pagesBase(); // '' next to the page, or the GitHub Pages address that answers (public/pages.js)
 
 // Each sport's filter tabs (`by`: the session field they filter on, `tabs`: its values, labels and
@@ -1036,7 +1037,6 @@ function render() {
 const EVENTS_SHOWN = 4; // cards under a heading before "Show N more"
 const evOpen = new Set(); // headings opened with Show more (not remembered)
 /** Directions to an event's venue, as a free-text destination (the venue string carries it). */
-const eventDirections = (ev) => directionsHtml(ev);
 const safeUrl = (u) => /^https:\/\//i.test(u || '');
 /** The crediting account's picture (a saved copy of its Instagram profile picture), when the event has one.
  *  Cards say "by @x" for an organizer's own post (read through the API) and "via @x" for a credited repost. */
@@ -1053,8 +1053,6 @@ const eventVisual = (ev, size, holder = ev) => eventVisualHtml(ev, size, holder,
  * says its kind (Pop-up, Seasonal). Theme tags (Asian-inspired) close the line.
  */
 /** An event's fact pills: a last chance ("Ends tomorrow"), Free, and its price (`price: false` leaves the price out). */
-const eventFacts = (ev, { price = true } = {}) => eventFactsHtml(ev, NOW.iso, price);
-const eventKicker = (ev, { plain = false } = {}) => eventKickerHtml(ev, plain);
 /** An event's hours ("11am", "5pm–10pm"), or '' when its source gave none. */
 const eventHours = (ev) => hoursOf(ev, fmtT);
 /** The context an event card needs from the page (components/EventCard.tsx). */
@@ -1064,8 +1062,6 @@ const cardContext = () => ({
   fmtMiles, fmtTime: fmtT, fitNote: (start, end) => windowNote(start, end, activeWindow()) || '',
   calKey: (ev) => { const key = `ev:${ev.id}`; calItems.set(key, eventCalItem(ev)); return key; },
 });
-/** One event's card: the same in the Events list and in a place's sheet on the map. */
-const eventCard = (ev) => eventCardHtml(ev, cardContext());
 /** The events this region has, or null when it has no feed yet. */
 const regionEvents = () => (events ? eventsForRegion(events, region?.id ?? 'austin') : null);
 /** This city's weekly markets whose hours aren't listed (events.json `markets`): shown under Every week. */
@@ -1585,15 +1581,16 @@ function mapPlaces(iso) {
 }
 
 /** The events map's place list, or (with `pickId`) that place's events for the place sheet. */
-function eventsPanelHtml(places, pickId) {
+function eventsPanel(places, pickId) {
   const p = places.find((x) => x.id === pickId);
   if (!p) {
     // The same headings as the list (On now, This week, Next week, then months), so it reads by
     // when things are on rather than as one long run of places.
     const row = (x) => {
       const mi = placeMiles(x);
-      const facts = x.lead ? eventFacts(x.lead, { price: false }) : '';
-      return `<li><button type="button" class="place-row${x.id === mapPick ? ' on' : ''}" data-pin="${esc(x.id)}" aria-pressed="${x.id === mapPick}">${eventVisual(x.lead, 40, x)}<span class="pr-name">${x.lead ? eventKicker(x.lead, { plain: true }) : ''}<span class="pr-title">${esc(x.title)}</span>${x.more ? ` <span class="pr-more">+${x.more} more</span>` : ''}<small class="pr-at">${esc([x.short || x.name, x.city, mi != null ? fmtMiles(mi) : ''].filter(Boolean).join(' · '))}</small></span><span class="pr-status">${esc(x.status)}${!x.more && x.lead && eventHours(x.lead) ? ` · ${esc(eventHours(x.lead))}` : ''}${facts ? ` <span class="pr-facts">${facts}</span>` : ''}</span><span class="pr-go" aria-hidden="true">›</span></button></li>`;
+      return { id: x.id, on: x.id === mapPick, lead: x.lead ?? null, holder: x, title: x.title, more: x.more || 0,
+        at: [x.short || x.name, x.city, mi != null ? fmtMiles(mi) : ''].filter(Boolean).join(' · '), status: x.status,
+        hours: !x.more && x.lead ? eventHours(x.lead) : '' };
     };
     // The Sort pill orders places too, by the event each is named for (Soonest keeps the map's order).
     const pg = placeGroups(places, NOW.iso);
@@ -1601,22 +1598,18 @@ function eventsPanelHtml(places, pickId) {
       const milesOf = (e) => { const x = places.find((q) => q.lead === e); return x ? placeMiles(x) : null; };
       for (const g of pg) { const order = sortGroup(g.places.map((x) => x.lead), { sort: state.evSort, likes: state.evLikes, today: NOW.iso, milesOf }); g.places = order.map((e) => g.places.find((x) => x.lead === e)); g.sub = g.sub.replace(' · ending soonest first', ''); }
     }
-    const groups = pg.map((g) => `<section class="place-group" data-group="${esc(g.key)}"><h3 class="ev-day">${esc(g.label)}<small>${esc(g.sub)}</small></h3><ul class="place-list">${g.places.map(row).join('')}</ul></section>`).join('');
-    return `<p class="map-hint"><b>${places.length} place${places.length === 1 ? '' : 's'}</b> with events coming up. Tap one for its events.</p>${groups}`;
+    return { kind: 'event-places', count: places.length, today: NOW.iso, dataBase: DATA, groups: pg.map((g) => ({ key: g.key, label: g.label, sub: g.sub, rows: g.places.map(row) })) };
   }
   const mi = placeMiles(p), n = p.events.length;
   // Under the name: the rest of the venue string (its address) and the area, without repeating the name.
   const rest = p.short && p.name.startsWith(p.short) ? p.name.slice(p.short.length).replace(/^[,\s]+/, '') : '';
   const addr = [rest, ...eventPlaceParts(p.events[0]).slice(1)].filter(Boolean);
-  const rows = p.events.map(eventCard).join('');
-  return `<div class="map-place"><div class="g-venue"><span class="v-name">${esc(p.short || p.name)}<small>${esc([...addr, `${n} event${n === 1 ? '' : 's'}`, mi != null ? fmtMiles(mi) : ''].filter(Boolean).join(' · '))}</small></span></div>
-    <div class="ev-group map-cards">${rows}</div>
-    <div class="location"><div class="actions">${eventDirections(p.events[0])}</div></div></div>`;
+  return { kind: 'event-place', name: p.short || p.name, sub: [...addr, `${n} event${n === 1 ? '' : 's'}`, mi != null ? fmtMiles(mi) : ''].filter(Boolean).join(' · '), events: p.events, ctx: cardContext() };
 }
 
 /** What's under the map (every place as a row), or with `pickId` that place's day for the place sheet. */
-function mapPanelHtml(places, iso, pickId) {
-  if (state.section === 'events') return eventsPanelHtml(places, pickId);
+function mapPanel(places, iso, pickId) {
+  if (state.section === 'events') return eventsPanel(places, pickId);
   const p = places.find((x) => x.id === pickId);
   const untimed = state.view === 'openplay' ? sessionsOn(iso).filter((y) => !hidden(y.f) && !(schedule?.venues || []).some((v) => v.id === y.venueId && Number.isFinite(v.lat))).length : 0;
   const unplaced = state.view === 'booking' ? publicCourts().filter((c) => !Number.isFinite(c.lat)).length : 0;
@@ -1626,33 +1619,37 @@ function mapPanelHtml(places, iso, pickId) {
     const order = [...places].sort((a, b) => !!(a.done || a.full) - !!(b.done || b.full) || (milesTo(a.id) ?? 1e9) - (milesTo(b.id) ?? 1e9) || a.name.localeCompare(b.name));
     const rows = order.map((x) => {
       const mi = milesTo(x.id);
-      return `<li><button type="button" class="place-row${x.done || x.full ? ' dim' : ''}${x.id === mapPick ? ' on' : ''}" data-pin="${esc(x.id)}" aria-pressed="${x.id === mapPick}"><span class="pr-name">${esc(x.name)}<small>${esc(x.city)}${mi != null ? ` · ${fmtMiles(mi)}` : ''}</small></span><span class="pr-status">${esc(x.status)}</span><span class="pr-go" aria-hidden="true">›</span></button></li>`;
-    }).join('');
+      return { id: x.id, on: x.id === mapPick, dim: !!(x.done || x.full), name: x.name, at: `${x.city}${mi != null ? ` · ${fmtMiles(mi)}` : ''}`, status: x.status };
+    });
     const booked = places.length - free;
     const what = state.view === 'booking'
       ? [booked || !free ? `<b>${booked} place${booked === 1 ? '' : 's'}</b> to book a court` : '', free ? `<b>${free} free public court${free === 1 ? '' : 's'}</b>` : ''].filter(Boolean).join(' and ')
-      : `<b>${places.length} place${places.length === 1 ? '' : 's'}</b> with ${SPORTS[state.sport].label.toLowerCase()}`;
-    return `<p class="map-hint">${what} ${state.di === 0 ? 'today' : `on ${fmtDate(iso)}`}${here ? ', nearest first' : ''}. Tap one for its day${state.view === 'booking' ? ', Book or directions' : ' and sign-ups'}.${untimed ? ` ${untimed} more without a location are in the list.` : ''}${unplaced ? ` ${unplaced} public court${unplaced === 1 ? '' : 's'} without a location ${unplaced === 1 ? 'is' : 'are'} in the list.` : ''}</p><ul class="place-list">${rows}</ul>`;
+      : `<b>${places.length} place${places.length === 1 ? '' : 's'}</b> with ${esc(SPORTS[state.sport].label.toLowerCase())}`;
+    const hintHtml = `${what} ${state.di === 0 ? 'today' : `on ${esc(fmtDate(iso))}`}${here ? ', nearest first' : ''}. Tap one for its day${state.view === 'booking' ? ', Book or directions' : ' and sign-ups'}.${untimed ? ` ${untimed} more without a location are in the list.` : ''}${unplaced ? ` ${unplaced} public court${unplaced === 1 ? '' : 's'} without a location ${unplaced === 1 ? 'is' : 'are'} in the list.` : ''}`;
+    return { kind: 'sport-places', hintHtml, rows };
   }
   if (p.court) {
     // A free court: no booking, no sessions; what's there, and how to get there.
-    const mi = milesTo(p.id), c = p.court, destination = encodeURIComponent(`${c.park}, ${c.address}, ${region?.name || ''}`);
-    return `<div class="map-place"><p class="map-status">${esc(p.status)}</p><div class="g-venue"><span class="v-name">${esc(c.park)}<small>Free public court${mi != null ? ` · ${fmtMiles(mi)}` : ''}</small></span></div>
-      ${schedule?.publicCourts?.note ? `<p class="note">${esc(schedule.publicCourts.note)}</p>` : ''}
-      <div class="location"><div>${esc(c.address)}</div><div class="actions">
-      <a class="src" href="https://www.google.com/maps/dir/?api=1&amp;destination=${destination}" target="_blank" rel="noopener">Google Maps ↗</a>
-      <a class="src" href="https://maps.apple.com/directions?destination=${destination}&amp;mode=driving" target="_blank" rel="noopener">Apple Maps ↗</a>
-      <button class="src copy-address" type="button" data-address="${esc(c.address)}">Copy address</button>
-      <span class="copy-status" role="status"></span></div></div></div>`;
+    const mi = milesTo(p.id), c = p.court;
+    return { kind: 'court', status: p.status, park: c.park, sub: `Free public court${mi != null ? ` · ${fmtMiles(mi)}` : ''}`, note: schedule?.publicCourts?.note || '',
+      place: c.address ? { name: c.park, address: c.address, dest: `${c.park}, ${c.address}, ${region?.name || ''}` } : null };
   }
   const mi = milesTo(p.id), cost = courtPrice(p.booking);
-  const book = p.booking?.url ? `<a class="signup" href="${esc(onDay(p.booking.url, iso))}" target="_blank" rel="noopener" aria-label="Book a court at ${esc(p.name)}">Book ↗</a>` : '';
   const ended = (x) => state.di === 0 && x.end && mins(x.end) <= NOW.minutes;
-  const rows = p.sessions.map((x) => `<div class="pop-item${ended(x) ? ' past' : ''}"><span class="pop-t">${x.start ? `${fmtT(x.start)}${x.end ? `–${fmtT(x.end)}` : ''}` : 'Any time'}</span><span class="pop-w">${esc(ownTitle(x) || x.title)}${x.level && !(ownTitle(x) || x.title).includes(x.level) ? ` · ${esc(x.level)}` : ''}${x.price ? `<small>${esc(x.price)}</small>` : ''}</span><span class="pop-a">${signupHtml(x)}${ended(x) || x.f?.k === 'canceled' ? '' : calButton(`s:${x.id}:${x.date || x.on || WEEK[state.di]}`, sessionCalItem(x))}</span></div>`).join('');
-  const live = state.view === 'booking' ? `<p class="map-status">${esc(p.status)}</p>` : '';
-  return `<div class="map-place">${live}<div class="g-venue"><span class="v-name">${esc(p.name)}<small>${esc(p.city)}${mi != null ? ` · ${fmtMiles(mi)}` : ''}${state.view === 'booking' ? ` · ${priceHtml(cost)}` : ''}</small></span>${book}</div>
-    ${rows ? `<div class="g-pop map-sessions">${rows}</div>` : `<p class="note">${state.view === 'booking' ? 'No public sessions here on this day; book a court on the venue\'s site.' : 'Nothing else here on this day.'}</p>`}
-    ${locationHtml({ venueId: p.id })}</div>`;
+  const sessions = p.sessions.map((x) => {
+    const own = ownTitle(x) || x.title;
+    const off = ended(x) || x.f?.k === 'canceled';
+    const key = `s:${x.id}:${x.date || x.on || WEEK[state.di]}`;
+    if (!off) calItems.set(key, sessionCalItem(x));
+    const sg = x.signup || {}, url = onDay(sg.url, x.date || x.on);
+    const signup = x.f?.k === 'expired' || x.f?.k === 'canceled' ? { kind: 'none' } : url && !sg.dropIn ? { kind: 'link', url, label: sg.label || 'Sign up' } : url ? { kind: 'dropin', label: sg.label || 'Drop in', url } : sg.label ? { kind: 'dropin', label: sg.label } : { kind: 'none' };
+    return { key: `${x.id}|${x.date || x.on || ''}`, past: !!ended(x), time: x.start ? `${fmtT(x.start)}${x.end ? `–${fmtT(x.end)}` : ''}` : 'Any time',
+      what: `${own}${x.level && !own.includes(x.level) ? ` · ${x.level}` : ''}`, price: x.price || '', signup, calKey: off ? null : key, calTitle: x.title };
+  });
+  return { kind: 'venue', status: state.view === 'booking' ? p.status : null, name: p.name, sub: `${p.city}${mi != null ? ` · ${fmtMiles(mi)}` : ''}`,
+    price: state.view === 'booking' ? { text: cost || null, none: NO_PRICE } : null,
+    book: p.booking?.url ? { url: onDay(p.booking.url, iso), name: p.name } : null,
+    sessions, emptyNote: state.view === 'booking' ? 'No public sessions here on this day; book a court on the venue\'s site.' : 'Nothing else here on this day.', place: placeOf(p.id) };
 }
 
 /**
@@ -1664,9 +1661,9 @@ function renderPlaceSheet(places, iso) {
   const s = $('placeSheet'), p = places.find((x) => x.id === mapPick);
   const was = !s.hidden;
   s.hidden = !p;
-  if (!p) { s.innerHTML = ''; return; }
+  if (!p) { drawPlaceSheet(s, null); return; }
   s.setAttribute('aria-label', p.short || p.name);
-  s.innerHTML = `<div class="ps-grab" aria-hidden="true"></div><button type="button" class="ps-x" data-pin="${esc(p.id)}" aria-label="Close ${esc(p.short || p.name)}">✕</button><div class="ps-body">${mapPanelHtml(places, iso, p.id)}</div>`;
+  drawPlaceSheet(s, { id: p.id, name: p.short || p.name, panel: mapPanel(places, iso, p.id) });
   if (!was) s.focus({ preventScroll: true });
 }
 const closePlace = () => { if (mapPick) { mapPick = null; save(); showPick(); } };
@@ -1784,7 +1781,7 @@ async function renderMap() {
   if (urlPlace && places.length) { if (places.some((p) => p.id === urlPlace)) mapPick = urlPlace; urlPlace = null; }
   if (mapPick && !places.some((p) => p.id === mapPick)) mapPick = null;
   $('mapTitle').textContent = state.section === 'events' ? 'Events · upcoming' : `${state.view === 'booking' ? 'Court booking' : 'Open play'} · ${state.di === 0 ? 'Today' : fmtDate(iso)}`;
-  $('mapPanel').innerHTML = mapPanelHtml(places, iso, null);
+  drawMapPanel($('mapPanel'), mapPanel(places, iso, null));
   renderPlaceSheet(places, iso);
   mapBusy(true); // the map's code, then its first tiles
   try { await loadMapLibs(); } catch { mapBusy(false); $('mapPanel').insertAdjacentHTML('afterbegin', '<p class="note">The map could not load. Switch to List.</p>'); return; }

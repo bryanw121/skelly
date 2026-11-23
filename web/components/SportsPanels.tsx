@@ -5,8 +5,8 @@
 import { render } from 'preact';
 
 /** A venue's address with directions and a Copy address button (app.js fills the status). */
-export function Location({ name, address }: { name: string; address: string }) {
-  const destination = encodeURIComponent(`${name}, ${address}`);
+export function Location({ name, address, dest }: { name: string; address: string; dest?: string }) {
+  const destination = encodeURIComponent(dest ?? `${name}, ${address}`);
   return (
     <div class="location">
       <div>{address}</div>
@@ -19,7 +19,7 @@ export function Location({ name, address }: { name: string; address: string }) {
     </div>
   );
 }
-export type Place = { name: string; address: string } | null;
+export type Place = { name: string; address: string; dest?: string } | null;
 
 export type BookingRow = { key: string; name: string; city: string; miles: string; price: string | null; noPrice: string; url: string; place: Place; note: string; priceSource: string | null };
 export function drawBookingRows(el: HTMLElement, rows: BookingRow[]) {
