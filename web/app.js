@@ -17,6 +17,7 @@ import { placeGroups } from './events-ui.js';
 import { EVENT_KINDS, EVENT_SORTS, EVENT_TAGS, countEvents, eventSummary, isEventSort, lastChance, sortGroup, eventCta, eventDateRange, eventGroups, eventKind, eventPlaceParts, eventPlaces, eventTags, avatarPath, eventWhen, eventsForRegion, filterEvents, isEventKind, isEventTag, isOn, kindLabel, sortEvents, tagLabel } from './events-ui.js';
 import { pagesBase } from './pages.js';
 import { drawEventsList } from './components/EventsList.tsx';
+import { drawSessionsList } from './components/SessionsList.tsx';
 import { drawEventPills, drawKindSheet, drawSortSheet } from './components/EventsControls.tsx';
 import { directionsHtml, eventCardHtml, eventFactsHtml, eventHours as hoursOf, eventKickerHtml, eventVisualHtml, noHours } from './components/EventCard.tsx';
 const PAGES = await pagesBase(); // '' next to the page, or the GitHub Pages address that answers (public/pages.js)
@@ -433,30 +434,6 @@ function locationHtml(x) {
     <span class="copy-status" role="status"></span></div></div>`;
 }
 
-// A rescheduled session says where it was ("Moved from Fri 7pm"); see lib/consolidate.js.
-// A source that failed keeps its last good sessions (#46): say so on the card, with when it was
-// last confirmed and a link to the source, so nobody drives to a session that may be cancelled.
-function recheckHtml(x) {
-  if (x.f.k !== 'recheck') return '';
-  const last = x.verifiedAt === NOW.iso ? 'earlier today' : fmtDate(x.verifiedAt);
-  const src = x.source ? ` <a class="src" href="${esc(x.source)}" target="_blank" rel="noopener">Check the source ↗</a>` : '';
-  return `<div class="recheck-note">Its source couldn't be read just now. Last confirmed ${esc(last)}.${src}</div>`;
-}
-function movedHtml(x) {
-  if (x.status !== 'rescheduled' || !x.previousStart) return '';
-  const [d, t] = x.previousStart.split(' ');
-  const when = d === x.date ? fmtT(t) : `${fmtDate(d)}, ${fmtT(t)}`;
-  return `<div class="moved">Moved from ${esc(when)}</div>`;
-}
-// How full it is, only from what the source itself says (#21 busyness v1): spots left out of the
-// cap, full / waitlist, or just the cap. Labelled with the source and checked at the last scrape.
-function capacityHtml(x) {
-  const from = `from ${sourceName(x.fieldSources?.spotsLeft ?? x.sourceId)} at the last check`;
-  if (x.full) return `<span class="cap full" title="${esc(from)}">· Full${x.waitlist ? ` · ${esc(x.waitlist)} on waitlist` : ''}</span>`;
-  if (Number.isFinite(x.spotsLeft) && x.capacity) return `<span class="cap" title="${esc(from)}">· ${x.spotsLeft} of ${x.capacity} spots left</span>`;
-  if (x.capacity) return `<span class="cap" title="${esc(from)}">· up to ${x.capacity}</span>`;
-  return '';
-}
 const sourceName = (id) => schedule?.sources?.find((s) => s.id === id)?.name ?? (id === 'manual' ? 'hand-checked' : id);
 // The same session listed by other sources (merged into this card): a link to each.
 const alsoOnHtml = (x) => (x.alsoOn || []).map((a) => `<a class="src also" href="${esc(a.signup?.url || a.source || '#')}" target="_blank" rel="noopener">Also on ${esc(sourceName(a.sourceId))} ↗</a>`).join('');
@@ -576,6 +553,45 @@ document.addEventListener('toggle', (e) => {
     syncUrl();
   }
 }, true);
+/**
+ * What the day list says about one session (components/SessionsList.tsx draws it). A source that
+ * failed keeps its last good sessions (#46): the card says so, with when it was last confirmed and a
+ * link to the source. A rescheduled session says where it was ("Moved from Fri 7pm", lib/consolidate.js).
+ * How full it is comes only from what the source says (#21): spots left of the cap, full / waitlist, or the cap.
+ */
+function sessionView(x, { isToday, ended }) {
+  const past = ended(x);
+  const live = isToday && x.start && x.end && mins(x.start) <= NOW.minutes && NOW.minutes < mins(x.end) && x.f.k !== 'canceled';
+  const mi = milesTo(x.venueId);
+  const off = x.f.k === 'expired' || x.f.k === 'canceled';
+  const s = x.signup || {}, url = onDay(s.url, x.date || x.on); // a shared calendar link opens on this session's day
+  const signup = off ? { kind: 'none' } : url && !s.dropIn ? { kind: 'link', url, label: s.label || 'Sign up' } : url ? { kind: 'dropin', label: s.label || 'Drop in', url } : s.label ? { kind: 'dropin', label: s.label } : { kind: 'none' };
+  const from = `from ${sourceName(x.fieldSources?.spotsLeft ?? x.sourceId)} at the last check`;
+  const capacity = x.full ? { cls: 'cap full', text: `· Full${x.waitlist ? ` · ${x.waitlist} on waitlist` : ''}`, title: from }
+    : Number.isFinite(x.spotsLeft) && x.capacity ? { cls: 'cap', text: `· ${x.spotsLeft} of ${x.capacity} spots left`, title: from }
+      : x.capacity ? { cls: 'cap', text: `· up to ${x.capacity}`, title: from } : null;
+  let moved = null;
+  if (x.status === 'rescheduled' && x.previousStart) { const [d, t] = x.previousStart.split(' '); moved = d === x.date ? fmtT(t) : `${fmtDate(d)}, ${fmtT(t)}`; }
+  const calKey = off ? null : `s:${x.id}:${x.date || x.on || WEEK[state.di]}`;
+  if (calKey) calItems.set(calKey, sessionCalItem(x));
+  const details = detailsHtml(x);
+  return {
+    key: `${x.id}|${x.date || x.on || ''}`,
+    dim: ['expired', 'unverified', 'canceled'].includes(x.f.k), unsure: x.f.k === 'recheck', past,
+    start: fmtT(x.start), end: x.end ? 'to ' + fmtT(x.end) : '',
+    title: x.title, titleHtml: hl(x.title),
+    pill: { cls: live ? 'fresh' : x.f.k, label: live ? (x.scheduleBasis ? 'Scheduled now' : 'Happening now') : x.f.l },
+    venue: x.venue, where: ` · ${x.city}${mi != null ? ` · ${fmtMiles(mi)}` : ''}`,
+    surface: { label: tabOf(x).label, color: tabOf(x).c },
+    chips: byOf(x) === 'surface' ? [x.type] : x.surface && x.surface !== 'indoor' ? [cap(x.surface)] : [],
+    extras: [x.rink, x.level, x.price ? `· ${x.price}` : ''].filter(Boolean),
+    capacity,
+    recheck: x.f.k === 'recheck' ? { last: x.verifiedAt === NOW.iso ? 'earlier today' : fmtDate(x.verifiedAt), source: x.source || null } : null,
+    moved, fit: windowNote(x.start, x.end, activeWindow()) || '',
+    signup, calKey, calTitle: x.title,
+    detailsHtml: details.slice('<details class="more"><summary>Details</summary>'.length, -'</details>'.length),
+  };
+}
 function renderList() {
   const iso = WEEK[state.di], isToday = state.di === 0;
   $('dayTitle').textContent = (isToday ? 'Today · ' : state.di === 1 ? 'Tomorrow · ' : '') + fmtDate(iso, { weekday: 'long', month: 'short', day: 'numeric' });
@@ -583,37 +599,28 @@ function renderList() {
   const shown = all.filter((x) => !hidden(x.f));
   // Today, sessions that have ended fold into one line at the top, so the first thing on a phone is
   // what's on now and next; the "Now" heading sits above them. Other days list in time order.
-  const nowLabel = `<div class="now">Now · ${fmtT(hhmm(NOW.minutes))}</div>`;
   const ended = (x) => isToday && x.end && mins(x.end) <= NOW.minutes;
-  const card = (x) => {
-    const past = ended(x);
-    const live = isToday && x.start && x.end && mins(x.start) <= NOW.minutes && NOW.minutes < mins(x.end) && x.f.k !== 'canceled';
-    return `<div class="row ${['expired', 'unverified', 'canceled'].includes(x.f.k) ? 'dim' : ''} ${x.f.k === 'recheck' ? 'unsure' : ''} ${past ? 'past' : ''}">
-      <div class="time">${fmtT(x.start)}<small>${x.end ? 'to ' + fmtT(x.end) : ''}</small></div>
-      <div class="body">
-        <div class="t1"><span class="title">${hl(x.title)}</span><span class="pill ${live ? 'fresh' : x.f.k}">${live ? (x.scheduleBasis ? 'Scheduled now' : 'Happening now') : x.f.l}</span></div>
-        <div class="venue"><b>${esc(x.venue)}</b> · ${esc(x.city)}${milesTo(x.venueId) != null ? ` · ${fmtMiles(milesTo(x.venueId))}` : ''}</div>
-        <div class="meta"><span class="chip surf" style="--c:${tabOf(x).c}">${esc(tabOf(x).label)}</span>${byOf(x) === 'surface' ? `<span class="chip">${esc(x.type)}</span>` : x.surface && x.surface !== 'indoor' ? `<span class="chip">${esc(cap(x.surface))}</span>` : ''}${x.rink ? `<span>${esc(x.rink)}</span>` : ''}${x.level ? `<span>${esc(x.level)}</span>` : ''}${x.price ? `<span>· ${esc(x.price)}</span>` : ''}${capacityHtml(x)}</div>
-        ${recheckHtml(x)}${movedHtml(x)}${fitHtml(x.start, x.end)}
-        <div class="actions">${signupHtml(x)}${x.f.k === 'expired' || x.f.k === 'canceled' ? '' : calButton(`s:${x.id}:${x.date || x.on || WEEK[state.di]}`, sessionCalItem(x))}</div>
-        ${detailsHtml(x)}
-      </div></div>`;
-  };
+  const view = (x) => sessionView(x, { isToday, ended });
   const earlier = shown.filter(ended), rest = shown.filter((x) => !ended(x));
-  let html = '';
-  if (earlier.length) html += `<details class="earlier"${earlierOpen ? ' open' : ''}><summary>${earlier.length} ended earlier today</summary>${earlier.map(card).join('')}</details>`;
-  if (isToday && rest.length) html += nowLabel;
-  else if (isToday && earlier.length) html += `<div class="empty"><b>Nothing else today.</b> <button type="button" class="linkish" data-di="1">See tomorrow</button></div>`;
-  html += rest.map(card).join('');
   const hiddenN = all.length - shown.length;
+  let empty = null;
   if (!shown.length) {
     const sp = SPORTS[state.sport];
     const label = state.tab === 'all' || !tabsOf(state.sport)[state.tab] ? '' : tabsOf(state.sport)[state.tab].label.toLowerCase() + ' ';
     const hint = !sp.courts ? sp.empty
-      : state.tab === 'grass' ? `Grass has no scheduled play${region ? ` in ${esc(region.name.split(',')[0])}` : ''}. Choose Court booking to find public courts.` : 'Choose Court booking to see rental availability and free public courts.';
-    html = `<div class="empty"><b>No confirmed ${label}${sp.noun}${isToday ? ' today' : ''}.</b> ${hiddenN ? `${hiddenN} ended, canceled or unconfirmed hidden. ` : ''}${hint}</div>`;
-  } else if (hiddenN) html += `<div class="empty">${hiddenN} ended, canceled or unconfirmed session${hiddenN > 1 ? 's' : ''} hidden.</div>`;
-  $('list').innerHTML = (isToday ? headsUpHtml() : '') + html;
+      : state.tab === 'grass' ? `Grass has no scheduled play${region ? ` in ${region.name.split(',')[0]}` : ''}. Choose Court booking to find public courts.` : 'Choose Court booking to see rental availability and free public courts.';
+    empty = { lead: `No confirmed ${label}${sp.noun}${isToday ? ' today' : ''}.`, hidden: hiddenN ? `${hiddenN} ended, canceled or unconfirmed hidden. ` : '', hint };
+  }
+  drawSessionsList($('list'), {
+    status: 'list',
+    headsUp: isToday ? headsUp() : null,
+    earlier: empty ? [] : earlier.map(view), earlierOpen,
+    now: !empty && isToday && rest.length ? `Now · ${fmtT(hhmm(NOW.minutes))}` : null,
+    nothingElse: !empty && isToday && !rest.length && earlier.length > 0,
+    rest: empty ? [] : rest.map(view),
+    empty,
+    hiddenNote: !empty && hiddenN ? `${hiddenN} ended, canceled or unconfirmed session${hiddenN > 1 ? 's' : ''} hidden.` : '',
+  });
 }
 
 function renderVenueCalendars() {
@@ -1405,15 +1412,15 @@ function signupsMeta() {
   $('footer').innerHTML = orgs.length ? `Sources: ${esc(list(orgs))}. Sign up on the organizer's site; Skelly only links to it.` : '';
 }
 /** Today, in open play: a league or tournament whose sign-up (or early-bird price) ends today. */
-function headsUpHtml() {
-  if (!programs || state.view !== 'openplay') return '';
+function headsUp() {
+  if (!programs || state.view !== 'openplay') return null;
   const live = [...programsHere('league'), ...programsHere('tournament')].filter((p) => p.status === 'open' || p.status === 'waitlist');
   const closing = live.filter((p) => p.registration_deadline === NOW.iso);
   const pricier = live.filter((p) => p.price_changes_on === NOW.iso && !closing.includes(p));
-  const name = (xs) => (xs.length === 1 ? esc(xs[0].title) : `${xs.length} leagues and tournaments`);
-  const line = closing.length ? `<b>Sign-ups closing today:</b> ${name(closing)}` : pricier.length ? `<b>Last day at today's price:</b> ${name(pricier)}` : '';
+  const name = (xs) => (xs.length === 1 ? xs[0].title : `${xs.length} leagues and tournaments`);
+  if (!closing.length && !pricier.length) return null;
   const to = (closing[0] ?? pricier[0])?.kind === 'tournament' ? 'tournaments' : 'leagues';
-  return line ? `<button type="button" class="heads-up" data-view="${to}">${line}<span aria-hidden="true">›</span></button>` : '';
+  return closing.length ? { to, lead: 'Sign-ups closing today:', text: name(closing) } : { to, lead: "Last day at today's price:", text: name(pricier) };
 }
 
 // ---------- header height ----------
@@ -2198,7 +2205,7 @@ async function chooseRegion(id, { keepDay = false } = {}) {
     schedule = await getJson(`${regionData()}schedule.json`);
   } catch (e) {
     schedule = null;
-    $('list').innerHTML = `<div class="error">Couldn't load schedules: ${esc(e.message)}</div>`;
+    drawSessionsList($('list'), { status: 'error', message: e.message });
     unfold();
     return;
   }
@@ -2219,7 +2226,7 @@ const knewRegion = !!state.region; // a saved or linked city
 if (index?.regions?.length) await chooseRegion(state.region);
 else {
   try { schedule = await getJson(`${DATA}schedule.json`); save(); render(); }
-  catch (e) { $('list').innerHTML = `<div class="error">Couldn't load schedules: ${esc(e.message)}</div>`; unfold(); }
+  catch (e) { drawSessionsList($('list'), { status: 'error', message: e.message }); unfold(); }
 }
 // A first visit opens on the nearest city when the browser already shares its location with this
 // site (no prompt is ever raised here; 📍 is how someone chooses to share it).

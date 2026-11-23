@@ -2200,3 +2200,14 @@ test('site: Events list (Preact): an open Details stays open when the list redra
   assert.equal(await card.locator('details.more').getAttribute('open'), '', 'still open');
   assert.deepEqual(pageErrors, []);
 });
+
+test('site: Sports list (Preact): an open Details stays open when the list redraws', async () => {
+  await open();
+  const first = page.locator('#list > .row').first(); // not one folded under "ended earlier today"
+  const title = await first.locator('.title').textContent();
+  await first.locator('details.more summary').click();
+  await page.locator('#showAll').check();
+  const again = page.locator('#list > .row', { has: page.locator('.title', { hasText: title }) }).first();
+  assert.equal(await again.locator('details.more').getAttribute('open'), '', 'still open after the list was redrawn');
+  assert.deepEqual(pageErrors, []);
+});
