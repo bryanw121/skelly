@@ -3676,5 +3676,73 @@
     "lng": -97.8129,
     "located": "source",
     "matched": null
+  },
+  "cry baby matcha club, 1120 naylor st": {
+    "lat": 29.76974,
+    "lng": -95.35825,
+    "located": "address",
+    "matched": "1120 NAYLOR ST, HOUSTON, TX, 77002"
+  },
+  "2001 s. ervay st.": {
+    "lat": 32.76921,
+    "lng": -96.78615,
+    "located": "address",
+    "matched": "2001 S ERVAY ST, DALLAS, TX, 75215"
+  },
+  "4501 almeda food & entertainment, 4501 almeda rd": {
+    "lat": 29.72927,
+    "lng": -95.37647,
+    "located": "address",
+    "matched": "4501 ALMEDA RD, HOUSTON, TX, 77004"
+  },
+  "the vintage pops, 13501 hooper rd #106": {
+    "lat": 29.60992,
+    "lng": -95.40503,
+    "located": "address",
+    "matched": "13501 HOOPER RD, HOUSTON, TX, 77047"
+  },
+  "isa matcha, 1143 providence st": {
+    "lat": 29.76876,
+    "lng": -95.35558,
+    "located": "address",
+    "matched": "1143 PROVIDENCE ST, HOUSTON, TX, 77002"
+  },
+  "casabunni, 6708 s texas 6": {
+    "lat": 29.70585,
+    "lng": -95.64409,
+    "located": "address",
+    "matched": "6708 STATE HWY 6, HOUSTON, TX, 77083"
+  },
+  "ronin harrisburg, 3501 harrisburg blvd": {
+    "lat": 29.74783,
+    "lng": -95.34041,
+    "located": "address",
+    "matched": "3501 HARRISBURG BLVD, HOUSTON, TX, 77003"
+  },
+  "crecer (bishop arts)": {
+    "unresolved": true,
+    "lastTried": "2026-11-23T15:35:24.692Z"
+  },
+  "hair galleria, 2550 w red bird ln": {
+    "lat": 32.671,
+    "lng": -96.86077,
+    "located": "address",
+    "matched": "2550 W RED BIRD LN, DALLAS, TX, 75237"
+  },
+  "post htx, 401 franklin st": {
+    "lat": 29.76538,
+    "lng": -95.36623,
+    "located": "address",
+    "matched": "401 FRANKLIN ST, HOUSTON, TX, 77002"
+  },
+  "multiple venues": {
+    "unresolved": true,
+    "lastTried": "2026-11-23T15:35:29.978Z"
+  },
+  "central presbyterian church, 200 e 8th st": {
+    "lat": 30.26957,
+    "lng": -97.7407,
+    "located": "address",
+    "matched": "200 E 8TH ST, AUSTIN, TX, 78701"
   }
 }
