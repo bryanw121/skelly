@@ -1,0 +1,136 @@
+{
+ "recordedAt": "2026-11-24T03:01:17.648Z",
+ "meta": {
+  "unit": "schedule:dfw-city-active",
+  "now": "2026-11-24T03:01:17.648Z",
+  "count": 5
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b6d2f4260410.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball?page=2",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b99a390a6727.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball?page=3",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c7f31f0b83ff.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball?page=4",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "d514f302e95b.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/dallas-tx/volleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "47b4268587e8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/dallas-tx/volleyball?page=2",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "0d323b1a0d5f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/dallas-tx/volleyball?page=3",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "4331d22a3ccd.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/dallas-tx/volleyball?page=4",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "af9a29b1b8e4.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-legends-volleyball-2026-109915599",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "fc63703eb0fd.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-volleyball-2026-110117958",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "38caa74de4bd.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-volleyball-2026-110264694",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "5c89bc2fce64.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-volleyball-2026-110213288",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "8382fdaf3993.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-basketball-volleyball-2026-110291443",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "175a60c81f98.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3700+East+Belknap+Street%2C+Fort+Worth%2C+TX%2C+76111&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "9e5ee252a347.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3551+New+York+Avenue%2C+Fort+Worth%2C+TX%2C+76110&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "2cd0085705be.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5200+Hemphill+Street%2C+Fort+Worth%2C+TX%2C+76115&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "9b79bb225c2c.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3242+Lackland+Road%2C+Fort+Worth%2C+TX%2C+76116&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "b723b5f8d455.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6300+Welch+Avenue%2C+Fort+Worth%2C+TX%2C+76133&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "7617d2646d62.json"
+  }
+ ]
+}

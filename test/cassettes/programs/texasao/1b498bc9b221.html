@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Texas Asian Olympics — Volleyball</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description"
+content="Official site for the Texas Asian Olympics Volleyball event. Register your team, view schedules, rules, venue info, FAQs, and contact details."/>
+</head>
+<body>
+<header id="site-header" role="banner"></header>
+<section class="hero">
+<video class="hero-video-bg" muted loop playsinline preload="none"
+poster="assets/home-page-poster.508ee341.jpg" aria-hidden="true" tabindex="-1">
+<source data-src="assets/home-page-bg-video.9d2495b9.mp4" type="video/mp4">
+</video>
+<div class="container">
+<span class="chip countdown" id="event-countdown"
+aria-label="Countdown to the tournament">Loading countdown…</span>
+<h1>Texas Asian Olympics 🤠</h1>
+<p class="event-location">
+<strong class="venue-name">Children's Health StarCenter Multisport Northlake</strong>
+<span class="venue-address">13850 Chadwick Pkwy, Northlake, TX 76262</span>
+</p>
+<div class="chips">
+<span class="chip">Nov 14 - 15, 2026</span>
+<span class="chip">3 Divisions</span>
+<span class="chip">400+ Players</span>
+</div>
+<div class="cta-row">
+<a class="btn primary" href="registration/">View Registration</a>
+<a class="btn secondary" href="schedule/">View Schedule</a>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<small>© 2026 Texas Asian Olympics • Volleyball</small>
+</div>
+</footer>
+<script>
+// Load the decorative video after the page is ready. Visitors who prefer
+// reduced motion or have data-saving enabled keep the lightweight poster.
+(function () {
+const video = document.querySelector('.hero-video-bg');
+const source = video && video.querySelector('source[data-src]');
+if (!video || !source) return;
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const saveData = Boolean(navigator.connection && navigator.connection.saveData);
+if (reducedMotion || saveData) return;
+video.addEventListener('playing', () => {
+video.classList.add('is-ready');
+video.closest('.hero')?.classList.add('video-ready');
+}, { once: true });
+const loadVideo = () => {
+source.src = source.dataset.src;
+video.load();
+video.play().catch(() => {
+// The poster remains visible if autoplay is blocked.
+});
+};
+if ('requestIdleCallback' in window) {
+requestIdleCallback(loadVideo, { timeout: 800 });
+} else {
+setTimeout(loadVideo, 0);
+}
+})();
+// Tournament countdown: Nov 14, 2026 at 1:00 PM Central Standard Time.
+(function () {
+const countdown = document.getElementById('event-countdown');
+if (!countdown) return;
+const eventTime = new Date('2026-11-14T13:00:00-06:00').getTime();
+const pad = value => String(value).padStart(2, '0');
+let timer;
+function updateCountdown() {
+const remaining = eventTime - Date.now();
+if (remaining <= 0) {
+countdown.textContent = 'Event started!';
+if (timer) clearInterval(timer);
+return;
+}
+const days = Math.floor(remaining / 86400000);
+const hours = Math.floor((remaining % 86400000) / 3600000);
+const minutes = Math.floor((remaining % 3600000) / 60000);
+const seconds = Math.floor((remaining % 60000) / 1000);
+countdown.textContent = `Starts in ${days}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+}
+updateCountdown();
+timer = setInterval(updateCountdown, 1000);
+document.addEventListener('visibilitychange', updateCountdown);
+})();
+</script>
+</body>
+</html>
