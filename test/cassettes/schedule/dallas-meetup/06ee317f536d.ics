@@ -27,39 +27,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031815Z
-DTSTART;TZID=America/Chicago:20261123T200000
-DTEND;TZID=America/Chicago:20261123T220000
-SUMMARY:Adult Beginner Open Gym Volleyball Lewisville
-DESCRIPTION:North Texas Adult Volleyball\nOur Beginner open gyms are the B
- EST in Texas because we do our best to make them fair and properly managed
- .\n\nYOU MUST REGISTER AND PAY IN OUR APP\, REGISTERING HERE WONT ALLOW YO
- U ENTRY. GO TO USSPT.COM AND DOWNLOAD THE APP THEN SELECT EVENTS THEN VOLL
- EYBALL AND THEN YOUR LEVEL OF OPEN GYM\n\n***Come solo or with a group\, d
- rop-in rate is $10 or for $50 a month\, you get unlimited open gym\, which
-  we have every day!***\n\n**FORMAT**\nWarm-up (come 30 min early FREE)\nWe
-  start with 30 min of SideOut or Queen of the Court or til everyone arrive
- s and then split up players for teams.\n\nWhen fully attended (35 checked 
- in attendees)\, we divide players up into 5 teams based on position and sk
- ill to even teams out. We place 7 players on a team so that Liberos get a 
- chance to hone their skill AND so all positions rotate back row and learn 
- proper rotations.\n\nWE ARE A TRAINING FACILITY and we focus on players ge
- tting better\, thats why we want to play properly and not have Iron Middle
- s or high scoring hitters not rotating\, it's simply unfair.\n\nBest of al
- l\, if your teams loses on court 1\, you play back to back until you win A
- ND if you win on court 2\, you play back to back until you lose. We built 
- USSPT for players and athletes that want to have fun and get better.
-URL;VALUE=URI:https://www.meetup.com/north-texas-adult-volleyball/events/3
- 17279856/
-STATUS:CONFIRMED
-CREATED:20261104T021222Z
-LAST-MODIFIED:20261104T021222Z
-CLASS:PUBLIC
-END:VEVENT
-BEGIN:VEVENT
-UID:redacted@example.com
-SEQUENCE:1
-DTSTAMP:20261124T031815Z
+DTSTAMP:20261124T051542Z
 DTSTART;TZID=America/Chicago:20261124T190000
 DTEND;TZID=America/Chicago:20261124T200000
 SUMMARY:Adult Volleyball Skills Clinic and Training
@@ -86,7 +54,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031815Z
+DTSTAMP:20261124T051542Z
 DTSTART;TZID=America/Chicago:20261125T190000
 DTEND;TZID=America/Chicago:20261125T200000
 SUMMARY:Adult Volleyball Skills Clinic and Training
@@ -113,7 +81,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031815Z
+DTSTAMP:20261124T051542Z
 DTSTART;TZID=America/Chicago:20261125T200000
 DTEND;TZID=America/Chicago:20261125T220000
 SUMMARY:Adult Beginner Open Gym Volleyball Lewisville
@@ -145,7 +113,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031815Z
+DTSTAMP:20261124T051542Z
 DTSTART;TZID=America/Chicago:20261126T200000
 DTEND;TZID=America/Chicago:20261126T220000
 SUMMARY:Adult Open Gym Volleyball Lewisville
@@ -177,7 +145,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031815Z
+DTSTAMP:20261124T051542Z
 DTSTART;TZID=America/Chicago:20261130T200000
 DTEND;TZID=America/Chicago:20261130T220000
 SUMMARY:Adult Beginner Open Gym Volleyball Lewisville
@@ -209,7 +177,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031815Z
+DTSTAMP:20261124T051542Z
 DTSTART;TZID=America/Chicago:20261201T190000
 DTEND;TZID=America/Chicago:20261201T200000
 SUMMARY:Adult Volleyball Skills Clinic and Training
@@ -236,7 +204,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031815Z
+DTSTAMP:20261124T051542Z
 DTSTART;TZID=America/Chicago:20261202T190000
 DTEND;TZID=America/Chicago:20261202T200000
 SUMMARY:Adult Volleyball Skills Clinic and Training
@@ -263,7 +231,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031815Z
+DTSTAMP:20261124T051542Z
 DTSTART;TZID=America/Chicago:20261202T200000
 DTEND;TZID=America/Chicago:20261202T220000
 SUMMARY:Adult Beginner Open Gym Volleyball Lewisville
@@ -295,7 +263,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031815Z
+DTSTAMP:20261124T051542Z
 DTSTART;TZID=America/Chicago:20261203T200000
 DTEND;TZID=America/Chicago:20261203T220000
 SUMMARY:Adult Open Gym Volleyball Lewisville
@@ -322,6 +290,38 @@ URL;VALUE=URI:https://www.meetup.com/north-texas-adult-volleyball/events/3
 STATUS:CONFIRMED
 CREATED:20261114T022247Z
 LAST-MODIFIED:20261114T022247Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:redacted@example.com
+SEQUENCE:1
+DTSTAMP:20261124T051542Z
+DTSTART;TZID=America/Chicago:20261207T200000
+DTEND;TZID=America/Chicago:20261207T220000
+SUMMARY:Adult Beginner Open Gym Volleyball Lewisville
+DESCRIPTION:North Texas Adult Volleyball\nOur Beginner open gyms are the B
+ EST in Texas because we do our best to make them fair and properly managed
+ .\n\nYOU MUST REGISTER AND PAY IN OUR APP\, REGISTERING HERE WONT ALLOW YO
+ U ENTRY. GO TO USSPT.COM AND DOWNLOAD THE APP THEN SELECT EVENTS THEN VOLL
+ EYBALL AND THEN YOUR LEVEL OF OPEN GYM\n\n***Come solo or with a group\, d
+ rop-in rate is $10 or for $50 a month\, you get unlimited open gym\, which
+  we have every day!***\n\n**FORMAT**\nWarm-up (come 30 min early FREE)\nWe
+  start with 30 min of SideOut or Queen of the Court or til everyone arrive
+ s and then split up players for teams.\n\nWhen fully attended (35 checked 
+ in attendees)\, we divide players up into 5 teams based on position and sk
+ ill to even teams out. We place 7 players on a team so that Liberos get a 
+ chance to hone their skill AND so all positions rotate back row and learn 
+ proper rotations.\n\nWE ARE A TRAINING FACILITY and we focus on players ge
+ tting better\, thats why we want to play properly and not have Iron Middle
+ s or high scoring hitters not rotating\, it's simply unfair.\n\nBest of al
+ l\, if your teams loses on court 1\, you play back to back until you win A
+ ND if you win on court 2\, you play back to back until you lose. We built 
+ USSPT for players and athletes that want to have fun and get better.
+URL;VALUE=URI:https://www.meetup.com/north-texas-adult-volleyball/events/3
+ 17476904/
+STATUS:CONFIRMED
+CREATED:20261118T021023Z
+LAST-MODIFIED:20261118T021023Z
 CLASS:PUBLIC
 END:VEVENT
 X-ORIGINAL-URL:https://www.meetup.com/north-texas-adult-volleyball/events/
