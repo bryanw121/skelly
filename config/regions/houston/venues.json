@@ -126,6 +126,158 @@
       "schedule": {
         "surface": "unknown"
       }
+    },
+    {
+      "id": "fts-pickleball",
+      "name": "FTS Pickleball",
+      "city": "Cypress",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "node/12067199343",
+      "googlePlaceId": null,
+      "lat": 30.032129,
+      "lng": -95.641272,
+      "website": "https://pickleball.fasttrackswimming.com",
+      "indoor": true,
+      "lit": true,
+      "access": "customers",
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "pickle-lab",
+      "name": "Pickle Lab",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/353018575",
+      "googlePlaceId": null,
+      "lat": 29.734458,
+      "lng": -95.381119,
+      "website": "https://iondistrict.com/visit/pickle-lab/",
+      "indoor": true,
+      "lit": true,
+      "access": "private",
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "ymca-pickleball-courts",
+      "name": "YMCA pickleball courts",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/657026180",
+      "googlePlaceId": null,
+      "lat": 29.899667,
+      "lng": -95.666749,
+      "website": null,
+      "indoor": false,
+      "access": "customers",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "houston-racquet-club",
+      "name": "Houston Racquet Club",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1284267023",
+      "googlePlaceId": null,
+      "lat": 29.765256,
+      "lng": -95.499211,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "east-river-9",
+      "name": "East River 9",
+      "city": "Houston",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1322903586",
+      "googlePlaceId": null,
+      "lat": 29.761726,
+      "lng": -95.331749,
+      "website": "https://eastriver9.com/",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "pickle-point-cypress",
+      "name": "Pickle Point Cypress",
+      "city": "Cypress",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1340044224",
+      "googlePlaceId": null,
+      "lat": 30.000239,
+      "lng": -95.731016,
+      "website": "https://clubpicklepoint.com/cypress/",
+      "indoor": true,
+      "access": "fee",
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "pickle-point-katy",
+      "name": "Pickle Point Katy",
+      "city": "Katy",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1395323318",
+      "googlePlaceId": null,
+      "lat": 29.82606,
+      "lng": -95.780328,
+      "website": "https://clubpicklepoint.com/katy/",
+      "indoor": true,
+      "access": "fee",
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "houston-pickleball-center",
+      "name": "Houston Pickleball Center",
+      "city": "Houston",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1436741406",
+      "googlePlaceId": null,
+      "lat": 29.633953,
+      "lng": -95.40615,
+      "website": null,
+      "indoor": true,
+      "access": "customers",
+      "schedule": {
+        "surface": "unknown"
+      }
     }
   ]
 }
