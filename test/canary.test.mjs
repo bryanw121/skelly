@@ -297,6 +297,8 @@ test('failure reports: one per unit tried, empty when it recorded, none for know
   assert.equal(r['schedule-a.md'], '');
   assert.match(r['events-b.md'], /couldn't record \*\*events:b\*\*: HTTP 403/);
   assert.match(r['events-b.md'], /test\/cassettes\/events\/b\/.*Run: https:\/\/run/s);
+});
+
 test('a calendar keeps its UIDs (they look like emails) and loses the rest', () => {
   const ics = 'BEGIN:VCALENDAR\r\nBEGIN:VEVENT\r\nUID:event_123@meetup.com\r\nORGANIZER:mailto:host@x.com\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n';
   assert.equal(sanitizeFor('https://www.meetup.com/g/events/ical/', ics), 'BEGIN:VCALENDAR\r\nBEGIN:VEVENT\r\nUID:event_123@meetup.com\r\nORGANIZER:mailto:redacted@example.com\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n');
