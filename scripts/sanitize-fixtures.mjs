@@ -153,10 +153,15 @@ export function sanitizeSweatpalsHost(html) {
 
 // --- anything else --------------------------------------------------------------------------
 
-/** Last-resort scrub for free text (e.g. ACES WordPress pages): emails and phone numbers. */
+/**
+ * Last-resort scrub for free text (e.g. ACES WordPress pages): emails and phone numbers. A phone
+ * number is written with separators ("512-555-0100", "(512) 555 0100") or behind tel:; a bare run
+ * of digits is left alone, because pages are full of ids and timestamps ("/e/8000291234567").
+ */
 export const scrubText = (s) => String(s)
   .replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, 'redacted@example.com')
-  .replace(/(?:\+?1[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\b/g, '000-000-0000');
+  .replace(/tel:[+\d().\s-]{7,}/gi, 'tel:000-000-0000')
+  .replace(/(?<![\w/=.%-])(?:\+?1[\s.-]?)?(?:\(\d{3}\)\s?|\d{3}[\s.-])\d{3}[\s.-]\d{4}(?!\w)/g, '000-000-0000');
 
 /** Sanitize one fixture's contents by file name. */
 export function sanitize(name, text) {

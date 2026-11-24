@@ -39,8 +39,8 @@ Every reader is a **unit** (`lib/canary-units.js`): `schedule:<source>`, `progra
 `courts:<venue>` (court calendars). The same unit code records (canary) and replays (tests).
 - `node scripts/canary.mjs --list` shows each unit's weekday. The units sorted by id are dealt over
   the week, so each is recorded once a week and a day is about six units.
-- Per run: at most `CANARY_RUN_BUDGET` requests (150; 600 for `--all`), `CANARY_UNIT_BUDGET` per
-  unit (60), robots.txt read once per site and obeyed, 2 s between two requests to one host.
+- Per run: at most `CANARY_RUN_BUDGET` requests (400; 1500 for `--all`), `CANARY_UNIT_BUDGET` per
+  unit (250: a unit that spends it fails rather than record part of a source), robots.txt read once per site and obeyed, 2 s between two requests to one host.
 - A recording replaces the old one only if the cleaned copy replays to the same count as the live
   read. Bodies are cleaned by `sanitizeFor` in `lib/canary.js`: Reclub people, Arketa clients,
   Sweatpals accounts, Skedda cut to times and courts (never who booked), every key that holds

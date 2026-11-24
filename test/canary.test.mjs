@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { BudgetExceeded, RobotsDisallowed, runCanary, cassetteName, pickUnits, politeFetch, report, resultCount, rotation, sanitizeFor } from '../lib/canary.js';
+import { BudgetExceeded, RobotsDisallowed, runCanary, shrinkHtml, cassetteName, pickUnits, politeFetch, report, resultCount, rotation, sanitizeFor } from '../lib/canary.js';
 import { canaryUnits } from '../lib/canary-units.js';
 import { loadSources } from '../lib/registry.js';
 import { readFileSync } from 'node:fs';
@@ -172,4 +172,34 @@ test('the watcher and court units read the way the scrape does', async () => {
   };
   const courts = await velocity.run({ fetch: skedda, now: new Date('2026-11-24T16:00:00Z') });
   assert.equal(typeof courts.count, 'number');
+});
+
+test('a unit that spends its budget fails instead of saving part of a source', async () => {
+  const { mkdtempSync, existsSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const dir = mkdtempSync(join(tmpdir(), 'canary-budget-'));
+  const real = async () => answer('page');
+  // Like the readers: a failed page is skipped, the rest carry on.
+  const many = { id: 'programs:many', run: async ({ fetch }) => { let n = 0; for (let i = 0; i < 5; i++) { try { await fetch(`https://m.test/${i}`); n++; } catch { /* next */ } } return { count: n }; } };
+  const { outcomes } = await runCanary([many], { fetch: real, dir, gapMs: 0, unitMax: 3 });
+  assert.equal(outcomes[0].ok, false);
+  assert.match(outcomes[0].error, /budget spent after 3 requests/);
+  assert.ok(!existsSync(join(dir, 'programs/many')));
+});
+
+test('shrinkHtml keeps page data and drops what no reader looks at; HTML is shrunk when recorded', () => {
+  const page = '<!doctype html><html><head><style>.a{}</style><link rel="x"><script src="/a.js"></script><script type="application/ld+json">{"@type":"Event"}</script></head>\n\n   <body style="x"><!-- c --><svg><path/></svg><p>Hi   there</p></body></html>';
+  const small = shrinkHtml(page);
+  assert.equal(small, '<!doctype html><html><head><script type="application/ld+json">{"@type":"Event"}</script></head>\n<body><p>Hi there</p></body></html>');
+  assert.equal(sanitizeFor('https://x.test/', page), small);
+  assert.equal(sanitizeFor('https://x.test/feed.ics', 'BEGIN:VCALENDAR\n  X'), 'BEGIN:VCALENDAR\n  X');
+});
+
+test('recording hands the caller the live headers and final URL (Skedda reads its cookies)', async () => {
+  const { record } = await import('./support/cassette.mjs');
+  const real = async () => ({ status: 200, url: 'https://final.test/booking', headers: new Headers({ 'content-type': 'text/html', 'set-cookie': 'a=1' }), text: async () => 'ok' });
+  const res = await record('x', { fetch: real })('https://start.test/booking');
+  assert.equal(res.url, 'https://final.test/booking');
+  assert.equal(res.headers.get('set-cookie'), 'a=1');
 });
