@@ -76,3 +76,20 @@ test('events job: with the Instagram secrets it reads the accounts too', async (
   const { feed } = await runEventsJob({ ...quiet, get: igGet, fetch, now: NOW, dataDir, failuresDir, env: { IG_USER_ID: '1', IG_ACCESS_TOKEN: 't' }, igConfig: () => ({ accounts: [{ handle: 'someorg' }] }) });
   assert.ok(feed.sources.some((s) => s.id === 'instagram'));
 });
+
+test('events job: given only fetch, it reads everything through it (the replay path), the configured Instagram accounts too', async () => {
+  const { dataDir, failuresDir } = dirs();
+  const { get } = fakes();
+  const urls = [];
+  const fetch = async (url) => {
+    urls.push(String(url));
+    if (String(url).includes('overpass')) return { ok: true, status: 200, text: async () => JSON.stringify(OVERPASS) };
+    if (String(url).includes('graph.facebook.com')) return { ok: true, status: 200, text: async () => JSON.stringify({ business_discovery: { media: { data: [] } } }) };
+    const r = await get(String(url));
+    return { ok: r.ok, status: r.status, text: async () => r.text };
+  };
+  const { feed } = await runEventsJob({ ...quiet, fetch, now: NOW, dataDir, failuresDir, env: { IG_USER_ID: '1', IG_ACCESS_TOKEN: 't' } });
+  assert.ok(feed.events.some((e) => e.title === 'Holiday Market'));
+  assert.ok(urls.includes('https://list.test/markets'));
+  assert.ok(urls.some((u) => u.includes('graph.facebook.com')), 'the accounts in config/instagram.json');
+});
