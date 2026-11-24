@@ -54,7 +54,10 @@ jobs:
         if: always()
         with:
           name: canary-report
-          path: canary-report.*
+          # canary-failed/: cleaned recordings that didn't replay, to see what the cleaning broke.
+          path: |
+            canary-report.*
+            canary-failed/
           retention-days: 30
       - name: Test on the new recordings
         run: npm test

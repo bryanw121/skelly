@@ -263,3 +263,16 @@ test('shrinkHtml leaves custom elements that start like style or svg', () => {
   const page = '<html><body><style-card>keep</style-card><svg-icon>keep</svg-icon><linked-item>keep</linked-item><style>x</style></body></html>';
   assert.equal(shrinkHtml(page), '<html><body><style-card>keep</style-card><svg-icon>keep</svg-icon><linked-item>keep</linked-item></body></html>');
 });
+
+test('a recording that does not replay is kept aside, cleaned, when asked', async () => {
+  const { mkdtempSync, readdirSync, readFileSync: read } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const dir = mkdtempSync(join(tmpdir(), 'canary-keep-')), failedDir = mkdtempSync(join(tmpdir(), 'canary-failed-'));
+  const real = async (url) => (String(url).endsWith('robots.txt') ? answer('', 404) : answer('me@x.com'));
+  const leaky = { id: 'events:leaky', run: async ({ fetch }) => ({ count: (await (await fetch('https://l.test/')).text()).includes('me@x.com') ? 1 : 0 }) };
+  const { outcomes } = await runCanary([leaky], { fetch: real, dir, gapMs: 0, failedDir });
+  assert.equal(outcomes[0].ok, false);
+  const body = readdirSync(join(failedDir, 'events/leaky')).find((f) => f !== 'cassette.json');
+  assert.equal(read(join(failedDir, 'events/leaky', body), 'utf8'), 'redacted@example.com');
+});
