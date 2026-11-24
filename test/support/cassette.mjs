@@ -11,7 +11,7 @@
 // anything else, so a test can't quietly depend on the network (the kill switch blocks it anyway).
 // record(name, { fetch }) wraps a real fetch and writes what it returns: only the scheduled canary
 // uses it (scripts/canary.mjs), never a test.
-import { readFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { readFileSync, existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -87,7 +87,8 @@ const extOf = (type) => (/json/.test(type) ? 'json' : /html/.test(type) ? 'html'
 
 /**
  * A fetch that passes each request to `fetch` and saves the answer into cassette `name` (the canary).
- * `sanitize(text, url)` cleans each body before it's written (personal data out). Call save(meta) at the end;
+ * `sanitize(text, url)` cleans each body as it's written (personal data out; nothing uncleaned is
+ * ever written). Call save(meta) at the end;
  * `meta` (what the canary recorded: unit, clock, result count) is kept in cassette.json.
  */
 export function record(name, { fetch: real, dir = CASSETTES, sanitize = (t) => t, now = () => new Date(), ignoreParams = [] } = {}) {
@@ -99,17 +100,18 @@ export function record(name, { fetch: real, dir = CASSETTES, sanitize = (t) => t
     const text = await res.text();
     const contentType = res.headers?.get?.('content-type') || 'text/plain';
     const finalUrl = res.url && res.url !== url ? res.url : undefined; // after redirects
-    requests.push({ method, url, finalUrl, status: res.status, contentType, text: sanitize(text, url), bodyHash: bodyHash(init.body) });
+    requests.push({ method, url, finalUrl, status: res.status, contentType, raw: text, bodyHash: bodyHash(init.body) }); // cleaned when saved
     // The caller gets the live answer's own headers and final URL (Skedda reads its cookies and
     // where it was redirected); only the body and its type are saved.
     return { ...response({ status: res.status, url: res.url || url, contentType, text }), headers: res.headers ?? new Headers({ 'content-type': contentType }) };
   };
   const save = (meta = null) => {
     const folder = join(dir, name);
+    rmSync(folder, { recursive: true, force: true }); // a save replaces the recording whole
     mkdirSync(folder, { recursive: true });
     const out = requests.map((r) => {
       const body = `${createHash('sha256').update(requestKey(r.method, r.url, ignoreParams) + r.bodyHash).digest('hex').slice(0, 12)}.${extOf(r.contentType)}`;
-      writeFileSync(join(folder, body), r.text);
+      writeFileSync(join(folder, body), sanitize(r.raw, r.url));
       return { method: r.method, url: r.url, ...(r.finalUrl ? { finalUrl: r.finalUrl } : {}), ...(r.bodyHash ? { bodyHash: r.bodyHash } : {}), status: r.status, contentType: r.contentType.split(';')[0], body };
     });
     writeFileSync(join(folder, 'cassette.json'), `${JSON.stringify({ recordedAt: now().toISOString(), ...(meta ? { meta } : {}), ...(ignoreParams.length ? { ignoreParams } : {}), requests: out }, null, 1)}\n`);

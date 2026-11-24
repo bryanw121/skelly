@@ -241,3 +241,25 @@ test('a mismatch names what the cleaning lost; OpenCourt sources get a bigger bu
   const { units } = canaryUnits();
   assert.equal(units.find((u) => u.id === 'schedule:austin-picklehaus').maxRequests, 600);
 });
+
+test('when shrinking a page costs the reader something, the canary keeps the page whole (still cleaned)', async () => {
+  const { mkdtempSync, readFileSync: read, readdirSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const dir = mkdtempSync(join(tmpdir(), 'canary-whole-'));
+  const html = '<!doctype html><html><body><!-- item --><!-- item --><p>mail a@b.co</p></body></html>';
+  const real = async (url) => (String(url).endsWith('robots.txt') ? answer('', 404) : { ok: true, status: 200, headers: new Headers({ 'content-type': 'text/html' }), text: async () => html });
+  const commentCounter = { id: 'events:comments', run: async ({ fetch }) => ({ count: ((await (await fetch('https://c.test/')).text()).match(/<!-- item -->/g) ?? []).length }) };
+  const { outcomes } = await runCanary([commentCounter], { fetch: real, dir, gapMs: 0 });
+  assert.deepEqual([outcomes[0].ok, outcomes[0].count, outcomes[0].unshrunk], [true, 2, true]);
+  const files = readdirSync(join(dir, 'events/comments')).filter((f) => f.endsWith('.html'));
+  assert.equal(files.length, 1, 'the shrunk copy is gone');
+  const saved = read(join(dir, 'events/comments', files[0]), 'utf8');
+  assert.match(saved, /<!-- item -->/);
+  assert.match(saved, /redacted@example.com/);
+});
+
+test('shrinkHtml leaves custom elements that start like style or svg', () => {
+  const page = '<html><body><style-card>keep</style-card><svg-icon>keep</svg-icon><linked-item>keep</linked-item><style>x</style></body></html>';
+  assert.equal(shrinkHtml(page), '<html><body><style-card>keep</style-card><svg-icon>keep</svg-icon><linked-item>keep</linked-item></body></html>');
+});
