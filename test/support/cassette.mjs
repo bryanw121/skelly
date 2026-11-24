@@ -99,7 +99,9 @@ export function record(name, { fetch: real, dir = CASSETTES, sanitize = (t) => t
     const text = await res.text();
     const contentType = res.headers?.get?.('content-type') || 'text/plain';
     requests.push({ method, url, status: res.status, contentType, text: sanitize(text, url), bodyHash: bodyHash(init.body) });
-    return response({ status: res.status, url, contentType, text });
+    // The caller gets the live answer's own headers and final URL (Skedda reads its cookies and
+    // where it was redirected); only the body and its type are saved.
+    return { ...response({ status: res.status, url: res.url || url, contentType, text }), headers: res.headers ?? new Headers({ 'content-type': contentType }) };
   };
   const save = (meta = null) => {
     const folder = join(dir, name);

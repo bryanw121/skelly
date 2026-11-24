@@ -33,7 +33,7 @@ jobs:
     timeout-minutes: 40
     env:
       # A full recording is bigger than a day's rotation.
-      CANARY_RUN_BUDGET: ${{ inputs.all && '600' || '150' }}
+      CANARY_RUN_BUDGET: ${{ inputs.all && '1500' || '400' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
