@@ -320,6 +320,348 @@
       "schedule": {
         "surface": "website"
       }
+    },
+    {
+      "id": "the-picklr",
+      "name": "The Picklr",
+      "city": "Denton",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "node/9412952908",
+      "googlePlaceId": null,
+      "lat": 33.231854,
+      "lng": -97.140809,
+      "website": "https://thepicklr.com/location/denton/",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "dallas-indoor-pickleball-club",
+      "name": "Dallas Indoor Pickleball Club",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "node/12706030785",
+      "googlePlaceId": null,
+      "lat": 32.986298,
+      "lng": -96.843649,
+      "website": "https://www.dallasindoorpickleballclub.com/",
+      "indoor": false,
+      "schedule": {
+        "surface": "login_only",
+        "platform": "podplay",
+        "url": "https://dallaspickleclub.podplay.app/book/carrollton-standard"
+      }
+    },
+    {
+      "id": "life-time",
+      "name": "Life Time",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "node/13137293174",
+      "googlePlaceId": null,
+      "lat": 33.159701,
+      "lng": -96.843809,
+      "website": null,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "life-time-pickleball",
+      "name": "Life Time Pickleball",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "node/13137342502",
+      "googlePlaceId": null,
+      "lat": 33.15975,
+      "lng": -96.842997,
+      "website": null,
+      "indoor": false,
+      "lit": true,
+      "access": "private",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "texas-pickleball",
+      "name": "Texas Pickleball",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "node/13241047506",
+      "googlePlaceId": null,
+      "lat": 33.009488,
+      "lng": -97.221811,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "dill-dinkers-pickleball",
+      "name": "Dill Dinkers Pickleball",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "node/13248150047",
+      "googlePlaceId": null,
+      "lat": 32.577644,
+      "lng": -97.355788,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "preston-playhouse",
+      "name": "Preston Playhouse",
+      "city": "Dallas",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/220689287",
+      "googlePlaceId": null,
+      "lat": 32.927695,
+      "lng": -96.80223,
+      "website": "https://www.prestonpickleball.com/",
+      "indoor": true,
+      "schedule": {
+        "surface": "login_only",
+        "platform": "courtreserve",
+        "url": "https://app.courtreserve.com/online/publicbookings/11468"
+      }
+    },
+    {
+      "id": "pickler-university",
+      "name": "Pickler University",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/423963146",
+      "googlePlaceId": null,
+      "lat": 32.989427,
+      "lng": -96.937709,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "frederick-p-herring-parks-and-recreation-center",
+      "name": "Frederick P. Herring Parks and Recreation Center",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/665633248",
+      "googlePlaceId": null,
+      "lat": 33.04452,
+      "lng": -97.022541,
+      "website": "https://www.playlewisville.com/facilities/recreation-center/frederick-p-herring-recreation-center",
+      "indoor": true,
+      "access": "fee",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "thrive",
+      "name": "Thrive",
+      "city": "Lewisville",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1074705707",
+      "googlePlaceId": null,
+      "lat": 33.019768,
+      "lng": -97.020331,
+      "website": "https://www.lewisvillethrive.com/",
+      "indoor": true,
+      "access": "yes",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "wagon-wheel-tennis-and-pickleball-center",
+      "name": "Wagon Wheel Tennis and Pickleball Center",
+      "city": "Coppell",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1172795943",
+      "googlePlaceId": null,
+      "lat": 32.961812,
+      "lng": -97.021083,
+      "website": "https://www.coppelltx.gov/415/Wagon-Wheel-Tennis-and-Pickleball-Center",
+      "indoor": true,
+      "access": "fee",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "the-courts-of-mckinney-tennis-center-indoor-center",
+      "name": "The Courts of McKinney Tennis Center - Indoor Center",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1255474905",
+      "googlePlaceId": null,
+      "lat": 33.16824,
+      "lng": -96.710199,
+      "website": null,
+      "indoor": false,
+      "lit": true,
+      "access": "customers",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "whispering-hills-pickleball-court",
+      "name": "Whispering Hills Pickleball Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1299694618",
+      "googlePlaceId": null,
+      "lat": 32.919643,
+      "lng": -96.707328,
+      "website": null,
+      "indoor": false,
+      "lit": true,
+      "access": "yes",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "vistara-sports",
+      "name": "Vistara Sports",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1375156110",
+      "googlePlaceId": null,
+      "lat": 32.993798,
+      "lng": -97.000143,
+      "website": null,
+      "indoor": true,
+      "access": "fee",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "life-time-pickleball-courts",
+      "name": "Life Time Pickleball Courts",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1392179794",
+      "googlePlaceId": null,
+      "lat": 32.977862,
+      "lng": -97.171326,
+      "website": null,
+      "indoor": false,
+      "lit": true,
+      "access": "customers",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "the-activ",
+      "name": "The ACTIV",
+      "city": "Arlington",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1410397438",
+      "googlePlaceId": null,
+      "lat": 32.711267,
+      "lng": -97.188232,
+      "website": null,
+      "indoor": true,
+      "access": "fee",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "city-pickle",
+      "name": "City Pickle",
+      "city": "Fort Worth",
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1451366189",
+      "googlePlaceId": null,
+      "lat": 32.892868,
+      "lng": -97.32062,
+      "website": "https://citypickleusa.net/",
+      "indoor": true,
+      "schedule": {
+        "surface": "login_only",
+        "platform": "playbypoint",
+        "url": "https://app.playbypoint.com/memberships/11576"
+      }
+    },
+    {
+      "id": "chicken-n-pickle",
+      "name": "Chicken N Pickle",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "pickleball"
+      ],
+      "osm": "way/1509239553",
+      "googlePlaceId": null,
+      "lat": 32.88733,
+      "lng": -97.097636,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
     }
   ]
 }
