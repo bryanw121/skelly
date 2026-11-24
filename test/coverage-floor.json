@@ -1,6 +1,6 @@
 {
   "_note": "Coverage only goes up (docs/testing.md). npm run coverage fails if lib/, api/ and scripts/ together drop below these, or rise more than 0.5 points above them without this file being raised to match. Counts every file, tested or not (c8 --all).",
-  "lines": 85.92,
+  "lines": 87.1,
   "branches": 82.03,
   "functions": 89.34
 }
