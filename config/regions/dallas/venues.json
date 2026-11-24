@@ -68,6 +68,258 @@
       ],
       "osm": null,
       "googlePlaceId": null
+    },
+    {
+      "id": "ice-at-the-parks",
+      "name": "Ice at The Parks",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "node/4699646080",
+      "googlePlaceId": null,
+      "lat": 32.679236,
+      "lng": -97.128769,
+      "website": "https://www.iceattheparks.net/Site/Home.html",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "children-s-health-starcenter-multisport-northlake",
+      "name": "Children's Health Starcenter Multisport Northlake",
+      "city": "Northlake",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "node/12884040845",
+      "googlePlaceId": null,
+      "lat": 33.023493,
+      "lng": -97.265218,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "american-airlines-center",
+      "name": "American Airlines Center",
+      "city": "Dallas",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/25312698",
+      "googlePlaceId": null,
+      "lat": 32.790494,
+      "lng": -96.810289,
+      "website": "https://www.americanairlinescenter.com/",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "fifth-third-arena",
+      "name": "Fifth Third Arena",
+      "city": "Frisco",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/297114728",
+      "googlePlaceId": null,
+      "lat": 33.100567,
+      "lng": -96.819432,
+      "website": "https://comericacenter.com",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "allen-community-ice-rink",
+      "name": "Allen Community Ice Rink",
+      "city": "Allen",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/372368473",
+      "googlePlaceId": null,
+      "lat": 33.127082,
+      "lng": -96.653812,
+      "website": "https://www.cityofallen.org/1391/Allen-Community-Ice-Rink",
+      "indoor": true,
+      "schedule": {
+        "surface": "platform:activenet",
+        "platform": "activenet",
+        "url": "https://anc.apm.activecommunities.com/allentxparks/home?onlineSiteId=0&from_original_cui=true&locale=en-US"
+      }
+    },
+    {
+      "id": "children-s-health-starcenter",
+      "name": "Children's Health StarCenter",
+      "city": "Irving",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/465679289",
+      "googlePlaceId": null,
+      "lat": 32.943253,
+      "lng": -96.945375,
+      "website": "https://www.nhl.com/stars/starcenters/locations/valley-ranch",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "children-s-health-starcenter-way-506726363",
+      "name": "Children's Health StarCenter",
+      "city": "McKinney",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/506726363",
+      "googlePlaceId": null,
+      "lat": 33.143037,
+      "lng": -96.704028,
+      "website": "https://www.nhl.com/stars/starcenters/locations/mckinney",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "children-s-health-starcenter-way-514366453",
+      "name": "Children's Health StarCenter",
+      "city": "Plano",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/514366453",
+      "googlePlaceId": null,
+      "lat": 33.010305,
+      "lng": -96.772263,
+      "website": "https://www.nhl.com/stars/starcenters/locations/plano",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "children-s-health-starcenter-way-597906839",
+      "name": "Children's Health StarCenter",
+      "city": "Richardson",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/597906839",
+      "googlePlaceId": null,
+      "lat": 32.93692,
+      "lng": -96.723072,
+      "website": "https://www.nhl.com/stars/starcenters/locations/richardson",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "children-s-health-starcenter-way-643589522",
+      "name": "Children's Health StarCenter",
+      "city": "Farmers Branch",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/643589522",
+      "googlePlaceId": null,
+      "lat": 32.919656,
+      "lng": -96.897071,
+      "website": "https://www.nhl.com/stars/starcenters/locations/farmers-branch",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "texas-skatium",
+      "name": "Texas Skatium",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/645021310",
+      "googlePlaceId": null,
+      "lat": 32.861168,
+      "lng": -96.575884,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "galleria-ice-skating-center",
+      "name": "Galleria Ice Skating Center",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/678077302",
+      "googlePlaceId": null,
+      "lat": 32.929995,
+      "lng": -96.819522,
+      "website": null,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "children-s-health-starcenter-way-1107143121",
+      "name": "Children's Health StarCenter",
+      "city": "Euless",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/1107143121",
+      "googlePlaceId": null,
+      "lat": 32.82143,
+      "lng": -97.106616,
+      "website": "https://www.nhl.com/stars/starcenters/locations/euless",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "children-s-health-starcenter-way-1411270601",
+      "name": "Children's Health StarCenter",
+      "city": "Mansfield",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/1411270601",
+      "googlePlaceId": null,
+      "lat": 32.572627,
+      "lng": -97.113316,
+      "website": "https://www.nhl.com/stars/starcenters/locations/mansfield",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
     }
   ]
 }
