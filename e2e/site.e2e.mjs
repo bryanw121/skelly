@@ -61,6 +61,18 @@ const COURTS = {
   }],
 };
 
+const OWNER_KEY = 'good-owner-key-1';
+const USAGE_STATS = {
+  days: 7,
+  summary: { online_now: 3, visitors: 41, visits: 77, returning_pct: 29, busiest_minute: 5, busiest_at: 'Sat 11/21 11:02 am', searches: 12 },
+  daily: Array.from({ length: 7 }, (_, i) => ({ day: `2026-11-${String(16 + i).padStart(2, '0')}`, visitors: i + 2, visits: i + 4 })),
+  uses: [{ what: 'Events', visitors: 30 }, { what: 'Volleyball', visitors: 12 }],
+  cities: [{ place: 'Austin, TX', visitors: 33 }, { place: 'Houston, TX', visitors: 8 }],
+  searches: [{ q: 'roller skating', searches: 4, results: 0 }, { q: 'matcha', searches: 3, results: 5 }],
+  outs: [{ link: 'Instagram', taps: 9 }],
+  devices: [{ device_type: 'Phone', visitors: 35 }, { device_type: 'Computer', visitors: 6 }],
+};
+
 // --- server, browser, per-test page -------------------------------------------------------
 
 let server, origin, browser, context, page, apiCalls;
@@ -89,20 +101,28 @@ after(async () => {
 const titlesWithVenue = () => page.locator('#list .row .venue b').allTextContents();
 
 let pageErrors = [];
+let hits = []; // /api/hit batches the page sent (usage metrics)
 // The app defaults to Events; the sports tests open an explicit sports view (/?view=openplay
 // or a sport/region link, which the app also reads as sports). `waitFor` is what the page
 // shows when its data arrives (the events list in the Events view, the session list in Sports).
-async function open({ where = null, programs = null, schedule = SCHEDULE, courts = COURTS, events = null, apiCourts = { status: 500, body: '{"error":"down"}' }, index = null, regions = {}, occurrences = {}, maps = null, url = '/?view=openplay', timezoneId = 'America/Los_Angeles', clock = CLOCK, geolocation = null, touch = false, waitFor = '#list .row, #list .error, #list .empty' } = {}) {
+async function open({ where = null, programs = null, schedule = SCHEDULE, courts = COURTS, events = null, apiCourts = { status: 500, body: '{"error":"down"}' }, index = null, regions = {}, occurrences = {}, maps = null, url = '/?view=openplay', timezoneId = 'America/Los_Angeles', clock = CLOCK, geolocation = null, touch = false, usage = false, waitFor = '#list .row, #list .error, #list .empty' } = {}) {
   context = await browser.newContext({ timezoneId, locale: 'en-US', ...(geolocation ? { geolocation, permissions: ['geolocation'] } : {}), ...(touch ? { hasTouch: true } : {}) }); // viewer elsewhere: the page still shows Austin time
   page = await context.newPage();
   pageErrors = [];
   page.on('pageerror', (e) => pageErrors.push(e.message));
   await page.clock.setFixedTime(clock);
-  apiCalls = [];
+  apiCalls = []; hits = [];
+  if (usage) await page.addInitScript(() => localStorage.setItem('skelly.usage', 'on'));
   await page.route('**/*', (route) => {
     const u = new URL(route.request().url());
     if (u.origin !== origin) return route.abort(); // fonts, venues: never leave the machine
     const json = (v, status = 200) => route.fulfill({ status, contentType: 'application/json', body: typeof v === 'string' ? v : JSON.stringify(v) });
+    if (u.pathname === '/api/usage') { // the owner's Usage page: one good key
+      const key = JSON.parse(route.request().postData() || '{}').key;
+      if (key !== OWNER_KEY) return json({ error: 'wrong-key' }, 401);
+      return json(USAGE_STATS);
+    }
+    if (u.pathname === '/api/hit') { hits.push(JSON.parse(route.request().postData() || '{}')); return route.fulfill({ status: 204 }); }
     if (u.pathname.startsWith('/api/')) {
       apiCalls.push(u.pathname + u.search);
       if (u.pathname === '/api/courts') return json(apiCourts.body, apiCourts.status);
@@ -1272,6 +1292,58 @@ const MAPS_AUSTIN = { source: '20261107.pmtiles', maps: [{ region: 'austin', bbo
 const austinSched = () => { const s = structuredClone(SCHEDULE); s.region = { id: 'austin', name: 'Austin, TX', timezone: 'America/Chicago' }; return s; };
 const headings = () => page.locator('#events .ev-day').evaluateAll((els) => els.map((e) => [e.firstChild.textContent, e.querySelector('small').textContent]));
 
+test('site: usage: the page sends anonymous events (open, view, search, filter, detail, out), and none in a test browser by default', async () => {
+  await open({ events: EVENTS, url: '/', waitFor: '#events .row', usage: true });
+  await page.waitForTimeout(3300); // no city list in this fixture: the first event waits up to 3 s for it
+  await page.locator('#eventCats [data-sheet="sortSheet"]').click();
+  await page.locator('#sortOpts [data-evsort="ending"]').click();
+  await page.locator('#sortSheet [data-close]').first().click();
+  await page.locator('#events .row', { hasText: 'Matcha Cart' }).locator('details.more summary').click();
+  await page.waitForTimeout(100); // the toggle event comes a moment after the click
+  await page.evaluate(() => window.__skellyFlush());
+  await page.waitForTimeout(200);
+  const evs = hits.flatMap((h) => h.e);
+  assert.ok(hits.length >= 1 && /^[a-z0-9]{24}$/.test(hits[0].d) && /^[a-z0-9]{24}$/.test(hits[0].s), 'random device and session ids');
+  assert.deepEqual(evs.map((e) => e.n), ['open', 'filter', 'detail']);
+  assert.deepEqual(evs[0].p, { tab: 'events', region: 'austin', layout: 'list', how: 'all' });
+  assert.deepEqual(evs[1].p, { tab: 'events', what: 'sort', value: 'ending', region: 'austin' });
+  assert.equal(evs[2].p.kind, 'event');
+  // A search is sent once typing pauses, with its result count.
+  await page.locator('#q, #evQ, input[type="search"]').first().fill('matcha');
+  await page.waitForTimeout(1700);
+  await page.evaluate(() => window.__skellyFlush());
+  await page.waitForTimeout(200);
+  const search = hits.flatMap((h) => h.e).find((e) => e.n === 'search');
+  assert.deepEqual([search.p.q, search.p.results], ['matcha', 1]);
+  // Without the test switch an automated browser sends nothing.
+  await open({ events: EVENTS, url: '/', waitFor: '#events .row' });
+  assert.equal(await page.evaluate(() => typeof window.__skellyFlush), 'undefined');
+  assert.deepEqual(pageErrors, []);
+});
+
+test('site: Every week: weekly markets on their next day, then the ones without hours linked to where the hours are', async () => {
+  const feed = { ...EVENTS, events: [...EVENTS.events, { id: 'mkt-mueller', category: 'popup', kind: 'weekly', tags: [], title: "Texas Farmers' Market at Mueller", venue: "Texas Farmers' Market at Mueller", city: 'Austin', startDate: '2026-10-25', startTime: '10:00', endTime: '14:00', sourceUrl: 'https://www.openstreetmap.org/node/1', source: 'Weekly markets', description: 'Every Sunday, 10am–2pm.', region: 'austin', lat: 30.3, lng: -97.71, located: 'source' }],
+    markets: [{ id: 'node/2', name: 'Sunset Valley Farmers Market', city: 'Austin', region: 'austin', lat: 30.23, lng: -97.81, url: 'https://sunsetvalleyfarmersmarket.org/' }, { id: 'node/3', name: 'Lakeline Farmers Market', city: 'Cedar Park', region: 'austin', lat: 30.48, lng: -97.79 }, { id: 'node/4', name: 'Dallas Farmers Market', city: 'Dallas', region: 'dallas', lat: 32.77, lng: -96.79 }] };
+  await open({ events: feed, url: '/?type=weekly', waitFor: '#events .row' });
+  assert.deepEqual(await page.locator('#events .ev-row .title').allTextContents(), ["Texas Farmers' Market at Mueller"], 'only weekly markets');
+  assert.equal(await page.locator('#events .ev-row .ev-kick').textContent(), 'Farmers market·Every week');
+  const un = page.locator('#events .mk-unlisted');
+  assert.equal(await un.locator('h2').textContent(), 'Hours not listed2 more weekly markets · check the day before you go');
+  assert.deepEqual(await un.locator('.mk-name').evaluateAll((els) => els.map((e) => e.firstChild.textContent)), ['Lakeline Farmers Market', 'Sunset Valley Farmers Market'], 'this city only, by name');
+  const [lake, sunset] = await un.locator('.mk-go').all();
+  assert.equal(await sunset.textContent(), 'Hours on their site ↗');
+  assert.equal(await sunset.getAttribute('href'), 'https://sunsetvalleyfarmersmarket.org/');
+  assert.equal(await lake.textContent(), 'Hours on Google Maps ↗');
+  assert.equal(await lake.getAttribute('href'), 'https://www.google.com/maps/search/?api=1&query=Lakeline%20Farmers%20Market%2C%20Cedar%20Park');
+  assert.equal(await lake.getAttribute('target'), '_blank');
+  // The filter sheet counts them under Every week; All events doesn't list them.
+  await page.locator('#eventCats [data-sheet="eventsSheet"]').click();
+  assert.equal(await page.locator('#eventsOpts [data-evkind="weekly"] .n').textContent(), '3');
+  await page.locator('#eventsOpts [data-evkind="all"]').click();
+  assert.equal(await page.locator('#events .mk-unlisted').count(), 0);
+  assert.deepEqual(pageErrors, []);
+});
+
 test('site: Events cards lead with their topic; Sort orders the list, For you puts picked topics first', async () => {
   // Sun Oct 25 again. On now: Sunday Pop-up, Autumn Market, Matcha Cart (ending soonest first).
   await open({ events: EVENTS, url: '/', waitFor: '#events .row' });
@@ -1478,11 +1550,12 @@ test('site: Events map: one pin per venue; a pin opens the place sheet (readable
   await sheet.waitFor();
   assert.equal(await sheet.locator('.v-name').evaluate((e) => e.firstChild.textContent), 'Zilker Park');
   assert.equal(await sheet.locator('.v-name small').textContent(), 'Austin · 2 events', 'no repeat of the name ("Zilker" is in it)');
-  assert.deepEqual(await sheet.locator('.pop-item .pop-w b').allTextContents(), ['Autumn Market', 'Dia de los Muertos']);
-  assert.deepEqual(await sheet.locator('.pop-item .ev-kick').allTextContents(), ['Seasonal', 'Culture'], 'each event leads with its topic');
-  assert.equal(await sheet.locator('.pop-item .ev-what').first().textContent(), 'Local makers and food trucks under the oaks.');
-  assert.deepEqual(await sheet.locator('.pop-item .pop-t').allTextContents(), ['Thru Fri Oct 3010am–6pm', 'Sun Nov 1']);
-  assert.equal(await sheet.locator('.pop-item a.src').first().getAttribute('href'), 'https://example.test/autumn');
+  // Each event is the same card as in the list (components/EventCard.tsx).
+  assert.deepEqual(await sheet.locator('.ev-row .title').allTextContents(), ['Autumn Market', 'Dia de los Muertos']);
+  assert.deepEqual(await sheet.locator('.ev-row .ev-kick').allTextContents(), ['Seasonal', 'Culture'], 'each event leads with its topic');
+  assert.equal(await sheet.locator('.ev-row .ev-what').first().textContent(), 'Local makers and food trucks under the oaks.');
+  assert.deepEqual(await sheet.locator('.ev-row .time').allTextContents(), ['Thru FriOct 3010am–6pm', 'SunNov 1Hours on the event page']);
+  assert.equal(await sheet.locator('.ev-row a.ev-go').first().getAttribute('href'), 'https://example.test/autumn');
   assert.match(await sheet.locator('.location .actions').textContent(), /Google Maps/);
   assert.equal(await page.locator('.maplibregl-popup').count(), 0, 'no MapLibre popup any more');
   // Theme colours: the sheet's text and background come from the page's own tokens.
@@ -1898,8 +1971,8 @@ test('site: Add to calendar on an event and on a session: Google Calendar filled
   await open({ index: AUSTIN_ONLY, regions: { austin: austinSched() }, maps: MAPS_AUSTIN, events: EVENTS_MAP, url: '/?view=events&layout=map', waitFor: '#map .pin' });
   await page.locator('#map .pin[data-pin="event:30.26720,-97.77290"]').click();
   await page.locator('#placeSheet').waitFor();
-  assert.equal(await page.locator('#placeSheet .pop-item .cal-add').count(), await page.locator('#placeSheet .pop-item').count(), 'one per event in the sheet');
-  await page.locator('#placeSheet .pop-item .cal-add').first().click();
+  assert.equal(await page.locator('#placeSheet .ev-row .cal-add').count(), await page.locator('#placeSheet .ev-row').count(), 'one per event in the sheet');
+  await page.locator('#placeSheet .ev-row .cal-add').first().click();
   assert.equal(new URL(await page.locator('#calOpts a').first().getAttribute('href')).hostname, 'calendar.google.com');
   assert.deepEqual(pageErrors, []);
 });
@@ -1949,8 +2022,8 @@ test('site: the map\'s place sheet and rows show an event\'s hours, or say where
   await page.locator('#mapPanel .place-row').first().waitFor();
   for (const row of await page.locator('#mapPanel .place-row').all()) {
     await row.click();
-    await page.locator('#placeSheet .pop-item').first().waitFor();
-    for (const item of await page.locator('#placeSheet .pop-item').all()) {
+    await page.locator('#placeSheet .ev-row').first().waitFor();
+    for (const item of await page.locator('#placeSheet .ev-row').all()) {
       const text = await item.textContent();
       assert.match(text, /\d(:\d\d)?\s?(am|pm)|Hours on the (post|event page)|Hours not listed/i, `every event says when or where to find out: ${text}`);
     }
@@ -2086,5 +2159,55 @@ test('site: a first visit opens on the city nearest the visitor (asked of the si
   await open({ index: two, regions, events: EVENTS, url: '/', waitFor: '#regionPick option[value="dallas"]', where: null });
   await page.waitForTimeout(400);
   assert.equal(await page.locator('#regionPick').inputValue(), 'austin');
+  assert.deepEqual(pageErrors, []);
+});
+
+test('site: usage page: locked until the owner key, then the totals; the Usage tab shows on that device only', async () => {
+  await open({ url: '/', events: EVENTS, waitFor: '#events .row' });
+  assert.equal(await page.locator('#usageTab').isVisible(), false, 'no Usage tab for visitors');
+  await page.goto(`${origin}/usage.html`);
+  await page.locator('#lock').waitFor();
+  await page.fill('#key', 'not-the-key-123');
+  await page.click('#lock button[type=submit]');
+  await page.locator('#lockMsg', { hasText: "didn't work" }).waitFor();
+  assert.equal(await page.locator('#stats').isVisible(), false);
+  await page.fill('#key', OWNER_KEY);
+  await page.click('#lock button[type=submit]');
+  await page.locator('#stats').waitFor();
+  assert.equal(await page.locator('#k-visitors').textContent(), '41');
+  assert.equal(await page.locator('#k-returning').textContent(), '29%');
+  assert.equal(await page.locator('#daily .us-col').count(), 7);
+  assert.equal(await page.locator('#searches tr.us-zero').count(), 1, 'a search that found nothing is highlighted');
+  assert.equal(await page.locator('#cities .us-bar').count(), 2);
+  await page.goto(`${origin}/`);
+  await page.locator('#usageTab').waitFor({ state: 'visible' });
+  await page.goto(`${origin}/usage.html`);
+  await page.locator('#stats').waitFor();
+  await page.click('#forget');
+  await page.locator('#lock').waitFor();
+  assert.deepEqual(pageErrors, []);
+});
+
+test('site: Events list (Preact): an open Details stays open when the list redraws (a new sort)', async () => {
+  await open({ events: EVENTS, url: '/', waitFor: '#events .row' });
+  const card = page.locator('#events .ev-row', { hasText: 'Matcha Cart' });
+  await card.locator('details.more summary').click();
+  assert.equal(await card.locator('details.more').getAttribute('open'), '');
+  await page.locator('#eventCats [data-sheet="sortSheet"]').click();
+  await page.locator('#sortOpts [data-evsort="ending"]').click();
+  await page.locator('#sortSheet [data-close]').first().click();
+  assert.equal(await page.locator('#eventCats [data-sheet="sortSheet"]').textContent().then((t) => t.includes('Ending soon')), true, 'the list was redrawn with the new sort');
+  assert.equal(await card.locator('details.more').getAttribute('open'), '', 'still open');
+  assert.deepEqual(pageErrors, []);
+});
+
+test('site: Sports list (Preact): an open Details stays open when the list redraws', async () => {
+  await open();
+  const first = page.locator('#list > .row').first(); // not one folded under "ended earlier today"
+  const title = await first.locator('.title').textContent();
+  await first.locator('details.more summary').click();
+  await page.locator('#showAll').check();
+  const again = page.locator('#list > .row', { has: page.locator('.title', { hasText: title }) }).first();
+  assert.equal(await again.locator('details.more').getAttribute('open'), '', 'still open after the list was redrawn');
   assert.deepEqual(pageErrors, []);
 });

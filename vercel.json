@@ -1,8 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "",
-  "outputDirectory": "public",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "git": {
     "deploymentEnabled": {
       "data": false,
@@ -28,6 +28,9 @@
     "api/add-source.js": {
       "maxDuration": 30,
       "includeFiles": "config/**"
+    },
+    "api/usage.js": {
+      "maxDuration": 10
     },
     "api/where.js": {
       "maxDuration": 5,

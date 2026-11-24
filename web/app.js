@@ -9,12 +9,22 @@
 // A visitor loads one region. Times are shown in the region's own time zone, wherever the viewer is.
 
 // The Events view's pure helpers (pagination, date ranges, map places, the dropdown's state).
+import { startPings, track } from './usage.js';
 import { TIME_PRESETS, inWindow, parseWindow, presetOf, toHHMM, windowLabel, windowNote } from './when.js';
 import { googleCalendarUrl, icsFile, icsName, visitItem } from './calendar.js';
 import { EVENT_ICONS, eventIcon, eventTopics, SEARCH_TAGS, highlightParts, matchesText, searchTagLabel, searchTags, sessionText, tagCounts } from './search.js';
 import { placeGroups } from './events-ui.js';
 import { EVENT_KINDS, EVENT_SORTS, EVENT_TAGS, countEvents, eventSummary, isEventSort, lastChance, sortGroup, eventCta, eventDateRange, eventGroups, eventKind, eventPlaceParts, eventPlaces, eventTags, avatarPath, eventWhen, eventsForRegion, filterEvents, isEventKind, isEventTag, isOn, kindLabel, sortEvents, tagLabel } from './events-ui.js';
 import { pagesBase } from './pages.js';
+import { drawEventsList } from './components/EventsList.tsx';
+import { drawSessionsList } from './components/SessionsList.tsx';
+import { drawPrograms } from './components/ProgramsList.tsx';
+import { drawMapPanel, drawPlaceSheet } from './components/MapPanel.tsx';
+import { drawActs, drawAddFor, drawAddResult, drawCalErrors, drawCalOpts, drawCalPick, drawCityOptions, drawFooter } from './components/Sheets.tsx';
+import { drawBookingRows, drawCourts, drawSourceList, drawSubscribe, drawVenueCalendars } from './components/SportsPanels.tsx';
+import { drawDays, drawEventsCount, drawHosts, drawLayoutButton, drawLevelOptions, drawModes, drawPillLabel, drawSportOptions, drawTopicChips } from './components/Controls.tsx';
+import { drawEventPills, drawKindSheet, drawSortSheet } from './components/EventsControls.tsx';
+import { eventHours as hoursOf, eventVisualHtml } from './components/EventCard.tsx';
 const PAGES = await pagesBase(); // '' next to the page, or the GitHub Pages address that answers (public/pages.js)
 
 // Each sport's filter tabs (`by`: the session field they filter on, `tabs`: its values, labels and
@@ -389,9 +399,8 @@ function openCalSheet(key, opener) {
     calPick = { key, date, time: item.start ?? '', min: first, max: item.endDate };
   }
   $('calPick').hidden = !run;
-  $('calPick').innerHTML = run ? `<h3 class="opt-h">When are you going?</h3><div class="when-range on"><label class="when-field"><span>Day</span><input type="date" id="calDay" min="${calPick.min}" max="${calPick.max}" value="${calPick.date}"></label><label class="when-field"><span>Time</span><input type="time" id="calTime" step="900" value="${esc(calPick.time)}"></label></div><p class="note" id="calPickNote" style="margin:0"></p>` : '';
-  $('calOpts').innerHTML = `<a class="tab opt" id="calGoogle" href="${esc(googleCalendarUrl(item))}" target="_blank" rel="noopener" data-close><span class="lbl">Google Calendar<small>Opens with everything filled in</small></span><span aria-hidden="true">↗</span></a>
-    <a class="tab opt" id="calApple" href="${esc(file)}"${IOS ? '' : ` download="${esc(icsName(item.title))}"`} data-close data-ics><span class="lbl">Apple Calendar<small>Also Outlook and others (a calendar file)</small></span><span aria-hidden="true">↓</span></a>`;
+  drawCalPick($('calPick'), run ? { min: calPick.min, max: calPick.max, date: calPick.date, time: calPick.time, note: '' } : null);
+  drawCalOpts($('calOpts'), { google: googleCalendarUrl(item), file, download: IOS ? null : icsName(item.title) });
   if (run) calLinks();
   openSheet('calSheet', opener);
 }
@@ -400,9 +409,10 @@ function calLinks() {
   const item = calItems.get(calPick?.key);
   if (!item) return;
   const it = visitItem(item, calPick.date, calPick.time);
-  $('calGoogle').href = googleCalendarUrl(it);
-  $('calApple').href = `data:text/calendar;charset=utf-8,${encodeURIComponent(icsFile(it, { uid: `${calPick.key}:${calPick.date}` }))}`;
-  $('calPickNote').textContent = `Adds ${fmtDate(calPick.date)}${it.start ? `, ${fmtT(it.start)}–${fmtT(it.end)}` : ', all day'}. It runs ${fmtDate(item.date)} to ${fmtDate(item.endDate)}.`;
+  const file = `data:text/calendar;charset=utf-8,${encodeURIComponent(icsFile(it, { uid: `${calPick.key}:${calPick.date}` }))}`;
+  drawCalOpts($('calOpts'), { google: googleCalendarUrl(it), file, download: IOS ? null : icsName(item.title) });
+  drawCalPick($('calPick'), { min: calPick.min, max: calPick.max, date: calPick.date, time: calPick.time,
+    note: `Adds ${fmtDate(calPick.date)}${it.start ? `, ${fmtT(it.start)}–${fmtT(it.end)}` : ', all day'}. It runs ${fmtDate(item.date)} to ${fmtDate(item.endDate)}.` });
 }
 $('calPick').addEventListener('input', (e) => {
   if (!calPick) return;
@@ -428,31 +438,9 @@ function locationHtml(x) {
     <button class="src copy-address" type="button" data-address="${esc(venue.address)}">Copy address</button>
     <span class="copy-status" role="status"></span></div></div>`;
 }
+/** A venue's name and address for the Location block, or null without an address. */
+const placeOf = (venueId) => { const v = schedule?.venues?.find((x) => x.id === venueId); return v?.address ? { name: v.name, address: v.address } : null; };
 
-// A rescheduled session says where it was ("Moved from Fri 7pm"); see lib/consolidate.js.
-// A source that failed keeps its last good sessions (#46): say so on the card, with when it was
-// last confirmed and a link to the source, so nobody drives to a session that may be cancelled.
-function recheckHtml(x) {
-  if (x.f.k !== 'recheck') return '';
-  const last = x.verifiedAt === NOW.iso ? 'earlier today' : fmtDate(x.verifiedAt);
-  const src = x.source ? ` <a class="src" href="${esc(x.source)}" target="_blank" rel="noopener">Check the source ↗</a>` : '';
-  return `<div class="recheck-note">Its source couldn't be read just now. Last confirmed ${esc(last)}.${src}</div>`;
-}
-function movedHtml(x) {
-  if (x.status !== 'rescheduled' || !x.previousStart) return '';
-  const [d, t] = x.previousStart.split(' ');
-  const when = d === x.date ? fmtT(t) : `${fmtDate(d)}, ${fmtT(t)}`;
-  return `<div class="moved">Moved from ${esc(when)}</div>`;
-}
-// How full it is, only from what the source itself says (#21 busyness v1): spots left out of the
-// cap, full / waitlist, or just the cap. Labelled with the source and checked at the last scrape.
-function capacityHtml(x) {
-  const from = `from ${sourceName(x.fieldSources?.spotsLeft ?? x.sourceId)} at the last check`;
-  if (x.full) return `<span class="cap full" title="${esc(from)}">· Full${x.waitlist ? ` · ${esc(x.waitlist)} on waitlist` : ''}</span>`;
-  if (Number.isFinite(x.spotsLeft) && x.capacity) return `<span class="cap" title="${esc(from)}">· ${x.spotsLeft} of ${x.capacity} spots left</span>`;
-  if (x.capacity) return `<span class="cap" title="${esc(from)}">· up to ${x.capacity}</span>`;
-  return '';
-}
 const sourceName = (id) => schedule?.sources?.find((s) => s.id === id)?.name ?? (id === 'manual' ? 'hand-checked' : id);
 // The same session listed by other sources (merged into this card): a link to each.
 const alsoOnHtml = (x) => (x.alsoOn || []).map((a) => `<a class="src also" href="${esc(a.signup?.url || a.source || '#')}" target="_blank" rel="noopener">Also on ${esc(sourceName(a.sourceId))} ↗</a>`).join('');
@@ -460,12 +448,12 @@ const alsoOnHtml = (x) => (x.alsoOn || []).map((a) => `<a class="src also" href=
 /** Each source for this sport: name, ok or not, how long ago it was checked, sessions found. */
 function renderSourceList() {
   const list = (schedule?.sources || []).filter((s) => (s.sport || 'volleyball') === state.sport);
-  $('sourceList').innerHTML = list.map((s) => `<li class="${s.ok ? 'ok' : 'bad'}"><b>${esc(s.name || s.id)}</b>
-    <span>${s.ok ? '✓' : '⚠'} ${s.checkedAt ? `checked ${ago(s.checkedAt)}` : ''}${s.ok ? ` · ${s.count} session${s.count === 1 ? '' : 's'}` : ` · couldn't read, showing last good copy`}</span>
-    ${(s.warnings || []).map((w) => `<div class="note">${esc(w)}</div>`).join('')}</li>`).join('');
+  drawSourceList($('sourceList'), list.map((s) => ({ key: s.id, ok: !!s.ok, name: s.name || s.id,
+    line: `${s.ok ? '✓' : '⚠'} ${s.checkedAt ? `checked ${ago(s.checkedAt)}` : ''}${s.ok ? ` · ${s.count} session${s.count === 1 ? '' : 's'}` : ` · couldn't read, showing last good copy`}`,
+    warnings: s.warnings || [] })));
   // Calendar subscription for this sport (public/data/<sport>.ics, rebuilt every scrape).
   const ics = new URL(`${regionData()}${state.sport}.ics`, location.href);
-  $('subscribe').innerHTML = `📅 <a href="${esc(ics.href.replace(/^https?:/, 'webcal:'))}">Subscribe in your calendar</a> to see ${esc(SPORTS[state.sport].label.toLowerCase())} here, updated hourly · <button type="button" class="copy-cal" data-copy="${esc(ics.href)}" title="For calendars that add a subscription from a link, such as Google Calendar's 'From URL'">Copy calendar link</button>`;
+  drawSubscribe($('subscribe'), { webcal: ics.href.replace(/^https?:/, 'webcal:'), https: ics.href, sport: SPORTS[state.sport].label.toLowerCase() });
 }
 
 // ---------- render ----------
@@ -483,13 +471,15 @@ function renderRegion() {
   $('nearest').title = label;
   $('nearest').setAttribute('aria-pressed', String(!!here));
   if (many) {
-    $('regionPick').innerHTML = list.map((r) => `<option value="${esc(r.id)}" ${r.id === region?.id ? 'selected' : ''}>${esc(r.name)}</option>`).join('');
+    drawCityOptions($('regionPick'), list.map((r) => ({ id: r.id, name: r.name })), region?.id ?? null);
   }
 }
 
 /** The header's Events | Sports switch. Sports opens the sport sheet (the sport picker). */
 function renderTopTabs() {
   const tabs = $('topTabs');
+  // Usage: only where the owner unlocked usage.html on this device (the key is checked by the server there).
+  try { $('usageTab').hidden = !localStorage.getItem('skelly.owner'); } catch {}
   tabs.querySelector('[data-section="events"]').setAttribute('aria-pressed', String(state.section === 'events'));
   tabs.querySelector('[data-section="sports"]').setAttribute('aria-pressed', String(state.section === 'sports'));
 }
@@ -500,7 +490,7 @@ function renderSports() {
   const list = Object.entries(SPORTS).filter(([k]) => k === state.sport || offered.has(k) || today.some((x) => sportOf(x) === k));
   // The sport sheet lists the sports; a redraw while it's open keeps focus on the option that had it.
   const focused = $('sportSheet').open && document.activeElement?.dataset.sport;
-  $('sportsOpts').innerHTML = list.map(([k, sp]) => `<button type="button" class="tab opt sport" aria-pressed="${state.section === 'sports' && state.sport === k}" data-sport="${k}"><span class="lbl">${esc(sp.label)}<small>${esc(sp.menu)}</small></span></button>`).join('');
+  drawSportOptions($('sportsOpts'), list.map(([k, sp]) => ({ id: k, label: sp.label, menu: sp.menu, on: state.section === 'sports' && state.sport === k })));
   if (focused) $('sportsOpts').querySelector(`[data-sport="${CSS.escape(focused)}"]`)?.focus();
 }
 
@@ -510,7 +500,7 @@ function renderTabs() {
   const off = !sp.by || (sp.filter && state.view === 'booking');
   $('tabs').hidden = off;
   $('levelBtn').hidden = off;
-  if (!sp.by) { $('tabs').innerHTML = ''; return; }
+  if (!sp.by) { drawLevelOptions($('tabs'), []); return; }
   const opts = [['all', sp.filter ? 'All levels' : 'All', null, sp.filter ? 'Everything on the day' : 'Every court type'], ...Object.entries(tabsOf(state.sport)).map(([k, v]) => [k, v.label, v.c, v.desc])];
   const isIn = (x, k) => k === 'all' || (sp.filter ? sp.filter.match(x, k) : x[sp.by] === k);
   // Counts are for the day being viewed, so they match the list the option leads to.
@@ -518,17 +508,14 @@ function renderTabs() {
   const focused = $('levelSheet').open && document.activeElement?.dataset.tab;
   // Booking counts no sessions, so it shows (and announces) no count.
   const counting = state.view !== 'booking';
-  $('tabs').innerHTML = opts.map(([k, l, c, d]) => {
-    const n = counting ? day.filter((x) => isIn(x, k)).length : 0;
-    return `<button type="button" class="tab opt" aria-pressed="${state.tab === k}" data-tab="${esc(k)}" ${c ? `style="--c:${c}"` : ''}>${c ? '<span class="dot"></span>' : ''}<span class="lbl">${l}${d ? `<small>${esc(d)}</small>` : ''}</span><span class="n" aria-hidden="true">${n || ''}</span>${counting ? `<span class="vh">, ${n} session${n === 1 ? '' : 's'}</span>` : ''}</button>`;
-  }).join('');
+  drawLevelOptions($('tabs'), opts.map(([k, l, c, d]) => ({ id: k, label: l, color: c, desc: d, n: counting ? day.filter((x) => isIn(x, k)).length : 0, counting, on: state.tab === k })));
   if (focused) $('tabs').querySelector(`[data-tab="${CSS.escape(focused)}"]`)?.focus();
   const what = sp.filter ? 'Level' : 'Court type';
   $('levelSheetTitle').textContent = what;
   $('levelNote').textContent = sp.filter ? 'Read from each listing\'s words: Beginner / Intermediate / Advanced, a DUPR range or "Level N". Sessions that don\'t say show under every level.' : '';
   $('levelNote').hidden = !sp.filter;
   const cur = state.tab !== 'all' && tabsOf(state.sport)[state.tab];
-  $('levelBtn').innerHTML = `${cur ? esc(cur.label) : sp.filter ? 'Any level' : 'All courts'} <span class="caret" aria-hidden="true">▾</span>`;
+  drawPillLabel($('levelBtn'), cur ? cur.label : sp.filter ? 'Any level' : 'All courts');
   $('levelBtn').classList.toggle('on', !!cur);
   $('levelBtn').setAttribute('aria-label', `${what}: ${cur ? cur.label : 'any'}. Change ${what.toLowerCase()}`);
 }
@@ -536,14 +523,12 @@ function renderTabs() {
 function renderDays() {
   // Always shown: booking and sign-up links open on the chosen day where the venue's site allows it.
   $('days').hidden = false;
-  $('days').innerHTML = WEEK.map((iso, i) => {
+  drawDays($('days'), WEEK.map((iso, i) => {
     const list = state.view === 'booking' ? [] : sessionsOn(iso).filter((x) => !hidden(x.f));
-    const kinds = [...new Map(list.map((x) => [tabOf(x).c, tabOf(x)])).values()];
+    const pips = [...new Set(list.map((x) => tabOf(x).c))];
     const d = dowOf(iso);
-    return `<button class="day" aria-pressed="${state.di === i}" data-di="${i}" data-iso="${iso}" aria-label="${DAY_LONG[d]} ${+iso.slice(8)}${state.view === 'booking' ? ', court bookings' : `, ${list.length} sessions`}">
-      <span class="dn">${i === 0 ? 'Today' : DAYS[d]}</span><span class="dd">${+iso.slice(8)}</span>
-      <span class="pips">${kinds.map((k) => `<span class="pip" style="background:${k.c}"></span>`).join('')}</span></button>`;
-  }).join('');
+    return { i, iso, name: i === 0 ? 'Today' : DAYS[d], date: +iso.slice(8), label: `${DAY_LONG[d]} ${+iso.slice(8)}${state.view === 'booking' ? ', court bookings' : `, ${list.length} sessions`}`, on: state.di === i, pips };
+  }));
 }
 
 // The fine print, folded away: address and directions, the source's note, and where the listing
@@ -560,12 +545,55 @@ document.addEventListener('toggle', (e) => {
   if (e.target.matches?.('details.earlier')) earlierOpen = e.target.open;
   // Opening an event's details puts it in the address, so the link shared from there opens on it.
   const card = e.target.matches?.('.ev-row details.more') ? e.target.closest('.ev-row') : null;
+  if (e.target.open && e.target.matches?.('details.more')) {
+    const row = e.target.closest('.row');
+    track('detail', { tab: state.section, sport: state.section === 'sports' ? state.sport : undefined, kind: row?.classList.contains('ev-row') ? 'event' : 'session', source: row?.querySelector('.via')?.textContent?.replace(/^Found via /, '').slice(0, 40), region: usageRegion() });
+  }
   if (card?.dataset.ev) {
     if (e.target.open) evLink = card.dataset.ev; else if (evLink === card.dataset.ev) evLink = null;
     for (const r of document.querySelectorAll('.ev-row.linked')) if (r !== card || !e.target.open) r.classList.remove('linked');
     syncUrl();
   }
 }, true);
+/**
+ * What the day list says about one session (components/SessionsList.tsx draws it). A source that
+ * failed keeps its last good sessions (#46): the card says so, with when it was last confirmed and a
+ * link to the source. A rescheduled session says where it was ("Moved from Fri 7pm", lib/consolidate.js).
+ * How full it is comes only from what the source says (#21): spots left of the cap, full / waitlist, or the cap.
+ */
+function sessionView(x, { isToday, ended }) {
+  const past = ended(x);
+  const live = isToday && x.start && x.end && mins(x.start) <= NOW.minutes && NOW.minutes < mins(x.end) && x.f.k !== 'canceled';
+  const mi = milesTo(x.venueId);
+  const off = x.f.k === 'expired' || x.f.k === 'canceled';
+  const s = x.signup || {}, url = onDay(s.url, x.date || x.on); // a shared calendar link opens on this session's day
+  const signup = off ? { kind: 'none' } : url && !s.dropIn ? { kind: 'link', url, label: s.label || 'Sign up' } : url ? { kind: 'dropin', label: s.label || 'Drop in', url } : s.label ? { kind: 'dropin', label: s.label } : { kind: 'none' };
+  const from = `from ${sourceName(x.fieldSources?.spotsLeft ?? x.sourceId)} at the last check`;
+  const capacity = x.full ? { cls: 'cap full', text: `· Full${x.waitlist ? ` · ${x.waitlist} on waitlist` : ''}`, title: from }
+    : Number.isFinite(x.spotsLeft) && x.capacity ? { cls: 'cap', text: `· ${x.spotsLeft} of ${x.capacity} spots left`, title: from }
+      : x.capacity ? { cls: 'cap', text: `· up to ${x.capacity}`, title: from } : null;
+  let moved = null;
+  if (x.status === 'rescheduled' && x.previousStart) { const [d, t] = x.previousStart.split(' '); moved = d === x.date ? fmtT(t) : `${fmtDate(d)}, ${fmtT(t)}`; }
+  const calKey = off ? null : `s:${x.id}:${x.date || x.on || WEEK[state.di]}`;
+  if (calKey) calItems.set(calKey, sessionCalItem(x));
+  const details = detailsHtml(x);
+  return {
+    key: `${x.id}|${x.date || x.on || ''}`,
+    dim: ['expired', 'unverified', 'canceled'].includes(x.f.k), unsure: x.f.k === 'recheck', past,
+    start: fmtT(x.start), end: x.end ? 'to ' + fmtT(x.end) : '',
+    title: x.title, titleHtml: hl(x.title),
+    pill: { cls: live ? 'fresh' : x.f.k, label: live ? (x.scheduleBasis ? 'Scheduled now' : 'Happening now') : x.f.l },
+    venue: x.venue, where: ` · ${x.city}${mi != null ? ` · ${fmtMiles(mi)}` : ''}`,
+    surface: { label: tabOf(x).label, color: tabOf(x).c },
+    chips: byOf(x) === 'surface' ? [x.type] : x.surface && x.surface !== 'indoor' ? [cap(x.surface)] : [],
+    extras: [x.rink, x.level, x.price ? `· ${x.price}` : ''].filter(Boolean),
+    capacity,
+    recheck: x.f.k === 'recheck' ? { last: x.verifiedAt === NOW.iso ? 'earlier today' : fmtDate(x.verifiedAt), source: x.source || null } : null,
+    moved, fit: windowNote(x.start, x.end, activeWindow()) || '',
+    signup, calKey, calTitle: x.title,
+    detailsHtml: details.slice('<details class="more"><summary>Details</summary>'.length, -'</details>'.length),
+  };
+}
 function renderList() {
   const iso = WEEK[state.di], isToday = state.di === 0;
   $('dayTitle').textContent = (isToday ? 'Today · ' : state.di === 1 ? 'Tomorrow · ' : '') + fmtDate(iso, { weekday: 'long', month: 'short', day: 'numeric' });
@@ -573,58 +601,45 @@ function renderList() {
   const shown = all.filter((x) => !hidden(x.f));
   // Today, sessions that have ended fold into one line at the top, so the first thing on a phone is
   // what's on now and next; the "Now" heading sits above them. Other days list in time order.
-  const nowLabel = `<div class="now">Now · ${fmtT(hhmm(NOW.minutes))}</div>`;
   const ended = (x) => isToday && x.end && mins(x.end) <= NOW.minutes;
-  const card = (x) => {
-    const past = ended(x);
-    const live = isToday && x.start && x.end && mins(x.start) <= NOW.minutes && NOW.minutes < mins(x.end) && x.f.k !== 'canceled';
-    return `<div class="row ${['expired', 'unverified', 'canceled'].includes(x.f.k) ? 'dim' : ''} ${x.f.k === 'recheck' ? 'unsure' : ''} ${past ? 'past' : ''}">
-      <div class="time">${fmtT(x.start)}<small>${x.end ? 'to ' + fmtT(x.end) : ''}</small></div>
-      <div class="body">
-        <div class="t1"><span class="title">${hl(x.title)}</span><span class="pill ${live ? 'fresh' : x.f.k}">${live ? (x.scheduleBasis ? 'Scheduled now' : 'Happening now') : x.f.l}</span></div>
-        <div class="venue"><b>${esc(x.venue)}</b> · ${esc(x.city)}${milesTo(x.venueId) != null ? ` · ${fmtMiles(milesTo(x.venueId))}` : ''}</div>
-        <div class="meta"><span class="chip surf" style="--c:${tabOf(x).c}">${esc(tabOf(x).label)}</span>${byOf(x) === 'surface' ? `<span class="chip">${esc(x.type)}</span>` : x.surface && x.surface !== 'indoor' ? `<span class="chip">${esc(cap(x.surface))}</span>` : ''}${x.rink ? `<span>${esc(x.rink)}</span>` : ''}${x.level ? `<span>${esc(x.level)}</span>` : ''}${x.price ? `<span>· ${esc(x.price)}</span>` : ''}${capacityHtml(x)}</div>
-        ${recheckHtml(x)}${movedHtml(x)}${fitHtml(x.start, x.end)}
-        <div class="actions">${signupHtml(x)}${x.f.k === 'expired' || x.f.k === 'canceled' ? '' : calButton(`s:${x.id}:${x.date || x.on || WEEK[state.di]}`, sessionCalItem(x))}</div>
-        ${detailsHtml(x)}
-      </div></div>`;
-  };
+  const view = (x) => sessionView(x, { isToday, ended });
   const earlier = shown.filter(ended), rest = shown.filter((x) => !ended(x));
-  let html = '';
-  if (earlier.length) html += `<details class="earlier"${earlierOpen ? ' open' : ''}><summary>${earlier.length} ended earlier today</summary>${earlier.map(card).join('')}</details>`;
-  if (isToday && rest.length) html += nowLabel;
-  else if (isToday && earlier.length) html += `<div class="empty"><b>Nothing else today.</b> <button type="button" class="linkish" data-di="1">See tomorrow</button></div>`;
-  html += rest.map(card).join('');
   const hiddenN = all.length - shown.length;
+  let empty = null;
   if (!shown.length) {
     const sp = SPORTS[state.sport];
     const label = state.tab === 'all' || !tabsOf(state.sport)[state.tab] ? '' : tabsOf(state.sport)[state.tab].label.toLowerCase() + ' ';
     const hint = !sp.courts ? sp.empty
-      : state.tab === 'grass' ? `Grass has no scheduled play${region ? ` in ${esc(region.name.split(',')[0])}` : ''}. Choose Court booking to find public courts.` : 'Choose Court booking to see rental availability and free public courts.';
-    html = `<div class="empty"><b>No confirmed ${label}${sp.noun}${isToday ? ' today' : ''}.</b> ${hiddenN ? `${hiddenN} ended, canceled or unconfirmed hidden. ` : ''}${hint}</div>`;
-  } else if (hiddenN) html += `<div class="empty">${hiddenN} ended, canceled or unconfirmed session${hiddenN > 1 ? 's' : ''} hidden.</div>`;
-  $('list').innerHTML = (isToday ? headsUpHtml() : '') + html;
+      : state.tab === 'grass' ? `Grass has no scheduled play${region ? ` in ${region.name.split(',')[0]}` : ''}. Choose Court booking to find public courts.` : 'Choose Court booking to see rental availability and free public courts.';
+    empty = { lead: `No confirmed ${label}${sp.noun}${isToday ? ' today' : ''}.`, hidden: hiddenN ? `${hiddenN} ended, canceled or unconfirmed hidden. ` : '', hint };
+  }
+  drawSessionsList($('list'), {
+    status: 'list',
+    headsUp: isToday ? headsUp() : null,
+    earlier: empty ? [] : earlier.map(view), earlierOpen,
+    now: !empty && isToday && rest.length ? `Now · ${fmtT(hhmm(NOW.minutes))}` : null,
+    nothingElse: !empty && isToday && !rest.length && earlier.length > 0,
+    rest: empty ? [] : rest.map(view),
+    empty,
+    hiddenNote: !empty && hiddenN ? `${hiddenN} ended, canceled or unconfirmed session${hiddenN > 1 ? 's' : ''} hidden.` : '',
+  });
 }
 
 function renderVenueCalendars() {
   const venues = (schedule?.venues || []).filter((v) => v.calendarLink?.sport === state.sport && /^https?:\/\//.test(v.calendarLink.url));
   $('venueCalendarsCard').hidden = state.view === 'booking' || !venues.length;
-  $('venueCalendars').innerHTML = venues.map((v) => `<div class="venue-calendar">
-    <b>${esc(v.name)}</b> · ${esc(v.city)}${locationHtml({ venueId: v.id })}
-    <p class="note">${esc(v.calendarLink.note)}</p>
-    ${v.calendarLink.details?.length ? (v.calendarLink.reviewBy && NOW.iso > v.calendarLink.reviewBy
-      ? '<p class="note">Hours and general prices need rechecking. See the venue website for current details.</p>'
-      : `${v.calendarLink.details.map((d) => `<p class="note"><b>${esc(d.label)}:</b> ${esc(d.text)} ${/^https?:\/\//.test(d.url) ? `<a class="src" href="${esc(d.url)}" target="_blank" rel="noopener">Source ↗</a>` : ''}</p>`).join('')}<p class="note">Details checked ${esc(v.calendarLink.reviewedOn)} · Austin local time</p>`)
-      : ''}
-    <a class="src" href="${esc(onDay(v.calendarLink.url, WEEK[state.di]))}" target="_blank" rel="noopener">View venue calendar ↗</a>
-  </div>`).join('');
+  drawVenueCalendars($('venueCalendars'), venues.map((v) => ({
+    key: v.id, name: v.name, city: v.city, place: placeOf(v.id), note: v.calendarLink.note,
+    stale: !!(v.calendarLink.reviewBy && NOW.iso > v.calendarLink.reviewBy),
+    details: (v.calendarLink.details ?? []).map((d) => ({ label: d.label, text: d.text, url: /^https?:\/\//.test(d.url) ? d.url : null })),
+    reviewedOn: v.calendarLink.reviewedOn, url: onDay(v.calendarLink.url, WEEK[state.di]),
+  })));
 }
 
 function renderCalendarModes() {
   const supportsBooking = ['volleyball', 'pickleball'].includes(state.sport);
   $('calendarModes').hidden = !supportsBooking;
-  $('calendarModes').innerHTML = supportsBooking ? [['openplay', 'Open play'], ['booking', 'Court bookings'], ['leagues', 'Leagues'], ['tournaments', 'Tournaments']]
-    .map(([value, label]) => `<button class="seg-btn" type="button" data-view="${value}" aria-pressed="${state.view === value}">${label}</button>`).join('') : '';
+  drawModes($('calendarModes'), supportsBooking ? [['openplay', 'Open play'], ['booking', 'Court bookings'], ['leagues', 'Leagues'], ['tournaments', 'Tournaments']].map(([id, label]) => ({ id, label, on: state.view === id })) : []);
   // Booking puts the live court chart first; open play puts the list first (styles.css orders them).
   document.body.classList.toggle('view-booking', state.view === 'booking');
   $('sessionsPanel').hidden = state.view === 'booking';
@@ -642,17 +657,12 @@ function renderCalendarModes() {
   $('bookingIntro').textContent = common || "Reserve a court for your own group on the venue's site, where you'll see open times and prices.";
   const rows = venues.map((v) => ({ v, mi: milesTo(v.id) }));
   if (here) rows.sort((a, b) => (a.mi == null) - (b.mi == null) || (a.mi != null && a.mi - b.mi));
-  $('bookingCalendars').innerHTML = rows.map(({ v, mi }) => {
+  drawBookingRows($('bookingCalendars'), rows.map(({ v, mi }) => {
     const stale = v.bookingLink.reviewBy && NOW.iso > v.bookingLink.reviewBy;
     const own = stale ? 'Published rates need rechecking; consult the venue for current prices.' : v.bookingLink.note !== common ? v.bookingLink.note : '';
-    const price = /^https:\/\//.test(v.bookingLink.source || '') ? `<a class="src" href="${esc(v.bookingLink.source)}" target="_blank" rel="noopener">Price source ↗</a>` : '';
-    const more = locationHtml({ venueId: v.id }) + (own ? `<p class="note">${esc(own)}</p>` : '') + (price ? `<div class="actions">${price}</div>` : '');
-    const cost = courtPrice(v.bookingLink);
-    return `<div class="book-row"><div class="book-name"><b>${esc(v.name)}</b><span>${esc(v.city)}${mi != null ? ` · ${fmtMiles(mi)}` : ''} · ${priceHtml(cost)}</span></div>
-      <a class="signup" href="${esc(onDay(v.bookingLink.url, WEEK[state.di]))}" target="_blank" rel="noopener" aria-label="Book a court at ${esc(v.name)}">Book ↗</a>
-      ${more ? `<details class="more"><summary>Details</summary>${more}</details>` : ''}</div>`;
-  }).join('')
-    || '<p class="note">No venue booking links for this selection.</p>';
+    return { key: v.id, name: v.name, city: v.city, miles: mi != null ? ` · ${fmtMiles(mi)}` : '', price: courtPrice(v.bookingLink) || null, noPrice: NO_PRICE,
+      url: onDay(v.bookingLink.url, WEEK[state.di]), place: placeOf(v.id), note: own || '', priceSource: /^https:\/\//.test(v.bookingLink.source || '') ? v.bookingLink.source : null };
+  }));
 }
 
 /** Free public courts for this sport and court type (Court booking lists them; the map pins those with coordinates). */
@@ -667,10 +677,9 @@ function renderPublicCourts() {
   $('courtsCard').hidden = state.view !== 'booking' || !SPORTS[state.sport].courts || state.tab === 'indoor' || !list.length;
   $('courtsTitle').textContent = `Free public courts · ${list.length}`;
   $('courtsNote').textContent = `${pc?.note || ''} 💡 = lit.`;
-  $('courts').innerHTML = list.map((c) => {
-    const closed = c.closedUntil && NOW.iso < c.closedUntil;
-    return `<div class="court ${closed ? 'closed' : ''}"><span>${esc(c.park)}</span><span>${closed ? `closed to ${fmtDate(c.closedUntil, { month: 'short', year: 'numeric' })}` : `${c.courts} ${c.surface}${c.lights ? ' · 💡' : ''}`}</span></div>`;
-  }).join('');
+  drawCourts($('courts'), list.map((c, i) => ({ key: `${c.park}|${i}`, park: c.park,
+    closed: c.closedUntil && NOW.iso < c.closedUntil ? `closed to ${fmtDate(c.closedUntil, { month: 'short', year: 'numeric' })}` : null,
+    what: `${c.courts} ${c.surface}${c.lights ? ' · 💡' : ''}` })));
 }
 
 function freeWindows(blocks, open, close) {
@@ -932,7 +941,7 @@ function renderGlance() {
   document.querySelector('#glance .key').hidden = !volleyball;
   $('calNote').hidden = !volleyball;
   const errs = !volleyball ? [] : [...(courts?.errors || []).filter((e) => (e.sport || 'volleyball') === state.sport), ...(courtsError ? [{ message: courtsError }] : [])];
-  $('calErrors').innerHTML = errs.length ? `<div class="error">Couldn't load some court calendars right now${errs.map((e) => e.calendar ? ` · <a href="${esc(e.calendar)}" target="_blank" rel="noopener">open ${esc(e.venue)} calendar ↗</a>` : '').join('')}</div>` : '';
+  drawCalErrors($('calErrors'), errs.length ? errs.map((e) => ({ venue: e.venue, calendar: e.calendar || null })) : null);
 }
 
 /** "6 sources" next to the city: opens the sources page for this city and sport. */
@@ -970,7 +979,7 @@ function renderMeta() {
     : 'Schedules are hand-checked against published pages; live availability is not tracked.';
   const names = mine.map((s) => s.name || s.id);
   const handChecked = (schedule.sessions || []).some((x) => x.sourceId === 'manual' && sportOf(x) === state.sport);
-  $('footer').innerHTML = `${names.length || handChecked ? `Sources: ${esc(list([...names, ...(handChecked ? ['hand-checked pages'] : [])]))}. ` : ''}${SPORTS[state.sport].footer}`;
+  drawFooter($('footer'), `${names.length || handChecked ? `Sources: ${list([...names, ...(handChecked ? ['hand-checked pages'] : [])])}. ` : ''}${SPORTS[state.sport].footer}`);
   renderSourceList();
   if (PROGRAM_VIEWS[state.view]) signupsMeta();
 }
@@ -982,12 +991,37 @@ function list(items) { return items.length <= 1 ? items.join('') : `${items.slic
 const liveCourts = () => SPORTS[state.sport].courts || regionCourts().length > 0;
 const regionCourts = () => (courts?.venues || []).filter((v) => (v.sport || 'volleyball') === state.sport && (!region || !v.region || v.region === region.id));
 
+/** The city the page is showing, as the Events list decides it. */
+const usageRegion = () => region?.id ?? state.region ?? 'austin';
+/** Usage: the page opening, then each change of tab, sport, view, city or list/map (one event per change). */
+let usageKey = null;
+const usageWhere = () => ({ tab: state.section, sport: state.section === 'sports' ? state.sport : undefined, region: usageRegion(), layout: state.layout });
+function trackView() {
+  // Wait (up to 3 s) for the city, so the first event says where; then record it either way.
+  if (!index && performance.now() < 3000) { setTimeout(trackView, 300); return; }
+  const w = { ...usageWhere(), how: state.section === 'sports' ? state.view : state.evKind };
+  const key = JSON.stringify(w);
+  if (key === usageKey) return;
+  if (usageKey === null) {
+    let ref; try { ref = document.referrer && new URL(document.referrer).host !== location.host ? new URL(document.referrer).host : undefined; } catch {}
+    track('open', { ...w, ref }); startPings(() => ({ tab: state.section, region: usageRegion() }));
+  } else track('view', w);
+  usageKey = key;
+}
+/** Usage: a search once typing pauses (1.5 s), with how many results it found. */
+let searchTimer = null;
+function trackSearch(q) {
+  clearTimeout(searchTimer);
+  if (!q || q.trim().length < 2) return;
+  searchTimer = setTimeout(() => track('search', { q, tab: state.section, sport: state.section === 'sports' ? state.sport : undefined, region: usageRegion(), results: document.querySelectorAll(state.section === 'events' ? '#events .ev-row' : '#list .row').length }), 1500);
+}
 function render() {
   syncUrl(); renderRegion(); renderTopTabs(); renderSports();
+  queueMicrotask(trackView);
   // Events: the feed is the source of truth, so the view works without the day's schedule.
   renderFiltersSummary();
   if (state.section === 'events') { $('timeBtn').hidden = true; $('searchWrap').hidden = true; renderEvents(); renderMap(); fitHeader(); return; }
-  $('eventsPanel').hidden = true; $('eventCats').innerHTML = ''; $('eventsCount').textContent = '';
+  $('eventsPanel').hidden = true; drawEventPills($('eventCats'), null); drawEventsCount($('eventsCount'), null);
   $('filters').hidden = false; // Events hides the day strip and the Open play / Courts switch; Sports brings them back
   $('searchWrap').hidden = true; // shown again by renderSearch on open play
   // Without the day's schedule, Leagues and Tournaments (their own file) still work.
@@ -1004,10 +1038,6 @@ function render() {
 const EVENTS_SHOWN = 4; // cards under a heading before "Show N more"
 const evOpen = new Set(); // headings opened with Show more (not remembered)
 /** Directions to an event's venue, as a free-text destination (the venue string carries it). */
-const eventDirections = (ev) => {
-  const dest = encodeURIComponent(`${ev.venue}${ev.city && !String(ev.venue).toLowerCase().includes(String(ev.city).toLowerCase()) ? `, ${ev.city}` : ''}, TX`);
-  return `<a class="src" href="https://www.google.com/maps/dir/?api=1&amp;destination=${dest}" target="_blank" rel="noopener">Google Maps ↗</a><a class="src" href="https://maps.apple.com/directions?destination=${dest}&amp;mode=driving" target="_blank" rel="noopener">Apple Maps ↗</a>`;
-};
 const safeUrl = (u) => /^https:\/\//i.test(u || '');
 /** The crediting account's picture (a saved copy of its Instagram profile picture), when the event has one.
  *  Cards say "by @x" for an organizer's own post (read through the API) and "via @x" for a credited repost. */
@@ -1017,56 +1047,28 @@ const iconSvg = (id) => `<svg aria-hidden="true" viewBox="0 0 24 24" fill="none"
  * The picture an event (or a map place, through its lead event) leads with: the organizer's own
  * photo when we have it, otherwise the icon of its most specific tag or of its kind.
  */
-const eventVisual = (ev, size, holder = ev) => avatarImg(holder, size) || (ev ? `<span class="ev-ic ic-${eventIcon(ev, eventKind(ev))}" style="--s:${size}px">${iconSvg(eventIcon(ev, eventKind(ev)))}</span>` : '');
-const avatarImg = (x, size) => (avatarPath(x) ? `<img class="av" src="${DATA}${esc(avatarPath(x))}" alt="" width="${size}" height="${size}" loading="lazy" decoding="async">` : '');
+const eventVisual = (ev, size, holder = ev) => eventVisualHtml(ev, size, holder, DATA);
 /**
  * The line above an event's title: what kind of thing it is, in its topic's colour. The main topic
  * leads, one more may follow, each one tap from showing only that topic; an event with no topic
  * says its kind (Pop-up, Seasonal). Theme tags (Asian-inspired) close the line.
  */
 /** An event's fact pills: a last chance ("Ends tomorrow"), Free, and its price (`price: false` leaves the price out). */
-function eventFacts(ev, { price = true } = {}) {
-  const last = lastChance(ev, NOW.iso), free = searchTags(ev).includes('free');
-  return [last ? `<span class="fact last">${esc(last)}</span>` : '', free ? '<span class="fact free">Free</span>' : '', price && ev.price && !(free && /^\s*free\s*$/i.test(ev.price)) ? `<span class="fact">${esc(ev.price)}</span>` : ''].join('');
-}
-function eventKicker(ev, { plain = false } = {}) {
-  const topics = eventTopics(ev).slice(0, 2);
-  const btn = (t, i) => (plain ? `<span class="kick${i ? ' more' : ''}">${esc(searchTagLabel(t))}</span>` : `<button type="button" class="kick${i ? ' more' : ''}" data-topic="${esc(t)}" aria-label="Show events tagged ${esc(searchTagLabel(t))}">${esc(searchTagLabel(t))}</button>`);
-  const parts = topics.length ? topics.map(btn) : eventKind(ev) ? [`<span class="kick">${esc(kindLabel(eventKind(ev)))}</span>`] : [];
-  for (const g of eventTags(ev)) parts.push(`<span class="kick more">${esc(tagLabel(g))}</span>`);
-  return parts.length ? `<div class="ev-kick ic-${eventIcon(ev, eventKind(ev))}">${parts.join('<span class="kick-dot" aria-hidden="true">·</span>')}</div>` : '';
-}
 /** An event's hours ("11am", "5pm–10pm"), or '' when its source gave none. */
-const eventHours = (ev) => (ev.startTime ? `${fmtT(ev.startTime)}${ev.endTime ? `–${fmtT(ev.endTime)}` : ''}` : '');
-/** What to say in their place: where the hours are. */
-const noHours = (ev) => (safeUrl(ev.sourceUrl) ? `Hours on the ${eventCta(ev) === 'See the post' ? 'post' : 'event page'}` : 'Hours not listed');
-function eventCard(ev) {
-  const parts = eventPlaceParts(ev);
-  const on = isOn(ev, NOW.iso);
-  const mi = here && Number.isFinite(ev.lat) && Number.isFinite(ev.lng) ? milesToCoords(ev.lat, ev.lng) : null;
-  const w = eventWhen(ev, NOW.iso);
-  const times = eventHours(ev);
-  const via = ev.source ? `<span class="via">Found via ${esc(ev.source)}</span>` : '';
-  const summary = eventSummary(ev);
-  const facts = eventFacts(ev);
-  return `<article class="row ev-row${evLink === ev.id ? ' linked' : ''}" data-ev="${esc(ev.id ?? '')}">
-    ${eventVisual(ev, 56)}
-    <div class="time">${w.range ? `<small class="ev-top">${esc(w.dow)}</small>${esc(w.top)}<small>${esc(w.main)}</small>` : `<small class="ev-top">${esc(w.top)}</small>${esc(w.main)}`}${times ? `<small>${esc(times)}</small>` : `<small class="no-hrs">${esc(noHours(ev))}</small>`}</div>
-    <div class="body">
-      ${eventKicker(ev)}
-      <div class="t1"><span class="title">${hl(ev.title)}</span>${on ? '<span class="pill fresh">Happening now</span>' : ''}</div>
-      ${avatarPath(ev) && ev.account ? `<div class="ev-by"><span>${ev.sourceId === 'instagram' ? 'by' : 'via'} <b>@${esc(ev.account)}</b></span></div>` : ''}
-      ${summary ? `<div class="ev-what">${hl(summary)}</div>` : ''}
-      <div class="venue"><b>${esc(parts[0] ?? ev.venue)}</b>${parts.slice(1).map((p) => ` · ${esc(p)}`).join('')}${mi != null ? ` · ${fmtMiles(mi)}` : ''}</div>
-      ${facts ? `<div class="meta ev-facts">${facts}</div>` : ''}${fitHtml(ev.startTime, ev.endTime)}
-    </div>
-    <div class="ev-foot">
-      <div class="actions">${safeUrl(ev.sourceUrl) ? `<a class="signup ev-go" href="${esc(ev.sourceUrl)}" target="_blank" rel="noopener">${eventCta(ev)} ↗</a>` : ''}${calButton(`ev:${ev.id}`, eventCalItem(ev))}</div>
-      <details class="more"${evLink === ev.id ? ' open' : ''}><summary>Details</summary>${ev.description ? `<div class="note">${esc(ev.description)}</div>` : ''}<div class="location">${esc(parts.join(', '))}</div><div class="actions">${eventDirections(ev)}</div>${via}</details>
-    </div></article>`;
-}
+const eventHours = (ev) => hoursOf(ev, fmtT);
+/** The context an event card needs from the page (components/EventCard.tsx). */
+const cardContext = () => ({
+  today: NOW.iso, query: activeQuery() || '', dataBase: DATA, linkedId: evLink,
+  milesTo: (ev) => (here && Number.isFinite(ev.lat) && Number.isFinite(ev.lng) ? milesToCoords(ev.lat, ev.lng) : null),
+  fmtMiles, fmtTime: fmtT, fitNote: (start, end) => windowNote(start, end, activeWindow()) || '',
+  calKey: (ev) => { const key = `ev:${ev.id}`; calItems.set(key, eventCalItem(ev)); return key; },
+});
 /** The events this region has, or null when it has no feed yet. */
 const regionEvents = () => (events ? eventsForRegion(events, region?.id ?? 'austin') : null);
+/** This city's weekly markets whose hours aren't listed (events.json `markets`): shown under Every week. */
+const regionMarkets = () => (events?.markets ?? []).filter((m) => m.region === (region?.id ?? 'austin'));
+/** Where to find a market's hours: its own site, else a Google Maps search for it. */
+const marketLink = (m) => m.url ?? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([m.name, m.city].filter(Boolean).join(', '))}`;
 /** The filters' label on the pill that opens the sheet. */
 const filterLabel = () => [state.evKind === 'all' ? 'All events' : EVENT_KINDS.find((k) => k.id === state.evKind)?.label, ...state.evTags.map(tagLabel)].join(' · ');
 const evFilters = () => ({ kind: state.evKind, tags: state.evTags, weekend: state.evWeekend, day: state.evDay, window: state.win, q: state.evTopic ? '' : state.evQ.trim(), topic: state.evTopic });
@@ -1151,30 +1153,34 @@ function renderSearch(upcoming = null) {
   $('searchClear').hidden = !q;
   const tags = ev && searchOpen ? tagCounts(upcoming) : [];
   $('searchTags').hidden = !tags.length;
-  $('searchTags').innerHTML = tags.map((t) => `<button type="button" class="pill-btn chip-btn${state.evTopic === t.id ? ' on' : ''}" data-topic="${esc(t.id)}" aria-pressed="${state.evTopic === t.id}">${EVENT_ICONS[t.id] ? `<span class="ev-ic ic-${t.id} chip-ic" style="--s:22px">${iconSvg(t.id)}</span>` : ''}${esc(t.label)} <span class="n">${t.n}</span></button>`).join('');
+  drawTopicChips($('searchTags'), tags.map((t) => ({ id: t.id, label: t.label, n: t.n, on: state.evTopic === t.id })));
 }
 /** Set the active section's search and redraw (the box itself is left alone while it has focus). */
 function setQuery(q, { fill = false, topic = null } = {}) {
   if (state.section === 'events') { state.evQ = q; state.evTopic = topic; } else state.spQ = q; // typing is a word search; a tag is exactly its events
   if (fill) $('search').value = q;
   mapPick = null; render();
+  if (topic) track('filter', { tab: state.section, what: 'topic', value: topic, region: usageRegion() }); else trackSearch(q);
 }
 /** Sports: the time pill beside the level filter (open play only). */
 function renderTimeBtn() {
   const off = state.section === 'events' || state.view !== 'openplay';
   $('timeBtn').hidden = off;
   if (off) return;
-  $('timeBtn').innerHTML = `${esc(windowLabel(state.win))} <span class="caret" aria-hidden="true">▾</span>`;
+  drawPillLabel($('timeBtn'), windowLabel(state.win));
   $('timeBtn').classList.toggle('on', !!state.win);
   $('timeBtn').setAttribute('aria-label', `Time: ${windowLabel(state.win)}. Change time`);
 }
 function renderEventsSheet(list) {
   const counts = countEvents(list);
-  const opt = (attr, id, label, hint, n, on) => `<button type="button" class="tab opt" ${attr}="${id}" aria-pressed="${on}"><span class="lbl">${esc(label)}${hint ? `<small>${esc(hint)}</small>` : ''}</span><span class="n">${n}</span></button>`;
+  counts.weekly = (counts.weekly ?? 0) + regionMarkets().length; // markets without hours count as Every week too
   const shown = filterEvents(list, evFilters(), NOW.iso).length;
-  $('eventsOpts').innerHTML = `<h3 class="opt-h">Kind</h3>${opt('data-evkind', 'all', 'All events', '', counts.all, state.evKind === 'all')}${EVENT_KINDS.map((k) => opt('data-evkind', k.id, k.label, k.hint, counts[k.id], state.evKind === k.id)).join('')}
-    <h3 class="opt-h">Tags</h3>${EVENT_TAGS.map((g) => opt('data-evtag', g.id, g.label, '', counts[g.id], state.evTags.includes(g.id))).join('')}${tagCounts(list).map((t) => opt('data-evtopic', t.id, t.label, '', t.n, state.evTopic === t.id)).join('')}
-    <button type="button" class="go-btn" data-close>Show ${shown} event${shown === 1 ? '' : 's'}</button>`;
+  drawKindSheet($('eventsOpts'), {
+    kinds: [{ id: 'all', label: 'All events', n: counts.all, on: state.evKind === 'all' }, ...EVENT_KINDS.filter((k) => counts[k.id] || state.evKind === k.id).map((k) => ({ id: k.id, label: k.label, hint: k.hint, n: counts[k.id], on: state.evKind === k.id }))],
+    tags: EVENT_TAGS.map((g) => ({ id: g.id, label: g.label, n: counts[g.id], on: state.evTags.includes(g.id) })),
+    topics: tagCounts(list).map((t) => ({ id: t.id, label: t.label, n: t.n, on: state.evTopic === t.id })),
+    shown,
+  });
 }
 /**
  * The Sort sheet: the orders, then (under Advanced) the topics someone is into, which For you puts
@@ -1185,13 +1191,12 @@ function renderSortSheet(list) {
   const shown = filterEvents(list, evFilters(), NOW.iso).length;
   const topics = tagCounts(list).filter((t) => t.id !== 'free');
   const likes = [...topics, ...SEARCH_TAGS.filter((t) => t.id === 'free')];
-  $('sortOpts').innerHTML = EVENT_SORTS.map((x) => `<button type="button" class="tab opt" data-evsort="${x.id}" aria-pressed="${state.evSort === x.id}"><span class="lbl">${esc(x.label)}<small>${esc(x.hint)}</small></span></button>`).join('')
-    + `<details class="adv" id="sortAdv"${sortAdvOpen || state.evLikes.length ? ' open' : ''}><summary>Advanced</summary>
-      <h3 class="opt-h" id="likesH">What you’re into</h3>
-      <div class="likes" role="group" aria-labelledby="likesH">${likes.map((t) => `<button type="button" class="like ic-${EVENT_ICONS[t.id] ? t.id : 'popup'}" data-evlike="${esc(t.id)}" aria-pressed="${state.evLikes.includes(t.id)}">${esc(t.label)}</button>`).join('')}</div>
-      <p class="note">For you puts these first. They stay on this device.</p>
-    </details>
-    <button type="button" class="go-btn" data-close>Show ${shown} event${shown === 1 ? '' : 's'}</button>`;
+  drawSortSheet($('sortOpts'), {
+    sorts: EVENT_SORTS.map((x) => ({ id: x.id, label: x.label, hint: x.hint, on: state.evSort === x.id })),
+    likes: likes.map((t) => ({ id: t.id, label: t.label, icon: EVENT_ICONS[t.id] ? t.id : 'popup', on: state.evLikes.includes(t.id) })),
+    advOpen: sortAdvOpen || state.evLikes.length > 0,
+    shown,
+  });
 }
 document.addEventListener('toggle', (e) => { if (e.target.id === 'sortAdv') sortAdvOpen = e.target.open; }, true);
 function renderEvents() {
@@ -1204,9 +1209,9 @@ function renderEvents() {
   const list = regionEvents();
   if (!events) {
     $('asof').textContent = eventsError ? '' : 'Loading…';
-    $('eventCats').innerHTML = '';
-    $('eventsCount').textContent = '';
-    $('events').innerHTML = eventsError ? `<div class="error">Couldn't load events: ${esc(eventsError)}</div>` : '<p class="loading">Loading events…</p>';
+    drawEventPills($('eventCats'), null);
+    drawEventsCount($('eventsCount'), null);
+    drawEventsList($('events'), eventsError ? { status: 'error', message: eventsError } : { status: 'loading' });
     $('eventsNote').textContent = '';
     return;
   }
@@ -1214,22 +1219,19 @@ function renderEvents() {
   if (!list.length) {
     // A region without an events feed yet: say so, and point to what it does have.
     $('asof').textContent = '';
-    $('eventCats').innerHTML = '';
-    $('eventsCount').textContent = '';
-    $('events').innerHTML = `<div class="ev-away"><h2>Events are Austin-only for now</h2><p>Pop-ups and seasonal events come to ${esc(region?.name ?? 'this city')} next. Open play, leagues and tournaments are already here.</p><button type="button" class="signup" data-go-sports>See open play here →</button></div>`;
+    drawEventPills($('eventCats'), null);
+    drawEventsCount($('eventsCount'), null);
+    drawEventsList($('events'), { status: 'away', regionName: region?.name ?? 'this city' });
     $('eventsNote').textContent = '';
     return;
   }
   const upcoming = list.filter((e) => (e.endDate ?? e.startDate) >= NOW.iso);
   $('asof').textContent = `${upcoming.length} events · checked ${fmtDate(events.generatedAt.slice(0, 10))}`;
   $('asof').title = `Events checked ${clock(events.generatedAt)}`;
-  $('footer').innerHTML = 'Each event links to its own page or post. Dates and prices change, so check it before you go.';
+  drawFooter($('footer'), 'Each event links to its own page or post. Dates and prices change, so check it before you go.');
   const filtering = state.evKind !== 'all' || state.evTags.length > 0;
   const sortLabel = EVENT_SORTS.find((x) => x.id === state.evSort)?.label ?? 'Soonest';
-  $('eventCats').innerHTML = (`<button type="button" class="pill-btn chip-btn${state.evSort !== 'soonest' ? ' on' : ''}" data-sheet="sortSheet" aria-haspopup="dialog" aria-label="Sort: ${esc(sortLabel)}. Change">Sort: ${esc(sortLabel)} <span class="caret" aria-hidden="true">▾</span></button>`)
-    + `<button type="button" class="pill-btn chip-btn${filtering ? ' on' : ''}" data-sheet="eventsSheet" aria-haspopup="dialog">${esc(filterLabel())} <span class="caret" aria-hidden="true">▾</span></button>`
-    + `<button type="button" class="pill-btn chip-btn${whenLabel() ? ' on' : ''}" data-sheet="whenSheet" aria-haspopup="dialog" id="whenBtn">${esc(whenLabel() || 'When')} <span class="caret" aria-hidden="true">▾</span></button>`
-    + (navigator.geolocation ? `<button type="button" class="pill-btn chip-btn${here ? ' on' : ''}" data-evnear aria-pressed="${!!here}">Near me</button>` : '');
+  drawEventPills($('eventCats'), { sortLabel, sorted: state.evSort !== 'soonest', filterLabel: filterLabel(), filtering, whenLabel: whenLabel(), near: navigator.geolocation ? !!here : null });
   renderEventsSheet(upcoming); renderSortSheet(upcoming); renderWhenSheet(); renderSearch(upcoming);
   const shown = filterEvents(upcoming, evFilters(), NOW.iso);
   const groups = eventGroups(shown, NOW.iso);
@@ -1246,13 +1248,12 @@ function renderEvents() {
   const q = state.evTopic ? '' : state.evQ.trim(), topic = state.evTopic ? searchTagLabel(state.evTopic) : '';
   // A search that the day or time hides matches for says so, and offers them in one tap.
   const anyDay = (q || topic) && whenLabel() ? filterEvents(upcoming, { ...evFilters(), weekend: false, day: null, window: null }, NOW.iso).length - shown.length : 0;
-  $('eventsCount').innerHTML = filtering || whenLabel() || q || topic ? `${shown.length} of ${upcoming.length} events${q ? ` for “${esc(q)}”` : topic ? ` tagged ${esc(topic)}` : ''}${whenLabel() ? ` · ${esc(whenLabel())}` : ''}${anyDay > 0 ? ` · <button type="button" class="linkish" data-evanyday>${anyDay} more on other days</button>` : ''} · <button type="button" class="linkish" data-evclear>Clear filters</button>` : '';
-  $('events').innerHTML = groups.length
-    ? groups.map((g) => {
-      const open = evOpen.has(g.key), rest = g.events.length - EVENTS_SHOWN;
-      return `<section class="ev-group" data-group="${esc(g.key)}"><h2 class="ev-day">${esc(g.label)}<small>${esc(g.sub)}</small></h2>${(open ? g.events : g.events.slice(0, EVENTS_SHOWN)).map(eventCard).join('')}${rest > 0 && !open ? `<button type="button" class="show-more" data-evmore="${esc(g.key)}">Show ${rest} more</button>` : ''}</section>`;
-    }).join('')
-    : `<div class="empty"><b>Nothing matches.</b> <button type="button" class="linkish" data-evclear>Clear filters</button></div>`;
+  drawEventsCount($('eventsCount'), filtering || whenLabel() || q || topic ? { shown: shown.length, total: upcoming.length, q, topic, when: whenLabel(), otherDays: anyDay } : null);
+  // Every week ends with the markets whose hours aren't listed, each linked to where its hours are.
+  const unlisted = state.evKind === 'weekly' && !q && !topic && !whenLabel();
+  const marketMiles = (m) => (here ? milesToCoords(m.lat, m.lng) : null);
+  const markets = unlisted ? regionMarkets().slice().sort((a, b) => (here ? marketMiles(a) - marketMiles(b) : 0) || a.name.localeCompare(b.name)) : null;
+  drawEventsList($('events'), { status: 'list', groups, open: evOpen, shown: EVENTS_SHOWN, markets, marketMiles, marketLink, ctx: cardContext() });
   $('eventsNote').textContent = '';
   if (linked) { syncUrl(); requestAnimationFrame(() => document.querySelector(`.ev-row[data-ev="${CSS.escape(linked)}"]`)?.scrollIntoView({ block: 'center' })); }
 }
@@ -1311,7 +1312,7 @@ function deadlineLine(p) {
   if (p.status === 'waitlist') return 'Waitlist';
   return p.registration_deadline ? `Sign up by ${fmtDate(p.registration_deadline, { weekday: 'short', month: 'short', day: 'numeric' })}` : '';
 }
-function programCard(p) {
+function programView(p) {
   const kind = [p.kind === 'league' ? 'League' : 'Tournament', p.surface && cap(p.surface), p.series === 'nagva' && 'NAGVA'].filter(Boolean).join(' · ');
   const u = urgency(p);
   const dim = p.status === 'closed' || p.status === 'full';
@@ -1322,15 +1323,16 @@ function programCard(p) {
     p.waitlist_on && p.waitlist_on >= NOW.iso ? `New teams go on a waitlist from ${fmtDate(p.waitlist_on)}.` : ''].filter(Boolean);
   const checked = p.checked_at ? `Checked ${ago(p.checked_at)}` : '';
   const safe = (url) => (/^https:\/\//.test(url || '') ? url : '');
-  return `<article class="prog${dim ? ' dim' : ''}">
-    <div class="p-top"><span class="p-kind">${esc(kind)}</span>${u ? `<span class="p-badge">${esc(u)}</span>` : ''}</div>
-    <h3 class="p-title">${esc(p.title)}</h3>
-    <p class="p-org">${esc([p.org, p.venue, p.city && p.region !== region?.id ? p.city : ''].filter(Boolean).join(' · '))}</p>
-    ${p.starts_on ? `<p class="p-when">${whenHtml(p)}</p>` : ''}
-    <div class="p-foot"><span class="p-price">${priceLine(p)}</span><span class="p-dl${u ? ' hot' : ''}">${esc(deadlineLine(p))}</span></div>
-    ${safe(p.signup_url) ? `<div class="actions"><a class="signup" href="${esc(p.signup_url)}" target="_blank" rel="noopener" aria-label="${dim ? 'See' : 'Sign up for'} ${esc(p.title)} on ${esc(p.org)}'s site">${dim ? 'See details' : 'Sign up'} ↗</a></div>` : ''}
-    <details class="more"><summary>Details</summary>${divs}${notes.map((n) => `<p class="note">${esc(n)}</p>`).join('')}${where}<div class="actions">${safe(p.source_url) ? `<a class="src" href="${esc(p.source_url)}" target="_blank" rel="noopener">Source ↗</a>` : ''}<span class="note">${esc(checked)}</span></div></details>
-  </article>`;
+  return {
+    key: p.id ?? `${p.org}|${p.title}|${p.starts_on ?? ''}`,
+    dim, kind, badge: u || '', title: p.title,
+    org: [p.org, p.venue, p.city && p.region !== region?.id ? p.city : ''].filter(Boolean).join(' · '),
+    whenHtml: p.starts_on ? whenHtml(p) : '',
+    priceHtml: priceLine(p),
+    deadline: deadlineLine(p), hot: !!u,
+    signup: safe(p.signup_url) ? { url: p.signup_url, label: dim ? 'See details' : 'Sign up', aria: `${dim ? 'See' : 'Sign up for'} ${p.title} on ${p.org}'s site` } : null,
+    detailsHtml: `${divs}${notes.map((n) => `<p class="note">${esc(n)}</p>`).join('')}${where}<div class="actions">${safe(p.source_url) ? `<a class="src" href="${esc(p.source_url)}" target="_blank" rel="noopener">Source ↗</a>` : ''}<span class="note">${esc(checked)}</span></div>`,
+  };
 }
 function renderSignups() {
   const kind = PROGRAM_VIEWS[state.view];
@@ -1341,8 +1343,8 @@ function renderSignups() {
   document.body.classList.remove('layout-map', 'view-booking');
   const noun = kind === 'league' ? 'leagues' : 'tournaments';
   if (!programs) {
-    $('hosts').innerHTML = '';
-    $('programs').innerHTML = programsError ? `<div class="error">Couldn't load ${noun}: ${esc(programsError)}</div>` : `<p class="loading">Loading ${noun}…</p>`;
+    drawHosts($('hosts'), [], noun);
+    drawPrograms($('programs'), programsError ? { status: 'error', noun, message: programsError } : { status: 'loading', noun });
     $('programsNote').textContent = '';
     return;
   }
@@ -1353,14 +1355,13 @@ function renderSignups() {
   for (const p of all) counts.set(p.org, (counts.get(p.org) ?? 0) + 1);
   const hosts = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
   if (state.host !== 'all' && !counts.has(state.host)) { state.host = 'all'; syncUrl(); save(); }
-  const chip = (value, label, n) => `<button type="button" class="pill-btn chip-btn${state.host === value ? ' on' : ''}" data-host="${esc(value)}" aria-pressed="${state.host === value}">${esc(label)} <span class="n" aria-hidden="true">${n}</span><span class="vh">, ${n} ${noun}</span></button>`;
-  $('hosts').innerHTML = hosts.length > 1 ? chip('all', 'All hosts', all.length) + hosts.map(([org, n]) => chip(org, org, n)).join('') : '';
+  drawHosts($('hosts'), hosts.length > 1 ? [{ id: 'all', label: 'All hosts', n: all.length, on: state.host === 'all' }, ...hosts.map(([org, n]) => ({ id: org, label: org, n, on: state.host === org }))] : [], noun);
   const shown = state.host === 'all' ? all : all.filter((p) => p.org === state.host);
-  const section = (title, rows, cls = '') => (rows.length ? `<h2 class="p-group ${cls}">${esc(title)}<span class="n">${rows.length}</span></h2>${rows.map(programCard).join('')}` : '');
+  const section = (title, rows, cls = '') => ({ title, cls, cards: rows.map(programView) });
   const near = shown.filter((p) => !region || p.region === region.id);
   const away = shown.filter((p) => !near.includes(p)).sort((a, b) => (a.starts_on || '').localeCompare(b.starts_on || ''));
   const elsewhere = `Elsewhere in ${regionState() === 'TX' ? 'Texas' : 'the state'}`;
-  let html;
+  let sections;
   if (kind === 'tournament') {
     // Tournaments by the month they happen, soonest first: you plan around the date. Each card
     // shows its days and how long sign-up stays open.
@@ -1371,18 +1372,15 @@ function renderSignups() {
       if (!months.has(key)) months.set(key, []);
       months.get(key).push(p);
     }
-    html = [...months].map(([key, rows]) => section(key ? fmtDate(`${key}-01`, { month: 'long', year: 'numeric' }) : 'Date to be announced', rows)).join('')
-      + section(elsewhere, away, 'quiet');
+    sections = [...[...months].map(([key, rows]) => section(key ? fmtDate(`${key}-01`, { month: 'long', year: 'numeric' }) : 'Date to be announced', rows)), section(elsewhere, away, 'quiet')];
   } else {
     // Leagues by deadline: when to sign up is what decides them.
     const open = near.filter((p) => p.status === 'open' || p.status === 'waitlist' || p.status == null);
     const soon = open.filter((p) => urgency(p));
-    html = section('Closing this week', soon, 'hot') + section('Open', open.filter((p) => !soon.includes(p)))
-      + section('Not open yet, full or closed', near.filter((p) => !open.includes(p)), 'quiet');
+    sections = [section('Closing this week', soon, 'hot'), section('Open', open.filter((p) => !soon.includes(p))), section('Not open yet, full or closed', near.filter((p) => !open.includes(p)), 'quiet')];
   }
-  const where = region ? ` in ${esc(region.name.split(',')[0])}` : '';
-  if (!shown.length) html = `<div class="empty"><b>No ${noun} open for sign-up${where} right now.</b> Organizers post new ${kind === 'league' ? 'seasons' : 'dates'} every month or two; this checks twice a day.</div>`;
-  $('programs').innerHTML = html;
+  const where = region ? ` in ${region.name.split(',')[0]}` : '';
+  drawPrograms($('programs'), { status: 'list', sections, empty: shown.length ? null : { lead: `No ${noun} open for sign-up${where} right now.`, text: `Organizers post new ${kind === 'league' ? 'seasons' : 'dates'} every month or two; this checks twice a day.` } });
   $('programsCount').textContent = `${shown.length} ${noun}${state.host === 'all' ? '' : ` from ${state.host}`} listed`;
   signupsMeta();
 }
@@ -1395,18 +1393,18 @@ function signupsMeta() {
   renderSourcesLink();
   $('asof').title = `Leagues and tournaments checked ${clock(programs.generatedAt)}`;
   const orgs = [...new Set([...programsFor('league'), ...programsFor('tournament')].map((p) => p.org))];
-  $('footer').innerHTML = orgs.length ? `Sources: ${esc(list(orgs))}. Sign up on the organizer's site; Skelly only links to it.` : '';
+  drawFooter($('footer'), orgs.length ? `Sources: ${list(orgs)}. Sign up on the organizer's site; Skelly only links to it.` : '');
 }
 /** Today, in open play: a league or tournament whose sign-up (or early-bird price) ends today. */
-function headsUpHtml() {
-  if (!programs || state.view !== 'openplay') return '';
+function headsUp() {
+  if (!programs || state.view !== 'openplay') return null;
   const live = [...programsHere('league'), ...programsHere('tournament')].filter((p) => p.status === 'open' || p.status === 'waitlist');
   const closing = live.filter((p) => p.registration_deadline === NOW.iso);
   const pricier = live.filter((p) => p.price_changes_on === NOW.iso && !closing.includes(p));
-  const name = (xs) => (xs.length === 1 ? esc(xs[0].title) : `${xs.length} leagues and tournaments`);
-  const line = closing.length ? `<b>Sign-ups closing today:</b> ${name(closing)}` : pricier.length ? `<b>Last day at today's price:</b> ${name(pricier)}` : '';
+  const name = (xs) => (xs.length === 1 ? xs[0].title : `${xs.length} leagues and tournaments`);
+  if (!closing.length && !pricier.length) return null;
   const to = (closing[0] ?? pricier[0])?.kind === 'tournament' ? 'tournaments' : 'leagues';
-  return line ? `<button type="button" class="heads-up" data-view="${to}">${line}<span aria-hidden="true">›</span></button>` : '';
+  return closing.length ? { to, lead: 'Sign-ups closing today:', text: name(closing) } : { to, lead: "Last day at today's price:", text: name(pricier) };
 }
 
 // ---------- header height ----------
@@ -1584,15 +1582,16 @@ function mapPlaces(iso) {
 }
 
 /** The events map's place list, or (with `pickId`) that place's events for the place sheet. */
-function eventsPanelHtml(places, pickId) {
+function eventsPanel(places, pickId) {
   const p = places.find((x) => x.id === pickId);
   if (!p) {
     // The same headings as the list (On now, This week, Next week, then months), so it reads by
     // when things are on rather than as one long run of places.
     const row = (x) => {
       const mi = placeMiles(x);
-      const facts = x.lead ? eventFacts(x.lead, { price: false }) : '';
-      return `<li><button type="button" class="place-row${x.id === mapPick ? ' on' : ''}" data-pin="${esc(x.id)}" aria-pressed="${x.id === mapPick}">${eventVisual(x.lead, 40, x)}<span class="pr-name">${x.lead ? eventKicker(x.lead, { plain: true }) : ''}<span class="pr-title">${esc(x.title)}</span>${x.more ? ` <span class="pr-more">+${x.more} more</span>` : ''}<small class="pr-at">${esc([x.short || x.name, x.city, mi != null ? fmtMiles(mi) : ''].filter(Boolean).join(' · '))}</small></span><span class="pr-status">${esc(x.status)}${!x.more && x.lead && eventHours(x.lead) ? ` · ${esc(eventHours(x.lead))}` : ''}${facts ? ` <span class="pr-facts">${facts}</span>` : ''}</span><span class="pr-go" aria-hidden="true">›</span></button></li>`;
+      return { id: x.id, on: x.id === mapPick, lead: x.lead ?? null, holder: x, title: x.title, more: x.more || 0,
+        at: [x.short || x.name, x.city, mi != null ? fmtMiles(mi) : ''].filter(Boolean).join(' · '), status: x.status,
+        hours: !x.more && x.lead ? eventHours(x.lead) : '' };
     };
     // The Sort pill orders places too, by the event each is named for (Soonest keeps the map's order).
     const pg = placeGroups(places, NOW.iso);
@@ -1600,25 +1599,18 @@ function eventsPanelHtml(places, pickId) {
       const milesOf = (e) => { const x = places.find((q) => q.lead === e); return x ? placeMiles(x) : null; };
       for (const g of pg) { const order = sortGroup(g.places.map((x) => x.lead), { sort: state.evSort, likes: state.evLikes, today: NOW.iso, milesOf }); g.places = order.map((e) => g.places.find((x) => x.lead === e)); g.sub = g.sub.replace(' · ending soonest first', ''); }
     }
-    const groups = pg.map((g) => `<section class="place-group" data-group="${esc(g.key)}"><h3 class="ev-day">${esc(g.label)}<small>${esc(g.sub)}</small></h3><ul class="place-list">${g.places.map(row).join('')}</ul></section>`).join('');
-    return `<p class="map-hint"><b>${places.length} place${places.length === 1 ? '' : 's'}</b> with events coming up. Tap one for its events.</p>${groups}`;
+    return { kind: 'event-places', count: places.length, today: NOW.iso, dataBase: DATA, groups: pg.map((g) => ({ key: g.key, label: g.label, sub: g.sub, rows: g.places.map(row) })) };
   }
   const mi = placeMiles(p), n = p.events.length;
   // Under the name: the rest of the venue string (its address) and the area, without repeating the name.
   const rest = p.short && p.name.startsWith(p.short) ? p.name.slice(p.short.length).replace(/^[,\s]+/, '') : '';
   const addr = [rest, ...eventPlaceParts(p.events[0]).slice(1)].filter(Boolean);
-  const rows = p.events.map((ev) => {
-    const w = eventWhen(ev, NOW.iso);
-    return `<div class="pop-item"><span class="pop-t">${w.range ? `${esc(w.dow)} ${esc(w.top)}<small>${esc(w.main)}</small>` : `${esc(w.top)} ${esc(w.main)}`}${eventHours(ev) ? `<small class="pop-hrs">${esc(eventHours(ev))}</small>` : ''}</span><span class="pop-w">${eventKicker(ev)}<b>${esc(ev.title)}</b>${isOn(ev, NOW.iso) ? ' <span class="pill fresh">Happening now</span>' : ''}${eventSummary(ev) ? `<span class="ev-what">${esc(eventSummary(ev))}</span>` : ''}${eventHours(ev) ? '' : `<small>${esc(noHours(ev))}</small>`}${eventFacts(ev) ? `<span class="meta ev-facts">${eventFacts(ev)}</span>` : ''}</span><span class="pop-a">${safeUrl(ev.sourceUrl) ? `<a class="src" href="${esc(ev.sourceUrl)}" target="_blank" rel="noopener">${eventCta(ev)} ↗</a>` : ''}${calButton(`ev:${ev.id}`, eventCalItem(ev))}</span></div>`;
-  }).join('');
-  return `<div class="map-place"><div class="g-venue"><span class="v-name">${esc(p.short || p.name)}<small>${esc([...addr, `${n} event${n === 1 ? '' : 's'}`, mi != null ? fmtMiles(mi) : ''].filter(Boolean).join(' · '))}</small></span></div>
-    <div class="g-pop map-sessions">${rows}</div>
-    <div class="location"><div class="actions">${eventDirections(p.events[0])}</div></div></div>`;
+  return { kind: 'event-place', name: p.short || p.name, sub: [...addr, `${n} event${n === 1 ? '' : 's'}`, mi != null ? fmtMiles(mi) : ''].filter(Boolean).join(' · '), events: p.events, ctx: cardContext() };
 }
 
 /** What's under the map (every place as a row), or with `pickId` that place's day for the place sheet. */
-function mapPanelHtml(places, iso, pickId) {
-  if (state.section === 'events') return eventsPanelHtml(places, pickId);
+function mapPanel(places, iso, pickId) {
+  if (state.section === 'events') return eventsPanel(places, pickId);
   const p = places.find((x) => x.id === pickId);
   const untimed = state.view === 'openplay' ? sessionsOn(iso).filter((y) => !hidden(y.f) && !(schedule?.venues || []).some((v) => v.id === y.venueId && Number.isFinite(v.lat))).length : 0;
   const unplaced = state.view === 'booking' ? publicCourts().filter((c) => !Number.isFinite(c.lat)).length : 0;
@@ -1628,33 +1620,37 @@ function mapPanelHtml(places, iso, pickId) {
     const order = [...places].sort((a, b) => !!(a.done || a.full) - !!(b.done || b.full) || (milesTo(a.id) ?? 1e9) - (milesTo(b.id) ?? 1e9) || a.name.localeCompare(b.name));
     const rows = order.map((x) => {
       const mi = milesTo(x.id);
-      return `<li><button type="button" class="place-row${x.done || x.full ? ' dim' : ''}${x.id === mapPick ? ' on' : ''}" data-pin="${esc(x.id)}" aria-pressed="${x.id === mapPick}"><span class="pr-name">${esc(x.name)}<small>${esc(x.city)}${mi != null ? ` · ${fmtMiles(mi)}` : ''}</small></span><span class="pr-status">${esc(x.status)}</span><span class="pr-go" aria-hidden="true">›</span></button></li>`;
-    }).join('');
+      return { id: x.id, on: x.id === mapPick, dim: !!(x.done || x.full), name: x.name, at: `${x.city}${mi != null ? ` · ${fmtMiles(mi)}` : ''}`, status: x.status };
+    });
     const booked = places.length - free;
     const what = state.view === 'booking'
       ? [booked || !free ? `<b>${booked} place${booked === 1 ? '' : 's'}</b> to book a court` : '', free ? `<b>${free} free public court${free === 1 ? '' : 's'}</b>` : ''].filter(Boolean).join(' and ')
-      : `<b>${places.length} place${places.length === 1 ? '' : 's'}</b> with ${SPORTS[state.sport].label.toLowerCase()}`;
-    return `<p class="map-hint">${what} ${state.di === 0 ? 'today' : `on ${fmtDate(iso)}`}${here ? ', nearest first' : ''}. Tap one for its day${state.view === 'booking' ? ', Book or directions' : ' and sign-ups'}.${untimed ? ` ${untimed} more without a location are in the list.` : ''}${unplaced ? ` ${unplaced} public court${unplaced === 1 ? '' : 's'} without a location ${unplaced === 1 ? 'is' : 'are'} in the list.` : ''}</p><ul class="place-list">${rows}</ul>`;
+      : `<b>${places.length} place${places.length === 1 ? '' : 's'}</b> with ${esc(SPORTS[state.sport].label.toLowerCase())}`;
+    const hintHtml = `${what} ${state.di === 0 ? 'today' : `on ${esc(fmtDate(iso))}`}${here ? ', nearest first' : ''}. Tap one for its day${state.view === 'booking' ? ', Book or directions' : ' and sign-ups'}.${untimed ? ` ${untimed} more without a location are in the list.` : ''}${unplaced ? ` ${unplaced} public court${unplaced === 1 ? '' : 's'} without a location ${unplaced === 1 ? 'is' : 'are'} in the list.` : ''}`;
+    return { kind: 'sport-places', hintHtml, rows };
   }
   if (p.court) {
     // A free court: no booking, no sessions; what's there, and how to get there.
-    const mi = milesTo(p.id), c = p.court, destination = encodeURIComponent(`${c.park}, ${c.address}, ${region?.name || ''}`);
-    return `<div class="map-place"><p class="map-status">${esc(p.status)}</p><div class="g-venue"><span class="v-name">${esc(c.park)}<small>Free public court${mi != null ? ` · ${fmtMiles(mi)}` : ''}</small></span></div>
-      ${schedule?.publicCourts?.note ? `<p class="note">${esc(schedule.publicCourts.note)}</p>` : ''}
-      <div class="location"><div>${esc(c.address)}</div><div class="actions">
-      <a class="src" href="https://www.google.com/maps/dir/?api=1&amp;destination=${destination}" target="_blank" rel="noopener">Google Maps ↗</a>
-      <a class="src" href="https://maps.apple.com/directions?destination=${destination}&amp;mode=driving" target="_blank" rel="noopener">Apple Maps ↗</a>
-      <button class="src copy-address" type="button" data-address="${esc(c.address)}">Copy address</button>
-      <span class="copy-status" role="status"></span></div></div></div>`;
+    const mi = milesTo(p.id), c = p.court;
+    return { kind: 'court', status: p.status, park: c.park, sub: `Free public court${mi != null ? ` · ${fmtMiles(mi)}` : ''}`, note: schedule?.publicCourts?.note || '',
+      place: c.address ? { name: c.park, address: c.address, dest: `${c.park}, ${c.address}, ${region?.name || ''}` } : null };
   }
   const mi = milesTo(p.id), cost = courtPrice(p.booking);
-  const book = p.booking?.url ? `<a class="signup" href="${esc(onDay(p.booking.url, iso))}" target="_blank" rel="noopener" aria-label="Book a court at ${esc(p.name)}">Book ↗</a>` : '';
   const ended = (x) => state.di === 0 && x.end && mins(x.end) <= NOW.minutes;
-  const rows = p.sessions.map((x) => `<div class="pop-item${ended(x) ? ' past' : ''}"><span class="pop-t">${x.start ? `${fmtT(x.start)}${x.end ? `–${fmtT(x.end)}` : ''}` : 'Any time'}</span><span class="pop-w">${esc(ownTitle(x) || x.title)}${x.level && !(ownTitle(x) || x.title).includes(x.level) ? ` · ${esc(x.level)}` : ''}${x.price ? `<small>${esc(x.price)}</small>` : ''}</span><span class="pop-a">${signupHtml(x)}${ended(x) || x.f?.k === 'canceled' ? '' : calButton(`s:${x.id}:${x.date || x.on || WEEK[state.di]}`, sessionCalItem(x))}</span></div>`).join('');
-  const live = state.view === 'booking' ? `<p class="map-status">${esc(p.status)}</p>` : '';
-  return `<div class="map-place">${live}<div class="g-venue"><span class="v-name">${esc(p.name)}<small>${esc(p.city)}${mi != null ? ` · ${fmtMiles(mi)}` : ''}${state.view === 'booking' ? ` · ${priceHtml(cost)}` : ''}</small></span>${book}</div>
-    ${rows ? `<div class="g-pop map-sessions">${rows}</div>` : `<p class="note">${state.view === 'booking' ? 'No public sessions here on this day; book a court on the venue\'s site.' : 'Nothing else here on this day.'}</p>`}
-    ${locationHtml({ venueId: p.id })}</div>`;
+  const sessions = p.sessions.map((x) => {
+    const own = ownTitle(x) || x.title;
+    const off = ended(x) || x.f?.k === 'canceled';
+    const key = `s:${x.id}:${x.date || x.on || WEEK[state.di]}`;
+    if (!off) calItems.set(key, sessionCalItem(x));
+    const sg = x.signup || {}, url = onDay(sg.url, x.date || x.on);
+    const signup = x.f?.k === 'expired' || x.f?.k === 'canceled' ? { kind: 'none' } : url && !sg.dropIn ? { kind: 'link', url, label: sg.label || 'Sign up' } : url ? { kind: 'dropin', label: sg.label || 'Drop in', url } : sg.label ? { kind: 'dropin', label: sg.label } : { kind: 'none' };
+    return { key: `${x.id}|${x.date || x.on || ''}`, past: !!ended(x), time: x.start ? `${fmtT(x.start)}${x.end ? `–${fmtT(x.end)}` : ''}` : 'Any time',
+      what: `${own}${x.level && !own.includes(x.level) ? ` · ${x.level}` : ''}`, price: x.price || '', signup, calKey: off ? null : key, calTitle: x.title };
+  });
+  return { kind: 'venue', status: state.view === 'booking' ? p.status : null, name: p.name, sub: `${p.city}${mi != null ? ` · ${fmtMiles(mi)}` : ''}`,
+    price: state.view === 'booking' ? { text: cost || null, none: NO_PRICE } : null,
+    book: p.booking?.url ? { url: onDay(p.booking.url, iso), name: p.name } : null,
+    sessions, emptyNote: state.view === 'booking' ? 'No public sessions here on this day; book a court on the venue\'s site.' : 'Nothing else here on this day.', place: placeOf(p.id) };
 }
 
 /**
@@ -1666,9 +1662,9 @@ function renderPlaceSheet(places, iso) {
   const s = $('placeSheet'), p = places.find((x) => x.id === mapPick);
   const was = !s.hidden;
   s.hidden = !p;
-  if (!p) { s.innerHTML = ''; return; }
+  if (!p) { drawPlaceSheet(s, null); return; }
   s.setAttribute('aria-label', p.short || p.name);
-  s.innerHTML = `<div class="ps-grab" aria-hidden="true"></div><button type="button" class="ps-x" data-pin="${esc(p.id)}" aria-label="Close ${esc(p.short || p.name)}">✕</button><div class="ps-body">${mapPanelHtml(places, iso, p.id)}</div>`;
+  drawPlaceSheet(s, { id: p.id, name: p.short || p.name, panel: mapPanel(places, iso, p.id) });
   if (!was) s.focus({ preventScroll: true });
 }
 const closePlace = () => { if (mapPick) { mapPick = null; save(); showPick(); } };
@@ -1770,7 +1766,7 @@ async function renderMap() {
   // One floating button for the other view: "Map" on the list, "List" on the map.
   const LIST_ICON = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>';
   const MAP_ICON = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>';
-  $('layout').innerHTML = mapReady() ? (on ? `<button class="fab" type="button" data-layout="list">${LIST_ICON}List</button>` : `<button class="fab" type="button" data-layout="map">${MAP_ICON}Map</button>`) : '';
+  drawLayoutButton($('layout'), mapReady() ? (on ? { to: 'list', icon: LIST_ICON } : { to: 'map', icon: MAP_ICON }) : null);
   $('mapCard').hidden = !on;
   document.body.classList.toggle('layout-map', on);
   document.body.classList.toggle('map-big', on && mapBig);
@@ -1786,7 +1782,7 @@ async function renderMap() {
   if (urlPlace && places.length) { if (places.some((p) => p.id === urlPlace)) mapPick = urlPlace; urlPlace = null; }
   if (mapPick && !places.some((p) => p.id === mapPick)) mapPick = null;
   $('mapTitle').textContent = state.section === 'events' ? 'Events · upcoming' : `${state.view === 'booking' ? 'Court booking' : 'Open play'} · ${state.di === 0 ? 'Today' : fmtDate(iso)}`;
-  $('mapPanel').innerHTML = mapPanelHtml(places, iso, null);
+  drawMapPanel($('mapPanel'), mapPanel(places, iso, null));
   renderPlaceSheet(places, iso);
   mapBusy(true); // the map's code, then its first tiles
   try { await loadMapLibs(); } catch { mapBusy(false); $('mapPanel').insertAdjacentHTML('afterbegin', '<p class="note">The map could not load. Switch to List.</p>'); return; }
@@ -1897,7 +1893,7 @@ function locating(on) {
 // a new issue on GitHub instead, and the sheet says that route is public and needs an account.
 const FEEDBACK_ISSUES = 'https://github.com/bryanw121/skelly/issues/new';
 $('feedbackBtn').addEventListener('click', (e) => {
-  $('feedbackNote').textContent = ''; $('feedbackActs').innerHTML = '<button type="submit" class="go-btn" id="feedbackSend">Send</button>';
+  $('feedbackNote').textContent = ''; drawActs($('feedbackActs'), [{ kind: 'submit', id: 'feedbackSend', label: 'Send', main: true }]);
   $('feedbackText').disabled = false;
   openSheet('feedbackSheet', e.currentTarget);
   $('feedbackText').focus();
@@ -1906,22 +1902,21 @@ $('feedbackForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const message = $('feedbackText').value.trim();
   if (!message) { $('feedbackNote').textContent = 'Write something first.'; $('feedbackText').focus(); return; }
-  const btn = $('feedbackSend');
-  btn.disabled = true; btn.innerHTML = '<span class="spin" aria-hidden="true"></span> Sending…';
+  drawActs($('feedbackActs'), [{ kind: 'submit', id: 'feedbackSend', label: 'Sending…', busy: true, main: true }]);
   let r = null, out = null;
   try { r = await fetch('api/feedback', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ message, page: location.href, website: $('feedbackWebsite').value }) }); out = await r.json(); } catch { /* no API here */ }
   if (r?.ok && out?.ok) {
     $('feedbackText').value = ''; $('feedbackText').disabled = true;
     $('feedbackNote').textContent = 'Sent. Thank you!';
-    $('feedbackActs').innerHTML = '<button type="button" class="go-btn" data-close>Done</button>';
+    drawActs($('feedbackActs'), [{ kind: 'button', label: 'Done', close: true, main: true }]);
     $('feedbackActs').querySelector('button').focus();
     return;
   }
   if (r && r.status !== 501 && r.status !== 404 && out?.error) { // it answered, and said why not (too long, too many at once)
-    $('feedbackNote').textContent = out.error; btn.disabled = false; btn.textContent = 'Send'; return;
+    $('feedbackNote').textContent = out.error; drawActs($('feedbackActs'), [{ kind: 'submit', id: 'feedbackSend', label: 'Send', main: true }]); return;
   }
   $('feedbackNote').textContent = "Couldn't send it from here. You can post it on GitHub instead: that needs a GitHub account, and what you write is public.";
-  $('feedbackActs').innerHTML = `<a class="go-btn" href="${esc(`${FEEDBACK_ISSUES}?${new URLSearchParams({ title: 'Feedback', body: message, labels: 'feedback' })}`)}" target="_blank" rel="noopener">Post on GitHub ↗</a><button type="submit" class="tab opt" id="feedbackSend">Try again</button>`;
+  drawActs($('feedbackActs'), [{ kind: 'link', label: 'Post on GitHub ↗', href: `${FEEDBACK_ISSUES}?${new URLSearchParams({ title: 'Feedback', body: message, labels: 'feedback' })}`, main: true }, { kind: 'submit', id: 'feedbackSend', label: 'Try again', main: false }]);
 });
 
 // ---------- add a source ----------
@@ -1929,19 +1924,19 @@ $('feedbackForm').addEventListener('submit', async (e) => {
 // the page). /api/add-source checks it while the person waits and answers one of three ways:
 // added (with how much it found), already there, or why not. See lib/add-source.js.
 let addFor = null; // 'events' or a sport id
-const addResult = (kind, title, detail) => { const el = $('addRes'); el.hidden = false; el.className = `add-res ${kind}`; el.innerHTML = `<b>${kind === 'busy' ? '<span class="spin" aria-hidden="true"></span> ' : ''}${esc(title)}</b>${detail ? `<span>${esc(detail)}</span>` : ''}`; };
+const addResult = (kind, title, detail) => { const el = $('addRes'); el.hidden = false; el.className = `add-res ${kind}`; drawAddResult(el, { busy: kind === 'busy', title, detail: detail || '' }); };
 function renderAddFor() {
   const sport = SPORTS[state.sport] ? state.sport : 'volleyball';
   const opts = [['events', 'Events'], [sport, `Sports · ${SPORTS[sport].label}`]];
-  $('addFor').innerHTML = opts.map(([id, label]) => `<button type="button" class="tab opt" data-addfor="${esc(id)}" aria-pressed="${addFor === id}">${label}</button>`).join('');
+  drawAddFor($('addFor'), opts.map(([id, label]) => ({ id, label })), addFor);
 }
 $('addSourceBtn').addEventListener('click', (e) => {
   addFor = state.section === 'events' ? 'events' : (SPORTS[state.sport] ? state.sport : 'volleyball');
   renderAddFor();
   const cities = index?.regions?.length ? index.regions : region?.id ? [region] : [{ id: 'austin', name: 'Austin, TX' }];
-  $('addRegion').innerHTML = cities.map((r) => `<option value="${esc(r.id)}" ${r.id === region?.id ? 'selected' : ''}>${esc(r.name)}</option>`).join('');
+  drawCityOptions($('addRegion'), cities.map((r) => ({ id: r.id, name: r.name })), region?.id ?? null);
   $('addRes').hidden = true; $('addInput').value = '';
-  $('addActs').innerHTML = '<button type="submit" class="go-btn" id="addSend">Check and add</button>';
+  drawActs($('addActs'), [{ kind: 'submit', id: 'addSend', label: 'Check and add', main: true }]);
   openSheet('addSheet', e.currentTarget);
   $('addInput').focus();
 });
@@ -1956,12 +1951,12 @@ $('addForm').addEventListener('submit', async (e) => {
   let r = null, out = null;
   try { r = await fetch('api/add-source', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ input, target: addFor, region: $('addRegion').value, website: $('addWebsite').value }) }); out = await r.json(); } catch { /* no API here */ }
   btn.disabled = false;
-  const viaFeedback = () => { $('addActs').innerHTML = '<button type="button" class="go-btn" id="addToFeedback">Send it as feedback</button><button type="submit" class="tab opt" id="addSend">Check again</button>'; };
+  const viaFeedback = () => { drawActs($('addActs'), [{ kind: 'button', id: 'addToFeedback', label: 'Send it as feedback', main: true }, { kind: 'submit', id: 'addSend', label: 'Check again', main: false }]); };
   if (!r || !out || (!out.status && !out.error)) { addResult('no', "Couldn't check it from here.", 'Send it as feedback instead and it will be looked at.'); viaFeedback(); return; }
   if (out.error) { addResult('no', "Couldn't check it.", out.error); return; }
   if (out.status === 'ok' && out.saved) {
     addResult('ok', out.title, out.detail);
-    $('addActs').innerHTML = '<button type="button" class="go-btn" data-close>Done</button><button type="button" class="tab opt" id="addAnother">Add another</button>';
+    drawActs($('addActs'), [{ kind: 'button', label: 'Done', close: true, main: true }, { kind: 'button', id: 'addAnother', label: 'Add another', main: false }]);
     $('addActs').querySelector('button').focus();
     return;
   }
@@ -1970,7 +1965,7 @@ $('addForm').addEventListener('submit', async (e) => {
   if (out.needsLink) { $('addInput').focus(); $('addInput').select(); }
 });
 $('addActs').addEventListener('click', (e) => {
-  if (e.target.closest('#addAnother')) { $('addInput').value = ''; $('addRes').hidden = true; $('addActs').innerHTML = '<button type="submit" class="go-btn" id="addSend">Check and add</button>'; $('addInput').focus(); return; }
+  if (e.target.closest('#addAnother')) { $('addInput').value = ''; $('addRes').hidden = true; drawActs($('addActs'), [{ kind: 'submit', id: 'addSend', label: 'Check and add', main: true }]); $('addInput').focus(); return; }
   if (e.target.closest('#addToFeedback')) {
     const text = `Please add this source: ${$('addInput').value.trim()} (for ${addFor === 'events' ? 'Events' : SPORTS[addFor]?.label ?? addFor}, ${$('addRegion').selectedOptions[0]?.textContent ?? ''})`;
     $('addSheet').close();
@@ -1999,6 +1994,22 @@ for (const d of sheets()) {
     if (e.clientY < r.top || e.clientY > r.bottom || e.clientX < r.left || e.clientX > r.right) d.close();
   });
 }
+// Usage: filters picked and taps out to a source (book, event page, Instagram, map, calendar).
+document.addEventListener('click', (e) => {
+  const reg = usageRegion();
+  const f = e.target.closest('[data-evkind],[data-evsort],[data-evlike],[data-evtag],[data-day]');
+  if (f) {
+    const [what, value] = Object.entries(f.dataset).find(([k]) => ['evkind', 'evsort', 'evlike', 'evtag', 'day'].includes(k)) ?? [];
+    if (what) track('filter', { tab: state.section, what: what.replace(/^ev/, ''), value: String(value).slice(0, 40), region: reg });
+  }
+  if (e.target.closest('#calGoogle, [data-ics]')) { track('out', { tab: state.section, link: 'calendar', region: reg }); return; }
+  const a = e.target.closest('a[href^="http"]');
+  if (a && !a.href.startsWith(location.origin)) {
+    let host = ''; try { host = new URL(a.href).hostname.replace(/^www\./, ''); } catch {}
+    const link = /instagram\.com$/.test(host) ? 'instagram' : /google\.[a-z.]+$|maps\.apple\.com$|openstreetmap\.org$/.test(host) && /map|dir/i.test(a.href) ? 'map' : a.matches('.signup, .book, .go-btn') ? 'book' : 'page';
+    track('out', { tab: state.section, link, source: host.slice(0, 60), region: reg });
+  }
+}, true);
 document.addEventListener('click', async (e) => {
   const cal = e.target.closest('[data-cal]');
   if (cal) { openCalSheet(cal.dataset.cal, cal); return; }
@@ -2178,7 +2189,7 @@ async function chooseRegion(id, { keepDay = false } = {}) {
     schedule = await getJson(`${regionData()}schedule.json`);
   } catch (e) {
     schedule = null;
-    $('list').innerHTML = `<div class="error">Couldn't load schedules: ${esc(e.message)}</div>`;
+    drawSessionsList($('list'), { status: 'error', message: e.message });
     unfold();
     return;
   }
@@ -2199,7 +2210,7 @@ const knewRegion = !!state.region; // a saved or linked city
 if (index?.regions?.length) await chooseRegion(state.region);
 else {
   try { schedule = await getJson(`${DATA}schedule.json`); save(); render(); }
-  catch (e) { $('list').innerHTML = `<div class="error">Couldn't load schedules: ${esc(e.message)}</div>`; unfold(); }
+  catch (e) { drawSessionsList($('list'), { status: 'error', message: e.message }); unfold(); }
 }
 // A first visit opens on the nearest city when the browser already shares its location with this
 // site (no prompt is ever raised here; 📍 is how someone chooses to share it).

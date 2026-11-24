@@ -5,8 +5,8 @@ import assert from 'node:assert/strict';
 import {
   EVENT_KINDS, EVENT_TAGS, countEvents, eventCta, eventDateRange, eventGroups, eventKind, eventPinName,
   eventPlaceParts, eventPlaces, eventTags, eventWhen, eventsForRegion, filterEvents, groupByMonth,
-  isEventKind, isEventTag, isOn, sortEvents, weekendRange,
-} from '../public/events-ui.js';
+  isEventKind, isEventTag, isOn, kindLabel, sortEvents, weekendRange,
+} from '../web/events-ui.js';
 
 const ev = (over = {}) => ({ id: 'evt-x', category: 'seasonal', title: 'T', venue: 'V', city: 'Austin', startDate: '2026-12-05', ...over });
 
@@ -72,7 +72,7 @@ test('groupByMonth: the page\'s events under month headers, in order', () => {
 
 
 test('kinds and tags: Asian-inspired is a tag, not a kind; a feed may send kind and tags itself', () => {
-  assert.deepEqual(EVENT_KINDS.map((k) => k.id), ['popup', 'seasonal']);
+  assert.deepEqual(EVENT_KINDS.map((k) => k.id), ['popup', 'seasonal', 'weekly']);
   assert.deepEqual(EVENT_TAGS.map((g) => g.id), ['asian-inspired']);
   assert.equal(eventKind(ev({ category: 'popup' })), 'popup');
   assert.equal(eventKind(ev({ category: 'asian-inspired' })), null);
@@ -82,7 +82,7 @@ test('kinds and tags: Asian-inspired is a tag, not a kind; a feed may send kind 
   assert.ok(isEventKind('all') && isEventKind('seasonal') && !isEventKind('asian-inspired'));
   assert.ok(isEventTag('asian-inspired') && !isEventTag('popup'));
   assert.deepEqual(countEvents([ev({ category: 'popup' }), ev({ category: 'seasonal' }), ev({ category: 'asian-inspired' }), ev({ category: 'popup', tags: ['asian-inspired'] })]),
-    { all: 4, popup: 2, seasonal: 1, 'asian-inspired': 2 });
+    { all: 4, popup: 2, seasonal: 1, weekly: 0, 'asian-inspired': 2 });
 });
 
 test('eventsForRegion: a feed is Austin\'s unless it or an event says otherwise', () => {
@@ -146,7 +146,7 @@ test('eventWhen and isOn: the card\'s date column; eventCta: what the button say
 });
 
 test('placeGroups: the map\'s places sit under the list\'s headings, by the event each is named for', async () => {
-  const { eventPlaces, placeGroups } = await import('../public/events-ui.js');
+  const { eventPlaces, placeGroups } = await import('../web/events-ui.js');
   const today = '2026-11-18'; // a Wednesday
   const feed = [
     { id: 'a', title: 'On now fair', venue: 'A Hall', startDate: '2026-11-10', endDate: '2026-11-22', lat: 30.1, lng: -97.1 },
@@ -161,7 +161,7 @@ test('placeGroups: the map\'s places sit under the list\'s headings, by the even
 });
 
 test('eventPlaces: listings of one street address pinned a few steps apart share a place; the same number elsewhere does not', async () => {
-  const { eventPlaces } = await import('../public/events-ui.js');
+  const { eventPlaces } = await import('../web/events-ui.js');
   const ev = (title, venue, lat, lng) => ({ id: title, title, venue, city: 'Austin', startDate: '2026-12-11', lat, lng });
   const places = eventPlaces([
     ev('Bazaar', 'Blue Genie Art Bazaar, 6100 Airport Boulevard', 30.32634, -97.71684),
@@ -171,4 +171,13 @@ test('eventPlaces: listings of one street address pinned a few steps apart share
   ], '2026-11-19');
   assert.equal(places.length, 3);
   assert.deepEqual(places.find((p) => p.events.length === 2).events.map((e) => e.title).sort(), ['Bazaar', 'Expo']);
+});
+
+test('kinds: weekly markets are their own kind, Every week, and the filter keeps them apart', () => {
+  const evs = [{ id: 'm', title: 'Mueller Farmers Market', kind: 'weekly', category: 'popup', startDate: '2026-11-22' }, { id: 'p', title: 'Matcha pop-up', category: 'popup', startDate: '2026-11-22' }];
+  assert.equal(eventKind(evs[0]), 'weekly', 'kind wins over the older category');
+  assert.equal(kindLabel('weekly'), 'Every week');
+  assert.deepEqual(filterEvents(evs, { kind: 'weekly' }, '2026-11-22').map((e) => e.id), ['m']);
+  assert.deepEqual(filterEvents(evs, { kind: 'popup' }, '2026-11-22').map((e) => e.id), ['p']);
+  assert.equal(countEvents(evs, '2026-11-22').weekly, 1);
 });

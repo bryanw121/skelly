@@ -13,6 +13,7 @@ import { eventText, eventTopics, matchesText, searchTags } from './search.js';
 export const EVENT_KINDS = [
   { id: 'popup', label: 'Pop-ups', one: 'Pop-up', hint: 'One-off shops, food and art' },
   { id: 'seasonal', label: 'Seasonal', one: 'Seasonal', hint: 'Holiday markets, lights and bars' },
+  { id: 'weekly', label: 'Every week', one: 'Every week', hint: 'Farmers and makers markets that run every week' },
 ];
 export const EVENT_TAGS = [{ id: 'asian-inspired', label: 'Asian-inspired' }];
 export const isEventKind = (k) => k === 'all' || EVENT_KINDS.some((x) => x.id === k);

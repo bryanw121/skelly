@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { calendarSpan, googleCalendarUrl, icsFile, icsName } from '../public/calendar.js';
+import { calendarSpan, googleCalendarUrl, icsFile, icsName } from '../web/calendar.js';
 
 const tz = 'America/Chicago';
 
@@ -42,7 +42,7 @@ test('icsFile: one event a calendar app can open', () => {
 });
 
 test('visitItem: one day of a long run, two hours from the time picked, or until it closes', async () => {
-  const { visitItem, calendarSpan } = await import('../public/calendar.js');
+  const { visitItem, calendarSpan } = await import('../web/calendar.js');
   const run = { title: 'Market', date: '2026-11-20', endDate: '2026-12-24', start: '10:00', end: '21:00', tz: 'America/Chicago' };
   assert.deepEqual(calendarSpan(visitItem(run, '2026-11-28', '18:00')), { allDay: false, from: '20261128T180000', to: '20261128T200000' });
   assert.equal(visitItem(run, '2026-11-28', '20:15').end, '21:00');

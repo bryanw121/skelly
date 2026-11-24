@@ -273,12 +273,15 @@ or cmd; nothing needs bash. Optional settings go in a `.env` file (copy `.env.ex
 npm install
 npx playwright install chromium   # only needed for npm run scrape (ACES, ATX Beach pages)
 npm test                          # unit + integration tests (parsers, API handlers, scrape pipeline), all offline
-npm run test:e2e                  # the site in Chromium against server.js, with fixture data (needs playwright's chromium)
+npm run test:e2e                  # builds the site, then drives it in Chromium against server.js, with fixture data
+npm run typecheck                 # TypeScript check of the site (web/)
 npm run check:skedda              # checks the court calendars respond to a plain script
 npm run courts                    # write public/data/courts.json
 npm run scrape                    # rebuild public/data/schedule.json + occurrences.json (+ the database, if DATABASE_URL is set)
 npm run db:migrate                # apply db/migrations to DATABASE_URL (does nothing without it)
-npm run dev                       # http://localhost:5173 (+ live /api/courts, /api/check and /api/sessions)
+npm run dev                       # http://localhost:5173, reloads as you edit web/ (+ the live /api/* handlers)
+npm run build                     # the site into dist/ (what GitHub Pages and Vercel publish)
+npm run serve                     # serve dist/ with the /api/* handlers (what the e2e tests use)
 ```
 
 `api/courts.js`, `api/check.js`, `api/sessions.js` + `vercel.json` also let the same repo deploy to Vercel with on-request data (see
@@ -500,7 +503,11 @@ scripts/db-migrate.mjs   apply db/migrations + db/grants.sql to DATABASE_URL
 db/                      migrations/NNNN_name.sql and grants.sql (the read-only role's SELECT)
 scripts/sanitize-fixtures.mjs  strips personal data from captured fixtures (run by capture-fixtures.mjs)
 scripts/adapters/        one module per platform or site
-public/                  the site (index.html, app.js, styles.css, data/)
+web/                     the site's source: index.html, app.js, styles.css, types.ts (data shapes); Vite
+                         builds it into dist/. New UI is Preact components in TypeScript (.tsx); app.js is
+                         being moved over a piece at a time
+public/                  files the site serves as they are: data/ (the feeds), maps/, vendor/ (MapLibre)
+vite.config.js           the build: web/ + public/ -> dist/ (relative paths, so it works on Pages and Vercel)
 api/courts.js            live court bookings (Vercel / local dev)
 api/check.js             live re-check of one session (Vercel / local dev)
 api/sessions.js          occurrences for a window, from the database or the feed (Vercel / local dev)
@@ -553,7 +560,7 @@ says where they came from).
   `/api/courts` has `region`, `calendar` (the booking page) and `calendarDay`, a template with `{date}` (YYYY-MM-DD) that
   opens the booking page on that day; a platform with no per-day link leaves `calendarDay` out.
 - **No machine-readable source**: add it to the region's `manual.json` with `verifiedAt`.
-- **A new sport**: sessions carry `sport`; add its labels and filters to `SPORTS` in `public/app.js` and its allowed
+- **A new sport**: sessions carry `sport`; add its labels and filters to `SPORTS` in `web/app.js` and its allowed
   attribute values to `SPORT_ATTRIBUTES` in `lib/session.js`.
 
 Every session is checked before it's published (`lib/session.js`): malformed ones are dropped and listed as warnings
