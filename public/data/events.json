@@ -1,6 +1,6 @@
 {
  "feedVersion": 1,
- "generatedAt": "2026-11-24T12:27:19.692Z",
+ "generatedAt": "2026-11-24T15:50:59.270681Z",
  "events": [
   {
    "id": "evt-b08715cc63748015",
@@ -238,6 +238,24 @@
    "located": "address"
   },
   {
+   "account": "365thingsaustin",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "45-minute holiday lights boat cruise on Lake Austin with hot cocoa and blankets.",
+   "endDate": "2027-01-03",
+   "price": "$34.95+",
+   "region": "austin",
+   "source": "Instagram @365thingsaustin",
+   "sourceUrl": "https://www.instagram.com/reel/DgGlqHxygcM/",
+   "startDate": "2026-11-21",
+   "title": "Lake Austin Lights",
+   "venue": "Hula Hut, 3825 Lake Austin Blvd",
+   "id": "evt-7588fd8270708fe6",
+   "lat": 30.29495,
+   "lng": -97.78381,
+   "located": "address"
+  },
+  {
    "id": "evt-71bf5c31aed220b3",
    "category": "seasonal",
    "title": "Mozart's Festival of Lights",
@@ -372,6 +390,21 @@
    "located": "source",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
+  },
+  {
+   "account": "fortworthcookiegal",
+   "category": "popup",
+   "city": "Fort Worth",
+   "description": "Fort Worth bakery's Thanksgiving pop-up selling cheesecakes, cookies, bread pudding, and crumb bars before closing for the holiday.",
+   "endDate": "2026-11-25",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @fortworthcookiegal",
+   "sourceUrl": "https://www.instagram.com/p/DgF2_9kJUWt/",
+   "startDate": "2026-11-24",
+   "title": "Fort Worth Cookie Gal Thanksgiving Pop-Up",
+   "venue": "The Porch Shop and Sweet Lucy's Pies",
+   "id": "evt-23e4cfdc969d1445"
   },
   {
    "id": "evt-d27b302d69316085",
@@ -525,6 +558,26 @@
    "firstSeen": "2026-11-23"
   },
   {
+   "account": "eratexas",
+   "area": "West Dallas",
+   "category": "seasonal",
+   "city": "Dallas",
+   "description": "Weekly Wednesday night market in West Dallas with food vendors and local makers; Nov 25 is the last Wednesday of the November run.",
+   "endTime": "22:00",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @eratexas",
+   "sourceUrl": "https://www.instagram.com/reel/Df2l-LNy0sA/",
+   "startDate": "2026-11-25",
+   "startTime": "17:00",
+   "title": "ERA November Night Market",
+   "venue": "Plaza de Gonzalez, 3311 Sylvan Ave",
+   "id": "evt-23a88e608b91cf55",
+   "lat": 32.78203,
+   "lng": -96.83587,
+   "located": "address"
+  },
+  {
    "id": "evt-0123a7edbab80077",
    "category": "seasonal",
    "kind": "seasonal",
@@ -583,6 +636,26 @@
    "description": "Recurring Wednesday/Thursday morning matcha residency in the Cedars; next session Wed Nov 25, 9am–1pm.",
    "lat": 32.76921,
    "lng": -96.78615,
+   "located": "address"
+  },
+  {
+   "account": "rumi.matchacafe",
+   "area": "Design District",
+   "category": "popup",
+   "city": "Dallas",
+   "description": "One-day-only thank-you event at the Dallas matcha café with a free photobooth all day and 50% off its cookie butter drink before closing for Thanksgiving.",
+   "endTime": "16:00",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @rumi.matchacafe",
+   "sourceUrl": "https://www.instagram.com/p/De5a8zfCUZH/",
+   "startDate": "2026-11-25",
+   "startTime": "09:00",
+   "title": "Rumi Matcha RUMITHANKSYOU Customer Appreciation Day",
+   "venue": "Rumi Matcha Cafe, 1644 Irving Blvd",
+   "id": "evt-2f9507a6cf37c756",
+   "lat": 32.79193,
+   "lng": -96.82212,
    "located": "address"
   },
   {
@@ -706,6 +779,20 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "account": "drinknoto",
+   "category": "popup",
+   "city": "Houston",
+   "description": "Coffee, rolls and matcha cart touring holiday markets: Nov 26 GMAB at City Place Plaza, Spring, 8am–12pm; Nov 29 TFGG at Autry Park, Houston, 11am–3pm; Dec 5 GMAB at The Decoy, Houston, 8am–12pm and NOTO at Autry Park 'Paws & Claus', 11am–2pm; Dec 5 NOTO at City Hall, Missouri City Snowfest, 3–8pm; Dec 12 H&H at Meridiana, Manvel, 'Merry Meridiana', 11am–2pm; Dec 13 HHA at Heights Fire Station, Houston Mistletoe Market, 1–6pm.",
+   "endDate": "2026-12-13",
+   "region": "houston",
+   "source": "Instagram @drinknoto",
+   "sourceUrl": "https://www.instagram.com/p/DgHJzqkFmFT/",
+   "startDate": "2026-11-26",
+   "title": "Drink NOTO Holiday Pop-Up Tour",
+   "venue": "Various Houston-area markets (see description)",
+   "id": "evt-184674890634c0da"
+  },
+  {
    "id": "evt-709023761dafc67b",
    "category": "popup",
    "kind": "popup",
@@ -808,6 +895,24 @@
    "sourceId": "allevents-austin"
   },
   {
+   "account": "viking.shield",
+   "category": "popup",
+   "city": "Austin",
+   "description": "Leather goods, tattoo artist, tarot and live music at an 18+ Black Friday market.",
+   "endTime": "18:00",
+   "region": "austin",
+   "source": "Instagram @viking.shield",
+   "sourceUrl": "https://www.instagram.com/p/DgIRDRnG5Lt/",
+   "startDate": "2026-11-27",
+   "startTime": "10:00",
+   "title": "Black Friday Market",
+   "venue": "2605 E Cesar Chavez",
+   "id": "evt-ab6cbec5d6cdb379",
+   "lat": 30.25382,
+   "lng": -97.71533,
+   "located": "address"
+  },
+  {
    "id": "evt-a64b5f4494f71499",
    "category": "popup",
    "kind": "popup",
@@ -841,6 +946,24 @@
    "description": "Coco Treats serves gourmet cookies, cinnamon rolls and mini cakes Nov 27–29 — Fri 5 PM–midnight, Sat 3 PM–midnight, Sun 3–10 PM, until sold out.",
    "lat": 29.72927,
    "lng": -95.37647,
+   "located": "address"
+  },
+  {
+   "account": "epochcoffee",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "Black Friday vendor market with jewelry, art, coffee demos and Jamaican food.",
+   "endTime": "18:00",
+   "region": "austin",
+   "source": "Instagram @epochcoffee",
+   "sourceUrl": "https://www.instagram.com/p/DgGkHkomSxX/",
+   "startDate": "2026-11-27",
+   "startTime": "15:00",
+   "title": "Epoch Coffee Black Friday Vendor Market",
+   "venue": "Epoch Coffee Village, 2700 W Anderson Ln",
+   "id": "evt-03571644c54b42b7",
+   "lat": 30.35784,
+   "lng": -97.73424,
    "located": "address"
   },
   {
@@ -1045,6 +1168,25 @@
    "account": "oniko.htx"
   },
   {
+   "account": "porlamananamarketshtx",
+   "area": "East Houston",
+   "category": "seasonal",
+   "city": "Houston",
+   "description": "Holiday pop-up market with local vendors, food, drinks and handmade gifts at a neighborhood café.",
+   "endTime": "17:00",
+   "region": "houston",
+   "source": "Instagram @porlamananamarketshtx",
+   "sourceUrl": "https://www.instagram.com/p/DgGiRanvMnE/",
+   "startDate": "2026-11-27",
+   "startTime": "12:00",
+   "title": "Por la Mañana Café Home for the Holidays Pop Up Market",
+   "venue": "Por la Mañana Café, 901 Uvalde Rd",
+   "id": "evt-23a52bf56f4b84d8",
+   "lat": 29.77977,
+   "lng": -95.18667,
+   "located": "address"
+  },
+  {
    "id": "evt-5e95f9f16fe8df73",
    "category": "popup",
    "kind": "popup",
@@ -1081,6 +1223,27 @@
    "lng": -97.93631,
    "located": "source",
    "sourceId": "allevents-austin"
+  },
+  {
+   "account": "sio_l8r",
+   "area": "Entertainment District",
+   "category": "seasonal",
+   "city": "Arlington",
+   "description": "Free German-style Christmas market with handcrafted gifts, German food and drinks, live performances, and daily snowfall.",
+   "endDate": "2026-12-23",
+   "endTime": "20:00",
+   "price": "Free admission",
+   "region": "dallas",
+   "source": "Instagram @sio_l8r",
+   "sourceUrl": "https://www.instagram.com/reel/DgBgnezN3Te/",
+   "startDate": "2026-11-27",
+   "startTime": "11:00",
+   "title": "Texas Christkindl Market",
+   "venue": "North Plaza at Globe Life Field, 1650 E Randol Mill Rd",
+   "id": "evt-2a5e0bc622166f6f",
+   "lat": 32.75019,
+   "lng": -97.08636,
+   "located": "address"
   },
   {
    "id": "evt-976c0d0a83712588",
@@ -1181,6 +1344,25 @@
    "sourceId": "allevents-austin"
   },
   {
+   "account": "drinkmeasap",
+   "category": "popup",
+   "city": "Fort Worth",
+   "description": "Two-hour Small Business Saturday matcha pop-up from the Fort Worth matcha and botanical bar, hosted by The Mix Match School of Craft.",
+   "endTime": "11:00",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @drinkmeasap",
+   "sourceUrl": "https://www.instagram.com/p/DgINscvJQ0g/",
+   "startDate": "2026-11-28",
+   "startTime": "09:00",
+   "title": "ASAP Matcha Pop-Up",
+   "venue": "Between The Mix Match & Bluebonnet Bookshop, 3462 Bluebonnet Cir",
+   "id": "evt-4a9bda2e075b5495",
+   "lat": 32.69929,
+   "lng": -97.36118,
+   "located": "address"
+  },
+  {
    "id": "mkt-9b7fffdfe0f83fe2",
    "category": "popup",
    "kind": "weekly",
@@ -1264,6 +1446,26 @@
    "located": "address"
   },
   {
+   "account": "cadenacollective",
+   "area": "Oak Cliff",
+   "category": "seasonal",
+   "city": "Dallas",
+   "description": "Bilingual Small Business Saturday open house with cafecito, chocolate, and local small businesses.",
+   "endTime": "17:00",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @cadenacollective",
+   "sourceUrl": "https://www.instagram.com/p/Df-mqm-GwUy/",
+   "startDate": "2026-11-28",
+   "startTime": "12:00",
+   "title": "Cadena Collective Small Business Saturday",
+   "venue": "Cadena Collective, 423 Centre St, 2nd Floor",
+   "id": "evt-2b7af3d0f80edf17",
+   "lat": 32.74234,
+   "lng": -96.82876,
+   "located": "address"
+  },
+  {
    "id": "evt-8cc2735080b75139",
    "category": "seasonal",
    "kind": "seasonal",
@@ -1315,6 +1517,45 @@
    "account": "creamedtx",
    "source": "Instagram @creamedtx",
    "description": "Pastry pop-ups Nov 28 at The Blind Goat day market (9am) and Nov 29 with Isa Matcha at ONLI (10am), until sold out."
+  },
+  {
+   "account": "communitymarket",
+   "area": "Downtown Denton",
+   "category": "seasonal",
+   "city": "Denton",
+   "description": "Producer-only farmers and makers market's Small Business Saturday edition, with farm produce, food trucks, live music, and baked goods.",
+   "endTime": "13:00",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @communitymarket",
+   "sourceUrl": "https://www.instagram.com/p/DgF6YAMPz6U/",
+   "startDate": "2026-11-28",
+   "startTime": "09:00",
+   "title": "Denton Community Market Small Business Saturday",
+   "venue": "Denton Community Market, 317 W Mulberry St",
+   "id": "evt-0e66c7d33e109d01",
+   "lat": 33.21348,
+   "lng": -97.13548,
+   "located": "address"
+  },
+  {
+   "account": "dentonmakercenter",
+   "category": "seasonal",
+   "city": "Denton",
+   "description": "Small outdoor holiday makers market for Small Business Saturday with local vendors and free parking across the street.",
+   "endTime": "18:00",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @dentonmakercenter",
+   "sourceUrl": "https://www.instagram.com/reel/DgDYzn2Blky/",
+   "startDate": "2026-11-28",
+   "startTime": "13:00",
+   "title": "Denton Maker Center Holiday Market",
+   "venue": "Denton Maker Center, 728 N Elm St",
+   "id": "evt-3b5832df5d07fbce",
+   "lat": 33.22045,
+   "lng": -97.13354,
+   "located": "address"
   },
   {
    "id": "evt-ecd86b2874f9c0b5",
@@ -1373,6 +1614,26 @@
    "lng": -97.14764,
    "located": "address",
    "account": "drinkity_dinkity"
+  },
+  {
+   "account": "drinkity_dinkity",
+   "area": "Denton",
+   "category": "popup",
+   "city": "Denton",
+   "description": "Small matcha cart returns to Denton's community thrift store for its Small Business Saturday market, with a free cookie with any coffee or matcha purchase.",
+   "endTime": "15:00",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @drinkity_dinkity",
+   "sourceUrl": "https://www.instagram.com/reel/Df5WiW8IRkz/",
+   "startDate": "2026-11-28",
+   "startTime": "10:00",
+   "title": "Drinkity Dinkity Matcha Pop-Up at Sundance Thrift",
+   "venue": "Sundance Thrift, 521 Bryan St",
+   "id": "evt-1e996cbd4b1bf8a3",
+   "lat": 33.21892,
+   "lng": -97.14764,
+   "located": "address"
   },
   {
    "id": "evt-e970af1cd7975161",
@@ -1501,6 +1762,64 @@
    "located": "address"
   },
   {
+   "account": "createdforyoubyamparor",
+   "area": "Washington Ave Arts District",
+   "category": "seasonal",
+   "city": "Houston",
+   "description": "Free two-day indoor holiday market with 125 independent makers at Silver Street Studios.",
+   "endDate": "2026-11-29",
+   "endTime": "17:00",
+   "price": "Free",
+   "region": "houston",
+   "source": "Instagram @createdforyoubyamparor",
+   "sourceUrl": "https://www.instagram.com/p/DgFwhPtkbd2/",
+   "startDate": "2026-11-28",
+   "startTime": "11:00",
+   "title": "Holiday Vibe Market",
+   "venue": "Silver Street Studios",
+   "id": "evt-5735742aee8b9b9c",
+   "lat": 29.77088,
+   "lng": -95.37855,
+   "located": "manual"
+  },
+  {
+   "account": "joycraftedtx",
+   "category": "asian-inspired",
+   "city": "Austin",
+   "description": "Matcha and hojicha cart serving its Season 3 menu of layered iced drinks alongside Japanese-inspired dishes.",
+   "endDate": "2026-11-29",
+   "endTime": "14:30",
+   "region": "austin",
+   "source": "Instagram @joycraftedtx",
+   "sourceUrl": "https://www.instagram.com/p/DgGqwxDGv3h/",
+   "startDate": "2026-11-28",
+   "startTime": "11:00",
+   "title": "Joy(n) Thanksgiving Weekend Pop-Up",
+   "venue": "Kitsu Nori, 2310 S Lamar Blvd #102",
+   "id": "evt-7fc1a7ad13ba22f8",
+   "lat": 30.24737,
+   "lng": -97.77518,
+   "located": "address"
+  },
+  {
+   "account": "jujustable.atx",
+   "category": "popup",
+   "city": "Austin",
+   "description": "Small-batch bakery pop-up selling salt bread, cruffins, cinnamon rolls and cookies with matcha lattes.",
+   "endTime": "13:00",
+   "region": "austin",
+   "source": "Instagram @jujustable.atx",
+   "sourceUrl": "https://www.instagram.com/p/DgF9tfikUhw/",
+   "startDate": "2026-11-28",
+   "startTime": "09:00",
+   "title": "Juju's Table Bakery Pop-Up",
+   "venue": "Idlewild Coffee, 824 W 12th St",
+   "id": "evt-2674587756ace826",
+   "lat": 30.27617,
+   "lng": -97.74882,
+   "located": "address"
+  },
+  {
    "id": "evt-8f518e51abb405b0",
    "category": "seasonal",
    "kind": "seasonal",
@@ -1524,6 +1843,22 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "account": "thekonigiri",
+   "area": "Old Katy",
+   "category": "asian-inspired",
+   "city": "Katy",
+   "description": "Weekly Saturday stall serving handmade onigiri, strawberry daifuku mochi and hand-whisked matcha at the Old Katy farmers market.",
+   "endTime": "13:00",
+   "region": "houston",
+   "source": "Instagram @thekonigiri",
+   "sourceUrl": "https://www.instagram.com/reel/Df7Pq4cprPo/",
+   "startDate": "2026-11-28",
+   "startTime": "09:00",
+   "title": "Konigiri at Old Katy Farmers Market",
+   "venue": "Old Katy Farmers Market",
+   "id": "evt-3d366b146914a39f"
+  },
+  {
    "id": "evt-e13d8252c8de92d6",
    "category": "asian-inspired",
    "title": "Kyoto Koffie",
@@ -1540,6 +1875,25 @@
    "endTime": "14:00",
    "account": "kyotokoffie",
    "endDate": "2026-11-29"
+  },
+  {
+   "account": "lasperrascafe",
+   "area": "East End",
+   "category": "seasonal",
+   "city": "Houston",
+   "description": "Free community tree-lighting with a craft market, free hot chocolate, a Christmas concert and the 4pm lighting ceremony.",
+   "endTime": "19:00",
+   "region": "houston",
+   "source": "Instagram @lasperrascafe",
+   "sourceUrl": "https://www.instagram.com/p/DgDC4p8R-PB/",
+   "startDate": "2026-11-28",
+   "startTime": "13:00",
+   "title": "Las Perras Café Tree Lighting Ceremony",
+   "venue": "Las Perras Café, 3401 Harrisburg Blvd",
+   "id": "evt-55fa3d48bd17ced9",
+   "lat": 29.74834,
+   "lng": -95.34127,
+   "located": "address"
   },
   {
    "id": "evt-17b4f062d3aa743c",
@@ -1604,6 +1958,25 @@
    "located": "source",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
+  },
+  {
+   "account": "luckyubakery",
+   "category": "asian-inspired",
+   "city": "Fort Worth",
+   "description": "Outdoor flea market with live music where the Fort Worth bakery serves seasonal matcha lattes, salt bread, Thai tea basque cheesecake, and tiramisu.",
+   "endTime": "18:00",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @luckyubakery",
+   "sourceUrl": "https://www.instagram.com/p/DgGRrPxmJe7/",
+   "startDate": "2026-11-28",
+   "startTime": "12:00",
+   "title": "Lucky Yu Pop-Up",
+   "venue": "Doc's Records & Vintage, 2628 Weisenberger St",
+   "id": "evt-9a1769493fe644d1",
+   "lat": 32.75721,
+   "lng": -97.35333,
+   "located": "address"
   },
   {
    "id": "evt-5e19b20d58d2bd65",
@@ -1777,6 +2150,25 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "account": "communitybeerco",
+   "category": "seasonal",
+   "city": "Dallas",
+   "description": "Brewery-hosted Small Business Saturday market with 20+ local vendors.",
+   "endTime": "17:00",
+   "price": "Free entry",
+   "region": "dallas",
+   "source": "Instagram @communitybeerco",
+   "sourceUrl": "https://www.instagram.com/p/DgGGEwDl9DM/",
+   "startDate": "2026-11-28",
+   "startTime": "12:00",
+   "title": "Small Business Saturday Local Vendor Market at Community Beer Co",
+   "venue": "Community Beer Co, 3110 Commonwealth Dr",
+   "id": "evt-9bce0c7742a838b1",
+   "lat": 32.81142,
+   "lng": -96.8611,
+   "located": "address"
+  },
+  {
    "id": "evt-c8c5da930db5a5d9",
    "category": "asian-inspired",
    "title": "Snack Bar x Matchee Bar at Nori Nori",
@@ -1869,6 +2261,25 @@
    "lng": -95.49173,
    "located": "address",
    "account": "theresa.macatelier"
+  },
+  {
+   "account": "tomo.htx",
+   "area": "Washington Ave / Heights",
+   "category": "asian-inspired",
+   "city": "Houston",
+   "description": "One-day matcha and ramen collab pairing Tomo's layered matcha drinks with Chef Niki V's burnt miso beef cheek ramen.",
+   "endTime": "15:00",
+   "region": "houston",
+   "source": "Instagram @tomo.htx",
+   "sourceUrl": "https://www.instagram.com/p/DgF5SttRBiy/",
+   "startDate": "2026-11-28",
+   "startTime": "08:00",
+   "title": "Tomo Matcha × Chef Niki V Culinary Collab",
+   "venue": "Tomo, 2155 Durham Dr #105",
+   "id": "evt-b04a8bbc0b9f8ab2",
+   "lat": 29.77887,
+   "lng": -95.41081,
+   "located": "address"
   },
   {
    "id": "evt-8692c21f610e1959",
@@ -2035,6 +2446,24 @@
    "firstSeen": "2026-11-23"
   },
   {
+   "account": "ahalapress",
+   "category": "popup",
+   "city": "Austin",
+   "description": "Local-vendor pop-up market with free entry at Industry.",
+   "endTime": "15:00",
+   "region": "austin",
+   "source": "Instagram @ahalapress",
+   "sourceUrl": "https://www.instagram.com/reel/Df7tKvGBbSF/",
+   "startDate": "2026-11-29",
+   "startTime": "11:00",
+   "title": "Austin Pop Up Market",
+   "venue": "Industry, 1211 E 5th St Ste 150",
+   "id": "evt-ad1cb05f6ccb0bfe",
+   "lat": 30.26341,
+   "lng": -97.73081,
+   "located": "address"
+  },
+  {
    "id": "evt-046fb7c59a38c119",
    "category": "popup",
    "title": "Bread & Butter by Dope HTX at Kohiko Coffee House",
@@ -2131,6 +2560,42 @@
    "located": "source",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-22"
+  },
+  {
+   "account": "ausforfree",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "Outdoor holiday flea market with local vendors at the brewery.",
+   "endTime": "17:00",
+   "region": "austin",
+   "source": "Instagram @ausforfree",
+   "sourceUrl": "https://www.instagram.com/p/DgA0vu_DSfq/",
+   "startDate": "2026-11-29",
+   "startTime": "12:00",
+   "title": "Holiday Shopping with the Austin Flea",
+   "venue": "Meanwhile Brewing",
+   "id": "evt-d200d0a4374bf9ac",
+   "lat": 30.20893,
+   "lng": -97.72937,
+   "located": "manual"
+  },
+  {
+   "account": "honeyhillmarket",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "Vintage apparel and home market with coffee and matcha by Tumbleweed and Swedish candy.",
+   "endTime": "16:00",
+   "region": "austin",
+   "source": "Instagram @honeyhillmarket",
+   "sourceUrl": "https://www.instagram.com/p/DgINDk8xnlR/",
+   "startDate": "2026-11-29",
+   "startTime": "11:00",
+   "title": "Honey Hill Holiday Market",
+   "venue": "Honey Hill Market",
+   "id": "evt-c0e74a0fb01bb665",
+   "lat": 30.33316,
+   "lng": -97.73583,
+   "located": "manual"
   },
   {
    "id": "evt-2172dfd1d6dcd3c5",
@@ -2267,6 +2732,24 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "account": "tinyloafatx",
+   "category": "popup",
+   "city": "Austin",
+   "description": "Loaf cakes and coffee at a bookstore collaboration morning.",
+   "endTime": "14:00",
+   "region": "austin",
+   "source": "Instagram @tinyloafatx",
+   "sourceUrl": "https://www.instagram.com/p/DgFdQ1Bh12Q/",
+   "startDate": "2026-11-29",
+   "startTime": "10:00",
+   "title": "Tiny Loaf Sunday Coffee",
+   "venue": "Alienated Majesty Books, 613 W 29th St",
+   "id": "evt-9bc493cd4bb3becb",
+   "lat": 30.29546,
+   "lng": -97.74303,
+   "located": "address"
+  },
+  {
    "id": "evt-cc0194a165e6f8e8",
    "category": "popup",
    "kind": "popup",
@@ -2324,6 +2807,25 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "account": "morimatcha_",
+   "area": "Downtown",
+   "category": "asian-inspired",
+   "city": "Austin",
+   "description": "Weekly matcha bar residency pouring ceremonial matcha drinks at the hotel café.",
+   "endTime": "13:30",
+   "region": "austin",
+   "source": "Instagram @morimatcha_",
+   "sourceUrl": "https://www.1hotels.com/austin/do/events/mori-matcha-mondays",
+   "startDate": "2026-11-30",
+   "startTime": "08:30",
+   "title": "Mori Matcha Mondays",
+   "venue": "Neighbors Café and Wine Bar, 1 Hotel Austin, 96 Red River St",
+   "id": "evt-59e13696b82bab6b",
+   "lat": 30.2613,
+   "lng": -97.73904,
+   "located": "address"
+  },
+  {
    "id": "evt-29c881066fccd0de",
    "category": "seasonal",
    "kind": "seasonal",
@@ -2363,6 +2865,25 @@
    "endTime": "19:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-23"
+  },
+  {
+   "account": "sweets_by_vivi_atx",
+   "category": "asian-inspired",
+   "city": "Austin",
+   "description": "Matcha drinks and frosted cinnamon rolls from two small Austin dessert makers.",
+   "endDate": "2026-12-03",
+   "endTime": "14:00",
+   "region": "austin",
+   "source": "Instagram @sweets_by_vivi_atx",
+   "sourceUrl": "https://www.instagram.com/p/DgGlkc3gji2/",
+   "startDate": "2026-12-01",
+   "startTime": "10:00",
+   "title": "Black Gato Matcha × Sweets by Vivi Pop-Up",
+   "venue": "23rd Street Artists Market, 405 W 23rd St",
+   "id": "evt-50bedceebb027661",
+   "lat": 30.28644,
+   "lng": -97.74179,
+   "located": "address"
   },
   {
    "id": "evt-773d94d491cb5a81",
@@ -2822,6 +3343,23 @@
    "account": "movemountainsmarket"
   },
   {
+   "category": "seasonal",
+   "title": "Move Mountains December Markets",
+   "venue": "Multiple venues (see description)",
+   "area": "Southeast Austin",
+   "city": "Austin",
+   "startDate": "2026-12-03",
+   "sourceUrl": "https://www.instagram.com/p/Df3U4nRs0QV/",
+   "source": "Instagram @movemountainsmarket",
+   "description": "Four-stop December holiday market series with makers, live music and hot cocoa: Dec 3 Jingle & Mingle, Wolf Ranch, Georgetown, 5:30–8:30pm; Dec 13 Merry Makers, Easton Park, Austin, 11am–3pm; Dec 19 Stitch & Sip, Colony Estates, Bastrop, 5:30–8:30pm; Dec 20 Manor Holiday Festival, Whisper Valley, Manor, 11am–2pm.",
+   "id": "evt-493fc2d0444d193f",
+   "lat": 30.155682,
+   "lng": -97.719024,
+   "located": "manual",
+   "account": "movemountainsmarket",
+   "endDate": "2026-12-20"
+  },
+  {
    "id": "evt-a53a6d780ec04459",
    "category": "seasonal",
    "kind": "seasonal",
@@ -2841,6 +3379,24 @@
    "located": "source",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
+  },
+  {
+   "account": "sa_pey_ka",
+   "category": "popup",
+   "city": "Austin",
+   "description": "Embroidered trucker-hat maker brings its Texas pop-up tour to Austin for one afternoon.",
+   "endTime": "15:00",
+   "region": "austin",
+   "source": "Instagram @sa_pey_ka",
+   "sourceUrl": "https://www.instagram.com/p/Df8OFSSlS7a/",
+   "startDate": "2026-12-03",
+   "startTime": "11:00",
+   "title": "Sa Pey Ka Austin Pop-Up",
+   "venue": "House of Shan, 8907 Bee Caves Rd",
+   "id": "evt-cb491c0e192464e5",
+   "lat": 30.31813,
+   "lng": -97.86206,
+   "located": "address"
   },
   {
    "id": "evt-e6d74f7c5d23aa31",
@@ -4154,6 +4710,25 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "account": "cove_austin",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "Two-weekend holiday market with 15% off storewide and pop-up vendors.",
+   "endDate": "2026-12-13",
+   "endTime": "16:00",
+   "region": "austin",
+   "source": "Instagram @cove_austin",
+   "sourceUrl": "https://www.instagram.com/p/DgF5LcjBL55/",
+   "startDate": "2026-12-05",
+   "startTime": "12:00",
+   "title": "Cove Holiday Market",
+   "venue": "2151 S Lamar Blvd",
+   "id": "evt-c4ada61ee274107b",
+   "lat": 30.24771,
+   "lng": -97.77216,
+   "located": "address"
+  },
+  {
    "id": "evt-8c2a1e21d43e100a",
    "category": "seasonal",
    "kind": "seasonal",
@@ -4255,6 +4830,24 @@
    "located": "source",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-21"
+  },
+  {
+   "account": "ac_accessories20",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "End-of-year pop-up market at the Austin Deaf Club.",
+   "endTime": "18:00",
+   "region": "austin",
+   "source": "Instagram @ac_accessories20",
+   "sourceUrl": "https://www.instagram.com/p/DgGWFMMhoqh/",
+   "startDate": "2026-12-05",
+   "startTime": "12:00",
+   "title": "End of Year 2026 Pop Up Market",
+   "venue": "Austin Deaf Club, 8818 Cullen Ln",
+   "id": "evt-9607c8a9ad12f1fc",
+   "lat": 30.17187,
+   "lng": -97.79019,
+   "located": "address"
   },
   {
    "id": "evt-b8337a18cf1045ea",
@@ -4554,6 +5147,43 @@
    "firstSeen": "2026-11-22"
   },
   {
+   "account": "paloma_consignment",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "Consignment-shop holiday market spotlighting local makers and vintage goods.",
+   "endTime": "14:00",
+   "region": "austin",
+   "source": "Instagram @paloma_consignment",
+   "sourceUrl": "https://www.instagram.com/p/DgAh9eZES6a/",
+   "startDate": "2026-12-05",
+   "startTime": "10:00",
+   "title": "Holiday Market Paloma",
+   "venue": "508 E 53rd St",
+   "id": "evt-727b159d3d67afaf",
+   "lat": 30.31641,
+   "lng": -97.71837,
+   "located": "address"
+  },
+  {
+   "account": "drinksonchanel",
+   "area": "Heights",
+   "category": "seasonal",
+   "city": "Houston",
+   "description": "Small holiday market pop-up with hot chocolate, fresh lemonades, local vendors and food including Thee Eggroll Hut.",
+   "endTime": "16:00",
+   "region": "houston",
+   "source": "Instagram @drinksonchanel",
+   "sourceUrl": "https://www.instagram.com/p/Df5EkXuRm92/",
+   "startDate": "2026-12-05",
+   "startTime": "11:00",
+   "title": "Holiday Market Pop-Up",
+   "venue": "7818 N Main St",
+   "id": "evt-5d67d83c9ff28107",
+   "lat": 29.82077,
+   "lng": -95.39403,
+   "located": "address"
+  },
+  {
    "id": "evt-b4a26c95b9862d45",
    "category": "seasonal",
    "kind": "seasonal",
@@ -4759,6 +5389,25 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "account": "23mafrid",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "Christmas pop-up market running three Saturdays in December.",
+   "endDate": "2026-12-19",
+   "endTime": "20:00",
+   "region": "austin",
+   "source": "Instagram @23mafrid",
+   "sourceUrl": "https://www.instagram.com/reel/DgC5R2vvINX/",
+   "startDate": "2026-12-05",
+   "startTime": "15:00",
+   "title": "Kafida Boutiques Christmas Pop-Up Market",
+   "venue": "2902 E Cesar Chavez",
+   "id": "evt-2972a8d7e31d99d8",
+   "lat": 30.25269,
+   "lng": -97.71172,
+   "located": "address"
+  },
+  {
    "id": "evt-f7311966d9663aed",
    "category": "seasonal",
    "kind": "seasonal",
@@ -4876,6 +5525,24 @@
    "lng": -96.81855,
    "located": "address",
    "account": "lovelifeandpizza"
+  },
+  {
+   "account": "jackie__ramos",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "First-time Christmas market with local vendors, stickers, totes and holiday shopping.",
+   "endTime": "17:00",
+   "region": "austin",
+   "source": "Instagram @jackie__ramos",
+   "sourceUrl": "https://www.instagram.com/reel/Df8mWlVR8av/",
+   "startDate": "2026-12-05",
+   "startTime": "12:00",
+   "title": "Lulu's Christmas Sip & Stroll",
+   "venue": "10402 Menchaca Rd Bldg C",
+   "id": "evt-618616d00f048076",
+   "lat": 30.16688,
+   "lng": -97.82707,
+   "located": "address"
   },
   {
    "id": "evt-40c41812485eb73c",
@@ -5259,6 +5926,20 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "account": "righteousretro",
+   "category": "popup",
+   "city": "Austin",
+   "description": "Vintage and retro goods pop-ups at three venues across December: Dec 5 The Highball, 1120 S Lamar, 12–6pm; Dec 13 Oddwood Brewing, 3108 Manor Rd, 11am–4pm; Dec 19 Barrett's Too, 103 North Loop E, 6–11pm.",
+   "endDate": "2026-12-19",
+   "region": "austin",
+   "source": "Instagram @righteousretro",
+   "sourceUrl": "https://www.instagram.com/p/DgEuh3hxbQ5/",
+   "startDate": "2026-12-05",
+   "title": "Righteous Retro December Pop-Ups",
+   "venue": "The Highball, Oddwood Brewing & Oddcade, Barrett's Too",
+   "id": "evt-deaf572d23716f0c"
+  },
+  {
    "id": "evt-bf282daf7a33c7bf",
    "category": "popup",
    "kind": "popup",
@@ -5420,6 +6101,26 @@
    "located": "source",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-22"
+  },
+  {
+   "account": "thewhimsyedit.htx",
+   "area": "EaDo",
+   "category": "seasonal",
+   "city": "Houston",
+   "description": "Houston's pan dulce-themed holiday market with local artisans, pan dulce treats and festive photo ops, presented by Miradela.",
+   "endTime": "16:00",
+   "price": "Free entry",
+   "region": "houston",
+   "source": "Instagram @thewhimsyedit.htx",
+   "sourceUrl": "https://www.instagram.com/p/DgFnE_fEbR1/",
+   "startDate": "2026-12-05",
+   "startTime": "11:00",
+   "title": "Sweet Like Pan Dulce Holiday Market",
+   "venue": "The Seremoni Edit – Brickhouse, 1125 Providence St",
+   "id": "evt-9bde577bf9394382",
+   "lat": 29.76919,
+   "lng": -95.35649,
+   "located": "manual"
   },
   {
    "id": "evt-d3a19517f0bb0566",
@@ -5696,6 +6397,25 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "account": "ahoustonmarket",
+   "category": "seasonal",
+   "city": "Houston",
+   "description": "Free family- and pet-friendly holiday market at Autry Park with local businesses, coffee, photo ops and music, presented by A Houston Market.",
+   "endTime": "15:00",
+   "price": "Free",
+   "region": "houston",
+   "source": "Instagram @ahoustonmarket",
+   "sourceUrl": "https://www.instagram.com/p/Df03sEZxNVW/",
+   "startDate": "2026-12-06",
+   "startTime": "10:00",
+   "title": "Christmas in the Park Holiday Market",
+   "venue": "Autry Park, 3711 Autry Park Dr",
+   "id": "evt-90ccbc00e745c638",
+   "lat": 29.75948,
+   "lng": -95.40742,
+   "located": "source"
+  },
+  {
    "id": "evt-acc5806eb0c4ed40",
    "category": "seasonal",
    "kind": "seasonal",
@@ -5959,6 +6679,25 @@
    "firstSeen": "2026-11-22"
   },
   {
+   "account": "designerperfumeshut",
+   "area": "Cypress / NW Houston",
+   "category": "popup",
+   "city": "Houston",
+   "description": "Dear Matcha and RoRo Bakes serve matcha drinks and fresh bakes inside a perfume shop for a holiday sip-and-shop pop-up.",
+   "endTime": "14:00",
+   "region": "houston",
+   "source": "Instagram @designerperfumeshut",
+   "sourceUrl": "https://www.instagram.com/p/DgGCvpjlkO8/",
+   "startDate": "2026-12-06",
+   "startTime": "09:00",
+   "title": "Sips, Sweets & Scents — Matcha + Bakes Pop-Up",
+   "venue": "Designer Perfumes Hut, 7538-A Cypress Creek Pkwy",
+   "id": "evt-e74c0dd30e4844ac",
+   "lat": 29.96564,
+   "lng": -95.54087,
+   "located": "manual"
+  },
+  {
    "id": "evt-800db3669d20aa39",
    "category": "seasonal",
    "kind": "seasonal",
@@ -6055,6 +6794,23 @@
    "lng": -97.81385,
    "located": "source",
    "sourceId": "allevents-austin"
+  },
+  {
+   "account": "poppy23atx",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "Winter pop-up shop with free entry and raffles.",
+   "region": "austin",
+   "source": "Instagram @poppy23atx",
+   "sourceUrl": "https://www.instagram.com/p/Df7060Tn5s8/",
+   "startDate": "2026-12-06",
+   "startTime": "12:00",
+   "title": "Winter Social Pop Up Shop",
+   "venue": "503 E Powell Ln",
+   "id": "evt-b23f1df65e599eac",
+   "lat": 30.34567,
+   "lng": -97.69941,
+   "located": "address"
   },
   {
    "id": "evt-1a2324373a2a1bfb",
@@ -7085,6 +7841,25 @@
    "firstSeen": "2026-11-23"
   },
   {
+   "account": "aztecafarmersmarkethtx",
+   "area": "East Houston",
+   "category": "seasonal",
+   "city": "Houston",
+   "description": "Mexican cultural holiday farmers market with papel picado, marigolds and local vendors honoring Our Lady of Guadalupe.",
+   "endTime": "17:00",
+   "region": "houston",
+   "source": "Instagram @aztecafarmersmarkethtx",
+   "sourceUrl": "https://www.instagram.com/p/Df-BiTTJTux/",
+   "startDate": "2026-12-12",
+   "startTime": "12:00",
+   "title": "Azteca Farmers Market Pop Up",
+   "venue": "7710 Lyons Ave",
+   "id": "evt-9f4ad46ec37ed03b",
+   "lat": 29.7767,
+   "lng": -95.29001,
+   "located": "address"
+  },
+  {
    "id": "evt-c99bf487b291cb85",
    "category": "popup",
    "kind": "popup",
@@ -8021,6 +8796,24 @@
    "sourceId": "allevents-austin"
   },
   {
+   "account": "latincity",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "Family-friendly holiday market at the East Riverside venue.",
+   "endTime": "15:00",
+   "region": "austin",
+   "source": "Instagram @latincity",
+   "sourceUrl": "https://www.instagram.com/reel/DgCuMGUJWlw/",
+   "startDate": "2026-12-13",
+   "startTime": "10:00",
+   "title": "Chevere Holiday Market",
+   "venue": "Ani's Day & Night, 7107 E Riverside Dr",
+   "id": "evt-8274d1ed8d7a945b",
+   "lat": 30.22161,
+   "lng": -97.69622,
+   "located": "address"
+  },
+  {
    "id": "evt-50f65e4e87e6ac8a",
    "category": "seasonal",
    "kind": "seasonal",
@@ -8102,24 +8895,6 @@
    "firstSeen": "2026-11-23"
   },
   {
-   "category": "seasonal",
-   "title": "Merry Makers Market",
-   "venue": "The Union, Easton Park, 7604 Solari Dr",
-   "area": "Southeast Austin",
-   "city": "Austin",
-   "startDate": "2026-12-13",
-   "startTime": "11:00",
-   "endTime": "15:00",
-   "sourceUrl": "https://www.instagram.com/p/Df3U4nRs0QV/",
-   "source": "Instagram @movemountainsmarket",
-   "description": "Move Mountains holiday market: local makers, live music, ugly Christmas sweater contest, crafts and hot cocoa bar.",
-   "id": "evt-493fc2d0444d193f",
-   "lat": 30.155682,
-   "lng": -97.719024,
-   "located": "manual",
-   "account": "movemountainsmarket"
-  },
-  {
    "id": "evt-e64af04c1ca78710",
    "category": "seasonal",
    "kind": "seasonal",
@@ -8140,6 +8915,24 @@
    "located": "source",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-22"
+  },
+  {
+   "account": "therustictap",
+   "category": "seasonal",
+   "city": "Austin",
+   "description": "Holiday market with local vendors, charity auction, live music and drink specials.",
+   "endTime": "19:00",
+   "region": "austin",
+   "source": "Instagram @therustictap",
+   "sourceUrl": "https://www.instagram.com/p/Df3LUKcmnOI/",
+   "startDate": "2026-12-13",
+   "startTime": "14:00",
+   "title": "The Rustic Tap 4th Annual Holiday Market",
+   "venue": "The Rustic Tap",
+   "id": "evt-c2409d2bfca8b640",
+   "lat": 30.26958,
+   "lng": -97.74917,
+   "located": "manual"
   },
   {
    "id": "evt-09511bc5bb482942",
@@ -8623,6 +9416,24 @@
    "firstSeen": "2026-11-24"
   },
   {
+   "account": "vettahausventures",
+   "category": "popup",
+   "city": "Austin",
+   "description": "One-day curated wellness and home-goods pop-up downtown.",
+   "endTime": "13:00",
+   "region": "austin",
+   "source": "Instagram @vettahausventures",
+   "sourceUrl": "https://www.instagram.com/p/Df-D0rqhtjB/",
+   "startDate": "2026-12-19",
+   "startTime": "10:00",
+   "title": "Vetta Haus Bodega Pop-Up",
+   "venue": "111 W 8th St",
+   "id": "evt-2251bc5109cc4578",
+   "lat": 30.2699,
+   "lng": -97.74232,
+   "located": "address"
+  },
+  {
    "id": "evt-81657aca7d2a5591",
    "category": "seasonal",
    "title": "Yalla Market Winter Wonderland",
@@ -8798,131 +9609,6 @@
    "endTime": "23:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-23"
-  }
- ],
- "listingsAt": "2026-11-24T12:27:19.692Z",
- "sources": [
-  {
-   "id": "allevents-austin",
-   "ok": true,
-   "count": 112
-  },
-  {
-   "id": "visit-austin",
-   "ok": true,
-   "count": 2
-  },
-  {
-   "id": "added-allevents-in-austin",
-   "ok": true,
-   "count": 1
-  },
-  {
-   "id": "allevents-dallas",
-   "ok": true,
-   "count": 134
-  },
-  {
-   "id": "allevents-houston",
-   "ok": true,
-   "count": 125
-  },
-  {
-   "id": "weekly-markets",
-   "ok": true,
-   "count": 7
-  }
- ],
- "markets": [
-  {
-   "id": "way/1230311383",
-   "name": "Austin Country Flea Market",
-   "city": "Austin",
-   "region": "austin",
-   "lat": 30.33263,
-   "lng": -97.63045
-  },
-  {
-   "id": "node/13963507958",
-   "name": "380 Denton Flea Market",
-   "city": "Denton",
-   "region": "dallas",
-   "lat": 33.23517,
-   "lng": -97.07072,
-   "url": "https://www.fleamarketmalls.com/market/flea-market-380/"
-  },
-  {
-   "id": "way/317912695",
-   "name": "Farmers Market Building",
-   "city": "Grand Prairie",
-   "region": "dallas",
-   "lat": 32.74582,
-   "lng": -97.00455
-  },
-  {
-   "id": "way/507408128",
-   "name": "Red Barn Flea Market",
-   "city": "Waxahachie",
-   "region": "dallas",
-   "lat": 32.38418,
-   "lng": -96.85066
-  },
-  {
-   "id": "node/9135965197",
-   "name": "Waxahachie Farmers Market",
-   "city": "Waxahachie",
-   "region": "dallas",
-   "lat": 32.37898,
-   "lng": -96.84708,
-   "url": "https://www.waxahachiecvb.com/business/waxahachie-downtown-farmers-market"
-  },
-  {
-   "id": "node/5437323309",
-   "name": "Cheng's Flea Market",
-   "city": "Houston",
-   "region": "houston",
-   "lat": 29.91336,
-   "lng": -95.40405
-  },
-  {
-   "id": "node/5437323266",
-   "name": "De Buey y Vacas Taquerías Flea Market",
-   "city": "Houston",
-   "region": "houston",
-   "lat": 29.88704,
-   "lng": -95.39324
-  },
-  {
-   "id": "node/5437174966",
-   "name": "Lucky Land Flea Market",
-   "city": "Houston",
-   "region": "houston",
-   "lat": 29.88512,
-   "lng": -95.39344
-  },
-  {
-   "id": "node/5437174965",
-   "name": "Mercado Sabadomingo",
-   "city": "Houston",
-   "region": "houston",
-   "lat": 29.88645,
-   "lng": -95.39156
-  },
-  {
-   "id": "node/5437174717",
-   "name": "Sinta Flea Market",
-   "city": "Houston",
-   "region": "houston",
-   "lat": 29.88769,
-   "lng": -95.39411
-  },
-  {
-   "id": "node/5437323265",
-   "name": "Sunny Flea Market",
-   "city": "Houston",
-   "region": "houston",
-   "lat": 29.88615,
-   "lng": -95.39322
   }
  ]
 }
