@@ -1,0 +1,80 @@
+{
+ "recordedAt": "2026-11-24T04:26:59.964Z",
+ "meta": {
+  "unit": "events:allevents-dallas",
+  "now": "2026-11-24T04:26:59.964Z",
+  "count": 134
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "d6c164acd759.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/craft-fairs",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "6a3311221ba4.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/festivals",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "112b94c807c6.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/food-drinks",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "107e198b19c6.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "a31db0089394.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "33b5ccba5b80.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/shopping",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c2855663e51e.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/exhibitions",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "2c454353d719.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/night-market",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "cadbe10ed3d8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/dallas/art",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "a5ca384774a3.html"
+  }
+ ]
+}
