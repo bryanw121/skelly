@@ -25,3 +25,4 @@ coverage/
 canary-report.md
 canary-report.json
 canary-failed/
+canary-failures/

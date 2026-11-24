@@ -5,7 +5,7 @@ import test, { mock } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { canaryUnits } from '../lib/canary-units.js';
+import { CANT_RECORD, canaryUnits } from '../lib/canary-units.js';
 import { cassetteName, resultCount } from '../lib/canary.js';
 import { CASSETTES, replay } from './support/cassette.mjs';
 
@@ -26,10 +26,7 @@ for (const unit of recorded) {
   });
 }
 
-// Sources the canary can't record today, and why. Keep this short: each is a source that's down.
-const CANT_RECORD = {
-  'schedule:georgetown-pickleball': "the city's certificate doesn't match its host from GitHub's runners (#53)",
-};
+
 
 test('every reader has a recording', () => {
   const missing = units.filter((u) => !recorded.includes(u) && !CANT_RECORD[u.id]).map((u) => u.id);

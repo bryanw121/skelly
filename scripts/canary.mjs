@@ -9,10 +9,10 @@
 //   node scripts/canary.mjs --list               the units and their weekdays, no requests
 //
 // Writes canary-report.md and canary-report.json.
-import { writeFileSync, appendFileSync } from 'node:fs';
+import { writeFileSync, appendFileSync, mkdirSync } from 'node:fs';
 import { loadEnv, repoPath } from '../lib/paths.js';
-import { canaryUnits } from '../lib/canary-units.js';
-import { RUN_BUDGET, UNIT_BUDGET, pickUnits, report, rotation, runCanary } from '../lib/canary.js';
+import { CANT_RECORD, canaryUnits } from '../lib/canary-units.js';
+import { RUN_BUDGET, UNIT_BUDGET, failureReports, pickUnits, report, rotation, runCanary } from '../lib/canary.js';
 
 loadEnv();
 const args = process.argv.slice(2);
@@ -43,4 +43,8 @@ const md = report(outcomes, { budget, day: only.length || all ? null : day, refu
 writeFileSync(repoPath('canary-report.md'), md);
 writeFileSync(repoPath('canary-report.json'), `${JSON.stringify({ at: now.toISOString(), budget, outcomes, refused, skipped }, null, 1)}\n`);
 if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, md);
+// One file per unit this run tried, for the workflow's issue step (empty: it recorded).
+const { GITHUB_SERVER_URL: server, GITHUB_REPOSITORY: repo, GITHUB_RUN_ID: run } = process.env;
+mkdirSync(repoPath('canary-failures'), { recursive: true });
+for (const [file, text] of Object.entries(failureReports(outcomes, { known: CANT_RECORD, runUrl: run ? `${server}/${repo}/actions/runs/${run}` : '' }))) writeFileSync(repoPath(`canary-failures/${file}`), text);
 console.log(`\n${budget.used} requests of ${budget.max}`);

@@ -22,6 +22,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 concurrency:
   group: canary
@@ -59,6 +60,25 @@ jobs:
             canary-report.*
             canary-failed/
           retention-days: 30
+      - name: Open an issue per unit that no longer records, close it when it records again
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # canary-failures/<unit>.md: the report when the unit failed, empty when it recorded.
+          # A unit is tried once a week, so a still-failing unit gets one comment a week.
+          for f in canary-failures/*.md; do
+            [ -e "$f" ] || continue
+            unit=$(basename "$f" .md)
+            title="Canary: $unit no longer records"
+            open=$(gh issue list --state open --search "in:title \"$title\"" --json number,title --jq "[.[] | select(.title == \"$title\")][0].number // empty")
+            if [ -s "$f" ]; then
+              if [ -n "$open" ]; then gh issue comment "$open" --body-file "$f"
+              else gh issue create --title "$title" --body-file "$f" --assignee "$GITHUB_REPOSITORY_OWNER"; fi
+            elif [ -n "$open" ]; then
+              gh issue close "$open" --comment "Recorded again on $(date -u +'%F %H:%MZ')."
+            fi
+          done
       - name: Test on the new recordings
         run: npm test
       - name: Propose the recordings
