@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T01:51:26.481Z",
+  "generatedAt": "2026-11-24T02:01:35.311Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -628,6 +628,254 @@
   ],
   "publicCourts": null,
   "venues": [
+    {
+      "id": "sugar-land-ice-sports-center",
+      "name": "Sugar Land Ice & Sports Center",
+      "city": null,
+      "lat": 29.591143,
+      "lng": -95.61852,
+      "region": "houston"
+    },
+    {
+      "id": "bellerive-ice-center",
+      "name": "Bellerive Ice Center",
+      "city": "Houston",
+      "lat": 29.713518,
+      "lng": -95.51272,
+      "region": "houston"
+    },
+    {
+      "id": "ice-skate-usa",
+      "name": "Ice Skate USA",
+      "city": "Houston",
+      "lat": 29.781337,
+      "lng": -95.542233,
+      "region": "houston"
+    },
+    {
+      "id": "model-boat-basin-ice-rink",
+      "name": "Model Boat Basin/Ice Rink",
+      "city": null,
+      "lat": 29.753726,
+      "lng": -95.359546,
+      "region": "houston"
+    },
+    {
+      "id": "aerodrome-ice-skating-complex",
+      "name": "Aerodrome Ice Skating Complex",
+      "city": "Houston",
+      "lat": 29.962734,
+      "lng": -95.553681,
+      "region": "houston"
+    },
+    {
+      "id": "ice-at-the-galleria",
+      "name": "ice At The Galleria",
+      "city": null,
+      "lat": 29.739238,
+      "lng": -95.463062,
+      "region": "houston"
+    },
+    {
+      "id": "deep-south-ice-rink-and-sports-complex",
+      "name": "Deep South Ice Rink and Sports Complex",
+      "city": "Richmond",
+      "lat": 29.680779,
+      "lng": -95.713019,
+      "region": "houston"
+    },
+    {
+      "id": "fts-pickleball",
+      "name": "FTS Pickleball",
+      "city": "Cypress",
+      "lat": 30.032129,
+      "lng": -95.641272,
+      "region": "houston"
+    },
+    {
+      "id": "pickle-lab",
+      "name": "Pickle Lab",
+      "city": null,
+      "lat": 29.734458,
+      "lng": -95.381119,
+      "region": "houston"
+    },
+    {
+      "id": "ymca-pickleball-courts",
+      "name": "YMCA pickleball courts",
+      "city": null,
+      "lat": 29.899667,
+      "lng": -95.666749,
+      "region": "houston"
+    },
+    {
+      "id": "houston-racquet-club",
+      "name": "Houston Racquet Club",
+      "city": null,
+      "lat": 29.765256,
+      "lng": -95.499211,
+      "region": "houston"
+    },
+    {
+      "id": "east-river-9",
+      "name": "East River 9",
+      "city": "Houston",
+      "lat": 29.761726,
+      "lng": -95.331749,
+      "region": "houston"
+    },
+    {
+      "id": "pickle-point-cypress",
+      "name": "Pickle Point Cypress",
+      "city": "Cypress",
+      "lat": 30.000239,
+      "lng": -95.731016,
+      "region": "houston"
+    },
+    {
+      "id": "pickle-point-katy",
+      "name": "Pickle Point Katy",
+      "city": "Katy",
+      "lat": 29.82606,
+      "lng": -95.780328,
+      "region": "houston"
+    },
+    {
+      "id": "houston-pickleball-center",
+      "name": "Houston Pickleball Center",
+      "city": "Houston",
+      "lat": 29.633953,
+      "lng": -95.40615,
+      "region": "houston"
+    },
+    {
+      "id": "competitive-edge-sports",
+      "name": "Competitive Edge Sports",
+      "city": "Spring",
+      "lat": 30.122332,
+      "lng": -95.399374,
+      "region": "houston"
+    },
+    {
+      "id": "lscm-sand-volleyball",
+      "name": "LSCM Sand Volleyball",
+      "city": null,
+      "lat": 30.213173,
+      "lng": -95.469699,
+      "region": "houston"
+    },
+    {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "city": null,
+      "lat": 29.717304,
+      "lng": -95.337405,
+      "region": "houston"
+    },
+    {
+      "id": "cambridge-oaks-volleyball-court",
+      "name": "Cambridge Oaks Volleyball Court",
+      "city": null,
+      "lat": 29.717991,
+      "lng": -95.350394,
+      "region": "houston"
+    },
+    {
+      "id": "eleanor-tinsley-park-volleyball-court",
+      "name": "Eleanor Tinsley Park Volleyball Court",
+      "city": null,
+      "lat": 29.761011,
+      "lng": -95.377675,
+      "region": "houston"
+    },
+    {
+      "id": "beach-volleyball-at-cross-creek-ranch-arbor-park",
+      "name": "Beach Volleyball at Cross Creek Ranch Arbor Park",
+      "city": null,
+      "lat": 29.705148,
+      "lng": -95.861676,
+      "region": "houston"
+    },
+    {
+      "id": "the-club",
+      "name": "The Club",
+      "city": null,
+      "lat": 29.591728,
+      "lng": -95.66536,
+      "region": "houston"
+    },
+    {
+      "id": "shadow-creek-sports-complex",
+      "name": "Shadow Creek Sports Complex",
+      "city": "Pearland",
+      "lat": 29.581294,
+      "lng": -95.420967,
+      "region": "houston"
+    },
+    {
+      "id": "crum-gym",
+      "name": "Crum Gym",
+      "city": null,
+      "lat": 29.740989,
+      "lng": -95.524565,
+      "region": "houston"
+    },
+    {
+      "id": "volleyball-1",
+      "name": "Volleyball 1",
+      "city": null,
+      "lat": 29.777131,
+      "lng": -95.434557,
+      "region": "houston"
+    },
+    {
+      "id": "volleyball-2-3-4",
+      "name": "Volleyball 2, 3, 4",
+      "city": null,
+      "lat": 29.777523,
+      "lng": -95.434591,
+      "region": "houston"
+    },
+    {
+      "id": "butler-sports-complex",
+      "name": "Butler Sports Complex",
+      "city": null,
+      "lat": 29.635407,
+      "lng": -95.48783,
+      "region": "houston"
+    },
+    {
+      "id": "wheeler-field-house",
+      "name": "Wheeler Field House",
+      "city": null,
+      "lat": 29.590282,
+      "lng": -95.620416,
+      "region": "houston"
+    },
+    {
+      "id": "the-volleyball-school",
+      "name": "The Volleyball School",
+      "city": "Richmond",
+      "lat": 29.661603,
+      "lng": -95.70208,
+      "region": "houston"
+    },
+    {
+      "id": "third-coast-volleyball",
+      "name": "Third Coast Volleyball",
+      "city": "Houston",
+      "lat": 29.72053,
+      "lng": -95.503124,
+      "region": "houston"
+    },
+    {
+      "id": "hopson-field-house",
+      "name": "Hopson Field House",
+      "city": "Missouri City",
+      "lat": 29.532859,
+      "lng": -95.496443,
+      "region": "houston"
+    },
     {
       "id": "src-houston-stars",
       "name": "Houston Stars",

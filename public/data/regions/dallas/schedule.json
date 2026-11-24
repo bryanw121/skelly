@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T01:51:26.481Z",
+  "generatedAt": "2026-11-24T02:01:35.311Z",
   "region": {
     "id": "dallas",
     "name": "Dallas–Fort Worth, TX",
@@ -989,6 +989,398 @@
       "address": "14719 Preston Road, Dallas, TX 75254",
       "lat": 32.94881,
       "lng": -96.80371,
+      "region": "dallas"
+    },
+    {
+      "id": "ice-at-the-parks",
+      "name": "Ice at The Parks",
+      "city": null,
+      "lat": 32.679236,
+      "lng": -97.128769,
+      "region": "dallas"
+    },
+    {
+      "id": "children-s-health-starcenter-multisport-northlake",
+      "name": "Children's Health Starcenter Multisport Northlake",
+      "city": "Northlake",
+      "lat": 33.023493,
+      "lng": -97.265218,
+      "region": "dallas"
+    },
+    {
+      "id": "american-airlines-center",
+      "name": "American Airlines Center",
+      "city": "Dallas",
+      "lat": 32.790494,
+      "lng": -96.810289,
+      "region": "dallas"
+    },
+    {
+      "id": "fifth-third-arena",
+      "name": "Fifth Third Arena",
+      "city": "Frisco",
+      "lat": 33.100567,
+      "lng": -96.819432,
+      "region": "dallas"
+    },
+    {
+      "id": "allen-community-ice-rink",
+      "name": "Allen Community Ice Rink",
+      "city": "Allen",
+      "lat": 33.127082,
+      "lng": -96.653812,
+      "region": "dallas"
+    },
+    {
+      "id": "children-s-health-starcenter",
+      "name": "Children's Health StarCenter",
+      "city": "Irving",
+      "lat": 32.943253,
+      "lng": -96.945375,
+      "region": "dallas"
+    },
+    {
+      "id": "children-s-health-starcenter-way-506726363",
+      "name": "Children's Health StarCenter",
+      "city": "McKinney",
+      "lat": 33.143037,
+      "lng": -96.704028,
+      "region": "dallas"
+    },
+    {
+      "id": "children-s-health-starcenter-way-514366453",
+      "name": "Children's Health StarCenter",
+      "city": "Plano",
+      "lat": 33.010305,
+      "lng": -96.772263,
+      "region": "dallas"
+    },
+    {
+      "id": "children-s-health-starcenter-way-597906839",
+      "name": "Children's Health StarCenter",
+      "city": "Richardson",
+      "lat": 32.93692,
+      "lng": -96.723072,
+      "region": "dallas"
+    },
+    {
+      "id": "children-s-health-starcenter-way-643589522",
+      "name": "Children's Health StarCenter",
+      "city": "Farmers Branch",
+      "lat": 32.919656,
+      "lng": -96.897071,
+      "region": "dallas"
+    },
+    {
+      "id": "texas-skatium",
+      "name": "Texas Skatium",
+      "city": null,
+      "lat": 32.861168,
+      "lng": -96.575884,
+      "region": "dallas"
+    },
+    {
+      "id": "galleria-ice-skating-center",
+      "name": "Galleria Ice Skating Center",
+      "city": null,
+      "lat": 32.929995,
+      "lng": -96.819522,
+      "region": "dallas"
+    },
+    {
+      "id": "children-s-health-starcenter-way-1107143121",
+      "name": "Children's Health StarCenter",
+      "city": "Euless",
+      "lat": 32.82143,
+      "lng": -97.106616,
+      "region": "dallas"
+    },
+    {
+      "id": "children-s-health-starcenter-way-1411270601",
+      "name": "Children's Health StarCenter",
+      "city": "Mansfield",
+      "lat": 32.572627,
+      "lng": -97.113316,
+      "region": "dallas"
+    },
+    {
+      "id": "the-picklr",
+      "name": "The Picklr",
+      "city": "Denton",
+      "lat": 33.231854,
+      "lng": -97.140809,
+      "region": "dallas"
+    },
+    {
+      "id": "dallas-indoor-pickleball-club",
+      "name": "Dallas Indoor Pickleball Club",
+      "city": null,
+      "lat": 32.986298,
+      "lng": -96.843649,
+      "region": "dallas"
+    },
+    {
+      "id": "life-time",
+      "name": "Life Time",
+      "city": null,
+      "lat": 33.159701,
+      "lng": -96.843809,
+      "region": "dallas"
+    },
+    {
+      "id": "life-time-pickleball",
+      "name": "Life Time Pickleball",
+      "city": null,
+      "lat": 33.15975,
+      "lng": -96.842997,
+      "region": "dallas"
+    },
+    {
+      "id": "texas-pickleball",
+      "name": "Texas Pickleball",
+      "city": null,
+      "lat": 33.009488,
+      "lng": -97.221811,
+      "region": "dallas"
+    },
+    {
+      "id": "dill-dinkers-pickleball",
+      "name": "Dill Dinkers Pickleball",
+      "city": null,
+      "lat": 32.577644,
+      "lng": -97.355788,
+      "region": "dallas"
+    },
+    {
+      "id": "preston-playhouse",
+      "name": "Preston Playhouse",
+      "city": "Dallas",
+      "lat": 32.927695,
+      "lng": -96.80223,
+      "region": "dallas"
+    },
+    {
+      "id": "pickler-university",
+      "name": "Pickler University",
+      "city": null,
+      "lat": 32.989427,
+      "lng": -96.937709,
+      "region": "dallas"
+    },
+    {
+      "id": "frederick-p-herring-parks-and-recreation-center",
+      "name": "Frederick P. Herring Parks and Recreation Center",
+      "city": null,
+      "lat": 33.04452,
+      "lng": -97.022541,
+      "region": "dallas"
+    },
+    {
+      "id": "thrive",
+      "name": "Thrive",
+      "city": "Lewisville",
+      "lat": 33.019768,
+      "lng": -97.020331,
+      "region": "dallas"
+    },
+    {
+      "id": "wagon-wheel-tennis-and-pickleball-center",
+      "name": "Wagon Wheel Tennis and Pickleball Center",
+      "city": "Coppell",
+      "lat": 32.961812,
+      "lng": -97.021083,
+      "region": "dallas"
+    },
+    {
+      "id": "the-courts-of-mckinney-tennis-center-indoor-center",
+      "name": "The Courts of McKinney Tennis Center - Indoor Center",
+      "city": null,
+      "lat": 33.16824,
+      "lng": -96.710199,
+      "region": "dallas"
+    },
+    {
+      "id": "whispering-hills-pickleball-court",
+      "name": "Whispering Hills Pickleball Court",
+      "city": null,
+      "lat": 32.919643,
+      "lng": -96.707328,
+      "region": "dallas"
+    },
+    {
+      "id": "vistara-sports",
+      "name": "Vistara Sports",
+      "city": null,
+      "lat": 32.993798,
+      "lng": -97.000143,
+      "region": "dallas"
+    },
+    {
+      "id": "life-time-pickleball-courts",
+      "name": "Life Time Pickleball Courts",
+      "city": null,
+      "lat": 32.977862,
+      "lng": -97.171326,
+      "region": "dallas"
+    },
+    {
+      "id": "the-activ",
+      "name": "The ACTIV",
+      "city": "Arlington",
+      "lat": 32.711267,
+      "lng": -97.188232,
+      "region": "dallas"
+    },
+    {
+      "id": "city-pickle",
+      "name": "City Pickle",
+      "city": "Fort Worth",
+      "lat": 32.892868,
+      "lng": -97.32062,
+      "region": "dallas"
+    },
+    {
+      "id": "chicken-n-pickle",
+      "name": "Chicken N Pickle",
+      "city": null,
+      "lat": 32.88733,
+      "lng": -97.097636,
+      "region": "dallas"
+    },
+    {
+      "id": "moody-coliseum",
+      "name": "Moody Coliseum",
+      "city": "University Park",
+      "lat": 32.840491,
+      "lng": -96.780681,
+      "region": "dallas"
+    },
+    {
+      "id": "lakeside-park-volleyball-court",
+      "name": "Lakeside Park Volleyball Court",
+      "city": null,
+      "lat": 32.65585,
+      "lng": -96.918532,
+      "region": "dallas"
+    },
+    {
+      "id": "bob-woodruff-volleyball-sand-court",
+      "name": "Bob Woodruff Volleyball Sand Court",
+      "city": null,
+      "lat": 33.034136,
+      "lng": -96.660057,
+      "region": "dallas"
+    },
+    {
+      "id": "beach-volleyball",
+      "name": "Beach Volleyball",
+      "city": null,
+      "lat": 32.949981,
+      "lng": -96.544236,
+      "region": "dallas"
+    },
+    {
+      "id": "tcu-beach-volleyball-courts",
+      "name": "TCU Beach Volleyball Courts",
+      "city": null,
+      "lat": 32.708315,
+      "lng": -97.363681,
+      "region": "dallas"
+    },
+    {
+      "id": "cottonwood-park-volleyball-court",
+      "name": "Cottonwood Park Volleyball Court",
+      "city": null,
+      "lat": 32.948176,
+      "lng": -96.76455,
+      "region": "dallas"
+    },
+    {
+      "id": "psa-mckinney",
+      "name": "PSA McKinney",
+      "city": null,
+      "lat": 33.173032,
+      "lng": -96.7121,
+      "region": "dallas"
+    },
+    {
+      "id": "psa-murphy",
+      "name": "PSA Murphy",
+      "city": "Murphy",
+      "lat": 33.019596,
+      "lng": -96.611679,
+      "region": "dallas"
+    },
+    {
+      "id": "apex-centre",
+      "name": "Apex Centre",
+      "city": "McKinney",
+      "lat": 33.173611,
+      "lng": -96.714311,
+      "region": "dallas"
+    },
+    {
+      "id": "elzie-odom-athletic-center",
+      "name": "Elzie Odom Athletic Center",
+      "city": "Arlington",
+      "lat": 32.782241,
+      "lng": -97.087615,
+      "region": "dallas"
+    },
+    {
+      "id": "parkhill-jr-high-volleyball-pit",
+      "name": "Parkhill Jr. High Volleyball Pit",
+      "city": null,
+      "lat": 32.974521,
+      "lng": -96.789401,
+      "region": "dallas"
+    },
+    {
+      "id": "hidden-lakes-sand-volleyball-court",
+      "name": "Hidden Lakes Sand Volleyball Court",
+      "city": null,
+      "lat": 32.921686,
+      "lng": -97.193725,
+      "region": "dallas"
+    },
+    {
+      "id": "coliseum-col",
+      "name": "Coliseum (COL)",
+      "city": "Denton",
+      "lat": 33.208674,
+      "lng": -97.154065,
+      "region": "dallas"
+    },
+    {
+      "id": "bozman-volleyball",
+      "name": "Bozman Volleyball",
+      "city": null,
+      "lat": 33.001372,
+      "lng": -96.513737,
+      "region": "dallas"
+    },
+    {
+      "id": "basketball-court",
+      "name": "Basketball Court",
+      "city": null,
+      "lat": 32.945065,
+      "lng": -96.460021,
+      "region": "dallas"
+    },
+    {
+      "id": "running-bear-volleyball-court",
+      "name": "Running Bear Volleyball Court",
+      "city": null,
+      "lat": 32.786414,
+      "lng": -96.977979,
+      "region": "dallas"
+    },
+    {
+      "id": "stonebridge-ranch-beach-volley-court",
+      "name": "Stonebridge Ranch Beach Volley Court",
+      "city": null,
+      "lat": 33.197372,
+      "lng": -96.70018,
       "region": "dallas"
     },
     {

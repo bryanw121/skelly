@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T01:51:26.481Z",
+  "generatedAt": "2026-11-24T02:01:35.311Z",
   "regions": [
     {
       "id": "austin",
@@ -15,7 +15,7 @@
         "volleyball"
       ],
       "sessions": 526,
-      "venues": 34
+      "venues": 47
     },
     {
       "id": "dallas",
@@ -30,7 +30,7 @@
         "volleyball"
       ],
       "sessions": 28,
-      "venues": 13
+      "venues": 62
     },
     {
       "id": "houston",
@@ -44,7 +44,7 @@
         "volleyball"
       ],
       "sessions": 20,
-      "venues": 12
+      "venues": 43
     }
   ]
 }

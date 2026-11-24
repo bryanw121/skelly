@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T01:51:26.481Z",
+  "generatedAt": "2026-11-24T02:01:35.311Z",
   "region": {
     "id": "austin",
     "name": "Austin, TX",
@@ -248,7 +248,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-24T01:48:23.099Z",
+      "checkedAt": "2026-11-24T02:01:33.953Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
@@ -13978,7 +13978,7 @@
       "sport": "volleyball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "watchError": "HTTP 403",
+      "sourceChanged": "2026-11-18",
       "venueId": "hanovers",
       "status": "scheduled"
     },
@@ -15091,6 +15091,110 @@
       "address": "1042 Event Center Dr, Dripping Springs, TX 78620",
       "lat": 30.21889,
       "lng": -98.08786,
+      "region": "austin"
+    },
+    {
+      "id": "pickleball-courts-sun-city",
+      "name": "Pickleball Courts Sun City",
+      "city": "Georgetown",
+      "lat": 30.730933,
+      "lng": -97.770105,
+      "region": "austin"
+    },
+    {
+      "id": "the-picklr-austin-oak-hill",
+      "name": "The Picklr Austin Oak Hill",
+      "city": "Austin",
+      "lat": 30.234947,
+      "lng": -97.878578,
+      "region": "austin"
+    },
+    {
+      "id": "austin-tennis-center",
+      "name": "Austin Tennis Center",
+      "city": null,
+      "lat": 30.312618,
+      "lng": -97.63844,
+      "region": "austin"
+    },
+    {
+      "id": "pickleball-courts",
+      "name": "Pickleball Courts",
+      "city": null,
+      "lat": 30.600963,
+      "lng": -97.771753,
+      "region": "austin"
+    },
+    {
+      "id": "zilker-park-sand-vollyball-courts",
+      "name": "Zilker Park Sand Vollyball Courts",
+      "city": null,
+      "lat": 30.268806,
+      "lng": -97.76845,
+      "region": "austin"
+    },
+    {
+      "id": "austin-sports-center",
+      "name": "Austin Sports Center",
+      "city": "Austin",
+      "lat": 30.226981,
+      "lng": -97.755855,
+      "region": "austin"
+    },
+    {
+      "id": "westlake-athletic-community-center-wacc",
+      "name": "Westlake Athletic & Community Center (WACC)",
+      "city": null,
+      "lat": 30.278153,
+      "lng": -97.817488,
+      "region": "austin"
+    },
+    {
+      "id": "falcon-pointe-sand-volleyball-court",
+      "name": "Falcon Pointe Sand Volleyball Court",
+      "city": null,
+      "lat": 30.464838,
+      "lng": -97.582227,
+      "region": "austin"
+    },
+    {
+      "id": "volente-beach-resort-waterpark",
+      "name": "Volente Beach Resort & Waterpark",
+      "city": "Leander",
+      "lat": 30.441403,
+      "lng": -97.912908,
+      "region": "austin"
+    },
+    {
+      "id": "moontower-beach-volleyball-court",
+      "name": "Moontower Beach Volleyball Court",
+      "city": null,
+      "lat": 30.169768,
+      "lng": -97.826611,
+      "region": "austin"
+    },
+    {
+      "id": "sand-volleyball",
+      "name": "Sand Volleyball",
+      "city": null,
+      "lat": 30.492864,
+      "lng": -97.807434,
+      "region": "austin"
+    },
+    {
+      "id": "sand-volleyball-way-919609009",
+      "name": "Sand Volleyball",
+      "city": null,
+      "lat": 30.493084,
+      "lng": -97.807961,
+      "region": "austin"
+    },
+    {
+      "id": "balkan-cafe-s-beach-volleyball-court",
+      "name": "Balkan Cafe's Beach Volleyball Court",
+      "city": null,
+      "lat": 30.388175,
+      "lng": -97.684403,
       "region": "austin"
     }
   ]

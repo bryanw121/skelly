@@ -929,7 +929,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 620
+      "failStreak": 621
     },
     "dallas-reclub": {
       "counts": [
@@ -1260,7 +1260,7 @@
         15,
         15,
         15,
-        15,
+        12,
         12,
         12,
         12
@@ -1315,7 +1315,7 @@
     "manual:beecave-on-ice-sun:changed:2026-11-23",
     "manual:beecave-on-ice-tue:changed:2026-11-23",
     "manual:four-seasons-ice-rodeo:changed:2026-11-23",
-    "manual:hanovers-open:unverified",
-    "manual:hanovers-open:watch"
+    "manual:hanovers-open:changed:2026-11-18",
+    "manual:hanovers-open:unverified"
   ]
 }
