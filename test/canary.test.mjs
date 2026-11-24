@@ -96,15 +96,18 @@ test('resultCount and the report', () => {
   assert.match(md, /- https:\/\/a.test\/private/);
 });
 
-test('every source and reader is a canary unit, or skipped with a reason', () => {
+test('every source and reader is a canary unit, or skipped with a reason', async () => {
   const { units, skipped } = canaryUnits();
   const ids = new Set([...units.map((u) => u.id), ...skipped.map((s) => s.id)]);
   for (const s of loadSources().sources) assert.ok(ids.has(`schedule:${s.id}`), s.id);
   for (const s of JSON.parse(readFileSync(new URL('../config/programs.json', import.meta.url))).sources) assert.ok(ids.has(`programs:${s.id}`), s.id);
   for (const s of JSON.parse(readFileSync(new URL('../config/events.json', import.meta.url))).sources) assert.ok(ids.has(`events:${s.id}`), s.id);
   assert.ok(ids.has('markets'));
+  assert.ok(ids.has('watch:austin'), 'the pages behind Austin\'s hand-checked sessions');
+  for (const v of (await import('../lib/courts.js')).VENUES) assert.ok(ids.has(`courts:${v.id}`), v.id);
   assert.equal(new Set(units.map((u) => u.id)).size, units.length);
   for (const s of skipped) assert.match(s.why, /paused|browser/);
+  assert.equal(resultCount({ count: 2, facilities: [] }), 2);
 });
 
 test('runCanary records a unit, checks it replays, and keeps the old recording when it does not', async () => {
@@ -129,4 +132,44 @@ test('runCanary records a unit, checks it replays, and keeps the old recording w
   // Out of budget: it stops after the unit that spent it.
   const r = await runCanary([good, good], { fetch: real, dir, gapMs: 0, budget: { max: 2, used: 0 } });
   assert.equal(r.outcomes.length, 1);
+});
+
+test('sanitizeFor drops people from data it has no cleaner for, keeps what readers need', async () => {
+  const { dropPeople, sanitizeNextPage, sanitizeSkedda } = await import('../lib/canary.js');
+  assert.deepEqual(dropPeople({ events: [{ id: '1700000000', name: 'Open Play', firstName: 'Al', participants: [{ name: 'B' }], note: 'mail a@b.co' }] }),
+    { events: [{ id: '1700000000', name: 'Open Play', note: 'mail redacted@example.com' }] });
+  const page = `<script>self.__next_f.push(${JSON.stringify([1, `0:${JSON.stringify({ event: { id: 'e1', name: 'Open', registrations: [{ user: 'x' }] } })}\nnot json\n`])})</script>`;
+  const cleaned = sanitizeNextPage(page);
+  const { pageObjects } = await import('../lib/public-page-data.js');
+  assert.deepEqual(pageObjects(cleaned), [{ event: { id: 'e1', name: 'Open' } }]);
+  assert.equal(sanitizeFor('https://app.getopencourt.com/club/x', page), cleaned);
+  assert.equal(sanitizeFor('https://api.test/x', '{"members":[1],"ok":true}'), '{"ok":true}\n');
+  // Skedda: a token stub, bookings cut to times and courts, the venue cut to hours and court names.
+  assert.match(sanitizeSkedda('/booking', '<input name="__RequestVerificationToken" value="secret">'), /value="recorded"/);
+  const list = JSON.parse(sanitizeFor('https://v.skedda.com/bookingslists?start=x', JSON.stringify({ bookings: [{ start: 'a', end: 'b', spaces: [1], title: 'Smith party', createdBy: 9 }] })));
+  assert.deepEqual(list, { bookings: [{ start: 'a', end: 'b', spaces: [1] }] });
+  const webs = JSON.parse(sanitizeFor('https://v.skedda.com/webs', JSON.stringify({ venue: [{ name: 'V', hoursOfAvailability: { rules: [{ start: 360, end: 1320, daysBitmask: 127, note: 'x' }] } }], spaces: [{ id: 1, name: 'Court 1', venue: 1, nonAdminVisible: true, ownerEmail: 'o@x.com' }], users: [{ name: 'U' }] })));
+  assert.deepEqual(webs, { venue: [{ hoursOfAvailability: { rules: [{ start: 360, end: 1320, daysBitmask: 127 }] } }], spaces: [{ id: 1, name: 'Court 1', venue: 1, nonAdminVisible: true }] });
+  assert.equal(sanitizeSkedda('/other', 'call 512-555-0100'), 'call 000-000-0000');
+});
+
+test('the watcher and court units read the way the scrape does', async () => {
+  const { units } = canaryUnits();
+  const watch = units.find((u) => u.id === 'watch:austin');
+  const asked = [];
+  const r = await watch.run({ fetch: async (url, init) => { asked.push([url, init.headers['user-agent']]); return answer('page'); }, now: new Date() });
+  assert.ok(r.count >= 1 && r.count === asked.length);
+  assert.ok(asked.every(([, ua]) => /schedule checker/.test(ua)));
+  await assert.rejects(watch.run({ fetch: async () => answer('', 500), now: new Date() }), /none of \d+ pages answered/);
+
+  const velocity = units.find((u) => u.id === 'courts:velocity');
+  const skedda = async (url) => {
+    const path = new URL(url).pathname;
+    const body = path === '/booking' ? '<input name="__RequestVerificationToken" value="t">'
+      : path === '/webs' ? JSON.stringify({ venue: [{ hoursOfAvailability: { rules: [] } }], spaces: [{ id: 1, name: 'Court 1', venue: 1, nonAdminVisible: true }] })
+      : JSON.stringify({ bookings: [] });
+    return { ok: true, status: 200, url, headers: new Headers({ 'content-type': 'application/json' }), text: async () => body, json: async () => JSON.parse(body) };
+  };
+  const courts = await velocity.run({ fetch: skedda, now: new Date('2026-11-24T16:00:00Z') });
+  assert.equal(typeof courts.count, 'number');
 });
