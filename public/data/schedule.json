@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T03:04:29.281Z",
+  "generatedAt": "2026-11-24T03:16:50.119Z",
   "sources": [
     {
       "id": "austin-club-openplay",
@@ -243,7 +243,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-24T03:01:32.329Z",
+      "checkedAt": "2026-11-24T03:16:49.266Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
