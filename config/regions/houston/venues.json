@@ -1,4 +1,131 @@
 {
   "_doc": "Canonical venues (#20). Sessions are matched to a venue by name or alias (case and punctuation ignored); a session at a name not listed here is reported as a source warning so it can be added. `parent` nests a sub-facility (a rink inside a sports complex). External ids (osm, googlePlaceId) and coordinates are filled in by discovery (#21) or by hand; leave them null rather than guessing. Only place ids may be stored from Google (refresh yearly); coordinates never come from Google. lat/lng (Nov 2026) are the US Census geocoder's match for the address (public domain), or OpenStreetMap Nominatim's (© OpenStreetMap contributors, ODbL) where Census had no match: austin-pickle-ranch and atx-beach (11000 Middle Fiskville Rd), leander-activity-center, mueller-lake-park (sand courts at Mary Elizabeth Branch Park) and austin-bouldin-braker. The site uses them only for the 📍 distance order. `short` (optional, up to 24 characters) is the name on map pins when the full name is long; otherwise the site shortens it.",
-  "venues": []
+  "venues": [
+    {
+      "id": "sugar-land-ice-sports-center",
+      "name": "Sugar Land Ice & Sports Center",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "node/356844530",
+      "googlePlaceId": null,
+      "lat": 29.591143,
+      "lng": -95.61852,
+      "website": null,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "bellerive-ice-center",
+      "name": "Bellerive Ice Center",
+      "city": "Houston",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/393660275",
+      "googlePlaceId": null,
+      "lat": 29.713518,
+      "lng": -95.51272,
+      "website": "https://belleriveice.com/",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "ice-skate-usa",
+      "name": "Ice Skate USA",
+      "city": "Houston",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/393693403",
+      "googlePlaceId": null,
+      "lat": 29.781337,
+      "lng": -95.542233,
+      "website": "https://www.iceskatememorialcity.com/",
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "model-boat-basin-ice-rink",
+      "name": "Model Boat Basin/Ice Rink",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/433627354",
+      "googlePlaceId": null,
+      "lat": 29.753726,
+      "lng": -95.359546,
+      "website": null,
+      "seasonal": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "aerodrome-ice-skating-complex",
+      "name": "Aerodrome Ice Skating Complex",
+      "city": "Houston",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/568431861",
+      "googlePlaceId": null,
+      "lat": 29.962734,
+      "lng": -95.553681,
+      "website": "https://aerodromes.com/",
+      "indoor": true,
+      "schedule": {
+        "surface": "platform:daysmart",
+        "platform": "daysmart",
+        "url": "https://apps.daysmartrecreation.com/dash/x/#/online/aerodrome/dashboard",
+        "company": "aerodrome"
+      }
+    },
+    {
+      "id": "ice-at-the-galleria",
+      "name": "ice At The Galleria",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/626240913",
+      "googlePlaceId": null,
+      "lat": 29.739238,
+      "lng": -95.463062,
+      "website": null,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "deep-south-ice-rink-and-sports-complex",
+      "name": "Deep South Ice Rink and Sports Complex",
+      "city": "Richmond",
+      "aliases": [],
+      "sports": [
+        "ice_skating"
+      ],
+      "osm": "way/1475991598",
+      "googlePlaceId": null,
+      "lat": 29.680779,
+      "lng": -95.713019,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    }
+  ]
 }
