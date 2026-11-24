@@ -55,5 +55,7 @@ Every reader is a **unit** (`lib/canary-units.js`): `schedule:<source>`, `progra
   Sweatpals accounts, Skedda cut to times and courts (never who booked), every key that holds
   people dropped from other JSON and Next.js page data (`dropPeople`), emails and phone numbers.
 - `canary.yml` runs daily and by hand (`only`, `all`), runs the tests on the new recordings, then
-  opens and merges a pull request with them. Paused sources keep their last recording; browser
+  opens and merges a pull request with them. A unit that fails gets an issue ("Canary: <unit> no
+  longer records"), commented on each week it still fails and closed when it records again; its
+  last good recording stays, and units in `CANT_RECORD` (`lib/canary-units.js`) get none. Paused sources keep their last recording; browser
   sources (atxbeach) are recorded as HAR files in a later step.

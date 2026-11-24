@@ -288,3 +288,13 @@ test('a Next.js page keeps its JSON-LD events when reduced (AllEvents is one)', 
   assert.ok(!cleaned.includes('o@x.com'));
   assert.deepEqual(pageObjects(cleaned), [{ html: '</script><b>x</b>' }]);
 });
+
+test('failure reports: one per unit tried, empty when it recorded, none for known ones', async () => {
+  const { failureReports, failureFile } = await import('../lib/canary.js');
+  assert.equal(failureFile('schedule:reclub'), 'schedule-reclub.md');
+  const r = failureReports([{ id: 'schedule:a', ok: true }, { id: 'events:b', ok: false, error: 'HTTP 403' }, { id: 'schedule:g', ok: false, error: 'cert' }], { known: { 'schedule:g': 'cert' }, runUrl: 'https://run' });
+  assert.deepEqual(Object.keys(r), ['schedule-a.md', 'events-b.md']);
+  assert.equal(r['schedule-a.md'], '');
+  assert.match(r['events-b.md'], /couldn't record \*\*events:b\*\*: HTTP 403/);
+  assert.match(r['events-b.md'], /test\/cassettes\/events\/b\/.*Run: https:\/\/run/s);
+});
