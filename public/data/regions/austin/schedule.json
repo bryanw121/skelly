@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T18:16:44.476Z",
+  "generatedAt": "2026-11-24T18:25:57.964Z",
   "region": {
     "id": "austin",
     "name": "Austin, TX",
@@ -69,7 +69,7 @@
       "kind": "Venue's schedule page",
       "site": "https://goteamup.com/w9142954/p/9142954-atx-beach/memberships/223927/",
       "ok": true,
-      "checkedAt": "2026-11-24T12:23:57.171Z",
+      "checkedAt": "2026-11-24T18:25:53.086Z",
       "count": 2
     },
     {
@@ -155,7 +155,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T12:23:58.605Z",
+      "checkedAt": "2026-11-24T18:25:53.087Z",
       "count": 2
     },
     {
@@ -174,7 +174,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T12:23:59.212Z",
+      "checkedAt": "2026-11-24T18:25:53.087Z",
       "count": 1
     },
     {
@@ -193,7 +193,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T12:23:59.303Z",
+      "checkedAt": "2026-11-24T18:25:53.088Z",
       "count": 10
     },
     {
@@ -248,7 +248,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-24T18:13:23.210Z",
+      "checkedAt": "2026-11-24T18:25:53.088Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
