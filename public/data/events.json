@@ -1,6 +1,6 @@
 {
  "feedVersion": 1,
- "generatedAt": "2026-11-24T01:07:36.739Z",
+ "generatedAt": "2026-11-24T01:25:02.909Z",
  "events": [
   {
    "id": "evt-b08715cc63748015",
@@ -4018,29 +4018,6 @@
    "firstSeen": "2026-11-21"
   },
   {
-   "id": "evt-c70ba48cede0995e",
-   "category": "seasonal",
-   "kind": "seasonal",
-   "tags": [],
-   "title": "Breakfast with Santa at Dave & Buster's Dallas",
-   "venue": "Dave & Buster's Dallas, 9450 N Central Expy// 75231",
-   "city": "Richardson",
-   "startDate": "2026-12-05",
-   "endDate": "2026-12-06",
-   "startTime": "09:00",
-   "endTime": "11:00",
-   "price": "$27.94–$33.01",
-   "sourceUrl": "https://allevents.in/richardson/breakfast-with-santa-at-dave-and-busters-dallas/2700031030902048",
-   "source": "AllEvents",
-   "description": "⭐ Breakfast with Santa brings a feast of festive food, arcade play, and a direct line to Santa into one action-packed morning.",
-   "region": "dallas",
-   "lat": 32.94833,
-   "lng": -96.72985,
-   "located": "source",
-   "sourceId": "allevents-dallas",
-   "firstSeen": "2026-11-23"
-  },
-  {
    "id": "evt-78643b8baf5c6cae",
    "category": "seasonal",
    "kind": "seasonal",
@@ -6279,6 +6256,27 @@
    "located": "source",
    "sourceId": "allevents-austin",
    "firstSeen": "2026-11-22"
+  },
+  {
+   "id": "evt-bc0363b8be37a691",
+   "category": "seasonal",
+   "kind": "seasonal",
+   "tags": [],
+   "title": "Merry & Bright Christmas Drone Show",
+   "venue": "636 S Main St",
+   "city": "Grapevine",
+   "startDate": "2026-12-07",
+   "startTime": "19:00",
+   "endTime": "19:15",
+   "sourceUrl": "https://allevents.in/grapevine/merry-and-bright-christmas-drone-show/200030551323326",
+   "source": "AllEvents",
+   "description": "Watch more than 400 drones light up the sky above Historic Main Street during Grapevine’s 6th annual Christmas drone show, presented by Harvest Hall and Hotel Vin.",
+   "region": "dallas",
+   "lat": 32.93463,
+   "lng": -97.07869,
+   "located": "source",
+   "sourceId": "allevents-dallas",
+   "firstSeen": "2026-11-23"
   },
   {
    "id": "evt-15d91a3d8cdbe6db",
@@ -8615,6 +8613,27 @@
    "sourceId": "allevents-austin"
   },
   {
+   "id": "evt-316ded5f24ff3adc",
+   "category": "seasonal",
+   "kind": "seasonal",
+   "tags": [],
+   "title": "Holiday in the Park at Six Flags.",
+   "venue": "Six Flags Over Texas, 415 E I-20 Hwy",
+   "city": "Arlington",
+   "startDate": "2026-12-19",
+   "startTime": "18:00",
+   "endTime": "21:00",
+   "sourceUrl": "https://allevents.in/arlington/holiday-in-the-park-at-six-flags/200031111359210",
+   "source": "AllEvents",
+   "description": "Senior Admission Free Visits to Holiday in the Park People ages 65+ get free admission to Holiday in the Park at Six Flags Over Texas with this Senior Admission.",
+   "region": "dallas",
+   "lat": 32.67888,
+   "lng": -97.10543,
+   "located": "source",
+   "sourceId": "allevents-dallas",
+   "firstSeen": "2026-11-23"
+  },
+  {
    "id": "evt-5cbd616df023e910",
    "category": "popup",
    "kind": "popup",
@@ -8915,7 +8934,7 @@
    "firstSeen": "2026-11-23"
   }
  ],
- "listingsAt": "2026-11-24T01:07:36.739Z",
+ "listingsAt": "2026-11-24T01:25:02.909Z",
  "sources": [
   {
    "id": "allevents-austin",
@@ -8935,7 +8954,7 @@
   {
    "id": "allevents-dallas",
    "ok": true,
-   "count": 134
+   "count": 135
   },
   {
    "id": "allevents-houston",

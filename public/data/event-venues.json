@@ -3840,5 +3840,11 @@
     "lng": -96.78881,
     "located": "source",
     "matched": null
+  },
+  "six flags over texas, 415 e i-20 hwy": {
+    "lat": 32.67888,
+    "lng": -97.10543,
+    "located": "source",
+    "matched": null
   }
 }
