@@ -278,6 +278,298 @@
       "schedule": {
         "surface": "unknown"
       }
+    },
+    {
+      "id": "competitive-edge-sports",
+      "name": "Competitive Edge Sports",
+      "city": "Spring",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "node/13525580888",
+      "googlePlaceId": null,
+      "lat": 30.122332,
+      "lng": -95.399374,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "lscm-sand-volleyball",
+      "name": "LSCM Sand Volleyball",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/120109006",
+      "googlePlaceId": null,
+      "lat": 30.213173,
+      "lng": -95.469699,
+      "website": null,
+      "indoor": false,
+      "lit": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "volleyball",
+      "name": "Volleyball",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/363847344",
+      "googlePlaceId": null,
+      "lat": 29.717304,
+      "lng": -95.337405,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "cambridge-oaks-volleyball-court",
+      "name": "Cambridge Oaks Volleyball Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/364040841",
+      "googlePlaceId": null,
+      "lat": 29.717991,
+      "lng": -95.350394,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "eleanor-tinsley-park-volleyball-court",
+      "name": "Eleanor Tinsley Park Volleyball Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/388306689",
+      "googlePlaceId": null,
+      "lat": 29.761011,
+      "lng": -95.377675,
+      "website": null,
+      "indoor": false,
+      "lit": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "beach-volleyball-at-cross-creek-ranch-arbor-park",
+      "name": "Beach Volleyball at Cross Creek Ranch Arbor Park",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/545355387",
+      "googlePlaceId": null,
+      "lat": 29.705148,
+      "lng": -95.861676,
+      "website": "https://www.crosscreektexas.com/parks-and-recreation",
+      "indoor": false,
+      "lit": false,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "the-club",
+      "name": "The Club",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/558602169",
+      "googlePlaceId": null,
+      "lat": 29.591728,
+      "lng": -95.66536,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "shadow-creek-sports-complex",
+      "name": "Shadow Creek Sports Complex",
+      "city": "Pearland",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/670799430",
+      "googlePlaceId": null,
+      "lat": 29.581294,
+      "lng": -95.420967,
+      "website": "https://www.parks.pearlandtx.gov/Home/Components/FacilityDirectory/FacilityDirectory/126/2138",
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "crum-gym",
+      "name": "Crum Gym",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1110099134",
+      "googlePlaceId": null,
+      "lat": 29.740989,
+      "lng": -95.524565,
+      "website": null,
+      "indoor": true,
+      "access": "customers",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "volleyball-1",
+      "name": "Volleyball 1",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1164229177",
+      "googlePlaceId": null,
+      "lat": 29.777131,
+      "lng": -95.434557,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "volleyball-2-3-4",
+      "name": "Volleyball 2, 3, 4",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1164229178",
+      "googlePlaceId": null,
+      "lat": 29.777523,
+      "lng": -95.434591,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "butler-sports-complex",
+      "name": "Butler Sports Complex",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1232297336",
+      "googlePlaceId": null,
+      "lat": 29.635407,
+      "lng": -95.48783,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "wheeler-field-house",
+      "name": "Wheeler Field House",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1322380198",
+      "googlePlaceId": null,
+      "lat": 29.590282,
+      "lng": -95.620416,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "the-volleyball-school",
+      "name": "The Volleyball School",
+      "city": "Richmond",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1347887148",
+      "googlePlaceId": null,
+      "lat": 29.661603,
+      "lng": -95.70208,
+      "website": "https://www.thevolleyballschool.com/richmond-at-aliana/",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "third-coast-volleyball",
+      "name": "Third Coast Volleyball",
+      "city": "Houston",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1412397360",
+      "googlePlaceId": null,
+      "lat": 29.72053,
+      "lng": -95.503124,
+      "website": "https://thirdcoastvolleyball.com/",
+      "indoor": true,
+      "schedule": {
+        "surface": "website"
+      }
+    },
+    {
+      "id": "hopson-field-house",
+      "name": "Hopson Field House",
+      "city": "Missouri City",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1443585719",
+      "googlePlaceId": null,
+      "lat": 29.532859,
+      "lng": -95.496443,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
     }
   ]
 }
