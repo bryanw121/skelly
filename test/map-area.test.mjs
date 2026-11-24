@@ -35,10 +35,12 @@ test('map area: a region takes only the feed\'s points near it', () => {
 });
 
 test('map area: the events widen Austin\'s box south to Vista Brewing', () => {
-  const austin = loadRegions({ only: ['austin'] })[0];
-  const [, south] = regionBox({ center: austin.info.center, venues: [...austin.venues, ...eventPointsForRegion(FEED, austin.info)] });
+  // Fixed venues north of it: the real list grows with discovery, so it can't hold this case still.
+  const austin = loadRegions({ only: ['austin'] })[0].info;
+  const venues = [{ lat: 30.45, lng: -97.7 }, { lat: 30.3, lng: -97.8 }];
+  const [, south] = regionBox({ center: austin.center, venues: [...venues, ...eventPointsForRegion(FEED, austin)] });
   assert.ok(south < 30.10485, `south edge ${south} is below Vista Brewing`);
-  const [, southVenuesOnly] = regionBox({ center: austin.info.center, venues: austin.venues });
+  const [, southVenuesOnly] = regionBox({ center: austin.center, venues });
   assert.ok(southVenuesOnly > 30.10485, 'venues alone leave Vista Brewing outside the box');
 });
 
