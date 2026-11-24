@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T14:16:25.106Z",
+  "generatedAt": "2026-11-24T18:16:44.476Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,9 +67,10 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T14:13:30.960Z",
-      "count": 19,
+      "checkedAt": "2026-11-24T18:13:24.662Z",
+      "count": 20,
       "warnings": [
+        "reclub-I9MCWD: no surface",
         "reclub-7BSUK2: no surface",
         "reclub-J533LP: no surface",
         "reclub-TCHJ1D: no surface",
@@ -114,7 +115,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-24T14:13:36.515Z",
+      "checkedAt": "2026-11-24T18:13:29.252Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -122,6 +123,31 @@
     }
   ],
   "sessions": [
+    {
+      "id": "reclub-I9MCWD",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "end": "21:30",
+      "title": "Men’s BB+ King of the Court",
+      "venue": "Houston Stars",
+      "type": "Open play",
+      "level": "All levels",
+      "price": "$10",
+      "note": "Hosted by Houston Stars (Adults).",
+      "capacity": 36,
+      "signup": {
+        "url": "https://reclub.co/m/I9MCWD",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/I9MCWD",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-24",
+      "venueId": "src-houston-stars",
+      "status": "scheduled"
+    },
     {
       "id": "reclub-7BSUK2",
       "date": "2026-11-24",
@@ -302,7 +328,7 @@
       "date": "2026-11-28",
       "start": "16:00",
       "end": "18:00",
-      "title": "Saturday Intermediate Level + Up INDOOR Volleyball (2 Courts) ($10) @ The Zone(Pmt Required @Signup)",
+      "title": "45 pm)",
       "venue": "The Zone",
       "type": "Open play",
       "level": "All levels",

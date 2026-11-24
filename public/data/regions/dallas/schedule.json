@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T14:16:25.106Z",
+  "generatedAt": "2026-11-24T18:16:44.476Z",
   "region": {
     "id": "dallas",
     "name": "Dallas–Fort Worth, TX",
@@ -27,7 +27,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T14:13:30.900Z",
+      "checkedAt": "2026-11-24T18:13:23.285Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"

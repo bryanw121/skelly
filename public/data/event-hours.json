@@ -861,5 +861,27 @@
  "https://allevents.in/houston/levy-park-holiday-festival/200031085936143": {
   "checkedAt": "2026-11-24T12:27:19.692Z",
   "startTime": "11:00"
+ },
+ "https://allevents.in/dallas/white-rock-farmers-market/200030728907818": {
+  "checkedAt": "2026-11-24T18:16:46.693Z"
+ },
+ "https://allevents.in/houston/free-christmas-toy-giveaway-in-houston-amtex-insurance/100002005300601079": {
+  "checkedAt": "2026-11-24T18:16:46.693Z",
+  "startTime": "15:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/houston/brew-blk-a-black-friday-pop-up-and-link-up/100002005394623302": {
+  "checkedAt": "2026-11-24T18:16:46.693Z",
+  "startTime": "10:00",
+  "endTime": "15:00"
+ },
+ "https://allevents.in/houston/red-cat-jazz-cafés-first-pop-up-roy-l-jackson-sr-and-melodic-theorist/100002005319987063": {
+  "checkedAt": "2026-11-24T18:16:46.693Z",
+  "startTime": "20:00",
+  "endTime": "22:30"
+ },
+ "https://allevents.in/houston/heritage-holiday-market/200031073279301": {
+  "checkedAt": "2026-11-24T18:16:46.693Z",
+  "startTime": "15:00"
  }
 }

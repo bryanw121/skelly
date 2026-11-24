@@ -1,10 +1,11 @@
 {
  "365thingsaustin": {
   "events": [
-   "evt-8c24fae8b082bf2b"
+   "evt-8c24fae8b082bf2b",
+   "evt-7588fd8270708fe6"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-19"
+  "last": "2026-11-24"
  },
  "quericotees": {
   "events": [
@@ -137,10 +138,11 @@
  },
  "latincity": {
   "events": [
-   "evt-4f96d06dfd182bea"
+   "evt-4f96d06dfd182bea",
+   "evt-8274d1ed8d7a945b"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-19"
+  "last": "2026-11-24"
  },
  "movemountainsmarket": {
   "events": [
@@ -414,10 +416,11 @@
  },
  "drinkity_dinkity": {
   "events": [
-   "evt-8ea55472a3679ff2"
+   "evt-8ea55472a3679ff2",
+   "evt-1e996cbd4b1bf8a3"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-24"
  },
  "roadrunner_stop": {
   "events": [
@@ -623,10 +626,11 @@
  },
  "fortworthcookiegal": {
   "events": [
-   "evt-e72a702edbd4bc64"
+   "evt-e72a702edbd4bc64",
+   "evt-23e4cfdc969d1445"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-24"
  },
  "localvendormarket": {
   "events": [
@@ -865,17 +869,19 @@
  },
  "joycraftedtx": {
   "events": [
-   "evt-e6029ff44d957a47"
+   "evt-e6029ff44d957a47",
+   "evt-7fc1a7ad13ba22f8"
   ],
   "first": "2026-11-22",
-  "last": "2026-11-22"
+  "last": "2026-11-24"
  },
  "tinyloafatx": {
   "events": [
-   "evt-41404e6e22cdf487"
+   "evt-41404e6e22cdf487",
+   "evt-9bc493cd4bb3becb"
   ],
   "first": "2026-11-22",
-  "last": "2026-11-22"
+  "last": "2026-11-24"
  },
  "joesburgerstx": {
   "events": [
@@ -1009,5 +1015,257 @@
   ],
   "first": "2026-11-23",
   "last": "2026-11-23"
+ },
+ "eratexas": {
+  "events": [
+   "evt-23a88e608b91cf55"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "rumi.matchacafe": {
+  "events": [
+   "evt-2f9507a6cf37c756"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "drinknoto": {
+  "events": [
+   "evt-184674890634c0da"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "viking.shield": {
+  "events": [
+   "evt-ab6cbec5d6cdb379"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "epochcoffee": {
+  "events": [
+   "evt-03571644c54b42b7"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "porlamananamarketshtx": {
+  "events": [
+   "evt-23a52bf56f4b84d8"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "sio_l8r": {
+  "events": [
+   "evt-2a5e0bc622166f6f"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "drinkmeasap": {
+  "events": [
+   "evt-4a9bda2e075b5495"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "cadenacollective": {
+  "events": [
+   "evt-2b7af3d0f80edf17"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "communitymarket": {
+  "events": [
+   "evt-0e66c7d33e109d01"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "dentonmakercenter": {
+  "events": [
+   "evt-3b5832df5d07fbce"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "createdforyoubyamparor": {
+  "events": [
+   "evt-5735742aee8b9b9c"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "jujustable.atx": {
+  "events": [
+   "evt-2674587756ace826"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "thekonigiri": {
+  "events": [
+   "evt-3d366b146914a39f"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "lasperrascafe": {
+  "events": [
+   "evt-55fa3d48bd17ced9"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "luckyubakery": {
+  "events": [
+   "evt-9a1769493fe644d1"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "communitybeerco": {
+  "events": [
+   "evt-9bce0c7742a838b1"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "tomo.htx": {
+  "events": [
+   "evt-b04a8bbc0b9f8ab2"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "ahalapress": {
+  "events": [
+   "evt-ad1cb05f6ccb0bfe"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "ausforfree": {
+  "events": [
+   "evt-d200d0a4374bf9ac"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "honeyhillmarket": {
+  "events": [
+   "evt-c0e74a0fb01bb665"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "morimatcha_": {
+  "events": [
+   "evt-59e13696b82bab6b"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "sweets_by_vivi_atx": {
+  "events": [
+   "evt-50bedceebb027661"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "sa_pey_ka": {
+  "events": [
+   "evt-cb491c0e192464e5"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "cove_austin": {
+  "events": [
+   "evt-c4ada61ee274107b"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "ac_accessories20": {
+  "events": [
+   "evt-9607c8a9ad12f1fc"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "paloma_consignment": {
+  "events": [
+   "evt-727b159d3d67afaf"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "drinksonchanel": {
+  "events": [
+   "evt-5d67d83c9ff28107"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "23mafrid": {
+  "events": [
+   "evt-2972a8d7e31d99d8"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "jackie__ramos": {
+  "events": [
+   "evt-618616d00f048076"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "thewhimsyedit.htx": {
+  "events": [
+   "evt-9bde577bf9394382"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "designerperfumeshut": {
+  "events": [
+   "evt-e74c0dd30e4844ac"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "poppy23atx": {
+  "events": [
+   "evt-b23f1df65e599eac"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "aztecafarmersmarkethtx": {
+  "events": [
+   "evt-9f4ad46ec37ed03b"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "therustictap": {
+  "events": [
+   "evt-c2409d2bfca8b640"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
+ },
+ "vettahausventures": {
+  "events": [
+   "evt-2251bc5109cc4578"
+  ],
+  "first": "2026-11-24",
+  "last": "2026-11-24"
  }
 }

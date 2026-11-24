@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-24T14:16:25.106Z",
+  "generatedAt": "2026-11-24T18:16:44.476Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -54,6 +54,33 @@
         "capacity": 20
       },
       "venue_id": "src-champion-forest-baptist-church-champions-campus",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
+      "id": "reclub-I9MCWD",
+      "session_id": "reclub-I9MCWD",
+      "source_id": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "title": "Men’s BB+ King of the Court",
+      "venue": "Houston Stars",
+      "city": null,
+      "level": "All levels",
+      "price": "$10",
+      "starts_at": "2026-11-25T01:00:00.000Z",
+      "ends_at": "2026-11-25T03:30:00.000Z",
+      "signup_url": "https://reclub.co/m/I9MCWD",
+      "signup_label": "Sign up on Reclub",
+      "note": "Hosted by Houston Stars (Adults).",
+      "canceled": false,
+      "verified_at": "2026-11-24",
+      "attributes": {
+        "type": "Open play",
+        "capacity": 36
+      },
+      "venue_id": "src-houston-stars",
       "status": "scheduled",
       "previous_starts_at": null
     },
@@ -253,7 +280,7 @@
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
-      "title": "Saturday Intermediate Level + Up INDOOR Volleyball (2 Courts) ($10) @ The Zone(Pmt Required @Signup)",
+      "title": "45 pm)",
       "venue": "The Zone",
       "city": null,
       "level": "All levels",

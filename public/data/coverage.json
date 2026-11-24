@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T14:18:29.492Z",
+ "generatedAt": "2026-11-24T18:17:43.866Z",
  "regions": [
   {
    "id": "austin",
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 163,
+     "sessions": 162,
      "pinned": true,
      "booking": true,
      "via": [
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 91,
+     "sessions": 90,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 82,
+     "sessions": 86,
      "pinned": true,
      "booking": true,
      "via": [
@@ -501,6 +501,18 @@
      "lead": true
     },
     {
+     "venue": "Houston Stars",
+     "city": "",
+     "sport": "volleyball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
      "venue": "Katy Sports Center",
      "city": "",
      "sport": "volleyball",
@@ -526,18 +538,6 @@
     },
     {
      "venue": "Emancipation Park",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Houston Stars",
      "city": "",
      "sport": "volleyball",
      "sessions": 1,
