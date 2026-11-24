@@ -29,8 +29,6 @@ for (const unit of recorded) {
 // Sources the canary can't record today, and why. Keep this short: each is a source that's down.
 const CANT_RECORD = {
   'schedule:georgetown-pickleball': "the city's certificate doesn't match its host from GitHub's runners (#53)",
-  // The cleaned copy of these pages loses about two thirds of their events; being looked into.
-  'events:allevents-austin': 'cleaning loses events', 'events:allevents-dallas': 'cleaning loses events', 'events:allevents-houston': 'cleaning loses events',
 };
 
 test('every reader has a recording', () => {

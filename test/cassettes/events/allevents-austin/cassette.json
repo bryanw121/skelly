@@ -1,0 +1,73 @@
+{
+ "recordedAt": "2026-11-24T04:26:59.964Z",
+ "meta": {
+  "unit": "events:allevents-austin",
+  "now": "2026-11-24T04:26:59.964Z",
+  "count": 115
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://allevents.in/austin/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "fe5aa374c023.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/austin/craft-fairs",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "95a2b352e73c.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/austin/festivals",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "74853e8e4b30.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/austin/food-drinks",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "9b3e42952971.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/austin/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b870101ae17a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/austin/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "6696fa322139.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/austin/shopping",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "18f1c0291a6b.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/austin/exhibitions",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b9d7a063fdd3.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/austin/night-market",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "dc8dba24bad3.html"
+  }
+ ]
+}

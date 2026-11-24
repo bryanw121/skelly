@@ -1,0 +1,73 @@
+{
+ "recordedAt": "2026-11-24T04:26:59.964Z",
+ "meta": {
+  "unit": "events:allevents-houston",
+  "now": "2026-11-24T04:26:59.964Z",
+  "count": 126
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://allevents.in/houston/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "5ba52f4bc03c.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/houston/festivals",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "98b8e9e9b6ee.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/houston/food-drinks",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c016b5693551.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/houston/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "4f1b4b4d716c.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/houston/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "09b4f67fe98c.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/houston/shopping",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ced3233dc324.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/houston/exhibitions",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "003a2aaee822.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/houston/night-market",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "2856dfaf6ba3.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/houston/art",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f800fbd3e6bf.html"
+  }
+ ]
+}
