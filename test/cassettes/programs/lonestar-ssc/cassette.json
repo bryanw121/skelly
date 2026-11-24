@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "programs:lonestar-ssc",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 11
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://lonestarssc.leaguelab.com/leagues?v=upcoming",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c2b1b3698e47.html"
+  }
+ ]
+}

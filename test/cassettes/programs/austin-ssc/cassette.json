@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "programs:austin-ssc",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 34
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://austinssc.leaguelab.com/leagues?v=upcoming",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "02cfc12504a1.html"
+  }
+ ]
+}

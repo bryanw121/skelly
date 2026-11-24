@@ -1,0 +1,423 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "schedule:austin-picklehaus",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 33
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "1431be9332d5.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-23",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "f7b17de70758.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-24",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "c4f7d89bbc37.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-25",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "91a72467baeb.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-26",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "2be2f37bbf07.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-27",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "9b34d2a88ad3.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-28",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "387e0e05a549.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-29",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "6af3fb2877b6.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-30",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "5b2f403491fe.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-01",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "98d07f33602e.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-02",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "7af422866346.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-03",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "12a2fa5cede4.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-04",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "8fb3e512c660.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-05",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "a257bd4eb446.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-06",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "7253be05a60d.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-07",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "1f21c7652b66.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/b205fc81-201e-42d5-ad11-9a793cc88786",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "03bca3ece3a8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/c9088c3b-7d75-4935-9f06-5dd0c9366bf8",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "93855a5fb67a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/24a97db2-8f51-45d1-9469-fc376605d2b5",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "50a125d1b6f6.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/7e5749fe-a19c-443a-be75-d54c8117785e",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "8dbc2752c7f7.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/8bea2f07-43c7-40be-94a4-fed45b577e1e",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "631ba8953513.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/906ac0e9-4dc7-4e78-bab3-ffba39a219a8",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "73a50f727cb8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/b49b7656-0c4a-4e64-b7db-ec50191066a5",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "1a3df2245d4d.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/dde5d8ed-0664-410e-a440-b3a011be6b5f",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "92c8d0012340.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/8fa65a3d-3ee6-4c83-a55a-2eef93834f44",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "09757951b134.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/c1ce8e15-b368-4842-81d4-5a9bb980952c",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "5153e58be0d8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/f3a1c49e-d690-4f1f-b9ce-0ff79f59b9ff",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "d4c5a2936598.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/fccf10cc-8900-403c-86f0-589d6a627d05",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "a8104bc01ffe.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/89782e74-efa2-404c-8e41-a259fab29094",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c50abfce9773.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/afdcd9c6-88c1-48e3-8170-7676e858d646",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "4e1bd7139f3f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/d66cf4d3-9d32-4ad3-8816-174f22576bf8",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "5b99bb973362.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/b67a28e6-8e9d-4038-871d-949fab09ab9f",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "6709b2c00684.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/af680bfe-9e2b-4950-a94f-40e80aa313ce",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ba7451ab500c.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/10a5995c-0d77-4a6b-9a0d-47bc1a7efa7b",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "fe7fa071c727.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/1ae92860-7cf1-4ae9-8f02-01726bc02098",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "8cab9600555a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/17534bc5-dcff-4b53-9e5d-5f80c8fa9b53",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "9a2004070b65.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/40bc1516-f530-4ccc-a672-747483f3f922",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "8169fe1d5055.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/eb03b3b1-78d0-4e27-8bf2-772e147deb9a",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "90b6bbd29c6a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/65ffd574-42a8-4df6-a5d6-ab1d5fe57197",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "7365047af399.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/88f69b27-f388-406d-b596-4bc34c72817e",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f211c3fc08d6.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/e72dfa0e-0517-401d-b446-5f40cebdd4a6",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c683a69fb78f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/ba4cda0a-cbf2-49dd-92e7-dc1e7b4d9256",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "327a1ee9c93b.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/9370e33e-e430-427e-9186-664b65914b99",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b9098a10fa75.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/0d7f6535-fff8-406b-8b40-feee251cb040",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "81356dafa476.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/56ea1278-8137-44d3-bc07-2da4e7835d07",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "831299e51c03.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/ef9b31dc-fcd7-46e4-b6d0-4ba4d2b582f1",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "e50c94681882.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/8dd5b8ad-76b1-4279-a64d-31098c7cedf3",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f51353384fc9.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/0a801413-325a-481e-929a-dabc77560c01",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "a1bc90e875a6.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/a4d62c96-4955-4f44-884c-88ae65183616",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "4f4c1c65e393.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/0dace8e5-aba4-42da-9d3c-00aedf5565ce",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "766adb5ee4b6.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/d8540a6a-e624-4ff0-9bf5-6ed65a499ac6",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "6684924dbefa.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/cd6a19cb-95c4-452b-b90e-2813b6e167d2",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "3e72e7e8cf0d.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/81d65ced-c703-47db-b4bd-4151c236c722",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b58c5e5cd4d8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/f2b97730-4903-4712-a01d-613664582095",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ae5372bc8a86.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/e0b47d02-d7af-4a9f-bde0-5e9065c499c0",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "d458680507b6.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/88bd4c75-47dc-43e0-ae2b-ee6bf945faec",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "334db524cd3e.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/585beba7-c9af-4439-b7e9-368e30e8da42",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "1f62aff4a09a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/3474c2c0-cf54-4228-b1e4-e6c149cddb49",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f06ad97430d6.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/club/austinpicklehaus/schedule/event/dbddde6d-12b0-4ce9-b025-ab67c68c97f8",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "47ec4bd5d7a6.html"
+  }
+ ]
+}

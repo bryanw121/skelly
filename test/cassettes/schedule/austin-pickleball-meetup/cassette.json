@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "schedule:austin-pickleball-meetup",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 10
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://www.meetup.com/north-austin-pickleball-community-at-pickleland/events/ical/",
+   "status": 200,
+   "contentType": "text/calendar",
+   "body": "0e888e215183.ics"
+  }
+ ]
+}

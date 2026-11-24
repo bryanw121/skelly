@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "schedule:sportsgarden",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 4
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://sportsgardendfw.com/open-play/",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "4d4a484e946c.html"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "schedule:foro",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 0
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://www.forosportsclub.com/fridayopenplay",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "2954de19b217.html"
+  }
+ ]
+}

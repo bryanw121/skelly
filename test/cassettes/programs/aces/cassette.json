@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "programs:aces",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 20
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://members.acesintexas.com/leagues",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "106d196911a3.html"
+  }
+ ]
+}

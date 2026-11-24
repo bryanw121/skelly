@@ -1,0 +1,108 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "courts:austinpicklehaus",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 7
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-23",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "f7b17de70758.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-24",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "c4f7d89bbc37.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-25",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "91a72467baeb.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-26",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "2be2f37bbf07.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-27",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "9b34d2a88ad3.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-28",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "387e0e05a549.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-29",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "6af3fb2877b6.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-11-30",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "5b2f403491fe.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-01",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "98d07f33602e.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-02",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "7af422866346.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-03",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "12a2fa5cede4.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-04",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "8fb3e512c660.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-05",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "a257bd4eb446.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/austinpicklehaus/schedule?date=2026-12-06",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "7253be05a60d.json"
+  }
+ ]
+}

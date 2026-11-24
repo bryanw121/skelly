@@ -1,0 +1,24 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "programs:nagva-tx",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 1
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://www.nagva.org/tournaments",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "528f61e86788.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "edd9e2ea018c.html"
+  }
+ ]
+}

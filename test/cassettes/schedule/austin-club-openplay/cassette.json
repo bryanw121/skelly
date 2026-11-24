@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "schedule:austin-club-openplay",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 254
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://openplaymap.com/open-play/austin",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b99d34db8917.html"
+  }
+ ]
+}

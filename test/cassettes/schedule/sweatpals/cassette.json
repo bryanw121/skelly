@@ -1,0 +1,31 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "schedule:sweatpals",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 2
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://sweatpals.com/host/ATXBeach",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "cb8cfaf3ae6f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://sweatpals.com/host/atxsandsocial",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "294e8fc2fd88.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://sweatpals.com/host/letsvolleyatx",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f41348ca3818.html"
+  }
+ ]
+}

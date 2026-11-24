@@ -1,0 +1,24 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "events:visit-austin",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 2
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://www.austintexas.org/events/",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "9fc42c5f0e87.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.austintexas.org/events/december-and-january/",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "9e262a66d564.html"
+  }
+ ]
+}

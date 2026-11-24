@@ -1,0 +1,24 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "schedule:velocity",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 1
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://www.austinvelocity.com/wp-json/wp/v2/pages?slug=adult-volleyball-2&_fields=id,slug,modified,link,title,content",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "cfdb8ac38eb5.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.austinvelocity.com/wp-json/wp/v2/pages?slug=fall-winter-adult-open-gym&_fields=id,slug,modified,link,title,content",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "137c9d77f449.json"
+  }
+ ]
+}

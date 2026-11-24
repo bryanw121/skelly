@@ -1,0 +1,38 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "schedule:chaparral-ice",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 37
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://apps.daysmartrecreation.com/dash/jsonapi/api/v1/events?company=chaparralice&filter%5Bstart__gte%5D=2026-11-23&filter%5Bstart__lte%5D=2026-12-07T23%3A59%3A59&page%5Bsize%5D=100&page%5Bnumber%5D=1",
+   "status": 200,
+   "contentType": "application/vnd.api+json",
+   "body": "64d11f82cc10.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://apps.daysmartrecreation.com/dash/jsonapi/api/v1/events?company=chaparralice&filter%5Bstart__gte%5D=2026-11-23&filter%5Bstart__lte%5D=2026-12-07T23%3A59%3A59&page%5Bsize%5D=100&page%5Bnumber%5D=2",
+   "status": 200,
+   "contentType": "application/vnd.api+json",
+   "body": "e8c709f5bbe1.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://apps.daysmartrecreation.com/dash/jsonapi/api/v1/events?company=chaparralice&filter%5Bstart__gte%5D=2026-11-23&filter%5Bstart__lte%5D=2026-12-07T23%3A59%3A59&page%5Bsize%5D=100&page%5Bnumber%5D=3",
+   "status": 200,
+   "contentType": "application/vnd.api+json",
+   "body": "e4f5090578df.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://apps.daysmartrecreation.com/dash/jsonapi/api/v1/events?company=chaparralice&filter%5Bstart__gte%5D=2026-11-23&filter%5Bstart__lte%5D=2026-12-07T23%3A59%3A59&page%5Bsize%5D=100&page%5Bnumber%5D=4",
+   "status": 200,
+   "contentType": "application/vnd.api+json",
+   "body": "acad38101403.json"
+  }
+ ]
+}

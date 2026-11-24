@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T02:10:06.798Z",
+ "meta": {
+  "unit": "schedule:houston-sweatpals",
+  "now": "2026-11-24T02:10:06.798Z",
+  "count": 0
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://sweatpals.com/host/HoustonSandVolleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "4b08cbe48e16.html"
+  }
+ ]
+}
