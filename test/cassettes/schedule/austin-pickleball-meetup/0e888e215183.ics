@@ -27,37 +27,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031549Z
-DTSTART;TZID=America/Chicago:20261123T200000
-DTEND;TZID=America/Chicago:20261123T220000
-SUMMARY:8pm Pickleball - Make New Friends & Learn How to Play! 
-DESCRIPTION:North Austin Pickleball Community at Pickleland\nCome play pic
- kleball and make new friends at Pickleland! 🏓\n\n\\*\\*\\* **Important:
-  Please sign up on the Pickleland App ([iOS](https://pickleland.com/ios) \
- \| [Android](https://pickleland.com/android)) or [website](https://play.pi
- ckleland.com) directly.** \\*\\*\\*\n\nWe divide our open play by levels! 
- 😄 (All levels welcome!)\n\nIf you've never played\, come and learn the 
- rules! We have other beginners join us every day. You don't need a paddle\
- , we have some you can rent ($10)!\n\nIf you are an avid player\, come and
-  find some nice and friendly competition.\n\nIf this time doesn't work for
-  you\, we are open M-F 8am to 10pm\, and Sat-Sun 8am-8pm. Find other times
-  on the Pickleland App ([iOS](https://pickleland.com/ios) \\| [Android](ht
- tps://pickleland.com/android)) or [website](https://play.pickleland.com). 
- The website and app will show the most accurate roster and sign up count!\
- n\nFollow [@picklelandatx](https://www.instagram.com/picklelandatx/) for m
- ore!\n\n**⭐️ Come see why we were recently named the "Best Pickleball 
- Club" in Austin by Austin Pickleball Update and 750+ other players!**
-URL;VALUE=URI:https://www.meetup.com/north-austin-pickleball-community-at-
- pickleland/events/317279617/
-STATUS:CONFIRMED
-CREATED:20261104T020904Z
-LAST-MODIFIED:20261104T020904Z
-CLASS:PUBLIC
-END:VEVENT
-BEGIN:VEVENT
-UID:redacted@example.com
-SEQUENCE:1
-DTSTAMP:20261124T031549Z
+DTSTAMP:20261124T051538Z
 DTSTART;TZID=America/Chicago:20261124T160000
 DTEND;TZID=America/Chicago:20261124T180000
 SUMMARY:4pm Pickleball - Make New Friends & Learn How to Play!
@@ -87,7 +57,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031549Z
+DTSTAMP:20261124T051538Z
 DTSTART;TZID=America/Chicago:20261125T120000
 DTEND;TZID=America/Chicago:20261125T140000
 SUMMARY:12pm Pickleball - Make New Friends & Learn How to Play!
@@ -117,7 +87,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031549Z
+DTSTAMP:20261124T051538Z
 DTSTART;TZID=America/Chicago:20261127T080000
 DTEND;TZID=America/Chicago:20261127T100000
 SUMMARY:8am Pickleball - Start the Day Strong 💪
@@ -147,7 +117,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031549Z
+DTSTAMP:20261124T051538Z
 DTSTART;TZID=America/Chicago:20261128T110000
 DTEND;TZID=America/Chicago:20261128T140000
 SUMMARY:Weekend 11am Pickleball + Friends
@@ -177,7 +147,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031549Z
+DTSTAMP:20261124T051538Z
 DTSTART;TZID=America/Chicago:20261128T140000
 DTEND;TZID=America/Chicago:20261128T170000
 SUMMARY:Weekend 2pm Pickleball Vibes - Make New Friends & Learn How to Pla
@@ -208,7 +178,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031549Z
+DTSTAMP:20261124T051538Z
 DTSTART;TZID=America/Chicago:20261128T170000
 DTEND;TZID=America/Chicago:20261128T200000
 SUMMARY:Weekend 5pm Pickleball - Make New Friends & Learn How to Play! 
@@ -238,7 +208,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031549Z
+DTSTAMP:20261124T051538Z
 DTSTART;TZID=America/Chicago:20261129T080000
 DTEND;TZID=America/Chicago:20261129T110000
 SUMMARY:Weekend 8am Pickleball - Make New Friends & Learn How to Play! 
@@ -268,7 +238,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031549Z
+DTSTAMP:20261124T051538Z
 DTSTART;TZID=America/Chicago:20261129T170000
 DTEND;TZID=America/Chicago:20261129T200000
 SUMMARY:Weekend 5pm Pickleball - Make New Friends & Learn How to Play! 
@@ -298,7 +268,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:redacted@example.com
 SEQUENCE:1
-DTSTAMP:20261124T031549Z
+DTSTAMP:20261124T051538Z
 DTSTART;TZID=America/Chicago:20261130T140000
 DTEND;TZID=America/Chicago:20261130T160000
 SUMMARY:2pm Pickleball - Make New Friends & Learn How to Play!
@@ -323,6 +293,36 @@ URL;VALUE=URI:https://www.meetup.com/north-austin-pickleball-community-at-
 STATUS:CONFIRMED
 CREATED:20261110T203803Z
 LAST-MODIFIED:20261110T203803Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:redacted@example.com
+SEQUENCE:1
+DTSTAMP:20261124T051538Z
+DTSTART;TZID=America/Chicago:20261130T200000
+DTEND;TZID=America/Chicago:20261130T220000
+SUMMARY:8pm Pickleball - Make New Friends & Learn How to Play! 
+DESCRIPTION:North Austin Pickleball Community at Pickleland\nCome play pic
+ kleball and make new friends at Pickleland! 🏓\n\n\\*\\*\\* **Important:
+  Please sign up on the Pickleland App ([iOS](https://pickleland.com/ios) \
+ \| [Android](https://pickleland.com/android)) or [website](https://play.pi
+ ckleland.com) directly.** \\*\\*\\*\n\nWe divide our open play by levels! 
+ 😄 (All levels welcome!)\n\nIf you've never played\, come and learn the 
+ rules! We have other beginners join us every day. You don't need a paddle\
+ , we have some you can rent ($10)!\n\nIf you are an avid player\, come and
+  find some nice and friendly competition.\n\nIf this time doesn't work for
+  you\, we are open M-F 8am to 10pm\, and Sat-Sun 8am-8pm. Find other times
+  on the Pickleland App ([iOS](https://pickleland.com/ios) \\| [Android](ht
+ tps://pickleland.com/android)) or [website](https://play.pickleland.com). 
+ The website and app will show the most accurate roster and sign up count!\
+ n\nFollow [@picklelandatx](https://www.instagram.com/picklelandatx/) for m
+ ore!\n\n**⭐️ Come see why we were recently named the "Best Pickleball 
+ Club" in Austin by Austin Pickleball Update and 750+ other players!**
+URL;VALUE=URI:https://www.meetup.com/north-austin-pickleball-community-at-
+ pickleland/events/317376647/
+STATUS:CONFIRMED
+CREATED:20261111T020954Z
+LAST-MODIFIED:20261111T020954Z
 CLASS:PUBLIC
 END:VEVENT
 X-ORIGINAL-URL:https://www.meetup.com/north-austin-pickleball-community-at
