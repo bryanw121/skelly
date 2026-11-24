@@ -203,3 +203,12 @@ test('recording hands the caller the live headers and final URL (Skedda reads it
   assert.equal(res.url, 'https://final.test/booking');
   assert.equal(res.headers.get('set-cookie'), 'a=1');
 });
+
+test('published API endpoints skip robots.txt; pages on the same host do not', async () => {
+  const asked = [];
+  const real = async (url) => { asked.push(String(url)); return String(url).endsWith('/robots.txt') ? answer('User-agent: *\nDisallow: /api/\n') : answer('{}'); };
+  const f = politeFetch(real, { gapMs: 0 });
+  await f('https://overpass-api.de/api/interpreter', { method: 'POST', body: 'data=x' });
+  assert.deepEqual(asked, ['https://overpass-api.de/api/interpreter']);
+  await assert.rejects(f('https://overpass-api.de/api/status'), RobotsDisallowed);
+});
