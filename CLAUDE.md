@@ -8,6 +8,11 @@
   - `test/app-js-budget.test.mjs` (CI, every PR) fails if `app.js` grows past `web/app-js-budget.json`, and fails if it shrank and the budget wasn't lowered to match. Lower the numbers in that file; never raise them.
 - Before opening a PR: `npm test`, `npm run typecheck`, `npm run test:e2e` (builds the site, then the browser tests).
 
+## Tests never reach the sources (docs/testing.md)
+- Unit and integration tests replay recordings (`test/support/cassette.mjs`); a network kill switch fails any real request. Never add a test that scrapes live.
+- Only the scheduled canary records new answers, inside its weekly request budget.
+- Coverage of `lib/`, `api/` and `scripts/` only goes up (`test/coverage-floor.json`, checked by `npm run coverage` in CI).
+
 ## Other rules that already apply
 - Keep the list view and the map view consistent: a feature on one belongs on the other.
 - Mobile first: touch targets 44px+, inputs 16px+, works at 320px wide.

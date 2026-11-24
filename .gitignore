@@ -21,3 +21,4 @@ data/offsite/
 # Built at deploy by scripts/build-maps.mjs (Pages); not committed
 public/maps/
 dist/
+coverage/
