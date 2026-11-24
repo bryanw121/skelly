@@ -36,6 +36,7 @@ const { outcomes, budget, refused } = await runCanary(picked, {
   budget: { max: Number(process.env.CANARY_RUN_BUDGET) || RUN_BUDGET, used: 0 },
   unitMax: Number(process.env.CANARY_UNIT_BUDGET) || UNIT_BUDGET,
   log: console.log,
+  failedDir: repoPath('canary-failed'),
 });
 
 const md = report(outcomes, { budget, day: only.length || all ? null : day, refused });
