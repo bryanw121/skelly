@@ -15,6 +15,7 @@ import { activeSources, loadSources } from '../lib/registry.js';
 import { runScrape, scrapePaths } from '../lib/pipeline.js';
 import { buildFeed, runSources } from '../lib/programs/feed.js';
 import { runEventsJob } from '../lib/events-job.js';
+import { occurrenceProblems } from '../lib/feed-check.js';
 import { get } from '../lib/http.js';
 import { loadRegions } from '../lib/regions.js';
 import { today } from '../lib/time.js';
@@ -70,7 +71,13 @@ async function scheduleDay(list) {
   }
   const feed = JSON.parse(readFileSync(paths.feed, 'utf8'));
   assert.ok(feed.occurrences.length > 0);
-  for (const r of regions) assert.ok(existsSync(join(dir, 'regions', r.id, 'occurrences.json')), `${r.id} folder`);
+  // What it wrote passes the check a real scrape must pass before it publishes (tier 2).
+  assert.deepEqual(occurrenceProblems(feed, 'occurrences.json', new Set(regions.map((r) => r.id))), []);
+  for (const r of regions) {
+    const f = join(dir, 'regions', r.id, 'occurrences.json');
+    assert.ok(existsSync(f), `${r.id} folder`);
+    assert.deepEqual(occurrenceProblems(JSON.parse(readFileSync(f, 'utf8')), `regions/${r.id}`, new Set([r.id])), []);
+  }
   assert.ok(existsSync(join(dir, 'index.json')));
   // The watcher read every page behind Austin's hand-checked sessions from the recording.
   if (of('watch').length) {

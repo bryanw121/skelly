@@ -41,6 +41,13 @@ Each body is its own file next to it (a page change reads as a diff). A request 
 method, URL and (for a POST) a hash of what it sent. `ignoreParams` (optional) are query
 parameters left out of the match; replaying with the clock at `meta.now` usually makes them unneeded.
 
+## The production check (Tier 2)
+`scripts/check-feeds.mjs` (`lib/feed-check.js`) runs in scrape.yml after the jobs and before the
+data is committed: every feed the site and vteam read must parse, carry the version readers
+expect, and have the fields they use with sane dates and https links. A quiet day passes; a
+broken file stops the publish (the last good copy stays live) and opens "Schedule scrape: feeds
+failed the check". No requests. The full-day test runs the same check on what it writes.
+
 ## The canary (Tier 3)
 Every reader is a **unit** (`lib/canary-units.js`): `schedule:<source>`, `programs:<source>`,
 `events:<source>`, `markets`, `watch:<region>` (the pages behind hand-checked sessions) and
