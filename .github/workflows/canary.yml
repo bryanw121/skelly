@@ -32,8 +32,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     env:
-      # A full recording is bigger than a day's rotation.
-      CANARY_RUN_BUDGET: ${{ inputs.all && '1500' || '400' }}
+      # A full or hand-picked recording may be bigger than a day's rotation.
+      CANARY_RUN_BUDGET: ${{ (inputs.all || inputs.only != '') && '1500' || '400' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
