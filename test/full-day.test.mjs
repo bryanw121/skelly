@@ -13,7 +13,7 @@ import { cassetteName } from '../lib/canary.js';
 import { CASSETTES, loadCassette, replay } from './support/cassette.mjs';
 import { activeSources, loadSources } from '../lib/registry.js';
 import { runScrape, scrapePaths } from '../lib/pipeline.js';
-import { buildFeed, runSources } from '../lib/programs/feed.js';
+import { runProgramsJob } from '../lib/programs-job.js';
 import { runEventsJob } from '../lib/events-job.js';
 import { occurrenceProblems } from '../lib/feed-check.js';
 import { get } from '../lib/http.js';
@@ -95,15 +95,18 @@ async function programsDay(list) {
   const config = JSON.parse(readFileSync(new URL('../config/programs.json', import.meta.url)));
   const ids = new Set(list.map((u) => u.id.slice('programs:'.length)));
   const fetch = replay(names(list));
-  const feed = await withClock(now, async () => {
-    const results = await runSources({ ...config, sources: config.sources.filter((s) => ids.has(s.id)) }, { get: (u, o = {}) => get(u, { ...o, fetch }), now: now.getTime(), regions });
-    return buildFeed({ results, previous: null, now: now.getTime(), config });
-  });
+  const dir = tmp();
+  const { feed } = await withClock(now, () => runProgramsJob({
+    get: (u, o = {}) => get(u, { ...o, fetch }), now: now.getTime(), dataDir: join(dir, 'data'), failuresDir: join(dir, 'failures'),
+    config: { ...config, sources: config.sources.filter((s) => ids.has(s.id)) }, regions, log: () => {},
+  }));
   for (const u of list) {
     const s = feed.sources.find((x) => x.id === u.id.slice('programs:'.length));
     assert.ok(s?.ok, `${u.id}: ${s?.error}`);
   }
   assert.ok(feed.programs.length > 0);
+  assert.equal(readFileSync(join(dir, 'failures', 'programs.md'), 'utf8'), '');
+  assert.deepEqual(JSON.parse(readFileSync(join(dir, 'data', 'programs.json'), 'utf8')).programs.length, feed.programs.length);
 }
 
 test('the events feed has every recorded listing source and the markets', { skip: !of('events').length && 'no events recordings yet' }, async () => {
