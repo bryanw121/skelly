@@ -276,3 +276,15 @@ test('a recording that does not replay is kept aside, cleaned, when asked', asyn
   const body = readdirSync(join(failedDir, 'events/leaky')).find((f) => f !== 'cassette.json');
   assert.equal(read(join(failedDir, 'events/leaky', body), 'utf8'), 'redacted@example.com');
 });
+
+test('a Next.js page keeps its JSON-LD events when reduced (AllEvents is one)', async () => {
+  const { sanitizeNextPage } = await import('../lib/canary.js');
+  const { jsonLdEvents } = await import('../lib/event-sources.js');
+  const { pageObjects } = await import('../lib/public-page-data.js');
+  const ld = '<script type="application/ld+json">{"@type":"Event","name":"Holiday Market","startDate":"2026-12-05","organizer":{"email":"o@x.com"}}</script>';
+  const flight = `<script>self.__next_f.push(${JSON.stringify([1, `0:${JSON.stringify({ html: '</script><b>x</b>', members: [1] })}\n`])})</script>`;
+  const cleaned = sanitizeNextPage(`<html><head>${ld}</head><body>${flight}</body></html>`);
+  assert.deepEqual(jsonLdEvents(cleaned).map((e) => e.name), ['Holiday Market']);
+  assert.ok(!cleaned.includes('o@x.com'));
+  assert.deepEqual(pageObjects(cleaned), [{ html: '</script><b>x</b>' }]);
+});
