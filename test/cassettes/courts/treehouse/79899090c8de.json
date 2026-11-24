@@ -1,0 +1,66 @@
+{
+ "venue": [
+  {
+   "hoursOfAvailability": {
+    "rules": [
+     {
+      "start": 480,
+      "end": 1260,
+      "daysBitmask": 30,
+      "spaceIds": null
+     },
+     {
+      "start": 480,
+      "end": 1320,
+      "daysBitmask": 32,
+      "spaceIds": null
+     },
+     {
+      "start": 480,
+      "end": 1260,
+      "daysBitmask": 65,
+      "spaceIds": null
+     }
+    ]
+   }
+  }
+ ],
+ "spaces": [
+  {
+   "id": "511140",
+   "name": "Court #1",
+   "venue": "137665",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "511141",
+   "name": "Court #2",
+   "venue": "137665",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "511142",
+   "name": "Court #3",
+   "venue": "137665",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "511143",
+   "name": "Court #4",
+   "venue": "137665",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "511144",
+   "name": "Court #5",
+   "venue": "137665",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "516294",
+   "name": "Half Court",
+   "venue": "137665",
+   "nonAdminVisible": false
+  }
+ ]
+}

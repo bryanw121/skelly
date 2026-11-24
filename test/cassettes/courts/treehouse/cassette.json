@@ -1,0 +1,32 @@
+{
+ "recordedAt": "2026-11-24T04:03:13.268Z",
+ "meta": {
+  "unit": "courts:treehouse",
+  "now": "2026-11-24T04:03:13.268Z",
+  "count": 6
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://treehousegym.skedda.com/booking",
+   "finalUrl": "https://treehousegym.allbooked.com/booking",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "7c5c83b9fd27.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://treehousegym.allbooked.com/webs",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "79899090c8de.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://treehousegym.allbooked.com/bookingslists?start=2026-11-23T00:00:00&end=2026-12-06T23:59:59.999",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "973a1741d2c7.json"
+  }
+ ]
+}
