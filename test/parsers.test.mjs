@@ -168,6 +168,11 @@ test('Reclub: lawn club meet in a park is grass', () => {
   assert.equal(s.note, 'Hosted by Austin Lawn Club, every Sunday.');
 });
 
+test('Reclub: a named venue no entry matches takes the fallback venue (city and surface)', () => {
+  const s = reclub.parseMeet(fixture('reclub-meet-5X380N.html'), reclub.meetUrl('5X380N'), { venues: [], fallback: { city: 'Houston', surface: 'indoor' } });
+  assert.deepEqual([s.venue, s.city, s.surface], ['Mueller Lake Park', 'Houston', 'indoor']);
+});
+
 test('Reclub: a page without meet data is an error, not a session', () => {
   assert.throws(() => reclub.parseMeet('<html><body>Not found</body></html>', 'https://reclub.co/m/XXXXXX'), /no meet data/);
 });
