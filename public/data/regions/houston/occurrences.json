@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-23T22:17:27.462Z",
+  "generatedAt": "2026-11-24T00:55:23.349Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -24,7 +24,7 @@
       "verified_at": "2026-11-23",
       "attributes": {
         "type": "Open play",
-        "capacity": 20
+        "capacity": 25
       },
       "venue_id": "src-champion-forest-baptist-church-champions-campus",
       "status": "scheduled",
@@ -51,7 +51,7 @@
       "verified_at": "2026-11-23",
       "attributes": {
         "type": "Open play",
-        "capacity": 40
+        "capacity": 45
       },
       "venue_id": "src-katy-sports-center",
       "status": "scheduled",
@@ -105,7 +105,7 @@
       "verified_at": "2026-11-23",
       "attributes": {
         "type": "Open play",
-        "capacity": 33
+        "capacity": 120
       },
       "venue_id": "src-houston-stars",
       "status": "scheduled",

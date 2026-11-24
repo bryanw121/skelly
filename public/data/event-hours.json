@@ -826,5 +826,18 @@
   "checkedAt": "2026-11-23T22:17:28.925Z",
   "startTime": "11:00",
   "endTime": "15:00"
+ },
+ "https://allevents.in/dallas/holiday-celebration-at-the-dallas-arboretum/200031109810820": {
+  "checkedAt": "2026-11-24T00:57:26.608Z",
+  "startTime": "18:30"
+ },
+ "https://allevents.in/houston/mid-month-music-festival-jazz-vs-neo-soul-vs-randb-with-marium-echo/200031109782052": {
+  "checkedAt": "2026-11-24T00:57:26.608Z",
+  "startTime": "19:00"
+ },
+ "https://allevents.in/houston/thanksgiving-eve-nba-wing-wednesday-watch-party/100002005300456647": {
+  "checkedAt": "2026-11-24T00:57:26.608Z",
+  "startTime": "19:00",
+  "endTime": "23:00"
  }
 }

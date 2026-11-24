@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T22:17:27.462Z",
+  "generatedAt": "2026-11-24T00:55:23.349Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,7 +67,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T22:14:15.743Z",
+      "checkedAt": "2026-11-24T00:52:09.852Z",
       "count": 19,
       "warnings": [
         "reclub-MLI8J8: no surface",
@@ -101,7 +101,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/houston-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-23T06:08:11.089Z",
+      "checkedAt": "2026-11-24T00:52:15.221Z",
       "count": 0
     },
     {
@@ -114,7 +114,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-23T22:14:16.340Z",
+      "checkedAt": "2026-11-24T00:52:16.587Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -133,7 +133,7 @@
       "level": "All levels",
       "price": "$10",
       "note": "Hosted by Houston Stars (Adults), every Monday.",
-      "capacity": 33,
+      "capacity": 120,
       "signup": {
         "url": "https://reclub.co/m/MLI8J8",
         "label": "Sign up on Reclub"
@@ -258,7 +258,7 @@
       "level": "All levels",
       "price": "$10",
       "note": "Hosted by Cultural Diversity Volleyball Social.",
-      "capacity": 40,
+      "capacity": 45,
       "signup": {
         "url": "https://reclub.co/m/K9D10X",
         "label": "Sign up on Reclub"
@@ -409,7 +409,7 @@
       "level": "All levels",
       "price": null,
       "note": "Hosted by HTX - Social, every Monday.",
-      "capacity": 20,
+      "capacity": 25,
       "signup": {
         "url": "https://reclub.co/m/8SFAT2",
         "label": "Sign up on Reclub"

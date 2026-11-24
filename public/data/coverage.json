@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T22:22:38.607Z",
+ "generatedAt": "2026-11-24T01:01:53.462Z",
  "regions": [
   {
    "id": "austin",
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 92,
+     "sessions": 90,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 84,
+     "sessions": 85,
      "pinned": true,
      "booking": true,
      "via": [

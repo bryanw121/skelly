@@ -3792,5 +3792,53 @@
     "lng": -97.70731,
     "located": "source",
     "matched": null
+  },
+  "11470 westheimer road": {
+    "lat": 29.73715,
+    "lng": -95.57915,
+    "located": "source",
+    "matched": null
+  },
+  "1400 academy way": {
+    "lat": 32.5689,
+    "lng": -96.833,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's dallas, 9450 n central expy// 75231": {
+    "lat": 32.94833,
+    "lng": -96.72985,
+    "located": "source",
+    "matched": null
+  },
+  "chaparral stadium - westlake high school": {
+    "lat": 30.26495,
+    "lng": -97.75016,
+    "located": "source",
+    "matched": null
+  },
+  "5925 almeda rd": {
+    "lat": 29.71501,
+    "lng": -95.38087,
+    "located": "source",
+    "matched": null
+  },
+  "fort bend county fairgrounds, rosenberg": {
+    "lat": 29.60733,
+    "lng": -95.6133,
+    "located": "source",
+    "matched": null
+  },
+  "the dallas arboretum and botanical garden": {
+    "lat": 32.82285,
+    "lng": -96.86948,
+    "located": "source",
+    "matched": null
+  },
+  "4619 cole ave": {
+    "lat": 32.82375,
+    "lng": -96.78881,
+    "located": "source",
+    "matched": null
   }
 }

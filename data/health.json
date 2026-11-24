@@ -3,7 +3,6 @@
     "austin-club-openplay": {
       "counts": [
         250,
-        250,
         243,
         259,
         255,
@@ -11,9 +10,10 @@
         264,
         264,
         264,
-        263
+        263,
+        262
       ],
-      "sessions": 263,
+      "sessions": 262,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -31,9 +31,9 @@
       "counts": [
         152,
         152,
-        152,
         150,
         150,
+        159,
         159,
         159,
         159,
@@ -186,13 +186,13 @@
       "counts": [
         1,
         1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
         1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
         1
       ],
       "sessions": 1,
@@ -352,7 +352,7 @@
         3,
         3,
         3,
-        3,
+        2,
         2,
         2,
         2,
@@ -681,7 +681,7 @@
         3,
         3,
         3,
-        3,
+        2,
         2,
         2,
         2
@@ -705,7 +705,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1,
         1,
         1,
@@ -760,7 +760,7 @@
         35,
         35,
         35,
-        35,
+        37,
         37,
         37,
         37,
@@ -902,7 +902,7 @@
     },
     "austin-city-pickleball": {
       "counts": [
-        10,
+        9,
         9,
         9,
         9,
@@ -929,7 +929,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 614
+      "failStreak": 615
     },
     "dallas-reclub": {
       "counts": [
@@ -1077,10 +1077,10 @@
     "houston-reclub": {
       "counts": [
         20,
-        20,
         19,
         20,
         21,
+        19,
         19,
         19,
         19,
@@ -1303,11 +1303,11 @@
     "manual:aces-open-mon:watch",
     "manual:aces-open-wed:watch",
     "manual:aces-thu-6s-sand:watch",
-    "manual:beecave-on-ice-fri:changed:2026-11-20",
-    "manual:beecave-on-ice-mwth:changed:2026-11-20",
-    "manual:beecave-on-ice-sat:changed:2026-11-20",
-    "manual:beecave-on-ice-sun:changed:2026-11-20",
-    "manual:beecave-on-ice-tue:changed:2026-11-20",
+    "manual:beecave-on-ice-fri:changed:2026-11-23",
+    "manual:beecave-on-ice-mwth:changed:2026-11-23",
+    "manual:beecave-on-ice-sat:changed:2026-11-23",
+    "manual:beecave-on-ice-sun:changed:2026-11-23",
+    "manual:beecave-on-ice-tue:changed:2026-11-23",
     "manual:four-seasons-ice-rodeo:changed:2026-11-23",
     "manual:hanovers-open:changed:2026-11-18",
     "manual:hanovers-open:unverified",

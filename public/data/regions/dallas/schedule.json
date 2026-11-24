@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-23T22:17:27.462Z",
+  "generatedAt": "2026-11-24T00:55:23.349Z",
   "region": {
     "id": "dallas",
     "name": "Dallas–Fort Worth, TX",
@@ -27,7 +27,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T22:14:10.233Z",
+      "checkedAt": "2026-11-24T00:52:02.529Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"
@@ -43,7 +43,7 @@
       "kind": "Venue's open-play hours page",
       "site": "https://sportsgardendfw.com/open-play/",
       "ok": true,
-      "checkedAt": "2026-11-23T06:08:02.321Z",
+      "checkedAt": "2026-11-24T00:52:03.723Z",
       "count": 4
     },
     {
@@ -56,7 +56,7 @@
       "kind": "Venue's open-play hours page",
       "site": "https://www.forosportsclub.com/fridayopenplay",
       "ok": true,
-      "checkedAt": "2026-11-23T06:08:02.816Z",
+      "checkedAt": "2026-11-24T00:52:03.930Z",
       "count": 0,
       "warnings": [
         "FORO lists open play as \"coming soon\": no volleyball open play to show until it returns."
@@ -72,7 +72,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/fort-worth-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-23T06:08:03.678Z",
+      "checkedAt": "2026-11-24T00:52:04.563Z",
       "count": 5
     },
     {
@@ -85,7 +85,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/fort-worth-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-23T06:08:07.020Z",
+      "checkedAt": "2026-11-24T00:52:08.142Z",
       "count": 7
     },
     {
@@ -112,7 +112,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-23T22:14:11.915Z",
+      "checkedAt": "2026-11-24T00:52:08.196Z",
       "count": 12
     }
   ],
@@ -992,15 +992,6 @@
       "region": "dallas"
     },
     {
-      "id": "src-usspt",
-      "name": "USSPT",
-      "city": "Lewisville",
-      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
-      "lat": 33.06454,
-      "lng": -97.005745,
-      "region": "dallas"
-    },
-    {
       "id": "src-greenbriar-community-center",
       "name": "Greenbriar Community Center",
       "city": "Fort Worth",
@@ -1061,6 +1052,15 @@
       "address": "6201 Beaty Street, Fort Worth, TX, 76112",
       "lat": 32.73961,
       "lng": -97.22325,
+      "region": "dallas"
+    },
+    {
+      "id": "src-usspt",
+      "name": "USSPT",
+      "city": "Lewisville",
+      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
+      "lat": 33.06454,
+      "lng": -97.005745,
       "region": "dallas"
     }
   ]
