@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-24T18:25:57.964Z",
+  "generatedAt": "2026-11-24T22:16:42.874Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -12,7 +12,7 @@
       "timezone": "America/Chicago",
       "title": "YMCA Open Gym-1 court",
       "venue": "Tellepsen Family Downtown YMCA",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": null,
       "starts_at": "2026-11-25T00:00:00.000Z",
@@ -23,6 +23,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 10
       },
@@ -39,7 +40,7 @@
       "timezone": "America/Chicago",
       "title": "Sand Volleyball 🏐 @Champions",
       "venue": "Champion Forest Baptist Church - Champions Campus",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": null,
       "starts_at": "2026-11-25T00:45:00.000Z",
@@ -50,6 +51,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 20
       },
@@ -66,7 +68,7 @@
       "timezone": "America/Chicago",
       "title": "Men’s BB+ King of the Court",
       "venue": "Houston Stars",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-11-25T01:00:00.000Z",
@@ -77,6 +79,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 36
       },
@@ -93,7 +96,7 @@
       "timezone": "America/Chicago",
       "title": "00PM / $7)",
       "venue": "Houston Stars",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$7",
       "starts_at": "2026-11-25T02:00:00.000Z",
@@ -104,6 +107,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 72
       },
@@ -120,7 +124,7 @@
       "timezone": "America/Chicago",
       "title": "Volleyball Practice with Kimberly",
       "venue": "Collins Park",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-11-26T00:30:00.000Z",
@@ -131,6 +135,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 30
       },
@@ -147,7 +152,7 @@
       "timezone": "America/Chicago",
       "title": "YMCA Open Gym-1 court",
       "venue": "Tellepsen Family Downtown YMCA",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": null,
       "starts_at": "2026-11-27T00:00:00.000Z",
@@ -158,6 +163,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 10
       },
@@ -174,7 +180,7 @@
       "timezone": "America/Chicago",
       "title": "Sand Volleyball 🏐 @Champions",
       "venue": "Champion Forest Baptist Church - Champions Campus",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": null,
       "starts_at": "2026-11-27T00:45:00.000Z",
@@ -185,6 +191,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 20
       },
@@ -201,7 +208,7 @@
       "timezone": "America/Chicago",
       "title": "Emancipation meet",
       "venue": "Emancipation Park",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": null,
       "starts_at": "2026-11-28T00:00:00.000Z",
@@ -212,6 +219,7 @@
       "canceled": true,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 18
       },
@@ -228,7 +236,7 @@
       "timezone": "America/Chicago",
       "title": "Friday Sand Volleyball ($10/person) @WAKEFIELD CROWBAR",
       "venue": "Wakefield Crowbar",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-11-28T01:30:00.000Z",
@@ -239,6 +247,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 40
       },
@@ -255,7 +264,7 @@
       "timezone": "America/Chicago",
       "title": "King of the Court (prepay to play)",
       "venue": "T4 Court Rentals",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$15",
       "starts_at": "2026-11-28T03:00:00.000Z",
@@ -266,6 +275,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 30
       },
@@ -282,7 +292,7 @@
       "timezone": "America/Chicago",
       "title": "45 pm)",
       "venue": "The Zone",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-11-28T22:00:00.000Z",
@@ -293,6 +303,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 40
       },
@@ -309,7 +320,7 @@
       "timezone": "America/Chicago",
       "title": "The Volleyball Hangout",
       "venue": "Collins Park",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": null,
       "starts_at": "2026-11-28T23:00:00.000Z",
@@ -320,6 +331,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 30
       },
@@ -336,7 +348,7 @@
       "timezone": "America/Chicago",
       "title": "The Volleyball Hangout",
       "venue": "Collins Park",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": null,
       "starts_at": "2026-11-28T23:00:00.000Z",
@@ -347,6 +359,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 30
       },
@@ -363,7 +376,7 @@
       "timezone": "America/Chicago",
       "title": "AVA Open Gym - 8 courts",
       "venue": "Absolute Volleyball Academy and Absolute Beach",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-11-29T02:00:00.000Z",
@@ -374,6 +387,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 145
       },
@@ -390,7 +404,7 @@
       "timezone": "America/Chicago",
       "title": "AVA Open Gym - 8 courts",
       "venue": "Absolute Volleyball Academy and Absolute Beach",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-11-30T02:00:00.000Z",
@@ -401,6 +415,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 145
       },
@@ -417,7 +432,7 @@
       "timezone": "America/Chicago",
       "title": "Sand Volleyball 🏐 @Champions",
       "venue": "Champion Forest Baptist Church - Champions Campus",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": null,
       "starts_at": "2026-12-01T00:45:00.000Z",
@@ -428,6 +443,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 20
       },
@@ -444,7 +460,7 @@
       "timezone": "America/Chicago",
       "title": "MONDAY Intermediate Level + Up INDOOR Volleyball (2 Courts) ($10) @ Katy Sports",
       "venue": "Katy Sports Center",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-12-01T01:00:00.000Z",
@@ -455,6 +471,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 45
       },
@@ -471,7 +488,7 @@
       "timezone": "America/Chicago",
       "title": "Volleyball Pickup with Kimberly",
       "venue": "Collins Park",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": null,
       "starts_at": "2026-12-01T01:30:00.000Z",
@@ -482,6 +499,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 30
       },
@@ -498,7 +516,7 @@
       "timezone": "America/Chicago",
       "title": "Skyline Academy Open Gym",
       "venue": "Skyline Volleyball Academy",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-12-01T03:00:00.000Z",
@@ -509,6 +527,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 10
       },
@@ -525,7 +544,7 @@
       "timezone": "America/Chicago",
       "title": "45 pm)",
       "venue": "Katy Sports Center",
-      "city": null,
+      "city": "Houston",
       "level": "All levels",
       "price": "$10",
       "starts_at": "2026-12-08T01:00:00.000Z",
@@ -536,6 +555,7 @@
       "canceled": false,
       "verified_at": "2026-11-24",
       "attributes": {
+        "surface": "indoor",
         "type": "Open play",
         "capacity": 40
       },

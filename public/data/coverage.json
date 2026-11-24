@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T18:26:01.119Z",
+ "generatedAt": "2026-11-24T22:16:46.007Z",
  "regions": [
   {
    "id": "austin",
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 90,
+     "sessions": 89,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 88,
+     "sessions": 87,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 86,
+     "sessions": 85,
      "pinned": true,
      "booking": true,
      "via": [
@@ -466,7 +466,7 @@
    "rows": [
     {
      "venue": "Collins Park",
-     "city": "",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 4,
      "pinned": true,
@@ -478,7 +478,19 @@
     },
     {
      "venue": "Champion Forest Baptist Church - Champions Campus",
-     "city": "",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 3,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Houston Stars",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 3,
      "pinned": true,
@@ -490,19 +502,7 @@
     },
     {
      "venue": "Absolute Volleyball Academy and Absolute Beach",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Houston Stars",
-     "city": "",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 2,
      "pinned": true,
@@ -514,7 +514,7 @@
     },
     {
      "venue": "Katy Sports Center",
-     "city": "",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 2,
      "pinned": true,
@@ -526,7 +526,7 @@
     },
     {
      "venue": "Tellepsen Family Downtown YMCA",
-     "city": "",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 2,
      "pinned": true,
@@ -538,7 +538,7 @@
     },
     {
      "venue": "Emancipation Park",
-     "city": "",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,
      "pinned": true,
@@ -550,7 +550,7 @@
     },
     {
      "venue": "Skyline Volleyball Academy",
-     "city": "",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,
      "pinned": true,
@@ -562,7 +562,7 @@
     },
     {
      "venue": "T4 Court Rentals",
-     "city": "",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,
      "pinned": true,
@@ -574,7 +574,7 @@
     },
     {
      "venue": "The Zone",
-     "city": "",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,
      "pinned": true,
@@ -586,7 +586,7 @@
     },
     {
      "venue": "Wakefield Crowbar",
-     "city": "",
+     "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,
      "pinned": true,

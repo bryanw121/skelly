@@ -26,15 +26,15 @@ Venues the schedule sees only through groups that host there (Reclub, Sweatpals,
 
 | Venue | City | Sport | Sessions | Seen via | Pin |
 |---|---|---|---|---|---|
-| Collins Park |  | volleyball | 4 | houston-reclub | yes |
-| Champion Forest Baptist Church - Champions Campus |  | volleyball | 3 | houston-reclub | yes |
-| Absolute Volleyball Academy and Absolute Beach |  | volleyball | 2 | houston-reclub | yes |
-| Houston Stars |  | volleyball | 2 | houston-reclub | yes |
-| Katy Sports Center |  | volleyball | 2 | houston-reclub | yes |
-| Tellepsen Family Downtown YMCA |  | volleyball | 2 | houston-reclub | yes |
-| Emancipation Park |  | volleyball | 1 | houston-reclub | yes |
-| Skyline Volleyball Academy |  | volleyball | 1 | houston-reclub | yes |
-| T4 Court Rentals |  | volleyball | 1 | houston-reclub | yes |
-| The Zone |  | volleyball | 1 | houston-reclub | yes |
-| Wakefield Crowbar |  | volleyball | 1 | houston-reclub | yes |
+| Collins Park | Houston | volleyball | 4 | houston-reclub | yes |
+| Champion Forest Baptist Church - Champions Campus | Houston | volleyball | 3 | houston-reclub | yes |
+| Houston Stars | Houston | volleyball | 3 | houston-reclub | yes |
+| Absolute Volleyball Academy and Absolute Beach | Houston | volleyball | 2 | houston-reclub | yes |
+| Katy Sports Center | Houston | volleyball | 2 | houston-reclub | yes |
+| Tellepsen Family Downtown YMCA | Houston | volleyball | 2 | houston-reclub | yes |
+| Emancipation Park | Houston | volleyball | 1 | houston-reclub | yes |
+| Skyline Volleyball Academy | Houston | volleyball | 1 | houston-reclub | yes |
+| T4 Court Rentals | Houston | volleyball | 1 | houston-reclub | yes |
+| The Zone | Houston | volleyball | 1 | houston-reclub | yes |
+| Wakefield Crowbar | Houston | volleyball | 1 | houston-reclub | yes |
 

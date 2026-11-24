@@ -9,11 +9,11 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:reclub-J533LP@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261125T000000Z
 DTEND:20261125T023000Z
 SUMMARY:YMCA Open Gym-1 court
-LOCATION:Tellepsen Family Downtown YMCA
+LOCATION:Tellepsen Family Downtown YMCA\, Houston
 DESCRIPTION:Hosted by Houston Vball\, every Tuesday.\nSign up on Reclub: ht
  tps://reclub.co/m/J533LP\nFrom Skelly\; times change\, check the source be
  fore you go.
@@ -22,11 +22,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-JMV5QT@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261125T004500Z
 DTEND:20261125T034500Z
 SUMMARY:Sand Volleyball 🏐 @Champions
-LOCATION:Champion Forest Baptist Church - Champions Campus
+LOCATION:Champion Forest Baptist Church - Champions Campus\, Houston
 DESCRIPTION:Hosted by HTX - Social\, every Tuesday.\nSign up on Reclub: htt
  ps://reclub.co/m/JMV5QT\nFrom Skelly\; times change\, check the source bef
  ore you go.
@@ -35,11 +35,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-I9MCWD@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261125T010000Z
 DTEND:20261125T033000Z
 SUMMARY:Men’s BB+ King of the Court
-LOCATION:Houston Stars
+LOCATION:Houston Stars\, Houston
 DESCRIPTION:Price: $10\nHosted by Houston Stars (Adults).\nSign up on Reclu
  b: https://reclub.co/m/I9MCWD\nFrom Skelly\; times change\, check the sour
  ce before you go.
@@ -48,11 +48,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-7BSUK2@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261125T020000Z
 DTEND:20261125T043000Z
 SUMMARY:00PM / $7)
-LOCATION:Houston Stars
+LOCATION:Houston Stars\, Houston
 DESCRIPTION:Price: $7\nHosted by Houston Stars (Adults)\, every Tuesday.\nS
  ign up on Reclub: https://reclub.co/m/7BSUK2\nFrom Skelly\; times change\,
   check the source before you go.
@@ -61,11 +61,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-2BBFXM@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261126T003000Z
 DTEND:20261126T030000Z
 SUMMARY:Volleyball Practice with Kimberly
-LOCATION:Collins Park
+LOCATION:Collins Park\, Houston
 DESCRIPTION:Price: $10\nHosted by The Volleyball Hangout\, every Wednesday.
  \nSign up on Reclub: https://reclub.co/m/2BBFXM\nFrom Skelly\; times chang
  e\, check the source before you go.
@@ -74,11 +74,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-TCHJ1D@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261127T000000Z
 DTEND:20261127T023000Z
 SUMMARY:YMCA Open Gym-1 court
-LOCATION:Tellepsen Family Downtown YMCA
+LOCATION:Tellepsen Family Downtown YMCA\, Houston
 DESCRIPTION:Hosted by Houston Vball\, every Thursday.\nSign up on Reclub: h
  ttps://reclub.co/m/TCHJ1D\nFrom Skelly\; times change\, check the source b
  efore you go.
@@ -87,11 +87,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-Y1ZF0D@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261127T004500Z
 DTEND:20261127T034500Z
 SUMMARY:Sand Volleyball 🏐 @Champions
-LOCATION:Champion Forest Baptist Church - Champions Campus
+LOCATION:Champion Forest Baptist Church - Champions Campus\, Houston
 DESCRIPTION:Hosted by HTX - Social\, every Thursday.\nSign up on Reclub: ht
  tps://reclub.co/m/Y1ZF0D\nFrom Skelly\; times change\, check the source be
  fore you go.
@@ -100,11 +100,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-VGIK6U@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261128T000000Z
 DTEND:20261128T030000Z
 SUMMARY:Cancelled: Emancipation meet
-LOCATION:Emancipation Park
+LOCATION:Emancipation Park\, Houston
 DESCRIPTION:Hosted by Emancipation Park Indoor Volleyball\, every Friday.\n
  Sign up on Reclub: https://reclub.co/m/VGIK6U\nFrom Skelly\; times change\
  , check the source before you go.
@@ -113,11 +113,11 @@ STATUS:CANCELLED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-MCRPQ4@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261128T013000Z
 DTEND:20261128T043000Z
 SUMMARY:Friday Sand Volleyball ($10/person) @WAKEFIELD CROWBAR
-LOCATION:Wakefield Crowbar
+LOCATION:Wakefield Crowbar\, Houston
 DESCRIPTION:Price: $10\nHosted by Cultural Diversity Volleyball Social.\nSi
  gn up on Reclub: https://reclub.co/m/MCRPQ4\nFrom Skelly\; times change\, 
  check the source before you go.
@@ -126,11 +126,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-T02HQF@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261128T030000Z
 DTEND:20261128T060000Z
 SUMMARY:King of the Court (prepay to play)
-LOCATION:T4 Court Rentals
+LOCATION:T4 Court Rentals\, Houston
 DESCRIPTION:Price: $15\nHosted by T4 Late Nights\, every Friday.\nSign up o
  n Reclub: https://reclub.co/m/T02HQF\nFrom Skelly\; times change\, check t
  he source before you go.
@@ -139,11 +139,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-K9XO8G@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261128T220000Z
 DTEND:20261129T000000Z
 SUMMARY:45 pm)
-LOCATION:The Zone
+LOCATION:The Zone\, Houston
 DESCRIPTION:Price: $10\nHosted by Cultural Diversity Volleyball Social.\nSi
  gn up on Reclub: https://reclub.co/m/K9XO8G\nFrom Skelly\; times change\, 
  check the source before you go.
@@ -152,11 +152,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-9P8J21@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261128T230000Z
 DTEND:20261129T030000Z
 SUMMARY:The Volleyball Hangout
-LOCATION:Collins Park
+LOCATION:Collins Park\, Houston
 DESCRIPTION:Hosted by The Volleyball Hangout\, every Saturday.\nSign up on 
  Reclub: https://reclub.co/m/9P8J21\nFrom Skelly\; times change\, check the
   source before you go.
@@ -165,11 +165,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-HC3B4O@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261128T230000Z
 DTEND:20261129T030000Z
 SUMMARY:The Volleyball Hangout
-LOCATION:Collins Park
+LOCATION:Collins Park\, Houston
 DESCRIPTION:Hosted by The Volleyball Hangout\, every Saturday.\nSign up on 
  Reclub: https://reclub.co/m/HC3B4O\nFrom Skelly\; times change\, check the
   source before you go.
@@ -178,11 +178,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-CWAGWL@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261129T020000Z
 DTEND:20261129T050000Z
 SUMMARY:AVA Open Gym - 8 courts
-LOCATION:Absolute Volleyball Academy and Absolute Beach
+LOCATION:Absolute Volleyball Academy and Absolute Beach\, Houston
 DESCRIPTION:Price: $10\nHosted by Houston Vball\, every Saturday.\nSign up 
  on Reclub: https://reclub.co/m/CWAGWL\nFrom Skelly\; times change\, check 
  the source before you go.
@@ -191,11 +191,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-3VBH4Z@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261130T020000Z
 DTEND:20261130T040000Z
 SUMMARY:AVA Open Gym - 8 courts
-LOCATION:Absolute Volleyball Academy and Absolute Beach
+LOCATION:Absolute Volleyball Academy and Absolute Beach\, Houston
 DESCRIPTION:Price: $10\nHosted by Houston Vball\, every Sunday.\nSign up on
   Reclub: https://reclub.co/m/3VBH4Z\nFrom Skelly\; times change\, check th
  e source before you go.
@@ -204,11 +204,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-X8OFRC@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261201T004500Z
 DTEND:20261201T034500Z
 SUMMARY:Sand Volleyball 🏐 @Champions
-LOCATION:Champion Forest Baptist Church - Champions Campus
+LOCATION:Champion Forest Baptist Church - Champions Campus\, Houston
 DESCRIPTION:Hosted by HTX - Social\, every Monday.\nSign up on Reclub: http
  s://reclub.co/m/X8OFRC\nFrom Skelly\; times change\, check the source befo
  re you go.
@@ -217,12 +217,12 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-WQR08J@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261201T010000Z
 DTEND:20261201T040000Z
 SUMMARY:MONDAY Intermediate Level + Up INDOOR Volleyball (2 Courts) ($10) @
   Katy Sports
-LOCATION:Katy Sports Center
+LOCATION:Katy Sports Center\, Houston
 DESCRIPTION:Price: $10\nHosted by Cultural Diversity Volleyball Social.\nSi
  gn up on Reclub: https://reclub.co/m/WQR08J\nFrom Skelly\; times change\, 
  check the source before you go.
@@ -231,11 +231,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-KB2S3K@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261201T013000Z
 DTEND:20261201T040000Z
 SUMMARY:Volleyball Pickup with Kimberly
-LOCATION:Collins Park
+LOCATION:Collins Park\, Houston
 DESCRIPTION:Hosted by The Volleyball Hangout\, every Monday.\nSign up on Re
  club: https://reclub.co/m/KB2S3K\nFrom Skelly\; times change\, check the s
  ource before you go.
@@ -244,11 +244,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-J6QMC3@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261201T030000Z
 DTEND:20261201T050000Z
 SUMMARY:Skyline Academy Open Gym
-LOCATION:Skyline Volleyball Academy
+LOCATION:Skyline Volleyball Academy\, Houston
 DESCRIPTION:Price: $10\nHosted by Houston Vball\, every Monday.\nSign up on
   Reclub: https://reclub.co/m/J6QMC3\nFrom Skelly\; times change\, check th
  e source before you go.
@@ -257,11 +257,11 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:reclub-Y2CRUB@schelagg
-DTSTAMP:20261124T182557Z
+DTSTAMP:20261124T221642Z
 DTSTART:20261208T010000Z
 DTEND:20261208T040000Z
 SUMMARY:45 pm)
-LOCATION:Katy Sports Center
+LOCATION:Katy Sports Center\, Houston
 DESCRIPTION:Price: $10\nHosted by Cultural Diversity Volleyball Social.\nSi
  gn up on Reclub: https://reclub.co/m/Y2CRUB\nFrom Skelly\; times change\, 
  check the source before you go.
