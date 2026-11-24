@@ -839,5 +839,14 @@
   "checkedAt": "2026-11-24T00:57:26.608Z",
   "startTime": "19:00",
   "endTime": "23:00"
+ },
+ "https://allevents.in/dallas/knox-streets-holiday-celebration/200031109809115": {
+  "checkedAt": "2026-11-24T01:07:36.739Z",
+  "startTime": "10:00",
+  "endTime": "18:00"
+ },
+ "https://allevents.in/houston/houston-zoo-lights/200031109777440": {
+  "checkedAt": "2026-11-24T01:07:36.739Z",
+  "startTime": "18:00"
  }
 }

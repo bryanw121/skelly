@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        250,
         243,
         259,
         255,
@@ -11,6 +10,7 @@
         264,
         264,
         263,
+        262,
         262
       ],
       "sessions": 262,
@@ -30,9 +30,9 @@
     "austin-picklehaus": {
       "counts": [
         152,
-        152,
         150,
         150,
+        159,
         159,
         159,
         159,
@@ -185,13 +185,13 @@
     "velocity": {
       "counts": [
         1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
         1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
         1,
         1
       ],
@@ -351,7 +351,7 @@
         3,
         3,
         3,
-        3,
+        2,
         2,
         2,
         2,
@@ -680,7 +680,7 @@
         3,
         3,
         3,
-        3,
+        2,
         2,
         2,
         2,
@@ -704,7 +704,7 @@
       "counts": [
         2,
         2,
-        2,
+        1,
         1,
         1,
         1,
@@ -759,7 +759,7 @@
         35,
         35,
         35,
-        35,
+        37,
         37,
         37,
         37,
@@ -929,7 +929,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 615
+      "failStreak": 616
     },
     "dallas-reclub": {
       "counts": [
@@ -1076,7 +1076,6 @@
     },
     "houston-reclub": {
       "counts": [
-        20,
         19,
         20,
         21,
@@ -1085,12 +1084,13 @@
         19,
         19,
         19,
-        19
+        19,
+        20
       ],
-      "sessions": 19,
+      "sessions": 20,
       "coverage": {
         "end": 1,
-        "price": 0.58,
+        "price": 0.55,
         "level": 1,
         "venue": 1,
         "city": 0,
@@ -1295,6 +1295,7 @@
     "houston-reclub:warning:reclub-TCHJ1D: no surface",
     "houston-reclub:warning:reclub-VGIK6U: no surface",
     "houston-reclub:warning:reclub-WQR08J: no surface",
+    "houston-reclub:warning:reclub-X8OFRC: no surface",
     "houston-reclub:warning:reclub-Y1ZF0D: no surface",
     "houston-reclub:warning:reclub-Y2CRUB: no surface",
     "houston-sweatpals:warning:no upcoming events matched on any host",

@@ -1,5 +1,5 @@
 {
- "listingsAt": "2026-11-24T00:57:26.608Z",
+ "listingsAt": "2026-11-24T01:07:36.739Z",
  "events": [
   {
    "id": "evt-b08715cc63748015",
@@ -2839,29 +2839,6 @@
    "sourceId": "allevents-austin"
   },
   {
-   "id": "evt-96207e9a0769b119",
-   "category": "seasonal",
-   "kind": "seasonal",
-   "tags": [],
-   "title": "Santa Photos at the Legacy West North Pole",
-   "venue": "7400 Windrose Avenue",
-   "city": "Plano",
-   "startDate": "2026-12-04",
-   "endDate": "2026-12-12",
-   "startTime": "11:00",
-   "endTime": "15:00",
-   "price": "$36.64",
-   "sourceUrl": "https://allevents.in/plano/santa-photos-at-the-legacy-west-north-pole/100002004020041892",
-   "source": "AllEvents",
-   "description": "Get your smiles and wish list ready, because Santa will be at the Legacy West North Pole for professional photo sessions! About this Event Santa is coming to town!",
-   "region": "dallas",
-   "lat": 33.07969,
-   "lng": -96.82589,
-   "located": "source",
-   "sourceId": "allevents-dallas",
-   "firstSeen": "2026-11-23"
-  },
-  {
    "id": "evt-484d6fc0bea96064",
    "category": "seasonal",
    "kind": "seasonal",
@@ -4944,6 +4921,7 @@
    "lat": 29.71466,
    "lng": -95.38947,
    "located": "source",
+   "startTime": "18:00",
    "sourceId": "allevents-houston",
    "firstSeen": "2026-11-23"
   },
@@ -6677,6 +6655,28 @@
    "firstSeen": "2026-11-21"
   },
   {
+   "id": "evt-517b1e8b57361f5e",
+   "category": "seasonal",
+   "kind": "seasonal",
+   "tags": [],
+   "title": "Naughty or Nice Santa Bar Crawl on Greenville Ave",
+   "venue": "Lower Greenville, 2101 Greenville Ave",
+   "city": "Dallas",
+   "startDate": "2026-12-12",
+   "startTime": "12:00",
+   "endTime": "19:00",
+   "price": "$18.61–$55.60",
+   "sourceUrl": "https://allevents.in/dallas/naughty-or-nice-santa-bar-crawl-on-greenville-ave/100001977854629439",
+   "source": "AllEvents",
+   "description": "Our 10th annual Santa bar crawl: 20+ Lower Greenville bars, holiday drink specials and a Life's Good and River Pig afterparty. Sat, Dec. 12.",
+   "region": "dallas",
+   "lat": 32.81565,
+   "lng": -96.77041,
+   "located": "source",
+   "sourceId": "allevents-dallas",
+   "firstSeen": "2026-11-23"
+  },
+  {
    "id": "evt-8e0c3da2d2c943e5",
    "category": "seasonal",
    "kind": "seasonal",
@@ -7018,6 +7018,8 @@
    "lat": 32.82375,
    "lng": -96.78881,
    "located": "source",
+   "startTime": "10:00",
+   "endTime": "18:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-23"
   },

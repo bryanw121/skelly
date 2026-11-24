@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-24T00:55:23.349Z",
+  "generatedAt": "2026-11-24T01:05:42.664Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -459,6 +459,33 @@
         "capacity": 145
       },
       "venue_id": "src-absolute-volleyball-academy-and-absolute-beach",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
+      "id": "reclub-X8OFRC",
+      "session_id": "reclub-X8OFRC",
+      "source_id": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "title": "Sand Volleyball 🏐 @Champions",
+      "venue": "Champion Forest Baptist Church - Champions Campus",
+      "city": null,
+      "level": "All levels",
+      "price": null,
+      "starts_at": "2026-12-01T00:45:00.000Z",
+      "ends_at": "2026-12-01T03:45:00.000Z",
+      "signup_url": "https://reclub.co/m/X8OFRC",
+      "signup_label": "Sign up on Reclub",
+      "note": "Hosted by HTX - Social, every Monday.",
+      "canceled": false,
+      "verified_at": "2026-11-23",
+      "attributes": {
+        "type": "Open play",
+        "capacity": 20
+      },
+      "venue_id": "src-champion-forest-baptist-church-champions-campus",
       "status": "scheduled",
       "previous_starts_at": null
     },

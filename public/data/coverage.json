@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T01:01:53.462Z",
+ "generatedAt": "2026-11-24T01:11:47.239Z",
  "regions": [
   {
    "id": "austin",
@@ -470,7 +470,7 @@
      "venue": "Champion Forest Baptist Church - Champions Campus",
      "city": "",
      "sport": "volleyball",
-     "sessions": 3,
+     "sessions": 4,
      "pinned": true,
      "booking": false,
      "via": [
