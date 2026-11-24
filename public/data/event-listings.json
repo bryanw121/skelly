@@ -1,5 +1,5 @@
 {
- "listingsAt": "2026-11-24T01:32:10.419Z",
+ "listingsAt": "2026-11-24T01:53:20.470Z",
  "events": [
   {
    "id": "evt-b08715cc63748015",
@@ -598,6 +598,27 @@
    "startTime": "10:00",
    "sourceId": "allevents-dallas",
    "firstSeen": "2026-11-21"
+  },
+  {
+   "id": "evt-8bbed4b2f1c7bd72",
+   "category": "seasonal",
+   "kind": "seasonal",
+   "tags": [],
+   "title": "A Christmas Carol at Dee and Charles Wyly Theatre",
+   "venue": "Dee and Charles Wyly Theatre, 2400 Flora St",
+   "city": "Dallas",
+   "startDate": "2026-11-27",
+   "endDate": "2026-12-27",
+   "startTime": "14:00",
+   "endTime": "16:00",
+   "sourceUrl": "https://allevents.in/dallas/a-christmas-carol-at-dee-and-charles-wyly-theatre/2400028382797959",
+   "source": "AllEvents",
+   "region": "dallas",
+   "lat": 32.78991,
+   "lng": -96.79631,
+   "located": "source",
+   "sourceId": "allevents-dallas",
+   "firstSeen": "2026-11-23"
   },
   {
    "id": "evt-3db55efc2fa7b996",

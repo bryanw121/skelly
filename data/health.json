@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        255,
         257,
         264,
         264,
@@ -10,6 +9,7 @@
         263,
         262,
         262,
+        254,
         254,
         254
       ],
@@ -29,7 +29,7 @@
     },
     "austin-picklehaus": {
       "counts": [
-        150,
+        159,
         159,
         159,
         159,
@@ -188,7 +188,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1,
         1,
         1,
@@ -348,7 +348,7 @@
     },
     "sweatpals": {
       "counts": [
-        3,
+        2,
         2,
         2,
         2,
@@ -677,7 +677,7 @@
       "counts": [
         3,
         3,
-        3,
+        2,
         2,
         2,
         2,
@@ -756,7 +756,7 @@
     },
     "chaparral-ice": {
       "counts": [
-        35,
+        37,
         37,
         37,
         37,
@@ -929,7 +929,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 619
+      "failStreak": 620
     },
     "dallas-reclub": {
       "counts": [
@@ -1076,13 +1076,13 @@
     },
     "houston-reclub": {
       "counts": [
-        21,
         19,
         19,
         19,
         19,
         19,
         19,
+        20,
         20,
         20,
         20
@@ -1132,6 +1132,14 @@
         "isPast",
         "keywordSearch",
         "matchConfig",
+        "matchConfig.limitRounds",
+        "matchConfig.participantIds[]",
+        "matchConfig.prioritizeLeastMatches",
+        "matchConfig.rankingCriteria",
+        "matchConfig.scheme",
+        "matchConfig.sublocations[]",
+        "matchConfig.teamIds[]",
+        "matchConfig.totalSetPoints",
         "maxSportLevelValue",
         "minSportLevelId",
         "minSportLevelValue",
@@ -1253,7 +1261,7 @@
         15,
         15,
         15,
-        15,
+        12,
         12,
         12
       ],
@@ -1307,7 +1315,7 @@
     "manual:beecave-on-ice-sun:changed:2026-11-23",
     "manual:beecave-on-ice-tue:changed:2026-11-23",
     "manual:four-seasons-ice-rodeo:changed:2026-11-23",
-    "manual:hanovers-open:changed:2026-11-18",
-    "manual:hanovers-open:unverified"
+    "manual:hanovers-open:unverified",
+    "manual:hanovers-open:watch"
   ]
 }
