@@ -25,8 +25,24 @@ third ever reaches a source:
 ## Cassette format
 `test/cassettes/<name>/cassette.json`:
 ```json
-{ "recordedAt": "2026-11-24T01:07:00Z", "ignoreParams": ["startDateTime"],
-  "requests": [{ "method": "GET", "url": "https://…", "status": 200, "contentType": "text/html", "body": "page.html" }] }
+{ "recordedAt": "2026-11-24T01:07:00Z", "meta": { "unit": "schedule:reclub", "now": "…", "count": 41 },
+  "requests": [{ "method": "GET", "url": "https://…", "status": 200, "contentType": "text/html", "body": "3f2a….html" },
+               { "method": "POST", "url": "https://overpass…", "bodyHash": "…", "status": 200, "contentType": "application/json", "body": "…" }] }
 ```
-Each body is its own file next to it (a page change reads as a diff). `ignoreParams` are query
-parameters that change every run (today's date) and aren't part of the match.
+Each body is its own file next to it (a page change reads as a diff). A request is matched on
+method, URL and (for a POST) a hash of what it sent. `ignoreParams` (optional) are query
+parameters left out of the match; replaying with the clock at `meta.now` usually makes them unneeded.
+
+## The canary (Tier 3)
+Every reader is a **unit** (`lib/canary-units.js`): `schedule:<source>`, `programs:<source>`,
+`events:<source>` and `markets`. The same unit code records (canary) and replays (tests).
+- `node scripts/canary.mjs --list` shows each unit's weekday. The units sorted by id are dealt over
+  the week, so each is recorded once a week and a day is about six units.
+- Per run: at most `CANARY_RUN_BUDGET` requests (150; 600 for `--all`), `CANARY_UNIT_BUDGET` per
+  unit (60), robots.txt read once per site and obeyed, 2 s between two requests to one host.
+- A recording replaces the old one only if the cleaned copy replays to the same count as the live
+  read. Bodies are cleaned by `sanitizeFor` in `lib/canary.js` (Reclub people, Arketa clients,
+  Sweatpals accounts, emails and phone numbers).
+- `canary.yml` runs daily and by hand (`only`, `all`), runs the tests on the new recordings, then
+  opens and merges a pull request with them. Paused sources keep their last recording; browser
+  sources (atxbeach) are recorded as HAR files in a later step.
