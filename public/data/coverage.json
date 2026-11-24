@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T02:13:45.406Z",
+ "generatedAt": "2026-11-24T03:04:44.751Z",
  "regions": [
   {
    "id": "austin",
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 89,
+     "sessions": 88,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 86,
+     "sessions": 85,
      "pinned": true,
      "booking": true,
      "via": [
@@ -480,7 +480,7 @@
      "venue": "Collins Park",
      "city": "",
      "sport": "volleyball",
-     "sessions": 3,
+     "sessions": 4,
      "pinned": true,
      "booking": false,
      "via": [
@@ -501,7 +501,7 @@
      "lead": true
     },
     {
-     "venue": "Tellepsen Family Downtown YMCA",
+     "venue": "Absolute Volleyball Academy and Absolute Beach",
      "city": "",
      "sport": "volleyball",
      "sessions": 2,
@@ -513,10 +513,22 @@
      "lead": true
     },
     {
-     "venue": "Absolute Volleyball Academy and Absolute Beach",
+     "venue": "Houston Stars",
      "city": "",
      "sport": "volleyball",
-     "sessions": 1,
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Tellepsen Family Downtown YMCA",
+     "city": "",
+     "sport": "volleyball",
+     "sessions": 2,
      "pinned": true,
      "booking": false,
      "via": [
@@ -538,18 +550,6 @@
     },
     {
      "venue": "Harvest Time Church",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Houston Stars",
      "city": "",
      "sport": "volleyball",
      "sessions": 1,

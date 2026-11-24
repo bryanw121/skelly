@@ -4,20 +4,20 @@
       "counts": [
         264,
         264,
-        264,
         263,
         262,
         262,
         254,
         254,
         254,
-        254
+        254,
+        252
       ],
-      "sessions": 254,
+      "sessions": 252,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.7,
+        "level": 0.71,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -37,7 +37,7 @@
         159,
         159,
         159,
-        159,
+        157,
         157
       ],
       "sessions": 157,
@@ -929,7 +929,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 622
+      "failStreak": 623
     },
     "dallas-reclub": {
       "counts": [
@@ -1081,16 +1081,16 @@
         19,
         19,
         19,
-        19,
         20,
         20,
         20,
-        20
+        20,
+        23
       ],
-      "sessions": 20,
+      "sessions": 23,
       "coverage": {
         "end": 1,
-        "price": 0.55,
+        "price": 0.57,
         "level": 1,
         "venue": 1,
         "city": 0,
@@ -1258,7 +1258,7 @@
         15,
         15,
         15,
-        15,
+        12,
         12,
         12,
         12,
@@ -1288,6 +1288,8 @@
     "georgetown-pickleball:failing",
     "houston-reclub:warning:reclub-230JCQ: no surface",
     "houston-reclub:warning:reclub-2BBFXM: no surface",
+    "houston-reclub:warning:reclub-3VBH4Z: no surface",
+    "houston-reclub:warning:reclub-7BSUK2: no surface",
     "houston-reclub:warning:reclub-8SFAT2: no surface",
     "houston-reclub:warning:reclub-9P8J21: no surface",
     "houston-reclub:warning:reclub-CWAGWL: no surface",
@@ -1296,6 +1298,7 @@
     "houston-reclub:warning:reclub-JMV5QT: no surface",
     "houston-reclub:warning:reclub-K9D10X: no surface",
     "houston-reclub:warning:reclub-K9XO8G: no surface",
+    "houston-reclub:warning:reclub-KB2S3K: no surface",
     "houston-reclub:warning:reclub-MCRPQ4: no surface",
     "houston-reclub:warning:reclub-MLI8J8: no surface",
     "houston-reclub:warning:reclub-OKAE7P: no surface",
