@@ -4188,5 +4188,29 @@
     "lng": -95.61461,
     "located": "source",
     "matched": null
+  },
+  "hilton dallas/southlake town square (southlake, tx), 1400 plaza pl": {
+    "lat": 32.94589,
+    "lng": -97.13058,
+    "located": "source",
+    "matched": null
+  },
+  "1100 cesar chavez st w": {
+    "lat": 30.26897,
+    "lng": -97.75699,
+    "located": "source",
+    "matched": null
+  },
+  "9595 six pines drive": {
+    "lat": 30.16483,
+    "lng": -95.46233,
+    "located": "source",
+    "matched": null
+  },
+  "four seasons hotel houston, 1300 lamar street": {
+    "lat": 29.75391,
+    "lng": -95.36324,
+    "located": "source",
+    "matched": null
   }
 }

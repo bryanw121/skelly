@@ -232,7 +232,7 @@
   "endTime": "17:00"
  },
  "https://allevents.in/dallas/reliant-lights-your-holidays-free/200030596732125": {
-  "checkedAt": "2026-11-21T23:06:02.600Z"
+  "checkedAt": "2026-11-24T23:30:20.231Z"
  },
  "https://allevents.in/dallas/holiday-market-tickets/200030109649819": {
   "checkedAt": "2026-11-21T23:06:02.600Z"
@@ -256,7 +256,7 @@
   "checkedAt": "2026-11-21T23:06:02.600Z"
  },
  "https://allevents.in/dallas/2026-lights-all-night-dance-festival-thursday-at-fair-park-dallas/2400030606323659": {
-  "checkedAt": "2026-11-21T23:06:02.600Z"
+  "checkedAt": "2026-11-24T23:30:20.231Z"
  },
  "https://allevents.in/dallas/turtle-creek-fall-arts-festival-2026-sunday/200030498164254": {
   "checkedAt": "2026-11-21T23:06:02.600Z"
@@ -269,7 +269,7 @@
   "startTime": "09:00"
  },
  "https://allevents.in/dallas/lights-all-night-festival-2026/80003595264826": {
-  "checkedAt": "2026-11-21T23:06:02.600Z"
+  "checkedAt": "2026-11-24T23:30:20.231Z"
  },
  "https://allevents.in/dallas/wizzard-theme-market-tickets/200030636683050": {
   "checkedAt": "2026-11-21T23:06:02.600Z",
@@ -883,5 +883,14 @@
  "https://allevents.in/houston/heritage-holiday-market/200031073279301": {
   "checkedAt": "2026-11-24T18:16:46.693Z",
   "startTime": "15:00"
+ },
+ "https://allevents.in/houston/houston-chanukah-fest/80003068490293": {
+  "checkedAt": "2026-11-24T23:30:20.231Z",
+  "startTime": "15:00",
+  "endTime": "18:00"
+ },
+ "https://allevents.in/houston/new-years-eve-at-four-seasons-hotel-houston/100001998931499926": {
+  "checkedAt": "2026-11-24T23:30:20.231Z",
+  "startTime": "21:00"
  }
 }
