@@ -1,0 +1,108 @@
+{
+ "recordedAt": "2026-11-24T03:01:17.648Z",
+ "meta": {
+  "unit": "courts:holy-pickle",
+  "now": "2026-11-24T03:01:17.648Z",
+  "count": 4
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-11-23",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "21ea552c1c62.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-11-24",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "cdb85b212d84.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-11-25",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "3dbe733dddb2.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-11-26",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "940a597b8123.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-11-27",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "3cf76306ccc4.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-11-28",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "aae5f5efbd29.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-11-29",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "8756e69bba85.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-11-30",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "5eab760bea98.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-12-01",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "15a6abdeaa1e.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-12-02",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "f147aaa987ff.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-12-03",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "e17059da1e5f.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-12-04",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "89a4baccf421.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-12-05",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "e315b8b82a4c.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://app.getopencourt.com/api/club/holy-pickle/schedule?date=2026-12-06",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "bbfed0955a68.json"
+  }
+ ]
+}

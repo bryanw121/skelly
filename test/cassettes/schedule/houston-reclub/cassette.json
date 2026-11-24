@@ -1,0 +1,255 @@
+{
+ "recordedAt": "2026-11-24T03:01:17.648Z",
+ "meta": {
+  "unit": "schedule:houston-reclub",
+  "now": "2026-11-24T03:01:17.648Z",
+  "count": 23
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@cinco-ranch-volleyball-club",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b0f6311f910a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@north-houston",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "45334ac8157c.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@houston-stars-adults",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "79f8123c6ddd.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/MLI8J8",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "7bbd84f52130.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/7BSUK2",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "99729fb4bfd7.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@htxers-vball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c0273a8a5490.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/OKAE7P",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "da8c7978a9c8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/J533LP",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "82c358978d64.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/TCHJ1D",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "77a8aad7e3c3.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/CWAGWL",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "6736f031a9d4.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/3VBH4Z",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ceba9077b030.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@culturaldiversityvolleyballsocial",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "e70a4407817b.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/K9D10X",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f1da82706270.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/MCRPQ4",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "4be27cf3e1b9.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/K9XO8G",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "64a9fd293d83.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/WQR08J",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "e2b975929aa1.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/Y2CRUB",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f0842aa6686f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@emancipation-park-volleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "14359abfd8d4.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/VGIK6U",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "2ae05ccff9ec.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@htx-meet-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "fcc834cfae1a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/8SFAT2",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ed49f8bcd176.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/JMV5QT",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "565fc4f3022c.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/Y1ZF0D",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "aa3b216ff0bc.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/X8OFRC",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "135264bd36ed.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@htx-volleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "98ffe2db7edf.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@t4-late-nights",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "2cb58ddad167.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/T02HQF",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "0dbe25b0b073.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@blastros-sand-volleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "be0bc7b40c34.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@the-volleyball-hangout",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "380a286dbe3f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/230JCQ",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f1e7a1ceab40.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/2BBFXM",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "3206ff205c6c.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/9P8J21",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f1960fec0f8d.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/HC3B4O",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "a8ffff717bed.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/m/KB2S3K",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "3602632f38cd.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://reclub.co/clubs/@hfbc-wednesday-night-volleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c98704594fce.html"
+  }
+ ]
+}

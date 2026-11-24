@@ -1,0 +1,96 @@
+{
+ "venue": [
+  {
+   "hoursOfAvailability": {
+    "rules": [
+     {
+      "start": 300,
+      "end": 960,
+      "daysBitmask": 62,
+      "spaceIds": null
+     },
+     {
+      "start": 960,
+      "end": 1440,
+      "daysBitmask": 62,
+      "spaceIds": null
+     },
+     {
+      "start": 420,
+      "end": 1440,
+      "daysBitmask": 65,
+      "spaceIds": null
+     }
+    ]
+   }
+  }
+ ],
+ "spaces": [
+  {
+   "id": "993108",
+   "name": "HP Court 1",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "993109",
+   "name": "HP Court 2",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "1054929",
+   "name": "HP Front Studio Area",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "1276189",
+   "name": "HP Upper Field",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "1448294",
+   "name": "HP Lower Field",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "1457788",
+   "name": "CO Court 1",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "1457791",
+   "name": "CO Court 2",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "1457792",
+   "name": "CO Court 3",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "1457793",
+   "name": "CO Court 4",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "1457794",
+   "name": "CO Court 5",
+   "venue": "181081",
+   "nonAdminVisible": false
+  },
+  {
+   "id": "1457795",
+   "name": "CO Mezzanine",
+   "venue": "181081",
+   "nonAdminVisible": false
+  }
+ ]
+}

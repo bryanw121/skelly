@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T03:01:17.648Z",
+ "meta": {
+  "unit": "schedule:volleyworld",
+  "now": "2026-11-24T03:01:17.648Z",
+  "count": 10
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://widget-api-tkaeguucxq-uc.a.run.app/ejkJj0YI8MYhO9if44ItXiKYhrt2/schedule?startDateTime=2026-11-23T06%3A00%3A00.000Z&endDateTime=2026-12-08T06%3A00%3A00.000Z&timezone=America%2FChicago",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "969f685d967a.json"
+  }
+ ]
+}

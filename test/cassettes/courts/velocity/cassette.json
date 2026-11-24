@@ -1,0 +1,31 @@
+{
+ "recordedAt": "2026-11-24T03:01:17.648Z",
+ "meta": {
+  "unit": "courts:velocity",
+  "now": "2026-11-24T03:01:17.648Z",
+  "count": 9
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://austinvelocity.skedda.com/booking",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "cc8618f7edf0.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://austinvelocity.skedda.com/webs",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "225e033d9710.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://austinvelocity.skedda.com/bookingslists?start=2026-11-23T00:00:00&end=2026-12-06T23:59:59.999",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "9a7fdbb8b74d.json"
+  }
+ ]
+}

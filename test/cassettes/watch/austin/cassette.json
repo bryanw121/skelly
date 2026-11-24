@@ -1,0 +1,59 @@
+{
+ "recordedAt": "2026-11-24T03:01:17.648Z",
+ "meta": {
+  "unit": "watch:austin",
+  "now": "2026-11-24T03:01:17.648Z",
+  "count": 5
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://acesintexas.com/ptx-monday-indoor-open-plays-volleyworld-pflugerville/",
+   "status": 403,
+   "contentType": "text/html",
+   "body": "044eeeff2d71.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://acesintexas.com/wednesday-indoor-open-plays-volleyworld-pflugerville/",
+   "status": 403,
+   "contentType": "text/html",
+   "body": "7a862ee76bfe.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.planomato.com/en/austin/p/open-play-volleyball-austin",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "650dc735aa11.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.beecavetexas.gov/residents/events/bee_cave_on_ice/index.php",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "5cfddfd13c55.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.fourseasons.com/austin/seasonal/winter/",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "38c16ad86fbe.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://thelongcenter.org/icerink/",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c8a1eefc48f8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.drippingspringsranchpark.com/510/Ice-Skating",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "cc46358888bc.html"
+  }
+ ]
+}

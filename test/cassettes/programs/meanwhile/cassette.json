@@ -1,0 +1,17 @@
+{
+ "recordedAt": "2026-11-24T03:01:17.648Z",
+ "meta": {
+  "unit": "programs:meanwhile",
+  "now": "2026-11-24T03:01:17.648Z",
+  "count": 4
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://meanwhile.leaguelab.com/leagues?sport=Sand+Volleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "fc4637ae265f.html"
+  }
+ ]
+}

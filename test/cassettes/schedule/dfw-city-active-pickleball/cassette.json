@@ -1,0 +1,157 @@
+{
+ "recordedAt": "2026-11-24T03:01:17.648Z",
+ "meta": {
+  "unit": "schedule:dfw-city-active-pickleball",
+  "now": "2026-11-24T03:01:17.648Z",
+  "count": 7
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b6d2f4260410.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball?page=2",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "b99a390a6727.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball?page=3",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c7f31f0b83ff.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball?page=4",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "d514f302e95b.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/dallas-tx/volleyball",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "47b4268587e8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/dallas-tx/volleyball?page=2",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "0d323b1a0d5f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/dallas-tx/volleyball?page=3",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "4331d22a3ccd.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/dallas-tx/volleyball?page=4",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "af9a29b1b8e4.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickleball-2026-110034404",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "db7f94afa74d.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickleball-2026-109915602",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f6554bfff537.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickleball-2026-110202485",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "4f107431528f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickleball-2026-110202467",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "fe68d9f66b5b.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickle-ball-2026-110189828",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "20617ca9753c.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickleball-2026-110213158",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "37a3560f2857.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickle-ball-2026-110185888",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c3c60147dd62.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1100+NW+18th+Street%2C+Fort+Worth%2C+TX%2C+76164&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "d4a5f7b9ae20.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3700+East+Belknap+Street%2C+Fort+Worth%2C+TX%2C+76111&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "9e5ee252a347.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3427+Hemphill+Street%2C+Fort+Worth%2C+TX%2C+76110&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "6c5584e36c4b.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=5565+Truman+Drive%2C+Fort+Worth%2C+TX%2C+76112&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "667d36ceb125.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=3242+Lackland+Road%2C+Fort+Worth%2C+TX%2C+76116&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "b723b5f8d455.json"
+  },
+  {
+   "method": "GET",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6201+Beaty+Street%2C+Fort+Worth%2C+TX%2C+76112&benchmark=Public_AR_Current&format=json",
+   "status": 200,
+   "contentType": "application/json",
+   "body": "3f4063ea7cf8.json"
+  }
+ ]
+}

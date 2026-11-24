@@ -1,0 +1,86 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meetup//Meetup Calendar 1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+NAME:Austin Indoor Volleyball – Montopolis
+X-WR-CALNAME:Austin Indoor Volleyball – Montopolis
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+TZURL:http://tzurl.org/zoneinfo-outlook/America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:redacted@example.com
+SEQUENCE:1
+DTSTAMP:20261124T031546Z
+DTSTART;TZID=America/Chicago:20261202T180000
+DTEND;TZID=America/Chicago:20261202T203000
+SUMMARY:Wednesday Night Indoor Volleyball | Montopolis | 6v6
+DESCRIPTION:Austin Indoor Volleyball – Montopolis\n🏐 Wednesday Indoor
+  Volleyball – Montopolis Rec Center\n\nCome join us for some fun indoor 
+ volleyball! All beginner to intermediate players are welcome.\n\n📍 Loca
+ tion: Montopolis Recreation Center\, Austin\n📅 Date: Wednesday\, Octobe
+ r 14\n🕕 Time: 6:00–8:30 PM\n\nWhat to expect:\n\n- Friendly indoor vo
+ lleyball with a goal of playing 6 vs. 6.\n- We have one court available.\n
+ - If we have more than 12 players\, we'll rotate teams so everyone gets a 
+ chance to play.\n- We already have approximately 8 players planning to att
+ end\, and we'd love to get more!\n\n🏐 When you arrive:\n\nPlease sign i
+ n at the front desk using the sign-in sheet\, then head straight to the gy
+ m to join us.\n\n✅ Please RSVP!\n\nSign up as soon as possible so everyo
+ ne can see how many players are coming. If your plans change\, please upda
+ te your RSVP.\n\nCome solo or bring a friend! Let's meet new people\, stay
+  active\, and enjoy some good volleyball.\n\nSee you on the court! 🙌
+URL;VALUE=URI:https://www.meetup.com/austin-indoor-volleyball-meetup-group
+ /events/317404343/
+STATUS:CONFIRMED
+CREATED:20261113T002549Z
+LAST-MODIFIED:20261113T002549Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:redacted@example.com
+SEQUENCE:1
+DTSTAMP:20261124T031546Z
+DTSTART;TZID=America/Chicago:20261209T180000
+DTEND;TZID=America/Chicago:20261209T203000
+SUMMARY:Wednesday Night Indoor Volleyball | Montopolis | 6v6
+DESCRIPTION:Austin Indoor Volleyball – Montopolis\n🏐 Wednesday Indoor
+  Volleyball – Montopolis Rec Center\n\nCome join us for some fun indoor 
+ volleyball! All beginner to intermediate players are welcome.\n\n📍 Loca
+ tion: Montopolis Recreation Center\, Austin\n📅 Date: Wednesday\, Octobe
+ r 14\n🕕 Time: 6:00–8:30 PM\n\nWhat to expect:\n\n- Friendly indoor vo
+ lleyball with a goal of playing 6 vs. 6.\n- We have one court available.\n
+ - If we have more than 12 players\, we'll rotate teams so everyone gets a 
+ chance to play.\n- We already have approximately 8 players planning to att
+ end\, and we'd love to get more!\n\n🏐 When you arrive:\n\nPlease sign i
+ n at the front desk using the sign-in sheet\, then head straight to the gy
+ m to join us.\n\n✅ Please RSVP!\n\nSign up as soon as possible so everyo
+ ne can see how many players are coming. If your plans change\, please upda
+ te your RSVP.\n\nCome solo or bring a friend! Let's meet new people\, stay
+  active\, and enjoy some good volleyball.\n\nSee you on the court! 🙌
+URL;VALUE=URI:https://www.meetup.com/austin-indoor-volleyball-meetup-group
+ /events/317507049/
+STATUS:CONFIRMED
+CREATED:20261120T002914Z
+LAST-MODIFIED:20261120T002914Z
+CLASS:PUBLIC
+END:VEVENT
+X-ORIGINAL-URL:https://www.meetup.com/austin-indoor-volleyball-meetup-grou
+ p/events/ical/
+X-WR-CALNAME:Austin Indoor Volleyball – Montopolis
+END:VCALENDAR
