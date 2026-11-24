@@ -105,6 +105,10 @@ jobs:
       - name: Venue coverage
         continue-on-error: true
         run: node scripts/coverage.mjs
+      # Tier 2 of docs/testing.md: the feeds must be readable before they're published. If not,
+      # nothing is committed (the site keeps the last good copy) and the issue step reports why.
+      - name: Check the feeds
+        run: node scripts/check-feeds.mjs
       # To the data branch, never main: a push to main is a Vercel deployment.
       - name: Commit updated data
         run: |
@@ -119,6 +123,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main || echo "::warning::Couldn't start the site deploy."
       - name: Open an issue per region if a source failed, close it when all recover
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -129,7 +134,9 @@ jobs:
           for f in scrape-failures/*.md; do
             [ -e "$f" ] || continue
             key=$(basename "$f" .md)
-            if [ "$key" = database ]; then title="Schedule scrape: database write failed"; else title="Schedule scrape: source failed in $key"; fi
+            if [ "$key" = database ]; then title="Schedule scrape: database write failed"
+            elif [ "$key" = feeds ]; then title="Schedule scrape: feeds failed the check, not published"
+            else title="Schedule scrape: source failed in $key"; fi
             open=$(gh issue list --state open --search "in:title \"$title\"" --json number,title --jq "[.[] | select(.title | startswith(\"$title\"))][0].number // empty")
             if [ -s "$f" ]; then
               if [ -n "$open" ]; then
