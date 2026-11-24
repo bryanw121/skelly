@@ -47,7 +47,9 @@ const regions = loadRegions().map((r) => r.info);
 const today = todayIn(new Date(now));
 const results = await readEventSources(config, { get, today, regions });
 // Weekly markets (farmers, makers, flea) from OpenStreetMap: each one's next market day (lib/markets.js).
-const marketsRead = await readMarkets(regions, { today });
+// Each region's answer is kept and asked for again at most once a day, so a slow Overpass changes nothing.
+const MARKETS = repoPath('public/data/markets-osm.json');
+const marketsRead = await readMarkets(regions, { today, now, cache: existsSync(MARKETS) ? JSON.parse(readFileSync(MARKETS, 'utf8')) : {} });
 results.push(marketsRead);
 // Listing pages give a date and no hours: each event's own page has them. Read once, remembered.
 const HOURS = repoPath('public/data/event-hours.json');
@@ -91,12 +93,13 @@ if (Object.keys(profiles).length) console.log(`Saved ${await saveAvatars(profile
 stampAvatars(events, AVATARS);
 const feed = { ...(previous ?? {}), feedVersion: 1, generatedAt: new Date(now).toISOString(), listingsAt: new Date(now).toISOString(), sources: results.map((r) => ({ id: r.id, ok: r.ok, count: r.events.length, ...(r.error ? { error: r.error } : {}) })), events,
   // Weekly markets without listed hours (lib/markets.js); a failed read keeps the last list.
-  markets: marketsRead.markets ?? previous?.markets ?? [] };
+  markets: marketsRead.markets.length ? marketsRead.markets : previous?.markets ?? [] };
 saveLedger(creditAccounts(ledgerNow(), events, today, handleOf));
 // The listing readers' own events as merged into the feed (with their pins), for missingListings above.
 const listingIds = new Set([...config.sources.map((x) => x.id), 'weekly-markets']);
 writeFileSync(CACHE, `${JSON.stringify({ listingsAt: new Date(now).toISOString(), events: events.filter((e) => listingIds.has(e.sourceId)) }, null, 1)}\n`);
 writeFileSync(HOURS, `${JSON.stringify(hours, null, 1)}\n`);
+writeFileSync(MARKETS, `${JSON.stringify(marketsRead.cache)}\n`);
 writeFileSync(OUT, `${JSON.stringify(feed, null, 1)}\n`);
 mkdirSync(repoPath('scrape-failures'), { recursive: true });
 const failed = results.filter((r) => !r.ok);
