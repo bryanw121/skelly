@@ -173,3 +173,11 @@ test('sameEvent: similar titles on one date at different venues stay two events'
   const concord = { title: 'Mo Matcha at Concord Church', startDate: '2026-11-22', source: 'Instagram @momatcha.dtx', sourceUrl: 'https://www.instagram.com/p/b/' };
   assert.ok(!sameEvent(cedar, concord), 'similar titles, different venues');
 });
+
+test('mergeEvents: a read that failed for one region still adds what the others found, and keeps the last copy', () => {
+  const ev = (id, title, region) => ({ id, title, venue: 'Park', startDate: '2099-01-02', source: 'Weekly markets', sourceId: 'weekly-markets', region });
+  const previous = { events: [ev('m-h', 'Heights Bazaar', 'houston')] };
+  // Houston had no answer (ok: false); Austin's market is new this run.
+  const out = mergeEvents(previous, [{ id: 'weekly-markets', ok: false, error: 'houston: timeout', events: [ev('m-a', 'Mueller Farmers Market', 'austin')] }], TODAY, ['Weekly markets']);
+  assert.deepEqual(out.map((e) => e.id).sort(), ['m-a', 'm-h']);
+});
