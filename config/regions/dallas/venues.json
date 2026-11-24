@@ -662,6 +662,322 @@
       "schedule": {
         "surface": "unknown"
       }
+    },
+    {
+      "id": "moody-coliseum",
+      "name": "Moody Coliseum",
+      "city": "University Park",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/26565948",
+      "googlePlaceId": null,
+      "lat": 32.840491,
+      "lng": -96.780681,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "lakeside-park-volleyball-court",
+      "name": "Lakeside Park Volleyball Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/447070929",
+      "googlePlaceId": null,
+      "lat": 32.65585,
+      "lng": -96.918532,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "bob-woodruff-volleyball-sand-court",
+      "name": "Bob Woodruff Volleyball Sand Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/479740855",
+      "googlePlaceId": null,
+      "lat": 33.034136,
+      "lng": -96.660057,
+      "website": null,
+      "indoor": false,
+      "lit": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "beach-volleyball",
+      "name": "Beach Volleyball",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/480041826",
+      "googlePlaceId": null,
+      "lat": 32.949981,
+      "lng": -96.544236,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "tcu-beach-volleyball-courts",
+      "name": "TCU Beach Volleyball Courts",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/483841715",
+      "googlePlaceId": null,
+      "lat": 32.708315,
+      "lng": -97.363681,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "cottonwood-park-volleyball-court",
+      "name": "Cottonwood Park Volleyball Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/485166449",
+      "googlePlaceId": null,
+      "lat": 32.948176,
+      "lng": -96.76455,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "psa-mckinney",
+      "name": "PSA McKinney",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/497708923",
+      "googlePlaceId": null,
+      "lat": 33.173032,
+      "lng": -96.7121,
+      "website": null,
+      "indoor": true,
+      "access": "fee",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "psa-murphy",
+      "name": "PSA Murphy",
+      "city": "Murphy",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/544395521",
+      "googlePlaceId": null,
+      "lat": 33.019596,
+      "lng": -96.611679,
+      "website": "http://www.psaplano.org/Home/PSAMurphy.aspx",
+      "indoor": true,
+      "schedule": {
+        "surface": "platform:daysmart",
+        "platform": "daysmart",
+        "url": "https://apps.daysmartrecreation.com/dash/x/#/online/psa/programs?&facility_ids=1",
+        "company": "psa"
+      }
+    },
+    {
+      "id": "apex-centre",
+      "name": "Apex Centre",
+      "city": "McKinney",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/548009863",
+      "googlePlaceId": null,
+      "lat": 33.173611,
+      "lng": -96.714311,
+      "website": "https://www.mckinneytexas.org/1315/Apex-Centre",
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "elzie-odom-athletic-center",
+      "name": "Elzie Odom Athletic Center",
+      "city": "Arlington",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/642660826",
+      "googlePlaceId": null,
+      "lat": 32.782241,
+      "lng": -97.087615,
+      "website": null,
+      "indoor": true,
+      "access": "fee",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "parkhill-jr-high-volleyball-pit",
+      "name": "Parkhill Jr. High Volleyball Pit",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/809440661",
+      "googlePlaceId": null,
+      "lat": 32.974521,
+      "lng": -96.789401,
+      "website": null,
+      "indoor": false,
+      "lit": false,
+      "access": "yes",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "hidden-lakes-sand-volleyball-court",
+      "name": "Hidden Lakes Sand Volleyball Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1085187375",
+      "googlePlaceId": null,
+      "lat": 32.921686,
+      "lng": -97.193725,
+      "website": null,
+      "indoor": false,
+      "lit": false,
+      "access": "yes",
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "coliseum-col",
+      "name": "Coliseum (COL)",
+      "city": "Denton",
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1165981497",
+      "googlePlaceId": null,
+      "lat": 33.208674,
+      "lng": -97.154065,
+      "website": null,
+      "indoor": true,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "bozman-volleyball",
+      "name": "Bozman Volleyball",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1271019509",
+      "googlePlaceId": null,
+      "lat": 33.001372,
+      "lng": -96.513737,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "basketball-court",
+      "name": "Basketball Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1305109154",
+      "googlePlaceId": null,
+      "lat": 32.945065,
+      "lng": -96.460021,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "running-bear-volleyball-court",
+      "name": "Running Bear Volleyball Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1361611452",
+      "googlePlaceId": null,
+      "lat": 32.786414,
+      "lng": -96.977979,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
+    },
+    {
+      "id": "stonebridge-ranch-beach-volley-court",
+      "name": "Stonebridge Ranch Beach Volley Court",
+      "city": null,
+      "aliases": [],
+      "sports": [
+        "volleyball"
+      ],
+      "osm": "way/1418428199",
+      "googlePlaceId": null,
+      "lat": 33.197372,
+      "lng": -96.70018,
+      "website": null,
+      "indoor": false,
+      "schedule": {
+        "surface": "unknown"
+      }
     }
   ]
 }
