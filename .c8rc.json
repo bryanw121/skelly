@@ -1,0 +1,7 @@
+{
+  "all": true,
+  "include": ["lib/**/*.js", "api/**/*.js", "scripts/**/*.mjs"],
+  "exclude": ["test/**", "e2e/**", "web/**", "node_modules/**"],
+  "reporter": ["text-summary", "json-summary"],
+  "report-dir": "coverage"
+}

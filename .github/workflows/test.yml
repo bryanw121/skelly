@@ -24,7 +24,13 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Unit tests never reach the internet (test/support/no-network.mjs); on Linux they run under
+      # c8, and coverage of lib/, api/ and scripts/ may not drop below test/coverage-floor.json.
       - run: npm test
+        if: runner.os != 'Linux'
+      - name: Unit tests with coverage
+        if: runner.os == 'Linux'
+        run: npm run coverage
       - name: Type check the site
         if: runner.os == 'Linux'
         run: npm run typecheck
