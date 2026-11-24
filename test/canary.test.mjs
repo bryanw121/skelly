@@ -1,0 +1,132 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { BudgetExceeded, RobotsDisallowed, runCanary, cassetteName, pickUnits, politeFetch, report, resultCount, rotation, sanitizeFor } from '../lib/canary.js';
+import { canaryUnits } from '../lib/canary-units.js';
+import { loadSources } from '../lib/registry.js';
+import { readFileSync } from 'node:fs';
+
+const answer = (text, status = 200) => ({ ok: status < 300, status, headers: new Headers({ 'content-type': 'text/plain' }), text: async () => text });
+
+test('rotation deals the units out over the week, about evenly', () => {
+  const units = Array.from({ length: 23 }, (_, i) => ({ id: `u${String(i).padStart(2, '0')}` }));
+  const days = rotation(units);
+  const per = [0, 0, 0, 0, 0, 0, 0];
+  for (const d of days.values()) per[d]++;
+  assert.ok(Math.max(...per) - Math.min(...per) <= 1, per.join(','));
+  assert.equal(pickUnits(units, { day: 0 }).length, per[0]);
+  assert.equal(pickUnits(units, { all: true }).length, 23);
+});
+
+test('pickUnits: --only takes ids and "kind:" prefixes', () => {
+  const units = [{ id: 'schedule:a' }, { id: 'schedule:b' }, { id: 'programs:a' }, { id: 'markets' }];
+  assert.deepEqual(pickUnits(units, { only: ['schedule:', 'markets'] }).map((u) => u.id), ['schedule:a', 'schedule:b', 'markets']);
+  assert.deepEqual(pickUnits(units, { only: ['programs:a'] }).map((u) => u.id), ['programs:a']);
+  assert.equal(cassetteName('schedule:a'), 'schedule/a');
+});
+
+test('politeFetch reads robots.txt once per site and refuses what it disallows', async () => {
+  const asked = [];
+  const real = async (url) => { asked.push(String(url)); return String(url).endsWith('/robots.txt') ? answer('User-agent: *\nDisallow: /private\n') : answer('ok'); };
+  const log = [];
+  const f = politeFetch(real, { gapMs: 0, log });
+  assert.equal(await (await f('https://a.test/page')).text(), 'ok');
+  await f('https://a.test/other?x=1');
+  await assert.rejects(f('https://a.test/private/x'), RobotsDisallowed);
+  assert.deepEqual(asked, ['https://a.test/robots.txt', 'https://a.test/page', 'https://a.test/other?x=1']);
+  assert.deepEqual(log, [{ refused: 'https://a.test/private/x', why: 'robots.txt' }]);
+  assert.equal(f.used(), 3);
+});
+
+test('politeFetch: no robots.txt (404 or an error) allows everything', async () => {
+  const f = politeFetch(async (url) => (String(url).endsWith('robots.txt') ? answer('nope', 404) : answer('ok')), { gapMs: 0 });
+  assert.equal((await f('https://b.test/x')).status, 200);
+  const g = politeFetch(async (url) => { if (String(url).endsWith('robots.txt')) throw new Error('down'); return answer('ok'); }, { gapMs: 0 });
+  assert.equal((await g('https://b.test/x')).status, 200);
+});
+
+test('politeFetch stops at the unit budget and at the shared run budget', async () => {
+  const real = async () => answer('');
+  const unit = politeFetch(real, { gapMs: 0, unitMax: 3 });
+  await unit('https://c.test/1'); await unit('https://c.test/2'); // + robots.txt = 3
+  await assert.rejects(unit('https://c.test/3'), BudgetExceeded);
+  const budget = { max: 4, used: 0 };
+  const a = politeFetch(real, { gapMs: 0, budget }), b = politeFetch(real, { gapMs: 0, budget });
+  await a('https://d.test/1'); await b('https://e.test/1'); // 2 robots + 2 pages
+  await assert.rejects(b('https://e.test/2'), /run: 4/);
+});
+
+test('politeFetch: one request at a time per host, with the gap; hosts in parallel', async () => {
+  const events = [];
+  let open = 0, maxOpen = 0;
+  const real = async (url) => { open++; maxOpen = Math.max(maxOpen, open); await new Promise((r) => setTimeout(r, 5)); open--; events.push(new URL(url).host); return answer(''); };
+  const sleeps = [];
+  const f = politeFetch(real, { gapMs: 50, sleep: async (ms) => { sleeps.push(ms); } });
+  await Promise.all([f('https://h.test/1'), f('https://h.test/2'), f('https://h.test/3')]);
+  assert.equal(maxOpen, 1);
+  assert.ok(sleeps.length >= 3 && sleeps.every((ms) => ms === 50));
+  open = 0; maxOpen = 0;
+  await Promise.all([f('https://i.test/1'), f('https://j.test/1')]);
+  assert.equal(maxOpen, 2);
+});
+
+test('sanitizeFor cleans each kind of page the way its fixtures are cleaned', () => {
+  const meet = '<script type="application/json" id="__NUXT_DATA__">[{"x":1},"Some Person"]</script>';
+  assert.ok(!sanitizeFor('https://reclub.co/m/abc123', meet).includes('Some Person'));
+  assert.match(sanitizeFor('https://reclub.co/clubs/@club', '<a href="/m/AbC12">x</a> call 512-555-0100'), /<a href="\/m\/AbC12">AbC12<\/a>/);
+  const wp = JSON.stringify([{ id: 1, slug: 's', title: { rendered: 'T' }, content: { rendered: 'mail me@x.com' }, author: 9 }]);
+  const cleaned = JSON.parse(sanitizeFor('https://site.test/wp-json/wp/v2/pages?slug=s', wp));
+  assert.equal(cleaned[0].content.rendered, 'mail redacted@example.com');
+  assert.equal(cleaned[0].author, undefined);
+  assert.equal(sanitizeFor('https://other.test/', 'call (512) 555-0100'), 'call 000-000-0000');
+  assert.equal(sanitizeFor('not a url', 'a@b.co'), 'redacted@example.com');
+  assert.equal(sanitizeFor('https://x.test/wp-json/wp/v2/pages', 'not json a@b.co'), 'not json redacted@example.com');
+});
+
+test('resultCount and the report', () => {
+  assert.equal(resultCount({ sessions: [1, 2] }), 2);
+  assert.equal(resultCount({ programs: [1] }), 1);
+  assert.equal(resultCount({ events: [] }), 0);
+  assert.equal(resultCount({ count: 7 }), 7);
+  assert.equal(resultCount([1, 2, 3]), 3);
+  const md = report([{ id: 'a', ok: true, requests: 3, count: 5, replayCount: 5 }, { id: 'b', ok: false, requests: 1, error: 'HTTP 403 | x' }], { budget: { used: 4, max: 150 }, day: 2, refused: [{ refused: 'https://a.test/private' }] });
+  assert.match(md, /rotation day 2/);
+  assert.match(md, /1 of 2 recorded · 4 requests of 150/);
+  assert.match(md, /\| a \| recorded \| 3 \| 5 \| 5 \|/);
+  assert.match(md, /\*\*failed\*\*: HTTP 403 \\\| x/);
+  assert.match(md, /- https:\/\/a.test\/private/);
+});
+
+test('every source and reader is a canary unit, or skipped with a reason', () => {
+  const { units, skipped } = canaryUnits();
+  const ids = new Set([...units.map((u) => u.id), ...skipped.map((s) => s.id)]);
+  for (const s of loadSources().sources) assert.ok(ids.has(`schedule:${s.id}`), s.id);
+  for (const s of JSON.parse(readFileSync(new URL('../config/programs.json', import.meta.url))).sources) assert.ok(ids.has(`programs:${s.id}`), s.id);
+  for (const s of JSON.parse(readFileSync(new URL('../config/events.json', import.meta.url))).sources) assert.ok(ids.has(`events:${s.id}`), s.id);
+  assert.ok(ids.has('markets'));
+  assert.equal(new Set(units.map((u) => u.id)).size, units.length);
+  for (const s of skipped) assert.match(s.why, /paused|browser/);
+});
+
+test('runCanary records a unit, checks it replays, and keeps the old recording when it does not', async () => {
+  const { mkdtempSync, readFileSync: read, existsSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const dir = mkdtempSync(join(tmpdir(), 'canary-test-'));
+  const real = async (url) => (String(url).endsWith('robots.txt') ? answer('', 404)
+    : { ok: true, status: 200, headers: new Headers({ 'content-type': 'application/json' }), text: async () => JSON.stringify({ items: [1, 2, 3], contact: 'me@x.com' }) });
+  const good = { id: 'schedule:demo', run: async ({ fetch }) => ({ sessions: (await (await fetch('https://demo.test/api')).json()).items }) };
+  // Reads the email out of the page: the cleaned recording no longer has it, so it doesn't replay the same.
+  const leaky = { id: 'schedule:leaky', run: async ({ fetch }) => ({ sessions: [(await (await fetch('https://demo.test/api')).json()).contact].filter((c) => c === 'me@x.com') }) };
+  const lines = [];
+  const { outcomes, budget } = await runCanary([good, leaky], { fetch: real, dir, gapMs: 0, now: new Date('2026-11-24T10:41:00Z'), log: (l) => lines.push(l) });
+  assert.deepEqual(outcomes.map((o) => [o.id, o.ok, o.count]), [['schedule:demo', true, 3], ['schedule:leaky', false, 1]]);
+  assert.match(outcomes[1].error, /cleaned recording gives 0, the live read gave 1/);
+  const saved = JSON.parse(read(join(dir, 'schedule/demo/cassette.json'), 'utf8'));
+  assert.deepEqual(saved.meta, { unit: 'schedule:demo', now: '2026-11-24T10:41:00.000Z', count: 3 });
+  assert.ok(!existsSync(join(dir, 'schedule/leaky')));
+  assert.equal(budget.used, 4); // each unit: robots.txt, then the page (the replay check is free)
+  assert.equal(lines.length, 2);
+  // Out of budget: it stops after the unit that spent it.
+  const r = await runCanary([good, good], { fetch: real, dir, gapMs: 0, budget: { max: 2, used: 0 } });
+  assert.equal(r.outcomes.length, 1);
+});

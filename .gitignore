@@ -22,3 +22,5 @@ data/offsite/
 public/maps/
 dist/
 coverage/
+canary-report.md
+canary-report.json

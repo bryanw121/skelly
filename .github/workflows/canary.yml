@@ -1,0 +1,78 @@
+name: Canary
+
+# Tier 3 of docs/testing.md: the only workflow that reads the real sources for the tests.
+# Each day it records that day's few units (every reader is recorded once a week), inside a
+# request budget, obeying robots.txt, one request per host at a time (scripts/canary.mjs),
+# then runs the tests on the new recordings and proposes them as a pull request.
+# Never on push or pull_request: changing Skelly never reads a source.
+on:
+  schedule:
+    - cron: '41 10 * * *' # 4:41 AM Chicago, between scrapes
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Units to record (comma-separated ids or prefixes such as "schedule:"); empty = today''s rotation'
+        required: false
+        default: ''
+      all:
+        description: 'Record every unit (the first recording)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: canary
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      # A full recording is bigger than a day's rotation.
+      CANARY_RUN_BUDGET: ${{ inputs.all && '600' || '150' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Record
+        env:
+          ALL: ${{ inputs.all }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          args=()
+          if [ "$ALL" = "true" ]; then args+=(--all); fi
+          if [ -n "$ONLY" ]; then args+=(--only "$ONLY"); fi
+          node scripts/canary.mjs "${args[@]}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: canary-report
+          path: canary-report.*
+          retention-days: 30
+      - name: Test on the new recordings
+        run: npm test
+      - name: Propose the recordings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain test/cassettes)" ]; then echo "Recordings unchanged."; exit 0; fi
+          branch="canary/$(date -u +%F-%H%M)"
+          git config user.name "schelagg-bot"
+          git config user.email "schelagg-bot@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add test/cassettes
+          git commit -m "Canary recordings $(date -u +'%F %H:%MZ')"
+          git push origin "$branch"
+          if url=$(gh pr create --base main --head "$branch" --title "Canary recordings $(date -u +%F)" --body-file canary-report.md); then
+            # The tests passed on these recordings above (a pull request opened by this token runs no CI).
+            gh pr merge "$url" --squash --delete-branch || echo "::notice::Couldn't merge $url; merge it by hand."
+          else
+            echo "::notice::Recordings are on $branch. Open the pull request: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/main...$branch"
+          fi

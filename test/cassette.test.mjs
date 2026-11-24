@@ -44,3 +44,16 @@ test('replay: several cassettes together, POST told apart from GET, JSON bodies'
   assert.deepEqual([busy.ok, busy.status, await busy.text()], [false, 503, 'busy']);
   await assert.rejects(f('https://b.test/q'), UnrecordedRequest, 'a GET is not the recorded POST');
 });
+
+test('record and replay: POSTs to one URL with different bodies are different requests', async () => {
+  const dir = tmp();
+  const real = async (url, init) => ({ status: 200, headers: new Headers({ 'content-type': 'application/json' }), text: async () => JSON.stringify({ q: init.body }) });
+  const rec = record('posts', { fetch: real, dir });
+  await rec('https://o.test/api', { method: 'POST', body: 'austin' });
+  await rec('https://o.test/api', { method: 'POST', body: 'dallas' });
+  rec.save();
+  const f = replay('posts', { dir });
+  assert.deepEqual(await (await f('https://o.test/api', { method: 'POST', body: 'dallas' })).json(), { q: 'dallas' });
+  assert.deepEqual(await (await f('https://o.test/api', { method: 'POST', body: 'austin' })).json(), { q: 'austin' });
+  await assert.rejects(f('https://o.test/api', { method: 'POST', body: 'houston' }), UnrecordedRequest);
+});
