@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T03:50:43.348Z",
+ "generatedAt": "2026-11-24T04:10:55.719Z",
  "regions": [
   {
    "id": "austin",
@@ -57,7 +57,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 84,
+     "sessions": 83,
      "pinned": true,
      "booking": true,
      "via": [
@@ -465,7 +465,7 @@
    "name": "Houston, TX",
    "rows": [
     {
-     "venue": "Champion Forest Baptist Church - Champions Campus",
+     "venue": "Collins Park",
      "city": "",
      "sport": "volleyball",
      "sessions": 4,
@@ -477,10 +477,10 @@
      "lead": true
     },
     {
-     "venue": "Collins Park",
+     "venue": "Champion Forest Baptist Church - Champions Campus",
      "city": "",
      "sport": "volleyball",
-     "sessions": 4,
+     "sessions": 3,
      "pinned": true,
      "booking": false,
      "via": [
@@ -525,6 +525,18 @@
      "lead": true
     },
     {
+     "venue": "Skyline Volleyball Academy",
+     "city": "",
+     "sport": "volleyball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
      "venue": "Tellepsen Family Downtown YMCA",
      "city": "",
      "sport": "volleyball",
@@ -538,30 +550,6 @@
     },
     {
      "venue": "Emancipation Park",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Harvest Time Church",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Skyline Volleyball Academy",
      "city": "",
      "sport": "volleyball",
      "sessions": 1,
