@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-24T04:43:33.335Z",
+  "generatedAt": "2026-11-24T05:27:47.205Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -881,33 +881,6 @@
       "previous_starts_at": null
     },
     {
-      "id": "reclub-K9D10X",
-      "session_id": "reclub-K9D10X",
-      "source_id": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "title": "50 pm)",
-      "venue": "Katy Sports Center",
-      "city": null,
-      "level": "All levels",
-      "price": "$10",
-      "starts_at": "2026-11-24T01:00:00.000Z",
-      "ends_at": "2026-11-24T05:00:00.000Z",
-      "signup_url": "https://reclub.co/m/K9D10X",
-      "signup_label": "Sign up on Reclub",
-      "note": "Hosted by Cultural Diversity Volleyball Social.",
-      "canceled": false,
-      "verified_at": "2026-11-23",
-      "attributes": {
-        "type": "Open play",
-        "capacity": 45
-      },
-      "venue_id": "src-katy-sports-center",
-      "status": "scheduled",
-      "previous_starts_at": null
-    },
-    {
       "id": "aces-open-mon-2026-11-23",
       "session_id": "aces-open-mon",
       "source_id": "manual",
@@ -1150,33 +1123,6 @@
         "capacity": 120
       },
       "venue_id": "src-houston-stars",
-      "status": "scheduled",
-      "previous_starts_at": null
-    },
-    {
-      "id": "reclub-OKAE7P",
-      "session_id": "reclub-OKAE7P",
-      "source_id": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "title": "Skyline Academy Open Gym",
-      "venue": "Skyline Volleyball Academy",
-      "city": null,
-      "level": "All levels",
-      "price": "$10",
-      "starts_at": "2026-11-24T03:00:00.000Z",
-      "ends_at": "2026-11-24T05:00:00.000Z",
-      "signup_url": "https://reclub.co/m/OKAE7P",
-      "signup_label": "Sign up on Reclub",
-      "note": "Hosted by Houston Vball, every Monday.",
-      "canceled": false,
-      "verified_at": "2026-11-23",
-      "attributes": {
-        "type": "Open play",
-        "capacity": 10
-      },
-      "venue_id": "src-skyline-volleyball-academy",
       "status": "scheduled",
       "previous_starts_at": null
     },

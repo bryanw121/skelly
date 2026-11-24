@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T04:43:33.335Z",
+  "generatedAt": "2026-11-24T05:27:47.205Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,18 +67,16 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T04:07:24.282Z",
-      "count": 22,
+      "checkedAt": "2026-11-24T05:24:54.300Z",
+      "count": 20,
       "warnings": [
         "reclub-MLI8J8: no surface",
         "reclub-7BSUK2: no surface",
-        "reclub-OKAE7P: no surface",
         "reclub-J533LP: no surface",
         "reclub-TCHJ1D: no surface",
         "reclub-CWAGWL: no surface",
         "reclub-3VBH4Z: no surface",
         "reclub-J6QMC3: no surface",
-        "reclub-K9D10X: no surface",
         "reclub-MCRPQ4: no surface",
         "reclub-K9XO8G: no surface",
         "reclub-WQR08J: no surface",
@@ -117,7 +115,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-24T04:07:27.263Z",
+      "checkedAt": "2026-11-24T05:24:57.849Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -173,31 +171,6 @@
       "timezone": "America/Chicago",
       "verifiedAt": "2026-11-23",
       "venueId": "src-houston-stars",
-      "status": "scheduled"
-    },
-    {
-      "id": "reclub-OKAE7P",
-      "date": "2026-11-23",
-      "start": "21:00",
-      "end": "23:00",
-      "title": "Skyline Academy Open Gym",
-      "venue": "Skyline Volleyball Academy",
-      "type": "Open play",
-      "level": "All levels",
-      "price": "$10",
-      "note": "Hosted by Houston Vball, every Monday.",
-      "capacity": 10,
-      "signup": {
-        "url": "https://reclub.co/m/OKAE7P",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/OKAE7P",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-23",
-      "venueId": "src-skyline-volleyball-academy",
       "status": "scheduled"
     },
     {
@@ -323,31 +296,6 @@
       "timezone": "America/Chicago",
       "verifiedAt": "2026-11-23",
       "venueId": "src-skyline-volleyball-academy",
-      "status": "scheduled"
-    },
-    {
-      "id": "reclub-K9D10X",
-      "date": "2026-11-23",
-      "start": "19:00",
-      "end": "23:00",
-      "title": "50 pm)",
-      "venue": "Katy Sports Center",
-      "type": "Open play",
-      "level": "All levels",
-      "price": "$10",
-      "note": "Hosted by Cultural Diversity Volleyball Social.",
-      "capacity": 45,
-      "signup": {
-        "url": "https://reclub.co/m/K9D10X",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/K9D10X",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-23",
-      "venueId": "src-katy-sports-center",
       "status": "scheduled"
     },
     {
@@ -937,15 +885,6 @@
       "region": "houston"
     },
     {
-      "id": "src-skyline-volleyball-academy",
-      "name": "Skyline Volleyball Academy",
-      "city": null,
-      "address": "23363 Clay Road, Katy, Tx",
-      "lat": 29.82756,
-      "lng": -95.77629,
-      "region": "houston"
-    },
-    {
       "id": "src-tellepsen-family-downtown-ymca",
       "name": "Tellepsen Family Downtown YMCA",
       "city": null,
@@ -964,12 +903,12 @@
       "region": "houston"
     },
     {
-      "id": "src-katy-sports-center",
-      "name": "Katy Sports Center",
+      "id": "src-skyline-volleyball-academy",
+      "name": "Skyline Volleyball Academy",
       "city": null,
-      "address": "535 Applewhite Drive, Katy, TX 77450, USA",
-      "lat": 29.77552,
-      "lng": -95.754074,
+      "address": "23363 Clay Road, Katy, Tx",
+      "lat": 29.82756,
+      "lng": -95.77629,
       "region": "houston"
     },
     {
@@ -988,6 +927,15 @@
       "address": "10371 Stella Link Road 2nd Floor, Houston, TX 77025",
       "lat": 29.66943,
       "lng": -95.43757,
+      "region": "houston"
+    },
+    {
+      "id": "src-katy-sports-center",
+      "name": "Katy Sports Center",
+      "city": null,
+      "address": "535 Applewhite Drive, Katy, TX 77450, USA",
+      "lat": 29.77552,
+      "lng": -95.754074,
       "region": "houston"
     },
     {

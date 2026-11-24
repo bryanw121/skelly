@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T04:43:33.335Z",
+  "generatedAt": "2026-11-24T05:27:47.205Z",
   "sources": [
     {
       "id": "austin-club-openplay",
@@ -12,7 +12,7 @@
       "kind": "OpenPlay club directory",
       "site": "https://openplaymap.com/open-play/austin",
       "ok": true,
-      "checkedAt": "2026-11-24T04:40:04.649Z",
+      "checkedAt": "2026-11-24T05:24:47.743Z",
       "count": 245
     },
     {
@@ -25,7 +25,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/austinpicklehaus",
       "ok": true,
-      "checkedAt": "2026-11-24T04:40:04.649Z",
+      "checkedAt": "2026-11-24T05:24:47.744Z",
       "count": 157
     },
     {
@@ -38,7 +38,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/holy-pickle",
       "ok": true,
-      "checkedAt": "2026-11-24T04:40:04.649Z",
+      "checkedAt": "2026-11-24T05:24:47.744Z",
       "count": 0
     },
     {
@@ -51,7 +51,7 @@
       "kind": "Venue's schedule page",
       "site": "https://app.arketa.co/iframe/volleyworld/schedule",
       "ok": true,
-      "checkedAt": "2026-11-24T04:40:04.649Z",
+      "checkedAt": "2026-11-24T05:24:47.744Z",
       "count": 10
     },
     {
@@ -104,7 +104,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T04:07:18.100Z",
+      "checkedAt": "2026-11-24T05:24:47.745Z",
       "count": 3
     },
     {
@@ -131,7 +131,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T04:07:18.101Z",
+      "checkedAt": "2026-11-24T05:24:47.745Z",
       "count": 2
     },
     {
@@ -201,7 +201,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://apps.daysmartrecreation.com/dash/x/chaparralice/calendar?location=1&start={date}&end={date}&event_type={eventType}",
       "ok": true,
-      "checkedAt": "2026-11-24T04:40:04.650Z",
+      "checkedAt": "2026-11-24T05:24:48.786Z",
       "count": 37
     },
     {
@@ -214,7 +214,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://iceandfield.com/public-skating/",
       "ok": true,
-      "checkedAt": "2026-11-24T04:40:04.651Z",
+      "checkedAt": "2026-11-24T05:24:48.854Z",
       "count": 24
     },
     {
@@ -243,7 +243,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-24T04:40:04.973Z",
+      "checkedAt": "2026-11-24T05:24:53.461Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
@@ -268,7 +268,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T04:07:20.234Z",
+      "checkedAt": "2026-11-24T05:24:53.617Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"
@@ -416,18 +416,16 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T04:07:24.282Z",
-      "count": 22,
+      "checkedAt": "2026-11-24T05:24:54.300Z",
+      "count": 20,
       "warnings": [
         "reclub-MLI8J8: no surface",
         "reclub-7BSUK2: no surface",
-        "reclub-OKAE7P: no surface",
         "reclub-J533LP: no surface",
         "reclub-TCHJ1D: no surface",
         "reclub-CWAGWL: no surface",
         "reclub-3VBH4Z: no surface",
         "reclub-J6QMC3: no surface",
-        "reclub-K9D10X: no surface",
         "reclub-MCRPQ4: no surface",
         "reclub-K9XO8G: no surface",
         "reclub-WQR08J: no surface",
@@ -466,7 +464,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-24T04:07:27.263Z",
+      "checkedAt": "2026-11-24T05:24:57.849Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -14678,31 +14676,6 @@
       "status": "scheduled"
     },
     {
-      "id": "reclub-OKAE7P",
-      "date": "2026-11-23",
-      "start": "21:00",
-      "end": "23:00",
-      "title": "Skyline Academy Open Gym",
-      "venue": "Skyline Volleyball Academy",
-      "type": "Open play",
-      "level": "All levels",
-      "price": "$10",
-      "note": "Hosted by Houston Vball, every Monday.",
-      "capacity": 10,
-      "signup": {
-        "url": "https://reclub.co/m/OKAE7P",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/OKAE7P",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-23",
-      "venueId": "src-skyline-volleyball-academy",
-      "status": "scheduled"
-    },
-    {
       "id": "reclub-J533LP",
       "date": "2026-11-24",
       "start": "18:00",
@@ -14825,31 +14798,6 @@
       "timezone": "America/Chicago",
       "verifiedAt": "2026-11-23",
       "venueId": "src-skyline-volleyball-academy",
-      "status": "scheduled"
-    },
-    {
-      "id": "reclub-K9D10X",
-      "date": "2026-11-23",
-      "start": "19:00",
-      "end": "23:00",
-      "title": "50 pm)",
-      "venue": "Katy Sports Center",
-      "type": "Open play",
-      "level": "All levels",
-      "price": "$10",
-      "note": "Hosted by Cultural Diversity Volleyball Social.",
-      "capacity": 45,
-      "signup": {
-        "url": "https://reclub.co/m/K9D10X",
-        "label": "Sign up on Reclub"
-      },
-      "source": "https://reclub.co/m/K9D10X",
-      "sourceId": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-23",
-      "venueId": "src-katy-sports-center",
       "status": "scheduled"
     },
     {
@@ -17189,15 +17137,6 @@
       "region": "houston"
     },
     {
-      "id": "src-skyline-volleyball-academy",
-      "name": "Skyline Volleyball Academy",
-      "city": null,
-      "address": "23363 Clay Road, Katy, Tx",
-      "lat": 29.82756,
-      "lng": -95.77629,
-      "region": "houston"
-    },
-    {
       "id": "src-tellepsen-family-downtown-ymca",
       "name": "Tellepsen Family Downtown YMCA",
       "city": null,
@@ -17216,12 +17155,12 @@
       "region": "houston"
     },
     {
-      "id": "src-katy-sports-center",
-      "name": "Katy Sports Center",
+      "id": "src-skyline-volleyball-academy",
+      "name": "Skyline Volleyball Academy",
       "city": null,
-      "address": "535 Applewhite Drive, Katy, TX 77450, USA",
-      "lat": 29.77552,
-      "lng": -95.754074,
+      "address": "23363 Clay Road, Katy, Tx",
+      "lat": 29.82756,
+      "lng": -95.77629,
       "region": "houston"
     },
     {
@@ -17240,6 +17179,15 @@
       "address": "10371 Stella Link Road 2nd Floor, Houston, TX 77025",
       "lat": 29.66943,
       "lng": -95.43757,
+      "region": "houston"
+    },
+    {
+      "id": "src-katy-sports-center",
+      "name": "Katy Sports Center",
+      "city": null,
+      "address": "535 Applewhite Drive, Katy, TX 77450, USA",
+      "lat": 29.77552,
+      "lng": -95.754074,
       "region": "houston"
     },
     {

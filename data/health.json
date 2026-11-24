@@ -3,13 +3,13 @@
     "austin-club-openplay": {
       "counts": [
         262,
-        262,
         254,
         254,
         254,
         254,
         252,
         246,
+        245,
         245,
         245
       ],
@@ -33,7 +33,7 @@
         159,
         159,
         159,
-        159,
+        157,
         157,
         157,
         157,
@@ -929,7 +929,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 631
+      "failStreak": 632
     },
     "dallas-reclub": {
       "counts": [
@@ -1079,18 +1079,18 @@
         19,
         19,
         19,
-        19,
         20,
         20,
         20,
         20,
         23,
-        22
+        22,
+        20
       ],
-      "sessions": 22,
+      "sessions": 20,
       "coverage": {
         "end": 1,
-        "price": 0.59,
+        "price": 0.55,
         "level": 1,
         "venue": 1,
         "city": 0,
@@ -1293,12 +1293,10 @@
     "houston-reclub:warning:reclub-J533LP: no surface",
     "houston-reclub:warning:reclub-J6QMC3: no surface",
     "houston-reclub:warning:reclub-JMV5QT: no surface",
-    "houston-reclub:warning:reclub-K9D10X: no surface",
     "houston-reclub:warning:reclub-K9XO8G: no surface",
     "houston-reclub:warning:reclub-KB2S3K: no surface",
     "houston-reclub:warning:reclub-MCRPQ4: no surface",
     "houston-reclub:warning:reclub-MLI8J8: no surface",
-    "houston-reclub:warning:reclub-OKAE7P: no surface",
     "houston-reclub:warning:reclub-T02HQF: no surface",
     "houston-reclub:warning:reclub-TCHJ1D: no surface",
     "houston-reclub:warning:reclub-VGIK6U: no surface",

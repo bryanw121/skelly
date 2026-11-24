@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T04:43:47.642Z",
+ "generatedAt": "2026-11-24T05:28:02.622Z",
  "regions": [
   {
    "id": "austin",
@@ -489,18 +489,6 @@
      "lead": true
     },
     {
-     "venue": "Katy Sports Center",
-     "city": "",
-     "sport": "volleyball",
-     "sessions": 3,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
      "venue": "Absolute Volleyball Academy and Absolute Beach",
      "city": "",
      "sport": "volleyball",
@@ -525,7 +513,7 @@
      "lead": true
     },
     {
-     "venue": "Skyline Volleyball Academy",
+     "venue": "Katy Sports Center",
      "city": "",
      "sport": "volleyball",
      "sessions": 2,
@@ -550,6 +538,18 @@
     },
     {
      "venue": "Emancipation Park",
+     "city": "",
+     "sport": "volleyball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Skyline Volleyball Academy",
      "city": "",
      "sport": "volleyball",
      "sessions": 1,
