@@ -3846,5 +3846,59 @@
     "lng": -97.10543,
     "located": "source",
     "matched": null
+  },
+  "2515 riverside drive": {
+    "lat": 29.71655,
+    "lng": -95.37589,
+    "located": "source",
+    "matched": null
+  },
+  "201 e main st": {
+    "lat": 32.57911,
+    "lng": -97.35748,
+    "located": "source",
+    "matched": null
+  },
+  "3801 eastside st": {
+    "lat": 29.73356,
+    "lng": -95.42387,
+    "located": "source",
+    "matched": null
+  },
+  "the city arts center, 216 east main street, round rock, tx, united states, texas 78664, 231 e main st": {
+    "lat": 30.50882,
+    "lng": -97.67682,
+    "located": "source",
+    "matched": null
+  },
+  "777 s i-35e": {
+    "lat": 32.50034,
+    "lng": -96.82524,
+    "located": "source",
+    "matched": null
+  },
+  "physicians premier emergency room, 8927 highway 6": {
+    "lat": 29.53982,
+    "lng": -95.53467,
+    "located": "source",
+    "matched": null
+  },
+  "physicians premier emergency room - cinco ranch, 9422 spring green boulevard": {
+    "lat": 29.69964,
+    "lng": -95.81281,
+    "located": "source",
+    "matched": null
+  },
+  "discover deep ellum, 2650 main street": {
+    "lat": 32.78353,
+    "lng": -96.78435,
+    "located": "source",
+    "matched": null
+  },
+  "koe wetzel's bar - houston, 2416 brazos street": {
+    "lat": 29.7491,
+    "lng": -95.37851,
+    "located": "source",
+    "matched": null
   }
 }

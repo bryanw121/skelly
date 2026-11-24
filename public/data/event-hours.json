@@ -848,5 +848,18 @@
  "https://allevents.in/houston/houston-zoo-lights/200031109777440": {
   "checkedAt": "2026-11-24T01:07:36.739Z",
   "startTime": "18:00"
+ },
+ "https://allevents.in/dallas/holiday-soiree-wine-walk/100002005096388273": {
+  "checkedAt": "2026-11-24T12:27:19.692Z",
+  "startTime": "16:00",
+  "endTime": "19:00"
+ },
+ "https://allevents.in/dallas/an-evening-with-peter-billingsley-and-a-christmas-story/200030572915221": {
+  "checkedAt": "2026-11-24T12:27:19.692Z",
+  "startTime": "17:00"
+ },
+ "https://allevents.in/houston/levy-park-holiday-festival/200031085936143": {
+  "checkedAt": "2026-11-24T12:27:19.692Z",
+  "startTime": "11:00"
  }
 }
