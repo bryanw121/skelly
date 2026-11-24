@@ -55,8 +55,8 @@ export function parseMeet(html, url, { venues = [], fallback = {}, timezone = 'A
   const placeName = String(meet.venue?.name ?? '').trim();
   // Match on the venue name; meets without a venue often name it in a "Venue: ..." title prefix.
   const v = venues.find((x) => placeName && x.match.test(placeName))
-    ?? (!placeName && venues.find((x) => x.match.test(name.split(':')[0])))
-    ?? { city: null, surface: null, ...fallback, venue: placeName };
+    || (!placeName && venues.find((x) => x.match.test(name.split(':')[0])))
+    || { city: null, surface: null, ...fallback, venue: placeName };
   const { date, time: start } = localDateTime(meet.startDatetime * 1000, tz);
   const minutes = Number.isFinite(meet.endDatetime) ? (meet.endDatetime - meet.startDatetime) / 60
     : Number.isFinite(meet.duration) ? meet.duration / 60 : null;
