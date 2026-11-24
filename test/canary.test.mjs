@@ -212,3 +212,32 @@ test('published API endpoints skip robots.txt; pages on the same host do not', a
   assert.deepEqual(asked, ['https://overpass-api.de/api/interpreter']);
   await assert.rejects(f('https://overpass-api.de/api/status'), RobotsDisallowed);
 });
+
+test('shrinkHtml leaves inline scripts exactly as they are, even with "<!--" inside', () => {
+  const page = '<html><body><script>var a = "<!--";</script><p>one</p><script type="application/ld+json">{"@type":"Event","name":"A"}</script><!-- x --></body></html>';
+  assert.equal(shrinkHtml(page), '<html><body><script>var a = "<!--";</script><p>one</p><script type="application/ld+json">{"@type":"Event","name":"A"}</script></body></html>');
+});
+
+test('a redirect replays to where it went (Skedda moves to allbooked.com)', async () => {
+  const { mkdtempSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const { record, replay } = await import('./support/cassette.mjs');
+  const dir = mkdtempSync(join(tmpdir(), 'redirect-'));
+  const real = async () => ({ status: 200, url: 'https://x.allbooked.com/booking', headers: new Headers({ 'content-type': 'text/html' }), text: async () => 'ok' });
+  const rec = record('r', { fetch: real, dir });
+  await rec('https://x.skedda.com/booking');
+  rec.save();
+  const res = await replay('r', { dir })('https://x.skedda.com/booking');
+  assert.equal(res.url, 'https://x.allbooked.com/booking');
+  assert.equal(res.redirected, true);
+});
+
+test('a mismatch names what the cleaning lost; OpenCourt sources get a bigger budget', async () => {
+  const { lostItems } = await import('../lib/canary.js');
+  assert.equal(lostItems({ events: [{ title: 'A' }, { title: 'B' }] }, { events: [{ title: 'A' }] }), ' (lost: B)');
+  assert.equal(lostItems({ sessions: [1, 2, 3, 4, 5].map((n) => ({ id: n })) }, { sessions: [] }), ' (lost: 1; 2; 3; +2 more)');
+  assert.equal(lostItems({ count: 1 }, { count: 0 }), '');
+  const { units } = canaryUnits();
+  assert.equal(units.find((u) => u.id === 'schedule:austin-picklehaus').maxRequests, 600);
+});

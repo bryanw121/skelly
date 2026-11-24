@@ -3,7 +3,7 @@
 // A cassette is a folder under test/cassettes/<name>/ with a cassette.json:
 //   { "recordedAt": "2026-11-24T01:07:00Z", "requests": [
 //       { "method": "GET", "url": "https://…", "status": 200, "contentType": "text/html", "body": "page.html" } ] }
-// (a POST also has "bodyHash", the hash of what it sent).
+// (a POST also has "bodyHash", the hash of what it sent; a redirected request has "finalUrl").
 // and each response body in its own file, so a change to a page reads as a diff. `body` is a path
 // relative to the cassette folder (the first recordings point at the older test/fixtures files).
 //
@@ -53,7 +53,7 @@ export function loadCassette(name, { dir = CASSETTES } = {}) {
 const response = (r) => {
   const headers = new Headers({ 'content-type': r.contentType || 'text/plain' });
   return {
-    ok: r.status >= 200 && r.status < 300, status: r.status, statusText: String(r.status), url: r.url, headers, redirected: false,
+    ok: r.status >= 200 && r.status < 300, status: r.status, statusText: String(r.status), url: r.finalUrl ?? r.url, headers, redirected: Boolean(r.finalUrl),
     text: async () => r.text,
     json: async () => JSON.parse(r.text),
     arrayBuffer: async () => new TextEncoder().encode(r.text).buffer,
@@ -98,7 +98,8 @@ export function record(name, { fetch: real, dir = CASSETTES, sanitize = (t) => t
     const res = await real(input, init);
     const text = await res.text();
     const contentType = res.headers?.get?.('content-type') || 'text/plain';
-    requests.push({ method, url, status: res.status, contentType, text: sanitize(text, url), bodyHash: bodyHash(init.body) });
+    const finalUrl = res.url && res.url !== url ? res.url : undefined; // after redirects
+    requests.push({ method, url, finalUrl, status: res.status, contentType, text: sanitize(text, url), bodyHash: bodyHash(init.body) });
     // The caller gets the live answer's own headers and final URL (Skedda reads its cookies and
     // where it was redirected); only the body and its type are saved.
     return { ...response({ status: res.status, url: res.url || url, contentType, text }), headers: res.headers ?? new Headers({ 'content-type': contentType }) };
@@ -109,7 +110,7 @@ export function record(name, { fetch: real, dir = CASSETTES, sanitize = (t) => t
     const out = requests.map((r) => {
       const body = `${createHash('sha256').update(requestKey(r.method, r.url, ignoreParams) + r.bodyHash).digest('hex').slice(0, 12)}.${extOf(r.contentType)}`;
       writeFileSync(join(folder, body), r.text);
-      return { method: r.method, url: r.url, ...(r.bodyHash ? { bodyHash: r.bodyHash } : {}), status: r.status, contentType: r.contentType.split(';')[0], body };
+      return { method: r.method, url: r.url, ...(r.finalUrl ? { finalUrl: r.finalUrl } : {}), ...(r.bodyHash ? { bodyHash: r.bodyHash } : {}), status: r.status, contentType: r.contentType.split(';')[0], body };
     });
     writeFileSync(join(folder, 'cassette.json'), `${JSON.stringify({ recordedAt: now().toISOString(), ...(meta ? { meta } : {}), ...(ignoreParams.length ? { ignoreParams } : {}), requests: out }, null, 1)}\n`);
     return out.length;
