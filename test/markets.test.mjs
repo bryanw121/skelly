@@ -53,16 +53,35 @@ test('marketEvents: skips stores, unnamed places, daily markets and anything out
   assert.deepEqual(out.map((e) => e.title), ['Way Flea Market'], 'a way uses its centre');
 });
 
-test('readMarkets: one query per region; the next mirror when one fails; a failure keeps the last events', async () => {
+test('readMarkets: one query per region; the next mirror when one fails; the answer is kept for the next run', async () => {
   const calls = [];
   const body = JSON.stringify({ elements: [el(1, { name: 'Mueller Farmers Market', opening_hours: 'Su 10:00-14:00' })] });
   const fetch = async (url, init) => { calls.push([url, init.method, init.headers['user-agent'].startsWith('Skelly/')]); return calls.length === 1 ? { ok: false, status: 504 } : { ok: true, text: async () => body }; };
-  const r = await readMarkets([AUSTIN], { fetch, today: '2026-11-22', endpoints: ['https://a/api', 'https://b/api'] });
+  const now = Date.parse('2026-11-22T12:00:00Z');
+  const r = await readMarkets([AUSTIN], { fetch, today: '2026-11-22', now, endpoints: ['https://a/api', 'https://b/api'] });
   assert.equal(r.ok, true);
   assert.deepEqual(calls, [['https://a/api', 'POST', true], ['https://b/api', 'POST', true]]);
   assert.equal(r.events.length, 1);
-  const down = await readMarkets([AUSTIN], { fetch: async () => ({ ok: false, status: 429 }), today: '2026-11-22', endpoints: ['https://a/api'] });
-  assert.deepEqual([down.ok, down.events.length], [false, 0]);
+  assert.equal(r.cache[AUSTIN.id].at, '2026-11-22T12:00:00.000Z');
+  // Within a day: no query at all, the kept answer gives the same market.
+  const again = await readMarkets([AUSTIN], { fetch: async () => { throw new Error('should not ask'); }, today: '2026-11-22', now: now + 6 * 3600e3, cache: r.cache });
+  assert.deepEqual([again.ok, again.events.length], [true, 1]);
+});
+
+test('readMarkets: Overpass down keeps the last answer (next week\'s dates, no alert) for days; a region failing never stops the others', async () => {
+  const now = Date.parse('2026-11-22T12:00:00Z');
+  const OTHER = { ...AUSTIN, id: 'dallas', name: 'Dallas, TX', center: [32.78, -96.8] };
+  const cache = { [AUSTIN.id]: { at: '2026-11-20T12:00:00Z', elements: [el(1, { name: 'Mueller Farmers Market', opening_hours: 'Su 10:00-14:00' })] } };
+  const fetch = async (url, init) => (decodeURIComponent(init.body).includes('32.78') ? { ok: true, text: async () => JSON.stringify({ elements: [el(2, { name: 'Dallas Farmers Market', opening_hours: 'Sa 08:00-12:00' }, 32.78, -96.8)] }) } : { ok: false, status: 502 });
+  const r = await readMarkets([AUSTIN, OTHER], { fetch, today: '2026-11-29', now, cache, endpoints: ['https://a/api'] });
+  assert.equal(r.ok, true, 'two days without an answer is not an alert');
+  assert.deepEqual(r.events.map((e) => [e.title, e.startDate]), [['Mueller Farmers Market', '2026-11-29'], ['Dallas Farmers Market', '2026-12-05']], 'the kept answer gives this week\'s date; Dallas still read');
+  assert.equal(r.cache[AUSTIN.id].at, '2026-11-20T12:00:00Z', 'the last good answer stays');
+  const later = await readMarkets([AUSTIN], { fetch: async () => ({ ok: false, status: 502 }), today: '2026-11-26', now: now + 2 * 864e5, cache, endpoints: ['https://a/api'] });
+  assert.deepEqual([later.ok, later.events.length], [false, 1], 'after 3 days it says so, still showing the kept markets');
+  assert.match(later.error, /austin: a HTTP 502 \(last good answer 4 days ago\)/);
+  const gone = await readMarkets([AUSTIN], { fetch: async () => ({ ok: false, status: 502 }), today: '2026-12-10', now: now + 15 * 864e5, cache, endpoints: ['https://a/api'] });
+  assert.deepEqual([gone.ok, gone.events.length], [false, 0], 'after 14 days the old answer is no longer used');
 });
 
 test('unlistedMarkets: weekly-sounding markets without hours, for the "Hours not listed" list', async () => {
