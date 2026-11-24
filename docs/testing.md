@@ -22,6 +22,14 @@ third ever reaches a source:
 - **Coverage only goes up.** On Linux CI, `npm run coverage` runs the unit tests under c8 (every file
   in `lib/`, `api/` and `scripts/` counts, tested or not) and compares with `test/coverage-floor.json`.
 
+## What runs on the recordings
+- `test/replay.test.mjs`: every unit with a recording runs on it, clock at the recording, and must
+  find the count it found live. A unit with no recording fails the suite unless it's listed in
+  `CANT_RECORD` with the reason.
+- `test/full-day.test.mjs`: the three jobs end to end, once per day that has recordings: the
+  schedule scrape (every recorded source plus the manual-page watcher, writing every region's
+  folder), the leagues and tournaments feed, and the events feed (listings and markets).
+
 ## Cassette format
 `test/cassettes/<name>/cassette.json`:
 ```json
