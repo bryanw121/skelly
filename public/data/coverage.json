@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T01:25:57.782Z",
+ "generatedAt": "2026-11-24T01:33:02.100Z",
  "regions": [
   {
    "id": "austin",
@@ -117,7 +117,7 @@
      "venue": "Volleyworld (Pflugerville)",
      "city": "Pflugerville",
      "sport": "volleyball",
-     "sessions": 9,
+     "sessions": 8,
      "pinned": true,
      "booking": false,
      "via": [
@@ -140,20 +140,6 @@
      "lead": false
     },
     {
-     "venue": "ATX Beach",
-     "city": "North Austin",
-     "sport": "volleyball",
-     "sessions": 5,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "atxbeach",
-      "manual",
-      "sweatpals"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Bee Cave on Ice",
      "city": "Bee Cave",
      "sport": "ice_skating",
@@ -162,6 +148,19 @@
      "booking": false,
      "via": [
       "manual"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "ATX Beach",
+     "city": "North Austin",
+     "sport": "volleyball",
+     "sessions": 4,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "atxbeach",
+      "sweatpals"
      ],
      "lead": false
     },
@@ -238,19 +237,6 @@
      "lead": false
     },
     {
-     "venue": "The Crossover",
-     "city": "Cedar Park",
-     "sport": "volleyball",
-     "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "manual",
-      "velocity"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Four Seasons Hotel",
      "city": "Downtown",
      "sport": "ice_skating",
@@ -271,6 +257,18 @@
      "booking": false,
      "via": [
       "manual"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "The Crossover",
+     "city": "Cedar Park",
+     "sport": "volleyball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "velocity"
      ],
      "lead": false
     },

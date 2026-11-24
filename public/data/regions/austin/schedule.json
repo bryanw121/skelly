@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T01:23:11.746Z",
+  "generatedAt": "2026-11-24T01:30:13.347Z",
   "region": {
     "id": "austin",
     "name": "Austin, TX",
@@ -17,7 +17,7 @@
       "kind": "OpenPlay club directory",
       "site": "https://openplaymap.com/open-play/austin",
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:07.384Z",
+      "checkedAt": "2026-11-24T01:26:39.523Z",
       "count": 254
     },
     {
@@ -30,7 +30,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/austinpicklehaus",
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:07.384Z",
+      "checkedAt": "2026-11-24T01:26:39.524Z",
       "count": 159
     },
     {
@@ -43,7 +43,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/holy-pickle",
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:07.384Z",
+      "checkedAt": "2026-11-24T01:26:39.524Z",
       "count": 0
     },
     {
@@ -56,7 +56,7 @@
       "kind": "Venue's schedule page",
       "site": "https://app.arketa.co/iframe/volleyworld/schedule",
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:07.384Z",
+      "checkedAt": "2026-11-24T01:26:39.525Z",
       "count": 10
     },
     {
@@ -69,7 +69,7 @@
       "kind": "Venue's schedule page",
       "site": "https://goteamup.com/w9142954/p/9142954-atx-beach/memberships/223927/",
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:07.385Z",
+      "checkedAt": "2026-11-24T01:26:39.526Z",
       "count": 2
     },
     {
@@ -82,7 +82,7 @@
       "kind": "Venue's schedule page",
       "site": "https://www.austinvelocity.com",
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:07.387Z",
+      "checkedAt": "2026-11-24T01:26:39.528Z",
       "count": 1
     },
     {
@@ -109,7 +109,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:07.734Z",
+      "checkedAt": "2026-11-24T01:26:39.877Z",
       "count": 3
     },
     {
@@ -136,7 +136,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:08.309Z",
+      "checkedAt": "2026-11-24T01:26:41.139Z",
       "count": 2
     },
     {
@@ -155,7 +155,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:09.145Z",
+      "checkedAt": "2026-11-24T01:26:41.562Z",
       "count": 2
     },
     {
@@ -174,7 +174,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:10.610Z",
+      "checkedAt": "2026-11-24T01:26:43.023Z",
       "count": 1
     },
     {
@@ -193,7 +193,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:10.944Z",
+      "checkedAt": "2026-11-24T01:26:43.287Z",
       "count": 10
     },
     {
@@ -206,7 +206,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://apps.daysmartrecreation.com/dash/x/chaparralice/calendar?location=1&start={date}&end={date}&event_type={eventType}",
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:11.076Z",
+      "checkedAt": "2026-11-24T01:26:43.680Z",
       "count": 37
     },
     {
@@ -219,7 +219,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://iceandfield.com/public-skating/",
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:12.594Z",
+      "checkedAt": "2026-11-24T01:26:43.970Z",
       "count": 24
     },
     {
@@ -232,7 +232,7 @@
       "kind": "City parks schedule",
       "site": "https://www.austintexas.gov/parks/alamo-recreation-center",
       "ok": true,
-      "checkedAt": "2026-11-24T01:20:13.255Z",
+      "checkedAt": "2026-11-24T01:26:45.439Z",
       "count": 9,
       "warnings": [
         "City pickleball review due by 2026-11-30; check venue schedules and holiday holds before extending."
@@ -248,7 +248,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-24T01:20:13.824Z",
+      "checkedAt": "2026-11-24T01:26:45.931Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
@@ -13952,63 +13952,6 @@
       "status": "scheduled"
     },
     {
-      "id": "aces-thu-6s-sand",
-      "days": [
-        "Thu"
-      ],
-      "start": "20:00",
-      "end": "22:00",
-      "title": "ACES Co-Ed Thursday 6s League",
-      "venue": "ATX Beach",
-      "city": "North Austin",
-      "surface": "sand",
-      "type": "League",
-      "level": "Rec / Intermediate",
-      "verifiedAt": "2026-10-24",
-      "validUntil": "2026-11-12",
-      "signup": {
-        "url": "https://acesintexas.com/thursday-6s-sand-volleyball-league-atx-beach/",
-        "label": "Join as free agent"
-      },
-      "source": "https://acesintexas.com/thursday-6s-sand-volleyball-league-atx-beach/",
-      "sourceId": "manual",
-      "sport": "volleyball",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "watchError": "HTTP 403",
-      "venueId": "atx-beach",
-      "status": "scheduled"
-    },
-    {
-      "id": "aces-mon-6s-indoor",
-      "days": [
-        "Mon"
-      ],
-      "start": null,
-      "end": null,
-      "title": "ACES Monday Indoor 6s League",
-      "venue": "Volleyworld (Pflugerville)",
-      "city": "Pflugerville",
-      "surface": "indoor",
-      "type": "League",
-      "level": "Intermediate / Advanced",
-      "verifiedAt": null,
-      "startsOn": "2026-11-02",
-      "note": "Game times not posted yet.",
-      "signup": {
-        "url": "https://acesintexas.com/aces-pflugerville-monday-co-ed-indoor-6s-volleyball-league/",
-        "label": "Join league"
-      },
-      "source": "https://acesintexas.com/aces-pflugerville-monday-co-ed-indoor-6s-volleyball-league/",
-      "sourceId": "manual",
-      "sport": "volleyball",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "watchError": "HTTP 403",
-      "venueId": "volleyworld-pflugerville",
-      "status": "scheduled"
-    },
-    {
       "id": "hanovers-open",
       "days": [
         "Fri",
@@ -14037,35 +13980,6 @@
       "timezone": "America/Chicago",
       "sourceChanged": "2026-11-18",
       "venueId": "hanovers",
-      "status": "scheduled"
-    },
-    {
-      "id": "ssc-crossover-mon-sand",
-      "days": [
-        "Mon"
-      ],
-      "start": null,
-      "end": null,
-      "title": "Austin SSC Monday Sand 6s",
-      "venue": "The Crossover",
-      "city": "Cedar Park",
-      "surface": "sand",
-      "type": "League",
-      "level": "Recreational, 21+",
-      "price": "$759 team · $109 solo",
-      "verifiedAt": null,
-      "startsOn": "2026-11-02",
-      "signup": {
-        "url": "https://austinssc.leaguelab.com/leagues?sport=Sand+Volleyball",
-        "label": "Register on Austin SSC"
-      },
-      "source": "https://austinssc.leaguelab.com/leagues?sport=Sand+Volleyball",
-      "sourceId": "manual",
-      "sport": "volleyball",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "sourceChanged": "2026-11-23",
-      "venueId": "crossover",
       "status": "scheduled"
     },
     {
