@@ -46,49 +46,6 @@
       "source": "https://acesintexas.com/wednesday-indoor-open-plays-volleyworld-pflugerville/"
     },
     {
-      "id": "aces-thu-6s-sand",
-      "days": [
-        "Thu"
-      ],
-      "start": "20:00",
-      "end": "22:00",
-      "title": "ACES Co-Ed Thursday 6s League",
-      "venue": "ATX Beach",
-      "city": "North Austin",
-      "surface": "sand",
-      "type": "League",
-      "level": "Rec / Intermediate",
-      "verifiedAt": "2026-10-24",
-      "validUntil": "2026-11-12",
-      "signup": {
-        "url": "https://acesintexas.com/thursday-6s-sand-volleyball-league-atx-beach/",
-        "label": "Join as free agent"
-      },
-      "source": "https://acesintexas.com/thursday-6s-sand-volleyball-league-atx-beach/"
-    },
-    {
-      "id": "aces-mon-6s-indoor",
-      "days": [
-        "Mon"
-      ],
-      "start": null,
-      "end": null,
-      "title": "ACES Monday Indoor 6s League",
-      "venue": "Volleyworld (Pflugerville)",
-      "city": "Pflugerville",
-      "surface": "indoor",
-      "type": "League",
-      "level": "Intermediate / Advanced",
-      "verifiedAt": null,
-      "startsOn": "2026-11-02",
-      "note": "Game times not posted yet.",
-      "signup": {
-        "url": "https://acesintexas.com/aces-pflugerville-monday-co-ed-indoor-6s-volleyball-league/",
-        "label": "Join league"
-      },
-      "source": "https://acesintexas.com/aces-pflugerville-monday-co-ed-indoor-6s-volleyball-league/"
-    },
-    {
       "id": "hanovers-open",
       "days": [
         "Fri",
@@ -111,28 +68,6 @@
         "dropIn": true
       },
       "source": "https://www.planomato.com/en/austin/p/open-play-volleyball-austin"
-    },
-    {
-      "id": "ssc-crossover-mon-sand",
-      "days": [
-        "Mon"
-      ],
-      "start": null,
-      "end": null,
-      "title": "Austin SSC Monday Sand 6s",
-      "venue": "The Crossover",
-      "city": "Cedar Park",
-      "surface": "sand",
-      "type": "League",
-      "level": "Recreational, 21+",
-      "price": "$759 team · $109 solo",
-      "verifiedAt": null,
-      "startsOn": "2026-11-02",
-      "signup": {
-        "url": "https://austinssc.leaguelab.com/leagues?sport=Sand+Volleyball",
-        "label": "Register on Austin SSC"
-      },
-      "source": "https://austinssc.leaguelab.com/leagues?sport=Sand+Volleyball"
     },
     {
       "id": "beecave-on-ice-mwth",
