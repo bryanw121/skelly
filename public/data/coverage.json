@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T02:18:18.116Z",
+ "generatedAt": "2026-11-25T11:19:53.965Z",
  "regions": [
   {
    "id": "austin",
@@ -9,7 +9,7 @@
      "venue": "Montopolis Recreation and Community Center",
      "city": "Austin",
      "sport": "volleyball",
-     "sessions": 1,
+     "sessions": 2,
      "pinned": true,
      "booking": false,
      "via": [
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 113,
+     "sessions": 91,
      "pinned": true,
      "booking": true,
      "via": [
@@ -42,10 +42,10 @@
      "lead": false
     },
     {
-     "venue": "Eastside Paddle Club",
+     "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 88,
+     "sessions": 91,
      "pinned": true,
      "booking": true,
      "via": [
@@ -54,10 +54,10 @@
      "lead": false
     },
     {
-     "venue": "Pickle Pit Stop",
+     "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 85,
+     "sessions": 89,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 82,
+     "sessions": 86,
      "pinned": true,
      "booking": true,
      "via": [
@@ -81,7 +81,7 @@
      "venue": "Chaparral Ice",
      "city": "N. Austin (Northcross)",
      "sport": "ice_skating",
-     "sessions": 36,
+     "sessions": 35,
      "pinned": true,
      "booking": false,
      "via": [
@@ -93,7 +93,7 @@
      "venue": "Ice & Field at The Crossover",
      "city": "Cedar Park",
      "sport": "ice_skating",
-     "sessions": 23,
+     "sessions": 21,
      "pinned": true,
      "booking": false,
      "via": [
@@ -117,7 +117,7 @@
      "venue": "Volleyworld (Pflugerville)",
      "city": "Pflugerville",
      "sport": "volleyball",
-     "sessions": 8,
+     "sessions": 10,
      "pinned": true,
      "booking": false,
      "via": [
@@ -131,7 +131,7 @@
      "venue": "Volleyworld (Georgetown)",
      "city": "Georgetown",
      "sport": "volleyball",
-     "sessions": 7,
+     "sessions": 6,
      "pinned": true,
      "booking": false,
      "via": [
@@ -165,18 +165,6 @@
      "lead": false
     },
     {
-     "venue": "Gus Garcia Recreation Center",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 3,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "austin-city-pickleball"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Austin Sports Center - Central",
      "city": "Austin",
      "sport": "volleyball",
@@ -190,6 +178,18 @@
     },
     {
      "venue": "George Morales Dove Springs Recreation Center",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "austin-city-pickleball"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Gus Garcia Recreation Center",
      "city": "Austin",
      "sport": "pickleball",
      "sessions": 2,
@@ -465,18 +465,6 @@
    "name": "Houston, TX",
    "rows": [
     {
-     "venue": "Champion Forest Baptist Church - Champions Campus",
-     "city": "Houston",
-     "sport": "volleyball",
-     "sessions": 4,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
      "venue": "Collins Park",
      "city": "Houston",
      "sport": "volleyball",
@@ -489,10 +477,10 @@
      "lead": true
     },
     {
-     "venue": "Houston Stars",
+     "venue": "Champion Forest Baptist Church - Champions Campus",
      "city": "Houston",
      "sport": "volleyball",
-     "sessions": 4,
+     "sessions": 3,
      "pinned": true,
      "booking": false,
      "via": [
@@ -525,7 +513,7 @@
      "lead": true
     },
     {
-     "venue": "Tellepsen Family Downtown YMCA",
+     "venue": "Houston Stars",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 2,
@@ -562,6 +550,18 @@
     },
     {
      "venue": "T4 Court Rentals",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Tellepsen Family Downtown YMCA",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,

@@ -4,16 +4,16 @@
       "counts": [
         245,
         245,
-        245,
         242,
         260,
         261,
         264,
         261,
         254,
-        255
+        255,
+        266
       ],
-      "sessions": 255,
+      "sessions": 266,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -32,19 +32,19 @@
         157,
         157,
         157,
-        157,
         163,
         163,
         162,
         162,
         113,
-        113
+        113,
+        91
       ],
-      "sessions": 113,
+      "sessions": 91,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.82,
+        "level": 0.79,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -75,7 +75,7 @@
         10,
         10,
         10,
-        10,
+        11,
         11,
         11,
         11,
@@ -221,9 +221,9 @@
         3,
         3,
         3,
-        3
+        4
       ],
-      "sessions": 3,
+      "sessions": 4,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -276,9 +276,6 @@
         "participants[]",
         "participants[].createdAt",
         "participants[].externalReference",
-        "participants[].externalReference.gender",
-        "participants[].externalReference.level",
-        "participants[].externalReference.name",
         "participants[].id",
         "participants[].isCoach",
         "participants[].isHost",
@@ -302,7 +299,6 @@
         "scheduleId",
         "scheduleReference",
         "slots",
-        "slots[]",
         "sport",
         "sport.avgGameDuration",
         "sport.competitionType",
@@ -712,9 +708,9 @@
         1,
         1,
         1,
-        1
+        2
       ],
-      "sessions": 1,
+      "sessions": 2,
       "coverage": {
         "end": 1,
         "price": 0,
@@ -760,15 +756,15 @@
         37,
         37,
         37,
-        37,
         36,
         36,
         36,
         36,
         36,
-        36
+        36,
+        35
       ],
-      "sessions": 36,
+      "sessions": 35,
       "coverage": {
         "end": 1,
         "price": 0,
@@ -777,7 +773,7 @@
         "city": 1,
         "surface": 1,
         "type": 1,
-        "capacity": 0.47,
+        "capacity": 0.57,
         "spotsLeft": 0,
         "signup": 1
       },
@@ -833,15 +829,15 @@
         24,
         24,
         24,
-        24,
         23,
         23,
         23,
         23,
         23,
-        23
+        23,
+        21
       ],
-      "sessions": 23,
+      "sessions": 21,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -930,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 641
+      "failStreak": 642
     },
     "dallas-reclub": {
       "counts": [
@@ -1077,7 +1073,6 @@
     },
     "houston-reclub": {
       "counts": [
-        20,
         23,
         22,
         20,
@@ -1086,12 +1081,13 @@
         20,
         23,
         23,
-        25
+        25,
+        21
       ],
-      "sessions": 25,
+      "sessions": 21,
       "coverage": {
         "end": 1,
-        "price": 0.6,
+        "price": 0.62,
         "level": 1,
         "venue": 1,
         "city": 1,
@@ -1132,14 +1128,6 @@
         "isPast",
         "keywordSearch",
         "matchConfig",
-        "matchConfig.limitRounds",
-        "matchConfig.participantIds[]",
-        "matchConfig.prioritizeLeastMatches",
-        "matchConfig.rankingCriteria",
-        "matchConfig.scheme",
-        "matchConfig.sublocations[]",
-        "matchConfig.teamIds[]",
-        "matchConfig.totalSetPoints",
         "maxSportLevelValue",
         "minSportLevelId",
         "minSportLevelValue",
@@ -1150,8 +1138,6 @@
         "participants[]",
         "participants[].createdAt",
         "participants[].externalReference",
-        "participants[].externalReference.age",
-        "participants[].externalReference.gender",
         "participants[].externalReference.level",
         "participants[].externalReference.name",
         "participants[].id",
