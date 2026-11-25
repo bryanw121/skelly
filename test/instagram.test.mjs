@@ -107,3 +107,30 @@ test('avatars: a small copy per account, an index, and the path stamped on credi
   assert.equal(avatarPath(events[0]), 'avatars/examplemarket.jpg');
   for (const bad of ['https://evil.test/x.jpg', 'avatars/../x.jpg', 'avatars/x.svg', '/etc/passwd', '']) assert.equal(avatarPath({ avatar: bad }), null);
 });
+
+test('accountHomes places each account where most of its events are', async () => {
+  const { accountHomes } = await import('../lib/instagram.js');
+  const ev = (h, region, city) => ({ source: `Instagram @${h}`, region, city });
+  assert.deepEqual(accountHomes([ev('a', 'dallas', 'Fort Worth'), ev('a', 'dallas', 'Fort Worth'), ev('a', 'austin', 'Austin'), ev('b', 'houston'), { source: 'AllEvents', region: 'austin' }]),
+    { a: { region: 'dallas', city: 'Fort Worth' }, b: { region: 'houston' } });
+});
+
+test('pickAccounts: configured first, then the longest unread; accounts failing 3 runs wait a week', async () => {
+  const { pickAccounts, noteReads } = await import('../lib/instagram.js');
+  const now = Date.parse('2026-11-25T00:00:00Z');
+  const reads = { a: { at: '2026-11-24T00:00:00Z', fails: 0 }, b: { at: '2026-11-20T00:00:00Z', fails: 0 }, dead: { at: '2026-11-24T00:00:00Z', fails: 3 }, old: { at: '2026-11-10T00:00:00Z', fails: 3 } };
+  const r = pickAccounts([{ handle: 'cfg' }], ['cfg', 'a', 'b', 'c', 'dead', 'old'], reads, { now, max: 3 });
+  assert.deepEqual(r, { read: ['c', 'old', 'b'], waiting: 1 });
+  const next = noteReads(reads, ['c', 'b'], ['b'], now);
+  assert.deepEqual([next.c, next.b], [{ at: '2026-11-25T00:00:00.000Z', fails: 0 }, { at: '2026-11-25T00:00:00.000Z', fails: 1 }]);
+  assert.equal(noteReads(next, ['b'], [], now).b.fails, 0);
+});
+
+test('postToEvent: an account placed elsewhere keeps its own region and city', async () => {
+  const { postToEvent } = await import('../lib/instagram.js');
+  const post = { caption: 'Holiday Market\nDec 6 at Legacy Hall', permalink: 'https://www.instagram.com/p/x/', timestamp: '2026-11-24T00:00:00+0000' };
+  const e = postToEvent(post, { handle: 'x', region: 'dallas', city: 'Plano' }, { today: '2026-11-25', region: 'austin', city: 'Austin' });
+  assert.deepEqual([e.region, e.city], ['dallas', 'Plano']);
+  const f = postToEvent(post, { handle: 'x', region: 'dallas' }, { today: '2026-11-25', region: 'austin', city: 'Austin' });
+  assert.equal(f.city, null, 'no Austin city on a Dallas event');
+});
