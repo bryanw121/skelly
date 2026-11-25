@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T11:19:53.965Z",
+ "generatedAt": "2026-11-25T14:22:28.888Z",
  "regions": [
   {
    "id": "austin",
@@ -30,6 +30,18 @@
      "lead": true
     },
     {
+     "venue": "Eastside Paddle Club",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 92,
+     "pinned": true,
+     "booking": true,
+     "via": [
+      "austin-club-openplay"
+     ],
+     "lead": false
+    },
+    {
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
@@ -54,22 +66,10 @@
      "lead": false
     },
     {
-     "venue": "Eastside Paddle Club",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 89,
-     "pinned": true,
-     "booking": true,
-     "via": [
-      "austin-club-openplay"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 86,
+     "sessions": 87,
      "pinned": true,
      "booking": true,
      "via": [
