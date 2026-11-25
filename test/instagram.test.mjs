@@ -90,6 +90,23 @@ test('readInstagram: an expired token fails the run with a plain reason; no acco
   assert.equal(none.ok, false);
 });
 
+test('readInstagram: a rate limit partway keeps what was read and stops asking; at the start it fails', async () => {
+  let calls = 0;
+  const limitAfter = (n) => async (url) => {
+    calls++;
+    const h = decodeURIComponent(url).match(/username\(([^)]+)\)/)[1];
+    if (calls > n) return { ok: false, status: 403, text: JSON.stringify({ error: { code: 4, type: 'OAuthException', message: 'Application request limit reached' } }) };
+    return { ok: true, status: 200, text: answer(h, [post({ permalink: `https://www.instagram.com/p/${h}/` })]) };
+  };
+  const cfg = { accounts: [{ handle: 'a' }, { handle: 'b' }, { handle: 'c' }] };
+  const r = await readInstagram(cfg, { get: limitAfter(1), today: TODAY, igUserId: '1', token: 'T' });
+  assert.deepEqual([r.ok, r.limited, r.read, r.events.length, calls], [true, true, ['a'], 1, 2], 'stops at the first limit');
+  assert.match(r.error, /rate limit: stopped after 1/);
+  calls = 0;
+  const none = await readInstagram(cfg, { get: limitAfter(0), today: TODAY, igUserId: '1', token: 'T' });
+  assert.deepEqual([none.ok, none.limited, none.error, calls], [false, true, 'Instagram API: OAuthException 4 (rate limit)', 1]);
+});
+
 test('avatars: a small copy per account, an index, and the path stamped on credited events', async () => {
   const dir = mkdtempSync(join(tmpdir(), 'avatars-'));
   const img = Buffer.from([0xff, 0xd8, 0xff, 0xe0, 1, 2, 3]);
