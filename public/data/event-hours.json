@@ -297,7 +297,7 @@
   "endTime": "21:00"
  },
  "https://allevents.in/dallas/santas-last-stop-holiday-pop-up-truck-yard-dallas/100002004149977533": {
-  "checkedAt": "2026-11-21T23:06:02.600Z"
+  "checkedAt": "2026-11-25T17:03:57.669Z"
  },
  "https://allevents.in/austin/holistic-wellness-market/100002000282323275": {
   "checkedAt": "2026-11-22T07:11:44.224Z",
@@ -329,7 +329,7 @@
   "endTime": "05:30"
  },
  "https://allevents.in/dallas/hearty-paws-joins-tamale-weekend-at-the-dallas-farmers-market/200031076634815": {
-  "checkedAt": "2026-11-22T07:11:44.224Z"
+  "checkedAt": "2026-11-25T17:03:57.669Z"
  },
  "https://allevents.in/dallas/dallas-wine-festival-40-types-of-wine-to-try-included-with-admission/100002004851865900": {
   "checkedAt": "2026-11-22T07:11:44.224Z",
@@ -403,7 +403,7 @@
   "checkedAt": "2026-11-22T07:11:44.224Z"
  },
  "https://allevents.in/dallas/sunday-funday-with-the-market-on-the-strip/200031065322145": {
-  "checkedAt": "2026-11-22T07:11:44.224Z"
+  "checkedAt": "2026-11-25T17:03:57.669Z"
  },
  "https://allevents.in/dallas/dfwshopz-small-business-saturday-market/200030961755732": {
   "checkedAt": "2026-11-22T07:11:44.224Z",
@@ -435,7 +435,7 @@
   "endTime": "16:00"
  },
  "https://allevents.in/dallas/texas-bridal-and-wedding-expo/200030988785919": {
-  "checkedAt": "2026-11-22T07:28:19.154Z"
+  "checkedAt": "2026-11-25T17:03:57.669Z"
  },
  "https://allevents.in/dallas/holiday-art-walk/100002004824039671": {
   "checkedAt": "2026-11-22T07:28:19.154Z",
@@ -543,7 +543,7 @@
   "startTime": "09:00"
  },
  "https://allevents.in/houston/houston-ascent-sky-lantern-festival/200031010400137": {
-  "checkedAt": "2026-11-22T08:00:06.138Z"
+  "checkedAt": "2026-11-25T17:03:57.669Z"
  },
  "https://allevents.in/houston/winter-festival-at-bhakti-urban-farm/100002004261640520": {
   "checkedAt": "2026-11-22T08:00:06.138Z",
@@ -569,7 +569,7 @@
   "checkedAt": "2026-11-22T08:00:06.138Z"
  },
  "https://allevents.in/houston/holidays-at-the-marquis-featuring-marquis-winter-lodge/100002001066206892": {
-  "checkedAt": "2026-11-22T08:00:06.138Z"
+  "checkedAt": "2026-11-25T17:03:57.669Z"
  },
  "https://allevents.in/houston/thanksgiving-eve-at-afro-lounge-houstons-homecoming-night/100001998117675756": {
   "checkedAt": "2026-11-22T08:00:06.138Z",
@@ -585,14 +585,14 @@
   "startTime": "19:00"
  },
  "https://allevents.in/houston/santas-christmas-wonderland-experience-at-conservatory-galleria/100002004697896373": {
-  "checkedAt": "2026-11-22T08:00:06.138Z"
+  "checkedAt": "2026-11-25T17:03:57.669Z"
  },
  "https://allevents.in/houston/jingle-and-mingle-christmas-pop-up/100002003974567878": {
   "checkedAt": "2026-11-22T08:00:06.138Z",
   "startTime": "11:00"
  },
  "https://allevents.in/houston/santas-last-stop-holiday-pop-up-truck-yard-houston/100002004150827074": {
-  "checkedAt": "2026-11-22T08:00:06.138Z"
+  "checkedAt": "2026-11-25T17:03:57.669Z"
  },
  "https://allevents.in/houston/omni-houstons-annual-tree-lighting/100002004775829473": {
   "checkedAt": "2026-11-22T08:00:06.138Z",
@@ -892,5 +892,8 @@
  "https://allevents.in/houston/new-years-eve-at-four-seasons-hotel-houston/100001998931499926": {
   "checkedAt": "2026-11-24T23:30:20.231Z",
   "startTime": "21:00"
+ },
+ "https://allevents.in/houston/winter-ball-cafe-a-magical-winter-cafe/100002004870569844": {
+  "checkedAt": "2026-11-25T17:03:57.669Z"
  }
 }

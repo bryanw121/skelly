@@ -9,10 +9,11 @@
  },
  "quericotees": {
   "events": [
-   "evt-a19f7e51468011da"
+   "evt-a19f7e51468011da",
+   "evt-83a69fd9505260d5"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-19"
+  "last": "2026-11-25"
  },
  "whenwherewhataustin": {
   "events": [
@@ -39,10 +40,12 @@
   "events": [
    "evt-9ace9bd7bac37a5a",
    "evt-91823626a4cc1b37",
-   "evt-d8b84530e4ea3a61"
+   "evt-d8b84530e4ea3a61",
+   "evt-89ce0b8208fe720a",
+   "evt-cdef3ca156e0a47d"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-23"
+  "last": "2026-11-25"
  },
  "goldenmeanaustin": {
   "events": [
@@ -75,10 +78,11 @@
  },
  "alternativeent": {
   "events": [
-   "evt-848c00f74009dc44"
+   "evt-848c00f74009dc44",
+   "evt-99da35c4b3c090ea"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-19"
+  "last": "2026-11-25"
  },
  "moonchi.mochi": {
   "events": [
@@ -96,10 +100,11 @@
  },
  "tillerystplantco": {
   "events": [
-   "evt-685b97dcb4042632"
+   "evt-685b97dcb4042632",
+   "evt-a285c2cc8b203020"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-19"
+  "last": "2026-11-25"
  },
  "do512": {
   "events": [
@@ -139,18 +144,21 @@
  "latincity": {
   "events": [
    "evt-4f96d06dfd182bea",
-   "evt-8274d1ed8d7a945b"
+   "evt-8274d1ed8d7a945b",
+   "evt-ef8ba11960b67964"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "movemountainsmarket": {
   "events": [
    "evt-493fc2d0444d193f",
-   "evt-f60a1476ff0ac66f"
+   "evt-f60a1476ff0ac66f",
+   "evt-de236663c3cc4a9f",
+   "evt-fd2a755896859418"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-21"
+  "last": "2026-11-25"
  },
  "sasetexas": {
   "events": [
@@ -244,10 +252,14 @@
    "evt-516933aae9ac7373",
    "evt-c724642183dc7e5c",
    "evt-f0771a6def9d07ae",
-   "evt-f929fbf3dae400cc"
+   "evt-f929fbf3dae400cc",
+   "evt-6d714e76212f498c",
+   "evt-7adb654525c14e33",
+   "evt-a0908876dd27d62a",
+   "evt-fc17e6b7489775c7"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-25"
  },
  "bonsai.dtx": {
   "events": [
@@ -388,10 +400,11 @@
  },
  "mia._.sip": {
   "events": [
-   "evt-a2c889792879c7e1"
+   "evt-a2c889792879c7e1",
+   "evt-455e0a9e8361f827"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-25"
  },
  "mareeacrochets": {
   "events": [
@@ -417,17 +430,20 @@
  "drinkity_dinkity": {
   "events": [
    "evt-8ea55472a3679ff2",
-   "evt-1e996cbd4b1bf8a3"
+   "evt-1e996cbd4b1bf8a3",
+   "evt-e6a41c76e2c5938a"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "roadrunner_stop": {
   "events": [
-   "evt-b8bec4308b41c41c"
+   "evt-b8bec4308b41c41c",
+   "evt-553c08d4404a93e5",
+   "evt-3d384a8a985ed595"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-25"
  },
  "viadulcistiramisu": {
   "events": [
@@ -534,10 +550,11 @@
  "purefizz.co": {
   "events": [
    "evt-39635310cdcf0716",
-   "evt-70988ce9246e8285"
+   "evt-70988ce9246e8285",
+   "evt-4fd1dd35203130bd"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-22"
+  "last": "2026-11-25"
  },
  "stir.coffeematchabar": {
   "events": [
@@ -627,10 +644,11 @@
  "fortworthcookiegal": {
   "events": [
    "evt-e72a702edbd4bc64",
-   "evt-23e4cfdc969d1445"
+   "evt-23e4cfdc969d1445",
+   "evt-cf56d4650c7a6b3d"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "localvendormarket": {
   "events": [
@@ -827,10 +845,11 @@
  },
  "whippdmatcha": {
   "events": [
-   "evt-1bff65154b8c53c8"
+   "evt-1bff65154b8c53c8",
+   "evt-aad5a540216c4168"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-25"
  },
  "micaphehtx": {
   "events": [
@@ -855,10 +874,11 @@
  },
  "whitneymadeit_2": {
   "events": [
-   "evt-52a44012b1f9651c"
+   "evt-52a44012b1f9651c",
+   "evt-656486ab2b514b48"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-25"
  },
  "owl_craft_events": {
   "events": [
@@ -983,10 +1003,11 @@
  },
  "matchachachatx": {
   "events": [
-   "evt-bf9f2bfd2f405cdc"
+   "evt-bf9f2bfd2f405cdc",
+   "evt-fb0c041518914cee"
   ],
   "first": "2026-11-23",
-  "last": "2026-11-23"
+  "last": "2026-11-25"
  },
  "classycravingco": {
   "events": [
@@ -1267,5 +1288,201 @@
   ],
   "first": "2026-11-24",
   "last": "2026-11-24"
+ },
+ "thisweekatx": {
+  "events": [
+   "evt-4b9019b2d6165962"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "cmtyproductions": {
+  "events": [
+   "evt-d0fa478a1f2d715b"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "southernbellemarket": {
+  "events": [
+   "evt-a3ee8a1b3f35fe48"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "shrinecenterhou": {
+  "events": [
+   "evt-c6ef9159bd243a04"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "arboretumfoodandartisanmarket": {
+  "events": [
+   "evt-744cf7d2e303ee68"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "eldulcerocandyco": {
+  "events": [
+   "evt-6eb5e19d25e109f1"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "melmadeart": {
+  "events": [
+   "evt-c16dcdd823aa3118"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "dark_delicacies_beauty": {
+  "events": [
+   "evt-337e2dd033087463"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "creationsbykaylia_": {
+  "events": [
+   "evt-15917671dde5306e"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "kaffeincactus": {
+  "events": [
+   "evt-3ba12bb6816809c0"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "littledannys_tacoparty": {
+  "events": [
+   "evt-cfd2960d881c7706"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "meowcha.htx": {
+  "events": [
+   "evt-8bda666dd32c03b2"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "austintexasthings": {
+  "events": [
+   "evt-d8c2755c5188e4cd"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "thepointcart": {
+  "events": [
+   "evt-ed63fec13f9d17f6"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "wastefellowmatcha": {
+  "events": [
+   "evt-a39dd82e96b29ef6"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "harumatcha.htx": {
+  "events": [
+   "evt-7bf0bf7835d9d4ec"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "mossmarketatx": {
+  "events": [
+   "evt-326b07e909a904ef"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "ramen_del_barrio": {
+  "events": [
+   "evt-1bb399437ac72391"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "ajstexasbakehouse": {
+  "events": [
+   "evt-2f2a2d2e56fddecb"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "howdy_holiday_market": {
+  "events": [
+   "evt-c4ad09b1bb3477ce"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "huntershivecandles": {
+  "events": [
+   "evt-7ac8e4cd8a39e08f"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "kipp3dtigers": {
+  "events": [
+   "evt-7a6aace67c901a2c"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "studio.moonyoonits": {
+  "events": [
+   "evt-9ca9219f9c08cb58"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "ashcakeem": {
+  "events": [
+   "evt-2e88e2e1393c2455"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "birdiestreasuresco": {
+  "events": [
+   "evt-ddc94830dea06752"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "atxwithmegan": {
+  "events": [
+   "evt-0e16cbd65f98f094"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "plughubaustin": {
+  "events": [
+   "evt-1d9dd7a38e2744f0"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "thefaithfulmarket": {
+  "events": [
+   "evt-12a35e8593d8fd52"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
  }
 }
