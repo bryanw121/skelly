@@ -1484,5 +1484,33 @@
   ],
   "first": "2026-11-25",
   "last": "2026-11-25"
+ },
+ "kodesh_leolam": {
+  "events": [
+   "evt-fd0c1ad14ce71c4f"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "planofarmersmarket": {
+  "events": [
+   "evt-f814f0539cde7b9c"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "legacywestplano": {
+  "events": [
+   "evt-3c344bc5a6667f2d"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "happily_ever_sip_and_shop": {
+  "events": [
+   "evt-a83c19f67f83a8a0"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
  }
 }

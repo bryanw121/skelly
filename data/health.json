@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        260,
         261,
         264,
         261,
@@ -11,6 +10,7 @@
         266,
         270,
         270,
+        265,
         265
       ],
       "sessions": 265,
@@ -30,7 +30,6 @@
     "austin-picklehaus": {
       "counts": [
         163,
-        163,
         162,
         162,
         113,
@@ -38,13 +37,14 @@
         91,
         91,
         98,
-        96
+        96,
+        97
       ],
-      "sessions": 96,
+      "sessions": 97,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.83,
+        "level": 0.85,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -218,7 +218,7 @@
         3,
         3,
         3,
-        3,
+        4,
         4,
         4,
         4
@@ -707,7 +707,7 @@
         1,
         1,
         1,
-        1,
+        2,
         2
       ],
       "sessions": 2,
@@ -758,7 +758,7 @@
         36,
         36,
         36,
-        36,
+        35,
         35,
         35,
         35,
@@ -831,7 +831,7 @@
         23,
         23,
         23,
-        23,
+        21,
         21,
         21,
         21,
@@ -926,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 646
+      "failStreak": 647
     },
     "dallas-reclub": {
       "counts": [
@@ -1073,13 +1073,13 @@
     },
     "houston-reclub": {
       "counts": [
-        20,
         19,
         19,
         20,
         23,
         23,
         25,
+        21,
         21,
         21,
         21
@@ -1174,6 +1174,19 @@
         "sport.name",
         "sport.setsTerm",
         "sport.slug",
+        "sport.stats[]",
+        "sport.stats[].category",
+        "sport.stats[].formula",
+        "sport.stats[].id",
+        "sport.stats[].key",
+        "sport.stats[].measurementUnit",
+        "sport.stats[].order",
+        "sport.stats[].pointValue",
+        "sport.stats[].rankValue",
+        "sport.stats[].scope",
+        "sport.stats[].sportId",
+        "sport.stats[].type",
+        "sport.stats[].unit",
         "sport.sublocationType",
         "sport.validTeamSizes[]",
         "sportConfig",
