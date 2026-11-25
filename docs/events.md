@@ -13,7 +13,7 @@
   Bird Johnson Wildflower Center refuse automated reading, so they aren't read. Add a page to a
   source's `urls` (or a new source) when it publishes Event JSON-LD.
 - **Instagram, through Meta's official API** (`config/instagram.json`, `lib/instagram.js`): when
-  the Actions secrets `IG_USER_ID` and `IG_ACCESS_TOKEN` exist, the same step reads each listed
+  the Actions secret `IG_ACCESS_TOKEN` exists (a Page token from the "Skelly Discovery" Meta app; the account id is `igUserId` in `config/instagram.json`), the same step reads each listed
   organizer's recent posts with Business Discovery (business and creator accounts only; nothing
   is scraped and nobody signs in to instagram.com). A post becomes an event only when its caption
   plainly gives an event word, a date after the post and a place (a 📍 line, "at <Place>", or the
