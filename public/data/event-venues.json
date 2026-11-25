@@ -4796,5 +4796,603 @@
     "lng": -96.7122,
     "located": "source",
     "matched": null
+  },
+  "standard service - heath, ridge road, heath, tx, usa, 4240 ridge road": {
+    "lat": 32.86161,
+    "lng": -96.47232,
+    "located": "source",
+    "matched": null
+  },
+  "5776 grandscape blvd": {
+    "lat": 33.07349,
+    "lng": -96.85958,
+    "located": "source",
+    "matched": null
+  },
+  "pick up at 77477 on 11/25 & 11/26": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:37.929Z"
+  },
+  "millhouse, mckinney": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:37.929Z"
+  },
+  "sharespace, 3536 navigation blvd, houston, tx 77003": {
+    "lat": 29.75476,
+    "lng": -95.33453,
+    "located": "address",
+    "matched": "3536 NAVIGATION BLVD, HOUSTON, TX, 77003"
+  },
+  "city place": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:39.201Z"
+  },
+  "nov 26 — city place plaza, spring": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:39.201Z"
+  },
+  "dee and charles wyly theatre": {
+    "lat": 32.7899,
+    "lng": -96.7964,
+    "located": "source",
+    "matched": null
+  },
+  "pinot's palette katy, 25920 westheimer parkway": {
+    "lat": 29.75325,
+    "lng": -95.79995,
+    "located": "source",
+    "matched": null
+  },
+  "201 w abram st, arlington, tx 76010": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:39.297Z"
+  },
+  "victory lap": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:40.397Z"
+  },
+  "trebly park, 1515 fannin street": {
+    "lat": 29.75231,
+    "lng": -95.367,
+    "located": "source",
+    "matched": null
+  },
+  "5316 parker henderson rd": {
+    "lat": 32.68099,
+    "lng": -97.25601,
+    "located": "source",
+    "matched": null
+  },
+  "martin house": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:40.398Z"
+  },
+  "the hemlock haus misfits market": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:40.398Z"
+  },
+  "3663 bee caves rd": {
+    "lat": 30.27869,
+    "lng": -97.80664,
+    "located": "source",
+    "matched": null
+  },
+  "live happy lane winery & vineyards": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:40.398Z"
+  },
+  "423 centre street, dallas 75208": {
+    "lat": 32.74234,
+    "lng": -96.82876,
+    "located": "address",
+    "matched": "423 CENTRE ST, DALLAS, TX, 75208"
+  },
+  "423 centre street, dallas, tx 75208 (second floor)": {
+    "lat": 32.74234,
+    "lng": -96.82876,
+    "located": "address",
+    "matched": null
+  },
+  "dmc on saturday": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:41.587Z"
+  },
+  "2701 rio grande blvd, euless, tx": {
+    "lat": 30.29207,
+    "lng": -97.74422,
+    "located": "address",
+    "matched": "2701 RIO GRANDE ST, AUSTIN, TX, 78705"
+  },
+  "you’ve got three chances to catch us this weekend": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:42.778Z"
+  },
+  "5950 river oaks blvd, fort worth, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:42.876Z"
+  },
+  "deep ellum plaza": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:43.976Z"
+  },
+  "broadway dallas, 909 1st avenue,dallas,tx": {
+    "lat": 32.78048,
+    "lng": -96.76586,
+    "located": "source",
+    "matched": null
+  },
+  "stockman club – fort worth stockyards": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:43.977Z"
+  },
+  "220 s sylvania ave , fort worth, tx 76111": {
+    "lat": 30.26341,
+    "lng": -97.73081,
+    "located": "address",
+    "matched": null
+  },
+  "windsor park branch library": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:43.977Z"
+  },
+  "12513 westheimer road": {
+    "lat": 29.73574,
+    "lng": -95.60338,
+    "located": "source",
+    "matched": null
+  },
+  "nessler park": {
+    "lat": 29.39069,
+    "lng": -94.92022,
+    "located": "source",
+    "matched": null
+  },
+  "604 bradford ave": {
+    "lat": 29.54337,
+    "lng": -95.01868,
+    "located": "source",
+    "matched": null
+  },
+  "downtown cedar hill, 502 cedar st": {
+    "lat": 32.58866,
+    "lng": -96.95611,
+    "located": "source",
+    "matched": null
+  },
+  "humble civic center, 8233 will clayton pkwy humble tx 77338": {
+    "lat": 29.999,
+    "lng": -95.262,
+    "located": "source",
+    "matched": null
+  },
+  "hugh o’connors, 5010 dincans street": {
+    "lat": 29.72758,
+    "lng": -95.42092,
+    "located": "source",
+    "matched": null
+  },
+  "402 north college street": {
+    "lat": 32.3891,
+    "lng": -96.84469,
+    "located": "source",
+    "matched": null
+  },
+  "jenny lane park in manor": {
+    "lat": 30.34858,
+    "lng": -97.55599,
+    "located": "source",
+    "matched": null
+  },
+  "landon winery - wylie, 103 north ballard avenue": {
+    "lat": 33.0143,
+    "lng": -96.5391,
+    "located": "source",
+    "matched": null
+  },
+  "8 kemah boardwalk": {
+    "lat": 29.54743,
+    "lng": -95.02004,
+    "located": "source",
+    "matched": null
+  },
+  "665 w fm 1626, austin, tx, united states, texas 78748, 647 e fm 1626": {
+    "lat": 30.14141,
+    "lng": -97.79889,
+    "located": "source",
+    "matched": null
+  },
+  "old town coppell | 489 w. bethel rd. coppell, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:43.977Z"
+  },
+  "1761 n highway 77": {
+    "lat": 32.43241,
+    "lng": -96.84035,
+    "located": "source",
+    "matched": null
+  },
+  "bethany united methodist church - austin, 10010 anderson mill rd,austin,tx": {
+    "lat": 30.44765,
+    "lng": -97.79926,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's dallas, 9450 n central expy, 75231, dallas, us": {
+    "lat": 32.8773,
+    "lng": -96.76913,
+    "located": "source",
+    "matched": null
+  },
+  "the rook private social club, 6952 mediterranean drive": {
+    "lat": 33.1972,
+    "lng": -96.70899,
+    "located": "source",
+    "matched": null
+  },
+  "gateway classic cars of houston, 1910 cypress station drive suite 200": {
+    "lat": 30.01193,
+    "lng": -95.43137,
+    "located": "source",
+    "matched": null
+  },
+  "decant urban winery, 948 wakefield drive": {
+    "lat": 29.82169,
+    "lng": -95.42279,
+    "located": "source",
+    "matched": null
+  },
+  "semones family ymca (town north), 4332 northaven road": {
+    "lat": 32.90164,
+    "lng": -96.83528,
+    "located": "source",
+    "matched": null
+  },
+  "1720 gendy st": {
+    "lat": 32.74315,
+    "lng": -97.36878,
+    "located": "source",
+    "matched": null
+  },
+  "fairfield village, cypress, texas": {
+    "lat": 30.00652,
+    "lng": -95.74958,
+    "located": "source",
+    "matched": null
+  },
+  "420 main st. fort worth,texas 76102": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:44.085Z"
+  },
+  "legacy west, 5908 headquarters dr.": {
+    "lat": 33.01984,
+    "lng": -96.69888,
+    "located": "source",
+    "matched": null
+  },
+  "2501 bass pro dr": {
+    "lat": 32.95748,
+    "lng": -97.04352,
+    "located": "source",
+    "matched": null
+  },
+  "hays county historic courthouse, the square - san marcos, 150 e hopkins st": {
+    "lat": 29.88274,
+    "lng": -97.94071,
+    "located": "source",
+    "matched": null
+  },
+  "2012 woodall rodgers fwy, dallas": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:45.275Z"
+  },
+  "castlehillsmarket | 2211 nw military highway, castle hills, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:46.376Z"
+  },
+  "6200 burleson rd": {
+    "lat": 30.20633,
+    "lng": -97.7173,
+    "located": "source",
+    "matched": null
+  },
+  "100 leander rd": {
+    "lat": 30.6218,
+    "lng": -97.68105,
+    "located": "source",
+    "matched": null
+  },
+  "rowlett, texas": {
+    "lat": 32.9061,
+    "lng": -96.5636,
+    "located": "source",
+    "matched": null
+  },
+  "the artisan craft boutique, 119 fm 1463, katy": {
+    "lat": 29.784780405918,
+    "lng": -95.830425921522,
+    "located": "address",
+    "matched": null
+  },
+  "3711 autry park dr., htx autrypark": {
+    "lat": 29.75948,
+    "lng": -95.40742,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's mckinney, 4064 w university dr, mckinney// 75071": {
+    "lat": 33.19834,
+    "lng": -96.63893,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's euless, 2525 rio grande blvd, euless// 76039": {
+    "lat": 32.83707,
+    "lng": -97.08195,
+    "located": "source",
+    "matched": null
+  },
+  "bmw of west houston, 20822 katy fwy,katy,tx": {
+    "lat": 29.78548,
+    "lng": -95.65888,
+    "located": "source",
+    "matched": null
+  },
+  "keller williams realty professionals, 8344 spring cypress road": {
+    "lat": 30.0377,
+    "lng": -95.55127,
+    "located": "source",
+    "matched": null
+  },
+  "designer perfumes hut 7538-a cypress creek pkwy, houston, tx 77070": {
+    "lat": 29.96564,
+    "lng": -95.54087,
+    "located": "manual",
+    "matched": null
+  },
+  "1500 binz street": {
+    "lat": 29.72259,
+    "lng": -95.38508,
+    "located": "source",
+    "matched": null
+  },
+  "vulcan gas company, 418 e 6th st,austin,tx": {
+    "lat": 30.267,
+    "lng": -97.73856,
+    "located": "source",
+    "matched": null
+  },
+  "huffines softball complex, 1500 apollo road": {
+    "lat": 32.95181,
+    "lng": -96.69843,
+    "located": "source",
+    "matched": null
+  },
+  "luxx, 207 west 4th street": {
+    "lat": 30.26647,
+    "lng": -97.74521,
+    "located": "source",
+    "matched": null
+  },
+  "first presbyterian church, 1835 young st": {
+    "lat": 32.77666,
+    "lng": -96.79699,
+    "located": "source",
+    "matched": null
+  },
+  "marriott dallas uptown, 3033 fairmount st": {
+    "lat": 32.7989,
+    "lng": -96.80716,
+    "located": "source",
+    "matched": null
+  },
+  "310 st elmo rd e": {
+    "lat": 30.21594,
+    "lng": -97.7635,
+    "located": "source",
+    "matched": null
+  },
+  "1251 state street, richardson, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:46.470Z"
+  },
+  "hilton austin airport, 9515 hotel drive": {
+    "lat": 30.21145,
+    "lng": -97.66381,
+    "located": "source",
+    "matched": null
+  },
+  "lefty's day & night, 1813 c e 6th st": {
+    "lat": 30.26175,
+    "lng": -97.72303,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's houston - katy fwy, 7620 katy fwy ste 100, houston, 77024, houston, us": {
+    "lat": 29.7861,
+    "lng": -95.46579,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's frisco, 2601 preston rd #1200, frisco// 75034": {
+    "lat": 33.15067,
+    "lng": -96.82361,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's shenandoah, 8915 metropark dr, shenandoah// 77385": {
+    "lat": 30.16582,
+    "lng": -95.46127,
+    "located": "source",
+    "matched": null
+  },
+  "old celina park, 12670 fm 428": {
+    "lat": 33.31834,
+    "lng": -96.80325,
+    "located": "source",
+    "matched": null
+  },
+  "110 s main st": {
+    "lat": 32.6276,
+    "lng": -96.45615,
+    "located": "source",
+    "matched": null
+  },
+  "chateau bellevue | atx, 708 nueces street": {
+    "lat": 30.27087,
+    "lng": -97.74754,
+    "located": "source",
+    "matched": null
+  },
+  "wag'n bone dog grooming & day care - the village dallas, 5670 village glen drive": {
+    "lat": 32.85951,
+    "lng": -96.76238,
+    "located": "source",
+    "matched": null
+  },
+  "the shops at park lane — on the green next to starbucks": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:47.569Z"
+  },
+  "main street garden park, 1902 main st": {
+    "lat": 32.78117,
+    "lng": -96.79485,
+    "located": "source",
+    "matched": null
+  },
+  "7710 lyons ave, houston, tx 77020": {
+    "lat": 29.7767,
+    "lng": -95.29001,
+    "located": "address",
+    "matched": "7710 LYONS AVE, HOUSTON, TX, 77020"
+  },
+  "the harbor rockwall, 2074 summer lee dr,rockwall, texas": {
+    "lat": 32.89028,
+    "lng": -96.48094,
+    "located": "source",
+    "matched": null
+  },
+  "lake travis lodges marina, 6410 hudson bend rd": {
+    "lat": 30.42828,
+    "lng": -97.92456,
+    "located": "source",
+    "matched": null
+  },
+  "the mckinney cotton mill, 610 elm st": {
+    "lat": 33.18487,
+    "lng": -96.6118,
+    "located": "source",
+    "matched": null
+  },
+  "marilyn edgar park, 26531 hillside dr. oak ridge north texas, 77386,oak ridge north, texas": {
+    "lat": 30.14888,
+    "lng": -95.44513,
+    "located": "source",
+    "matched": null
+  },
+  "3003 alma rd": {
+    "lat": 33.17317,
+    "lng": -96.71219,
+    "located": "source",
+    "matched": null
+  },
+  "temo ballroom, 2643 ne 28th st.,fort worth, texas": {
+    "lat": 32.79569,
+    "lng": -97.3077,
+    "located": "source",
+    "matched": null
+  },
+  "6219 oakclaire dr": {
+    "lat": 30.23633,
+    "lng": -97.8537,
+    "located": "source",
+    "matched": null
+  },
+  "500 parkview dr": {
+    "lat": 33.01197,
+    "lng": -97.20608,
+    "located": "source",
+    "matched": null
+  },
+  "6001 w parmer ln": {
+    "lat": 30.44146,
+    "lng": -97.74254,
+    "located": "source",
+    "matched": null
+  },
+  "la colombe d'or restaurant & hotel, 3410 montrose boulevard": {
+    "lat": 29.74163,
+    "lng": -95.39162,
+    "located": "source",
+    "matched": null
+  },
+  "hold out brewing, 1208 west 4th street": {
+    "lat": 30.27137,
+    "lng": -97.75896,
+    "located": "source",
+    "matched": null
+  },
+  "broadway baptist church, 305 w broadway ave": {
+    "lat": 32.74083,
+    "lng": -97.32861,
+    "located": "source",
+    "matched": null
+  },
+  "the meeting place, 13612 midway rd #601": {
+    "lat": 32.93398,
+    "lng": -96.83786,
+    "located": "source",
+    "matched": null
+  },
+  "axe-mania, 23834 eastex fwy": {
+    "lat": 30.0611,
+    "lng": -95.24735,
+    "located": "source",
+    "matched": null
+  },
+  "parker jazz club, 117 w 4th st": {
+    "lat": 30.26647,
+    "lng": -97.74473,
+    "located": "source",
+    "matched": null
+  },
+  "700 blessed way": {
+    "lat": 32.94959,
+    "lng": -97.12659,
+    "located": "source",
+    "matched": null
+  },
+  "winspear opera house, 2100 ross avenue #650": {
+    "lat": 32.77666,
+    "lng": -96.79699,
+    "located": "source",
+    "matched": null
+  },
+  "saddlerock vineyards & safari": {
+    "unresolved": true,
+    "lastTried": "2026-11-25T23:13:48.759Z"
+  },
+  "kings harbor waterfront village, 4501 magnolia cove dr": {
+    "lat": 30.03215,
+    "lng": -95.1731,
+    "located": "source",
+    "matched": null
+  },
+  "main event katy, 24401 katy fwy, katy// 77494": {
+    "lat": 29.78578,
+    "lng": -95.82451,
+    "located": "source",
+    "matched": null
+  },
+  "the w hotel austin, texas, 200 lavaca street,austin, texas": {
+    "lat": 30.26533,
+    "lng": -97.74664,
+    "located": "source",
+    "matched": null
+  },
+  "hanovers draught haus, 108 east main street": {
+    "lat": 30.44083,
+    "lng": -97.61954,
+    "located": "source",
+    "matched": null
   }
 }

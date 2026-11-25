@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        254,
         255,
         266,
         270,
@@ -11,13 +10,14 @@
         265,
         265,
         265,
-        261
+        261,
+        249
       ],
-      "sessions": 261,
+      "sessions": 249,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.69,
+        "level": 0.7,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -30,13 +30,13 @@
     "austin-picklehaus": {
       "counts": [
         113,
-        113,
         91,
         91,
         98,
         96,
         97,
         97,
+        104,
         104,
         104
       ],
@@ -64,7 +64,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1
       ],
       "sessions": 1,
@@ -226,7 +226,7 @@
         3,
         3,
         3,
-        3,
+        4,
         4,
         4,
         4,
@@ -765,7 +765,7 @@
     "chaparral-ice": {
       "counts": [
         36,
-        36,
+        35,
         35,
         35,
         35,
@@ -838,7 +838,7 @@
     "ice-and-field": {
       "counts": [
         23,
-        23,
+        21,
         21,
         21,
         21,
@@ -937,7 +937,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 651
+      "failStreak": 652
     },
     "dallas-reclub": {
       "counts": [
@@ -1084,7 +1084,6 @@
     },
     "houston-reclub": {
       "counts": [
-        20,
         23,
         23,
         25,
@@ -1093,12 +1092,13 @@
         21,
         21,
         21,
-        21
+        21,
+        23
       ],
-      "sessions": 21,
+      "sessions": 23,
       "coverage": {
         "end": 1,
-        "price": 0.62,
+        "price": 0.65,
         "level": 1,
         "venue": 1,
         "city": 1,

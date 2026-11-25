@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-25T22:15:37.936Z",
+  "generatedAt": "2026-11-25T23:06:05.982Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -64,11 +64,15 @@
         {
           "name": "Hfbc Wednesday Night Volleyball",
           "url": "https://reclub.co/clubs/@hfbc-wednesday-night-volleyball"
+        },
+        {
+          "name": "Hoh Sports",
+          "url": "https://reclub.co/clubs/@hoh-sports"
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-25T22:13:23.868Z",
-      "count": 21
+      "checkedAt": "2026-11-25T23:03:53.146Z",
+      "count": 23
     },
     {
       "id": "houston-city-active",
@@ -93,7 +97,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-25T22:13:28.932Z",
+      "checkedAt": "2026-11-25T23:03:58.856Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -614,6 +618,60 @@
       "verifiedAt": "2026-11-25",
       "venueId": "src-collins-park",
       "status": "scheduled"
+    },
+    {
+      "id": "reclub-O2M0TF",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "end": "24:00",
+      "title": "Timothy Project @ 6942 Cotton",
+      "venue": "Houston Stars",
+      "city": "Houston",
+      "surface": "indoor",
+      "type": "Open play",
+      "level": "All levels",
+      "price": "$10",
+      "note": "Hosted by HoH Sports, every Friday.",
+      "capacity": 120,
+      "signup": {
+        "url": "https://reclub.co/m/O2M0TF",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/O2M0TF",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-25",
+      "venueId": "src-houston-stars",
+      "status": "scheduled"
+    },
+    {
+      "id": "reclub-8PSJSP",
+      "date": "2026-12-05",
+      "start": "10:00",
+      "end": "18:00",
+      "title": "Winter Wunzee Tourney",
+      "venue": "Third Coast Volleyball Club",
+      "city": "Houston",
+      "surface": "indoor",
+      "type": "Open play",
+      "level": "All levels",
+      "price": "$35",
+      "note": "Hosted by HoH Sports.",
+      "capacity": 40,
+      "signup": {
+        "url": "https://reclub.co/m/8PSJSP",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/8PSJSP",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-25",
+      "venueId": "src-third-coast-volleyball-club",
+      "status": "scheduled"
     }
   ],
   "publicCourts": null,
@@ -954,6 +1012,15 @@
       "address": "6727 Cypresswood Drive, Spring, TX",
       "lat": 30.011,
       "lng": -95.5077,
+      "region": "houston"
+    },
+    {
+      "id": "src-third-coast-volleyball-club",
+      "name": "Third Coast Volleyball Club",
+      "city": "Houston",
+      "address": "5652 Forney Drive, Houston, Tx",
+      "lat": 29.72073,
+      "lng": -95.50309,
       "region": "houston"
     }
   ]

@@ -627,7 +627,7 @@
   "endTime": "22:00"
  },
  "https://allevents.in/austin/austin-witches-market-radio-east-dec-13/200031096644348": {
-  "checkedAt": "2026-11-22T18:16:26.533Z"
+  "checkedAt": "2026-11-25T23:06:07.548Z"
  },
  "https://allevents.in/austin/going-down-under-a-kiwi-holiday-in-six-glasses/100002004977333176": {
   "checkedAt": "2026-11-22T18:16:26.533Z",
@@ -638,7 +638,7 @@
   "checkedAt": "2026-11-22T18:16:26.533Z"
  },
  "https://allevents.in/dallas/breath-by-design-x-gallery-defi-neuroscience-9d-breathwork-holistic-market-community-nights/200030735720710": {
-  "checkedAt": "2026-11-22T18:16:26.533Z"
+  "checkedAt": "2026-11-25T23:06:07.548Z"
  },
  "https://allevents.in/dallas/texas-soul-festival/200031096607944": {
   "checkedAt": "2026-11-22T18:16:26.533Z",
@@ -1005,5 +1005,111 @@
   "checkedAt": "2026-11-25T17:40:50.789Z",
   "startTime": "07:00",
   "endTime": "11:30"
+ },
+ "https://allevents.in/plano/holly-jolly-sip-shop-at-legacy-west/80001957077575": {
+  "checkedAt": "2026-11-25T23:06:07.548Z"
+ },
+ "https://allevents.in/dallas/holidays-with-the-turtle-creek-chorale/80001213024393": {
+  "checkedAt": "2026-11-25T23:06:07.548Z"
+ },
+ "https://allevents.in/fort-worth/temo-christmas-mercadito/200031093074947": {
+  "checkedAt": "2026-11-25T23:06:07.548Z"
+ },
+ "https://allevents.in/mckinney/mckinney-annual-stixmas-vendor-market/100002001032519131": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "11:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/mckinney/fall-makers-market-‘26-hosted-by-collin-county-creatives/200030515220028": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "10:00",
+  "endTime": "14:00"
+ },
+ "https://allevents.in/mckinney/holiday-headquarters-at-gather-on-the-square/200030992753105": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "10:30",
+  "endTime": "21:00"
+ },
+ "https://allevents.in/mckinney/mckinney-grinch-market/100001998940172867": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/mckinney/gluten-free-friendly-holiday-market-at-chestnut-square/200031069488857": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00",
+  "endTime": "15:00"
+ },
+ "https://allevents.in/mckinney/handmade-holiday-open-house/200031064606431": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "17:30",
+  "endTime": "20:30"
+ },
+ "https://allevents.in/mckinney/a-book-buzz-grown-up-book-fair-tupps/100002004627917063": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/mckinney/weiner-fest-at-tupps/100001997426113274": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/mckinney/chanukah-festival-in-downtown-mckinney/200030957573516": {
+  "checkedAt": "2026-11-25T23:06:07.548Z"
+ },
+ "https://allevents.in/dallas/bt21-x-k-pop-market-holiday-mash-up-tickets/80001680788452": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/allen/nightmare-before-christmas-tickets/80001248157301": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/garland/a-garland-christmas-on-the-square-tickets/200031021298300": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "17:00",
+  "endTime": "21:00"
+ },
+ "https://allevents.in/bedford/christmas-in-the-park/200030973040517": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "17:00",
+  "endTime": "20:00"
+ },
+ "https://allevents.in/allen/allen-holiday-vendor-market/100002001026887286": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/allen/allen-holiday-market/100001998940061534": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/allen/christmas-market-at-the-creek/200031001934157": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "09:00",
+  "endTime": "15:00"
+ },
+ "https://allevents.in/allen/holiday-sidewalk-market/200030980100204": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/allen/alis-accessories-north-pole-market/200031060181934": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "09:30",
+  "endTime": "14:30"
+ },
+ "https://allevents.in/allen/collectors-vault-night-market-dallas/200031015569133": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "12:00"
+ },
+ "https://allevents.in/houston/jingle-and-mingle-houston-heights-holiday-market-tickets/80009811228102": {
+  "checkedAt": "2026-11-25T23:06:07.548Z",
+  "startTime": "15:00",
+  "endTime": "19:00"
  }
 }

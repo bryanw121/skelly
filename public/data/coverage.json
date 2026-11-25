@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T22:15:40.049Z",
+ "generatedAt": "2026-11-25T23:13:48.825Z",
  "regions": [
   {
    "id": "austin",
@@ -42,10 +42,10 @@
      "lead": false
     },
     {
-     "venue": "Eastside Paddle Club",
+     "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 89,
+     "sessions": 87,
      "pinned": true,
      "booking": true,
      "via": [
@@ -54,10 +54,10 @@
      "lead": false
     },
     {
-     "venue": "Pickle Pit Stop",
+     "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 89,
+     "sessions": 86,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 83,
+     "sessions": 76,
      "pinned": true,
      "booking": true,
      "via": [
@@ -501,6 +501,18 @@
      "lead": true
     },
     {
+     "venue": "Houston Stars",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 3,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
      "venue": "Katy Sports Center",
      "city": "Houston",
      "sport": "volleyball",
@@ -514,18 +526,6 @@
     },
     {
      "venue": "Absolute Volleyball Academy and Absolute Beach",
-     "city": "Houston",
-     "sport": "volleyball",
-     "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Houston Stars",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 2,
@@ -586,6 +586,18 @@
     },
     {
      "venue": "The Zone",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Third Coast Volleyball Club",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,

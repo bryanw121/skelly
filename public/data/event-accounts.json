@@ -565,10 +565,11 @@
  },
  "__dear.matcha__": {
   "events": [
-   "evt-76d7d188080ef664"
+   "evt-76d7d188080ef664",
+   "evt-d9058a8100c899ab"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-25"
  },
  "funkytownmatcha": {
   "events": [
@@ -968,10 +969,12 @@
  },
  "briansbitchinbakeryofficial": {
   "events": [
-   "evt-febe5cb74584fdc8"
+   "evt-febe5cb74584fdc8",
+   "evt-b7b3172a4755057f",
+   "evt-af7bef2690a5d3fb"
   ],
   "first": "2026-11-23",
-  "last": "2026-11-23"
+  "last": "2026-11-25"
  },
  "maicha.cafe": {
   "events": [
@@ -1053,10 +1056,11 @@
  },
  "drinknoto": {
   "events": [
-   "evt-184674890634c0da"
+   "evt-184674890634c0da",
+   "evt-c7247ac86b193a97"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "viking.shield": {
   "events": [
@@ -1095,10 +1099,11 @@
  },
  "cadenacollective": {
   "events": [
-   "evt-2b7af3d0f80edf17"
+   "evt-2b7af3d0f80edf17",
+   "evt-c47fdfc3e9eb1fa4"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "communitymarket": {
   "events": [
@@ -1109,10 +1114,11 @@
  },
  "dentonmakercenter": {
   "events": [
-   "evt-3b5832df5d07fbce"
+   "evt-3b5832df5d07fbce",
+   "evt-63aeafd306f1c2a9"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "createdforyoubyamparor": {
   "events": [
@@ -1172,10 +1178,14 @@
  },
  "ausforfree": {
   "events": [
-   "evt-d200d0a4374bf9ac"
+   "evt-d200d0a4374bf9ac",
+   "evt-366d1c1f4d1f810f",
+   "evt-5bf697f6104c6edb",
+   "evt-808ebf20edaae032",
+   "evt-dd5416f491455873"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "honeyhillmarket": {
   "events": [
@@ -1270,10 +1280,12 @@
  },
  "aztecafarmersmarkethtx": {
   "events": [
-   "evt-9f4ad46ec37ed03b"
+   "evt-9f4ad46ec37ed03b",
+   "evt-5b6ae55e1eb56d87",
+   "evt-8027204c721d9815"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "therustictap": {
   "events": [
@@ -1298,7 +1310,8 @@
  },
  "cmtyproductions": {
   "events": [
-   "evt-d0fa478a1f2d715b"
+   "evt-d0fa478a1f2d715b",
+   "evt-b8e7164a025fb990"
   ],
   "first": "2026-11-25",
   "last": "2026-11-25"
@@ -1326,7 +1339,10 @@
  },
  "eldulcerocandyco": {
   "events": [
-   "evt-6eb5e19d25e109f1"
+   "evt-6eb5e19d25e109f1",
+   "evt-f9c615c2a40e9f5a",
+   "evt-1550b102fd7dc49a",
+   "evt-f95fe70ecc27e18f"
   ],
   "first": "2026-11-25",
   "last": "2026-11-25"
@@ -1347,7 +1363,8 @@
  },
  "creationsbykaylia_": {
   "events": [
-   "evt-15917671dde5306e"
+   "evt-15917671dde5306e",
+   "evt-e068fc58a126b00d"
   ],
   "first": "2026-11-25",
   "last": "2026-11-25"
@@ -1417,7 +1434,8 @@
  },
  "ajstexasbakehouse": {
   "events": [
-   "evt-2f2a2d2e56fddecb"
+   "evt-2f2a2d2e56fddecb",
+   "evt-e6b35b214a8c66da"
   ],
   "first": "2026-11-25",
   "last": "2026-11-25"
@@ -1508,7 +1526,37 @@
  },
  "happily_ever_sip_and_shop": {
   "events": [
-   "evt-a83c19f67f83a8a0"
+   "evt-a83c19f67f83a8a0",
+   "evt-be4449ca0c9ffb16",
+   "evt-0a06d64cf72b1f28",
+   "evt-c48c6e5a91e45be1",
+   "evt-65374734e2780d7d"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "millhousemckinney": {
+  "events": [
+   "evt-e02bfa64da5b0bb8"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "thebohomarket": {
+  "events": [
+   "evt-a30c446fe32e106d",
+   "evt-02bbc054ab88e36f",
+   "evt-02a9a41d41511009",
+   "evt-4a640995711a69c5",
+   "evt-f5e414f2e56520df",
+   "evt-c3161b2fea21036c"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "undergroundmrkt": {
+  "events": [
+   "evt-b9c88f3e13572ca3"
   ],
   "first": "2026-11-25",
   "last": "2026-11-25"

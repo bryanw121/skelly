@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-25T22:15:37.936Z",
+  "generatedAt": "2026-11-25T23:06:05.982Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -168,6 +168,34 @@
         "capacity": 45
       },
       "venue_id": "src-katy-sports-center",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
+      "id": "reclub-O2M0TF",
+      "session_id": "reclub-O2M0TF",
+      "source_id": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "title": "Timothy Project @ 6942 Cotton",
+      "venue": "Houston Stars",
+      "city": "Houston",
+      "level": "All levels",
+      "price": "$10",
+      "starts_at": "2026-11-28T02:00:00.000Z",
+      "ends_at": "2026-11-28T06:00:00.000Z",
+      "signup_url": "https://reclub.co/m/O2M0TF",
+      "signup_label": "Sign up on Reclub",
+      "note": "Hosted by HoH Sports, every Friday.",
+      "canceled": false,
+      "verified_at": "2026-11-25",
+      "attributes": {
+        "surface": "indoor",
+        "type": "Open play",
+        "capacity": 120
+      },
+      "venue_id": "src-houston-stars",
       "status": "scheduled",
       "previous_starts_at": null
     },
