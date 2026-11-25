@@ -102,3 +102,17 @@ test('events job: the token is the only secret; the account id comes from config
   await runEventsJob({ ...quiet, get: igGet, fetch, now: NOW, dataDir, failuresDir, env: { IG_ACCESS_TOKEN: 't' }, igConfig: () => ({ igUserId: '17841416933094467', accounts: [{ handle: 'someorg' }] }) });
   assert.ok(asked.some((u) => u.startsWith('https://graph.facebook.com/v26.0/17841416933094467?')), asked.join('\n'));
 });
+
+test('events job: at most AVATARS_PER_RUN profile pictures are looked up per run', async () => {
+  const { AVATARS_PER_RUN } = await import('../lib/events-job.js');
+  const { dataDir, failuresDir } = dirs();
+  const { mkdirSync } = await import('node:fs');
+  mkdirSync(dataDir, { recursive: true });
+  const handles = Array.from({ length: AVATARS_PER_RUN + 10 }, (_, i) => `org${i}`);
+  writeFileSync(join(dataDir, 'events.json'), JSON.stringify({ events: handles.map((h, i) => ({ id: `e${i}`, title: `Event ${i}`, startDate: '2026-12-01', source: `Instagram @${h}` })) }));
+  const { get, fetch } = fakes();
+  const asked = new Set();
+  const igGet = async (url, o) => { if (url.includes('graph.facebook.com')) { const m = decodeURIComponent(url).match(/username\(([^)]+)\)/); asked.add(m[1]); return { ok: true, status: 200, text: JSON.stringify({ business_discovery: {} }) }; } return get(url, o); };
+  await runEventsJob({ ...quiet, get: igGet, fetch, now: NOW, dataDir, failuresDir, env: { IG_ACCESS_TOKEN: 't' }, igConfig: () => ({ igUserId: '1', accounts: [] }) });
+  assert.equal(asked.size, AVATARS_PER_RUN);
+});

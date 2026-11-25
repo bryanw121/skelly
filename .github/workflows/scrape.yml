@@ -91,7 +91,9 @@ jobs:
       # commit, so it rides the same data-branch push.
       - name: Events
         continue-on-error: true
-        timeout-minutes: 5
+        # Listings (~1 min at 1 s a page), markets (2 min at most), hours, then Instagram (~1 s an
+        # account). The job has 20 minutes; the scrape before this takes about 3.
+        timeout-minutes: 10
         env:
           SCHELAGG_HOST_GAP_MS: 1000
           # Meta's official Instagram API (optional: without them the Instagram step is skipped).
