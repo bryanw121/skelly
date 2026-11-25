@@ -1,0 +1,206 @@
+{
+ "recordedAt": "2026-11-25T17:33:34.405Z",
+ "meta": {
+  "unit": "events:allevents-north-dallas",
+  "now": "2026-11-25T17:33:34.405Z",
+  "count": 142
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://allevents.in/plano/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "e35d5e0f0067.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/plano/craft-fairs",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "03c3846ac3ed.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/plano/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ae59d657c4e3.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/plano/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "507b9d351607.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/plano/shopping",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "23b89ea4ed0d.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/plano/night-market",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "afb81808778a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/plano/festivals",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "45b2ada340dc.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/frisco/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "d449937ad533.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/frisco/craft-fairs",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "79587fe8b71a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/frisco/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "2387f3eaad2e.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/frisco/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "a47709820304.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/frisco/shopping",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "6799647307af.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/frisco/night-market",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "126d63930c45.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/frisco/festivals",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "d31a30155c7f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/mckinney/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ad4044aeef0d.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/mckinney/craft-fairs",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "41d203c73105.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/mckinney/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "30fb2490d510.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/mckinney/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "7d865ebb4ed7.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/mckinney/shopping",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "28c0c3c786ac.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/mckinney/night-market",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "81066127f72a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/mckinney/festivals",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "7804091597da.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/allen-tx/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "fd8c43a092fd.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/allen-tx/craft-fairs",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "1343c34d6296.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/allen-tx/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "9fb043c683ab.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/allen-tx/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ab18fa62e8cb.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/allen-tx/shopping",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c7e08f96816b.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/allen-tx/night-market",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "52caabebc4fe.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/allen-tx/festivals",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "f2e760effd6b.html"
+  }
+ ]
+}
