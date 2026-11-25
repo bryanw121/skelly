@@ -2,13 +2,13 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        264,
         261,
         254,
         255,
         266,
         270,
         270,
+        265,
         265,
         265,
         265
@@ -30,7 +30,6 @@
     "austin-picklehaus": {
       "counts": [
         162,
-        162,
         113,
         113,
         91,
@@ -38,13 +37,14 @@
         98,
         96,
         97,
-        97
+        97,
+        104
       ],
-      "sessions": 97,
+      "sessions": 104,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.85,
+        "level": 0.86,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -756,7 +756,7 @@
         36,
         36,
         36,
-        36,
+        35,
         35,
         35,
         35,
@@ -829,7 +829,7 @@
         23,
         23,
         23,
-        23,
+        21,
         21,
         21,
         21,
@@ -926,7 +926,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 648
+      "failStreak": 649
     },
     "dallas-reclub": {
       "counts": [

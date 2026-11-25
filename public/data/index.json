@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T17:38:44.845Z",
+  "generatedAt": "2026-11-25T18:00:05.000Z",
   "regions": [
     {
       "id": "austin",
@@ -14,7 +14,7 @@
         "pickleball",
         "volleyball"
       ],
-      "sessions": 472,
+      "sessions": 479,
       "venues": 47
     },
     {
