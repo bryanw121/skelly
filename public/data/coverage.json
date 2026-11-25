@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T23:31:16.937Z",
+ "generatedAt": "2026-11-25T02:18:18.116Z",
  "regions": [
   {
    "id": "austin",
@@ -42,10 +42,10 @@
      "lead": false
     },
     {
-     "venue": "Pickle Pit Stop",
+     "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 87,
+     "sessions": 88,
      "pinned": true,
      "booking": true,
      "via": [
@@ -54,10 +54,10 @@
      "lead": false
     },
     {
-     "venue": "Eastside Paddle Club",
+     "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 86,
+     "sessions": 85,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 81,
+     "sessions": 82,
      "pinned": true,
      "booking": true,
      "via": [
@@ -189,6 +189,18 @@
      "lead": false
     },
     {
+     "venue": "George Morales Dove Springs Recreation Center",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "austin-city-pickleball"
+     ],
+     "lead": false
+    },
+    {
      "venue": "Long Center",
      "city": "Downtown",
      "sport": "ice_skating",
@@ -197,6 +209,30 @@
      "booking": false,
      "via": [
       "manual"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Montopolis Recreation and Community Center",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "austin-city-pickleball"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Northwest Recreation Center",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "austin-city-pickleball"
      ],
      "lead": false
     },
@@ -213,18 +249,6 @@
      "lead": false
     },
     {
-     "venue": "George Morales Dove Springs Recreation Center",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "austin-city-pickleball"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Hanovers Draught Haus",
      "city": "Pflugerville",
      "sport": "volleyball",
@@ -233,30 +257,6 @@
      "booking": false,
      "via": [
       "manual"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Montopolis Recreation and Community Center",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "austin-city-pickleball"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Northwest Recreation Center",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "austin-city-pickleball"
      ],
      "lead": false
     },
@@ -465,6 +465,18 @@
    "name": "Houston, TX",
    "rows": [
     {
+     "venue": "Champion Forest Baptist Church - Champions Campus",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 4,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
      "venue": "Collins Park",
      "city": "Houston",
      "sport": "volleyball",
@@ -477,10 +489,10 @@
      "lead": true
     },
     {
-     "venue": "Champion Forest Baptist Church - Champions Campus",
+     "venue": "Houston Stars",
      "city": "Houston",
      "sport": "volleyball",
-     "sessions": 3,
+     "sessions": 4,
      "pinned": true,
      "booking": false,
      "via": [
@@ -489,7 +501,7 @@
      "lead": true
     },
     {
-     "venue": "Houston Stars",
+     "venue": "Katy Sports Center",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 3,
@@ -502,18 +514,6 @@
     },
     {
      "venue": "Absolute Volleyball Academy and Absolute Beach",
-     "city": "Houston",
-     "sport": "volleyball",
-     "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Katy Sports Center",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 2,
@@ -574,18 +574,6 @@
     },
     {
      "venue": "The Zone",
-     "city": "Houston",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Wakefield Crowbar",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,

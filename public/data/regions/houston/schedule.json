@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T23:30:16.461Z",
+  "generatedAt": "2026-11-25T02:16:13.324Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -67,8 +67,8 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-24T23:28:02.497Z",
-      "count": 23
+      "checkedAt": "2026-11-25T02:13:46.862Z",
+      "count": 25
     },
     {
       "id": "houston-city-active",
@@ -80,7 +80,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/houston-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-24T01:48:32.794Z",
+      "checkedAt": "2026-11-25T02:13:50.742Z",
       "count": 0
     },
     {
@@ -93,7 +93,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-24T23:28:07.215Z",
+      "checkedAt": "2026-11-25T02:13:52.922Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -147,6 +147,33 @@
         "label": "Sign up on Reclub"
       },
       "source": "https://reclub.co/m/7BSUK2",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-24",
+      "venueId": "src-houston-stars",
+      "status": "scheduled"
+    },
+    {
+      "id": "reclub-ETX53J",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "end": "23:00",
+      "title": "00PM (prepay to play)",
+      "venue": "Houston Stars",
+      "city": "Houston",
+      "surface": "indoor",
+      "type": "Open play",
+      "level": "All levels",
+      "price": "$10",
+      "note": "Hosted by Houston Stars (Adults), every Wednesday.",
+      "capacity": 120,
+      "signup": {
+        "url": "https://reclub.co/m/ETX53J",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/ETX53J",
       "sourceId": "houston-reclub",
       "sport": "volleyball",
       "region": "houston",
@@ -291,30 +318,30 @@
       "status": "scheduled"
     },
     {
-      "id": "reclub-MCRPQ4",
+      "id": "reclub-VJ15NH",
       "date": "2026-11-27",
-      "start": "19:30",
-      "end": "22:30",
-      "title": "Friday Sand Volleyball ($10/person) @WAKEFIELD CROWBAR",
-      "venue": "Wakefield Crowbar",
+      "start": "19:00",
+      "end": "23:00",
+      "title": "Friday Intermediate Level + Up INDOOR Volleyball (2 Courts) ($10) @ Katy Sports (7 pm - 11 pm)",
+      "venue": "Katy Sports Center",
       "city": "Houston",
       "surface": "indoor",
       "type": "Open play",
       "level": "All levels",
       "price": "$10",
       "note": "Hosted by Cultural Diversity Volleyball Social.",
-      "capacity": 40,
+      "capacity": 45,
       "signup": {
-        "url": "https://reclub.co/m/MCRPQ4",
+        "url": "https://reclub.co/m/VJ15NH",
         "label": "Sign up on Reclub"
       },
-      "source": "https://reclub.co/m/MCRPQ4",
+      "source": "https://reclub.co/m/VJ15NH",
       "sourceId": "houston-reclub",
       "sport": "volleyball",
       "region": "houston",
       "timezone": "America/Chicago",
       "verifiedAt": "2026-11-24",
-      "venueId": "src-wakefield-crowbar",
+      "venueId": "src-katy-sports-center",
       "status": "scheduled"
     },
     {
@@ -499,6 +526,33 @@
         "label": "Sign up on Reclub"
       },
       "source": "https://reclub.co/m/X8OFRC",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-24",
+      "venueId": "src-champion-forest-baptist-church-champions-campus",
+      "status": "scheduled"
+    },
+    {
+      "id": "reclub-KVLH3A",
+      "date": "2026-12-01",
+      "start": "18:45",
+      "end": "21:45",
+      "title": "Sand Volleyball 🏐 @Champions",
+      "venue": "Champion Forest Baptist Church - Champions Campus",
+      "city": "Houston",
+      "surface": "indoor",
+      "type": "Open play",
+      "level": "All levels",
+      "price": null,
+      "note": "Hosted by HTX - Social, every Tuesday.",
+      "capacity": 20,
+      "signup": {
+        "url": "https://reclub.co/m/KVLH3A",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/KVLH3A",
       "sourceId": "houston-reclub",
       "sport": "volleyball",
       "region": "houston",
@@ -957,12 +1011,12 @@
       "region": "houston"
     },
     {
-      "id": "src-wakefield-crowbar",
-      "name": "Wakefield Crowbar",
+      "id": "src-katy-sports-center",
+      "name": "Katy Sports Center",
       "city": "Houston",
-      "address": "954 Wakefield Drive, Houston, TX 77018, USA",
-      "lat": 29.821991,
-      "lng": -95.42305,
+      "address": "535 Applewhite Drive, Katy, TX 77450, USA",
+      "lat": 29.77552,
+      "lng": -95.754074,
       "region": "houston"
     },
     {
@@ -972,15 +1026,6 @@
       "address": "10371 Stella Link Road 2nd Floor, Houston, TX 77025",
       "lat": 29.66943,
       "lng": -95.43757,
-      "region": "houston"
-    },
-    {
-      "id": "src-katy-sports-center",
-      "name": "Katy Sports Center",
-      "city": "Houston",
-      "address": "535 Applewhite Drive, Katy, TX 77450, USA",
-      "lat": 29.77552,
-      "lng": -95.754074,
       "region": "houston"
     },
     {

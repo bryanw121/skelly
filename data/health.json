@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        246,
         245,
         245,
         245,
@@ -11,13 +10,14 @@
         261,
         264,
         261,
-        254
+        254,
+        255
       ],
-      "sessions": 254,
+      "sessions": 255,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.71,
+        "level": 0.7,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -33,11 +33,11 @@
         157,
         157,
         157,
-        157,
         163,
         163,
         162,
         162,
+        113,
         113
       ],
       "sessions": 113,
@@ -76,7 +76,7 @@
         10,
         10,
         10,
-        10,
+        11,
         11,
         11,
         11,
@@ -187,7 +187,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1,
         1,
         1,
@@ -761,7 +761,7 @@
         37,
         37,
         37,
-        37,
+        36,
         36,
         36,
         36,
@@ -834,7 +834,7 @@
         24,
         24,
         24,
-        24,
+        23,
         23,
         23,
         23,
@@ -930,7 +930,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 640
+      "failStreak": 641
     },
     "dallas-reclub": {
       "counts": [
@@ -1078,7 +1078,6 @@
     "houston-reclub": {
       "counts": [
         20,
-        20,
         23,
         22,
         20,
@@ -1086,12 +1085,13 @@
         19,
         20,
         23,
-        23
+        23,
+        25
       ],
-      "sessions": 23,
+      "sessions": 25,
       "coverage": {
         "end": 1,
-        "price": 0.61,
+        "price": 0.6,
         "level": 1,
         "venue": 1,
         "city": 1,
@@ -1132,6 +1132,14 @@
         "isPast",
         "keywordSearch",
         "matchConfig",
+        "matchConfig.limitRounds",
+        "matchConfig.participantIds[]",
+        "matchConfig.prioritizeLeastMatches",
+        "matchConfig.rankingCriteria",
+        "matchConfig.scheme",
+        "matchConfig.sublocations[]",
+        "matchConfig.teamIds[]",
+        "matchConfig.totalSetPoints",
         "maxSportLevelValue",
         "minSportLevelId",
         "minSportLevelValue",
@@ -1284,13 +1292,15 @@
     "manual:aces-open-mon:watch",
     "manual:aces-open-wed:stale:2026-10-24",
     "manual:aces-open-wed:watch",
-    "manual:beecave-on-ice-fri:changed:2026-11-23",
-    "manual:beecave-on-ice-mwth:changed:2026-11-23",
-    "manual:beecave-on-ice-sat:changed:2026-11-23",
-    "manual:beecave-on-ice-sun:changed:2026-11-23",
-    "manual:beecave-on-ice-tue:changed:2026-11-23",
-    "manual:four-seasons-ice-rodeo:changed:2026-11-23",
+    "manual:beecave-on-ice-fri:changed:2026-11-24",
+    "manual:beecave-on-ice-mwth:changed:2026-11-24",
+    "manual:beecave-on-ice-sat:changed:2026-11-24",
+    "manual:beecave-on-ice-sun:changed:2026-11-24",
+    "manual:beecave-on-ice-tue:changed:2026-11-24",
+    "manual:four-seasons-ice-rodeo:changed:2026-11-24",
     "manual:hanovers-open:changed:2026-11-18",
-    "manual:hanovers-open:unverified"
+    "manual:hanovers-open:unverified",
+    "manual:long-center-ice-weekdays:changed:2026-11-24",
+    "manual:long-center-ice-weekends:changed:2026-11-24"
   ]
 }
