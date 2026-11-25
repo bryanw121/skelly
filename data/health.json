@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        261,
         254,
         255,
         266,
@@ -11,13 +10,14 @@
         265,
         265,
         265,
-        265
+        265,
+        261
       ],
-      "sessions": 265,
+      "sessions": 261,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.7,
+        "level": 0.69,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -29,7 +29,6 @@
     },
     "austin-picklehaus": {
       "counts": [
-        162,
         113,
         113,
         91,
@@ -38,6 +37,7 @@
         96,
         97,
         97,
+        104,
         104
       ],
       "sessions": 104,
@@ -65,10 +65,21 @@
         0,
         0,
         0,
-        0
+        1
       ],
-      "sessions": 0,
-      "coverage": {}
+      "sessions": 1,
+      "coverage": {
+        "end": 1,
+        "price": 1,
+        "level": 0,
+        "venue": 1,
+        "city": 1,
+        "surface": 1,
+        "type": 1,
+        "capacity": 0,
+        "spotsLeft": 0,
+        "signup": 1
+      }
     },
     "volleyworld": {
       "counts": [
@@ -216,7 +227,7 @@
         3,
         3,
         3,
-        3,
+        4,
         4,
         4,
         4,
@@ -755,7 +766,7 @@
       "counts": [
         36,
         36,
-        36,
+        35,
         35,
         35,
         35,
@@ -828,7 +839,7 @@
       "counts": [
         23,
         23,
-        23,
+        21,
         21,
         21,
         21,
@@ -926,7 +937,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 650
+      "failStreak": 651
     },
     "dallas-reclub": {
       "counts": [
@@ -1073,11 +1084,11 @@
     },
     "houston-reclub": {
       "counts": [
-        19,
         20,
         23,
         23,
         25,
+        21,
         21,
         21,
         21,
@@ -1128,6 +1139,14 @@
         "isPast",
         "keywordSearch",
         "matchConfig",
+        "matchConfig.limitRounds",
+        "matchConfig.participantIds[]",
+        "matchConfig.prioritizeLeastMatches",
+        "matchConfig.rankingCriteria",
+        "matchConfig.scheme",
+        "matchConfig.sublocations[]",
+        "matchConfig.teamIds[]",
+        "matchConfig.totalSetPoints",
         "maxSportLevelValue",
         "minSportLevelId",
         "minSportLevelValue",
@@ -1174,19 +1193,6 @@
         "sport.name",
         "sport.setsTerm",
         "sport.slug",
-        "sport.stats[]",
-        "sport.stats[].category",
-        "sport.stats[].formula",
-        "sport.stats[].id",
-        "sport.stats[].key",
-        "sport.stats[].measurementUnit",
-        "sport.stats[].order",
-        "sport.stats[].pointValue",
-        "sport.stats[].rankValue",
-        "sport.stats[].scope",
-        "sport.stats[].sportId",
-        "sport.stats[].type",
-        "sport.stats[].unit",
         "sport.sublocationType",
         "sport.validTeamSizes[]",
         "sportConfig",

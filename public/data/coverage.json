@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T18:13:27.790Z",
+ "generatedAt": "2026-11-25T22:15:40.049Z",
  "regions": [
   {
    "id": "austin",
@@ -45,7 +45,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 90,
+     "sessions": 89,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 90,
+     "sessions": 89,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 85,
+     "sessions": 83,
      "pinned": true,
      "booking": true,
      "via": [
@@ -257,6 +257,18 @@
      "booking": false,
      "via": [
       "manual"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Holy Pickle",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": true,
+     "via": [
+      "holy-pickle"
      ],
      "lead": false
     },
