@@ -78,6 +78,14 @@
         "ava-adult-open-play": {
           "on": "2026-11-18",
           "reason": "266 km away"
+        },
+        "hoh-sports": {
+          "on": "2026-11-25",
+          "reason": "222 km away"
+        },
+        "com-regular-players": {
+          "on": "2026-11-25",
+          "reason": "sport is pickleball"
         }
       },
       "meets": {
@@ -106,7 +114,13 @@
         "R7S3C8": "legends-volleyball-club",
         "D94AOC": "ava-adult-open-play",
         "J865S2": "ava-adult-open-play",
-        "8SEGUZ": "ava-adult-open-play"
+        "8SEGUZ": "ava-adult-open-play",
+        "O2M0TF": "hoh-sports",
+        "8PSJSP": "hoh-sports",
+        "23CQE9": "com-regular-players",
+        "A7ELRX": "com-regular-players",
+        "V8SSG9": "com-regular-players",
+        "PPTCRY": "willow-meadows-open-play"
       }
     },
     "dallas": {
@@ -181,6 +195,14 @@
         "com-regular-players": {
           "on": "2026-11-18",
           "reason": "sport is pickleball"
+        },
+        "hoh-sports": {
+          "on": "2026-11-25",
+          "reason": "357 km away"
+        },
+        "fort-bend-county-sportshub": {
+          "on": "2026-11-25",
+          "reason": "372 km away"
         }
       },
       "meets": {
@@ -208,14 +230,19 @@
         "8SEGUZ": "ava-adult-open-play",
         "XD048Y": "com-regular-players",
         "C218PM": "com-regular-players",
-        "CHQUMW": "com-regular-players"
+        "CHQUMW": "com-regular-players",
+        "O2M0TF": "hoh-sports",
+        "8PSJSP": "hoh-sports",
+        "PPTCRY": "willow-meadows-open-play",
+        "7R7VG2": "fort-bend-county-sportshub",
+        "UHR2EB": "fort-bend-county-sportshub"
       }
     },
     "houston": {
       "queries": {
         "site:reclub.co volleyball Houston": {
-          "lastRun": "2026-11-15",
-          "empty": 0,
+          "lastRun": "2026-11-25",
+          "empty": 1,
           "lastFound": "2026-11-15"
         },
         "site:reclub.co volleyball \"Houston, Tx\"": {
@@ -235,8 +262,8 @@
           "empty": 1
         },
         "site:reclub.co volleyball \"open gym\" Houston": {
-          "lastRun": "2026-11-15",
-          "empty": 0,
+          "lastRun": "2026-11-25",
+          "empty": 1,
           "lastFound": "2026-11-15"
         }
       },
@@ -249,7 +276,8 @@
         "htx-volleyball": "2026-11-15",
         "blastros-sand-volleyball": "2026-11-15",
         "the-volleyball-hangout": "2026-11-15",
-        "hfbc-wednesday-night-volleyball": "2026-11-18"
+        "hfbc-wednesday-night-volleyball": "2026-11-18",
+        "hoh-sports": "2026-11-25"
       },
       "skipped": {
         "the-coresportsplex": {
@@ -283,7 +311,10 @@
         "9QFCTQ": "the-volleyball-hangout",
         "6AL5A9": "the-volleyball-hangout",
         "6TSHGM": "the-volleyball-hangout",
-        "X8HWS8": "hfbc-wednesday-night-volleyball"
+        "X8HWS8": "hfbc-wednesday-night-volleyball",
+        "O2M0TF": "hoh-sports",
+        "8PSJSP": "hoh-sports",
+        "PPTCRY": "willow-meadows-open-play"
       }
     }
   }
