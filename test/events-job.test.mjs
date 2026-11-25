@@ -93,3 +93,12 @@ test('events job: given only fetch, it reads everything through it (the replay p
   assert.ok(urls.includes('https://list.test/markets'));
   assert.ok(urls.some((u) => u.includes('graph.facebook.com')), 'the accounts in config/instagram.json');
 });
+
+test('events job: the token is the only secret; the account id comes from config/instagram.json', async () => {
+  const { dataDir, failuresDir } = dirs();
+  const { get, fetch } = fakes();
+  const asked = [];
+  const igGet = async (url, o) => { if (url.includes('graph.facebook.com')) { asked.push(url); return { ok: true, status: 200, text: JSON.stringify({ business_discovery: { media: { data: [] } } }) }; } return get(url, o); };
+  await runEventsJob({ ...quiet, get: igGet, fetch, now: NOW, dataDir, failuresDir, env: { IG_ACCESS_TOKEN: 't' }, igConfig: () => ({ igUserId: '17841416933094467', accounts: [{ handle: 'someorg' }] }) });
+  assert.ok(asked.some((u) => u.startsWith('https://graph.facebook.com/v26.0/17841416933094467?')), asked.join('\n'));
+});
