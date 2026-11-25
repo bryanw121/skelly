@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-25T17:35:54.638Z",
+  "generatedAt": "2026-11-25T17:38:44.845Z",
   "region": {
     "id": "austin",
     "name": "Austin, TX",
@@ -17,7 +17,7 @@
       "kind": "OpenPlay club directory",
       "site": "https://openplaymap.com/open-play/austin",
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:43.766Z",
+      "checkedAt": "2026-11-25T17:36:35.316Z",
       "count": 265
     },
     {
@@ -30,7 +30,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/austinpicklehaus",
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:43.768Z",
+      "checkedAt": "2026-11-25T17:36:35.317Z",
       "count": 97
     },
     {
@@ -43,7 +43,7 @@
       "kind": "OpenCourt booking calendar",
       "site": "https://app.getopencourt.com/club/holy-pickle",
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:43.768Z",
+      "checkedAt": "2026-11-25T17:36:35.318Z",
       "count": 0
     },
     {
@@ -56,7 +56,7 @@
       "kind": "Venue's schedule page",
       "site": "https://app.arketa.co/iframe/volleyworld/schedule",
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:43.768Z",
+      "checkedAt": "2026-11-25T17:36:35.318Z",
       "count": 11
     },
     {
@@ -69,7 +69,7 @@
       "kind": "Venue's schedule page",
       "site": "https://goteamup.com/w9142954/p/9142954-atx-beach/memberships/223927/",
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:43.770Z",
+      "checkedAt": "2026-11-25T17:36:35.321Z",
       "count": 2
     },
     {
@@ -82,7 +82,7 @@
       "kind": "Venue's schedule page",
       "site": "https://www.austinvelocity.com",
       "ok": true,
-      "checkedAt": "2026-11-25T02:13:31.899Z",
+      "checkedAt": "2026-11-25T17:36:35.323Z",
       "count": 1
     },
     {
@@ -109,7 +109,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:43.772Z",
+      "checkedAt": "2026-11-25T17:36:35.660Z",
       "count": 4
     },
     {
@@ -136,7 +136,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:44.118Z",
+      "checkedAt": "2026-11-25T17:36:36.486Z",
       "count": 2
     },
     {
@@ -155,7 +155,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:45.245Z",
+      "checkedAt": "2026-11-25T17:36:37.164Z",
       "count": 2
     },
     {
@@ -174,7 +174,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:45.760Z",
+      "checkedAt": "2026-11-25T17:36:37.485Z",
       "count": 2
     },
     {
@@ -193,7 +193,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:45.842Z",
+      "checkedAt": "2026-11-25T17:36:37.756Z",
       "count": 10
     },
     {
@@ -206,7 +206,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://apps.daysmartrecreation.com/dash/x/chaparralice/calendar?location=1&start={date}&end={date}&event_type={eventType}",
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:46.086Z",
+      "checkedAt": "2026-11-25T17:36:38.196Z",
       "count": 35
     },
     {
@@ -219,7 +219,7 @@
       "kind": "Rink schedule (DaySmart)",
       "site": "https://iceandfield.com/public-skating/",
       "ok": true,
-      "checkedAt": "2026-11-25T17:33:46.830Z",
+      "checkedAt": "2026-11-25T17:36:38.312Z",
       "count": 21
     },
     {
@@ -232,8 +232,8 @@
       "kind": "City parks schedule",
       "site": "https://www.austintexas.gov/parks/alamo-recreation-center",
       "ok": true,
-      "checkedAt": "2026-11-25T02:13:37.705Z",
-      "count": 9,
+      "checkedAt": "2026-11-25T17:36:40.730Z",
+      "count": 8,
       "warnings": [
         "City pickleball review due by 2026-11-30; check venue schedules and holiday holds before extending."
       ]
@@ -248,7 +248,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-25T17:33:48.689Z",
+      "checkedAt": "2026-11-25T17:36:42.873Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
@@ -10257,7 +10257,7 @@
       "sport": "volleyball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "venueId": "crossover",
       "status": "scheduled"
     },
@@ -12306,7 +12306,7 @@
       "sourceId": "austin-city-pickleball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "venueId": "austin-montopolis-rec",
       "status": "scheduled"
     },
@@ -12333,7 +12333,7 @@
       "sourceId": "austin-city-pickleball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "venueId": "austin-montopolis-rec",
       "status": "scheduled"
     },
@@ -12360,7 +12360,7 @@
       "sourceId": "austin-city-pickleball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "venueId": "austin-northwest-rec",
       "status": "scheduled"
     },
@@ -12387,7 +12387,7 @@
       "sourceId": "austin-city-pickleball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "venueId": "austin-northwest-rec",
       "status": "scheduled"
     },
@@ -12414,7 +12414,7 @@
       "sourceId": "austin-city-pickleball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "venueId": "austin-dove-springs-rec",
       "status": "scheduled"
     },
@@ -12441,7 +12441,7 @@
       "sourceId": "austin-city-pickleball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "venueId": "austin-dove-springs-rec",
       "status": "scheduled"
     },
@@ -12468,7 +12468,7 @@
       "sourceId": "austin-city-pickleball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "venueId": "austin-gus-garcia-rec",
       "status": "scheduled"
     },
@@ -12495,7 +12495,7 @@
       "sourceId": "austin-city-pickleball",
       "region": "austin",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "venueId": "austin-gus-garcia-rec",
       "status": "scheduled"
     },
