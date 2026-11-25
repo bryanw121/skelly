@@ -103,16 +103,32 @@ test('events job: the token is the only secret; the account id comes from config
   assert.ok(asked.some((u) => u.startsWith('https://graph.facebook.com/v26.0/17841416933094467?')), asked.join('\n'));
 });
 
-test('events job: at most AVATARS_PER_RUN profile pictures are looked up per run', async () => {
-  const { AVATARS_PER_RUN } = await import('../lib/events-job.js');
+test('events job: discovered accounts are read in a rotation, placed where their events are, and the rest get pictures', async () => {
+  const { AVATARS_PER_RUN, IG_ACCOUNTS_PER_RUN } = await import('../lib/events-job.js');
   const { dataDir, failuresDir } = dirs();
   const { mkdirSync } = await import('node:fs');
   mkdirSync(dataDir, { recursive: true });
-  const handles = Array.from({ length: AVATARS_PER_RUN + 10 }, (_, i) => `org${i}`);
-  writeFileSync(join(dataDir, 'events.json'), JSON.stringify({ events: handles.map((h, i) => ({ id: `e${i}`, title: `Event ${i}`, startDate: '2026-12-01', source: `Instagram @${h}` })) }));
+  const n = IG_ACCOUNTS_PER_RUN + AVATARS_PER_RUN + 5;
+  const handles = Array.from({ length: n }, (_, i) => `org${String(i).padStart(3, '0')}`);
+  const events = handles.map((h, i) => ({ id: `e${i}`, title: `Event ${i}`, startDate: '2026-12-01', source: `Instagram @${h}`, region: 'dallas', city: 'Plano' }));
+  writeFileSync(join(dataDir, 'events.json'), JSON.stringify({ events }));
   const { get, fetch } = fakes();
-  const asked = new Set();
-  const igGet = async (url, o) => { if (url.includes('graph.facebook.com')) { const m = decodeURIComponent(url).match(/username\(([^)]+)\)/); asked.add(m[1]); return { ok: true, status: 200, text: JSON.stringify({ business_discovery: {} }) }; } return get(url, o); };
-  await runEventsJob({ ...quiet, get: igGet, fetch, now: NOW, dataDir, failuresDir, env: { IG_ACCESS_TOKEN: 't' }, igConfig: () => ({ igUserId: '1', accounts: [] }) });
-  assert.equal(asked.size, AVATARS_PER_RUN);
+  const posts = [], pics = [];
+  const caption = 'Holiday Market\nDec 6 at Legacy Hall';
+  const igGet = async (url, o) => {
+    if (!url.includes('graph.facebook.com')) return get(url, o);
+    const u = decodeURIComponent(url);
+    const h = u.match(/username\(([^)]+)\)/)[1];
+    (u.includes('media.limit') ? posts : pics).push(h);
+    return { ok: true, status: 200, text: JSON.stringify({ business_discovery: { name: h, media: { data: h === 'org000' ? [{ caption, permalink: 'https://www.instagram.com/p/x/', timestamp: '2026-11-24T00:00:00+0000' }] : [] } } }) };
+  };
+  const { feed } = await runEventsJob({ ...quiet, get: igGet, fetch, now: NOW, dataDir, failuresDir, env: { IG_ACCESS_TOKEN: 't' }, igConfig: () => ({ igUserId: '1', region: 'austin', city: 'Austin', accounts: [] }) });
+  assert.equal(posts.length, IG_ACCOUNTS_PER_RUN);
+  assert.equal(pics.length, AVATARS_PER_RUN, 'pictures only for accounts not read this run');
+  assert.ok(pics.every((h) => !posts.includes(h)));
+  const found = feed.events.find((e) => e.sourceId === 'instagram');
+  assert.deepEqual([found.region, found.city], ['dallas', 'Plano'], 'placed where its events are, not in Austin');
+  // The next run reads the ones left over first.
+  const reads = JSON.parse(readFileSync(join(dataDir, 'instagram-reads.json'), 'utf8'));
+  assert.equal(Object.keys(reads).length, IG_ACCOUNTS_PER_RUN);
 });
