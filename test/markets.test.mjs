@@ -99,3 +99,18 @@ test('unlistedMarkets: weekly-sounding markets without hours, for the "Hours not
   assert.deepEqual(out.map((m) => [m.name, m.url ?? null, m.city]), [['Lakeline Farmers Market', null, 'Austin'], ['Sunset Valley Farmers Market', 'https://sunsetvalleyfarmersmarket.org/', 'Austin']]);
   assert.deepEqual(Object.keys(out[0]).sort(), ['city', 'id', 'lat', 'lng', 'name', 'region']);
 });
+
+test('readMarkets stops asking Overpass once its time budget is spent; those regions keep their last answer', async () => {
+  const { readMarkets } = await import('../lib/markets.js');
+  let t = 0;
+  const clock = () => t;
+  const asked = [];
+  // Each request "takes" 50 s and times out.
+  const fetch = async (url) => { asked.push(url); t += 50000; throw new Error('timeout'); };
+  const regions = [{ id: 'a', center: [30, -97], radiusKm: 10 }, { id: 'b', center: [32, -96], radiusKm: 10 }];
+  const kept = { b: { at: new Date(0).toISOString(), elements: [] } };
+  const r = await readMarkets(regions, { today: '2026-11-25', now: 864e5 * 2, cache: kept, fetch, clock, budgetMs: 120000, timeoutMs: 45000 });
+  assert.equal(asked.length, 3, 'three tries fit in 120 s at 50 s each, then nothing more');
+  assert.ok(asked.every((u) => !u.includes('b')), 'region b never asked');
+  assert.deepEqual(r.cache.b, kept.b);
+});
