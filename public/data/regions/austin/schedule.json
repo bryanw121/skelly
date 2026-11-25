@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-25T18:00:05.000Z",
+  "generatedAt": "2026-11-25T18:13:24.653Z",
   "region": {
     "id": "austin",
     "name": "Austin, TX",
@@ -248,7 +248,7 @@
       "kind": "City parks schedule",
       "site": "https://parks.georgetown.org/?p=18244",
       "ok": false,
-      "checkedAt": "2026-11-25T17:58:08.555Z",
+      "checkedAt": "2026-11-25T18:13:23.657Z",
       "failingSince": "2026-11-15T16:13:18.374Z",
       "error": "fetch failed",
       "kept": 0
