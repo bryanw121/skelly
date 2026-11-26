@@ -1,0 +1,166 @@
+{
+ "recordedAt": "2026-11-26T01:06:37.002Z",
+ "meta": {
+  "unit": "events:allevents-fort-worth",
+  "now": "2026-11-26T01:06:37.002Z",
+  "count": 147
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://allevents.in/fort-worth/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "596eff52903f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/fort-worth/craft-fairs",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "382f9f1e7199.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/fort-worth/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "7723003687ea.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/fort-worth/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "0dbd80275d08.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/fort-worth/shopping",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c520e8ab8e97.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/fort-worth/night-market",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "fed8902d65dd.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/fort-worth/festivals",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "8972dddefb9f.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/lewisville/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "919cb8adb16b.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/lewisville/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ce8fe6095f4a.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/lewisville/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "e79ac7a12ac8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/denton/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "54dea9844467.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/denton/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "58b141e96f76.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/denton/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "7b89b08ed030.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/arlington-tx/markets",
+   "finalUrl": "https://allevents.in/arlington/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "2b5ba739438b.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/arlington-tx/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "ddaff855bb73.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/arlington-tx/pop-up",
+   "finalUrl": "https://allevents.in/arlington/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "0356ca09d33e.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/garland/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "539f1da9ee56.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/garland/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "cda43e6f40f7.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/garland/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "7007f0cc7697.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/richardson/markets",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "c32751dbbd49.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/richardson/christmas",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "705f475a42f3.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://allevents.in/richardson/pop-up",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "32a137e39b9a.html"
+  }
+ ]
+}

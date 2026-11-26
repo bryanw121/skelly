@@ -1,0 +1,24 @@
+{
+ "recordedAt": "2026-11-26T01:06:37.002Z",
+ "meta": {
+  "unit": "events:visit-dfw",
+  "now": "2026-11-26T01:06:37.002Z",
+  "count": 17
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "url": "https://events.visitplano.com/",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "5d452d1636d8.html"
+  },
+  {
+   "method": "GET",
+   "url": "https://www.fortworth.com/events/",
+   "status": 200,
+   "contentType": "text/html",
+   "body": "3c1e8bd71cb1.html"
+  }
+ ]
+}
