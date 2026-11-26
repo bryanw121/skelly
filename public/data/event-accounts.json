@@ -675,10 +675,11 @@
  },
  "jazzystacos": {
   "events": [
-   "evt-2b84f18e6ec03f2f"
+   "evt-2b84f18e6ec03f2f",
+   "evt-faf7068537f36ef2"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-25"
  },
  "2hermanoscocinalatina": {
   "events": [
@@ -999,10 +1000,13 @@
  },
  "her_market_htx": {
   "events": [
-   "evt-2172dfd1d6dcd3c5"
+   "evt-2172dfd1d6dcd3c5",
+   "evt-dfd844e1751caf77",
+   "evt-c24598c290045d31",
+   "evt-2053077468006af2"
   ],
   "first": "2026-11-23",
-  "last": "2026-11-23"
+  "last": "2026-11-25"
  },
  "matchachachatx": {
   "events": [
@@ -1189,10 +1193,11 @@
  },
  "honeyhillmarket": {
   "events": [
-   "evt-c0e74a0fb01bb665"
+   "evt-c0e74a0fb01bb665",
+   "evt-2e98e841e84b698f"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-24"
+  "last": "2026-11-25"
  },
  "morimatcha_": {
   "events": [
@@ -1557,6 +1562,141 @@
  "undergroundmrkt": {
   "events": [
    "evt-b9c88f3e13572ca3"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "friscosquare": {
+  "events": [
+   "evt-ea4d44e6f8621ef1",
+   "evt-862e8c276564d971",
+   "evt-613dce12090c1c3c"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "texaschristkindlmarket": {
+  "events": [
+   "evt-7233d7ba3bd8eb67"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "thestarinfrisco": {
+  "events": [
+   "evt-fe5be048b1433530",
+   "evt-eb08326f9833ac84",
+   "evt-faa73660e7cea283"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "discoverygreen": {
+  "events": [
+   "evt-f6182acae93055d1",
+   "evt-7aab5901b65cc719",
+   "evt-60e98edcf051741a",
+   "evt-42b2fa212c7555b1",
+   "evt-7f6a216ef325395e",
+   "evt-244f168efa9e9fe4",
+   "evt-9fef7d4a4cd8876f"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "popupmarketdtx": {
+  "events": [
+   "evt-78cc843dfd2a65b9"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "posthtx": {
+  "events": [
+   "evt-5dd02b97d3f4b2fb",
+   "evt-6b1ae30b68aabf67",
+   "evt-12a8da4180953706"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "marketspacevendorevents": {
+  "events": [
+   "evt-f637f6662ad026c4",
+   "evt-b7b54cddc3fff207",
+   "evt-d4423c1feb61c9c7",
+   "evt-3f46b6aaa86a6217",
+   "evt-11902e353cd1e6be",
+   "evt-72ef34eaccf63886",
+   "evt-d312f23a38d8230f"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "trinitygroves": {
+  "events": [
+   "evt-fe31d6f9806d9243",
+   "evt-3c0d6a8f75540310",
+   "evt-fbbfe7036c957f4d",
+   "evt-26f0a59e51d2ae2e"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "feelgoodgrp": {
+  "events": [
+   "evt-986c36a9d6255eab",
+   "evt-cb5d13fe2165362d",
+   "evt-f8eda4028aacd516",
+   "evt-9b23f34c74942e72",
+   "evt-461948249bae7587",
+   "evt-124ba74de83fded2",
+   "evt-ca91f2ec80e724b0",
+   "evt-5fd7ce40a79b0af0"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "asiasocietytx": {
+  "events": [
+   "evt-acf33e685f9beb41"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "thehilldallas": {
+  "events": [
+   "evt-b60c6ce4c88ba6c0",
+   "evt-ec49f1addfeb3d61",
+   "evt-5c949160a7c5e807"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "fairparkdallas": {
+  "events": [
+   "evt-50a466a9d9d3482a"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "austinartisanmarket": {
+  "events": [
+   "evt-243efbee9bbc426f"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "citylinedfw": {
+  "events": [
+   "evt-7ab8815bfb595797"
+  ],
+  "first": "2026-11-25",
+  "last": "2026-11-25"
+ },
+ "mktheights": {
+  "events": [
+   "evt-6119ecf46a902ba5"
   ],
   "first": "2026-11-25",
   "last": "2026-11-25"

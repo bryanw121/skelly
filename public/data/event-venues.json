@@ -1136,8 +1136,10 @@
     "lastTried": "2026-11-20T23:39:42.088Z"
   },
   "burnett park": {
-    "unresolved": true,
-    "lastTried": "2026-11-20T23:39:43.189Z"
+    "lat": 32.75045,
+    "lng": -97.3337,
+    "located": "source",
+    "matched": null
   },
   "north star community center, 2209 bellatrix dr": {
     "lat": 32.98773,
@@ -5392,6 +5394,524 @@
   "hanovers draught haus, 108 east main street": {
     "lat": 30.44083,
     "lng": -97.61954,
+    "located": "source",
+    "matched": null
+  },
+  "frisco square": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:47.876Z"
+  },
+  "texas christkindl market": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:47.879Z"
+  },
+  "tostitos championship plaza at the star": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:47.879Z"
+  },
+  "landmark bar": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:47.879Z"
+  },
+  "universal kids resort, 1 universal pkwy": {
+    "lat": 33.19227,
+    "lng": -96.8342,
+    "located": "source",
+    "matched": null
+  },
+  "assembly park, 1717 east spring creek parkway, plano 75074": {
+    "lat": 33.05881,
+    "lng": -96.6877,
+    "located": "source",
+    "matched": null
+  },
+  "212 n oklahoma dr celina, tx 75009 | little wooden penguin": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:48.033Z"
+  },
+  "second rodeo brewing, 122 east exchange avenue": {
+    "lat": 32.78834,
+    "lng": -97.34777,
+    "located": "source",
+    "matched": null
+  },
+  "truck yard fort worth, 3101 prairie vista drive": {
+    "lat": 32.90992,
+    "lng": -97.31205,
+    "located": "source",
+    "matched": null
+  },
+  "truck yard richardson, 740 s. central expy": {
+    "lat": 32.94329,
+    "lng": -96.74249,
+    "located": "source",
+    "matched": null
+  },
+  "lexus box garden at legacy hall, 7800 windrose ave, plano": {
+    "lat": 33.08316,
+    "lng": -96.82586,
+    "located": "source",
+    "matched": null
+  },
+  "sea life grapevine, 3000 grapevine mills pkwy": {
+    "lat": 32.96603,
+    "lng": -97.04181,
+    "located": "source",
+    "matched": null
+  },
+  "mic drop comedy plano, 7301 lone star dr., suite a-110 plano tx 75024": {
+    "lat": 33.07873,
+    "lng": -96.8232,
+    "located": "source",
+    "matched": null
+  },
+  "red tail pavilion, 2801 e spring creek pkwy, plano, tx": {
+    "lat": 33.05307,
+    "lng": -96.6731,
+    "located": "source",
+    "matched": null
+  },
+  "blue mesa grill, 8200 dallas pkwy, plano, tx": {
+    "lat": 33.08958,
+    "lng": -96.82158,
+    "located": "source",
+    "matched": null
+  },
+  "the capital grille, 7300 dallas parkway, plano, tx": {
+    "lat": 33.07889,
+    "lng": -96.8235,
+    "located": "source",
+    "matched": null
+  },
+  "coco beach, 1032 e. 15th street, plano": {
+    "lat": 33.0195,
+    "lng": -96.6994,
+    "located": "source",
+    "matched": null
+  },
+  "eddie v's prime plano/frisco, 5300 tx-121, plano, tx": {
+    "lat": 33.09515,
+    "lng": -96.80662,
+    "located": "source",
+    "matched": null
+  },
+  "maggiano's little italy, 6001 w. park blvd, plano, tx": {
+    "lat": 33.02849,
+    "lng": -96.83024,
+    "located": "source",
+    "matched": null
+  },
+  "mignon, 4005 preston rd., ste 518, plano, tx": {
+    "lat": 33.05076,
+    "lng": -96.79537,
+    "located": "source",
+    "matched": null
+  },
+  "copper creek at dallas/plano marriott at legacy town center, 7121 bishop road": {
+    "lat": 33.07428,
+    "lng": -96.8222,
+    "located": "source",
+    "matched": null
+  },
+  "renaissance dallas at plano legacy west hotel, 6007 legacy drive, plano, tx": {
+    "lat": 33.07842,
+    "lng": -96.82735,
+    "located": "source",
+    "matched": null
+  },
+  "shala yoga loft, 1021 e 15th street, plano": {
+    "lat": 33.01988,
+    "lng": -96.70006,
+    "located": "source",
+    "matched": null
+  },
+  "post, 401 franklin st": {
+    "lat": 29.76538,
+    "lng": -95.36623,
+    "located": "address",
+    "matched": "401 FRANKLIN ST, HOUSTON, TX, 77002"
+  },
+  "red mill museum village | clinton, nj": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:50.325Z"
+  },
+  "the lawn at post, 401 franklin st": {
+    "lat": 29.76538,
+    "lng": -95.36623,
+    "located": "address",
+    "matched": "401 FRANKLIN ST, HOUSTON, TX, 77002"
+  },
+  "the red mill": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:51.516Z"
+  },
+  "outpost at post, 401 franklin st": {
+    "lat": 29.76538,
+    "lng": -95.36623,
+    "located": "address",
+    "matched": "401 FRANKLIN ST, HOUSTON, TX, 77002"
+  },
+  "3011 gulden ln, dallas, tx": {
+    "lat": 32.77943,
+    "lng": -96.82777,
+    "located": "address",
+    "matched": "3011 GULDEN LN, DALLAS, TX, 75212"
+  },
+  "trinity groves | 3011 gulden ln dallas, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:53.892Z"
+  },
+  "trinity groves": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:53.892Z"
+  },
+  "ea wealth management, 1101 east rosedale street": {
+    "lat": 32.73245,
+    "lng": -97.31334,
+    "located": "source",
+    "matched": null
+  },
+  "the park at trinity groves | 3011 gulden ln, dallas, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:53.892Z"
+  },
+  "autry park | houston, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:53.892Z"
+  },
+  "asia society texas center": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:53.892Z"
+  },
+  "three wide brewing, 16230 three wide drive": {
+    "lat": 33.03344,
+    "lng": -97.30212,
+    "located": "source",
+    "matched": null
+  },
+  "3501 harrisburg blvd, houston, tx": {
+    "lat": 29.74783,
+    "lng": -95.34041,
+    "located": "address",
+    "matched": "3501 HARRISBURG BLVD, HOUSTON, TX, 77003"
+  },
+  "ronin – harrisburg roninharrisburg": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.082Z"
+  },
+  "church of the living god pgt ft worth, 2301 evans ave,fort worth, texas": {
+    "lat": 32.71975,
+    "lng": -97.31823,
+    "located": "source",
+    "matched": null
+  },
+  "martin house brewing company, 220 south sylvania avenue": {
+    "lat": 32.7637,
+    "lng": -97.31007,
+    "located": "source",
+    "matched": null
+  },
+  "the hill": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.082Z"
+  },
+  "the hill on tuesday": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.082Z"
+  },
+  "1519 lipscomb st": {
+    "lat": 32.72726,
+    "lng": -97.33296,
+    "located": "source",
+    "matched": null
+  },
+  "213 n race st": {
+    "lat": 32.63218,
+    "lng": -97.2872,
+    "located": "source",
+    "matched": null
+  },
+  "bryant irvin rd at arborlawn dr, fort worth, tx": {
+    "lat": 32.69842,
+    "lng": -97.41165,
+    "located": "source",
+    "matched": null
+  },
+  "enter through gate 5": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.082Z"
+  },
+  "2400 w i-20 hwy": {
+    "lat": 32.67354,
+    "lng": -97.14792,
+    "located": "source",
+    "matched": null
+  },
+  "1321 west belt line road": {
+    "lat": 32.9511,
+    "lng": -96.76426,
+    "located": "source",
+    "matched": null
+  },
+  "joe t's": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.082Z"
+  },
+  "nas jrb fort worth, texas": {
+    "lat": 32.7692,
+    "lng": -97.4417,
+    "located": "source",
+    "matched": null
+  },
+  "brewer high school, 1025 west loop 820 north": {
+    "lat": 32.77952,
+    "lng": -97.47888,
+    "located": "source",
+    "matched": null
+  },
+  "diamond hill-jarvis high school, 1411 maydell st,fort worth,tx": {
+    "lat": 32.80825,
+    "lng": -97.33615,
+    "located": "source",
+    "matched": null
+  },
+  "walnut ridge baptist church, 1201 texas 360": {
+    "lat": 32.58041,
+    "lng": -97.08246,
+    "located": "source",
+    "matched": null
+  },
+  "fort worth, texas": {
+    "lat": 32.7574,
+    "lng": -97.3332,
+    "located": "source",
+    "matched": null
+  },
+  "the ironwood event center, 5501 thelin street": {
+    "lat": 32.66756,
+    "lng": -97.32755,
+    "located": "source",
+    "matched": null
+  },
+  "4601 west fwy": {
+    "lat": 32.73212,
+    "lng": -97.38875,
+    "located": "source",
+    "matched": null
+  },
+  "dripping springs distilling": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.082Z"
+  },
+  "3828 cockrell ave": {
+    "lat": 32.69253,
+    "lng": -97.35878,
+    "located": "source",
+    "matched": null
+  },
+  "the shops at clearfork, 5188 monahans avenue": {
+    "lat": 32.70982,
+    "lng": -97.39951,
+    "located": "source",
+    "matched": null
+  },
+  "wimberley town square": {
+    "lat": 29.996,
+    "lng": -98.09685,
+    "located": "source",
+    "matched": null
+  },
+  "cowtown brewing company, 1301 east belknap street": {
+    "lat": 32.76235,
+    "lng": -97.3245,
+    "located": "source",
+    "matched": null
+  },
+  "waterside shopping center, 3700 vision drive": {
+    "lat": 32.70054,
+    "lng": -97.41303,
+    "located": "source",
+    "matched": null
+  },
+  "buffalo hirsch, 206 west main street": {
+    "lat": 33.04605,
+    "lng": -96.99684,
+    "located": "source",
+    "matched": null
+  },
+  "1316 pennsylvania ave": {
+    "lat": 32.73877,
+    "lng": -97.33994,
+    "located": "source",
+    "matched": null
+  },
+  "the ice rink": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.082Z"
+  },
+  "located between cards in a box and dee lincoln prime": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.082Z"
+  },
+  "816 foch st": {
+    "lat": 32.75076,
+    "lng": -97.35682,
+    "located": "source",
+    "matched": null
+  },
+  "the star district": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.082Z"
+  },
+  "central market fort worth, 4651 west freeway": {
+    "lat": 32.7299,
+    "lng": -97.38911,
+    "located": "source",
+    "matched": null
+  },
+  "cityline december 11": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.083Z"
+  },
+  "330 sunset st": {
+    "lat": 33.22979,
+    "lng": -97.13615,
+    "located": "source",
+    "matched": null
+  },
+  "join us on december 12 from 11–3 pm": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.083Z"
+  },
+  "blue bonnet circle": {
+    "lat": 32.69942,
+    "lng": -97.35992,
+    "located": "source",
+    "matched": null
+  },
+  "panther island pavilion, 1020 w peach st": {
+    "lat": 32.75554,
+    "lng": -97.34261,
+    "located": "source",
+    "matched": null
+  },
+  "fort worth botanic garden, 2300 university dr": {
+    "lat": 32.73772,
+    "lng": -97.36442,
+    "located": "source",
+    "matched": null
+  },
+  "lizzie bee's flower shoppe, lockwood drive, richardson, tx, usa, 506 lockwood drive": {
+    "lat": 32.95245,
+    "lng": -96.73621,
+    "located": "source",
+    "matched": null
+  },
+  "nrg park, 1 nrg pkwy, houston, tx 77054": {
+    "lat": 29.68504,
+    "lng": -95.41063,
+    "located": "source",
+    "matched": null
+  },
+  "2529 hemphill st": {
+    "lat": 32.71463,
+    "lng": -97.33122,
+    "located": "source",
+    "matched": null
+  },
+  "ntx arena, frenzi, 2401 s i-35": {
+    "lat": 33.00205,
+    "lng": -96.97011,
+    "located": "source",
+    "matched": null
+  },
+  "3328 mansfield hwy": {
+    "lat": 32.6811,
+    "lng": -97.27682,
+    "located": "source",
+    "matched": null
+  },
+  "752 s knowles dr": {
+    "lat": 32.84965,
+    "lng": -97.37744,
+    "located": "source",
+    "matched": null
+  },
+  "marqe entertainment center | houston, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.083Z"
+  },
+  "nehemiah coffee co., 505 east lamar boulevard": {
+    "lat": 32.76273,
+    "lng": -97.10708,
+    "located": "source",
+    "matched": null
+  },
+  "105 s main st": {
+    "lat": 32.74308,
+    "lng": -97.32559,
+    "located": "source",
+    "matched": null
+  },
+  "martin house brewing company, 220 s sylvania ave #209": {
+    "lat": 32.76393,
+    "lng": -97.31003,
+    "located": "source",
+    "matched": null
+  },
+  "oak highlands brewery, 500 lockwood dr": {
+    "lat": 32.95229,
+    "lng": -96.73547,
+    "located": "source",
+    "matched": null
+  },
+  "3809 grand avenue": {
+    "lat": 32.7804,
+    "lng": -96.76259,
+    "located": "source",
+    "matched": null
+  },
+  "1300 dugan st": {
+    "lat": 32.73389,
+    "lng": -97.09072,
+    "located": "source",
+    "matched": null
+  },
+  "altered states wellness richardson, 212 west campbell road": {
+    "lat": 32.97632,
+    "lng": -96.7207,
+    "located": "source",
+    "matched": null
+  },
+  "harwood park, 408 s harwood st": {
+    "lat": 32.77993,
+    "lng": -96.79221,
+    "located": "source",
+    "matched": null
+  },
+  "fort worth stockyards, 131 e exchange avenue": {
+    "lat": 32.78928,
+    "lng": -97.34702,
+    "located": "source",
+    "matched": null
+  },
+  "2817 carson street": {
+    "lat": 32.80257,
+    "lng": -97.25706,
+    "located": "source",
+    "matched": null
+  },
+  "christmas": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.083Z"
+  },
+  "m-k-t heights": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T01:32:55.083Z"
+  },
+  "lakewood brewing company, executive drive, garland, tx, usa, 2302 executive dr.": {
+    "lat": 32.91262,
+    "lng": -96.63889,
     "located": "source",
     "matched": null
   }

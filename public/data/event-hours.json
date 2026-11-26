@@ -40,7 +40,7 @@
   "endTime": "15:30"
  },
  "https://allevents.in/austin/resound-illfest-pooneh-and-kutx-present-holiday-hootenanny-at-radio-east-on-12-11-and-12-12/200031080104835": {
-  "checkedAt": "2026-11-22T23:58:17.732Z"
+  "checkedAt": "2026-11-26T01:25:39.653Z"
  },
  "https://allevents.in/austin/bts-12th-annual-gumbo-cookoff/200031015597111": {
   "checkedAt": "2026-11-19T20:08:03.460Z",
@@ -691,7 +691,7 @@
   "checkedAt": "2026-11-22T18:16:26.533Z"
  },
  "https://allevents.in/austin/the-austin-stone-christmas-fest/4700031097414044": {
-  "checkedAt": "2026-11-22T23:58:17.732Z"
+  "checkedAt": "2026-11-26T01:25:39.653Z"
  },
  "https://allevents.in/austin/caribbean-food-festival-atx/100002003647798502": {
   "checkedAt": "2026-11-22T23:58:17.732Z",
@@ -1111,5 +1111,113 @@
   "checkedAt": "2026-11-25T23:06:07.548Z",
   "startTime": "15:00",
   "endTime": "19:00"
+ },
+ "https://allevents.in/austin/merry-kushmas-holiday-market/4600031127519732": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "19:00",
+  "endTime": "23:00"
+ },
+ "https://allevents.in/dallas/dallas-christmas-eve-food-truck-festival-2026/100002004248180260": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "10:00"
+ },
+ "https://allevents.in/dallas/holiday-village-with-12-local-vendors-at-marriott-dallas-uptown-tickets/80001754514646": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "11:00"
+ },
+ "https://allevents.in/dallas/dallas-land-theme-market-tickets/80003542973690": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/fort-worth/holiday-in-the-garden-sip-and-shop/200030199352133": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "10:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/fort-worth/the-un-box-pop-up-shop-at-martin-house-brewing-co/100002004550633907": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "14:00",
+  "endTime": "20:00"
+ },
+ "https://allevents.in/fort-worth/fort-worth-community-markets-annual-holiday-market-and-food-drive/200029590697708": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "10:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/fort-worth/fort-worth-the-grinch-vendor-market/100001999000516356": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "13:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/fort-worth/saved-by-the-sleigh-holiday-market/100002004550700105": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "14:00",
+  "endTime": "20:00"
+ },
+ "https://allevents.in/fort-worth/second-annual-holiday-stroll/200030951543342": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/fort-worth/sfm-holiday-market/200030951951039": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "08:00",
+  "endTime": "14:00"
+ },
+ "https://allevents.in/fort-worth/nightmare-before-christmas-spooky-southside-market/200030796148439": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "18:00",
+  "endTime": "22:00"
+ },
+ "https://allevents.in/fort-worth/fort-worth-christmas-weekend-getaway-dec-5-6th-3-spots-left/200030888234054": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "12:00"
+ },
+ "https://allevents.in/fort-worth/santas-last-stop-holiday-pop-up-truck-yard-fort-worth/100002004150564288": {
+  "checkedAt": "2026-11-26T01:25:39.653Z"
+ },
+ "https://allevents.in/fort-worth/naughty-or-nice-santa-bar-crawl-in-the-stockyards/100001999113789158": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "12:00",
+  "endTime": "19:00"
+ },
+ "https://allevents.in/fort-worth/pop-up-market-and-toy-drive-at-chaos-to-couture/200030961908412": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/fort-worth/holiday-open-house/200031134735528": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "13:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/fort-worth/save-christmas-vz-vintage-pop-up-market/100002003375205168": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "10:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/fort-worth/santas-last-stop-holiday-pop-up-second-rodeo-brewing/100002004151563276": {
+  "checkedAt": "2026-11-26T01:25:39.653Z"
+ },
+ "https://allevents.in/fort-worth/seasons-screenings-mammogram-popup-event/200031008072813": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "08:00",
+  "endTime": "15:00"
+ },
+ "https://allevents.in/fort-worth/texas-harmony-sings-at-chaos-to-coutures-pop-up-market-and-toy-drive/200031055996559": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "13:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/fort-worth/small-business-saturday-pop-up/100002004869181692": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "11:30",
+  "endTime": "14:30"
+ },
+ "https://allevents.in/fort-worth/fort-worth-holiday-market/100001998939889018": {
+  "checkedAt": "2026-11-26T01:25:39.653Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
  }
 }

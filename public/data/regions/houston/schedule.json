@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-26T01:20:25.107Z",
+  "generatedAt": "2026-11-26T01:23:42.927Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -71,7 +71,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-26T01:18:19.951Z",
+      "checkedAt": "2026-11-26T01:21:40.295Z",
       "count": 25
     },
     {
@@ -84,7 +84,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/houston-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-25T17:36:52.412Z",
+      "checkedAt": "2026-11-26T01:21:42.586Z",
       "count": 0
     },
     {
@@ -97,7 +97,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-26T01:18:20.511Z",
+      "checkedAt": "2026-11-26T01:21:45.365Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"

@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        266,
         270,
         270,
         265,
@@ -11,13 +10,14 @@
         265,
         261,
         249,
-        261
+        261,
+        254
       ],
-      "sessions": 261,
+      "sessions": 254,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.69,
+        "level": 0.7,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -30,11 +30,11 @@
     "austin-picklehaus": {
       "counts": [
         91,
-        91,
         98,
         96,
         97,
         97,
+        104,
         104,
         104,
         104,
@@ -62,7 +62,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1
@@ -196,7 +196,7 @@
     "velocity": {
       "counts": [
         2,
-        2,
+        1,
         1,
         1,
         1,
@@ -224,7 +224,7 @@
     "reclub": {
       "counts": [
         3,
-        3,
+        4,
         4,
         4,
         4,
@@ -715,7 +715,7 @@
         1,
         1,
         1,
-        1,
+        2,
         2,
         2,
         2,
@@ -918,7 +918,7 @@
         9,
         9,
         9,
-        9,
+        8,
         8
       ],
       "sessions": 8,
@@ -937,7 +937,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 653
+      "failStreak": 654
     },
     "dallas-reclub": {
       "counts": [
@@ -1084,7 +1084,6 @@
     },
     "houston-reclub": {
       "counts": [
-        23,
         25,
         21,
         21,
@@ -1093,6 +1092,7 @@
         21,
         21,
         23,
+        25,
         25
       ],
       "sessions": 25,
@@ -1303,8 +1303,8 @@
     "manual:beecave-on-ice-sun:changed:2026-11-24",
     "manual:beecave-on-ice-tue:changed:2026-11-24",
     "manual:four-seasons-ice-rodeo:changed:2026-11-24",
-    "manual:hanovers-open:changed:2026-11-18",
     "manual:hanovers-open:unverified",
+    "manual:hanovers-open:watch",
     "manual:long-center-ice-weekdays:changed:2026-11-24",
     "manual:long-center-ice-weekends:changed:2026-11-24"
   ]
