@@ -4,7 +4,7 @@ Venues the schedule sees only through groups that host there (Reclub, Sweatpals,
 
 ## Austin, TX
 
-24 venues with sessions: 22 read directly or bookable, 2 second-hand only.
+23 venues with sessions: 21 read directly or bookable, 2 second-hand only.
 
 | Venue | City | Sport | Sessions | Seen via | Pin |
 |---|---|---|---|---|---|
@@ -26,11 +26,11 @@ Venues the schedule sees only through groups that host there (Reclub, Sweatpals,
 
 | Venue | City | Sport | Sessions | Seen via | Pin |
 |---|---|---|---|---|---|
-| Collins Park | Houston | volleyball | 4 | houston-reclub | yes |
 | Champion Forest Baptist Church - Champions Campus | Houston | volleyball | 3 | houston-reclub | yes |
-| Houston Stars | Houston | volleyball | 3 | houston-reclub | yes |
+| Collins Park | Houston | volleyball | 3 | houston-reclub | yes |
 | Katy Sports Center | Houston | volleyball | 3 | houston-reclub | yes |
 | Absolute Volleyball Academy and Absolute Beach | Houston | volleyball | 2 | houston-reclub | yes |
+| Houston Stars | Houston | volleyball | 2 | houston-reclub | yes |
 | Tellepsen Family Downtown YMCA | Houston | volleyball | 2 | houston-reclub | yes |
 | Blastros | Houston | volleyball | 1 | houston-reclub | yes |
 | Emancipation Park | Houston | volleyball | 1 | houston-reclub | yes |

@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        270,
         265,
         265,
         265,
@@ -11,13 +10,14 @@
         249,
         261,
         254,
-        254
+        254,
+        262
       ],
-      "sessions": 254,
+      "sessions": 262,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.7,
+        "level": 0.69,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -29,7 +29,6 @@
     },
     "austin-picklehaus": {
       "counts": [
-        98,
         96,
         97,
         97,
@@ -38,13 +37,14 @@
         104,
         104,
         104,
-        105
+        105,
+        104
       ],
-      "sessions": 105,
+      "sessions": 104,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.87,
+        "level": 0.86,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -60,26 +60,15 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "sessions": 1,
-      "coverage": {
-        "end": 1,
-        "price": 1,
-        "level": 0,
-        "venue": 1,
-        "city": 1,
-        "surface": 1,
-        "type": 1,
-        "capacity": 0,
-        "spotsLeft": 0,
-        "signup": 1
-      }
+      "sessions": 0,
+      "coverage": {}
     },
     "volleyworld": {
       "counts": [
@@ -92,9 +81,9 @@
         11,
         11,
         11,
-        11
+        12
       ],
-      "sessions": 11,
+      "sessions": 12,
       "coverage": {
         "end": 1,
         "price": 0,
@@ -232,9 +221,9 @@
         4,
         4,
         4,
-        4
+        3
       ],
-      "sessions": 4,
+      "sessions": 3,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -424,7 +413,6 @@
         "author.featureFlags.isMembershipPaymentUpdateEmailEnabled",
         "author.featureFlags.isMobileNewExperienceCreationEnabled",
         "author.featureFlags.isNewCheckoutDesignEnabled",
-        "author.featureFlags.isSesCampaignEmailsEnabled",
         "author.featureFlags.isSmsSegmentBillingEnabled",
         "author.featureFlags.useTwilioForSmsCampaigns",
         "author.fullName",
@@ -714,7 +702,7 @@
         1,
         1,
         1,
-        1,
+        2,
         2,
         2,
         2,
@@ -773,9 +761,9 @@
         35,
         35,
         35,
-        35
+        34
       ],
-      "sessions": 35,
+      "sessions": 34,
       "coverage": {
         "end": 1,
         "price": 0,
@@ -784,7 +772,7 @@
         "city": 1,
         "surface": 1,
         "type": 1,
-        "capacity": 0.57,
+        "capacity": 0.65,
         "spotsLeft": 0,
         "signup": 1
       },
@@ -846,9 +834,9 @@
         21,
         21,
         21,
-        21
+        19
       ],
-      "sessions": 21,
+      "sessions": 19,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -937,7 +925,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 655
+      "failStreak": 656
     },
     "dallas-reclub": {
       "counts": [
@@ -1089,16 +1077,16 @@
         21,
         21,
         21,
-        21,
         23,
         25,
         25,
-        25
+        25,
+        23
       ],
-      "sessions": 25,
+      "sessions": 23,
       "coverage": {
         "end": 1,
-        "price": 0.64,
+        "price": 0.61,
         "level": 1,
         "venue": 1,
         "city": 1,
@@ -1139,14 +1127,6 @@
         "isPast",
         "keywordSearch",
         "matchConfig",
-        "matchConfig.limitRounds",
-        "matchConfig.participantIds[]",
-        "matchConfig.prioritizeLeastMatches",
-        "matchConfig.rankingCriteria",
-        "matchConfig.scheme",
-        "matchConfig.sublocations[]",
-        "matchConfig.teamIds[]",
-        "matchConfig.totalSetPoints",
         "maxSportLevelValue",
         "minSportLevelId",
         "minSportLevelValue",
@@ -1298,11 +1278,17 @@
     "manual:aces-open-wed:stale:2026-10-24",
     "manual:aces-open-wed:watch",
     "manual:beecave-on-ice-fri:changed:2026-11-24",
+    "manual:beecave-on-ice-fri:stale:2026-10-26",
     "manual:beecave-on-ice-mwth:changed:2026-11-24",
+    "manual:beecave-on-ice-mwth:stale:2026-10-26",
     "manual:beecave-on-ice-sat:changed:2026-11-24",
+    "manual:beecave-on-ice-sat:stale:2026-10-26",
     "manual:beecave-on-ice-sun:changed:2026-11-24",
+    "manual:beecave-on-ice-sun:stale:2026-10-26",
     "manual:beecave-on-ice-tue:changed:2026-11-24",
+    "manual:beecave-on-ice-tue:stale:2026-10-26",
     "manual:four-seasons-ice-rodeo:changed:2026-11-24",
+    "manual:four-seasons-ice-rodeo:stale:2026-10-26",
     "manual:hanovers-open:changed:2026-11-18",
     "manual:hanovers-open:unverified",
     "manual:long-center-ice-weekdays:changed:2026-11-24",

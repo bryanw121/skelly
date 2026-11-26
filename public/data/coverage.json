@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T02:15:54.877Z",
+ "generatedAt": "2026-11-26T10:59:59.925Z",
  "regions": [
   {
    "id": "austin",
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 105,
+     "sessions": 104,
      "pinned": true,
      "booking": true,
      "via": [
@@ -45,7 +45,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 89,
+     "sessions": 91,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 86,
+     "sessions": 90,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 79,
+     "sessions": 81,
      "pinned": true,
      "booking": true,
      "via": [
@@ -81,7 +81,7 @@
      "venue": "Chaparral Ice",
      "city": "N. Austin (Northcross)",
      "sport": "ice_skating",
-     "sessions": 35,
+     "sessions": 34,
      "pinned": true,
      "booking": false,
      "via": [
@@ -93,7 +93,7 @@
      "venue": "Ice & Field at The Crossover",
      "city": "Cedar Park",
      "sport": "ice_skating",
-     "sessions": 21,
+     "sessions": 19,
      "pinned": true,
      "booking": false,
      "via": [
@@ -117,7 +117,7 @@
      "venue": "Volleyworld (Pflugerville)",
      "city": "Pflugerville",
      "sport": "volleyball",
-     "sessions": 10,
+     "sessions": 9,
      "pinned": true,
      "booking": false,
      "via": [
@@ -131,7 +131,7 @@
      "venue": "Volleyworld (Georgetown)",
      "city": "Georgetown",
      "sport": "volleyball",
-     "sessions": 6,
+     "sessions": 7,
      "pinned": true,
      "booking": false,
      "via": [
@@ -177,18 +177,6 @@
      "lead": false
     },
     {
-     "venue": "George Morales Dove Springs Recreation Center",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "austin-city-pickleball"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Gus Garcia Recreation Center",
      "city": "Austin",
      "sport": "pickleball",
@@ -225,18 +213,6 @@
      "lead": false
     },
     {
-     "venue": "Northwest Recreation Center",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 2,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "austin-city-pickleball"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Four Seasons Hotel",
      "city": "Downtown",
      "sport": "ice_skating",
@@ -245,6 +221,18 @@
      "booking": false,
      "via": [
       "manual"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "George Morales Dove Springs Recreation Center",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "austin-city-pickleball"
      ],
      "lead": false
     },
@@ -261,14 +249,14 @@
      "lead": false
     },
     {
-     "venue": "Holy Pickle",
+     "venue": "Northwest Recreation Center",
      "city": "Austin",
      "sport": "pickleball",
      "sessions": 1,
      "pinned": true,
-     "booking": true,
+     "booking": false,
      "via": [
-      "holy-pickle"
+      "austin-city-pickleball"
      ],
      "lead": false
     },
@@ -477,18 +465,6 @@
    "name": "Houston, TX",
    "rows": [
     {
-     "venue": "Collins Park",
-     "city": "Houston",
-     "sport": "volleyball",
-     "sessions": 4,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
      "venue": "Champion Forest Baptist Church - Champions Campus",
      "city": "Houston",
      "sport": "volleyball",
@@ -501,7 +477,7 @@
      "lead": true
     },
     {
-     "venue": "Houston Stars",
+     "venue": "Collins Park",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 3,
@@ -526,6 +502,18 @@
     },
     {
      "venue": "Absolute Volleyball Academy and Absolute Beach",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Houston Stars",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 2,

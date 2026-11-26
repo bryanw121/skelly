@@ -5914,5 +5914,47 @@
     "lng": -96.63889,
     "located": "source",
     "matched": null
+  },
+  "scruffy duffies at the shops at legacy, 5865 kinkaid road #e-8, plano, tx": {
+    "lat": 33.07623,
+    "lng": -96.82258,
+    "located": "source",
+    "matched": null
+  },
+  "truluck's ocean's finest seafood & crab, 7161 bishop rd": {
+    "lat": 33.07544,
+    "lng": -96.82179,
+    "located": "source",
+    "matched": null
+  },
+  "the mistletoe mall": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T10:59:59.875Z"
+  },
+  "legacy west gather": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T10:59:59.875Z"
+  },
+  "first presbyterian church of dallas, 1835 young street, dallas// 75201": {
+    "lat": 32.77666,
+    "lng": -96.79699,
+    "located": "source",
+    "matched": null
+  },
+  "stillwater rv resort": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T10:59:59.876Z"
+  },
+  "north star amenities center": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T10:59:59.876Z"
+  },
+  "northstarfortworth": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T10:59:59.876Z"
+  },
+  "mcfly’s": {
+    "unresolved": true,
+    "lastTried": "2026-11-26T10:59:59.876Z"
   }
 }

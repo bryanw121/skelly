@@ -514,10 +514,14 @@
  },
  "liddieevents": {
   "events": [
-   "evt-f8c93637d72face2"
+   "evt-f8c93637d72face2",
+   "evt-9ddc482c5df91d13",
+   "evt-35a2f5426d952be9",
+   "evt-5224740c2ab035ff",
+   "evt-cd4130335e9166ac"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-26"
  },
  "yallabitesevents": {
   "events": [
@@ -653,10 +657,12 @@
  },
  "localvendormarket": {
   "events": [
-   "evt-68c6747f5e2a208b"
+   "evt-68c6747f5e2a208b",
+   "evt-c88be16421feccb2",
+   "evt-14ac51eb5d37193b"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-26"
  },
  "himoricafe.htx": {
   "events": [
@@ -869,10 +875,11 @@
  },
  "lovelifeandpizza": {
   "events": [
-   "evt-1a1c6ab3aeec9298"
+   "evt-1a1c6ab3aeec9298",
+   "evt-0c120005691b5be1"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-26"
  },
  "whitneymadeit_2": {
   "events": [
@@ -1524,10 +1531,12 @@
  },
  "legacywestplano": {
   "events": [
-   "evt-3c344bc5a6667f2d"
+   "evt-3c344bc5a6667f2d",
+   "evt-3819a20b8c1fdc6c",
+   "evt-942a247f753520ed"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "happily_ever_sip_and_shop": {
   "events": [
