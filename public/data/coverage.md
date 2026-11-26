@@ -22,7 +22,7 @@ Venues the schedule sees only through groups that host there (Reclub, Sweatpals,
 
 ## Houston, TX
 
-11 venues with sessions: 0 read directly or bookable, 11 second-hand only.
+12 venues with sessions: 0 read directly or bookable, 12 second-hand only.
 
 | Venue | City | Sport | Sessions | Seen via | Pin |
 |---|---|---|---|---|---|
@@ -31,10 +31,11 @@ Venues the schedule sees only through groups that host there (Reclub, Sweatpals,
 | Houston Stars | Houston | volleyball | 3 | houston-reclub | yes |
 | Katy Sports Center | Houston | volleyball | 3 | houston-reclub | yes |
 | Absolute Volleyball Academy and Absolute Beach | Houston | volleyball | 2 | houston-reclub | yes |
+| Tellepsen Family Downtown YMCA | Houston | volleyball | 2 | houston-reclub | yes |
+| Blastros | Houston | volleyball | 1 | houston-reclub | yes |
 | Emancipation Park | Houston | volleyball | 1 | houston-reclub | yes |
 | Skyline Volleyball Academy | Houston | volleyball | 1 | houston-reclub | yes |
 | T4 Court Rentals | Houston | volleyball | 1 | houston-reclub | yes |
-| Tellepsen Family Downtown YMCA | Houston | volleyball | 1 | houston-reclub | yes |
 | The Zone | Houston | volleyball | 1 | houston-reclub | yes |
 | Third Coast Volleyball Club | Houston | volleyball | 1 | houston-reclub | yes |
 

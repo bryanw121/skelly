@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-25T23:06:05.982Z",
+  "generatedAt": "2026-11-26T01:20:25.107Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -340,6 +340,34 @@
       "previous_starts_at": null
     },
     {
+      "id": "reclub-3CUD10",
+      "session_id": "reclub-3CUD10",
+      "source_id": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "title": "THE Blastros HTX VBALL",
+      "venue": "Blastros",
+      "city": "Houston",
+      "level": "All levels",
+      "price": "$7",
+      "starts_at": "2026-11-30T00:30:00.000Z",
+      "ends_at": "2026-11-30T04:30:00.000Z",
+      "signup_url": "https://reclub.co/m/3CUD10",
+      "signup_label": "Sign up on Reclub",
+      "note": "Hosted by HTX Volleyball, every Sunday.",
+      "canceled": false,
+      "verified_at": "2026-11-25",
+      "attributes": {
+        "surface": "indoor",
+        "type": "Open play",
+        "capacity": 32
+      },
+      "venue_id": "src-blastros",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
       "id": "reclub-3VBH4Z",
       "session_id": "reclub-3VBH4Z",
       "source_id": "houston-reclub",
@@ -476,6 +504,34 @@
         "capacity": 10
       },
       "venue_id": "src-skyline-volleyball-academy",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
+      "id": "reclub-67596L",
+      "session_id": "reclub-67596L",
+      "source_id": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "title": "YMCA Open Gym-1 court",
+      "venue": "Tellepsen Family Downtown YMCA",
+      "city": "Houston",
+      "level": "All levels",
+      "price": null,
+      "starts_at": "2026-12-02T00:00:00.000Z",
+      "ends_at": "2026-12-02T02:30:00.000Z",
+      "signup_url": "https://reclub.co/m/67596L",
+      "signup_label": "Sign up on Reclub",
+      "note": "Hosted by Houston Vball, every Tuesday.",
+      "canceled": false,
+      "verified_at": "2026-11-25",
+      "attributes": {
+        "surface": "indoor",
+        "type": "Open play",
+        "capacity": 10
+      },
+      "venue_id": "src-tellepsen-family-downtown-ymca",
       "status": "scheduled",
       "previous_starts_at": null
     },

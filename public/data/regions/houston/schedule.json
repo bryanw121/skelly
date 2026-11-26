@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-25T23:06:05.982Z",
+  "generatedAt": "2026-11-26T01:20:25.107Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -71,8 +71,8 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-25T23:03:53.146Z",
-      "count": 23
+      "checkedAt": "2026-11-26T01:18:19.951Z",
+      "count": 25
     },
     {
       "id": "houston-city-active",
@@ -97,7 +97,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-25T23:03:58.856Z",
+      "checkedAt": "2026-11-26T01:18:20.511Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"
@@ -238,6 +238,33 @@
       "timezone": "America/Chicago",
       "verifiedAt": "2026-11-25",
       "venueId": "src-skyline-volleyball-academy",
+      "status": "scheduled"
+    },
+    {
+      "id": "reclub-67596L",
+      "date": "2026-12-01",
+      "start": "18:00",
+      "end": "20:30",
+      "title": "YMCA Open Gym-1 court",
+      "venue": "Tellepsen Family Downtown YMCA",
+      "city": "Houston",
+      "surface": "indoor",
+      "type": "Open play",
+      "level": "All levels",
+      "price": null,
+      "note": "Hosted by Houston Vball, every Tuesday.",
+      "capacity": 10,
+      "signup": {
+        "url": "https://reclub.co/m/67596L",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/67596L",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-25",
+      "venueId": "src-tellepsen-family-downtown-ymca",
       "status": "scheduled"
     },
     {
@@ -458,6 +485,33 @@
       "status": "scheduled"
     },
     {
+      "id": "reclub-3CUD10",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "end": "22:30",
+      "title": "THE Blastros HTX VBALL",
+      "venue": "Blastros",
+      "city": "Houston",
+      "surface": "indoor",
+      "type": "Open play",
+      "level": "All levels",
+      "price": "$7",
+      "note": "Hosted by HTX Volleyball, every Sunday.",
+      "capacity": 32,
+      "signup": {
+        "url": "https://reclub.co/m/3CUD10",
+        "label": "Sign up on Reclub"
+      },
+      "source": "https://reclub.co/m/3CUD10",
+      "sourceId": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-25",
+      "venueId": "src-blastros",
+      "status": "scheduled"
+    },
+    {
       "id": "reclub-T02HQF",
       "date": "2026-11-27",
       "start": "21:00",
@@ -487,8 +541,8 @@
     {
       "id": "reclub-FDPRBZ",
       "date": "2026-11-28",
-      "start": "16:00",
-      "end": "24:00",
+      "start": "14:00",
+      "end": "22:00",
       "title": "Saturday Open Play 4x4",
       "venue": "Houston Stars",
       "city": "Houston",
@@ -509,7 +563,8 @@
       "timezone": "America/Chicago",
       "verifiedAt": "2026-11-25",
       "venueId": "src-houston-stars",
-      "status": "scheduled"
+      "status": "rescheduled",
+      "previousStart": "2026-11-28 16:00"
     },
     {
       "id": "reclub-2BBFXM",
@@ -994,6 +1049,15 @@
       "address": "15555 Stuebner Airline Road, Houston, Tx",
       "lat": 30.002792,
       "lng": -95.51335,
+      "region": "houston"
+    },
+    {
+      "id": "src-blastros",
+      "name": "Blastros",
+      "city": "Houston",
+      "address": "6922 Cotton Drive, Houston, TX 77092, USA",
+      "lat": 29.836542,
+      "lng": -95.49406,
       "region": "houston"
     },
     {

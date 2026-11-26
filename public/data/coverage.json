@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T23:13:48.825Z",
+ "generatedAt": "2026-11-26T01:20:26.690Z",
  "regions": [
   {
    "id": "austin",
@@ -42,6 +42,18 @@
      "lead": false
     },
     {
+     "venue": "Eastside Paddle Club",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 89,
+     "pinned": true,
+     "booking": true,
+     "via": [
+      "austin-club-openplay"
+     ],
+     "lead": false
+    },
+    {
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
@@ -54,22 +66,10 @@
      "lead": false
     },
     {
-     "venue": "Eastside Paddle Club",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 86,
-     "pinned": true,
-     "booking": true,
-     "via": [
-      "austin-club-openplay"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 76,
+     "sessions": 85,
      "pinned": true,
      "booking": true,
      "via": [
@@ -537,6 +537,30 @@
      "lead": true
     },
     {
+     "venue": "Tellepsen Family Downtown YMCA",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Blastros",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
      "venue": "Emancipation Park",
      "city": "Houston",
      "sport": "volleyball",
@@ -562,18 +586,6 @@
     },
     {
      "venue": "T4 Court Rentals",
-     "city": "Houston",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Tellepsen Family Downtown YMCA",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,
