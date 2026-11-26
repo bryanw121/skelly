@@ -89,6 +89,46 @@
       ]
     },
     {
+      "id": "allevents-fort-worth",
+      "name": "AllEvents",
+      "region": "dallas",
+      "_doc": "Fort Worth's own AllEvents pages (13 markets the Dallas pages didn't list, Nov 2026), and the markets, holiday and pop-up pages of Lewisville, Denton, Arlington (arlington-tx), Garland and Richardson.",
+      "urls": [
+        "https://allevents.in/fort-worth/markets",
+        "https://allevents.in/fort-worth/craft-fairs",
+        "https://allevents.in/fort-worth/pop-up",
+        "https://allevents.in/fort-worth/christmas",
+        "https://allevents.in/fort-worth/shopping",
+        "https://allevents.in/fort-worth/night-market",
+        "https://allevents.in/fort-worth/festivals",
+        "https://allevents.in/lewisville/markets",
+        "https://allevents.in/lewisville/christmas",
+        "https://allevents.in/lewisville/pop-up",
+        "https://allevents.in/denton/markets",
+        "https://allevents.in/denton/christmas",
+        "https://allevents.in/denton/pop-up",
+        "https://allevents.in/arlington-tx/markets",
+        "https://allevents.in/arlington-tx/christmas",
+        "https://allevents.in/arlington-tx/pop-up",
+        "https://allevents.in/garland/markets",
+        "https://allevents.in/garland/christmas",
+        "https://allevents.in/garland/pop-up",
+        "https://allevents.in/richardson/markets",
+        "https://allevents.in/richardson/christmas",
+        "https://allevents.in/richardson/pop-up"
+      ]
+    },
+    {
+      "id": "visit-dfw",
+      "name": "Visit Plano / Visit Fort Worth",
+      "region": "dallas",
+      "_doc": "The cities' own event calendars (schema.org Event JSON-LD); the reader keeps the markets and seasonal ones.",
+      "urls": [
+        "https://events.visitplano.com/",
+        "https://www.fortworth.com/events/"
+      ]
+    },
+    {
       "id": "allevents-houston",
       "name": "AllEvents",
       "region": "houston",
