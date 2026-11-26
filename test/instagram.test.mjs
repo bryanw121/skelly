@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, readFileSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { captionDates, captionTimes, captionVenue, discoveryUrl, handleOf, postToEvent, readInstagram } from '../lib/instagram.js';
+import { captionDates, captionTimes, captionVenue, discoveryUrl, handleOf, postToEvent, readInstagram, tryAccountsTable } from '../lib/instagram.js';
 import { saveAvatars, stampAvatars } from '../lib/avatars.js';
 import { avatarPath } from '../web/events-ui.js';
 
@@ -150,4 +150,14 @@ test('postToEvent: an account placed elsewhere keeps its own region and city', a
   assert.deepEqual([e.region, e.city], ['dallas', 'Plano']);
   const f = postToEvent(post, { handle: 'x', region: 'dallas' }, { today: '2026-11-25', region: 'austin', city: 'Austin' });
   assert.equal(f.city, null, 'no Austin city on a Dallas event');
+});
+
+test('tryAccountsTable: readable with events, unreadable, and not asked after a stop', () => {
+  const r = { events: [{ source: 'Instagram @good', startDate: '2026-12-05', title: 'Holiday | Market' }], read: ['good', 'quiet'], skipped: ['personal'], profiles: { good: { name: 'Good Market' } }, error: 'Instagram API: OAuthException 4 (rate limit: stopped after 2 account(s))' };
+  const md = tryAccountsTable(['good', 'quiet', 'personal', 'later'], r);
+  assert.match(md, /\| @good \| readable \| Good Market \| 1 \| 2026-12-05 Holiday \/ Market \|/);
+  assert.match(md, /\| @quiet \| readable \|  \| 0 \|/);
+  assert.match(md, /@personal \| not readable/);
+  assert.match(md, /@later \| not asked/);
+  assert.match(md, /Stopped: Instagram API/);
 });

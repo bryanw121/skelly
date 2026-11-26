@@ -1,0 +1,31 @@
+name: Try Instagram accounts
+
+# Manual: checks Instagram accounts as possible event sources (scripts/try-instagram.mjs), one
+# Business Discovery call each (at most 40, stopping at a rate limit). Writes nothing; the table
+# is in the run summary. Add the ones with events to config/instagram.json.
+on:
+  workflow_dispatch:
+    inputs:
+      handles:
+        description: 'Instagram usernames, separated by spaces or commas'
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  try:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Try the accounts
+        env:
+          HANDLES: ${{ inputs.handles }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: node scripts/try-instagram.mjs $HANDLES
