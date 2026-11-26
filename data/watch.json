@@ -7,8 +7,7 @@
   "https://www.planomato.com/en/austin/p/open-play-volleyball-austin": {
     "hash": "09c3a259d6699ab6",
     "changedOn": "2026-11-18",
-    "checkedAt": "2026-11-26T01:23:40.110Z",
-    "error": "HTTP 403"
+    "checkedAt": "2026-11-26T02:15:52.975Z"
   },
   "https://austinssc.leaguelab.com/leagues?sport=Sand+Volleyball": {
     "hash": "b1d25345adcf42cf",
@@ -40,13 +39,13 @@
   "https://acesintexas.com/ptx-monday-indoor-open-plays-volleyworld-pflugerville/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-26T01:23:39.495Z",
+    "checkedAt": "2026-11-26T02:15:52.138Z",
     "error": "HTTP 403"
   },
   "https://acesintexas.com/wednesday-indoor-open-plays-volleyworld-pflugerville/": {
     "hash": null,
     "changedOn": null,
-    "checkedAt": "2026-11-26T01:23:39.813Z",
+    "checkedAt": "2026-11-26T02:15:52.463Z",
     "error": "HTTP 403"
   },
   "https://thelongcenter.org/icerink/": {

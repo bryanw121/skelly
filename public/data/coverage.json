@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T01:32:55.140Z",
+ "generatedAt": "2026-11-26T02:15:54.877Z",
  "regions": [
   {
    "id": "austin",
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 104,
+     "sessions": 105,
      "pinned": true,
      "booking": true,
      "via": [
