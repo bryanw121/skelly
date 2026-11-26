@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-26T16:40:58.650014Z",
+  "generatedAt": "2026-11-26T18:15:34.598Z",
   "events": [
     {
       "id": "evt-b08715cc63748015",
@@ -122,6 +122,28 @@
       "region": "houston",
       "lat": 29.76206,
       "lng": -95.36533,
+      "located": "source",
+      "sourceId": "allevents-houston",
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "id": "evt-e1fa6e6b5f9fc0d9",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "TXU Energy presents Zoo Lights",
+      "venue": "Houston Zoo, 6200 Hermann Park Drive,Houston, Texas",
+      "city": "Houston",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-26",
+      "startTime": "17:00",
+      "endTime": "17:30",
+      "sourceUrl": "https://allevents.in/houston/txu-energy-presents-zoo-lights/200031000207530",
+      "source": "AllEvents",
+      "description": "Lighting the Way for Wildlife at TXU Energy presents Zoo Lights Date: November 19, 2026 – January 3, 2027 (Zoo Lights is closed on December 9 and Christmas Eve) Time: 5:30 – 10:30…",
+      "region": "houston",
+      "lat": 29.71466,
+      "lng": -95.38947,
       "located": "source",
       "sourceId": "allevents-houston",
       "firstSeen": "2026-11-26"
@@ -389,28 +411,6 @@
       "avatar": "avatars/tinyloafatx.jpg"
     },
     {
-      "id": "evt-57701d07f1a108bf",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "Christmas in The Square- Light Tunnel",
-      "venue": "8843 Coleman Blvd",
-      "city": "Frisco",
-      "startDate": "2026-11-22",
-      "endDate": "2026-11-30",
-      "startTime": "18:00",
-      "endTime": "18:00",
-      "sourceUrl": "https://allevents.in/frisco/christmas-in-the-square-light-tunnel/200031097712315",
-      "source": "AllEvents",
-      "description": "In partnership with the City of Frisco, the Frisco Square Property Owners Association presents the largest choreographed holiday lights and music show in North Texas.",
-      "region": "dallas",
-      "lat": 33.15179,
-      "lng": -96.83511,
-      "located": "source",
-      "sourceId": "allevents-dallas",
-      "firstSeen": "2026-11-25"
-    },
-    {
       "id": "evt-db6bcafac1f8fb16",
       "category": "asian-inspired",
       "title": "Omotenashi ATX",
@@ -469,6 +469,28 @@
       "lng": -96.76592,
       "located": "source",
       "sourceId": "allevents-dallas",
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "id": "evt-65d8d55bf5e2647b",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Trail of Cheer",
+      "venue": "1717 Scottsdale Dr",
+      "city": "Cedar Park",
+      "startDate": "2026-11-25",
+      "endDate": "2026-12-26",
+      "startTime": "11:00",
+      "endTime": "11:00",
+      "sourceUrl": "https://allevents.in/cedar-park/trail-of-cheer-free-holiday-walk-through-at-the-fieldhouse/200031121707244",
+      "source": "AllEvents",
+      "description": "🎄✨ Trail of Cheer is coming to Cedar Park on NOVEMBER 20! We've had a slight change in plans, and our FREE holiday walk-through will now officially open on **Friday, November…",
+      "region": "austin",
+      "lat": 30.54791,
+      "lng": -97.81415,
+      "located": "source",
+      "sourceId": "allevents-austin",
       "firstSeen": "2026-11-26"
     },
     {
@@ -566,7 +588,8 @@
       "id": "evt-90331fae52be00b2",
       "lat": 29.7905,
       "lng": -95.40709,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/la.crumb.jpg"
     },
     {
       "id": "evt-184674890634c0da",
@@ -974,6 +997,26 @@
       "avatar": "avatars/posthtx.jpg"
     },
     {
+      "id": "evt-8e8e273de16c9e9e",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Winter Village at The Adolphus",
+      "venue": "1321 Commerce St",
+      "city": "Dallas",
+      "startDate": "2026-11-26",
+      "sourceUrl": "https://allevents.in/dallas/winter-village-at-the-adolphus/200031140511553",
+      "source": "AllEvents",
+      "region": "dallas",
+      "lat": 32.77976,
+      "lng": -96.80053,
+      "located": "source",
+      "startTime": "17:00",
+      "endTime": "23:45",
+      "sourceId": "allevents-dallas",
+      "firstSeen": "2026-11-26"
+    },
+    {
       "id": "evt-709023761dafc67b",
       "category": "popup",
       "kind": "popup",
@@ -1191,7 +1234,8 @@
       "id": "evt-d0fa478a1f2d715b",
       "lat": 30.264557167516,
       "lng": -97.733907411093,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/cmtyproductions.jpg"
     },
     {
       "id": "evt-b1dab05835960637",
@@ -1249,7 +1293,8 @@
       "id": "evt-56ed73594408beaf",
       "lat": 30.00678,
       "lng": -95.46447,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/dearmatchahtx.jpg"
     },
     {
       "account": "elvnmatcha",
@@ -1380,7 +1425,8 @@
       "id": "evt-40bfce7a7b970cd5",
       "lat": 32.67662,
       "lng": -97.41481,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/funkytownmatcha.jpg"
     },
     {
       "id": "evt-b11b9e74bdb7aef6",
@@ -1592,6 +1638,27 @@
       "description": "Nearby Attractions Michael Martin Murphey has 2 upcoming events."
     },
     {
+      "id": "evt-b0d8c0e40e24b3c9",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "NEW THIS YEAR: Winter Village Scavenger Hunt",
+      "venue": "Red Mill Museum Village | Clinton, NJ",
+      "city": null,
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-29",
+      "startTime": "10:00",
+      "endTime": "18:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNTqTml0eK/",
+      "source": "Instagram @marketspacevendorevents",
+      "account": "marketspacevendorevents",
+      "description": "Posted by Kim & Kevin | Marketspace Vendor Events™️ on Instagram. See the post for details.",
+      "region": "dallas",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/marketspacevendorevents.jpg"
+    },
+    {
       "id": "evt-7725d71fb2c35458",
       "category": "asian-inspired",
       "title": "Oni Ko x Un Caffè Black Friday pop-up",
@@ -1772,6 +1839,27 @@
       "avatar": "avatars/marketspacevendorevents.jpg"
     },
     {
+      "id": "evt-8b481f12e8cc56d5",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "The holidays are better when you shop SMALL",
+      "venue": "Red Mill Museum Village | Clinton, NJ",
+      "city": null,
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-29",
+      "startTime": "10:00",
+      "endTime": "18:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNR7mmF_xr/",
+      "source": "Instagram @marketspacevendorevents",
+      "account": "marketspacevendorevents",
+      "description": "Posted by Kim & Kevin | Marketspace Vendor Events™️ on Instagram. See the post for details.",
+      "region": "dallas",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/marketspacevendorevents.jpg"
+    },
+    {
       "id": "evt-195a2e83811dfc6f",
       "category": "seasonal",
       "kind": "seasonal",
@@ -1848,27 +1936,6 @@
       "avatar": "avatars/tillerystplantco.jpg"
     },
     {
-      "id": "evt-b8e7164a025fb990",
-      "category": "popup",
-      "kind": "popup",
-      "tags": [],
-      "title": "We’re bringing you Brushy Street Commons’ first open air market",
-      "venue": "Brushy Street Commons, 501 Brushy St",
-      "city": "Austin",
-      "startDate": "2026-11-27",
-      "startTime": "16:00",
-      "sourceUrl": "https://www.instagram.com/p/DezaEmPRYtC/",
-      "source": "Instagram @cmtyproductions",
-      "account": "cmtyproductions",
-      "description": "Posted by Courage Moves Through You (CMTY) on Instagram. See the post for details.",
-      "region": "austin",
-      "sourceId": "instagram",
-      "lat": 30.264557167516,
-      "lng": -97.733907411093,
-      "located": "address",
-      "avatar": "avatars/cmtyproductions.jpg"
-    },
-    {
       "id": "evt-9ace9bd7bac37a5a",
       "category": "seasonal",
       "kind": "seasonal",
@@ -1912,6 +1979,29 @@
       "located": "source",
       "sourceId": "allevents-austin",
       "firstSeen": "2026-11-26"
+    },
+    {
+      "id": "evt-4097eb127e14c8b5",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "¡Que viva el folklore",
+      "venue": "Greenwood Park, 555 7th Ave, Brooklyn",
+      "city": "Austin",
+      "startDate": "2026-11-28",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNQMfVjMEF/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg",
+      "lat": 30.26748,
+      "lng": -97.73734,
+      "located": "address"
     },
     {
       "id": "evt-12a8da4180953706",
@@ -2059,20 +2149,6 @@
       "avatar": "avatars/briansbitchinbakeryofficial.jpg"
     },
     {
-      "account": "buiandco",
-      "category": "popup",
-      "city": "Frisco",
-      "description": "Small-batch jams and preserves vendor at two holiday markets: Sat Nov 28, 10am-2pm at Shop Local Holiday Market, Kaleidoscope Park, Frisco; Sun Nov 29, 12-5pm at Weiner Fest, Tupps Brewery, McKinney.",
-      "endDate": "2026-11-29",
-      "region": "dallas",
-      "source": "Instagram @buiandco",
-      "sourceUrl": "https://www.instagram.com/p/DgIsliuI-TJ/",
-      "startDate": "2026-11-28",
-      "title": "BUI & Co. Holiday Markets",
-      "venue": "Kaleidoscope Park",
-      "id": "evt-8d52aac04e793b2f"
-    },
-    {
       "account": "bodyalive.trophyclub",
       "category": "asian-inspired",
       "city": "Trophy Club",
@@ -2083,7 +2159,8 @@
       "startDate": "2026-11-28",
       "title": "BURI Matcha at Body Alive Trophy Club",
       "venue": "Body Alive, 2240 TX-114 Ste 630",
-      "id": "evt-ac1e9e12137ee2bd"
+      "id": "evt-ac1e9e12137ee2bd",
+      "avatar": "avatars/bodyalive.trophyclub.jpg"
     },
     {
       "account": "thecapricorncafe",
@@ -2099,7 +2176,8 @@
       "id": "evt-66a025a351531c14",
       "lat": 33.01929,
       "lng": -96.71391,
-      "located": "manual"
+      "located": "manual",
+      "avatar": "avatars/thecapricorncafe.jpg"
     },
     {
       "id": "evt-fe31d6f9806d9243",
@@ -2165,24 +2243,6 @@
       "sourceId": "instagram",
       "firstSeen": "2026-11-25",
       "avatar": "avatars/creationsbykaylia_.jpg"
-    },
-    {
-      "account": "mister.picoso",
-      "category": "seasonal",
-      "city": "Fort Worth",
-      "description": "Small Business Saturday market at CONNEX with local vendors; Mister Picoso's chamoy dulceria open until 5pm.",
-      "endTime": "14:00",
-      "region": "dallas",
-      "source": "Instagram @mister.picoso",
-      "sourceUrl": "https://www.instagram.com/reel/Df6FKw_yd02/",
-      "startDate": "2026-11-28",
-      "startTime": "10:00",
-      "title": "CONNEX Marketplace Small Business Saturday",
-      "venue": "CONNEX, 1201 Evans Ave Ste 102",
-      "id": "evt-6c50e635c96cd8c0",
-      "lat": 32.73153,
-      "lng": -97.31821,
-      "located": "address"
     },
     {
       "id": "evt-05860447cc215f08",
@@ -2359,6 +2419,28 @@
       "firstSeen": "2026-11-25"
     },
     {
+      "id": "evt-6c50e635c96cd8c0",
+      "category": "popup",
+      "kind": "popup",
+      "tags": [],
+      "title": "Fort Worth, shop small with us at CONNEX Marketplace this Small Business Saturda",
+      "venue": "1201 Evans Ave, Fort Worth",
+      "city": "Fort Worth",
+      "startDate": "2026-11-28",
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "sourceUrl": "https://www.instagram.com/reel/Df6FKw_yd02/",
+      "source": "Instagram @mister.picoso",
+      "account": "mister.picoso",
+      "description": "Posted by MISTER PICOSO on Instagram. See the post for details.",
+      "region": "dallas",
+      "sourceId": "instagram",
+      "lat": 32.73153,
+      "lng": -97.31821,
+      "located": "address",
+      "avatar": "avatars/mister.picoso.jpg"
+    },
+    {
       "id": "evt-5bf697f6104c6edb",
       "category": "seasonal",
       "kind": "seasonal",
@@ -2380,6 +2462,50 @@
       "located": "address",
       "price": "Free",
       "avatar": "avatars/ausforfree.jpg"
+    },
+    {
+      "id": "evt-8889102f1c3cabcf",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [
+        "asian-inspired"
+      ],
+      "title": "Fried ice cream in December",
+      "venue": "Greenwood Park, 555 7th Ave, Brooklyn",
+      "city": "Austin",
+      "startDate": "2026-11-28",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNKrOKGNmy/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg",
+      "lat": 30.26748,
+      "lng": -97.73734,
+      "located": "address"
+    },
+    {
+      "id": "evt-8d52aac04e793b2f",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "From our kitchen to yours: Happy Thanksgiving",
+      "venue": "Kaleidoscope Park",
+      "city": "Frisco",
+      "startDate": "2026-11-28",
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "sourceUrl": "https://www.instagram.com/p/DgIsliuI-TJ/",
+      "source": "Instagram @buiandco",
+      "account": "buiandco",
+      "description": "Posted by BUI & Co. | Baking Under the Influence on Instagram. See the post for details.",
+      "region": "dallas",
+      "sourceId": "instagram",
+      "avatar": "avatars/buiandco.jpg"
     },
     {
       "id": "evt-e970af1cd7975161",
@@ -2443,6 +2569,29 @@
       "sourceId": "instagram",
       "firstSeen": "2026-11-25",
       "avatar": "avatars/discoverygreen.jpg"
+    },
+    {
+      "id": "evt-c65422210579dd02",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Gift yourself (or someone you love) healthy hair",
+      "venue": "Greenwood Park, 555 7th Ave, Brooklyn",
+      "city": "Austin",
+      "startDate": "2026-11-28",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNNStiDwO8/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg",
+      "lat": 30.26748,
+      "lng": -97.73734,
+      "located": "address"
     },
     {
       "id": "evt-1e996cbd4b1bf8a3",
@@ -2668,7 +2817,8 @@
       "id": "evt-1679e59abbbcec72",
       "lat": 33.02947,
       "lng": -96.699,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/jazzystacos.jpg"
     },
     {
       "account": "joycraftedtx",
@@ -2789,24 +2939,6 @@
       "avatar": "avatars/kyotokoffie.jpg"
     },
     {
-      "account": "kyotokoffie",
-      "category": "asian-inspired",
-      "city": "Austin",
-      "description": "Kyoto-style coffee and matcha cart pouring a limited menu of cold brew and seasonal lattes inside a vintage shop.",
-      "endTime": "14:00",
-      "region": "austin",
-      "source": "Instagram @kyotokoffie",
-      "sourceUrl": "https://www.instagram.com/p/DgLvsz2FcHc/",
-      "startDate": "2026-11-28",
-      "startTime": "10:00",
-      "title": "Kyoto Koffie × Hedonist Vintage Pop-Up",
-      "venue": "Hedonist Vintage, 1601 E Cesar Chavez St #106",
-      "id": "evt-57f822bf33edcddb",
-      "lat": 30.25844,
-      "lng": -97.72863,
-      "located": "address"
-    },
-    {
       "account": "lasperrascafe",
       "area": "East End",
       "category": "seasonal",
@@ -2924,6 +3056,29 @@
       "description": "Taco pop-up with fresh flour tortillas and crispy fried cheese, including a seared ribeye taco."
     },
     {
+      "id": "evt-866535f42ce272f5",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Looking for a gift nobody else has",
+      "venue": "Greenwood Park, 555 7th Ave, Brooklyn",
+      "city": "Austin",
+      "startDate": "2026-11-28",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNTCobjjkq/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg",
+      "lat": 30.26748,
+      "lng": -97.73734,
+      "located": "address"
+    },
+    {
       "account": "luckyubakery",
       "category": "asian-inspired",
       "city": "Fort Worth",
@@ -3036,7 +3191,8 @@
       "id": "evt-8bda666dd32c03b2",
       "lat": 29.73693,
       "lng": -95.52107,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/meowcha.htx.jpg"
     },
     {
       "id": "evt-455e0a9e8361f827",
@@ -3144,6 +3300,29 @@
       "located": "address"
     },
     {
+      "id": "evt-070604ab300147c1",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Personalized with love",
+      "venue": "Greenwood Park, 555 7th Ave, Brooklyn",
+      "city": "Austin",
+      "startDate": "2026-11-28",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNV6Zjj5Nj/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg",
+      "lat": 30.26748,
+      "lng": -97.73734,
+      "located": "address"
+    },
+    {
       "id": "evt-324d3c3105bd0ece",
       "category": "seasonal",
       "kind": "seasonal",
@@ -3180,28 +3359,31 @@
       "description": "Weekly Saturday farmers market with produce, BBQ, tamales, honey, and baked goods.",
       "lat": 33.02711,
       "lng": -96.78921,
-      "id": "evt-f814f0539cde7b9c"
+      "id": "evt-f814f0539cde7b9c",
+      "avatar": "avatars/planofarmersmarket.jpg"
     },
     {
-      "id": "evt-fdb65236fd79d6d6",
-      "category": "popup",
-      "kind": "popup",
+      "id": "evt-a65090e20fd4b2ce",
+      "category": "seasonal",
+      "kind": "seasonal",
       "tags": [],
-      "title": "Red Cat Jazz Café’s First Pop-Up",
-      "venue": "2515 Riverside Drive",
-      "city": "Houston",
+      "title": "Regalos personalizados con amor",
+      "venue": "Greenwood Park, 555 7th Ave, Brooklyn",
+      "city": "Austin",
       "startDate": "2026-11-28",
-      "price": "$23.11–$129.71",
-      "sourceUrl": "https://allevents.in/houston/red-cat-jazz-cafés-first-pop-up-roy-l-jackson-sr-and-melodic-theorist/100002005319987063",
-      "source": "AllEvents",
-      "region": "houston",
-      "lat": 29.71655,
-      "lng": -95.37589,
-      "located": "source",
-      "startTime": "20:00",
-      "endTime": "22:30",
-      "sourceId": "allevents-houston",
-      "firstSeen": "2026-11-24"
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNY2HvlaFw/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg",
+      "lat": 30.26748,
+      "lng": -97.73734,
+      "located": "address"
     },
     {
       "id": "evt-4fc77e09e9a3372b",
@@ -3239,7 +3421,8 @@
       "account": "the_sensual_shef",
       "lat": 29.739261368155,
       "lng": -95.377559202689,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/the_sensual_shef.jpg"
     },
     {
       "id": "evt-242b93f2fedd36b4",
@@ -3277,7 +3460,8 @@
       "lat": 30.40276,
       "lng": -97.72208,
       "located": "address",
-      "account": "sloburn.atx"
+      "account": "sloburn.atx",
+      "avatar": "avatars/sloburn.atx.jpg"
     },
     {
       "id": "evt-ec8c1142913be981",
@@ -3314,7 +3498,8 @@
       "id": "evt-beb22b993dfba760",
       "lat": 30.26793,
       "lng": -97.62632,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/signbaraustin.jpg"
     },
     {
       "account": "communitybeerco",
@@ -3353,7 +3538,8 @@
       "located": "source",
       "startTime": "11:30",
       "endTime": "14:30",
-      "sourceId": "allevents-fort-worth"
+      "sourceId": "allevents-fort-worth",
+      "description": "Posted by buri matcha on Instagram. See the post for details."
     },
     {
       "id": "evt-c8c5da930db5a5d9",
@@ -3392,26 +3578,8 @@
       "id": "evt-e29ab2be39826992",
       "lat": 29.75682,
       "lng": -95.3419,
-      "located": "address"
-    },
-    {
-      "account": "summer_sweets25",
-      "category": "popup",
-      "city": "Houston",
-      "description": "Matcha, boba, fruit tea, and baked goods vendor at the Esplanade evening market; free entry, pet-friendly.",
-      "endTime": "22:00",
-      "price": "Free",
-      "region": "houston",
-      "source": "Instagram @summer_sweets25",
-      "sourceUrl": "https://www.instagram.com/p/DgL_2GTDKTG/",
-      "startDate": "2026-11-28",
-      "startTime": "18:00",
-      "title": "Summer Sweets at the Esplanade (Evening)",
-      "venue": "The Esplanade on Navigation, 2800 Navigation Blvd",
-      "id": "evt-b146ec6561723e4a",
-      "lat": 29.75682,
-      "lng": -95.3419,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/summer_sweets25.jpg"
     },
     {
       "id": "mkt-e046712700e94d6b",
@@ -3459,6 +3627,29 @@
       "avatar": "avatars/cadenacollective.jpg"
     },
     {
+      "id": "evt-d61d08cb2ef85372",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Thank you to our sponsor New York Life",
+      "venue": "Greenwood Park, 555 7th Ave, Brooklyn",
+      "city": "Austin",
+      "startDate": "2026-11-28",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNhVhqjg71/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg",
+      "lat": 30.26748,
+      "lng": -97.73734,
+      "located": "address"
+    },
+    {
       "id": "evt-fc0eace0461d09fe",
       "category": "asian-inspired",
       "title": "The Custard Box at The TBG Market",
@@ -3474,6 +3665,30 @@
       "description": "Handcrafted canelés and Filipino-inspired desserts from The Custard Box at The Blind Goat's TBG Market on Nov 28.",
       "lat": 29.80289,
       "lng": -95.49173,
+      "located": "address",
+      "avatar": "avatars/thecustardbox.jpg"
+    },
+    {
+      "id": "evt-80a83de68a647da0",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "The gift that always lands",
+      "venue": "Greenwood Park, 555 7th Ave, Brooklyn",
+      "city": "Austin",
+      "startDate": "2026-11-28",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNbzmFkRcY/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg",
+      "lat": 30.26748,
+      "lng": -97.73734,
       "located": "address"
     },
     {
@@ -3495,6 +3710,29 @@
       "endTime": "23:30",
       "sourceId": "allevents-dallas",
       "firstSeen": "2026-11-21"
+    },
+    {
+      "id": "evt-458fffb33f2959cc",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "The sweetest stop on your holiday list",
+      "venue": "Greenwood Park, 555 7th Ave, Brooklyn",
+      "city": "Austin",
+      "startDate": "2026-11-28",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/p/DgNedzyGsWN/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg",
+      "lat": 30.26748,
+      "lng": -97.73734,
+      "located": "address"
     },
     {
       "id": "evt-26f0a59e51d2ae2e",
@@ -3551,7 +3789,8 @@
       "id": "evt-b04a8bbc0b9f8ab2",
       "lat": 29.77887,
       "lng": -95.41081,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/tomo.htx.jpg"
     },
     {
       "id": "evt-8692c21f610e1959",
@@ -3648,7 +3887,8 @@
       "sourceUrl": "https://www.instagram.com/p/DgDW389FXIw/",
       "account": "wastefellowmatcha",
       "source": "Instagram @wastefellowmatcha",
-      "description": "South Asian-inspired matcha cart marks one year with a special anniversary flavor and free-matcha giveaways."
+      "description": "South Asian-inspired matcha cart marks one year with a special anniversary flavor and free-matcha giveaways.",
+      "avatar": "avatars/wastefellowmatcha.jpg"
     },
     {
       "id": "evt-63aeafd306f1c2a9",
@@ -3790,7 +4030,8 @@
       "id": "evt-051204b8073c12f2",
       "lat": 33.02551,
       "lng": -96.76992,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/yamyamsmatcha.jpg"
     },
     {
       "id": "evt-250064ed7260999e",
@@ -4388,20 +4629,26 @@
     {
       "id": "evt-80f1fd47d64e4ad1",
       "category": "asian-inspired",
-      "title": "mi cà phê x Handies Douzo pop-up",
-      "venue": "Handies Douzo – Heights, 3510 White Oak Dr",
+      "kind": "popup",
+      "tags": [
+        "asian-inspired"
+      ],
+      "title": "mi cà phê x handies douzo (pop-up + GIVEAWAY)",
+      "venue": "Handies Douzo – Heights 3510 White Oak Dr",
       "city": "Houston",
-      "region": "houston",
       "startDate": "2026-11-29",
-      "sourceUrl": "https://www.instagram.com/p/Df7rL8wm1d_/",
-      "source": "Instagram @micaphehtx",
-      "description": "Vietnamese coffee and matcha plus fresh hand rolls; $100 gift-card giveaway.",
       "startTime": "11:00",
       "endTime": "15:00",
+      "sourceUrl": "https://www.instagram.com/p/Df7rL8wm1d_/",
+      "source": "Instagram @micaphehtx",
+      "account": "micaphehtx",
+      "description": "Posted by mi cà phê on Instagram. See the post for details.",
+      "region": "houston",
+      "sourceId": "instagram",
       "lat": 29.78155,
       "lng": -95.39529,
       "located": "address",
-      "account": "micaphehtx"
+      "avatar": "avatars/micaphehtx.jpg"
     },
     {
       "id": "evt-326b07e909a904ef",
@@ -4421,7 +4668,8 @@
       "description": "Sunday brunch with food from local vendors, coffee and $5 cocktails, on Nov 29 and Dec 13.",
       "lat": 30.170825349439,
       "lng": -97.786229151011,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/mossmarketatx.jpg"
     },
     {
       "id": "evt-7adb654525c14e33",
@@ -4479,7 +4727,8 @@
       "description": "Ramen pop-up serving discada-style dishes until sold out.",
       "lat": 30.388054567035,
       "lng": -97.709104726406,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/ramen_del_barrio.jpg"
     },
     {
       "id": "evt-124ba74de83fded2",
@@ -4542,23 +4791,23 @@
       "firstSeen": "2026-11-23"
     },
     {
-      "id": "evt-b757565ac0f003a9",
+      "id": "evt-0070a12e2470d3b1",
       "category": "seasonal",
       "kind": "seasonal",
       "tags": [],
-      "title": "Thanksgiving Praise Fest 2026",
-      "venue": "Church of the Living God PGT Ft Worth, 2301 Evans Ave,Fort Worth, Texas",
-      "city": "Fort Worth",
+      "title": "The List Holiday Pop Up Movie Night",
+      "venue": "The List Naughty & Nice Holiday Pop-Up, 5670 Village Glen Drive",
+      "city": "Dallas",
       "startDate": "2026-11-29",
-      "sourceUrl": "https://allevents.in/fort-worth/thanksgiving-praise-fest-2026/200031097135338",
+      "sourceUrl": "https://allevents.in/dallas/the-list-holiday-pop-up-movie-night/100002004386472897",
       "source": "AllEvents",
       "region": "dallas",
-      "lat": 32.71975,
-      "lng": -97.31823,
+      "lat": 32.85945,
+      "lng": -96.76237,
       "located": "source",
-      "startTime": "18:00",
-      "sourceId": "allevents-fort-worth",
-      "firstSeen": "2026-11-25"
+      "startTime": "17:00",
+      "sourceId": "allevents-dallas",
+      "firstSeen": "2026-11-26"
     },
     {
       "id": "evt-94a13ed86fde4020",
@@ -4756,6 +5005,7 @@
       "lat": 32.74939,
       "lng": -97.08499,
       "located": "source",
+      "startTime": "12:00",
       "sourceId": "allevents-fort-worth",
       "firstSeen": "2026-11-25"
     },
@@ -4776,7 +5026,8 @@
       "id": "evt-59e13696b82bab6b",
       "lat": 30.2613,
       "lng": -97.73904,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/morimatcha_.jpg"
     },
     {
       "id": "evt-29c881066fccd0de",
@@ -4836,7 +5087,8 @@
       "id": "evt-50bedceebb027661",
       "lat": 30.28644,
       "lng": -97.74179,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/sweets_by_vivi_atx.jpg"
     },
     {
       "id": "evt-773d94d491cb5a81",
@@ -5048,7 +5300,6 @@
       "venue": "The List Naughty & Nice Holiday Pop-Up, 5670 Village Glen Drive",
       "city": "Dallas",
       "startDate": "2026-12-01",
-      "endDate": "2026-12-15",
       "sourceUrl": "https://allevents.in/dallas/the-list-holiday-pop-up-karaoke-night/100002004496465889",
       "source": "AllEvents",
       "region": "dallas",
@@ -5268,26 +5519,6 @@
       "avatar": "avatars/discoverygreen.jpg"
     },
     {
-      "id": "evt-e407c8aa4197fee2",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "Winter Makers Market",
-      "venue": "6101 Airport Blvd , Austin, TX, United States, Texas 78752, 6401 Airport Blvd",
-      "city": "Austin",
-      "startDate": "2026-12-02",
-      "sourceUrl": "https://allevents.in/austin/winter-makers-market/200031070029821",
-      "source": "AllEvents",
-      "region": "austin",
-      "lat": 30.32764,
-      "lng": -97.71399,
-      "located": "source",
-      "startTime": "11:00",
-      "endTime": "17:00",
-      "sourceId": "allevents-austin",
-      "firstSeen": "2026-11-23"
-    },
-    {
       "id": "evt-605cd70cfd3239c0",
       "category": "seasonal",
       "kind": "seasonal",
@@ -5479,25 +5710,6 @@
       "firstSeen": "2026-11-25"
     },
     {
-      "account": "contemporaryatx",
-      "category": "seasonal",
-      "city": "Austin",
-      "description": "Second annual holiday market with live music, unique gifts, and drinks at the sculpture garden.",
-      "endTime": "20:00",
-      "price": "Free",
-      "region": "austin",
-      "source": "Instagram @contemporaryatx",
-      "sourceUrl": "https://www.instagram.com/p/DgLgAuIm3qi/",
-      "startDate": "2026-12-03",
-      "startTime": "17:00",
-      "title": "Festive Finds Holiday Market",
-      "venue": "Laguna Gloria, 3809 W 35th St",
-      "id": "evt-7baf1b0d19601e2a",
-      "lat": 30.31304,
-      "lng": -97.77175,
-      "located": "address"
-    },
-    {
       "id": "evt-b486f52b8dd1bc41",
       "category": "seasonal",
       "kind": "seasonal",
@@ -5560,27 +5772,6 @@
       "avatar": "avatars/movemountainsmarket.jpg"
     },
     {
-      "id": "evt-a53a6d780ec04459",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "NRH Christmas Tree Lighting",
-      "venue": "9010 Grand Ave, North Richland Hills, TX 76180, United States, Stormy Plaza, 9010 Grand Ave",
-      "city": "North Richland Hills",
-      "startDate": "2026-12-03",
-      "startTime": "18:00",
-      "endTime": "20:30",
-      "sourceUrl": "https://allevents.in/north-richland-hills/nrh-christmas-tree-lighting/200030967823245",
-      "source": "AllEvents",
-      "description": "Join us to kick off the Christmas season with the NRH Christmas Tree Lighting on Thursday, December 3 from 6 p.m. – 8:30 p.m. in Stormy Plaza Park, 9010 Grand Avenue.",
-      "region": "dallas",
-      "lat": 32.85439,
-      "lng": -97.19261,
-      "located": "source",
-      "sourceId": "allevents-fort-worth",
-      "firstSeen": "2026-11-26"
-    },
-    {
       "account": "sa_pey_ka",
       "category": "popup",
       "city": "Austin",
@@ -5597,6 +5788,29 @@
       "lat": 30.31813,
       "lng": -97.86206,
       "located": "address"
+    },
+    {
+      "id": "evt-7baf1b0d19601e2a",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Shop local, celebrate creativity, and delight in an evening of cheer",
+      "venue": "Laguna Gloria, 3809 W 35th St",
+      "city": "Austin",
+      "startDate": "2026-12-03",
+      "sourceUrl": "https://www.instagram.com/p/DgLgAuIm3qi/",
+      "source": "Instagram @contemporaryatx",
+      "account": "contemporaryatx",
+      "description": "Posted by The Contemporary Austin on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "lat": 30.31304,
+      "lng": -97.77175,
+      "located": "address",
+      "startTime": "17:00",
+      "endTime": "20:00",
+      "price": "Free",
+      "avatar": "avatars/contemporaryatx.jpg"
     },
     {
       "id": "evt-e6d74f7c5d23aa31",
@@ -5637,28 +5851,6 @@
       "sourceId": "instagram",
       "firstSeen": "2026-11-25",
       "avatar": "avatars/fairparkdallas.jpg"
-    },
-    {
-      "id": "evt-c7587ffef363592e",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "The Hush-Hush Cabaret- Christmas Edition",
-      "venue": "The Blind Finch, 5210 Farm to Market 2920",
-      "city": "Spring",
-      "startDate": "2026-12-03",
-      "startTime": "19:30",
-      "endTime": "23:00",
-      "price": "$53.98",
-      "sourceUrl": "https://allevents.in/spring/the-hush-hush-cabaret-christmas-edition/100002004974029294",
-      "source": "AllEvents",
-      "description": "Spring's most popular burlesque show! About this Event THE HUSH HUSH CABARET at The Blind Finch. Where the World Comes to Perform Step beyond the ordinary—and i",
-      "region": "houston",
-      "lat": 30.07457,
-      "lng": -95.49906,
-      "located": "source",
-      "sourceId": "allevents-houston",
-      "firstSeen": "2026-11-21"
     },
     {
       "id": "evt-04dd9c60510116d5",
@@ -5805,9 +5997,7 @@
       "located": "source",
       "startTime": "17:00",
       "endTime": "21:00",
-      "sourceId": "allevents-dallas",
-      "price": "Free",
-      "description": "Celebrate the holiday season with festive cheer at our Holiday Fest on Glen Lawn on December 4th! About this Event WHAT: A Very Merry Village heads to Glen Lawn!"
+      "sourceId": "allevents-dallas"
     },
     {
       "id": "evt-e67198f324cf19c7",
@@ -5850,27 +6040,6 @@
       "located": "source",
       "sourceId": "allevents-dallas",
       "firstSeen": "2026-11-21"
-    },
-    {
-      "id": "evt-42be6068d09545c4",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "Christmas Memories 2026",
-      "venue": "Mark McGrath Municipal Park Trail, 12001 Brighton Ln, Meadows Place, TX 77477-16ND",
-      "city": "Stafford",
-      "startDate": "2026-12-04",
-      "startTime": "18:00",
-      "endTime": "21:00",
-      "sourceUrl": "https://allevents.in/stafford/christmas-memories-2026/200030998131747",
-      "source": "AllEvents",
-      "description": "🎄𝐂𝐡𝐫𝐢𝐬𝐭𝐦𝐚𝐬 𝐌𝐞𝐦𝐨𝐫𝐢𝐞𝐬 - 𝐒𝐚𝐯𝐞 𝐭𝐡𝐞 𝐃𝐚𝐭𝐞🎄 We're counting down the days until Christmas Memories!",
-      "region": "houston",
-      "lat": 29.64994,
-      "lng": -95.59056,
-      "located": "source",
-      "sourceId": "allevents-houston",
-      "firstSeen": "2026-11-26"
     },
     {
       "id": "evt-a0c98bd9f143a578",
@@ -6016,27 +6185,6 @@
       "firstSeen": "2026-11-25"
     },
     {
-      "id": "evt-08af773c5c4c6e8b",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "Goats and a Glass: Baby Goat Yoga",
-      "venue": "Willow Gardens Yoga- Buda, 302 South Main Street",
-      "city": "Buda",
-      "startDate": "2026-12-04",
-      "startTime": "17:00",
-      "endTime": "18:00",
-      "price": "$35–$45",
-      "sourceUrl": "https://allevents.in/buda/goats-and-a-glass-baby-goat-yoga/100002004830881134",
-      "source": "AllEvents",
-      "description": "Join us for Goat Yoga featuring baby goats dressed in Christmas outfits! About this Event Join us for the most joyful event of the season - Baby Goat Yoga!",
-      "region": "austin",
-      "lat": 30.07827,
-      "lng": -97.84516,
-      "located": "source",
-      "sourceId": "allevents-austin"
-    },
-    {
       "id": "evt-291a888803d754fe",
       "category": "seasonal",
       "kind": "seasonal",
@@ -6097,26 +6245,6 @@
       "located": "source",
       "sourceId": "allevents-houston",
       "firstSeen": "2026-11-21"
-    },
-    {
-      "id": "evt-58d939d2c916a17e",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "Holiday Trio Performance at Lindale Park",
-      "venue": "218 Joyce St",
-      "city": "Houston",
-      "startDate": "2026-12-04",
-      "sourceUrl": "https://allevents.in/houston/holiday-trio-performance-at-lindale-park/200031104446106",
-      "source": "AllEvents",
-      "region": "houston",
-      "lat": 29.80609,
-      "lng": -95.36801,
-      "located": "source",
-      "startTime": "18:00",
-      "endTime": "19:00",
-      "sourceId": "allevents-houston",
-      "firstSeen": "2026-11-23"
     },
     {
       "id": "evt-038230902cf676b8",
@@ -6225,6 +6353,27 @@
       "sourceId": "allevents-austin"
     },
     {
+      "id": "evt-6d9e3a5265ffb8b5",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Kick off the holiday season with us at The Pink Flamingo Christmas Market",
+      "venue": "7221 McNeil Dr, Austin, TX 78729",
+      "city": "Austin",
+      "startDate": "2026-12-04",
+      "startTime": "17:30",
+      "sourceUrl": "https://www.instagram.com/p/Df7xivdhTt3/",
+      "source": "Instagram @pink_flamingo_fc",
+      "account": "pink_flamingo_fc",
+      "description": "Posted by Pink Flamingo Food Court on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "lat": 30.43561,
+      "lng": -97.76556,
+      "located": "address",
+      "avatar": "avatars/pink_flamingo_fc.jpg"
+    },
+    {
       "id": "evt-7a6aace67c901a2c",
       "category": "seasonal",
       "title": "KIPP 3D Holiday Market",
@@ -6320,6 +6469,7 @@
       "lat": 32.9511,
       "lng": -96.76426,
       "located": "source",
+      "startTime": "10:00",
       "sourceId": "allevents-fort-worth",
       "firstSeen": "2026-11-25"
     },
@@ -6508,23 +6658,6 @@
       "located": "source",
       "sourceId": "allevents-north-dallas",
       "firstSeen": "2026-11-25"
-    },
-    {
-      "id": "evt-6d9e3a5265ffb8b5",
-      "category": "seasonal",
-      "title": "The Pink Flamingo Christmas Market",
-      "venue": "7221 McNeil Dr",
-      "city": "Austin",
-      "startDate": "2026-12-04",
-      "startTime": "17:30",
-      "sourceUrl": "https://www.instagram.com/p/Df7xivdhTt3/",
-      "source": "Instagram @pink_flamingo_fc",
-      "description": "Evening Christmas market with free Santa meet and greet, live DJ, local vendors and food trucks.",
-      "lat": 30.43561,
-      "lng": -97.76556,
-      "located": "address",
-      "account": "pink_flamingo_fc",
-      "region": "austin"
     },
     {
       "account": "vintagemarketdaysofaustin",
@@ -6844,6 +6977,26 @@
       "located": "source",
       "sourceId": "allevents-houston",
       "firstSeen": "2026-11-26"
+    },
+    {
+      "id": "evt-c77b16c6442774d4",
+      "category": "asian-inspired",
+      "kind": "popup",
+      "tags": [
+        "asian-inspired"
+      ],
+      "title": "Black Forest Cake",
+      "venue": "P Thai’s on December 5",
+      "city": "Austin",
+      "startDate": "2026-12-05",
+      "sourceUrl": "https://www.instagram.com/p/DgGKpUhuzSB/",
+      "source": "Instagram @katshandbaked",
+      "account": "katshandbaked",
+      "description": "Posted by Kat - Kat’s Hand-Baked on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/katshandbaked.jpg"
     },
     {
       "id": "evt-3b87e08a509da177",
@@ -7329,23 +7482,8 @@
       "startTime": "10:00",
       "endTime": "17:00",
       "sourceId": "allevents-north-dallas",
-      "firstSeen": "2026-11-25"
-    },
-    {
-      "account": "darkhourhauntedhouse",
-      "category": "seasonal",
-      "city": "Plano",
       "description": "Spooky-Christmas oddities market with a toy drive, gift shop, and holiday photos.",
-      "region": "dallas",
-      "source": "Instagram @darkhourhauntedhouse",
-      "sourceUrl": "https://www.instagram.com/p/DgD74ygGsl4/",
-      "startDate": "2026-12-05",
-      "title": "DARK HOUR's Winter Market",
-      "venue": "701 Taylor Dr",
-      "id": "evt-fd9e5e7f3fbf72f9",
-      "lat": 33.00935,
-      "lng": -96.7047,
-      "located": "source"
+      "firstSeen": "2026-11-25"
     },
     {
       "id": "evt-36a735e5112ec789",
@@ -7880,7 +8018,8 @@
       "id": "evt-727b159d3d67afaf",
       "lat": 30.31641,
       "lng": -97.71837,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/paloma_consignment.jpg"
     },
     {
       "id": "evt-0c120005691b5be1",
@@ -7982,6 +8121,9 @@
       "located": "source",
       "startTime": "09:00",
       "sourceId": "allevents-houston",
+      "endTime": "16:00",
+      "description": "Posted by HOUSTON MARKETS on Instagram. See the post for details.",
+      "price": "Free",
       "firstSeen": "2026-11-21"
     },
     {
@@ -8206,7 +8348,8 @@
       "id": "evt-304b27529c0b3fec",
       "lat": 30.30844,
       "lng": -97.71556,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/katshandbaked.jpg"
     },
     {
       "id": "evt-f7311966d9663aed",
@@ -8391,21 +8534,6 @@
       "firstSeen": "2026-11-25"
     },
     {
-      "account": "mgsmarkets",
-      "category": "seasonal",
-      "city": "Houston",
-      "description": "Three holiday markets: Dec 5 Merry Bookmas Market 11am-4pm, 1145 Providence St; Dec 6 Cozy Christmas Market 12-5pm, POST HTX, 401 Franklin St; Dec 19 A Houston Christmas Market 11am-5pm, 711 Milby St. Free entry.",
-      "endDate": "2026-12-19",
-      "price": "Free",
-      "region": "houston",
-      "source": "Instagram @mgsmarkets",
-      "sourceUrl": "https://www.instagram.com/p/DgBiZmcjOqp/",
-      "startDate": "2026-12-05",
-      "title": "MGS Holiday Markets",
-      "venue": "Multiple Houston venues — see description",
-      "id": "evt-4738430a91fff842"
-    },
-    {
       "id": "evt-7a526c2d0a935691",
       "category": "seasonal",
       "kind": "seasonal",
@@ -8446,27 +8574,6 @@
       "located": "source",
       "sourceId": "allevents-houston",
       "firstSeen": "2026-11-21"
-    },
-    {
-      "id": "evt-73ea4abfdc8b224f",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "Miracle on Morton Street part of Christmas In The Bend",
-      "venue": "310 Morton St",
-      "city": "Richmond",
-      "startDate": "2026-12-05",
-      "startTime": "10:00",
-      "endTime": "16:00",
-      "sourceUrl": "https://allevents.in/richmond/miracle-on-morton-street-part-of-christmas-in-the-bend/200030246038100",
-      "source": "AllEvents",
-      "description": "Richmond Texas celebrates the season of Christmas In The Bend beginning Friday night December 4th with the City Of Richmond's tree lighting in our city hall plaza at 6pm and the…",
-      "region": "houston",
-      "lat": 29.58306,
-      "lng": -95.76154,
-      "located": "source",
-      "sourceId": "allevents-houston",
-      "firstSeen": "2026-11-26"
     },
     {
       "category": "asian-inspired",
@@ -8734,20 +8841,6 @@
       "endTime": "17:00",
       "sourceId": "allevents-fort-worth",
       "firstSeen": "2026-11-25"
-    },
-    {
-      "account": "preppyvintageatx",
-      "category": "seasonal",
-      "city": "Austin",
-      "description": "Four-date vintage pop-up series: Dec 5 Jester King Brewery 11am-5pm, Dec 6 Camp East 11am-3pm, Dec 13 Padel39 12-6pm, Dec 20 Padel39.",
-      "endDate": "2026-12-20",
-      "region": "austin",
-      "source": "Instagram @preppyvintageatx",
-      "sourceUrl": "https://www.instagram.com/p/Df-H-gUyyO2/",
-      "startDate": "2026-12-05",
-      "title": "Preppy Vintage December Pop-Up Markets",
-      "venue": "Multiple venues — see description",
-      "id": "evt-3e71db13de55b46e"
     },
     {
       "id": "evt-935910e771678053",
@@ -9111,6 +9204,24 @@
       "firstSeen": "2026-11-21"
     },
     {
+      "id": "evt-2fcd0b2b630525b3",
+      "category": "popup",
+      "kind": "popup",
+      "tags": [],
+      "title": "The Boho Market at Klyde Warren Park",
+      "venue": "Klyde Warren Park, 2012 Woodall Rodgers Freeway",
+      "city": "Dallas",
+      "startDate": "2026-12-05",
+      "sourceUrl": "https://allevents.in/dallas/the-boho-market-at-klyde-warren-park/100001983884054612",
+      "source": "AllEvents",
+      "region": "dallas",
+      "lat": 32.78936,
+      "lng": -96.80162,
+      "located": "source",
+      "sourceId": "allevents-dallas",
+      "firstSeen": "2026-11-26"
+    },
+    {
       "id": "evt-3d1278225bd4928a",
       "category": "popup",
       "kind": "popup",
@@ -9308,6 +9419,48 @@
       "lng": -95.830425921522,
       "located": "address",
       "avatar": "avatars/birdiestreasuresco.jpg"
+    },
+    {
+      "id": "evt-479b3f00d261ef8f",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "WE’RE TAKING OVER ATX CONGRESS AVE",
+      "venue": "Congress Ave, Downtown Austin",
+      "city": "Austin",
+      "startDate": "2026-12-05",
+      "startTime": "17:00",
+      "endTime": "21:00",
+      "sourceUrl": "https://www.instagram.com/reel/DgLJs6rg3Bk/",
+      "source": "Instagram @plughubaustin",
+      "account": "plughubaustin",
+      "description": "Posted by Discover Hidden Gems In Austin 🏴‍☠️ on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/plughubaustin.jpg"
+    },
+    {
+      "id": "evt-03dfedac40cafda9",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Whether you're sitting around a bubbling cauldron or sitting around a table, we",
+      "venue": "Dark Hour Haunted House, 701 Taylor Dr. Plano, Texas",
+      "city": "Plano",
+      "startDate": "2026-12-05",
+      "startTime": "21:30",
+      "sourceUrl": "https://www.instagram.com/p/DgNiZ7rjzeY/",
+      "source": "Instagram @darkhourhauntedhouse",
+      "account": "darkhourhauntedhouse",
+      "description": "Posted by Dark Hour Haunted House on Instagram. See the post for details.",
+      "region": "dallas",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/darkhourhauntedhouse.jpg",
+      "lat": 33.00833,
+      "lng": -96.70523,
+      "located": "address"
     },
     {
       "id": "evt-e3178bd54ddaa123",
@@ -9598,6 +9751,26 @@
       "firstSeen": "2026-11-25"
     },
     {
+      "id": "evt-dacf7c971b81184f",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Happy Thanksgiving from Latin City",
+      "venue": "Four Corners Brewing Company · 1311 S Ervay St, Dallas, TX 75215",
+      "city": "Austin",
+      "startDate": "2026-12-06",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "sourceUrl": "https://www.instagram.com/reel/DgNm5dJsUYv/",
+      "source": "Instagram @latincity",
+      "account": "latincity",
+      "description": "Posted by CELEBRATE THE DIVERSITY OF LATIN AMERICA on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/latincity.jpg"
+    },
+    {
       "id": "evt-545e42212e249dc0",
       "category": "seasonal",
       "kind": "seasonal",
@@ -9859,6 +10032,24 @@
       "avatar": "avatars/discoverygreen.jpg"
     },
     {
+      "id": "evt-84fb9fdb12f39508",
+      "category": "popup",
+      "kind": "popup",
+      "tags": [],
+      "title": "Preppy Vintage had its FIRST pop-up market in Austin last weekend",
+      "venue": "Camp East",
+      "city": "Austin",
+      "startDate": "2026-12-06",
+      "sourceUrl": "https://www.instagram.com/p/DfdtGtWDlUO/",
+      "source": "Instagram @preppyvintageatx",
+      "account": "preppyvintageatx",
+      "description": "Posted by Preppy Vintage on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/preppyvintageatx.jpg"
+    },
+    {
       "id": "evt-afcde2c956d95984",
       "category": "seasonal",
       "title": "Refugee Collective Holiday Market",
@@ -9999,7 +10190,7 @@
       "lat": 32.94589,
       "lng": -97.13058,
       "located": "source",
-      "sourceId": "allevents-dallas",
+      "sourceId": "allevents-north-dallas",
       "price": "Free",
       "firstSeen": "2026-11-24"
     },
@@ -10099,7 +10290,8 @@
       "id": "evt-b23f1df65e599eac",
       "lat": 30.34567,
       "lng": -97.69941,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/poppy23atx.jpg"
     },
     {
       "id": "evt-1a2324373a2a1bfb",
@@ -10277,17 +10469,16 @@
       "venue": "The Star in Frisco, 1 Cowboys Way",
       "city": "Frisco",
       "startDate": "2026-12-09",
-      "startTime": "18:00",
-      "endTime": "21:00",
       "price": "$42.22",
       "sourceUrl": "https://allevents.in/frisco/christmas-sip-and-stroll-in-the-star-district/100002004611362548",
       "source": "AllEvents",
-      "description": "Raise a glass to the season at Christmas Sip & Stroll! Enjoy festive drinks, holiday shopping, special offers & merry moments.",
       "region": "dallas",
       "lat": 33.10981,
       "lng": -96.82999,
       "located": "source",
-      "sourceId": "allevents-dallas",
+      "startTime": "18:00",
+      "endTime": "21:00",
+      "sourceId": "allevents-north-dallas",
       "firstSeen": "2026-11-21"
     },
     {
@@ -10781,6 +10972,28 @@
       "endTime": "20:00",
       "sourceId": "allevents-austin",
       "firstSeen": "2026-11-23"
+    },
+    {
+      "id": "evt-d0cdab1ae79639e9",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Christmas Movie Night in Inner Space Cavern",
+      "venue": "Inner Space Cavern, 4200 South Interstate 35 Frontage Road",
+      "city": "Georgetown",
+      "startDate": "2026-12-11",
+      "startTime": "18:00",
+      "endTime": "22:00",
+      "price": "$7.77–$39",
+      "sourceUrl": "https://allevents.in/georgetown/christmas-movie-night-in-inner-space-cavern-the-grinch/100002005309757466",
+      "source": "AllEvents",
+      "description": "Celebrate Christmas underground with a magical and unforgettable showing of The Grinch inside Inner Space Cavern!",
+      "region": "austin",
+      "lat": 30.60791,
+      "lng": -97.68814,
+      "located": "source",
+      "sourceId": "allevents-austin",
+      "firstSeen": "2026-11-26"
     },
     {
       "id": "evt-38e5a8e75c2a543b",
@@ -11355,26 +11568,6 @@
       "avatar": "avatars/feelgoodgrp.jpg"
     },
     {
-      "id": "evt-1d9dd7a38e2744f0",
-      "category": "seasonal",
-      "title": "ATX Night Market",
-      "venue": "Republic Square",
-      "area": "Downtown",
-      "city": "Austin",
-      "region": "austin",
-      "startDate": "2026-12-12",
-      "startTime": "17:00",
-      "endTime": "22:00",
-      "price": "Free entry",
-      "sourceUrl": "https://www.instagram.com/p/DgBdf_aAADw/",
-      "account": "plughubaustin",
-      "source": "Instagram @plughubaustin",
-      "description": "Outdoor night market with food and drink vendors, makers and live vendors under the lights.",
-      "lat": 30.2683,
-      "lng": -97.7486,
-      "located": "manual"
-    },
-    {
       "id": "evt-cafc67a0f05559a0",
       "category": "seasonal",
       "kind": "seasonal",
@@ -11437,24 +11630,47 @@
       "firstSeen": "2026-11-23"
     },
     {
-      "account": "aztecafarmersmarkethtx",
-      "area": "East Houston",
-      "category": "seasonal",
-      "city": "Houston",
-      "description": "Mexican cultural holiday farmers market with papel picado, marigolds and local vendors honoring Our Lady of Guadalupe.",
-      "endTime": "17:00",
-      "region": "houston",
-      "source": "Instagram @aztecafarmersmarkethtx",
-      "sourceUrl": "https://www.instagram.com/p/Df-BiTTJTux/",
+      "id": "evt-1d9dd7a38e2744f0",
+      "category": "popup",
+      "kind": "popup",
+      "tags": [],
+      "title": "Austin’s favorite night out is BACK for our final market of 2026",
+      "venue": "Republic Square",
+      "city": "Austin",
       "startDate": "2026-12-12",
+      "startTime": "17:00",
+      "endTime": "22:00",
+      "sourceUrl": "https://www.instagram.com/p/DgBdf_aAADw/",
+      "source": "Instagram @plughubaustin",
+      "account": "plughubaustin",
+      "description": "Posted by Discover Hidden Gems In Austin 🏴‍☠️ on Instagram. See the post for details.",
+      "region": "austin",
+      "sourceId": "instagram",
+      "lat": 30.2683,
+      "lng": -97.7486,
+      "located": "manual",
+      "price": "Free entry",
+      "avatar": "avatars/plughubaustin.jpg"
+    },
+    {
+      "id": "evt-e8b83bbab7ad4f98",
+      "category": "popup",
+      "kind": "popup",
+      "tags": [],
+      "title": "Azteca Farmers Market pop up",
+      "venue": "7710 Lyons Ave, Houston, TX, Las Cuatro Monarcas, 7710 Lyons Ave",
+      "city": "Houston",
+      "startDate": "2026-12-12",
+      "sourceUrl": "https://allevents.in/houston/azteca-farmers-market-pop-up/200031080053800",
+      "source": "AllEvents",
+      "region": "houston",
+      "lat": 29.77662,
+      "lng": -95.28955,
+      "located": "source",
+      "sourceId": "allevents-houston",
       "startTime": "12:00",
-      "title": "Azteca Farmers Market Pop Up",
-      "venue": "7710 Lyons Ave",
-      "id": "evt-9f4ad46ec37ed03b",
-      "lat": 29.7767,
-      "lng": -95.29001,
-      "located": "address",
-      "avatar": "avatars/aztecafarmersmarkethtx.jpg"
+      "endTime": "17:00",
+      "description": "Mexican cultural holiday farmers market with papel picado, marigolds and local vendors honoring Our Lady of Guadalupe."
     },
     {
       "id": "evt-c99bf487b291cb85",
@@ -11530,17 +11746,39 @@
       "venue": "8687 North Central Expressway",
       "city": "Dallas",
       "startDate": "2026-12-12",
-      "startTime": "08:30",
-      "endTime": "10:00",
       "price": "$65.53–$82.85",
       "sourceUrl": "https://allevents.in/dallas/breakfast-with-santa-northpark-neiman-marcus-saturday-december-12-8-30am/100001992741326952",
       "source": "AllEvents",
-      "description": "Delight in the Season with a Breakfast Feast with a special appearance by Santa About this Event Join us for a morning filled with holiday fun!",
       "region": "dallas",
       "lat": 32.86874,
       "lng": -96.77186,
       "located": "source",
-      "sourceId": "allevents-north-dallas",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "sourceId": "allevents-dallas",
+      "description": "Delight in the Season with a Breakfast Feast with a special appearance by Santa About this Event Join us for a morning filled with holiday fun!",
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "id": "evt-5e6441739e07c3dd",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Breakfast with Santa Willow Bend Neiman Marcus Saturday December 12, 9am",
+      "venue": "Neiman Marcus Willow Bend Mariposa, 2201 Dallas Parkway",
+      "city": "Plano",
+      "startDate": "2026-12-12",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "price": "$65.53–$82.85",
+      "sourceUrl": "https://allevents.in/plano/breakfast-with-santa-willow-bend-neiman-marcus-saturday-december-12-9am/100002001088154538",
+      "source": "AllEvents",
+      "description": "Join us for Breakfast with Santa! About this Event Neiman Marcus Willow Bend invites you and your family to join us for BREAKFAST WITH SANTA!",
+      "region": "dallas",
+      "lat": 33.03036,
+      "lng": -96.83158,
+      "located": "source",
+      "sourceId": "allevents-dallas",
       "firstSeen": "2026-11-26"
     },
     {
@@ -11581,7 +11819,8 @@
       "id": "evt-0b894e386fab096c",
       "lat": 33.05627,
       "lng": -96.91123,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/burimatcha.jpg"
     },
     {
       "id": "evt-75b07e71149e9a0a",
@@ -11684,7 +11923,8 @@
       "id": "evt-b3fa2e2573256bfb",
       "lat": 30.35137,
       "lng": -97.67303,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/luxeartagency.jpg"
     },
     {
       "id": "evt-00d109c5a5403d1a",
@@ -11706,26 +11946,26 @@
       "sourceId": "allevents-fort-worth"
     },
     {
-      "id": "evt-9c3f6bf51f4da3c9",
+      "id": "evt-61d903ee0ad58b8d",
       "category": "seasonal",
       "kind": "seasonal",
       "tags": [],
-      "title": "Christmas with the Petersens",
-      "venue": "Arlington Music Hall, 224 N Center St",
-      "city": "Arlington",
+      "title": "Christmas on the Farm",
+      "venue": "Downtown Fate Texas, 110 E. Greenhill Lane",
+      "city": "Fate",
       "startDate": "2026-12-12",
-      "startTime": "19:30",
-      "endTime": "21:00",
-      "price": "$43.05–$69.74",
-      "sourceUrl": "https://allevents.in/arlington/christmas-with-the-petersens/100001991499269926",
+      "startTime": "10:00",
+      "endTime": "12:00",
+      "price": "Free",
+      "sourceUrl": "https://allevents.in/fate/christmas-on-the-farm/100002004255337668",
       "source": "AllEvents",
-      "description": "Get ready to jingle all the way with the Petersens at Arlington Music Hall - it's going to be a holly, jolly Christmas celebration!",
+      "description": "Get ready to cozy up with holiday fun, farm vibes, and all the festive cheer you can handle! About this Event Christmas on the Farm —Saturday December 12th in Downtown Fate!",
       "region": "dallas",
-      "lat": 32.73861,
-      "lng": -97.10742,
+      "lat": 32.94207,
+      "lng": -96.38074,
       "located": "source",
-      "sourceId": "allevents-fort-worth",
-      "firstSeen": "2026-11-25"
+      "sourceId": "allevents-north-dallas",
+      "firstSeen": "2026-11-26"
     },
     {
       "id": "evt-1cfa7a54c6746552",
@@ -11914,28 +12154,6 @@
       "located": "source",
       "startTime": "09:30",
       "endTime": "14:30",
-      "sourceId": "allevents-houston",
-      "firstSeen": "2026-11-21"
-    },
-    {
-      "id": "evt-52d295c3d3b6984c",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "Heritage Holiday Market",
-      "venue": "1100 Bagby St",
-      "city": "Houston",
-      "startDate": "2026-12-12",
-      "endDate": "2026-12-13",
-      "startTime": "15:00",
-      "endTime": "20:00",
-      "sourceUrl": "https://allevents.in/houston/heritage-holiday-market/200031073279301",
-      "source": "AllEvents",
-      "description": "🎄 Heritage Holiday Market – Two Days of Holiday Magic! 🎅 Grab your family, invite your friends and join us December 12 & 13 at The Heritage Society for a festive weekend filled…",
-      "region": "houston",
-      "lat": 29.75924,
-      "lng": -95.37103,
-      "located": "source",
       "sourceId": "allevents-houston",
       "firstSeen": "2026-11-21"
     },
@@ -12203,7 +12421,8 @@
       "id": "evt-afc3fa8452d6cc2c",
       "lat": 30.2616,
       "lng": -97.76006,
-      "located": "manual"
+      "located": "manual",
+      "avatar": "avatars/austinartisanmarket.jpg"
     },
     {
       "id": "evt-16de8d3109a596c4",
@@ -12259,6 +12478,8 @@
       "lat": 32.95245,
       "lng": -96.73621,
       "located": "source",
+      "startTime": "09:00",
+      "endTime": "15:00",
       "sourceId": "allevents-fort-worth",
       "firstSeen": "2026-11-25"
     },
@@ -12278,27 +12499,6 @@
       "lat": 30.30201,
       "lng": -97.73854,
       "located": "manual"
-    },
-    {
-      "id": "evt-06ebe4bf1232801a",
-      "category": "popup",
-      "kind": "popup",
-      "tags": [],
-      "title": "Luminary Festival: Night Two",
-      "venue": "Katherine Fleischer Park, 14601 Alpha Collier Dr",
-      "city": "Wells Branch",
-      "startDate": "2026-12-12",
-      "startTime": "18:00",
-      "endTime": "20:00",
-      "sourceUrl": "https://allevents.in/wells-branch/luminary-festival-night-two/200030997940725",
-      "source": "AllEvents",
-      "description": "Stroll through the magical glow of KF Park at day two of the Luminary Festival!",
-      "region": "austin",
-      "lat": 30.44262,
-      "lng": -97.67886,
-      "located": "source",
-      "sourceId": "allevents-austin",
-      "firstSeen": "2026-11-25"
     },
     {
       "id": "evt-305948e3cfcf35be",
@@ -12355,7 +12555,8 @@
       "id": "evt-ee079b46037b3f9a",
       "lat": 30.42016,
       "lng": -97.71663,
-      "located": "address"
+      "located": "address",
+      "avatar": "avatars/milwoodmarket.jpg"
     },
     {
       "id": "evt-eba25d3ba2b57fe0",
@@ -12393,7 +12594,8 @@
       "lat": 32.75889,
       "lng": -97.3439,
       "located": "address",
-      "account": "nativotx"
+      "account": "nativotx",
+      "avatar": "avatars/nativotx.jpg"
     },
     {
       "id": "evt-517b1e8b57361f5e",
@@ -12514,7 +12716,8 @@
       "lat": 32.97808,
       "lng": -96.7626,
       "located": "address",
-      "account": "owl_craft_events"
+      "account": "owl_craft_events",
+      "avatar": "avatars/owl_craft_events.jpg"
     },
     {
       "id": "evt-3121ef8e6bf986bf",
@@ -12742,6 +12945,27 @@
       "firstSeen": "2026-11-21"
     },
     {
+      "id": "evt-0e5965d301b2e0e8",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "YMCA LANGHAM CREEK HOLIDAY MARKET- WINTER FESTIVAL- FARMERS MARKET",
+      "venue": "Langham Creek Family YMCA, 16725 Longenbaugh Dr",
+      "city": "Houston",
+      "startDate": "2026-12-12",
+      "sourceUrl": "https://allevents.in/houston/ymca-langham-creek-holiday-market-winter-festival-farmers-market-tickets/80002027182453",
+      "source": "AllEvents",
+      "region": "houston",
+      "lat": 29.76043,
+      "lng": -95.3698,
+      "located": "source",
+      "startTime": "10:00",
+      "endTime": "15:00",
+      "sourceId": "allevents-houston",
+      "description": "🎄 Heritage Holiday Market – Two Days of Holiday Magic! 🎅 Grab your family, invite your friends and join us December 12 & 13 at The Heritage Society for a festive weekend filled…",
+      "firstSeen": "2026-11-21"
+    },
+    {
       "id": "evt-6715bd69f01103cb",
       "category": "seasonal",
       "kind": "seasonal",
@@ -12792,16 +13016,16 @@
       "venue": "231 W Jefferson Blvd",
       "city": "Dallas",
       "startDate": "2026-12-13",
+      "startTime": "17:00",
+      "endTime": "17:00",
       "sourceUrl": "https://allevents.in/dallas/an-evening-with-peter-billingsley-and-a-christmas-story/200030572915221",
       "source": "AllEvents",
+      "description": "Celebrate the holiday season with an unforgettable evening featuring a screening of the beloved classic “A Christmas Story” followed by a moderated interview and audience Q&A from…",
       "region": "dallas",
       "lat": 32.74352,
       "lng": -96.82586,
       "located": "source",
-      "startTime": "17:00",
       "sourceId": "allevents-dallas",
-      "endTime": "17:00",
-      "description": "Celebrate the holiday season with an unforgettable evening featuring a screening of the beloved classic “A Christmas Story” followed by a moderated interview and audience Q&A from…",
       "firstSeen": "2026-11-21"
     },
     {
@@ -13413,26 +13637,6 @@
       "firstSeen": "2026-11-23"
     },
     {
-      "id": "evt-2b086fde1fcad802",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "The List Holiday Pop Up: Jingle & Mingle Singles Night",
-      "venue": "The List Naughty & Nice Holiday Pop-Up, 5670 Village Glen Drive",
-      "city": "Dallas",
-      "startDate": "2026-12-17",
-      "sourceUrl": "https://allevents.in/dallas/the-list-holiday-pop-up-jingle-and-mingle-singles-night/100002004738831812",
-      "source": "AllEvents",
-      "region": "dallas",
-      "lat": 32.85945,
-      "lng": -96.76237,
-      "located": "source",
-      "startTime": "18:00",
-      "endTime": "21:00",
-      "sourceId": "allevents-dallas",
-      "firstSeen": "2026-11-21"
-    },
-    {
       "id": "evt-40a77774b28611e4",
       "category": "popup",
       "kind": "popup",
@@ -13447,6 +13651,8 @@
       "lat": 32.95229,
       "lng": -96.73547,
       "located": "source",
+      "startTime": "19:00",
+      "endTime": "21:00",
       "sourceId": "allevents-fort-worth",
       "firstSeen": "2026-11-25"
     },
@@ -13493,24 +13699,26 @@
       "firstSeen": "2026-11-25"
     },
     {
-      "id": "evt-670aa54ed84b1b67",
+      "id": "evt-c1d3c1c2b5eb84cb",
       "category": "seasonal",
       "kind": "seasonal",
       "tags": [],
-      "title": "Dallas Christmas Eve Food Truck Festival 2026",
-      "venue": "3809 Grand Avenue",
-      "city": "Dallas",
+      "title": "Classic Movie Night in Inner Space Cavern",
+      "venue": "Inner Space Cavern, 4200 South Interstate 35 Frontage Road",
+      "city": "Georgetown",
       "startDate": "2026-12-18",
-      "endDate": "2026-12-20",
-      "sourceUrl": "https://allevents.in/dallas/dallas-christmas-eve-food-truck-festival-2026/100002004248180260",
+      "startTime": "18:00",
+      "endTime": "22:00",
+      "price": "$7.77–$39",
+      "sourceUrl": "https://allevents.in/georgetown/classic-movie-night-in-inner-space-cavern-its-a-wonderful-life/100002005310451542",
       "source": "AllEvents",
-      "region": "dallas",
-      "lat": 32.7804,
-      "lng": -96.76259,
+      "description": "Celebrate Christmas underground with a magical and unforgettable showing of Frank Capra's It's a Wonderful Life inside Inner Space Cavern!",
+      "region": "austin",
+      "lat": 30.60791,
+      "lng": -97.68814,
       "located": "source",
-      "startTime": "10:00",
-      "sourceId": "allevents-dallas",
-      "firstSeen": "2026-11-25"
+      "sourceId": "allevents-austin",
+      "firstSeen": "2026-11-26"
     },
     {
       "id": "evt-d1cbfbde72fc6e34",
@@ -13693,6 +13901,8 @@
       "lat": 32.97632,
       "lng": -96.7207,
       "located": "source",
+      "startTime": "09:00",
+      "endTime": "12:00",
       "sourceId": "allevents-fort-worth",
       "firstSeen": "2026-11-25"
     },
@@ -13903,24 +14113,24 @@
       "firstSeen": "2026-11-22"
     },
     {
-      "id": "evt-f1867ac4b53b9bd3",
+      "id": "evt-9447b7e47aa1f88b",
       "category": "seasonal",
       "kind": "seasonal",
       "tags": [],
-      "title": "Kelee & KD Christmas Dance Pop-Up",
-      "venue": "Studio ACE Dance & Movement",
+      "title": "Kelee & KayDianna’s Christmas Dance Pop-Up",
+      "venue": "Studio ACE Dance & Movement, 8050 Preston Road",
       "city": "Frisco",
       "startDate": "2026-12-19",
-      "sourceUrl": "https://allevents.in/frisco/kelee-and-kd-christmas-dance-pop-up/4700031123668247",
+      "price": "$44.52",
+      "sourceUrl": "https://allevents.in/frisco/kelee-and-kaydiannas-christmas-dance-pop-up/100002005447087223",
       "source": "AllEvents",
       "region": "dallas",
       "lat": 33.14465,
       "lng": -96.80387,
       "located": "source",
-      "sourceId": "allevents-north-dallas",
       "startTime": "02:00",
       "endTime": "04:00",
-      "price": "$44.52",
+      "sourceId": "allevents-north-dallas",
       "firstSeen": "2026-11-25"
     },
     {
@@ -14003,6 +14213,50 @@
       "sourceId": "instagram",
       "firstSeen": "2026-11-26",
       "avatar": "avatars/liddieevents.jpg"
+    },
+    {
+      "id": "evt-0c3b12448d709042",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Schnabelperchten will soon be here",
+      "venue": "Dark Hour Haunted House, 701 Taylor Dr. Plano, Texas",
+      "city": "Plano",
+      "startDate": "2026-12-19",
+      "startTime": "21:30",
+      "sourceUrl": "https://www.instagram.com/p/DgGMDZ5gcLm/",
+      "source": "Instagram @darkhourhauntedhouse",
+      "account": "darkhourhauntedhouse",
+      "description": "Posted by Dark Hour Haunted House on Instagram. See the post for details.",
+      "region": "dallas",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/darkhourhauntedhouse.jpg",
+      "lat": 33.00833,
+      "lng": -96.70523,
+      "located": "address"
+    },
+    {
+      "id": "evt-ba868c538f40e596",
+      "category": "seasonal",
+      "kind": "seasonal",
+      "tags": [],
+      "title": "Slay Bells, the one where the Christmas slashers DECK, SNIP, JANGLE, CLOBBER, an",
+      "venue": "Dark Hour Haunted House, 701 Taylor Dr. Plano, Texas",
+      "city": "Plano",
+      "startDate": "2026-12-19",
+      "startTime": "21:30",
+      "sourceUrl": "https://www.instagram.com/reel/DgLTBz-j6e4/",
+      "source": "Instagram @darkhourhauntedhouse",
+      "account": "darkhourhauntedhouse",
+      "description": "Posted by Dark Hour Haunted House on Instagram. See the post for details.",
+      "region": "dallas",
+      "sourceId": "instagram",
+      "firstSeen": "2026-11-26",
+      "avatar": "avatars/darkhourhauntedhouse.jpg",
+      "lat": 33.00833,
+      "lng": -96.70523,
+      "located": "address"
     },
     {
       "account": "vettahausventures",
@@ -14102,26 +14356,6 @@
       "firstSeen": "2026-11-25"
     },
     {
-      "id": "evt-6379afd0a8442a71",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "CORALINE x HELLO KITTY HOLIDAY WORLD MARKET",
-      "venue": "SHOPS AT REDBIRD, 3662 W Camp Wisdom Rd",
-      "city": "Dallas",
-      "startDate": "2026-12-20",
-      "sourceUrl": "https://allevents.in/dallas/coraline-x-hello-kitty-holiday-world-market-tickets/80006422142296",
-      "source": "AllEvents",
-      "region": "dallas",
-      "lat": 32.66029,
-      "lng": -96.87676,
-      "located": "source",
-      "startTime": "14:00",
-      "endTime": "17:00",
-      "sourceId": "allevents-dallas",
-      "firstSeen": "2026-11-22"
-    },
-    {
       "id": "evt-15f52001979787d7",
       "category": "seasonal",
       "kind": "seasonal",
@@ -14161,27 +14395,6 @@
       "endTime": "17:00",
       "sourceId": "allevents-north-dallas",
       "firstSeen": "2026-11-25"
-    },
-    {
-      "id": "evt-76c3e0e897ad8f7f",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "Pancakes at the North Pole",
-      "venue": "Main Event Austin, 13301 N Hwy 183, Austin// 78750",
-      "city": "Mc Neil",
-      "startDate": "2026-12-20",
-      "startTime": "11:00",
-      "endTime": "13:00",
-      "price": "$27.24–$35.96",
-      "sourceUrl": "https://allevents.in/mc-neil/pancakes-at-the-north-pole-austin-north/2700031045721340",
-      "source": "AllEvents",
-      "description": "⭐ Arrive at Main Event and step into a merry morning built around family-friendly holiday fun.",
-      "region": "austin",
-      "lat": 30.45009,
-      "lng": -97.71887,
-      "located": "source",
-      "sourceId": "allevents-austin"
     },
     {
       "id": "evt-a011c00c7016211b",
@@ -14304,27 +14517,6 @@
       "located": "source",
       "sourceId": "allevents-dallas",
       "firstSeen": "2026-11-21"
-    },
-    {
-      "id": "evt-69fbf980e7894a47",
-      "category": "seasonal",
-      "kind": "seasonal",
-      "tags": [],
-      "title": "New Year's Eve at Four Seasons Hotel Houston",
-      "venue": "Four Seasons Hotel Houston, 1300 Lamar Street",
-      "city": "Houston",
-      "startDate": "2026-12-31",
-      "endDate": "2027-01-01",
-      "price": "$97.88–$1335.68",
-      "sourceUrl": "https://allevents.in/houston/new-years-eve-at-four-seasons-hotel-houston/100001998931499926",
-      "source": "AllEvents",
-      "region": "houston",
-      "lat": 29.75391,
-      "lng": -95.36324,
-      "located": "source",
-      "startTime": "21:00",
-      "sourceId": "allevents-houston",
-      "firstSeen": "2026-11-25"
     },
     {
       "id": "evt-6869bfc23f4276b3",
@@ -14500,6 +14692,8 @@
       "lat": 32.91262,
       "lng": -96.63889,
       "located": "source",
+      "startTime": "12:00",
+      "endTime": "18:00",
       "sourceId": "allevents-fort-worth",
       "firstSeen": "2026-11-25"
     },
@@ -14527,27 +14721,151 @@
       "lat": 30.33316,
       "lng": -97.73583,
       "located": "manual"
+    }
+  ],
+  "listingsAt": "2026-11-26T18:15:34.598Z",
+  "sources": [
+    {
+      "id": "allevents-austin",
+      "ok": true,
+      "count": 112
     },
     {
-      "id": "evt-22869ce8109e3cdf",
-      "category": "popup",
-      "kind": "popup",
-      "tags": [],
-      "title": "Natural Hair Fest Houston",
-      "venue": "SpringHill Suites by Marriott Houston Downtown/Convention Center, 914 Dallas Street",
+      "id": "visit-austin",
+      "ok": true,
+      "count": 2
+    },
+    {
+      "id": "added-allevents-in-austin",
+      "ok": true,
+      "count": 1
+    },
+    {
+      "id": "allevents-dallas",
+      "ok": true,
+      "count": 131
+    },
+    {
+      "id": "allevents-north-dallas",
+      "ok": true,
+      "count": 145
+    },
+    {
+      "id": "allevents-fort-worth",
+      "ok": true,
+      "count": 147
+    },
+    {
+      "id": "visit-dfw",
+      "ok": true,
+      "count": 14
+    },
+    {
+      "id": "allevents-houston",
+      "ok": true,
+      "count": 117
+    },
+    {
+      "id": "weekly-markets",
+      "ok": true,
+      "count": 7
+    },
+    {
+      "id": "instagram",
+      "ok": true,
+      "count": 104
+    }
+  ],
+  "markets": [
+    {
+      "id": "way/1230311383",
+      "name": "Austin Country Flea Market",
+      "city": "Austin",
+      "region": "austin",
+      "lat": 30.33263,
+      "lng": -97.63045
+    },
+    {
+      "id": "node/13963507958",
+      "name": "380 Denton Flea Market",
+      "city": "Denton",
+      "region": "dallas",
+      "lat": 33.23517,
+      "lng": -97.07072,
+      "url": "https://www.fleamarketmalls.com/market/flea-market-380/"
+    },
+    {
+      "id": "way/317912695",
+      "name": "Farmers Market Building",
+      "city": "Grand Prairie",
+      "region": "dallas",
+      "lat": 32.74582,
+      "lng": -97.00455
+    },
+    {
+      "id": "way/507408128",
+      "name": "Red Barn Flea Market",
+      "city": "Waxahachie",
+      "region": "dallas",
+      "lat": 32.38418,
+      "lng": -96.85066
+    },
+    {
+      "id": "node/9135965197",
+      "name": "Waxahachie Farmers Market",
+      "city": "Waxahachie",
+      "region": "dallas",
+      "lat": 32.37898,
+      "lng": -96.84708,
+      "url": "https://www.waxahachiecvb.com/business/waxahachie-downtown-farmers-market"
+    },
+    {
+      "id": "node/5437323309",
+      "name": "Cheng's Flea Market",
       "city": "Houston",
-      "startDate": "2027-04-11",
-      "price": "$30.87–$290.77",
-      "sourceUrl": "https://allevents.in/houston/natural-hair-fest-houston-community-culture-and-creativity/100001990011198063",
-      "source": "AllEvents",
       "region": "houston",
-      "lat": 29.75538,
-      "lng": -95.36691,
-      "located": "source",
-      "startTime": "10:00",
-      "endTime": "23:00",
-      "sourceId": "allevents-houston",
-      "firstSeen": "2026-11-23"
+      "lat": 29.91336,
+      "lng": -95.40405
+    },
+    {
+      "id": "node/5437323266",
+      "name": "De Buey y Vacas Taquerías Flea Market",
+      "city": "Houston",
+      "region": "houston",
+      "lat": 29.88704,
+      "lng": -95.39324
+    },
+    {
+      "id": "node/5437174966",
+      "name": "Lucky Land Flea Market",
+      "city": "Houston",
+      "region": "houston",
+      "lat": 29.88512,
+      "lng": -95.39344
+    },
+    {
+      "id": "node/5437174965",
+      "name": "Mercado Sabadomingo",
+      "city": "Houston",
+      "region": "houston",
+      "lat": 29.88645,
+      "lng": -95.39156
+    },
+    {
+      "id": "node/5437174717",
+      "name": "Sinta Flea Market",
+      "city": "Houston",
+      "region": "houston",
+      "lat": 29.88769,
+      "lng": -95.39411
+    },
+    {
+      "id": "node/5437323265",
+      "name": "Sunny Flea Market",
+      "city": "Houston",
+      "region": "houston",
+      "lat": 29.88615,
+      "lng": -95.39322
     }
   ]
 }

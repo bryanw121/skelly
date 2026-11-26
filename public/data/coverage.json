@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T14:17:46.682Z",
+ "generatedAt": "2026-11-26T18:24:44.364Z",
  "regions": [
   {
    "id": "austin",
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 81,
+     "sessions": 82,
      "pinned": true,
      "booking": true,
      "via": [
@@ -117,7 +117,7 @@
      "venue": "Volleyworld (Pflugerville)",
      "city": "Pflugerville",
      "sport": "volleyball",
-     "sessions": 9,
+     "sessions": 8,
      "pinned": true,
      "booking": false,
      "via": [
@@ -131,7 +131,7 @@
      "venue": "Volleyworld (Georgetown)",
      "city": "Georgetown",
      "sport": "volleyball",
-     "sessions": 7,
+     "sessions": 6,
      "pinned": true,
      "booking": false,
      "via": [

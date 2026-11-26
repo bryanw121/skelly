@@ -136,19 +136,30 @@
  },
  "milwoodmarket": {
   "events": [
-   "evt-33858e9c01fb281f"
+   "evt-33858e9c01fb281f",
+   "evt-ee079b46037b3f9a"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-19"
+  "last": "2026-11-26"
  },
  "latincity": {
   "events": [
    "evt-4f96d06dfd182bea",
    "evt-8274d1ed8d7a945b",
-   "evt-ef8ba11960b67964"
+   "evt-ef8ba11960b67964",
+   "evt-4097eb127e14c8b5",
+   "evt-8889102f1c3cabcf",
+   "evt-c65422210579dd02",
+   "evt-866535f42ce272f5",
+   "evt-070604ab300147c1",
+   "evt-a65090e20fd4b2ce",
+   "evt-d61d08cb2ef85372",
+   "evt-80a83de68a647da0",
+   "evt-458fffb33f2959cc",
+   "evt-dacf7c971b81184f"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "movemountainsmarket": {
   "events": [
@@ -190,10 +201,11 @@
  },
  "theluckymarketfestival": {
   "events": [
-   "evt-84cc28ce43e4a2dc"
+   "evt-84cc28ce43e4a2dc",
+   "evt-08dd5ddc204b2e1f"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-19"
+  "last": "2026-11-26"
  },
  "twosisterskimchi": {
   "events": [
@@ -270,10 +282,11 @@
  },
  "thecapricorncafe": {
   "events": [
-   "evt-fdb075acbf2915b0"
+   "evt-fdb075acbf2915b0",
+   "evt-66a025a351531c14"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-26"
  },
  "theclearforkfarmersmarket": {
   "events": [
@@ -578,10 +591,11 @@
  "funkytownmatcha": {
   "events": [
    "evt-7f2a0c124886c1be",
-   "evt-8d767568ecacaaae"
+   "evt-8d767568ecacaaae",
+   "evt-40bfce7a7b970cd5"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-26"
  },
  "matc.hamuse": {
   "events": [
@@ -682,10 +696,11 @@
  "jazzystacos": {
   "events": [
    "evt-2b84f18e6ec03f2f",
-   "evt-faf7068537f36ef2"
+   "evt-faf7068537f36ef2",
+   "evt-1679e59abbbcec72"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "2hermanoscocinalatina": {
   "events": [
@@ -781,17 +796,20 @@
  },
  "summer_sweets25": {
   "events": [
-   "evt-064471fc3947fdc7"
+   "evt-064471fc3947fdc7",
+   "evt-e29ab2be39826992",
+   "evt-b146ec6561723e4a"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-26"
  },
  "la.crumb": {
   "events": [
-   "evt-a7b1b7d3aacfaa96"
+   "evt-a7b1b7d3aacfaa96",
+   "evt-90331fae52be00b2"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-26"
  },
  "launiondallas": {
   "events": [
@@ -928,10 +946,11 @@
  },
  "kyotokoffie": {
   "events": [
-   "evt-e13d8252c8de92d6"
+   "evt-e13d8252c8de92d6",
+   "evt-57f822bf33edcddb"
   ],
   "first": "2026-11-22",
-  "last": "2026-11-22"
+  "last": "2026-11-26"
  },
  "bluehousesweetsatx": {
   "events": [
@@ -1503,10 +1522,11 @@
  },
  "plughubaustin": {
   "events": [
-   "evt-1d9dd7a38e2744f0"
+   "evt-1d9dd7a38e2744f0",
+   "evt-479b3f00d261ef8f"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "thefaithfulmarket": {
   "events": [
@@ -1637,10 +1657,12 @@
    "evt-3f46b6aaa86a6217",
    "evt-11902e353cd1e6be",
    "evt-72ef34eaccf63886",
-   "evt-d312f23a38d8230f"
+   "evt-d312f23a38d8230f",
+   "evt-b0d8c0e40e24b3c9",
+   "evt-8b481f12e8cc56d5"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "trinitygroves": {
   "events": [
@@ -1691,10 +1713,11 @@
  },
  "austinartisanmarket": {
   "events": [
-   "evt-243efbee9bbc426f"
+   "evt-243efbee9bbc426f",
+   "evt-afc3fa8452d6cc2c"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "citylinedfw": {
   "events": [
@@ -1709,5 +1732,143 @@
   ],
   "first": "2026-11-25",
   "last": "2026-11-25"
+ },
+ "matchablossom_tx": {
+  "events": [
+   "evt-e7bb2a71b7e62f26"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "dearmatchahtx": {
+  "events": [
+   "evt-56ed73594408beaf"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "elvnmatcha": {
+  "events": [
+   "evt-d2fc638af3d6aa51"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "buiandco": {
+  "events": [
+   "evt-8d52aac04e793b2f"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "bodyalive.trophyclub": {
+  "events": [
+   "evt-ac1e9e12137ee2bd"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "j.a.r.collective": {
+  "events": [
+   "evt-b8bd390b2f3d9fbd"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "matchabymena": {
+  "events": [
+   "evt-6b30d997a45373ca"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "signbaraustin": {
+  "events": [
+   "evt-beb22b993dfba760"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "yamyamsmatcha": {
+  "events": [
+   "evt-051204b8073c12f2"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "umlaufsculpture": {
+  "events": [
+   "evt-d8afea857427a79b"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "contemporaryatx": {
+  "events": [
+   "evt-7baf1b0d19601e2a"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "vintagemarketdaysofaustin": {
+  "events": [
+   "evt-399e00ae52ace9e8"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "darkhourhauntedhouse": {
+  "events": [
+   "evt-fd9e5e7f3fbf72f9",
+   "evt-03dfedac40cafda9",
+   "evt-0c3b12448d709042",
+   "evt-ba868c538f40e596"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "jessfeury": {
+  "events": [
+   "evt-c9ab070cb4eb041b"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "katshandbaked": {
+  "events": [
+   "evt-304b27529c0b3fec",
+   "evt-c77b16c6442774d4"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "preppyvintageatx": {
+  "events": [
+   "evt-3e71db13de55b46e",
+   "evt-84fb9fdb12f39508"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "kingdomsocietyco": {
+  "events": [
+   "evt-22263afca0328079"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "burimatcha": {
+  "events": [
+   "evt-0b894e386fab096c"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "luxeartagency": {
+  "events": [
+   "evt-b3fa2e2573256bfb"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
  }
 }

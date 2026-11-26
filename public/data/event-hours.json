@@ -400,7 +400,7 @@
   "endTime": "21:00"
  },
  "https://allevents.in/dallas/the-boho-market-at-klyde-warren-park/100001983884054612": {
-  "checkedAt": "2026-11-22T07:11:44.224Z"
+  "checkedAt": "2026-11-26T18:15:34.598Z"
  },
  "https://allevents.in/dallas/sunday-funday-with-the-market-on-the-strip/200031065322145": {
   "checkedAt": "2026-11-25T17:03:57.669Z"
@@ -614,7 +614,7 @@
   "endTime": "19:00"
  },
  "https://allevents.in/houston/azteca-farmers-market-pop-up/200031080053800": {
-  "checkedAt": "2026-11-22T08:00:06.138Z"
+  "checkedAt": "2026-11-26T18:15:34.598Z"
  },
  "https://allevents.in/houston/the-snowflake-market/100002004890624829": {
   "checkedAt": "2026-11-22T08:00:06.138Z",
@@ -650,7 +650,7 @@
   "startTime": "10:00"
  },
  "https://allevents.in/houston/houston-farmers-market/200030724829815": {
-  "checkedAt": "2026-11-22T18:16:26.533Z"
+  "checkedAt": "2026-11-26T18:15:34.598Z"
  },
  "https://allevents.in/houston/bayou-city-community-market-holiday-farmers-and-artisan-market/100001998692356642": {
   "checkedAt": "2026-11-22T18:16:26.533Z",
@@ -688,7 +688,7 @@
   "endTime": "19:00"
  },
  "https://allevents.in/houston/punk-rock-garage-sale-black-friday-night-market/200031016871608": {
-  "checkedAt": "2026-11-22T18:16:26.533Z"
+  "checkedAt": "2026-11-26T18:15:34.598Z"
  },
  "https://allevents.in/austin/the-austin-stone-christmas-fest/4700031097414044": {
   "checkedAt": "2026-11-26T01:25:39.653Z"
@@ -802,7 +802,7 @@
   "startTime": "10:00"
  },
  "https://allevents.in/houston/cy-fair-ffa-country-christmas-craft-show/3700030972891738": {
-  "checkedAt": "2026-11-23T14:17:07.078Z"
+  "checkedAt": "2026-11-26T18:15:34.598Z"
  },
  "https://allevents.in/austin/hella-artsy-pop-up-shop-holiday-edition/100002003793344835": {
   "checkedAt": "2026-11-23T22:17:28.925Z",
@@ -1328,5 +1328,60 @@
   "checkedAt": "2026-11-26T10:51:48.866Z",
   "startTime": "09:00",
   "endTime": "12:00"
+ },
+ "https://allevents.in/dallas/winter-village-at-the-adolphus/200031140511553": {
+  "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "17:00",
+  "endTime": "23:45"
+ },
+ "https://allevents.in/frisco/christmas-sip-and-stroll-in-the-star-district/100002004611362548": {
+  "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "18:00",
+  "endTime": "21:00"
+ },
+ "https://allevents.in/frisco/pet-appreciation-day-at-frisco-fresh-market/200030772443908": {
+  "checkedAt": "2026-11-26T18:15:34.598Z"
+ },
+ "https://allevents.in/arlington/holiday-pop-up/200030784396857": {
+  "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "12:00"
+ },
+ "https://allevents.in/garland/shes-from-texas-market-tickets/80003575894913": {
+  "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "12:00",
+  "endTime": "18:00"
+ },
+ "https://allevents.in/richardson/richardson-arts-and-crafts-festival/100002003698359732": {
+  "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "10:00"
+ },
+ "https://allevents.in/richardson/santas-last-stop-holiday-pop-up-truck-yard-richardson/100002004150434901": {
+  "checkedAt": "2026-11-26T18:15:34.598Z"
+ },
+ "https://allevents.in/richardson/calm-and-bright-a-free-community-sound-bath-wellness-pop-up/100002003991727202": {
+  "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "09:00",
+  "endTime": "12:00"
+ },
+ "https://allevents.in/richardson/3418-music-pop-up-show-at-oak-highlands-brewery/200031087317608": {
+  "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "19:00",
+  "endTime": "21:00"
+ },
+ "https://allevents.in/richardson/lizzie-bees-flower-shoppe-holiday-market/100002005140143145": {
+  "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "09:00",
+  "endTime": "15:00"
+ },
+ "https://www.fortworth.com/event/80th-annual-fort-worth-community-christmas-tree-lighting/43342/": {
+  "checkedAt": "2026-11-26T18:15:34.598Z"
+ },
+ "https://www.fortworth.com/event/christmas-in-the-garden-at-the-fort-worth-botanic-garden/43024/": {
+  "checkedAt": "2026-11-26T18:15:34.598Z"
+ },
+ "https://allevents.in/houston/ymca-langham-creek-holiday-market-winter-festival-farmers-market-tickets/80002027182453": {
+  "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "10:00",
+  "endTime": "15:00"
  }
 }
