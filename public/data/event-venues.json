@@ -4406,8 +4406,10 @@
     "matched": null
   },
   "bahari studios, 4980 belt line rd ste 100, addison": {
-    "unresolved": true,
-    "lastTried": "2026-11-25T17:08:16.343Z"
+    "lat": 32.953591,
+    "lng": -96.826689,
+    "located": "manual",
+    "matched": null
   },
   "historic fort worth stockyards": {
     "unresolved": true,
@@ -4528,8 +4530,10 @@
     "lastTried": "2026-11-25T17:08:18.672Z"
   },
   "easton park-7800 apogee blvd": {
-    "unresolved": true,
-    "lastTried": "2026-11-25T17:08:18.672Z"
+    "lat": 29.75437,
+    "lng": -95.34113,
+    "located": "manual",
+    "matched": null
   },
   "536 east tidwell road": {
     "lat": 29.84508,
@@ -4866,8 +4870,10 @@
     "matched": null
   },
   "martin house": {
-    "unresolved": true,
-    "lastTried": "2026-11-25T23:13:40.398Z"
+    "lat": 32.763588,
+    "lng": -97.30995,
+    "located": "manual",
+    "matched": null
   },
   "the hemlock haus misfits market": {
     "unresolved": true,
@@ -4906,8 +4912,10 @@
     "matched": "2701 RIO GRANDE ST, AUSTIN, TX, 78705"
   },
   "you’ve got three chances to catch us this weekend": {
-    "unresolved": true,
-    "lastTried": "2026-11-25T23:13:42.778Z"
+    "lat": 32.87734,
+    "lng": -97.10281,
+    "located": "manual",
+    "matched": null
   },
   "5950 river oaks blvd, fort worth, tx": {
     "unresolved": true,
@@ -5976,8 +5984,10 @@
     "matched": "2650 FM 1960 RD W, HOUSTON, TX, 77068"
   },
   "alison's corner, 5977 preston rd ste 300": {
-    "unresolved": true,
-    "lastTried": "2026-11-26T16:41:40.087Z"
+    "lat": 33.127647,
+    "lng": -96.806885,
+    "located": "manual",
+    "matched": null
   },
   "indy clover fort worth, 5900 overton ridge blvd ste 110": {
     "lat": 32.67662,
@@ -6306,5 +6316,219 @@
   "fort worth botanic garden": {
     "unresolved": true,
     "lastTried": "2026-11-27T10:57:36.973Z"
+  },
+  "truck yard fort worth": {
+    "lat": 32.90992,
+    "lng": -97.31205,
+    "located": "manual",
+    "matched": null
+  },
+  "5644 navigation blvd. | houston, tx": {
+    "lat": 29.74772,
+    "lng": -95.31726,
+    "located": "manual",
+    "matched": null
+  },
+  "martin house brewing co": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:21.609Z"
+  },
+  "2800 navigation blvd houston tx 77002": {
+    "lat": 29.75682,
+    "lng": -95.3419,
+    "located": "address",
+    "matched": "2800 NAVIGATION BLVD, HOUSTON, TX, 77003"
+  },
+  "2800 navigation blvd": {
+    "lat": 29.75682,
+    "lng": -95.3419,
+    "located": "address",
+    "matched": "2800 NAVIGATION BLVD, HOUSTON, TX, 77003"
+  },
+  "cris & john viet-mex kitchen, 6090 campbell rd ste 136": {
+    "lat": 32.9827,
+    "lng": -96.80292,
+    "located": "manual",
+    "matched": null
+  },
+  "5309 martin luther king blvd": {
+    "lat": 29.7029,
+    "lng": -95.33357,
+    "located": "manual",
+    "matched": null
+  },
+  "dfw car & toy museum, 2550 mcmillan pkwy": {
+    "lat": 32.81998,
+    "lng": -97.31092,
+    "located": "manual",
+    "matched": null
+  },
+  "clearfork": {
+    "lat": 32.70701,
+    "lng": -97.39484,
+    "located": "manual",
+    "matched": null
+  },
+  "10425 hillcroft st": {
+    "lat": 29.66831,
+    "lng": -95.49199,
+    "located": "manual",
+    "matched": null
+  },
+  "excalibur brewing on nov 28th": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:24.238Z"
+  },
+  "winter wonderland’s holiday kickoff party": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:24.238Z"
+  },
+  "fort worth stockyards farmers market, 2414 clinton ave": {
+    "lat": 32.78913,
+    "lng": -97.35252,
+    "located": "manual",
+    "matched": null
+  },
+  "2414 clinton avenue, fort worth, tx": {
+    "lat": 32.78911,
+    "lng": -97.35277,
+    "located": "address",
+    "matched": "2414 CLINTON AVE, FORT WORTH, TX, 76164"
+  },
+  "various venues, houston / spring": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:25.459Z"
+  },
+  "2414 clinton avenue": {
+    "lat": 32.78911,
+    "lng": -97.35277,
+    "located": "address",
+    "matched": "2414 CLINTON AVE, FORT WORTH, TX, 76164"
+  },
+  "saint arnold brewing co": {
+    "lat": 29.77109,
+    "lng": -95.34841,
+    "located": "manual",
+    "matched": null
+  },
+  "roommate collective, 1023 springdale rd unit 6b": {
+    "lat": 30.26803,
+    "lng": -97.69359,
+    "located": "manual",
+    "matched": null
+  },
+  "saint arnold brewing co.\\": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:26.678Z"
+  },
+  "4950 katy gaston rd unit c": {
+    "lat": 29.7187,
+    "lng": -95.8102,
+    "located": "manual",
+    "matched": null
+  },
+  "greenwood park · 555 7th ave, brooklyn": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:26.678Z"
+  },
+  "isa matcha at onli, 1143 providence st": {
+    "lat": 29.76876,
+    "lng": -95.35558,
+    "located": "manual",
+    "matched": null
+  },
+  "industry austin, 1211 e 5th st. ste 150, austin, tx 78702": {
+    "lat": 30.26341,
+    "lng": -97.73081,
+    "located": "address",
+    "matched": null
+  },
+  "fair park dallas | enter through gate 5": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:26.678Z"
+  },
+  "the travis county expo center": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:26.678Z"
+  },
+  "historic downtown grapevine, 336 s main st": {
+    "lat": 32.93793,
+    "lng": -97.07867,
+    "located": "source",
+    "matched": null
+  },
+  "the esplanade | 2800 navigation blvd, houston, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:26.678Z"
+  },
+  "the ugly sweater market": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:26.679Z"
+  },
+  "3302 emancipation ave": {
+    "lat": 29.73376,
+    "lng": -95.3659,
+    "located": "source",
+    "matched": null
+  },
+  "4400 aldine mail rte rd": {
+    "lat": 29.90165,
+    "lng": -95.32791,
+    "located": "manual",
+    "matched": null
+  },
+  "dr. glenn mitchell memorial park, 300 west louisiana street": {
+    "lat": 33.19762,
+    "lng": -96.61786,
+    "located": "source",
+    "matched": null
+  },
+  "rolkm, 4933 wilbarger st": {
+    "lat": 32.69925,
+    "lng": -97.24934,
+    "located": "source",
+    "matched": null
+  },
+  "alvarado town square, 104 e college st": {
+    "lat": 32.40664,
+    "lng": -97.21183,
+    "located": "source",
+    "matched": null
+  },
+  "saintarnoldbrewing 2000 lyons ave, houston, tx": {
+    "lat": 29.77109,
+    "lng": -95.34841,
+    "located": "manual",
+    "matched": null
+  },
+  "where: moon tower inn (3004 canal st, houston)": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:26.679Z"
+  },
+  "moon tower inn, 3004 canal st, htx, 77003": {
+    "lat": 29.75437,
+    "lng": -95.34113,
+    "located": "manual",
+    "matched": null
+  },
+  "historic downtown plano arts district": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:26.679Z"
+  },
+  "dfw car & toy museum": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T18:23:26.679Z"
+  },
+  "earth to mars cafe, 3302 canal st": {
+    "lat": 29.75272,
+    "lng": -95.33903,
+    "located": "manual",
+    "matched": null
+  },
+  "dallas": {
+    "lat": 32.77667,
+    "lng": -96.79699,
+    "located": "source",
+    "matched": null
   }
 }

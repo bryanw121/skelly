@@ -18,7 +18,7 @@ Venues the schedule sees only through groups that host there (Reclub, Sweatpals,
 | Venue | City | Sport | Sessions | Seen via | Pin |
 |---|---|---|---|---|---|
 | USSPT | Lewisville | volleyball | 10 | dallas-meetup | yes |
-| Sports Garden DFW | Coppell | volleyball | 3 | dallas-meetup | yes |
+| Sports Garden DFW | Coppell | volleyball | 2 | dallas-meetup | yes |
 
 ## Houston, TX
 

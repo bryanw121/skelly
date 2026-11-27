@@ -1436,5 +1436,25 @@
   "checkedAt": "2026-11-27T10:50:13.461Z",
   "startTime": "14:00",
   "endTime": "17:00"
+ },
+ "https://allevents.in/dallas/kajora-winter-forum-tickets/4700031150990152": {
+  "checkedAt": "2026-11-27T18:16:01.690Z"
+ },
+ "https://allevents.in/dallas/the-dallas-winter-makers-market/100002002185485685": {
+  "checkedAt": "2026-11-27T18:16:01.690Z",
+  "startTime": "10:00"
+ },
+ "https://allevents.in/mckinney/chanukah-festival-in-downtown-mckinney/100002003755777470": {
+  "checkedAt": "2026-11-27T18:16:01.690Z",
+  "startTime": "17:00",
+  "endTime": "18:00"
+ },
+ "https://allevents.in/fort-worth/christmas-campout/100002005104206658": {
+  "checkedAt": "2026-11-27T18:16:01.690Z",
+  "startTime": "18:00"
+ },
+ "https://allevents.in/houston/market-at-emancipation-community-day/200031151612609": {
+  "checkedAt": "2026-11-27T18:16:01.690Z",
+  "startTime": "11:00"
  }
 }

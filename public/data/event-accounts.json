@@ -156,10 +156,11 @@
    "evt-d61d08cb2ef85372",
    "evt-80a83de68a647da0",
    "evt-458fffb33f2959cc",
-   "evt-dacf7c971b81184f"
+   "evt-dacf7c971b81184f",
+   "evt-faa8e0c071d5911f"
   ],
   "first": "2026-11-19",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "movemountainsmarket": {
   "events": [
@@ -290,10 +291,11 @@
  },
  "theclearforkfarmersmarket": {
   "events": [
-   "evt-a7bfbf23acaf3e97"
+   "evt-a7bfbf23acaf3e97",
+   "evt-35306326a4f9a7ad"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-27"
  },
  "southsidemarkets": {
   "events": [
@@ -345,10 +347,11 @@
  },
  "rollingmomotx": {
   "events": [
-   "evt-1ebdeac7d0d8d082"
+   "evt-1ebdeac7d0d8d082",
+   "evt-f11846b11aaff2b7"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-27"
  },
  "simplethingsfurniture": {
   "events": [
@@ -455,10 +458,11 @@
   "events": [
    "evt-b8bec4308b41c41c",
    "evt-553c08d4404a93e5",
-   "evt-3d384a8a985ed595"
+   "evt-3d384a8a985ed595",
+   "evt-2333332cb6a5f99b"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-25"
+  "last": "2026-11-27"
  },
  "viadulcistiramisu": {
   "events": [
@@ -610,10 +614,11 @@
  },
  "sloburn.atx": {
   "events": [
-   "evt-c9e5db44b2c48b29"
+   "evt-c9e5db44b2c48b29",
+   "evt-c113e3497d091ce1"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-21"
+  "last": "2026-11-27"
  },
  "thegreatersundance": {
   "events": [
@@ -793,19 +798,21 @@
  "creamedtx": {
   "events": [
    "evt-1083a811fa2fab55",
-   "evt-05860447cc215f08"
+   "evt-05860447cc215f08",
+   "evt-772e2e9c1c48af84"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-22"
+  "last": "2026-11-27"
  },
  "summer_sweets25": {
   "events": [
    "evt-064471fc3947fdc7",
    "evt-e29ab2be39826992",
-   "evt-b146ec6561723e4a"
+   "evt-b146ec6561723e4a",
+   "evt-1a5a242d4c818114"
   ],
   "first": "2026-11-21",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "la.crumb": {
   "events": [
@@ -1033,10 +1040,11 @@
    "evt-2172dfd1d6dcd3c5",
    "evt-dfd844e1751caf77",
    "evt-c24598c290045d31",
-   "evt-2053077468006af2"
+   "evt-2053077468006af2",
+   "evt-239eb3f2e96ad046"
   ],
   "first": "2026-11-23",
-  "last": "2026-11-25"
+  "last": "2026-11-27"
  },
  "matchachachatx": {
   "events": [
@@ -1206,10 +1214,11 @@
  },
  "ahalapress": {
   "events": [
-   "evt-ad1cb05f6ccb0bfe"
+   "evt-ad1cb05f6ccb0bfe",
+   "evt-73563030e27ac702"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-24"
+  "last": "2026-11-27"
  },
  "ausforfree": {
   "events": [
@@ -1432,10 +1441,11 @@
  },
  "austintexasthings": {
   "events": [
-   "evt-d8c2755c5188e4cd"
+   "evt-d8c2755c5188e4cd",
+   "evt-a42dc07cd1cac887"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-27"
  },
  "thepointcart": {
   "events": [
@@ -1475,10 +1485,12 @@
  "ajstexasbakehouse": {
   "events": [
    "evt-2f2a2d2e56fddecb",
-   "evt-e6b35b214a8c66da"
+   "evt-e6b35b214a8c66da",
+   "evt-dc8a82423256b3cf",
+   "evt-cf683e6e0937b142"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-27"
  },
  "howdy_holiday_market": {
   "events": [
@@ -1503,10 +1515,11 @@
  },
  "studio.moonyoonits": {
   "events": [
-   "evt-9ca9219f9c08cb58"
+   "evt-9ca9219f9c08cb58",
+   "evt-e7a86ee3f017fe4c"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-27"
  },
  "ashcakeem": {
   "events": [
@@ -1517,10 +1530,11 @@
  },
  "birdiestreasuresco": {
   "events": [
-   "evt-ddc94830dea06752"
+   "evt-ddc94830dea06752",
+   "evt-111626a941438e32"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-27"
  },
  "atxwithmegan": {
   "events": [
@@ -1674,10 +1688,12 @@
    "evt-72ef34eaccf63886",
    "evt-d312f23a38d8230f",
    "evt-b0d8c0e40e24b3c9",
-   "evt-8b481f12e8cc56d5"
+   "evt-8b481f12e8cc56d5",
+   "evt-359e46ce4514a205",
+   "evt-bae00ee1fa55a530"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "trinitygroves": {
   "events": [
@@ -1685,10 +1701,11 @@
    "evt-3c0d6a8f75540310",
    "evt-fbbfe7036c957f4d",
    "evt-26f0a59e51d2ae2e",
-   "evt-9ca3cfd393cd929c"
+   "evt-9ca3cfd393cd929c",
+   "evt-bf64fc06253fc352"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "feelgoodgrp": {
   "events": [
@@ -1722,10 +1739,11 @@
  },
  "fairparkdallas": {
   "events": [
-   "evt-50a466a9d9d3482a"
+   "evt-50a466a9d9d3482a",
+   "evt-7a7530e5e6422482"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-27"
  },
  "austinartisanmarket": {
   "events": [
@@ -1904,5 +1922,136 @@
   ],
   "first": "2026-11-26",
   "last": "2026-11-26"
+ },
+ "barbythewayside": {
+  "events": [
+   "evt-2f567a8cb8ed7b50"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "designedbyvanessa": {
+  "events": [
+   "evt-e55d3068984cd2dc"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "bayoucitycommunitymarkets": {
+  "events": [
+   "evt-19d90f78f0543ae8",
+   "evt-c73da70a28374903"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "ashmoe314": {
+  "events": [
+   "evt-b72e88bc22f0059e"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "dfwcarandtoymuseum": {
+  "events": [
+   "evt-fe8ceb672ebeae34"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "jkaviedesigns": {
+  "events": [
+   "evt-5c50ed79429f6528",
+   "evt-e419b4cccb3f22fa",
+   "evt-4f5a90dd3f94af27",
+   "evt-f76ca56c8aab8e28"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "hareinthehollowcurios": {
+  "events": [
+   "evt-8ff049c965523b8b",
+   "evt-0fcd35a04542cc0d"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "themamamarketstx": {
+  "events": [
+   "evt-4c3f19ddd5b2da3d",
+   "evt-bec6eecccd4d49c7",
+   "evt-fc96df087b17fe78"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "roommatecollectiveatx": {
+  "events": [
+   "evt-d3cdb864719ed3fc"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "_.tasteful": {
+  "events": [
+   "evt-1836c880907bf118"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "d.creativeco": {
+  "events": [
+   "evt-71e767c86daa6455"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "zoeswildrisesourdough": {
+  "events": [
+   "evt-0d58a78e0cf117f8",
+   "evt-0a862ae5d1f1cd4a",
+   "evt-d3b30d8e5d5d74f7"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "kidzoneslimebarhouston": {
+  "events": [
+   "evt-4bd99bf4c3cbd8d1"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "twisted._lemonade": {
+  "events": [
+   "evt-264a6e5a27ed7100"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "spacecity.market": {
+  "events": [
+   "evt-a7d3628896bc4ee0",
+   "evt-8714f82d2b757bf5",
+   "evt-4f504bad47491144"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "makerscollectivemarkets": {
+  "events": [
+   "evt-b76b6a12246c48e7",
+   "evt-c4b70a9c397b0000"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "downtownplano": {
+  "events": [
+   "evt-e01ab370bd46265d"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
  }
 }

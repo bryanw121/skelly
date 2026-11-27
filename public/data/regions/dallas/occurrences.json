@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-27T14:15:53.104Z",
+  "generatedAt": "2026-11-27T18:15:59.766Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -91,7 +91,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "title": "Friday - Sand Volleyball (South Location)",
+      "title": "Friday - Sand Volleyball (South Location) - NO HOST",
       "venue": "Sports Garden DFW",
       "city": "Coppell",
       "level": "All levels",
@@ -832,33 +832,6 @@
       "note": "First come, first served; courts not guaranteed. Check the court calendar before you go.",
       "canceled": false,
       "verified_at": "2026-11-26",
-      "attributes": {
-        "surface": "sand",
-        "type": "Open play"
-      },
-      "venue_id": "sports-garden",
-      "status": "scheduled",
-      "previous_starts_at": null
-    },
-    {
-      "id": "meetup-dfwvb-event_316813560-2026-12-11",
-      "session_id": "meetup-dfwvb-event_316813560-2026-12-11",
-      "source_id": "dallas-meetup",
-      "sport": "volleyball",
-      "region": "dallas",
-      "timezone": "America/Chicago",
-      "title": "Friday - Sand Volleyball (South Location)",
-      "venue": "Sports Garden DFW",
-      "city": "Coppell",
-      "level": "All levels",
-      "price": null,
-      "starts_at": "2026-12-12T00:30:00.000Z",
-      "ends_at": "2026-12-12T03:30:00.000Z",
-      "signup_url": "https://www.meetup.com/dfwvolleyballdallas/events/316813560/",
-      "signup_label": "Details and RSVP",
-      "note": "Hosted by DFW Volleyball (Dallas Region).",
-      "canceled": false,
-      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "sand",
         "type": "Open play"

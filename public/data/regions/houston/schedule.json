@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-27T14:15:53.104Z",
+  "generatedAt": "2026-11-27T18:15:59.766Z",
   "region": {
     "id": "houston",
     "name": "Houston, TX",
@@ -71,7 +71,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-27T14:13:34.742Z",
+      "checkedAt": "2026-11-27T18:13:46.065Z",
       "count": 23
     },
     {
@@ -97,7 +97,7 @@
       "kind": "Sweatpals host pages",
       "site": "https://sweatpals.com",
       "ok": true,
-      "checkedAt": "2026-11-27T14:13:41.271Z",
+      "checkedAt": "2026-11-27T18:13:48.151Z",
       "count": 0,
       "warnings": [
         "no upcoming events matched on any host"

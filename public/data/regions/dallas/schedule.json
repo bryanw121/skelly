@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-27T14:15:53.104Z",
+  "generatedAt": "2026-11-27T18:15:59.766Z",
   "region": {
     "id": "dallas",
     "name": "Dallas–Fort Worth, TX",
@@ -27,7 +27,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-27T14:13:32.814Z",
+      "checkedAt": "2026-11-27T18:13:40.449Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"
@@ -112,8 +112,8 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-27T10:47:51.474Z",
-      "count": 13
+      "checkedAt": "2026-11-27T18:13:43.249Z",
+      "count": 12
     }
   ],
   "sessions": [
@@ -558,7 +558,7 @@
       "date": "2026-11-27",
       "start": "18:30",
       "end": "21:30",
-      "title": "Friday - Sand Volleyball (South Location)",
+      "title": "Friday - Sand Volleyball (South Location) - NO HOST",
       "venue": "Sports Garden DFW",
       "city": "Coppell",
       "surface": "sand",
@@ -597,32 +597,6 @@
         "label": "Details and RSVP"
       },
       "source": "https://www.meetup.com/dfwvolleyballdallas/events/316813552/",
-      "sourceId": "dallas-meetup",
-      "sport": "volleyball",
-      "region": "dallas",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
-      "venueId": "sports-garden",
-      "status": "scheduled"
-    },
-    {
-      "id": "meetup-dfwvb-event_316813560-2026-12-11",
-      "date": "2026-12-11",
-      "start": "18:30",
-      "end": "21:30",
-      "title": "Friday - Sand Volleyball (South Location)",
-      "venue": "Sports Garden DFW",
-      "city": "Coppell",
-      "surface": "sand",
-      "type": "Open play",
-      "level": "All levels",
-      "price": null,
-      "note": "Hosted by DFW Volleyball (Dallas Region).",
-      "signup": {
-        "url": "https://www.meetup.com/dfwvolleyballdallas/events/316813560/",
-        "label": "Details and RSVP"
-      },
-      "source": "https://www.meetup.com/dfwvolleyballdallas/events/316813560/",
       "sourceId": "dallas-meetup",
       "sport": "volleyball",
       "region": "dallas",

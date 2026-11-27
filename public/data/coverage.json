@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T14:17:54.435Z",
+ "generatedAt": "2026-11-27T18:23:26.731Z",
  "regions": [
   {
    "id": "austin",
@@ -45,7 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 90,
+     "sessions": 88,
      "pinned": true,
      "booking": true,
      "via": [
@@ -57,7 +57,7 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 86,
+     "sessions": 85,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 81,
+     "sessions": 77,
      "pinned": true,
      "booking": true,
      "via": [
@@ -114,6 +114,18 @@
      "lead": false
     },
     {
+     "venue": "Volleyworld (Georgetown)",
+     "city": "Georgetown",
+     "sport": "volleyball",
+     "sessions": 8,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "volleyworld"
+     ],
+     "lead": false
+    },
+    {
      "venue": "Volleyworld (Pflugerville)",
      "city": "Pflugerville",
      "sport": "volleyball",
@@ -123,18 +135,6 @@
      "via": [
       "manual",
       "reclub",
-      "volleyworld"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Volleyworld (Georgetown)",
-     "city": "Georgetown",
-     "sport": "volleyball",
-     "sessions": 7,
-     "pinned": true,
-     "booking": false,
-     "via": [
       "volleyworld"
      ],
      "lead": false
@@ -306,7 +306,7 @@
      "venue": "Sports Garden DFW",
      "city": "Coppell",
      "sport": "volleyball",
-     "sessions": 3,
+     "sessions": 2,
      "pinned": true,
      "booking": false,
      "via": [
