@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-27T18:15:59.766Z",
+  "generatedAt": "2026-11-27T22:15:51.547Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -247,33 +247,6 @@
         "type": "Open play"
       },
       "venue_id": "src-northside-community-center",
-      "status": "scheduled",
-      "previous_starts_at": null
-    },
-    {
-      "id": "sweatpals-friday-lunch-open-play-2026-11-27-1100",
-      "session_id": "sweatpals-friday-lunch-open-play-2026-11-27-1100",
-      "source_id": "sweatpals",
-      "sport": "volleyball",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "title": "Friday Lunch Open Play 🏐",
-      "venue": "ATX Beach",
-      "city": "North Austin",
-      "level": null,
-      "price": "$10",
-      "starts_at": "2026-11-27T17:00:00.000Z",
-      "ends_at": "2026-11-27T20:00:00.000Z",
-      "signup_url": "https://sweatpals.com/event/friday-lunch-open-play/2026-11-27",
-      "signup_label": "RSVP on Sweatpals",
-      "note": "Hosted on Sweatpals, weekly.",
-      "canceled": false,
-      "verified_at": "2026-11-27",
-      "attributes": {
-        "surface": "sand",
-        "type": "Open play"
-      },
-      "venue_id": "atx-beach",
       "status": "scheduled",
       "previous_starts_at": null
     },
@@ -1635,7 +1608,7 @@
         "surface": "indoor",
         "type": "Open play",
         "capacity": 12,
-        "spotsLeft": 12,
+        "spotsLeft": 10,
         "classId": "0zD6ABd2zL9E99328O1e"
       },
       "venue_id": "volleyworld-georgetown",
@@ -1720,7 +1693,7 @@
         "surface": "indoor",
         "type": "Open play",
         "capacity": 48,
-        "spotsLeft": 47,
+        "spotsLeft": 45,
         "classId": "4GPh0Zd0rS4WxjR0djTX"
       },
       "venue_id": "volleyworld-georgetown",
@@ -3512,6 +3485,36 @@
       "previous_starts_at": null
     },
     {
+      "id": "volleyworld-2026-11-28-18:30-pflugerville",
+      "session_id": "volleyworld-2026-11-28-18:30-pflugerville",
+      "source_id": "volleyworld",
+      "sport": "volleyball",
+      "region": "austin",
+      "timezone": "America/Chicago",
+      "title": "Adult Volleyball Training",
+      "venue": "Volleyworld (Pflugerville)",
+      "city": "Pflugerville",
+      "level": "Adults · Adan",
+      "price": null,
+      "starts_at": "2026-11-29T00:30:00.000Z",
+      "ends_at": "2026-11-29T02:00:00.000Z",
+      "signup_url": "https://app.arketa.co/volleyworld/checkout/7QVJQsJxRhFELnph4mQ0",
+      "signup_label": "Book on Volleyworld",
+      "note": null,
+      "canceled": false,
+      "verified_at": "2026-11-27",
+      "attributes": {
+        "surface": "indoor",
+        "type": "Training",
+        "capacity": 12,
+        "spotsLeft": 10,
+        "classId": "7QVJQsJxRhFELnph4mQ0"
+      },
+      "venue_id": "volleyworld-pflugerville",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
       "id": "openplay-austin-pickle-ranch-01a1751e-8fb6-7bbd-9db5-49f245dca964",
       "session_id": "openplay-austin-pickle-ranch-01a1751e-8fb6-7bbd-9db5-49f245dca964",
       "source_id": "austin-club-openplay",
@@ -3621,36 +3624,6 @@
         "scheduleBasis": "directory_listing"
       },
       "venue_id": "austin-pickle-pit-stop",
-      "status": "scheduled",
-      "previous_starts_at": null
-    },
-    {
-      "id": "volleyworld-2026-11-28-19:30-pflugerville",
-      "session_id": "volleyworld-2026-11-28-19:30-pflugerville",
-      "source_id": "volleyworld",
-      "sport": "volleyball",
-      "region": "austin",
-      "timezone": "America/Chicago",
-      "title": "Adult Volleyball Training",
-      "venue": "Volleyworld (Pflugerville)",
-      "city": "Pflugerville",
-      "level": "Adults · Adan",
-      "price": null,
-      "starts_at": "2026-11-29T01:30:00.000Z",
-      "ends_at": "2026-11-29T03:00:00.000Z",
-      "signup_url": "https://app.arketa.co/volleyworld/checkout/7QVJQsJxRhFELnph4mQ0",
-      "signup_label": "Book on Volleyworld",
-      "note": null,
-      "canceled": false,
-      "verified_at": "2026-11-27",
-      "attributes": {
-        "surface": "indoor",
-        "type": "Training",
-        "capacity": 12,
-        "spotsLeft": 10,
-        "classId": "7QVJQsJxRhFELnph4mQ0"
-      },
-      "venue_id": "volleyworld-pflugerville",
       "status": "scheduled",
       "previous_starts_at": null
     },
