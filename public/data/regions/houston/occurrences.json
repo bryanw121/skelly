@@ -1,64 +1,8 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-27T02:15:44.800Z",
+  "generatedAt": "2026-11-27T10:50:11.529Z",
   "horizonDays": 28,
   "occurrences": [
-    {
-      "id": "reclub-TCHJ1D",
-      "session_id": "reclub-TCHJ1D",
-      "source_id": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "title": "YMCA Open Gym-1 court",
-      "venue": "Tellepsen Family Downtown YMCA",
-      "city": "Houston",
-      "level": "All levels",
-      "price": null,
-      "starts_at": "2026-11-27T00:00:00.000Z",
-      "ends_at": "2026-11-27T02:30:00.000Z",
-      "signup_url": "https://reclub.co/m/TCHJ1D",
-      "signup_label": "Sign up on Reclub",
-      "note": "Hosted by Houston Vball, every Thursday.",
-      "canceled": false,
-      "verified_at": "2026-11-26",
-      "attributes": {
-        "surface": "indoor",
-        "type": "Open play",
-        "capacity": 10
-      },
-      "venue_id": "src-tellepsen-family-downtown-ymca",
-      "status": "scheduled",
-      "previous_starts_at": null
-    },
-    {
-      "id": "reclub-Y1ZF0D",
-      "session_id": "reclub-Y1ZF0D",
-      "source_id": "houston-reclub",
-      "sport": "volleyball",
-      "region": "houston",
-      "timezone": "America/Chicago",
-      "title": "Sand Volleyball 🏐 @Champions",
-      "venue": "Champion Forest Baptist Church - Champions Campus",
-      "city": "Houston",
-      "level": "All levels",
-      "price": null,
-      "starts_at": "2026-11-27T00:45:00.000Z",
-      "ends_at": "2026-11-27T03:45:00.000Z",
-      "signup_url": "https://reclub.co/m/Y1ZF0D",
-      "signup_label": "Sign up on Reclub",
-      "note": "Hosted by HTX - Social, every Thursday.",
-      "canceled": true,
-      "verified_at": "2026-11-26",
-      "attributes": {
-        "surface": "indoor",
-        "type": "Open play",
-        "capacity": 20
-      },
-      "venue_id": "src-champion-forest-baptist-church-champions-campus",
-      "status": "cancelled",
-      "previous_starts_at": null
-    },
     {
       "id": "reclub-VGIK6U",
       "session_id": "reclub-VGIK6U",
@@ -77,7 +21,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Emancipation Park Indoor Volleyball, every Friday.",
       "canceled": true,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -105,7 +49,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Cultural Diversity Volleyball Social.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -133,7 +77,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by HoH Sports, every Friday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -161,7 +105,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by T4 Late Nights, every Friday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -189,7 +133,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Cultural Diversity Volleyball Social.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -217,7 +161,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by The Volleyball Hangout, every Saturday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -245,7 +189,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by The Volleyball Hangout, every Saturday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -273,7 +217,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Houston Vball, every Saturday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -301,7 +245,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by HTX Volleyball, every Sunday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -329,7 +273,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Houston Vball, every Sunday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -357,7 +301,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by HTX - Social, every Monday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -385,7 +329,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Cultural Diversity Volleyball Social.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -413,7 +357,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by The Volleyball Hangout, every Monday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -441,7 +385,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Houston Vball, every Monday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -469,7 +413,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Houston Vball, every Tuesday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -497,7 +441,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by HTX - Social, every Tuesday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -525,7 +469,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by The Volleyball Hangout, every Wednesday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -553,7 +497,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by HTX - Social, every Thursday.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
@@ -581,7 +525,7 @@
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by Cultural Diversity Volleyball Social.",
       "canceled": false,
-      "verified_at": "2026-11-26",
+      "verified_at": "2026-11-27",
       "attributes": {
         "surface": "indoor",
         "type": "Open play",

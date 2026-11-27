@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-27T02:15:44.800Z",
+  "generatedAt": "2026-11-27T10:50:11.529Z",
   "region": {
     "id": "dallas",
     "name": "Dallas–Fort Worth, TX",
@@ -27,7 +27,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-27T02:13:43.328Z",
+      "checkedAt": "2026-11-27T10:47:49.626Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"
@@ -112,8 +112,8 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-27T02:13:51.674Z",
-      "count": 12
+      "checkedAt": "2026-11-27T10:47:51.474Z",
+      "count": 13
     }
   ],
   "sessions": [
@@ -575,7 +575,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "sports-garden",
       "status": "scheduled"
     },
@@ -601,34 +601,34 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "sports-garden",
       "status": "scheduled"
     },
     {
-      "id": "meetup-ntav-event_317322232-2026-11-26",
-      "date": "2026-11-26",
-      "start": "20:00",
-      "end": "22:00",
-      "title": "Adult Open Gym Volleyball Lewisville",
-      "venue": "USSPT",
-      "city": "Lewisville",
-      "surface": "indoor",
+      "id": "meetup-dfwvb-event_316813560-2026-12-11",
+      "date": "2026-12-11",
+      "start": "18:30",
+      "end": "21:30",
+      "title": "Friday - Sand Volleyball (South Location)",
+      "venue": "Sports Garden DFW",
+      "city": "Coppell",
+      "surface": "sand",
       "type": "Open play",
       "level": "All levels",
       "price": null,
-      "note": "Hosted by North Texas Adult Volleyball. Register and pay in the group's own app (usspt.com); the Meetup RSVP alone doesn't get you in.",
+      "note": "Hosted by DFW Volleyball (Dallas Region).",
       "signup": {
-        "url": "https://www.meetup.com/north-texas-adult-volleyball/events/317322232/",
+        "url": "https://www.meetup.com/dfwvolleyballdallas/events/316813560/",
         "label": "Details and RSVP"
       },
-      "source": "https://www.meetup.com/north-texas-adult-volleyball/events/317322232/",
+      "source": "https://www.meetup.com/dfwvolleyballdallas/events/316813560/",
       "sourceId": "dallas-meetup",
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
-      "venueId": "src-usspt",
+      "verifiedAt": "2026-11-27",
+      "venueId": "sports-garden",
       "status": "scheduled"
     },
     {
@@ -653,7 +653,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -679,7 +679,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -705,7 +705,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -731,7 +731,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -757,7 +757,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -783,7 +783,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -809,7 +809,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -835,7 +835,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -861,7 +861,33 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
+      "venueId": "src-usspt",
+      "status": "scheduled"
+    },
+    {
+      "id": "meetup-ntav-event_317522139-2026-12-10",
+      "date": "2026-12-10",
+      "start": "20:00",
+      "end": "22:00",
+      "title": "Adult Open Gym Volleyball Lewisville",
+      "venue": "USSPT",
+      "city": "Lewisville",
+      "surface": "indoor",
+      "type": "Open play",
+      "level": "All levels",
+      "price": null,
+      "note": "Hosted by North Texas Adult Volleyball. Register and pay in the group's own app (usspt.com); the Meetup RSVP alone doesn't get you in.",
+      "signup": {
+        "url": "https://www.meetup.com/north-texas-adult-volleyball/events/317522139/",
+        "label": "Details and RSVP"
+      },
+      "source": "https://www.meetup.com/north-texas-adult-volleyball/events/317522139/",
+      "sourceId": "dallas-meetup",
+      "sport": "volleyball",
+      "region": "dallas",
+      "timezone": "America/Chicago",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-usspt",
       "status": "scheduled"
     }
@@ -1323,6 +1349,15 @@
       "region": "dallas"
     },
     {
+      "id": "src-usspt",
+      "name": "USSPT",
+      "city": "Lewisville",
+      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
+      "lat": 33.06454,
+      "lng": -97.005745,
+      "region": "dallas"
+    },
+    {
       "id": "src-greenbriar-community-center",
       "name": "Greenbriar Community Center",
       "city": "Fort Worth",
@@ -1374,15 +1409,6 @@
       "address": "5565 Truman Drive, Fort Worth, TX, 76112",
       "lat": 32.72472,
       "lng": -97.23534,
-      "region": "dallas"
-    },
-    {
-      "id": "src-usspt",
-      "name": "USSPT",
-      "city": "Lewisville",
-      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
-      "lat": 33.06454,
-      "lng": -97.005745,
       "region": "dallas"
     }
   ]

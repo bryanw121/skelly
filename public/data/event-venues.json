@@ -6266,5 +6266,45 @@
   "shrine of the black madonna cultural center & bookstore": {
     "unresolved": true,
     "lastTried": "2026-11-27T02:25:31.857Z"
+  },
+  "**november events**": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T10:57:36.970Z"
+  },
+  "eisemann center, 2351 performance dr, richardson, tx": {
+    "lat": 32.98546,
+    "lng": -96.70852,
+    "located": "source",
+    "matched": null
+  },
+  "legacy west, 5908 headquarters dr, plano": {
+    "lat": 33.08123,
+    "lng": -96.82639,
+    "located": "source",
+    "matched": null
+  },
+  "dripping springs ranch park event center": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T10:57:36.972Z"
+  },
+  "dripping springs ranch park | dripping springs, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T10:57:36.972Z"
+  },
+  "2nd street district": {
+    "lat": 32.96129,
+    "lng": -96.8267,
+    "located": "source",
+    "matched": null
+  },
+  "1125 providence st., houston, tx": {
+    "lat": 29.76919,
+    "lng": -95.35649,
+    "located": "manual",
+    "matched": null
+  },
+  "fort worth botanic garden": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T10:57:36.973Z"
   }
 }

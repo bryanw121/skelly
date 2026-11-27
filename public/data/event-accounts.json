@@ -488,10 +488,11 @@
  },
  "wanderingroots_markets": {
   "events": [
-   "evt-d33ba61b67612ec4"
+   "evt-d33ba61b67612ec4",
+   "evt-3b6aa7fdc2752c5b"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-27"
  },
  "cakepopcorner26": {
   "events": [
@@ -1097,10 +1098,11 @@
  },
  "viking.shield": {
   "events": [
-   "evt-ab6cbec5d6cdb379"
+   "evt-ab6cbec5d6cdb379",
+   "evt-6c1818a7dee46fb4"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-24"
+  "last": "2026-11-27"
  },
  "epochcoffee": {
   "events": [
@@ -1829,10 +1831,18 @@
  },
  "vintagemarketdaysofaustin": {
   "events": [
-   "evt-399e00ae52ace9e8"
+   "evt-399e00ae52ace9e8",
+   "evt-953f7d5b5a22296a",
+   "evt-3ce0f6d8cb9dff80",
+   "evt-66facf3c3fabc7a8",
+   "evt-a8f4789cae797994",
+   "evt-560483b9450e4d00",
+   "evt-954fc666a6b550c6",
+   "evt-651855487a767908",
+   "evt-a10375cd8c8c5982"
   ],
   "first": "2026-11-26",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "darkhourhauntedhouse": {
   "events": [
