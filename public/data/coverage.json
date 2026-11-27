@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T22:59:21.155Z",
+ "generatedAt": "2026-11-27T02:25:31.935Z",
  "regions": [
   {
    "id": "austin",
@@ -69,7 +69,7 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 74,
+     "sessions": 78,
      "pinned": true,
      "booking": true,
      "via": [
@@ -351,18 +351,6 @@
      "lead": false
     },
     {
-     "venue": "Handley Meadowbrook Community Center",
-     "city": "Fort Worth",
-     "sport": "pickleball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "dfw-city-active-pickleball"
-     ],
-     "lead": false
-    },
-    {
      "venue": "Martin Luther King Community Center",
      "city": "Fort Worth",
      "sport": "pickleball",
@@ -413,18 +401,6 @@
     {
      "venue": "Riverside Community Center",
      "city": "Fort Worth",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "dfw-city-active"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Riverside Community Center",
-     "city": "Fort Worth",
      "sport": "pickleball",
      "sessions": 1,
      "pinned": true,
@@ -468,7 +444,7 @@
      "venue": "Champion Forest Baptist Church - Champions Campus",
      "city": "Houston",
      "sport": "volleyball",
-     "sessions": 3,
+     "sessions": 4,
      "pinned": true,
      "booking": false,
      "via": [
@@ -480,7 +456,7 @@
      "venue": "Collins Park",
      "city": "Houston",
      "sport": "volleyball",
-     "sessions": 3,
+     "sessions": 4,
      "pinned": true,
      "booking": false,
      "via": [

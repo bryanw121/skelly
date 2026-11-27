@@ -6176,5 +6176,95 @@
     "lng": -96.80387,
     "located": "source",
     "matched": null
+  },
+  "picadera x trinity cider, 2721 main street": {
+    "lat": 32.7841,
+    "lng": -96.78356,
+    "located": "source",
+    "matched": null
+  },
+  "5309 martin luther king blvd., houston, tx 77021": {
+    "lat": 30.28646,
+    "lng": -97.67571,
+    "located": "address",
+    "matched": "5309 E MARTIN LUTHER KING JR BLVD, AUSTIN, TX, 78721"
+  },
+  "2800 navigation blvd, htx": {
+    "lat": 29.75682,
+    "lng": -95.3419,
+    "located": "address",
+    "matched": "2800 NAVIGATION BLVD, HOUSTON, TX, 77003"
+  },
+  "globe life field – north plaza, arlington, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T02:25:29.328Z"
+  },
+  "sign bar on saturday": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T02:25:29.329Z"
+  },
+  "frisco fresh market, frisco": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T02:25:29.329Z"
+  },
+  "150 w rosedale st": {
+    "lat": 32.7333,
+    "lng": -97.32661,
+    "located": "source",
+    "matched": null
+  },
+  "event center frisco, 4633 coit road ,frisco, texas": {
+    "lat": 33.11693,
+    "lng": -96.76995,
+    "located": "source",
+    "matched": null
+  },
+  "9900 carson ranch rd, crowley tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T02:25:29.499Z"
+  },
+  "sign bar | austin, tx": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T02:25:30.601Z"
+  },
+  "sign bar": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T02:25:30.601Z"
+  },
+  "grit fitness - design district, 1729 irving boulevard": {
+    "lat": 32.79277,
+    "lng": -96.82431,
+    "located": "source",
+    "matched": null
+  },
+  "3536 navigation blvd, houston, tx": {
+    "lat": 29.75476,
+    "lng": -95.33453,
+    "located": "address",
+    "matched": "3536 NAVIGATION BLVD, HOUSTON, TX, 77003"
+  },
+  "the fork yard 2529 hemphill st fort worth tx 76110": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T02:25:31.856Z"
+  },
+  "theforkyard 2529 hemphill st fort worth tx 76110": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T02:25:31.857Z"
+  },
+  "16725 longenbaugh drive": {
+    "lat": 29.89914,
+    "lng": -95.66798,
+    "located": "source",
+    "matched": null
+  },
+  "hilton garden inn dallas/allen (705 central expressway s, allen, tx)": {
+    "lat": 33.0928,
+    "lng": -96.67949,
+    "located": "source",
+    "matched": null
+  },
+  "shrine of the black madonna cultural center & bookstore": {
+    "unresolved": true,
+    "lastTried": "2026-11-27T02:25:31.857Z"
   }
 }

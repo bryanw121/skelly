@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-26T22:59:19.225Z",
+  "generatedAt": "2026-11-27T02:15:44.800Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -48,7 +48,7 @@
       "signup_url": "https://reclub.co/m/Y1ZF0D",
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by HTX - Social, every Thursday.",
-      "canceled": false,
+      "canceled": true,
       "verified_at": "2026-11-26",
       "attributes": {
         "surface": "indoor",
@@ -56,7 +56,7 @@
         "capacity": 20
       },
       "venue_id": "src-champion-forest-baptist-church-champions-campus",
-      "status": "scheduled",
+      "status": "cancelled",
       "previous_starts_at": null
     },
     {
@@ -496,6 +496,62 @@
       "signup_url": "https://reclub.co/m/KVLH3A",
       "signup_label": "Sign up on Reclub",
       "note": "Hosted by HTX - Social, every Tuesday.",
+      "canceled": false,
+      "verified_at": "2026-11-26",
+      "attributes": {
+        "surface": "indoor",
+        "type": "Open play",
+        "capacity": 20
+      },
+      "venue_id": "src-champion-forest-baptist-church-champions-campus",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
+      "id": "reclub-MT3D3D",
+      "session_id": "reclub-MT3D3D",
+      "source_id": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "title": "Volleyball Practice with Kimberly",
+      "venue": "Collins Park",
+      "city": "Houston",
+      "level": "All levels",
+      "price": "$10",
+      "starts_at": "2026-12-03T00:30:00.000Z",
+      "ends_at": "2026-12-03T03:00:00.000Z",
+      "signup_url": "https://reclub.co/m/MT3D3D",
+      "signup_label": "Sign up on Reclub",
+      "note": "Hosted by The Volleyball Hangout, every Wednesday.",
+      "canceled": false,
+      "verified_at": "2026-11-26",
+      "attributes": {
+        "surface": "indoor",
+        "type": "Open play",
+        "capacity": 30
+      },
+      "venue_id": "src-collins-park",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
+      "id": "reclub-8BH0TR",
+      "session_id": "reclub-8BH0TR",
+      "source_id": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "title": "Sand Volleyball 🏐 @Champions",
+      "venue": "Champion Forest Baptist Church - Champions Campus",
+      "city": "Houston",
+      "level": "All levels",
+      "price": null,
+      "starts_at": "2026-12-04T00:45:00.000Z",
+      "ends_at": "2026-12-04T03:45:00.000Z",
+      "signup_url": "https://reclub.co/m/8BH0TR",
+      "signup_label": "Sign up on Reclub",
+      "note": "Hosted by HTX - Social, every Thursday.",
       "canceled": false,
       "verified_at": "2026-11-26",
       "attributes": {

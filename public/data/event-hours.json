@@ -185,10 +185,10 @@
   "startTime": "14:00"
  },
  "https://allevents.in/austin/holiday-art-festival/100002003616620247": {
-  "checkedAt": "2026-11-23T22:17:28.925Z"
+  "checkedAt": "2026-11-27T02:17:39.443Z"
  },
  "https://allevents.in/austin/day-of-the-dead-artisan-mercado-workshops-tickets/80002283396568": {
-  "checkedAt": "2026-11-23T22:17:28.925Z"
+  "checkedAt": "2026-11-27T02:17:39.443Z"
  },
  "https://allevents.in/leander/5th-annual-holidays-with-the-horses-tickets/80002773211001": {
   "checkedAt": "2026-11-23T22:17:28.925Z"
@@ -635,7 +635,7 @@
   "endTime": "22:00"
  },
  "https://allevents.in/austin/the-vibe-pop-up-market/200030507603547": {
-  "checkedAt": "2026-11-22T18:16:26.533Z"
+  "checkedAt": "2026-11-27T02:17:39.443Z"
  },
  "https://allevents.in/dallas/breath-by-design-x-gallery-defi-neuroscience-9d-breathwork-holistic-market-community-nights/200030735720710": {
   "checkedAt": "2026-11-25T23:06:07.548Z"
@@ -1381,6 +1381,43 @@
  },
  "https://allevents.in/houston/ymca-langham-creek-holiday-market-winter-festival-farmers-market-tickets/80002027182453": {
   "checkedAt": "2026-11-26T18:15:34.598Z",
+  "startTime": "10:00",
+  "endTime": "15:00"
+ },
+ "https://allevents.in/dallas/pajama-market-with-hello-kitty-tickets/80002228217500": {
+  "checkedAt": "2026-11-27T02:17:39.443Z",
+  "startTime": "13:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/dallas/breakfast-with-santa-northpark-neiman-marcus-saturday-december-19-8-30am/100001992741416219": {
+  "checkedAt": "2026-11-27T02:17:39.443Z",
+  "startTime": "08:30",
+  "endTime": "10:00"
+ },
+ "https://allevents.in/dallas/girl-boss-pop-up-shop/100002005417373348": {
+  "checkedAt": "2026-11-27T02:17:39.443Z",
+  "startTime": "09:00",
+  "endTime": "12:00"
+ },
+ "https://allevents.in/dallas/feliz-navidad-a-tropical-christmas-pop-up/100002005485531210": {
+  "checkedAt": "2026-11-27T02:17:39.443Z",
+  "startTime": "17:00"
+ },
+ "https://allevents.in/frisco/thanksgiving-sale-fest-indian-ethnic-wear-and-jewelry-crazy-deals/200031132900126": {
+  "checkedAt": "2026-11-27T02:17:39.443Z"
+ },
+ "https://allevents.in/allen/concepts-popup-wedding-season/200030875249721": {
+  "checkedAt": "2026-11-27T02:17:39.443Z",
+  "startTime": "12:00",
+  "endTime": "16:00"
+ },
+ "https://allevents.in/fort-worth/small-biz-saturday-holiday-market/200031141384916": {
+  "checkedAt": "2026-11-27T02:17:39.443Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/houston/ymca-langham-creek-holiday-market-winter-festival-farmers-market/100002005505926212": {
+  "checkedAt": "2026-11-27T02:17:39.443Z",
   "startTime": "10:00",
   "endTime": "15:00"
  }

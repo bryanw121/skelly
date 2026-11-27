@@ -13,7 +13,7 @@ Venues the schedule sees only through groups that host there (Reclub, Sweatpals,
 
 ## Dallas–Fort Worth, TX
 
-14 venues with sessions: 12 read directly or bookable, 2 second-hand only.
+12 venues with sessions: 10 read directly or bookable, 2 second-hand only.
 
 | Venue | City | Sport | Sessions | Seen via | Pin |
 |---|---|---|---|---|---|
@@ -26,8 +26,8 @@ Venues the schedule sees only through groups that host there (Reclub, Sweatpals,
 
 | Venue | City | Sport | Sessions | Seen via | Pin |
 |---|---|---|---|---|---|
-| Champion Forest Baptist Church - Champions Campus | Houston | volleyball | 3 | houston-reclub | yes |
-| Collins Park | Houston | volleyball | 3 | houston-reclub | yes |
+| Champion Forest Baptist Church - Champions Campus | Houston | volleyball | 4 | houston-reclub | yes |
+| Collins Park | Houston | volleyball | 4 | houston-reclub | yes |
 | Katy Sports Center | Houston | volleyball | 3 | houston-reclub | yes |
 | Absolute Volleyball Academy and Absolute Beach | Houston | volleyball | 2 | houston-reclub | yes |
 | Houston Stars | Houston | volleyball | 2 | houston-reclub | yes |

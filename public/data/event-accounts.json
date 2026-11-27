@@ -297,10 +297,12 @@
  },
  "southsidemarkets": {
   "events": [
-   "evt-87c63e8eb253ca7b"
+   "evt-87c63e8eb253ca7b",
+   "evt-1b4c508841d093db",
+   "evt-b65953b5620a7715"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-26"
  },
  "funky_finds": {
   "events": [
@@ -478,10 +480,11 @@
  },
  "theendlesslink": {
   "events": [
-   "evt-2f2f35aece4aef3c"
+   "evt-2f2f35aece4aef3c",
+   "evt-2c2172b497d900b0"
   ],
   "first": "2026-11-20",
-  "last": "2026-11-20"
+  "last": "2026-11-26"
  },
  "wanderingroots_markets": {
   "events": [
@@ -1349,17 +1352,21 @@
  },
  "southernbellemarket": {
   "events": [
-   "evt-a3ee8a1b3f35fe48"
+   "evt-a3ee8a1b3f35fe48",
+   "evt-4401a90d4dc78d5f",
+   "evt-991619a2869f9023"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "shrinecenterhou": {
   "events": [
-   "evt-c6ef9159bd243a04"
+   "evt-c6ef9159bd243a04",
+   "evt-49c24a56084a81ba",
+   "evt-fab79ebea14c8dbc"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "arboretumfoodandartisanmarket": {
   "events": [
@@ -1530,10 +1537,16 @@
  },
  "thefaithfulmarket": {
   "events": [
-   "evt-12a35e8593d8fd52"
+   "evt-12a35e8593d8fd52",
+   "evt-fe28c19268d4f5c3",
+   "evt-44cb9d2c79ec4cd4",
+   "evt-fba64560e105ed92",
+   "evt-81bee9585c84c6b6",
+   "evt-28d64a377acb7bcd",
+   "evt-c6e7e3ab37f86907"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "kodesh_leolam": {
   "events": [
@@ -1669,10 +1682,11 @@
    "evt-fe31d6f9806d9243",
    "evt-3c0d6a8f75540310",
    "evt-fbbfe7036c957f4d",
-   "evt-26f0a59e51d2ae2e"
+   "evt-26f0a59e51d2ae2e",
+   "evt-9ca3cfd393cd929c"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-26"
  },
  "feelgoodgrp": {
   "events": [
@@ -1784,7 +1798,10 @@
  },
  "signbaraustin": {
   "events": [
-   "evt-beb22b993dfba760"
+   "evt-beb22b993dfba760",
+   "evt-9e3e4970ec0defe0",
+   "evt-a4ae5a314706ff84",
+   "evt-b3be9d21bf6aee8d"
   ],
   "first": "2026-11-26",
   "last": "2026-11-26"
@@ -1867,6 +1884,13 @@
  "luxeartagency": {
   "events": [
    "evt-b3fa2e2573256bfb"
+  ],
+  "first": "2026-11-26",
+  "last": "2026-11-26"
+ },
+ "friscofreshmkt": {
+  "events": [
+   "evt-c7cc9d069b8fda82"
   ],
   "first": "2026-11-26",
   "last": "2026-11-26"
