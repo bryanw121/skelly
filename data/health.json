@@ -3,7 +3,6 @@
     "austin-club-openplay": {
       "counts": [
         262,
-        262,
         263,
         247,
         247,
@@ -11,13 +10,14 @@
         257,
         257,
         250,
-        250
+        250,
+        240
       ],
-      "sessions": 250,
+      "sessions": 240,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.69,
+        "level": 0.7,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -34,13 +34,13 @@
         104,
         104,
         104,
-        104,
         117,
         117,
         117,
-        117
+        117,
+        119
       ],
-      "sessions": 117,
+      "sessions": 119,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -73,13 +73,13 @@
     "volleyworld": {
       "counts": [
         12,
+        10,
+        10,
+        10,
+        10,
+        11,
+        11,
         12,
-        10,
-        10,
-        10,
-        10,
-        11,
-        11,
         12,
         12
       ],
@@ -756,7 +756,7 @@
         34,
         34,
         34,
-        34,
+        37,
         37,
         37,
         37,
@@ -924,7 +924,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 665
+      "failStreak": 666
     },
     "dallas-reclub": {
       "counts": [
