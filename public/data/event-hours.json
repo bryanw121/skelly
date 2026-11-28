@@ -1495,5 +1495,49 @@
   "checkedAt": "2026-11-28T02:18:06.440Z",
   "startTime": "11:00",
   "endTime": "17:00"
+ },
+ "https://allevents.in/dallas/the-holiday-market-by-herstory/200031119579516": {
+  "checkedAt": "2026-11-28T10:20:06.049Z",
+  "startTime": "10:00",
+  "endTime": "18:00"
+ },
+ "https://allevents.in/mckinney/holiday-shopping-and-vendor-event/200031090738420": {
+  "checkedAt": "2026-11-28T10:20:06.049Z",
+  "startTime": "09:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/mckinney/holiday-glow-up-party-mckinney-tx/100002004664038102": {
+  "checkedAt": "2026-11-28T10:20:06.049Z",
+  "startTime": "13:00",
+  "endTime": "15:30"
+ },
+ "https://allevents.in/allen/armchair-travelers-visit-the-christmas-markets-of-montréal-and-québec-city/200031157685503": {
+  "checkedAt": "2026-11-28T10:20:06.049Z",
+  "startTime": "19:00",
+  "endTime": "20:30"
+ },
+ "https://allevents.in/fort-worth/of-one-cloth-holiday-pop-up-at-thrive-boutique-salon/200031157255045": {
+  "checkedAt": "2026-11-28T10:20:06.049Z",
+  "startTime": "15:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/fort-worth/nativo-holiday-market-shop-local-and-celebrate-the-season/200031141383205": {
+  "checkedAt": "2026-11-28T10:20:06.049Z",
+  "startTime": "10:00",
+  "endTime": "14:00"
+ },
+ "https://allevents.in/fort-worth/family-festival-fiesta-de-la-familia/200031118837828": {
+  "checkedAt": "2026-11-28T10:20:06.049Z",
+  "startTime": "12:00",
+  "endTime": "17:00"
+ },
+ "https://allevents.in/houston/exit-exam-pop-up-study-lounge-for-commuter-students-remote-workers/100002005558994942": {
+  "checkedAt": "2026-11-28T10:20:06.049Z",
+  "startTime": "16:00"
+ },
+ "https://allevents.in/houston/pop-up-shop/100002004031987622": {
+  "checkedAt": "2026-11-28T10:20:06.049Z",
+  "startTime": "16:00",
+  "endTime": "20:00"
  }
 }

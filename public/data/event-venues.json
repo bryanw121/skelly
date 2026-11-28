@@ -6826,5 +6826,107 @@
     "lng": -96.7495,
     "located": "source",
     "matched": null
+  },
+  "the star in frisco, one cowboys way,frisco, texas": {
+    "lat": 33.10993,
+    "lng": -96.82747,
+    "located": "source",
+    "matched": null
+  },
+  "o3 apothecary, 201 west louisiana street": {
+    "lat": 33.19716,
+    "lng": -96.61674,
+    "located": "source",
+    "matched": null
+  },
+  "berkeley sqaure, 4721 w park blvd": {
+    "lat": 33.02795,
+    "lng": -96.78888,
+    "located": "source",
+    "matched": null
+  },
+  "santa's portrait studio, 7161 bishop rd ste g2, plano tx 75024": {
+    "lat": 33.07565,
+    "lng": -96.82162,
+    "located": "source",
+    "matched": null
+  },
+  "2404 k ave. plano, tx 75074 | canalesfurnitureplano": {
+    "lat": 33.02947,
+    "lng": -96.699,
+    "located": "address",
+    "matched": "2404 K AVE, PLANO, TX, 75074"
+  },
+  "thrive boutique salon, 1411 west berry st ,fort worth,tx": {
+    "lat": 32.70565,
+    "lng": -97.34133,
+    "located": "source",
+    "matched": null
+  },
+  "st. andrew methodist church, 5801 w plano parkway, plano, tx": {
+    "lat": 33.01766,
+    "lng": -96.81989,
+    "located": "source",
+    "matched": null
+  },
+  "the mood room garden and bar, 711 milby street": {
+    "lat": 29.74467,
+    "lng": -95.33907,
+    "located": "source",
+    "matched": null
+  },
+  "aburi international cuisine, 13655 bissonnet street": {
+    "lat": 29.68022,
+    "lng": -95.62264,
+    "located": "source",
+    "matched": null
+  },
+  "300 n allen dr": {
+    "lat": 33.10524,
+    "lng": -96.67131,
+    "located": "source",
+    "matched": null
+  },
+  "pinballz kingdom, 15201 s interstate 35,buda, texas": {
+    "lat": 30.08669,
+    "lng": -97.81869,
+    "located": "source",
+    "matched": null
+  },
+  "crosby fair grounds, 14920 fm 2100 rd,crosby, texas": {
+    "lat": 29.90273,
+    "lng": -95.06225,
+    "located": "source",
+    "matched": null
+  },
+  "4550 w university dr": {
+    "lat": 33.21869,
+    "lng": -96.67116,
+    "located": "source",
+    "matched": null
+  },
+  "1701 white settlement rd": {
+    "lat": 32.75868,
+    "lng": -97.34412,
+    "located": "source",
+    "matched": null
+  },
+  "415 n college ave": {
+    "lat": 33.08877,
+    "lng": -97.30344,
+    "located": "source",
+    "matched": null
+  },
+  "georgie butcher shop, 4514 travis st": {
+    "lat": 32.82236,
+    "lng": -96.79056,
+    "located": "source",
+    "matched": null
+  },
+  "kimbell art museum, 3333 camp bowie blvd,fort worth, texas": {
+    "lat": 32.74859,
+    "lng": -97.36579,
+    "located": "source",
+    "matched": null
   }
 }

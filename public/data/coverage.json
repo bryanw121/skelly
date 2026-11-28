@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-28T02:25:09.667Z",
+ "generatedAt": "2026-11-28T10:27:14.919Z",
  "regions": [
   {
    "id": "austin",
@@ -33,7 +33,7 @@
      "venue": "Austin PickleHaus",
      "city": "Pflugerville",
      "sport": "pickleball",
-     "sessions": 119,
+     "sessions": 115,
      "pinned": true,
      "booking": true,
      "via": [
@@ -45,19 +45,7 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 84,
-     "pinned": true,
-     "booking": true,
-     "via": [
-      "austin-club-openplay"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Austin Pickle Ranch",
-     "city": "Austin",
-     "sport": "pickleball",
-     "sessions": 83,
+     "sessions": 90,
      "pinned": true,
      "booking": true,
      "via": [
@@ -69,7 +57,19 @@
      "venue": "Eastside Paddle Club",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 82,
+     "sessions": 87,
+     "pinned": true,
+     "booking": true,
+     "via": [
+      "austin-club-openplay"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Austin Pickle Ranch",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 80,
      "pinned": true,
      "booking": true,
      "via": [
@@ -81,7 +81,7 @@
      "venue": "Chaparral Ice",
      "city": "N. Austin (Northcross)",
      "sport": "ice_skating",
-     "sessions": 37,
+     "sessions": 34,
      "pinned": true,
      "booking": false,
      "via": [
@@ -93,11 +93,25 @@
      "venue": "Ice & Field at The Crossover",
      "city": "Cedar Park",
      "sport": "ice_skating",
-     "sessions": 19,
+     "sessions": 17,
      "pinned": true,
      "booking": false,
      "via": [
       "ice-and-field"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Volleyworld (Pflugerville)",
+     "city": "Pflugerville",
+     "sport": "volleyball",
+     "sessions": 11,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "manual",
+      "reclub",
+      "volleyworld"
      ],
      "lead": false
     },
@@ -110,32 +124,6 @@
      "booking": true,
      "via": [
       "austin-pickleball-meetup"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Volleyworld (Pflugerville)",
-     "city": "Pflugerville",
-     "sport": "volleyball",
-     "sessions": 9,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "manual",
-      "reclub",
-      "volleyworld"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Volleyworld (Georgetown)",
-     "city": "Georgetown",
-     "sport": "volleyball",
-     "sessions": 8,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "volleyworld"
      ],
      "lead": false
     },
@@ -161,6 +149,18 @@
      "booking": false,
      "via": [
       "manual"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Volleyworld (Georgetown)",
+     "city": "Georgetown",
+     "sport": "volleyball",
+     "sessions": 5,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "volleyworld"
      ],
      "lead": false
     },
@@ -306,7 +306,7 @@
      "venue": "Sports Garden DFW",
      "city": "Coppell",
      "sport": "volleyball",
-     "sessions": 2,
+     "sessions": 1,
      "pinned": true,
      "booking": false,
      "via": [
@@ -441,18 +441,6 @@
      "lead": true
     },
     {
-     "venue": "Katy Sports Center",
-     "city": "Houston",
-     "sport": "volleyball",
-     "sessions": 3,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
      "venue": "Absolute Volleyball Academy and Absolute Beach",
      "city": "Houston",
      "sport": "volleyball",
@@ -465,7 +453,7 @@
      "lead": true
     },
     {
-     "venue": "Emancipation Park",
+     "venue": "Katy Sports Center",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 2,
@@ -477,7 +465,7 @@
      "lead": true
     },
     {
-     "venue": "Houston Stars",
+     "venue": "T4 Court Rentals",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 2,
@@ -513,7 +501,7 @@
      "lead": true
     },
     {
-     "venue": "Skyline Volleyball Academy",
+     "venue": "Emancipation Park",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,
@@ -525,7 +513,19 @@
      "lead": true
     },
     {
-     "venue": "T4 Court Rentals",
+     "venue": "Houston Stars",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 1,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
+     "venue": "Skyline Volleyball Academy",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,

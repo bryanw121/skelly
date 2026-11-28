@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-28T02:16:06.353Z",
+  "generatedAt": "2026-11-28T10:20:03.710Z",
   "region": {
     "id": "dallas",
     "name": "Dallas–Fort Worth, TX",
@@ -27,7 +27,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-28T02:13:41.907Z",
+      "checkedAt": "2026-11-28T10:18:05.746Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"
@@ -112,8 +112,8 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-28T02:13:50.349Z",
-      "count": 12
+      "checkedAt": "2026-11-28T10:18:10.541Z",
+      "count": 11
     }
   ],
   "sessions": [
@@ -488,32 +488,6 @@
       "status": "scheduled"
     },
     {
-      "id": "meetup-dfwvb-event_316813546-2026-11-27",
-      "date": "2026-11-27",
-      "start": "18:30",
-      "end": "21:30",
-      "title": "Friday - Sand Volleyball (South Location) - NO HOST",
-      "venue": "Sports Garden DFW",
-      "city": "Coppell",
-      "surface": "sand",
-      "type": "Open play",
-      "level": "All levels",
-      "price": null,
-      "note": "Hosted by DFW Volleyball (Dallas Region).",
-      "signup": {
-        "url": "https://www.meetup.com/dfwvolleyballdallas/events/316813546/",
-        "label": "Details and RSVP"
-      },
-      "source": "https://www.meetup.com/dfwvolleyballdallas/events/316813546/",
-      "sourceId": "dallas-meetup",
-      "sport": "volleyball",
-      "region": "dallas",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
-      "venueId": "sports-garden",
-      "status": "scheduled"
-    },
-    {
       "id": "meetup-dfwvb-event_316813552-2026-12-04",
       "date": "2026-12-04",
       "start": "18:30",
@@ -535,7 +509,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "sports-garden",
       "status": "scheduled"
     },
@@ -561,7 +535,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -587,7 +561,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -613,7 +587,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -639,7 +613,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -665,7 +639,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -691,7 +665,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -717,7 +691,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -743,7 +717,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -769,7 +743,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     },
@@ -795,7 +769,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-27",
+      "verifiedAt": "2026-11-28",
       "venueId": "src-usspt",
       "status": "scheduled"
     }
@@ -1257,6 +1231,15 @@
       "region": "dallas"
     },
     {
+      "id": "src-usspt",
+      "name": "USSPT",
+      "city": "Lewisville",
+      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
+      "lat": 33.06454,
+      "lng": -97.005745,
+      "region": "dallas"
+    },
+    {
       "id": "src-greenbriar-community-center",
       "name": "Greenbriar Community Center",
       "city": "Fort Worth",
@@ -1290,15 +1273,6 @@
       "address": "3427 Hemphill Street, Fort Worth, TX, 76110",
       "lat": 32.70016,
       "lng": -97.33161,
-      "region": "dallas"
-    },
-    {
-      "id": "src-usspt",
-      "name": "USSPT",
-      "city": "Lewisville",
-      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
-      "lat": 33.06454,
-      "lng": -97.005745,
       "region": "dallas"
     }
   ]
