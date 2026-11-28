@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T22:42:12.670Z",
+ "generatedAt": "2026-11-28T02:25:09.667Z",
  "regions": [
   {
    "id": "austin",
@@ -45,18 +45,6 @@
      "venue": "Pickle Pit Stop",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 85,
-     "pinned": true,
-     "booking": true,
-     "via": [
-      "austin-club-openplay"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Eastside Paddle Club",
-     "city": "Austin",
-     "sport": "pickleball",
      "sessions": 84,
      "pinned": true,
      "booking": true,
@@ -69,7 +57,19 @@
      "venue": "Austin Pickle Ranch",
      "city": "Austin",
      "sport": "pickleball",
-     "sessions": 71,
+     "sessions": 83,
+     "pinned": true,
+     "booking": true,
+     "via": [
+      "austin-club-openplay"
+     ],
+     "lead": false
+    },
+    {
+     "venue": "Eastside Paddle Club",
+     "city": "Austin",
+     "sport": "pickleball",
+     "sessions": 82,
      "pinned": true,
      "booking": true,
      "via": [
@@ -114,6 +114,20 @@
      "lead": false
     },
     {
+     "venue": "Volleyworld (Pflugerville)",
+     "city": "Pflugerville",
+     "sport": "volleyball",
+     "sessions": 9,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "manual",
+      "reclub",
+      "volleyworld"
+     ],
+     "lead": false
+    },
+    {
      "venue": "Volleyworld (Georgetown)",
      "city": "Georgetown",
      "sport": "volleyball",
@@ -126,16 +140,15 @@
      "lead": false
     },
     {
-     "venue": "Volleyworld (Pflugerville)",
-     "city": "Pflugerville",
+     "venue": "ATX Beach",
+     "city": "North Austin",
      "sport": "volleyball",
-     "sessions": 8,
+     "sessions": 5,
      "pinned": true,
      "booking": false,
      "via": [
-      "manual",
-      "reclub",
-      "volleyworld"
+      "atxbeach",
+      "sweatpals"
      ],
      "lead": false
     },
@@ -148,19 +161,6 @@
      "booking": false,
      "via": [
       "manual"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "ATX Beach",
-     "city": "North Austin",
-     "sport": "volleyball",
-     "sessions": 4,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "atxbeach",
-      "sweatpals"
      ],
      "lead": false
     },
@@ -351,30 +351,6 @@
      "lead": false
     },
     {
-     "venue": "Martin Luther King Community Center",
-     "city": "Fort Worth",
-     "sport": "pickleball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "dfw-city-active-pickleball"
-     ],
-     "lead": false
-    },
-    {
-     "venue": "Northside Community Center",
-     "city": "Fort Worth",
-     "sport": "pickleball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "dfw-city-active-pickleball"
-     ],
-     "lead": false
-    },
-    {
      "venue": "R.D. Evans Community Center",
      "city": "Fort Worth",
      "sport": "volleyball",
@@ -489,6 +465,18 @@
      "lead": true
     },
     {
+     "venue": "Emancipation Park",
+     "city": "Houston",
+     "sport": "volleyball",
+     "sessions": 2,
+     "pinned": true,
+     "booking": false,
+     "via": [
+      "houston-reclub"
+     ],
+     "lead": true
+    },
+    {
      "venue": "Houston Stars",
      "city": "Houston",
      "sport": "volleyball",
@@ -501,10 +489,10 @@
      "lead": true
     },
     {
-     "venue": "Blastros",
+     "venue": "Tellepsen Family Downtown YMCA",
      "city": "Houston",
      "sport": "volleyball",
-     "sessions": 1,
+     "sessions": 2,
      "pinned": true,
      "booking": false,
      "via": [
@@ -513,7 +501,7 @@
      "lead": true
     },
     {
-     "venue": "Emancipation Park",
+     "venue": "Blastros",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,
@@ -538,18 +526,6 @@
     },
     {
      "venue": "T4 Court Rentals",
-     "city": "Houston",
-     "sport": "volleyball",
-     "sessions": 1,
-     "pinned": true,
-     "booking": false,
-     "via": [
-      "houston-reclub"
-     ],
-     "lead": true
-    },
-    {
-     "venue": "Tellepsen Family Downtown YMCA",
      "city": "Houston",
      "sport": "volleyball",
      "sessions": 1,

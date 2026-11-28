@@ -6530,5 +6530,301 @@
     "lng": -96.79699,
     "located": "source",
     "matched": null
+  },
+  "202 lamar blvd s": {
+    "lat": 30.2641,
+    "lng": -97.75773,
+    "located": "source",
+    "matched": null
+  },
+  "randy's steakhouse, 7026 main street": {
+    "lat": 33.15071,
+    "lng": -96.82346,
+    "located": "source",
+    "matched": null
+  },
+  "2970 epic pl": {
+    "lat": 32.7021,
+    "lng": -97.03137,
+    "located": "source",
+    "matched": null
+  },
+  "317 w. mulberry st., denton, tx 76201": {
+    "lat": 33.21348,
+    "lng": -97.13548,
+    "located": "address",
+    "matched": "317 W MULBERRY ST, DENTON, TX, 76201"
+  },
+  "dallas farmers market": {
+    "unresolved": true,
+    "lastTried": "2026-11-28T02:25:09.582Z"
+  },
+  "downtown humble, tx": {
+    "lat": 29.99757,
+    "lng": -95.2632,
+    "located": "source",
+    "matched": null
+  },
+  "325 nw renfro st": {
+    "lat": 32.54499,
+    "lng": -97.33069,
+    "located": "source",
+    "matched": null
+  },
+  "bell park - downtown forney": {
+    "lat": 32.74753,
+    "lng": -96.47281,
+    "located": "source",
+    "matched": null
+  },
+  "paggi house at the loren hotel, 200 lee barton drive": {
+    "lat": 30.26354,
+    "lng": -97.75678,
+    "located": "source",
+    "matched": null
+  },
+  "omni dallas hotel, 555 s lamar,dallas, texas": {
+    "lat": 32.77526,
+    "lng": -96.80436,
+    "located": "source",
+    "matched": null
+  },
+  "assembly food hall | 5055 broadway, nashville, tn": {
+    "unresolved": true,
+    "lastTried": "2026-11-28T02:25:09.584Z"
+  },
+  "610 s goliad st": {
+    "lat": 32.92498,
+    "lng": -96.46217,
+    "located": "source",
+    "matched": null
+  },
+  "dallas, texas": {
+    "lat": 32.7774,
+    "lng": -96.7977,
+    "located": "source",
+    "matched": null
+  },
+  "212 main st": {
+    "lat": 33.11879,
+    "lng": -97.02765,
+    "located": "source",
+    "matched": null
+  },
+  "hill performance hall at eisemann center, 2351 performance dr.": {
+    "lat": 32.94833,
+    "lng": -96.72985,
+    "located": "source",
+    "matched": null
+  },
+  "welcome center at brown house, 301 n ballard ave": {
+    "lat": 33.0166,
+    "lng": -96.53917,
+    "located": "source",
+    "matched": null
+  },
+  "wimberley sq, wimberley, tx 78676, united states, 101 oak dr": {
+    "lat": 29.99577,
+    "lng": -98.09679,
+    "located": "source",
+    "matched": null
+  },
+  "stagecoach park, 880 main street,buda, texas": {
+    "lat": 30.08694,
+    "lng": -97.83565,
+    "located": "source",
+    "matched": null
+  },
+  "1156 cesar chavez st w": {
+    "lat": 30.2697,
+    "lng": -97.75922,
+    "located": "source",
+    "matched": null
+  },
+  "preston hollow church, 6315 walnut hill lane": {
+    "lat": 32.88066,
+    "lng": -96.7972,
+    "located": "source",
+    "matched": null
+  },
+  "100 perkins ave": {
+    "lat": 29.5106,
+    "lng": -95.0929,
+    "located": "source",
+    "matched": null
+  },
+  "8611 westheimer road": {
+    "lat": 29.73696,
+    "lng": -95.51821,
+    "located": "source",
+    "matched": null
+  },
+  "dave & buster's shenandoah, 8915 metropark dr, shenandoah, 77385, houston, us": {
+    "lat": 30.19518,
+    "lng": -95.45006,
+    "located": "source",
+    "matched": null
+  },
+  "barnes & noble - arboretum (austin, tx), 10000 research boulevard": {
+    "lat": 30.39092,
+    "lng": -97.74828,
+    "located": "source",
+    "matched": null
+  },
+  "methodist midlothian medical center, 1201 e us 287": {
+    "lat": 32.46894,
+    "lng": -96.982,
+    "located": "source",
+    "matched": null
+  },
+  "panther island pavilion, 395 purcey street": {
+    "lat": 32.75494,
+    "lng": -97.3429,
+    "located": "source",
+    "matched": null
+  },
+  "majestic theatre, 1926 pacific ave": {
+    "lat": 32.78288,
+    "lng": -96.79497,
+    "located": "source",
+    "matched": null
+  },
+  "9199 saddlehorn dr": {
+    "lat": 32.93397,
+    "lng": -96.94938,
+    "located": "source",
+    "matched": null
+  },
+  "lululemon the domain, 11600 century oaks terrace": {
+    "lat": 30.40336,
+    "lng": -97.72518,
+    "located": "source",
+    "matched": null
+  },
+  "04 center, 2701 south lamar blvd.": {
+    "lat": 30.26715,
+    "lng": -97.74306,
+    "located": "source",
+    "matched": null
+  },
+  "austin's very own saltt, 2525 west anderson lane": {
+    "lat": 30.35496,
+    "lng": -97.73287,
+    "located": "source",
+    "matched": null
+  },
+  "201 sharpstown ctr": {
+    "lat": 29.7087,
+    "lng": -95.51618,
+    "located": "source",
+    "matched": null
+  },
+  "cinemark rosenberg 12, 3420 vista drive,rosenberg, texas": {
+    "lat": 29.54677,
+    "lng": -95.76178,
+    "located": "source",
+    "matched": null
+  },
+  "saddle shop saloon, 711 s main st": {
+    "lat": 30.63696,
+    "lng": -97.67688,
+    "located": "source",
+    "matched": null
+  },
+  "granville performing arts center, garland,tx": {
+    "lat": 32.9148,
+    "lng": -96.63587,
+    "located": "source",
+    "matched": null
+  },
+  "fort worth t&p station, 221 west lancaster avenue, fort worth// 76102": {
+    "lat": 32.75549,
+    "lng": -97.33076,
+    "located": "source",
+    "matched": null
+  },
+  "4701 airline drive": {
+    "lat": 29.83477,
+    "lng": -95.38482,
+    "located": "source",
+    "matched": null
+  },
+  "resurrection mcc, 2025 west 11th street, houston, 2025 w 11th st": {
+    "lat": 29.78941,
+    "lng": -95.41839,
+    "located": "source",
+    "matched": null
+  },
+  "deep ellum open-air lot & pop-up courtyard, 2820 indiana blvd": {
+    "lat": 32.78539,
+    "lng": -96.78288,
+    "located": "source",
+    "matched": null
+  },
+  "the white horse, 500 comal st,austin,tx": {
+    "lat": 30.26253,
+    "lng": -97.72706,
+    "located": "source",
+    "matched": null
+  },
+  "halperin park, 626 s r l thornton fwy i 35e": {
+    "lat": 32.7452,
+    "lng": -96.81364,
+    "located": "source",
+    "matched": null
+  },
+  "ironworks htx, 711 milby st.,houston, texas": {
+    "lat": 29.74465,
+    "lng": -95.33958,
+    "located": "source",
+    "matched": null
+  },
+  "dosey doe - the big barn, 25911 ih 45": {
+    "lat": 30.13835,
+    "lng": -95.44666,
+    "located": "source",
+    "matched": null
+  },
+  "hall arts hotel, 1717 leonard street// 75201": {
+    "lat": 32.77666,
+    "lng": -96.79699,
+    "located": "source",
+    "matched": null
+  },
+  "2707 commercial center blvd": {
+    "lat": 29.74037,
+    "lng": -95.77419,
+    "located": "source",
+    "matched": null
+  },
+  "clay's restaurant, 17717 clay road": {
+    "lat": 29.8302,
+    "lng": -95.66986,
+    "located": "source",
+    "matched": null
+  },
+  "main street crossing, 111 w main st,tomball, texas": {
+    "lat": 30.09761,
+    "lng": -95.61434,
+    "located": "source",
+    "matched": null
+  },
+  "downtown richmond, 402 morton st": {
+    "lat": 29.58289,
+    "lng": -95.76218,
+    "located": "source",
+    "matched": null
+  },
+  "texas trust cu theatre at grand prairie, 1001 performance place": {
+    "lat": 32.74596,
+    "lng": -96.99779,
+    "located": "source",
+    "matched": null
+  },
+  "crystal banquet, 6300 independence pkwy,plano, texas": {
+    "lat": 33.05892,
+    "lng": -96.7495,
+    "located": "source",
+    "matched": null
   }
 }

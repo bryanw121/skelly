@@ -1143,17 +1143,19 @@
  "cadenacollective": {
   "events": [
    "evt-2b7af3d0f80edf17",
-   "evt-c47fdfc3e9eb1fa4"
+   "evt-c47fdfc3e9eb1fa4",
+   "evt-78de07572ea4eb4b"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-25"
+  "last": "2026-11-27"
  },
  "communitymarket": {
   "events": [
-   "evt-0e66c7d33e109d01"
+   "evt-0e66c7d33e109d01",
+   "evt-9ff5d3a719c925fb"
   ],
   "first": "2026-11-24",
-  "last": "2026-11-24"
+  "last": "2026-11-27"
  },
  "dentonmakercenter": {
   "events": [
@@ -1593,10 +1595,11 @@
    "evt-be4449ca0c9ffb16",
    "evt-0a06d64cf72b1f28",
    "evt-c48c6e5a91e45be1",
-   "evt-65374734e2780d7d"
+   "evt-65374734e2780d7d",
+   "evt-9a18ec37402fc8bb"
   ],
   "first": "2026-11-25",
-  "last": "2026-11-25"
+  "last": "2026-11-27"
  },
  "millhousemckinney": {
   "events": [
@@ -1918,10 +1921,11 @@
  },
  "friscofreshmkt": {
   "events": [
-   "evt-c7cc9d069b8fda82"
+   "evt-c7cc9d069b8fda82",
+   "evt-e5c2c7a6f248db46"
   ],
   "first": "2026-11-26",
-  "last": "2026-11-26"
+  "last": "2026-11-27"
  },
  "barbythewayside": {
   "events": [
@@ -2050,6 +2054,13 @@
  "downtownplano": {
   "events": [
    "evt-e01ab370bd46265d"
+  ],
+  "first": "2026-11-27",
+  "last": "2026-11-27"
+ },
+ "dallasfarmersmarket": {
+  "events": [
+   "evt-b9322b2e891069ab"
   ],
   "first": "2026-11-27",
   "last": "2026-11-27"

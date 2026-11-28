@@ -2,7 +2,6 @@
   "sources": {
     "austin-club-openplay": {
       "counts": [
-        262,
         263,
         247,
         247,
@@ -11,13 +10,14 @@
         257,
         250,
         250,
-        240
+        240,
+        249
       ],
-      "sessions": 240,
+      "sessions": 249,
       "coverage": {
         "end": 1,
         "price": 1,
-        "level": 0.7,
+        "level": 0.68,
         "venue": 1,
         "city": 1,
         "surface": 1,
@@ -33,11 +33,11 @@
         104,
         104,
         104,
-        104,
         117,
         117,
         117,
         117,
+        119,
         119
       ],
       "sessions": 119,
@@ -72,13 +72,13 @@
     },
     "volleyworld": {
       "counts": [
+        10,
+        10,
+        10,
+        10,
+        11,
+        11,
         12,
-        10,
-        10,
-        10,
-        10,
-        11,
-        11,
         12,
         12,
         12
@@ -212,7 +212,6 @@
     },
     "reclub": {
       "counts": [
-        4,
         3,
         3,
         3,
@@ -221,9 +220,10 @@
         3,
         3,
         3,
-        3
+        3,
+        4
       ],
-      "sessions": 3,
+      "sessions": 4,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -350,13 +350,13 @@
         2,
         2,
         2,
+        3,
+        3,
+        3,
         2,
-        3,
-        3,
-        3,
-        2
+        3
       ],
-      "sessions": 2,
+      "sessions": 3,
       "coverage": {
         "end": 1,
         "price": 1,
@@ -376,6 +376,7 @@
         "additionalData.allowKlarnaPayments",
         "additionalData.allowLinkPayments",
         "additionalData.avatarDominantColor",
+        "additionalData.ticketSalesStartUtcTimeIso",
         "additionalData.tracking",
         "additionalData.tracking.attnId",
         "additionalData.tracking.fbPixelId",
@@ -755,7 +756,7 @@
         34,
         34,
         34,
-        34,
+        37,
         37,
         37,
         37,
@@ -903,9 +904,9 @@
         9,
         9,
         9,
-        9,
         8,
         8,
+        6,
         6
       ],
       "sessions": 6,
@@ -924,7 +925,7 @@
       "contentHash": "1a56c3b727a58c8f"
     },
     "georgetown-pickleball": {
-      "failStreak": 666
+      "failStreak": 667
     },
     "dallas-reclub": {
       "counts": [
@@ -998,7 +999,7 @@
         5,
         5,
         5,
-        5,
+        4,
         4
       ],
       "sessions": 4,
@@ -1025,10 +1026,10 @@
         7,
         7,
         7,
-        7,
-        6
+        6,
+        4
       ],
-      "sessions": 6,
+      "sessions": 4,
       "coverage": {
         "end": 1,
         "price": 0,
@@ -1051,8 +1052,8 @@
         12,
         12,
         12,
-        12,
         13,
+        12,
         12
       ],
       "sessions": 12,
@@ -1071,7 +1072,6 @@
     },
     "houston-reclub": {
       "counts": [
-        25,
         23,
         23,
         23,
@@ -1080,12 +1080,13 @@
         23,
         23,
         23,
-        23
+        23,
+        25
       ],
-      "sessions": 23,
+      "sessions": 25,
       "coverage": {
         "end": 1,
-        "price": 0.65,
+        "price": 0.6,
         "level": 1,
         "venue": 1,
         "city": 1,
@@ -1288,7 +1289,7 @@
     "manual:beecave-on-ice-sun:stale:2026-10-26",
     "manual:beecave-on-ice-tue:changed:2026-11-24",
     "manual:beecave-on-ice-tue:stale:2026-10-26",
-    "manual:four-seasons-ice-rodeo:changed:2026-11-26",
+    "manual:four-seasons-ice-rodeo:changed:2026-11-27",
     "manual:four-seasons-ice-rodeo:stale:2026-10-26",
     "manual:hanovers-open:changed:2026-11-18",
     "manual:hanovers-open:unverified",

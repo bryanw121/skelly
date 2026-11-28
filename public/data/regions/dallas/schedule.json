@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-27T22:42:10.727Z",
+  "generatedAt": "2026-11-28T02:16:06.353Z",
   "region": {
     "id": "dallas",
     "name": "Dallas–Fort Worth, TX",
@@ -27,7 +27,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-27T22:13:20.603Z",
+      "checkedAt": "2026-11-28T02:13:41.907Z",
       "count": 0,
       "warnings": [
         "No upcoming Reclub meets on any club page"
@@ -43,7 +43,7 @@
       "kind": "Venue's open-play hours page",
       "site": "https://sportsgardendfw.com/open-play/",
       "ok": true,
-      "checkedAt": "2026-11-27T02:13:46.609Z",
+      "checkedAt": "2026-11-28T02:13:44.184Z",
       "count": 4
     },
     {
@@ -56,7 +56,7 @@
       "kind": "Venue's open-play hours page",
       "site": "https://www.forosportsclub.com/fridayopenplay",
       "ok": true,
-      "checkedAt": "2026-11-27T02:13:47.098Z",
+      "checkedAt": "2026-11-28T02:13:44.480Z",
       "count": 0,
       "warnings": [
         "FORO lists open play as \"coming soon\": no volleyball open play to show until it returns."
@@ -72,7 +72,7 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/fort-worth-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-27T02:13:47.982Z",
+      "checkedAt": "2026-11-28T02:13:44.793Z",
       "count": 4
     },
     {
@@ -85,8 +85,8 @@
       "kind": "City recreation programs (ACTIVE)",
       "site": "https://www.active.com/fort-worth-tx/volleyball",
       "ok": true,
-      "checkedAt": "2026-11-27T02:13:50.086Z",
-      "count": 6
+      "checkedAt": "2026-11-28T02:13:48.555Z",
+      "count": 4
     },
     {
       "id": "dallas-meetup",
@@ -112,7 +112,7 @@
         }
       ],
       "ok": true,
-      "checkedAt": "2026-11-27T18:13:43.249Z",
+      "checkedAt": "2026-11-28T02:13:50.349Z",
       "count": 12
     }
   ],
@@ -146,7 +146,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "sports-garden",
       "status": "scheduled"
     },
@@ -175,7 +175,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "sports-garden",
       "status": "scheduled"
     },
@@ -204,7 +204,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "sports-garden",
       "status": "scheduled"
     },
@@ -237,7 +237,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "sports-garden",
       "status": "scheduled"
     },
@@ -267,7 +267,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "fw-worth-heights",
       "status": "scheduled"
     },
@@ -300,7 +300,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-greenbriar-community-center",
       "status": "scheduled"
     },
@@ -330,7 +330,7 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-r-d-evans-community-center",
       "status": "scheduled"
     },
@@ -360,42 +360,8 @@
       "sport": "volleyball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-southwest-community-center",
-      "status": "scheduled"
-    },
-    {
-      "id": "active-110034404",
-      "days": [
-        "Mon",
-        "Tue",
-        "Wed",
-        "Thu",
-        "Fri"
-      ],
-      "start": "10:30",
-      "end": "14:00",
-      "startsOn": "2026-09-01",
-      "validUntil": "2026-11-27",
-      "title": "Open Play: Pickleball",
-      "venue": "Northside Community Center",
-      "city": "Fort Worth",
-      "surface": "indoor",
-      "type": "Open play",
-      "level": "All levels",
-      "price": null,
-      "note": "Run by the City of Fort Worth. Check the city page for fees and any skipped dates.",
-      "signup": {
-        "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickleball-2026-110034404",
-        "label": "Details on ACTIVE"
-      },
-      "source": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickleball-2026-110034404",
-      "sourceId": "dfw-city-active-pickleball",
-      "sport": "pickleball",
-      "region": "dallas",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
-      "venueId": "src-northside-community-center",
       "status": "scheduled"
     },
     {
@@ -424,7 +390,7 @@
       "sport": "pickleball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "fw-riverside",
       "status": "scheduled"
     },
@@ -454,7 +420,7 @@
       "sport": "pickleball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-victory-forest-community-center",
       "status": "scheduled"
     },
@@ -487,40 +453,8 @@
       "sport": "pickleball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-victory-forest-community-center",
-      "status": "scheduled"
-    },
-    {
-      "id": "active-110189828",
-      "days": [
-        "Mon",
-        "Wed",
-        "Fri"
-      ],
-      "start": "10:00",
-      "end": "12:00",
-      "startsOn": "2026-09-02",
-      "validUntil": "2026-11-27",
-      "title": "Open Play: Pickle Ball",
-      "venue": "Martin Luther King Community Center",
-      "city": "Fort Worth",
-      "surface": "indoor",
-      "type": "Open play",
-      "level": "All levels",
-      "price": null,
-      "note": "Run by the City of Fort Worth. Check the city page for fees and any skipped dates.",
-      "signup": {
-        "url": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickle-ball-2026-110189828",
-        "label": "Details on ACTIVE"
-      },
-      "source": "https://www.active.com/fort-worth-tx/volleyball/volleyball-classes/open-play-pickle-ball-2026-110189828",
-      "sourceId": "dfw-city-active-pickleball",
-      "sport": "pickleball",
-      "region": "dallas",
-      "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
-      "venueId": "src-martin-luther-king-community-center",
       "status": "scheduled"
     },
     {
@@ -549,7 +483,7 @@
       "sport": "pickleball",
       "region": "dallas",
       "timezone": "America/Chicago",
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "venueId": "src-r-d-evans-community-center",
       "status": "scheduled"
     },
@@ -1323,15 +1257,6 @@
       "region": "dallas"
     },
     {
-      "id": "src-usspt",
-      "name": "USSPT",
-      "city": "Lewisville",
-      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
-      "lat": 33.06454,
-      "lng": -97.005745,
-      "region": "dallas"
-    },
-    {
       "id": "src-greenbriar-community-center",
       "name": "Greenbriar Community Center",
       "city": "Fort Worth",
@@ -1359,15 +1284,6 @@
       "region": "dallas"
     },
     {
-      "id": "src-northside-community-center",
-      "name": "Northside Community Center",
-      "city": "Fort Worth",
-      "address": "1100 NW 18th Street, Fort Worth, TX, 76164",
-      "lat": 32.77874,
-      "lng": -97.36285,
-      "region": "dallas"
-    },
-    {
       "id": "src-victory-forest-community-center",
       "name": "Victory Forest Community Center",
       "city": "Fort Worth",
@@ -1377,12 +1293,12 @@
       "region": "dallas"
     },
     {
-      "id": "src-martin-luther-king-community-center",
-      "name": "Martin Luther King Community Center",
-      "city": "Fort Worth",
-      "address": "5565 Truman Drive, Fort Worth, TX, 76112",
-      "lat": 32.72472,
-      "lng": -97.23534,
+      "id": "src-usspt",
+      "name": "USSPT",
+      "city": "Lewisville",
+      "address": "1501 Fairway Dr suite 200, Lewisville, TX",
+      "lat": 33.06454,
+      "lng": -97.005745,
       "region": "dallas"
     }
   ]

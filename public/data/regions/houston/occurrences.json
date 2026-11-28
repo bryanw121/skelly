@@ -1,6 +1,6 @@
 {
   "feedVersion": 1,
-  "generatedAt": "2026-11-27T22:42:10.727Z",
+  "generatedAt": "2026-11-28T02:16:06.353Z",
   "horizonDays": 28,
   "occurrences": [
     {
@@ -109,7 +109,7 @@
       "attributes": {
         "surface": "indoor",
         "type": "Open play",
-        "capacity": 30
+        "capacity": 34
       },
       "venue_id": "src-t4-court-rentals",
       "status": "scheduled",
@@ -480,6 +480,34 @@
       "previous_starts_at": null
     },
     {
+      "id": "reclub-1SJAP8",
+      "session_id": "reclub-1SJAP8",
+      "source_id": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "title": "YMCA Open Gym-1 court",
+      "venue": "Tellepsen Family Downtown YMCA",
+      "city": "Houston",
+      "level": "All levels",
+      "price": null,
+      "starts_at": "2026-12-04T00:00:00.000Z",
+      "ends_at": "2026-12-04T02:30:00.000Z",
+      "signup_url": "https://reclub.co/m/1SJAP8",
+      "signup_label": "Sign up on Reclub",
+      "note": "Hosted by Houston Vball, every Thursday.",
+      "canceled": false,
+      "verified_at": "2026-11-27",
+      "attributes": {
+        "surface": "indoor",
+        "type": "Open play",
+        "capacity": 10
+      },
+      "venue_id": "src-tellepsen-family-downtown-ymca",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
       "id": "reclub-8BH0TR",
       "session_id": "reclub-8BH0TR",
       "source_id": "houston-reclub",
@@ -504,6 +532,34 @@
         "capacity": 20
       },
       "venue_id": "src-champion-forest-baptist-church-champions-campus",
+      "status": "scheduled",
+      "previous_starts_at": null
+    },
+    {
+      "id": "reclub-IGGNMX",
+      "session_id": "reclub-IGGNMX",
+      "source_id": "houston-reclub",
+      "sport": "volleyball",
+      "region": "houston",
+      "timezone": "America/Chicago",
+      "title": "Emancipation meet",
+      "venue": "Emancipation Park",
+      "city": "Houston",
+      "level": "All levels",
+      "price": null,
+      "starts_at": "2026-12-05T00:00:00.000Z",
+      "ends_at": "2026-12-05T03:00:00.000Z",
+      "signup_url": "https://reclub.co/m/IGGNMX",
+      "signup_label": "Sign up on Reclub",
+      "note": "Hosted by Emancipation Park Indoor Volleyball, every Friday.",
+      "canceled": false,
+      "verified_at": "2026-11-27",
+      "attributes": {
+        "surface": "indoor",
+        "type": "Open play",
+        "capacity": 18
+      },
+      "venue_id": "src-emancipation-park",
       "status": "scheduled",
       "previous_starts_at": null
     },

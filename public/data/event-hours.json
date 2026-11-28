@@ -232,7 +232,7 @@
   "endTime": "17:00"
  },
  "https://allevents.in/dallas/reliant-lights-your-holidays-free/200030596732125": {
-  "checkedAt": "2026-11-24T23:30:20.231Z"
+  "checkedAt": "2026-11-28T02:18:06.440Z"
  },
  "https://allevents.in/dallas/holiday-market-tickets/200030109649819": {
   "checkedAt": "2026-11-21T23:06:02.600Z"
@@ -256,7 +256,7 @@
   "checkedAt": "2026-11-21T23:06:02.600Z"
  },
  "https://allevents.in/dallas/2026-lights-all-night-dance-festival-thursday-at-fair-park-dallas/2400030606323659": {
-  "checkedAt": "2026-11-24T23:30:20.231Z"
+  "checkedAt": "2026-11-28T02:18:06.440Z"
  },
  "https://allevents.in/dallas/turtle-creek-fall-arts-festival-2026-sunday/200030498164254": {
   "checkedAt": "2026-11-21T23:06:02.600Z"
@@ -269,7 +269,7 @@
   "startTime": "09:00"
  },
  "https://allevents.in/dallas/lights-all-night-festival-2026/80003595264826": {
-  "checkedAt": "2026-11-24T23:30:20.231Z"
+  "checkedAt": "2026-11-28T02:18:06.440Z"
  },
  "https://allevents.in/dallas/wizzard-theme-market-tickets/200030636683050": {
   "checkedAt": "2026-11-21T23:06:02.600Z",
@@ -1456,5 +1456,44 @@
  "https://allevents.in/houston/market-at-emancipation-community-day/200031151612609": {
   "checkedAt": "2026-11-27T18:16:01.690Z",
   "startTime": "11:00"
+ },
+ "https://allevents.in/austin/east-austin-holiday-night-and-day-makers-market-2026/100002005476918449": {
+  "checkedAt": "2026-11-28T02:18:06.440Z",
+  "startTime": "12:00"
+ },
+ "https://allevents.in/austin/holiday-shop-party-at-lululemon-the-domain/100002004730807812": {
+  "checkedAt": "2026-11-28T02:18:06.440Z",
+  "startTime": "09:00",
+  "endTime": "11:00"
+ },
+ "https://allevents.in/dallas/holiday-market-at-main-street-tickets/80001723993337": {
+  "checkedAt": "2026-11-28T02:18:06.440Z",
+  "startTime": "17:00",
+  "endTime": "21:00"
+ },
+ "https://allevents.in/dallas/2026-dallas-holiday-parade-presented-by-verizon/200031146475319": {
+  "checkedAt": "2026-11-28T02:18:06.440Z",
+  "startTime": "09:00"
+ },
+ "https://allevents.in/dallas/k-pop-night-market-at-the-omni/200031148967559": {
+  "checkedAt": "2026-11-28T02:18:06.440Z",
+  "startTime": "17:00",
+  "endTime": "19:00"
+ },
+ "https://allevents.in/dallas/deep-ellum-holiday-lights-and-makers-market-2026/100002005529240947": {
+  "checkedAt": "2026-11-28T02:18:06.440Z",
+  "startTime": "16:00"
+ },
+ "https://allevents.in/plano/two-days-eid-bazaar/200031137789520": {
+  "checkedAt": "2026-11-28T02:18:06.440Z",
+  "startTime": "11:00"
+ },
+ "https://allevents.in/fort-worth/dial-up-festival-nelly-sugar-ray-at-panther-island-pavilion/2400030467271226": {
+  "checkedAt": "2026-11-28T02:18:06.440Z"
+ },
+ "https://allevents.in/houston/a-houston-christmas-market️/200031010403459": {
+  "checkedAt": "2026-11-28T02:18:06.440Z",
+  "startTime": "11:00",
+  "endTime": "17:00"
  }
 }
